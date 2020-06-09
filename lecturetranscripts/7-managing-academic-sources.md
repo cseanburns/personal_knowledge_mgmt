@@ -27,9 +27,10 @@ article:
 The Gilmour & Cobus-Kuo (2011) article provides a nice list of BRM functions,
 which I'll go through in a second. We will use that list to evaluate a variety
 of BRMs on our own. By the way, note how I'm using the literature here.
-Specifically, note how I'm using the Gilmour & Cobus-Kuo article as a basis for
-our evaluation. Ideally, this is what the literature is for---to help provide
-guidance or to use to build a case for something that we're examining.
+Specifically, note that and how I'm using the Gilmour & Cobus-Kuo article as
+a basis for our evaluation. Ideally, this is what the literature is for---to
+help provide guidance or to use to build a case for something that we're
+examining.
 
 In any case, this article helps highlight the process---what it means
 to begin building our own databases of scholarly sources of information.
