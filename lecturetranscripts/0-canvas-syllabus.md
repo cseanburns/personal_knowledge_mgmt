@@ -78,10 +78,10 @@ Our four modules include:
   databases---those databases that are topical and that, if used well, return
   solid research and data.
 - Module 4, the last module, on **Personalizing Information**, we'll take
-- managing
-  information a step forward---that is, once we've learned how to collect
-  information for later use, we'll begin to learn what can we do to take
-  ownership of that information for use in other activities, such as writing.
+  managing information a step forward---that is, once we've learned how to
+  collect information for later use, we'll begin to learn what can we do to
+  take ownership of that information for use in other activities, such as
+  writing.
 
 One extra note about due dates in this course. As I stated earlier, all
 discussion forums and assignments are contained in the four modules listed
@@ -106,20 +106,19 @@ they are worth half of your final grade. The assignments and their short
 descriptions are listed in the syllabus. The full descriptions are available in
 Canvas in the Assignments section. The assignments include:
 
-* Information Practices Journal 1 & 2: At the beginning of the course, you 
+- Information Practices Journal 1 & 2: At the beginning of the course, you 
   will write a short reflection on your academic information practices. At the
   end of the course, you will write a follow up reflection, noting how your
   academic information practices have changed or might change due to the
   materials and practices learned in this course.
-* Bibliographic Reference Managers: You will write an essay comparing and
-* contrasting three separate 
-  bibliographic reference manager applications. Based on your analysis, you
-  will select a bibliographic reference manager application to use in your
-  studies.
-* Wikipedia: Identify, Search, Collect, Annotate: You will select a Wikipedia 
+- Bibliographic Reference Managers: You will write an essay comparing and
+  contrasting three separate bibliographic reference manager applications.
+  Based on your analysis, you will select a bibliographic reference manager
+  application to use in your studies.
+- Wikipedia: Identify, Search, Collect, Annotate: You will select a Wikipedia 
   stub article to edit, and using your bibliographic reference manager,
   identify and annotate sources to add to the Wikipedia article.
-* Wikipedia: Editing: You will edit your selected Wikipedia article by 
+- Wikipedia: Editing: You will edit your selected Wikipedia article by 
   adding additional text and revising existing text and support your changes
   with bibliographic references.
 
