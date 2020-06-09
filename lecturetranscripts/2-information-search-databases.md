@@ -7,7 +7,7 @@ in a bit more detail.
 
 ## Readings
 
-This week we have four readings -- two from our book and two additional online
+This week we have four readings---two from our book and two additional online
 articles. The readings from the book detail some search strategies. The two
 online readings discuss two major online sources, the [Internet Archive][1] and
 the [Digital Public Library of America][2].
