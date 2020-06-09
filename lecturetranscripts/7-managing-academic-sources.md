@@ -111,7 +111,7 @@ least most of these abilities:
 
 * Select a BRM and pick two of the functionalities from the Gilmour & Cobus-Kuo
   (2011) article to evaluate it.
-* This will prepare you for the next major assignment, due on Oct. 21, where
+* This will prepare you for the next major assignment where
   you will compare and contrast three BRMs more fully.
 * In the next couple of slides, let's watch a couple demonstration videos on
   Mendeley and Zotero, two of the more popular BRM software.
