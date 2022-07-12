@@ -1,11 +1,6 @@
-# IS/ICT 201: Personal Knowledge Management
-# Professor Sean Burns
+# Course and Canvas Shell Review
 
-# Course Review and Canvas
-
-Hi Class, welcome to the summer 2020 semester and to IS/ICT 201: Personal
-Knowledge Management. My name is Dr. Sean Burns. I'm an associate professor at
-the School of Information Science.
+Hi Class, welcome to IS/ICT 201: Personal Knowledge Management.
 
 This week our job is to review the syllabus, become acquainted with the Canvas
 learning management system, and also get started on the content. I'll start
@@ -15,29 +10,76 @@ a bit.
 
 ## Course Review
 
+### What is personal knowledge management?
+
 What is this course? What do we mean by personal knowledge management? Well,
 I'd hazard a guess that most of us depend largely on two main sources to search
 for, locate, and retrieve information, either on a daily basis or for more
 extensive work. These two sources are the people we know and the search
-engines, like Google, that we use on a daily basis. Furthermore, when we rely
-on the people we know for information, it's likely that we'll ask these people
-(friends, family, co-workers, professors, etc.) for information via some
-technology. These technologies include the more long-standing technologies,
-like email, various social media platforms, such as Facebook, Twitter, etc., as
-well as more direct communication technologies, like texting and messaging. In
-this course, our job is to wean ourselves off these two primary channels of
-communication (search engines and people) and to expose ourselves to a wider
-array of the information sources that exist on the web. This is because it's
-important to understand that the people we know may not always have the best
-information for us and that search engines, like Google, cannot index every web
-page. Also, we need to know how to evaluate sources of information, which means
-we need to know something about how these sources are described, collected,
-curated, and presented to us. And we also have to know a bit about how to
-manage and apply this information---that is, how to make it our own, how to
-learn from what we collect and use or enjoy it for various purposes.
+engines, like Google, that we use on a daily basis. Relying on these two kinds
+of sources may get us by for most things, but there are times when we will
+require more rigorous sources because the task at hand stipulates better
+information or the risks involved in making a decision are weighty enough to
+require more certainty. Good, thorough information can reduce our certainty or
+enable us to measure levels of uncertainty, and this is helpful when making
+decisions. In this course, therefore, our first learning goal is focused on
+information sources, and specifically, to:
 
-With that direction in mind, let's discuss Canvas and the general outline of
-this course. 
+- become aware of other sources of information,
+- learn how to search those sources for relevant information, and
+- learn how to evaluate found information.
+
+This only covers part of what we mean by personal knowledge management. In
+addition to being able to search for, locate, and retrieve good information, it
+is also important to manage that information and to develop good work flows
+that help us to continually manage that information. What I mean is that, it
+may be great that we know that [UK Libraries][uklibraries] exists and that we
+can use it to locate good information, but if we don't ever use UK Libraries or
+other great resources because we're not in the habit of doing so, then what's
+the point?
+
+Therefore, our second learning goal is focused on the tools and technologies
+that will help us to build personalized information and knowledge work flows.
+As stated above, often the point of acquiring good information is to perform
+some task or to make a decision. A good work flow is good if it fits our style,
+or our way of getting things done, because that makes the work flow more likely
+to be followed. A good work flow also maximizes our use of good sources of
+information as well as helps us to produce desired outcomes, like a paper for a
+class, a project for a boss, or a decision that involves some uncertainty. Our
+second learning goal is, therefore, focused on personal knowledge work flows,
+and specifically, to: 
+
+- to become aware of the tools and technologies designed to manage personal
+  knowledge work flows,
+- to learn how to use these tools and technologies, and
+- to incorporate these tools and technologies into our personal knowledge work
+  flows
+
+Our final learning goal focuses on outcomes and builds off the first two goals.
+Specifically, our goal is to habitually use the tools and technologies that
+incorporate a variety of good sources of information in order to accomplish a
+task or make a decision. That is, not only may we want to take advantage of the
+many kinds of information sources that exist, and not only may we want to make
+it a habit of using those information sources in a habitual, personalized way,
+but we may also, as suggested earlier, want to accomplish some task. It could
+be that we may simply want to satisfy our curiosity about a topic and learn
+more, which is great! But there are times in our lives when we need to get
+things done (e.g., write a paper or create a software program) or make a
+decision that involves some risk (e.g., buy a house or choose a healthcare
+procedure). In those cases, having a personal knowledge work flow that
+incorporates high quality sources of information will facilitate accomplishing
+such tasks or making such decisions.
+
+### Course Outline
+
+In order to accomplish the three goals above, I have divided this course into
+the following modules: 
+
+************************************************************************
+  BEGIN REVISING HERE AFTER SETTLING ON NEW COURSE OUTLINE AND MODULES  
+************************************************************************
+
+
 
 When you first login to the course shell or when you click on the Home page,
 you will be taken to the Modules section. This class is organized into four
@@ -122,7 +164,7 @@ Canvas in the Assignments section. The assignments include:
   adding additional text and revising existing text and support your changes
   with bibliographic references.
 
-## Canvas
+### Course Requirements
 
 Back to Canvas---let me highlight the Syllabus section of the site. When you
 click on the Syllabus link in the left side navigation section, you will have
@@ -169,3 +211,5 @@ that point.
 
 I really enjoy teaching this class, and I hope you'll find the material as
 useful as I do. So, welcome to the course and I'll see you online.
+
+[uklibraries]:https://libraries.uky.edu/
