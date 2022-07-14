@@ -5,7 +5,8 @@ File status is listed below (mostly as a note to myself).
 
 ## In progress
 
-These are currently work in progress files:
+These are currently work in progress files
+(that will at least need polishing):
 
 - 0-canvas-syllabus.md
 - 1-sources_information.md
