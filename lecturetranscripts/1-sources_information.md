@@ -1,172 +1,287 @@
-# IS/ICT 201: Personal Knowledge Management
+# Sources of Information
 
-## Sources of Information
+Hi class, this week we begin to learn about databases and how to use them as a
+resource and to locate sources of information.
 
-Hi Class, welcome to the IS and ICT 201 course on **Personal Knowledge
-Management**. This week we start with a brief discussion of what Knott refers to
-as the "map of the information world." 
+## What is a database?
 
-## The Information Sector
+Databases are great **resources** for locating **sources of information**, but
+the term **database** itself is a bit problematic because it has multiple
+meanings, and I think it will help if we start this section by clarifying what
+we mean in this course by the term *database*.
 
-Knott begins her chapter with a discussion about the information
-sector---Sector 51 as it's called by the [US Census Bureau][1] and other
-governmental agencies and departments, such as the [US Economic Census][2], and
-multiple industries. The number 51 refers to the NAICS code number [North
-American Industry Classification System][3] for the information industry. NAICS
-is a classification system of businesses according to the type of economic
-activity those businesses engage in. We'll talk more about it in a later week,
-but it's useful to know because it can be used to search in databases. The
-information industry is defined as that sector which:
+According to the
+[*Dictionary of Information Science and Technology*][dictInfoSciTech],
+the term **database** can be defined as:
 
-        comprises establishments engaged in the following processes: (a)
-        producing and distributing information and cultural products, (b)
-        providing the means to transmit or distribute these products as well as
-        data or communication, and (c) processing data ([NAICS, 2012][5]).
+> a collection of files containing related information. Database consists of
+> files and each file consists of records. Furthermore, each record consists of
+> fields, which can be used to store the raw facts or data (p. 246).
 
-(For more information about this industry, including statistical information
-about the workforce, earnings, and more, visit the [Bureau of Labor
-Statistics][4] page.)
+This definition is not wrong, per se, but it is rather broad and therefore not
+entirely useful. For example, the definition entails that if I have a folder on
+my desktop, and if that folder contains only Excel spreadsheets on related
+content, and since those spreadsheets contain only records (i.e., rows) and
+fields (i.e., cells), then that folder on my desktop is a database. Although I
+suppose that's kind of true, I don't think that's really what the dictionary
+authors have in mind, and thus it's not an accurate enough nor a very useful
+definition. 
 
-This is a nice introduction to the map of the information world, because Knott's
-example and main idea in this chapter is also one of the main ideas of this
-course---that is, there is a multitude of information available to us via the
-internet and the web, but this information is largely out of sight because it's
-not easily visible to search engines like Google, Bing, Yahoo, or others. And
-because it's out of sight, it requires an additional skill set to locate those
-sources, retrieve them, manage it all, and then apply and use that information
-in new ways. 
+A more specific and applicable definition is provided by the
+[*Online Dictionary of Library and Information Science*][odlis],
+which defines a **database** as:
 
-In short, information that is stored in databases, like the one pictured in
-this slide, such as the Quarterly Financial Report for the information sector,
-is not easily accessible via a search engine. Rather, in order to access this
-data, you'd need to know that it exists, where it exists, and that it is
-available to you. Once you know this, you can proceed to the source or the
-resource, and retrieve it using a query or via a selection of menu items.
-Sometimes this kind of data or information is only generated on the fly---based
-on your search query---otherwise it does not have a standalone page---it does
-not, that is, pre-exist as some URL.
+> A large, regularly updated file of digitized information (bibliographic
+> records, abstracts, full-text documents, directory entries, images,
+> statistics, etc.) related to a specific subject or field, consisting of
+> records of uniform format organized for ease and speed of search and
+> retrieval and managed with the aid of database management system (DBMS)
+> software. Content is created by the database producer (for example, the
+> American Psychological Association), which usually publishes a print version
+> (Psychological Abstracts) and leases the content to one or more database
+> vendors (EBSCO, OCLC, etc.) that provide electronic access to the data after
+> it has been converted to machine-readable form (PsycINFO), usually on CD-ROM
+> or online via the Internet, using proprietary search software.
 
-## Database Terminology
+> Most databases used in libraries are catalogs, periodical indexes,
+> abstracting services, and full-text reference resources leased annually under
+> licensing agreements that limit access to registered borrowers and library
+> staff. Abbreviated db. Compare with data bank. See also: archival database,
+> bibliographic database, embedded database, metadatabase, and niche database. 
 
-Knott mentions various terms to describe databases. These include:
+The above definition is more helpful because it provides examples of content
+type (e.g., bibliographic records, abstracts, full-text documents, etc) and how
+to access that content (e.g., library catalogs, periodical indexes), because it
+partitions out the components of a database (records, search, retrieval), and
+because it distinguishes a *database* proper from a *database management system
+(DBMS)*, which is what the prior definition was attempting to define. The
+ODLIS definition also highlights the role of database producers in producing
+databases (e.g., the American Psychological Association), which tells us
+something about the subject matter of a database (e.g., psychology).
 
-* databases
-* database producers and publishers
-* database vendors
-* database platforms
+## What are example databases?
 
-This is a confusing mix of terminology, but the conceptual differences help us
-identify and see what is available to us. In essence, we can think about these
-terminological differences by comparing these terms to a more familiar resource,
-like Google. Google is now a part of a bigger company called **Alphabet Inc.**,
-which we can think of as the vendor. This company offers a search platform
-called Google Search, as well as other platforms, like Google Photos, Google
-Plus, and more. The index that Google Search creates when it crawls the web is
-the actual database that we use when we use Google Search, and then of course
-Google or Alphabet produces or publishes its own material.
+The ODLIS definition provides some leads to this question. The definition tells
+us that example databases include "digitized information containing
+bibliographic records, abstracts, full-text documents, directory entries,
+images, and statistics" that are "related to a specific field or subject," and
+that these can be accessed through library "catalogs, periodical indexes,
+abstracting services, and full-text reference resources." Given that, let's
+look at some examples.
 
-In the image on this slide, EBSCOhost functions as the Database Vendor, and as
-the vendor, offers a number of Database Platforms, such as Academic Search
-Complete, Business Search Complete, and more, all of which you can search.
+### Library Catalogs and Discovery Services
 
-## Multiple Databases Available to You
+We'll start with the most general example, and that's the **library catalog**.
+Traditionally, library catalogs were databases that primarily provided
+information about where we could find content on a library's shelves (i.e.,
+print content). However, given that more content is available online, nowadays
+these catalogs are more often referred to as discovery services. In this
+expanded role, not only can they tell us where to find a book on a shelf, but
+they can also provide full text access to online content in other databases.
 
-Libraries, such as UK's, offers comparable if not more specialized products
-than Google Search. These include EBSCOhost, ProQuest and Gale, among many
-others. The vendors for these products supply multiple databases for accessing
-subject focused information on a number of topics, and you can become familiar
-with them by visiting the UK Libraries website, clicking on the Databases tab,
-and searching the databases using a broad term, such as business, education,
-psychology, marketing, and so forth. It's important to note that the sources
-that these databases provide---that is, the information---is costly and thus
-not easily available or seen by the regular search engine.
+> We can access the University of Kentucky's library catalog/discovery service
+> at their main website at: 
+> 
+> [**https://libraries.uky.edu**][uklibraries]
+> 
+> Please visit the link and test your own searches.
 
-## Strategic Information Seeking
+In the center of UK Libraries' homepage, we find two tabs of interest, the
+**Search** tab and the **Library Catalog** tab. If we enter a search term in
+the search box for either of those resources, our search will take us to the
+same interface. That's because there's really only a small difference between
+how the functions **Search** and **Library Catalog** work. The **Search**
+function will return results, based on a search query, for print items located
+on the library's shelves but also for online items located in various other
+databases. The **Library Catalog** will do the same, but it'll place a bit more
+emphasis on locating print items on the library's shelves. Searching one or the
+other then is really simply a matter of emphasis.
 
-Why is it important to know about these databases and how to use them? Well,
-for most of our everyday, mundane needs, the general search engine is great.
-That is, it's really wonderful to live in this day in age---we have access to
-more information and more quickly than we have had at any point in human
-history. But if we assume that these search engines provide access to the
-totality of information that's available, then we short ourselves. Sometimes,
-the risks and the stakes are high and we need more in-depth and more thorough
-information, and we need to be strategic about locating and using it---doing so
-may save us from some costly mistakes. In such cases, it's not a matter of
-making decisions based on inaccurate information but also perhaps on incomplete
-information.
+Regardless, both services return what are called **bibliographic records** and
+not full text access. These bibliographic records do not provide the actual
+content. Rather, they provide access by telling us where to locate the content.
+For example, if that content is a print item someplace on the library's
+shelves, the catalog might tell us it's located on the 5th floor of WT Young
+and has the call number **Z674.82.159 S42 1996**, or something like that.
+However, if that content is online, then the catalog should give us a direct
+link to it. It could also be that the UK Libraries catalog has records for
+information sources but not the actual sources themselves. In those cases, the
+bibliographic records should provide a link to request the item through
+interlibrary loan (ILL).
 
-## Multiple DB Sources
+Google and other search engines function in much the same way. If I do a search
+for the term **databases** in Google, the search engine will return results to
+sites that are relevant to that term, like a Wikipedia article on databases.
+Google itself does not store the full text content and only provides access
+(i.e., links) to content based on its own indexing of where things are on the
+web. Unlike the library's catalog, if Google returns results for pages it
+cannot access or that don't exist anymore, there is no ILL service offered, and
+we're left to our own devices to find access to that information.
 
-Fortunately, if we only knew that we had more options, and if we only knew how
-to leverage those options, then we could put ourselves on more secure footing.
-Knott's chapter, and many examples in this book, focuses on General OneFile,
-which is a database offered by Gale. General OneFile is more commonly offered
-by public libraries. Don't dismiss public libraries and think they're only
-about checking out books. Public libraries, like UK's library, generally offer
-a number of databases. And State libraries and state consortiums, generally
-also offer access to specific databases, like Kentucky's Virtual Library,
-pictured here. Once you graduate from UK, you'll no longer have easy access to
-UK Libraries' databases, but you can still access many of them through the
-public library, via the computer you use to connect to the Internet.
+### Periodical Indexes and Abstracting Services
 
-## EBSCOhost
+The library catalogs and discovery services that I described above return a
+wide variety of bibliographic records that describe and provide access to
+books, ebooks, book chapters, maps, scholarly articles, news articles, images,
+and more. While the discovery service part of the search that we explored above
+functions as a kind of catchall for all the types of works that a library can
+provide access to, as just listed, there will be times when we will want to
+focus our search to a more limited subset of records, such as those that
+produced by periodicals.
 
-Let's take a quick look at a couple of UK Library's offerings. Here we have
-pictured the first three databases provided by EBSCOhost, a database vendor. You
-may have encountered Academic Search Complete in your other courses, but EBSCO
-provides over 50 topical databases and the subject matter of these databases
-range from music, psychology, education, ecology, and more. 
+Periodicals are nothing more than magazines and journals. This kind of genre
+produces issues at regular (or even at irregular) intervals, such as weekly,
+bimonthly, monthly, or quarterly issues, with no pre-determined end.
+Periodicals focus on different audiences, such as the general public (e.g.,
+Time magazine), parts of the general public (e.g., *WIRED*, *Elle*, *Better
+Homes and Gardens*), the general scholarly community (e.g., *Nature*,
+*Science*), or to specific scholarly communities (e.g, *Journal of Information
+Technology*, *Journal of Synchrotron Radiation*, *Journal of Sociology*).
+Scholarly journals are generally (but not always) peer-reviewed journals, which
+means that when authors submit their manuscripts to these journals, the
+manuscripts are sent out to two to three peers in the scholarly community who
+read the manuscripts and write recommendations to the editors for improving the
+manuscript, or who recommend that the journal editor reject the manuscript.
+Different journals and different scholarly disciplines have different criteria
+for making judgments on quality.
 
-## ProQuest
+There are two broad ways to locate sources in periodicals. At the UK Libraries
+[homepage][uklibraries], we can select the **Journals** tab or the
+**Databases** tab. The **Journals** tab lets us search for specific journal
+titles and, if desired, within disciplinary/subject categories (e.g., Health &
+Biological Sciences, Law, Politics & Government, Language & Literature, or
+Social Sciences, Journalism & Communications, and more). Once we locate a
+journal of interest, we can visit the link and then search within that journal
+or peruse the table of contents for specific issues.
 
-Like EBSCOhost, ProQuest is another vendor that provides access to many subject
-based databases. We have access to about half as many as offered by EBSCOhost,
-and some of the topics overlap, but the sources are commonly different even if
-the topics overlap. Plus, each of these vendors provides access to thousands of
-scholarly journals, magazines, trade journals, newspapers, reports, blogs,
-newspapers, dissertations, biographies, company reports, encyclopedias,
-government publications, and much, much more.
+The **Databases** tab lets us expand our search of records to broader
+categories or subject areas of periodicals. Here we find databases like
+[*Academic Search Complete*][asc], which will let us search thousands of
+periodicals, including magazines and scholarly journals, across a range of
+subject categories. *JSTOR* is another database that indexes a broad subject
+range of periodicals but with greater emphasis on peer-reviewed material.
+Databases may also have a specific focus. For example, the
+[*African American Communities*][aac]
+database provides access to archival and historical papers,
+oral histories, essays, letters, pamphlets, and newspapers on African American
+communities and is geographically focused on Atlanta, Chicago, New York, and
+parts of North Carolina. Then we also have access to databases like the
+*Kentucky Building Code*, which is a database that links to residential and
+commercial regulatory information on building, plumbing, design in Kentucky. 
 
-## Free Resources
+Many of the resources listed above, as well as the hundreds that UK Libraries
+offers and that I have not described, provide access to full-text content. But
+this isn't necessarily so. All that a periodical index must offer to be
+classified as such are records that contain basic information, such as article
+titles, author names, publication names, publication date information, and
+often subject terms. Abstracting services provide the same information but also
+provide abstracts of journal articles, which are searchable. Since abstracts
+provide summary information of the main articles, this is helpful in locating
+information sources.
 
-In our chapter this week, Knott also refers to a number of free resources. That
-is, aside from the physical libraries you have access to, and the digital ones
-such as KYVL.org, there are freely available databases on the Web too. The US
-Government is one of the main sources of freely available information on the
-web, but other industries participate in the free exchange of information too.
-We'll cover some of these types in this course.
+### Full-text Resources
 
-In our course shell on Canvas, I've created a very incomplete but nice list of
-freely available databases on the web. Here's a screen shot, but do go to the
-Pages section on Canvas, and click on the **Databases and Sources of
-Information** page to access this list. Feel free to copy and save the list for
-your own use.
+Periodical indexes and abstracting services do not necessarily provide direct
+full text access. You might wonder what the point is if you can't get the full
+text of some source that the library tells you exists. The point is that even
+if the library doesn't have immediate access to a source, if it can tell you
+that it exists, then a librarian can likely get the source through interlibrary
+loan (which is fast!) or some other means. So if the stakes are high (e.g., you
+are a cancer researcher) and you really need or just want information (e.g.,
+about a cancer therapy), then periodical indexes and abstracting services are
+great resources even if they do not provide immediate full text access.
 
-## Copyright
+That said, in addition to a variety of periodical indexes and abstracting
+services, UK Libraries provides quite a few full text databases. Visit the 
+[A-Z Databases page][azdatabases] to see all of your choices. A full-text database
+may also be an abstracting service, if it provides the basic information listed
+above (title, author name, etc) about periodical content. It becomes a
+full-text abstracting database if it also provides access to the full-text
+source. Other non-periodical database, like the *African American Communities*
+database, also provides full text access to its sources (and may even be
+thought of as a *digital library* and not just a database).
 
-With any of these sources of information, it's important to pay attention to
-the copyright. Most information that's stored in databases (if not most
-information on the Web itself), is under copyright. This means that you and I
-have limited rights in using these sources of information. We can refer to such
-work, we can extract the information from copyrighted work, but we cannot reuse
-or share that work without express permission from the copyright holder, which
-could be an individual person, a group of people, or a corporation. 
+In the next few paragraphs below, I will focus on a few general purpose
+full-text databases that you may find helpful as you work towards your degree.
+Although these databases provide full-text sources, they may not provide
+full-text to everything they have records for, though. 
 
-Fortunately, there's been a growing interest in the last decade plus in
-licensing work under a Creative Commons license, and [Creative Commons][6] has
-created a search engine to locate such work for reuse or modification. There
-are different types of Creative Commons licenses---some are more permissible
-than others. E.g., some work under CC licensing requires only that you
-attribute the work. Another license says you can modify the work, but if you
-do, you must also license it so that others can modify your work. And so on.
-It's important to know which CC license a work has, if it has a CC license.
+#### Academic Search Complete
 
-## Creative Commons
+[*Academic Search Complete (ASC)*][asc] is a database of databases. It can
+search over 60 different databases and indexes, each including hundreds of
+journal titles, including:
 
-This slide is a screen shot of the CC search engine. Do explore it at the URL in
-this slide and see what kind of material is available.
+- *Communication and Mass Media Complete*
+- *Sociological Collection*
+- *Music Index*
+- *SPORTDiscus*
+- *MEDLINE*
+- *eBook K-8 Collection*,
+- and more.
 
-## & More
+In ASC, we can search all 60 plus databases at one time, or we can select one
+or more of them, which might make better sense. For example, if we were
+interested health related information, we might want to search the following
+ASC databases at once:
+
+- *Consumer Health Reference eBook Collection*
+- *Health and Psychosocial Instruments*
+- *MEDLINE*
+- *APA PsycInfo*
+
+#### ProQuest
+
+Like ASC, [ProQuest][proquest] provides access to many subject based databases,
+and also, many of the database topics overlap. ProQuest uses this to highlight
+database collections. For example, the *SciTech Premium Collection* includes
+three databases that can be searched at once. These include the:
+
+- *Natural Science Collection*
+- *Science Database*
+- *Technology Collection*
+
+ProQuest's *Social Science Premium Collection* includes databases on
+criminology, education, library and information science, politics, sociology,
+and more.
+
+ProQuest also provides database access to magazines and news content, including
+*The Vogue Archive* and various current and historical newspapers, such as an
+archive of *The New York Times* or current issues of *The Courier-Journal*
+(Louisville, KY).
+
+#### JSTOR
+
+[*JSTOR*][jstor] is another multi-disciplinary database. JSTOR covers subjects
+such as:
+
+- Arts
+- Business & Economics
+- History
+- Medicine & Allied Health
+- Science & Mathematics
+- Security studies
+- Social Sciences, and more.
+
+Each of these subject areas includes access to many journal titles, and
+therefore, many journal articles. *JSTOR* has long focused on back issues of
+journals, but in recent years has made moves to include current literature and
+open access content (this content that is freely available). *JSTOR* also
+includes [*ARTSTOR*][artstor], a database of images, video, and other
+multimedia content, much of which is also available as open access.
+
+> Note: Open access (OA) content is content that
+> is freely available to access.
+> That does not, however, mean that the content is
+> free of copyright protections.
+> There are different types of OA copyright licenses
+> and each will stipulate how we can use that content.
+> [CreativeCommons.org][ccorg] provides a list of some
+> of the more popular licenses and what the mean for us.
+> In all cases, though, if you use OA content,
+> be sure to attribute it with source information.
+
+## Conclusion
 
 Remember, one of the main ideas of this course is that there are many sources of
 information that are not easily available via Google or some other search
@@ -179,11 +294,13 @@ In short, we are going to learn a bit more about what's hidden from most users
 and from the common view---that which lies under the iceberg---and we'll learn a
 bit about how to manage and apply these sources.
 
-See you on the boards.
-
-[1]: http://www.census.gov/
-[2]: http://www.census.gov/econ/census/
-[3]: http://www.census.gov/eos/www/naics/
-[4]: http://www.bls.gov/iag/tgs/iag51.htm
-[5]: http://www.census.gov/cgi-bin/sssd/naics/naicsrch?code=51&search=2012%20NAICS%20Search
-[6]: https://search.creativecommons.org/
+[dictInfoSciTech]:https://saalck-uky.primo.exlibrisgroup.com/permalink/01SAA_UKY/ija67f/cdi_proquest_ebookcentral_EBC3312345
+[odlis]:http://products.abc-clio.com/ODLIS/odlis_d#database
+[uklibraries]:https://libraries.uky.edu/
+[azdatabases]:https://libguides.uky.edu/az.php
+[artstor]:https://www.artstor.org/public-collections/
+[ccorg]:https://creativecommons.org/about/cclicenses/
+[jstor]:https://libguides.uky.edu/266
+[aac]:http://ezproxy.uky.edu/login?url=https://www.aac.amdigital.co.uk/
+[asc]:https://libguides.uky.edu/4
+[proquest]:https://libguides.uky.edu/90
