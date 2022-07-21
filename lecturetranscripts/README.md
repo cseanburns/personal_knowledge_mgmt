@@ -11,6 +11,7 @@ These are currently work in progress files
 - 0-canvas-syllabus.md
 - 1-sources_information.md
 - 2-bibliographic-reference-management.md
+- 3-email-management.md
 
 ## Upcoming
 
@@ -31,11 +32,6 @@ These files still need to be re-worked, revised and re-numbered:
 
 The list below represents a preliminary outline of the course:
 
-- 01-intro-to-pkm.md
-- 02-file-folder-management.md
-- 03-email-web-management.md
-- 04-security-backup.md
-- 05-bibliographic-ref-managers-part-1.md
 - 06-project-setup-wikipedia.md
 - 07-analyzing-evaluating-sources.md
 - 08-library-info-sources-part-1.md
