@@ -17,16 +17,16 @@ These are currently work in progress files
 
 These files still need to be re-worked, revised and re-numbered:
 
-- 2-information-search-databases.md
-- 3-browsing-searching-databases.md
-- 4-evaluating-managing-search-retrieval.md
-- 8-curating-sources.md
-- 9-general-interest-scholarly-databases.md
-- 10-business-statistics-sources.md
-- 11-funding-health-info.md
-- 13-metadata.md
-- 14-information-knowledge-work-flow.md
-- 15-humility.md
+- browsing-searching-databases.md
+- business-statistics-sources.md
+- curating-sources.md
+- evaluating-managing-search-retrieval.md
+- funding-health-info.md
+- general-interest-scholarly-databases.md
+- humility.md
+- information-knowledge-work-flow.md
+- information-search-databases.md
+- metadata.md
 
 ## Possible Naming and Ordering
 
