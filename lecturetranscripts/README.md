@@ -9,9 +9,21 @@ These are currently work in progress files
 (that will at least need polishing):
 
 - 0-canvas-syllabus.md
-- 1-sources_information.md
-- 2-bibliographic-reference-management.md
-- 3-email-management.md
+- 1-email-management.md
+- 2-backup.md
+- 3-sources_information.md
+- 4-bibliographic-reference-management.md
+- 5-information-retrieval.md
+- 6-project-setup-wikipedia-part-1.md
+- 7-analyzing-evaluating-information-sources.md
+- 8-searching-collecting-organizing-library-sources-part-1.md
+- 9-searching-collecting-organizing-library-sources-part-2.md
+- 10-searching-collecting-organizing-web-sources-part-1.md
+- 11-searching-collecting-organizing-web-sources-part-2.md
+- 12-closing-the-loop-bibliographic-reference-managers.md
+- 13-integrating-with-word-processors.md
+- 14-project-close-wikipedia-part-2.md
+- 15-the-pkm-workflow-summary-reflection.md
 
 ## Upcoming
 
