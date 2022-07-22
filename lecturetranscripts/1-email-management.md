@@ -6,30 +6,19 @@
     - Duffy, J. (2019). 11 Tips for Managing Email More Efficiently. Retrieved
       19 July 2022, from [PC Mag][pcmag]
     - Haupt, A. (2021). Overwhelmed by email? Here’s how to get that inbox
-      under control. The Washington Post. Retrieved from [Washington
-      Post][washPost]
-    - Tips and Tools for Managing Email. (2021). Retrieved 19 July 2022, from
-      [Colorado College][cocollege]
+      under control. The Washington Post. Retrieved from [Washington Post][washPost]
+    - Tips and Tools for Managing Email. (2021). Retrieved from [Colorado College][cocollege]
 - Outlook 
-    - Manage email messages by using rules. Retrieved 19 July 2022, from
-      [Using Rules - Microsoft][usingRulesM]
-    - Manage and organize: Search. Retrieved 19 July 2022, from [Search -
-      Microsoft][searchMicrosoft]
-    - Manage and organize: Clean up Inbox. Retrieved 19 July 2022, from [Clean
-      up Inbox - Microsoft][cleanup]
-    - Flag email messages for follow up. Retrieve 19 July 2022, from [Flag
-      messages][flagOutlook]
+    - Manage email messages by using rules. Retrieved from [Using Rules - Microsoft][usingRulesM]
+    - Manage and organize: Search. Retrieved from [Search - Microsoft][searchMicrosoft]
+    - Manage and organize: Clean up Inbox. Retrieved from [Clean up Inbox - Microsoft][cleanup]
+    - Flag email messages for follow up. Retrieve from [Flag messages][flagOutlook]
 - Gmail
-    - Create rules to filter your emails. Retrieved 19 July 2022, from
-      [Using Rules - Gmail][usingRulesG]
-    - Create labels to organize Gmail. Retrieved 19 July 2022, from [Create
-      Labels - Google][createLabels]
-    - Group emails into conversations. Retrieved 19 July 2022, from [Group
-      emails - Google][groupEmails]
-    - Search in Gmail. Retrieved 19 July 2022, from [Search -
-      Gmail][searchGmail]
-    - Create & manage Tasks in Google Calendar. Retrieved 19 July 2022, from
-      [Create & manage Tasks][tasksGmail]
+    - Create rules to filter your emails. Retrieved from [Using Rules - Gmail][usingRulesG]
+    - Create labels to organize Gmail. Retrieved from [Create Labels - Google][createLabels]
+    - Group emails into conversations. Retrieved from [Group emails - Google][groupEmails]
+    - Search in Gmail. Retrieved from [Search - Gmail][searchGmail]
+    - Create & manage Tasks in Google Calendar. Retrieved from [Create & manage Tasks][tasksGmail]
 
 ## Introduction
 
