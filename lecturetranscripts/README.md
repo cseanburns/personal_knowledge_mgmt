@@ -11,7 +11,7 @@ These are currently work in progress files
 - 0-canvas-syllabus.md
 - 1-email-management.md
 - 2-backup.md
-- 3-sources_information.md
+- 3-information-sources-resources.md
 - 4-bibliographic-reference-management.md
 - 5-information-retrieval.md
 - 6-project-setup-wikipedia-part-1.md
