@@ -1,4 +1,4 @@
-# Information Retrieval
+# Information Retrieval: The Web
 
 ## Introduction
 
@@ -92,7 +92,7 @@ This has some implications:
   will rank lower than a page that contains the terms near or adjacent to each
   other.
 
-## The web is well organized
+## The web is organized
 
 I mentioned above that the web
 is like a file system,
