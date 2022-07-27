@@ -174,6 +174,7 @@ flu site:education.ky.gov
 
 <figure>
 <img src="images/5-image-1.png"
+width="600" height="500"
 alt="The organization of the web by top level domains"
 title="The organization of the web by top level domains">
 <figcaption>Fig. 1: The Organization of the Web by Top Level Domains</figcaption>
@@ -199,6 +200,7 @@ For example, we see terms like these in the search results:
 
 <figure>
 <img src="images/5-image-2.png"
+width="600" height="500"
 alt="Google result snippets"
 title="Google result snippets">
 <figcaption>Fig. 2: Google result snippets</figcaption>
