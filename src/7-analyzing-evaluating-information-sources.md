@@ -264,7 +264,7 @@ it's also insufficient.
 A more thorough way to evaluate information is to think of the information
 more broadly and holistically.
 That is, to think of the stories that are being told,
-in how the information is contextualized.
+how the information is contextualized.
 Once we see the story,
 we have three methods to investigate a piece of information's credibility.
 We can test its:
@@ -272,6 +272,12 @@ We can test its:
 - argumentative or structural coherence
 - material coherence, and
 - characterological coherence.
+
+By the way, this method can also apply to the stories
+we tell ourselves or about ourselves or about our beliefs.
+It's important, that is, to evaluate the information we 
+believe to be true as much as it is to evaluate others 
+posit to be true.
 
 ## References
 
