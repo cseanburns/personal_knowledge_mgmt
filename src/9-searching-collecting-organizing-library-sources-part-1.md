@@ -44,11 +44,11 @@ And if the library doesn't have a resource,
 Infokat can facilitate an interlibrary loan request.
 Although interlibrary loans mean that we
 won't get immediate access to the requested source,
-it's still fast.
+they are still often fast.
 In my experience,
 I usually receive PDF copies of journal articles within 24 hours,
 and for many books that I've requested through interlibrary loan,
-I've generally receive copies within one to three days. 
+I generally receive copies within one to three days. 
 
 Infokat also works well with Zotero and
 other reference management software.
@@ -88,6 +88,13 @@ especially when starting on a new project.
 From there you can use hints that you see in your retrieval
 results to practice *pearl growing* or
 to refine and narrow your search results.
+
+<figure>
+<img src="images/9-image-1.png"
+alt="Infokat basic search"
+title="Infokat basic search">
+<figcaption>Fig. 1: Infokat basic search</figcaption> 
+</figure>
 
 You can apply *pearl growing* by noticing title information,
 subject terms, publication information, or more and
@@ -134,6 +141,13 @@ You can apply a variety of search filters that
 limit queries to specific fields in the structured data,
 such as title information, author/creator information, and subject terms.
 
+<figure>
+<img src="images/9-image-2.png"
+alt="Infokat advanced search"
+title="Infokat advanced search">
+<figcaption>Fig. 2: Infokat advanced search</figcaption> 
+</figure>
+
 Instead of using double quotes to force results to match your query,
 you have other options.
 These include the ability to state whether the search results should 
@@ -178,6 +192,13 @@ this is where you can request the items via interlibrary loan.
 When you sign in via your linkblue information,
 you can request the item directly, and if you have 
 loans out, you can request that they be renewed.
+
+<figure>
+<img src="images/9-image-3.png"
+alt="Infokat record page"
+title="Infokat record page">
+<figcaption>Fig. 3: Infokat record page</figcaption> 
+</figure>
 
 ## Conclusion
 
