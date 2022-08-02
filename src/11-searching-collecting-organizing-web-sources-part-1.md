@@ -178,7 +178,7 @@ Thus the extra $70,000 or so is factor of other market forces.
 > Fayette County, the seat of Lexington, KY, provides this information
 > at [https://fayettepva.com/][fayetteProperty].
 > You can check your local municipality's website for comparable information.
-> In fact, many city websites make available lots of data.
+> In fact, many city and county websites make available lots of data.
 
 ### EDGAR: U.S. Securities and Exchange Commission
 
