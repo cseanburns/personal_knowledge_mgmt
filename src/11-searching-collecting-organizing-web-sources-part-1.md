@@ -71,7 +71,7 @@ just like you would use a physical library.
 
 ## DPLA
 
-The [DPLA][https://dp.la] (Digital Public Library of America)
+The [DPLA][dpla] (Digital Public Library of America)
 is a shared repository of content
 that brings together digital and digitized sources
 from libraries, museums, and archives across the U.S.
@@ -218,6 +218,21 @@ you can see that, for example, more than 80% of Google's
 that changes in privacy policies and technologies that protect privacy
 is a concern for them.
 
+## MedlinePlus 
+
+Lastly, I would like to refer you to [MedlinePlus][medlineplus],
+which is part of the National Library of Medicine.
+The purpose of this site is to serve as a health and medical reference
+resource for the generaly public.
+Although no online site can take the place of professional medical help,
+MedlinePlus can be an important resource for becoming more
+informed about various health topics.
+
+Instead of *googling* that next symptom or condition,
+I highly encourage you to visit MedlinePlus first.
+The site also covers wellness topics and provides recipes
+for a wide range of meals.
+
 ## Conclusion
 
 Although it's important to know how to search the web well,
@@ -246,6 +261,7 @@ kind of search.
 [wayback]:https://web.archive.org/web/
 [uk1997]:https://web.archive.org/web/19970406042950/http://www.uky.edu/
 [openlibrary]:https://openlibrary.org/
+[dpla]:https://dp.la 
 [dplaUseCases]:https://dp.la/guides
 [dplaExhibitions]:https://dp.la/exhibitions
 [dplaprimary]:https://dp.la/primary-source-sets
@@ -266,3 +282,4 @@ kind of search.
 [edgar]:https://www.sec.gov/edgar.shtml
 [secForm]:https://www.sec.gov/oiea/Article/edgarguide.html
 [fayetteProperty]:https://fayettepva.com/
+[medlineplus]:https://medlineplus.gov
