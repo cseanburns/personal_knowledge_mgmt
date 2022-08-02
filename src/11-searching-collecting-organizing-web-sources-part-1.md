@@ -152,19 +152,33 @@ The [CPI Inflation Calculator][cpiBLS] shows how the value
 of the dollar has changed over time.
 For example, I can see that $1.00 in June of 2021
 has the same buying power as $1.09 in June of 2022,
-which shows that, overall, things cost, on average,
-$0.09 more today than they did just a year ago.
+which shows that, on average, what costs me a $1.09
+in June 2022 cost me a $1.00 the summer prior.
 
 This calculator is useful in a lot of ways.
 For example, the tuition to attend UK for the
 [2002-2003 academic year was $1,740 per semester][uky2002], and for the
 [2022-2023 academic year, it is $6,340][uky2022].
-The CPI calculator shows, though, that if tuition increased
+The CPI calculator shows that if tuition increased
 at the same rate as inflation,
 then today's tuition cost should only be $2,865.93 per semester
 (from June 2002 to June 2022).
 That means the extra $3,564 spent on tuition today increased
 due to other (complicated) factors.
+
+You can also see how home prices have changed.
+The house I rent was purchased for $101,650
+during the summer of 2001.
+Today the owners could easily sell for around $250,000
+(estimated by realtor.com).
+But inflation only accounts for a $171,016 price tag.
+Thus the extra $70,000 or so is factor of other market forces.
+
+> Property information like this is generally public information.
+> Fayette County, the seat of Lexington, KY, provides this information
+> at [https://fayettepva.com/][fayetteProperty].
+> You can check your local municipality's website for comparable information.
+> In fact, many city websites make available lots of data.
 
 ### EDGAR: U.S. Securities and Exchange Commission
 
@@ -251,3 +265,4 @@ kind of search.
 [cpiBLS]:https://www.bls.gov/data/inflation_calculator.htm
 [edgar]:https://www.sec.gov/edgar.shtml
 [secForm]:https://www.sec.gov/oiea/Article/edgarguide.html
+[fayetteProperty]:https://fayettepva.com/
