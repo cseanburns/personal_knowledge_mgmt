@@ -1,5 +1,15 @@
 # Library Sources: Part 1
 
+## Readings
+
+Please review the aspects of Infokat searching here:
+
+- Naas, D. (n.d.). Research Guides: InfoKat Discovery: Getting Started.
+  Retrieved August 3, 2022, from
+  https://libguides.uky.edu/c.php?g=457383&p=3126835
+
+## Introduction
+
 UK Libraries provides access to many millions of sources
 that include books (ebooks and print books),
 databases, journals, archival works, image collections,

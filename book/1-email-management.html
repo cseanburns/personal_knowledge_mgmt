@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Email Management - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html" class="active"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="1-email-management.html#email-management" id="email-management"><h1>Email Management</h1></a>
+<a class="header" href="1-email-management.html#readings" id="readings"><h2>Readings</h2></a>
+<ul>
+<li>Strategies
+<ul>
+<li>Duffy, J. (2019). 11 Tips for Managing Email More Efficiently. Retrieved
+19 July 2022, from <a href="https://www.pcmag.com/news/11-tips-for-managing-email-more-efficiently">PC Mag</a></li>
+<li>Haupt, A. (2021). Overwhelmed by email? Here’s how to get that inbox
+under control. The Washington Post. Retrieved from <a href="https://www.washingtonpost.com/lifestyle/wellness/email-management-tips-productivity/2021/08/27/36d80376-0692-11ec-8c3f-3526f81b233b_story.html">Washington Post</a></li>
+<li>Tips and Tools for Managing Email. (2021). Retrieved from <a href="https://www.coloradocollege.edu/offices/its/guides/manage-email.html">Colorado College</a></li>
+</ul>
+</li>
+<li>Outlook
+<ul>
+<li>Manage email messages by using rules. Retrieved from <a href="https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59">Using Rules - Microsoft</a></li>
+<li>Manage and organize: Search. Retrieved from <a href="https://support.microsoft.com/en-us/office/Manage-and-organize-b6d7ea98-a81f-492c-8e4b-694b6bb96b30#ID0EBBD=Search">Search - Microsoft</a></li>
+<li>Manage and organize: Clean up Inbox. Retrieved from <a href="https://support.microsoft.com/en-us/office/Manage-and-organize-b6d7ea98-a81f-492c-8e4b-694b6bb96b30#ID0EBBD=Clean_up_Inbox">Clean up Inbox - Microsoft</a></li>
+<li>Flag email messages for follow up. Retrieve from <a href="https://support.microsoft.com/en-us/office/flag-email-messages-for-follow-up-9d0f175f-f3e9-406d-bbf7-9c57e1f781cc?ui=en-us&amp;rs=en-us&amp;ad=us">Flag messages</a></li>
+</ul>
+</li>
+<li>Gmail
+<ul>
+<li>Create rules to filter your emails. Retrieved from <a href="https://support.google.com/mail/answer/6579?hl=en&amp;ref_topic=3394656">Using Rules - Gmail</a></li>
+<li>Create labels to organize Gmail. Retrieved from <a href="https://support.google.com/mail/answer/118708?hl=en&amp;ref_topic=3394656">Create Labels - Google</a></li>
+<li>Group emails into conversations. Retrieved from <a href="https://support.google.com/mail/answer/5900?hl=en&amp;ref_topic=3394656">Group emails - Google</a></li>
+<li>Search in Gmail. Retrieved from <a href="https://support.google.com/mail/answer/6593?hl=en&amp;co=GENIE.Platform%3DDesktop">Search - Gmail</a></li>
+<li>Create &amp; manage Tasks in Google Calendar. Retrieved from <a href="https://support.google.com/calendar/answer/9901136?hl=en&amp;co=GENIE.Platform%3DDesktop">Create &amp; manage Tasks</a></li>
+</ul>
+</li>
+</ul>
+<a class="header" href="1-email-management.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>Many people today use a variety of social media and text messaging platforms to
+communicate with each other, and this is on top of, or in spite of, the
+existence and use of email, which still reigns as the dominant mode of
+communication across a variety of industries. We can refer to this experience
+of the abundance of communication platforms and the abundance of messaging on
+these platforms as <em>communication overload</em>. This concept basically means that
+there are too many messages coming at us from too many platforms.</p>
+<p>Unfortunately, it's beyond the scope of this lecture to address strategies for
+managing communication from across multiple platforms, but since email reigns
+supreme as a form of communication across industry, it's important to learn
+some strategies for managing our emails and avoiding inboxes with hundreds or
+thousands of unread email.</p>
+<a class="header" href="1-email-management.html#strategies" id="strategies"><h2>Strategies</h2></a>
+<p>The first set of readings listed above focus on overall strategies for managing
+our email inboxes. The readings suggest a number of strategies, but the two
+main strategies focus on 1) <strong>organizing our email</strong> and 2) <strong>searching for
+email</strong>. Some of the specific suggestions they make to implement those
+strategies will depend upon whether we use email in the web browser, via a
+desktop application, or a phone app. Thus it may take some exploration to
+figure out how to apply these lessons based on what you use.</p>
+<a class="header" href="1-email-management.html#organization" id="organization"><h3>Organization</h3></a>
+<p>Each email service we use (e.g., Outlook, Gmail, etc.) offers similar but also
+different ways to organize our email. Here are some ways to organize your
+emails:</p>
+<ol>
+<li>
+<p>Create folders (Outlook) or labels (Gmail), and then archive or group your
+email.</p>
+</li>
+<li>
+<p>Create rules to filter your email to specific folders or label your emails
+with specific labels.</p>
+<p>For example, I have several folders in Outlook. I have a folder titled
+'university email' and a rule that sends all email from UK officials and UK
+mailings lists to that account. I have another folder titled 'Canvas
+email', where all email from my courses are routed to. And so on. Most of
+these emails are not time-sensitive (e.g., mailing list email) or it's
+simply helpful to group email by category (e.g., Canvas student email), and
+using them, therefore, helps keep email organized. As a student, you might
+want to create folders for specific courses, specific majors/minors,
+administrative functions (registration related emails, for example) and
+like.</p>
+<p>Gmail doesn't use the terms <strong>rules</strong> or <strong>folders</strong>, per say, but instead
+uses the concept of <strong>filters</strong> and <strong>labels</strong>. Gmail will automatically
+assign labels to your email, but you can apply more personalized labels.
+And then you can set up filters that automatically assigns labels that
+match the logic you set up with the filters.</p>
+</li>
+</ol>
+<a class="header" href="1-email-management.html#searching" id="searching"><h3>Searching</h3></a>
+<p>All email services provide some kind of search, even if implemented in
+different ways. And like regular search engines, Outlook and Gmail both offer
+advanced searching abilities.</p>
+<p>In Outlook, you can search:</p>
+<ul>
+<li>in specific folders</li>
+<li>by who an email is <strong>From</strong></li>
+<li>by who you sent an <strong>To</strong></li>
+<li>by a <strong>CC</strong> (carbon cop) address or person</li>
+<li>by <strong>Subject</strong> line</li>
+<li>by <strong>Keywords</strong> (that may appear in the email message),</li>
+<li>within specific dates,</li>
+<li>and you can limit results to specific dates</li>
+</ul>
+<p>In Gmail, you can do most of same kinds of things, but you can also:</p>
+<ul>
+<li>search by email size</li>
+<li>and exclude emails that do not include certain terms</li>
+</ul>
+<p>Searches are very similar to filters, and in fact, in both Outlook and Gmail,
+you can save a search as a filter if you find that your search query can be
+re-used.</p>
+<p>Searching not only helps you find specific emails on specific topics and within
+specific time frames, it's also a good way to mass delete old and unnecessary
+email.</p>
+<a class="header" href="1-email-management.html#other-strategies" id="other-strategies"><h3>Other Strategies</h3></a>
+<p>Both the <em>PC Mag</em> and <em>The Washington Post</em> articles suggest that <strong>we turn off
+notifications</strong>. The point is that if we receive a lot of emails, then email
+itself becomes too distracting. Instead, <em>The Washington Post</em> suggests that we
+simply <strong>check our email only a few times per day</strong> (but probably at most twice
+a day is sufficient). The aim here is to be intentional about using email (and
+this applies to any other communication technology) rather than mindless and
+distracted by it.</p>
+<p><em>The Washington Post</em> article also suggests applying <strong>the four Ds</strong> to your
+emails: &quot;<strong>do, delete, delegate or defer</strong>. It's up to you how to implement
+these ideas, but the main goal is to get rid of unnecessary email fast. Don't
+let it accumulate. The more emails that sit in our inbox, the more overwhelming
+it becomes afterward. In fact, <strong>unsubscribe</strong> to everything that is not
+important.</p>
+<p>Another good idea is to keep personal and work email separate. In fact, have
+more than one personal email account. Use one personal as a throwaway account
+for signing up to random websites. Use your main personal account for personal
+communication, banking, important social media accounts, and like. Use your
+work account or your school account for work or school related tasks only. Be
+mindful that your work or school account does not belong to you and that you
+will lose that account when you leave a job or graduate from school. In fact,
+the University of Kentucky has a <a href="https://uknow.uky.edu/student-and-academic-life/graduating-what-do-your-uk-accounts-and-mail-you-go">help page about your various UK
+accounts</a> that you should read now.</p>
+<p>As your lives become increasingly busy, in they're not already, using good
+Calendar and Task apps can help keep our days organized and our to-do lists
+manageable. Both Outlook and Gmail integrate <strong>Tasks</strong> and <strong>Calendars</strong>. The
+readings above link to help pages on how to use these functions. These are
+super time-saving functions for me.</p>
+<a class="header" href="1-email-management.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>In addition to managing our personal knowledge, one of the main points of this
+class is to become adept at using the various technologies that are available
+to us. If we're only passive users of technology, then that technology can
+easily overwhelm us. Active and intentional use of technology and of the
+specific functions that services provide can actually help improve our lives
+and our personal knowledge management work flows.</p>
+<p>In this lesson, we learned how to think strategically about email services. The
+two main strategies involve how to:</p>
+<ul>
+<li>organize our email, and how to</li>
+<li>search our email.</li>
+</ul>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="0-intro-to-pkm.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="2-backup.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="0-intro-to-pkm.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="2-backup.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

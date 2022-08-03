@@ -1,5 +1,20 @@
 # Evaluating Information Sources
 
+## Readings
+
+Read this short introduction on **reading laterally** as 
+a way to evaluate information, and
+watch the short video.
+
+- Newell, C. (n.d.). Jessup Playbooks: How do I read laterally?: Home.
+  Retrieved August 3, 2022, from
+  https://libguides.pvcc.edu/lateral_reading/home
+- Stanford History Education Group (Director). (2020, January 16). Sort Fact
+  from Fiction Online with Lateral Reading.
+  https://www.youtube.com/watch?v=SHNprb2hgzU
+
+## Introduction
+
 When we're doing research or trying to learn something,
 we obviously want to gather content that is true.
 And so the key question is,

@@ -1,0 +1,533 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Information Retrieval - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html" class="active"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="5-web-information-retrieval.html#web-information-retrieval" id="web-information-retrieval"><h1>Web Information Retrieval</h1></a>
+<a class="header" href="5-web-information-retrieval.html#readings" id="readings"><h2>Readings</h2></a>
+<p>Please visit links in this section and
+review the following search tips pages for Google Search,
+DuckDuckGo search, and Bing search.</p>
+<ul>
+<li>Refine web searches—Google Search Help. (n.d.). Retrieved August 3, 2022,
+from https://support.google.com/websearch/answer/2466433?hl=en</li>
+<li>DuckDuckGo. (n.d.). DuckDuckGo Search Syntax. DuckDuckGo Help Pages.
+Retrieved August 3, 2022, from
+https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/</li>
+<li>Advanced search options. (n.d.). Retrieved August 3, 2022, from
+https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930</li>
+</ul>
+<a class="header" href="5-web-information-retrieval.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>Whether we want to search the web,
+a bibliographic database,
+or our Zotero (or like RM) library,
+it's helpful to know a bit how
+information retrieval works in
+order to become good at search.</p>
+<p>In this lesson, we'll cover specific techniques
+that you can use to get better at search,
+but there are three ideas that we
+need to consider when advancing our skills with search.</p>
+<p>First, we should understand that the
+basic information retrieval model centers on <strong>documents</strong>.
+Anything indexed in a database or on the web is treated as a document.
+Documents include text, sound, images, video, etc.</p>
+<p>Second, we should understand that documents
+do not exist independently of other documents.
+Let's call this the <strong>corpus</strong>.
+For the web, the <strong>corpus</strong> is organized
+like a <strong>file system</strong>,
+much like the file system on your personal computers, and
+in a bibliographic database,
+the <strong>corpus</strong> is organized by predefined fields, such
+author names, titles, subject terms, etc.</p>
+<p>Third, our queries are not divorced from the <strong>documents</strong>
+nor the <strong>corpus</strong>.
+That is, each time we search,
+search engines and databases compare
+<strong>documents</strong> in the <strong>corpus</strong>
+to each other based on our <strong>query constructions</strong>,
+and then rank order (in some way) those documents
+by way of that comparison.
+Hence, when we <strong>construct queries</strong>,
+it's useful to think about the content (corpus)
+that we are searching.</p>
+<p>To rehash, a search engine or database uses our queries,
+matches them against how they have indexed the corpus,
+and then rank orders the results based
+on the query and the corpus.</p>
+<p>In order to illustrate the above concepts,
+I'll primarily focus on searching the web, but
+these techniques work across the databases
+that we use in a library.</p>
+<a class="header" href="5-web-information-retrieval.html#the-web-is-for-storing-and-retrieving-documents" id="the-web-is-for-storing-and-retrieving-documents"><h2>The web is for storing and retrieving documents</h2></a>
+<p>When we use Google or another search engine to search,
+we are often looking for documents in a corpus that
+contain specific text that match our query.
+This has some implications:</p>
+<ul>
+<li><em>Text</em> has primacy, even for multimedia, which is often described using text.</li>
+<li>Our queries are matched against the text that appears in documents on the web
+or that describes documents on the web.</li>
+<li>The better our queries match the documents, the better (or more precise) our
+search results will be. (This assumes we can construct good queries.)</li>
+<li>The more ambiguous our queries are, the more work the search engine has to do
+to find relevant results.</li>
+<li>The challenge with search is that we do not always know what text a document
+contains even if that document covers the topic or concept that we think is
+relevant.</li>
+<li>For example, consider <em>synonyms</em>. We might want web pages that contain terms
+that are synonymous with our query term but do not actually contain our query
+term. But this can get complicated. If I search for <code>star</code>, could I also
+mean <code>principal, lead, hero, celebrity, stellar</code>, or <code>sun</code>?</li>
+<li>What if a document only uses terms like <code>principal, lead, hero, celebrity, stellar</code>, or the <code>sun</code>? Might it still be useful if I was interested in
+documents (i.e., web pages) about <code>star</code>? Probably not since some of those
+words, although synonymous with <strong>star</strong>, are not synonymous with each other
+(cf, <strong>principal</strong> and <strong>celebrity</strong>)</li>
+<li>Other <em>wordy</em> issues include things like <em>homonyms</em>, which are words that are
+pronounced or spelled the same but mean different things. Thus, by <code>bark</code>, do
+I mean the bark on a tree or the word we use to signal the sound a dog makes?</li>
+<li>Phrases are also important, with respect to term adjacency and word order. If
+I search for <code>forest fire</code>, search engines are more likely to return results
+where those two terms appear next to each other and in that order. This will
+mean that documents that contain text about someone having a <code>camp fire in a forest</code> will be less likely to appear at the top of my results than a
+document that contains the phrase <code>the forest is on fire</code>. Or documents
+where the terms are or in order but spaced far apart will also rank lower.
+E.g., if the term <strong>forest</strong> appears in the first paragraph on a web page and
+the term <strong>fire</strong> appears on the last paragraph of a web page, this web page
+will rank lower than a page that contains the terms near or adjacent to each
+other.</li>
+</ul>
+<a class="header" href="5-web-information-retrieval.html#the-web-is-organized" id="the-web-is-organized"><h2>The web is organized</h2></a>
+<p>I mentioned above that the web
+is like a file system,
+the kind that you'd find on your own computer.
+By this I mean that the web is organized,
+even though it may not appear so.
+But if we know a bit about its organization,
+we can take good advantage of that when we search
+by narrowing our searches to just parts of the web.
+So the question is, how is it organized?</p>
+<ul>
+<li>The web is organized like a tree. This tree like structure originally
+contained just a few main branches, called <strong>top level domains</strong>, such as:
+.com, .edu, .org, .gov, .mil, and .net. All domains then branched off of
+those main branches.</li>
+<li>The tree has grown over the years and now contains about 1500 of these main
+branches, or top level domains. Examples include .apple, .attorney, .camera,
+.green, .joy .mobile, .office, .science, .space, and <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">many more</a>.</li>
+<li>Included in those are <strong>ccTLD</strong>s, or country code top level domains. For
+example:
+<ul>
+<li><strong>.kr</strong> for South Korea</li>
+<li><strong>.ae</strong> for the United Arab Emirates</li>
+<li><strong>.fr</strong> for France</li>
+<li><strong>.us</strong> for United States</li>
+</ul>
+</li>
+<li>Each of the big branches contains smaller branches, called second level
+domains. For example:
+<ul>
+<li>Under .com is <strong>google</strong> for <strong>google.com</strong></li>
+<li>Under .edu is <strong>uky</strong> for <strong>uky.edu</strong>.</li>
+<li>Under .org is <strong>wikipedia</strong> for <strong>wikipedia.org</strong>,</li>
+<li>Under .gov is <strong>usa</strong> for <strong>usa.gov</strong>,</li>
+<li>Under .apple is <strong>newsroom</strong> for <strong>newsroom.apple</strong>,</li>
+<li>and so on.</li>
+</ul>
+</li>
+<li>Those branches (second level domains) contain even smaller branches that are
+called third level domains. Examples include:
+<ul>
+<li><strong>maps</strong>.google.com</li>
+<li><strong>calendar</strong>.uky.edu</li>
+<li><strong>en</strong>.wikipedia.org</li>
+<li><strong>analytics</strong>.usa.gov</li>
+<li><strong>www</strong>.uky.edu</li>
+<li><strong>ci</strong>.uky.edu</li>
+</ul>
+</li>
+</ul>
+<p>We can take advantage of this organization
+by limiting (or focusing) queries to results
+within smaller sections of the web. In Google, this would entail using
+what is called the <code>site:</code> operator.
+We use this in combination with our search queries.
+For example, let's say I do a search for the term <code>flu</code>, and
+I notice that most of the results
+that I'm interested in are from <code>.gov</code> domains,
+and most of the results I am less interested in
+are from <code>.com</code> domains.
+To focus on the gov domains,
+I add the site operator to my query.
+This is the query I could use to search Google:</p>
+<pre><code>flu site:gov
+</code></pre>
+<p>Then perhaps I find these results too general still.
+For example, let's say I live in Kentucky but Google
+is showing me a lot of <strong>.gov</strong> sites from other states.
+We can focus on just a smaller branch of the tree.
+E.g., if I wanted to focus only on results for Kentucky, then:</p>
+<pre><code>flu site:ky.gov
+</code></pre>
+<p>Or I can specify a part of Kentucky's government, like
+the <em>Cabinet for Health and Family Services</em> or
+the <em>Kentucky Department of Education</em>.
+Then I could try these queries:</p>
+<pre><code>flu site:chfs.ky.gov
+flu site:education.ky.gov
+</code></pre>
+<figure>
+<img src="images/5-image-1.png"
+width="600" height="500"
+alt="The organization of the web by top level domains"
+title="The organization of the web by top level domains">
+<figcaption>Fig. 1: The Organization of the Web by Top Level Domains</figcaption>
+</figure>
+<a class="header" href="5-web-information-retrieval.html#constructing-queries-for-precise-results" id="constructing-queries-for-precise-results"><h2>Constructing queries for precise results</h2></a>
+<p>There are all sorts of other tips and tricks
+we can apply to revise and make our queries more precise.</p>
+<p><strong>Use quotes around our search terms:</strong></p>
+<p>With a search like <code>flu site:gov</code>,
+Google provided us with snippets of text
+that highlighted where the term <strong>flu</strong> appears
+in the web pages that are retrieved.
+For example, we see terms like these in the search results:</p>
+<ul>
+<li><em>flu symptoms</em></li>
+<li><em>flu activity</em>,</li>
+<li><em>flu vaccines</em>, and</li>
+<li><em>flu season</em>.</li>
+</ul>
+<figure>
+<img src="images/5-image-2.png"
+width="600" height="500"
+alt="Google result snippets"
+title="Google result snippets">
+<figcaption>Fig. 2: Google result snippets</figcaption>
+</figure>
+<p>This tells us important information
+about how Google sees the text on web pages,
+and we can use this information to revise our search.
+For example, let's say that I'm interested in web pages
+that contain info about <em>flu vaccines</em> and
+less interested in pages that contain information on
+<em>flu activity</em> or <em>flu season</em>.
+If that's the case, then I can add the additional term
+to my query and enclose the whole query in quotation marks.
+That will force Google to rank pages
+with the literal term <em>&quot;flu vaccines&quot;</em>
+much higher than pages with those other terms or phrases,
+or exclude those other pages altogether.
+So our query will now look like this
+(note: only the query terms,
+and not the <em>site</em> operator, are quoted):</p>
+<pre><code>&quot;flu vaccines&quot; site:gov
+</code></pre>
+<p><strong>Get more recent pages:</strong></p>
+<p>If I'm really interested only in recent pages,
+I can click on the <strong>Tools</strong> button and select
+<strong>Any time</strong>, Past hour, Past 24 hours, Past week, or etc,
+to limit results to certain time frames.</p>
+<p><strong>Exclude results with the minus sign:</strong></p>
+<p>Let's take a look at our flu vaccine search.
+Instead of enclosing <code>&quot;flu vaccines&quot;</code> in quotes
+to return only pages with that phrase and
+to reduce pages retrieved with other phrases,
+I could exclude the other phrases altogether
+(i.e., <strong>activity</strong> and <strong>season</strong>)
+by excluding them with a minus sign.
+To exclude the terms <strong>season</strong> and <strong>activity</strong>
+from our search results,
+this is how our search would look:</p>
+<pre><code>flu -season -activity site:gov
+</code></pre>
+<p>I can also exclude specific domains or specific websites:</p>
+<pre><code>flu vaccines -site:com
+flu vaccines -site:webmd.com
+</code></pre>
+<p><strong>Term order matters</strong>:</p>
+<p>Results will be different depending
+on the order of the query terms.
+Google has gotten good over the years about natural language
+(how we talk in real life),
+and so the suggestion is to use natural language in your query.
+For example, it's generally better to use
+the search terms <strong>flu vaccine</strong> instead of <strong>vaccine flu</strong>,
+since this is how we'd phrase the terms in English.
+This will of course vary by language.
+In many Romance languages, but also others,
+it's common (but varies) for the modifier
+to come after the word being modified.
+For example, in Spanish, we would say <strong>shirt red</strong>:</p>
+<pre><code>camisa roja
+</code></pre>
+<p>Thus, a Spanish speaker from Mexico
+would want to search for <code>camisa roja</code> and not
+<code>roja comisa</code> on Google.com's default landing
+page for those residing in Mexico:</p>
+<p><a href="https://www.google.com.mx/">Google Search - Mexico</a></p>
+<p>However, we can pair some terms together and
+not change the meaning of the query, but
+how we pair them might change the results retrieved,
+especially as you page through the results list.
+For example, consider the following two searches:</p>
+<pre><code>google bing
+</code></pre>
+<p>Or:</p>
+<pre><code>bing google
+</code></pre>
+<p>The above two search queries are semantically equivalent
+(they mean the same thing), but
+search engines implicitly place a priority on term order.
+The first term in the query is prioritized over the second term.
+So if you search Google using the above two queries,
+the first page of results might be mostly the same, but
+as you page through them, you might see more pages on Google
+than on Bing, for the first search,
+and vice versa for the second search.</p>
+<p><strong>One OR the other OR both:</strong></p>
+<p>When we search using multiple terms,
+we can use the <code>OR</code> operator to tell Google to return pages
+with either of the terms or both of the terms.
+Consider the following two searches:</p>
+<pre><code>&quot;google&quot; &quot;bing&quot;
+google OR bing
+</code></pre>
+<p>The first search will return pages with both
+the terms included in the results.
+The second search will return pages with
+either the term <strong>google</strong> in the results,
+the term <strong>bing</strong> in the results,
+or both the terms in the results.
+Note also, based on my personal experience,
+that if I test the second search in
+Google Search and in Bing Search, then
+Google will return more results about Google,
+and Bing will return more results about Bing.</p>
+<p><strong>Other operators:</strong></p>
+<p>There are other operators we can use in search engines, and
+many of them work regardless of which search engine we use.
+Here are some examples:</p>
+<ul>
+<li><code>:related</code> to find related sites
+<ul>
+<li><code>related:twitter.com</code></li>
+<li><code>related:instagram.com</code></li>
+<li><code>related:whitehouse.gov</code></li>
+<li><code>related:google.com</code></li>
+</ul>
+</li>
+<li><code>:filetype</code> to find to return results in specific types of files:
+<ul>
+<li>search <strong>uky.edu</strong> for the term <em>flu vaccine</em> but only retrieve <strong>PDFs</strong>:
+<ul>
+<li><code>flu vaccines filetype:pdf site:uky.edu</code></li>
+</ul>
+</li>
+<li>same as above but only return Microsoft Word files:
+<ul>
+<li><code>flu vaccines filetype:docx site:uky.edu</code></li>
+</ul>
+</li>
+<li>same idea as above but only return Microsoft Excel files:
+<ul>
+<li><code>birth weight filetype:xlsx site:gov</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="5-web-information-retrieval.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<ul>
+<li>documents on the web
+<ul>
+<li>consider the text</li>
+</ul>
+</li>
+<li>web organization
+<ul>
+<li>take advantage of the how the web is structured with <em>site</em> searches</li>
+</ul>
+</li>
+<li>query construction
+<ul>
+<li>use quotes</li>
+<li>exclude terms with the minus sign</li>
+<li>term order matters</li>
+<li>use OR to select alternate terms</li>
+</ul>
+</li>
+<li>if you forget anything, use advanced search:
+<a href="https://www.google.com/advanced_search">https://www.google.com/advanced_search</a></li>
+<li>Or Advanced Image Search:
+<a href="https://google.com/advanced_image_search">https://google.com/advanced_image_search</a></li>
+<li>Google provides a <a href="https://support.google.com/websearch/answer/2466433?hl=en">list of some of these operators</a>.</li>
+<li>Other search engines also have search operators, and often they're the same:
+<ul>
+<li><a href="https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a></li>
+<li><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Bing</a></li>
+</ul>
+</li>
+</ul>
+<a class="header" href="5-web-information-retrieval.html#ps" id="ps"><h2>P.S.</h2></a>
+<p>Final tip: You can get very advanced:</p>
+<pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov)
+</code></pre>
+<p>Or, limit to specific filetypes:</p>
+<pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov) filteype:pdf
+</code></pre>
+<p>The last search decomposes into the following
+separate queries but searches them all at the same time:</p>
+<ol>
+<li><code>trade surplus site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus site:congress.gov filetype:pdf</code></li>
+<li><code>trade deficit site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade deficit site:congress.gov filetype:pdf</code></li>
+<li><code>trade surplus site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:congress.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+</ol>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="4-reference-management-part-1.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="6-database-information-retrieval.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="4-reference-management-part-1.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="6-database-information-retrieval.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

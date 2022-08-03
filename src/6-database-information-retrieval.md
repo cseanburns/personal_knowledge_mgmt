@@ -1,5 +1,7 @@
 # Database Information Retrieval
 
+## Introduction
+
 I introduced the concept of databases in 
 [section 3](3-information-sources-resources.html).
 Databases, or sometimes bibliographic databases,

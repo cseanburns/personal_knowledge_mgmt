@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Back Up Your Work - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html" class="active"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="2-backup.html#back-up-your-work" id="back-up-your-work"><h1>Back Up Your Work</h1></a>
+<a class="header" href="2-backup.html#readings" id="readings"><h2>Readings</h2></a>
+<ul>
+<li>Velazco, C. (2022). Help desk quick fix: How to back up your phone before you
+lose it. <em>The Washington Post</em>. Retrieved from <a href="https://www.washingtonpost.com/technology/2022/04/11/help-desk-quick-fix/">Washington Post</a></li>
+<li>Back up your Mac. Apple. Retrieved from <a href="https://support.apple.com/mac-backup">Apple</a></li>
+<li>Backup and Restore in Windows. Retrieved from <a href="https://support.microsoft.com/en-us/windows/back-up-and-restore-your-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c">Microsoft</a></li>
+</ul>
+<a class="header" href="2-backup.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>Many of us nowadays have multiple devices, like laptops and smartphones, and
+obviously, as we use those devices, those devices become filled with important
+files, settings, texts, and so forth that we probably don't want to lose. As a
+result, it's a good idea to back up these devices to help insure that we can
+restore our data if something happens to the device.</p>
+<p>Unfortunately, methods to back up our data vary depending on the smartphone
+maker (Android, iPhone, etc) and laptop/desktop (Windows, Apple). We also have
+a variety of storage options, and the two biggest options are the cloud, like
+iCloud, Dropbox, Google Drive, and extra storage devices, like external hard
+drives or large data capacity USB drive.</p>
+<p>In this lecture, I cover how to back up your phones and laptops/desktops for
+long term storage.</p>
+<a class="header" href="2-backup.html#smartphones" id="smartphones"><h2>Smartphones</h2></a>
+<p>A good backup strategy to follow is to first backup your phone, either to the
+cloud or to your computer, and then back up your computer. This is because we
+sometimes will want to use our computers as backups for our phones.</p>
+<p>To get started, <em>The Washington Post</em> <a href="https://www.washingtonpost.com/technology/2022/04/11/help-desk-quick-fix/">has a couple of helpful</a>
+videos on how to back up your iPhone or Android smartphones.</p>
+<a class="header" href="2-backup.html#macs" id="macs"><h2>Macs</h2></a>
+<p>For instructions on backing up your Mac,
+you should follow <a href="https://support.apple.com/mac-backup">Apple's instructions</a>,
+which shows you how to back up your device using Time Machine or iCloud.
+The instructions also show you how to restore your Mac from a backup, how to
+check your storage capacity, how to free up storage, and more.</p>
+<p>If you select to backup with Time Machine, you can select a backup disk, like
+an external hard drive or large data capacity USB drive.</p>
+<a class="header" href="2-backup.html#windows" id="windows"><h2>Windows</h2></a>
+<p>For instructions on backing up your Windows computer, you should likewise start
+with <a href="https://support.microsoft.com/en-us/windows/back-up-and-restore-your-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c">Microsoft's instructions</a>. The instructions at the prior
+link show how to backup for either Windows 10 or Windows 11. As with Macs, if
+you can elect to backup your files using an external disk or a cloud solution.
+Microsoft's instructions also cover how to restore your data if necessary.</p>
+<a class="header" href="2-backup.html#external-drives" id="external-drives"><h2>External Drives</h2></a>
+<p>External hard drives are a great solution for backing up your system.
+Today's drives are relatively inexpensive.
+A 2TB external hard drive may cost as little as $60.
+The advantage of using an external hard drive is that you pay
+a one-time cost (the cost of the drive).</p>
+<p>External hard drives require some setup
+because different operating systems use different file system formats.
+If you are using a macOS computer,
+you will want to format your drive using <a href="https://support.apple.com/guide/disk-utility/erase-and-reformat-a-storage-device-dskutl14079/mac">Disk Utility</a>.
+macOS uses the <a href="https://support.apple.com/guide/disk-utility/file-system-formats-dsku19ed921c/21.0/mac/12.0">Apple File System (APFS)</a> by default.
+If you are using a Windows computer,
+you can use <a href="https://www.hellotech.com/guide/for/how-to-format-a-hard-drive-windows-10">File Explorer</a>, and
+you will most likely want to format your drive
+using the <a href="https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview">New Technology File System (NTFS)</a>,
+However, if you want to be able to access your external
+drive from an Apple computer,
+you should format the drive using the <strong>exFAT</strong> file system.</p>
+<a class="header" href="2-backup.html#encrypting-external-drives" id="encrypting-external-drives"><h3>Encrypting External Drives</h3></a>
+<p>One of the disadvantages of an external hard drive
+is that because it's portable,
+it can be lost or misplaced.
+Therefore, when you begin to format your disk,
+you may want to set up encryption so that
+the drive is protected from other people.</p>
+<p>You setup encryption on macOS when you format the drive.
+Apple provides instructions on its page on
+<a href="https://support.apple.com/guide/disk-utility/encrypt-protect-a-storage-device-password-dskutl35612/mac">Encrypt and protect a storage device</a>
+with a password using Disk Utility on Mac.
+Microsoft also provides instructions for encrypting
+on <a href="https://support.microsoft.com/en-us/windows/turn-on-device-encryption-0c453637-bc88-5f74-5105-741561aae838#ID0EBD=Windows_11">Windows 10/11</a>.
+Be sure to use a strong password, and
+be sure to keep that password safe.
+Also, be aware that if you lose the password, or forget it,
+then you lose access to the drive.</p>
+<p>It's usually a good idea to keep your external drive
+in a separate location from the device that you're backing up.
+This is in case your main device gets stolen
+or is destroyed by fire, flooding, etc.
+However, the downside is that this makes it less likely that
+you backup regularly, and
+<strong>it's important to keep regular backups of your data</strong>.
+Therefore, one option is to purchase a smaller drive
+that you use to backup the most sensitive data
+(e.g., medical information, financial information, etc)
+and store that off-site and encrypted,
+and use an additional drive that you keep on hand (and encrypted)
+for daily or regular backups.</p>
+<a class="header" href="2-backup.html#cloud-solutions" id="cloud-solutions"><h2>Cloud Solutions</h2></a>
+<p>An additional backup option is to use a cloud solution.
+For macOS users, you can use iCloud to back up the files
+on all of your devices, as described above.</p>
+<p>Some of the big name options include:</p>
+<ul>
+<li><a href="https://help.dropbox.com/installs-integrations/desktop/how-to-use-dropbox-backup">Dropbox</a></li>
+<li><a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/pc-cloud-backup">OneDrive</a></li>
+<li><a href="https://www.google.com/drive/download/">Google Drive</a></li>
+</ul>
+<p>There are also less well-known but seemingly respected backup solutions,
+like <a href="https://www.backblaze.com/cloud-backup.html">Backblaze</a> and <a href="https://www.idrive.com/">iDrive</a>.
+<a href="https://www.tomsguide.com/best-picks/best-cloud-backup">Tom's Guide</a> has reviews those and others.</p>
+<p>The main advantage of a cloud solution is that
+you can set it and forget it.
+The main disadvantage is that the amount of data
+you may want to backup may require paying a monthly fee.</p>
+<p>When choosing a cloud backup solution,
+you may want to consider if the service meets
+the following criteria:</p>
+<ul>
+<li>storage size options</li>
+<li>cost</li>
+<li>disk recovery options</li>
+<li>backup and syncing speeds</li>
+<li>web access</li>
+<li>ease of use</li>
+<li>multiple devices (smartphones and/or laptops/desktops)</li>
+<li>security</li>
+<li>version history</li>
+</ul>
+<a class="header" href="2-backup.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>All storage devices fail eventually,
+or may get damaged, lost, stolen, etc.,
+and it really hurts to lose important files,
+like photos of loved ones or homework and projects, etc.
+Backing up your devices is how we prevent or reduce losing that data.</p>
+<p>In this section, we covered various methods to backup your data.
+Unfortunately, every solution requires some cost, and
+so you have to weigh that cost with your sense of risk
+and with what you might lose if you don't backup.</p>
+<p>Note that if you are really risk averse,
+an additional option is to use both
+external storage devices and cloud solutions.
+You can backup your entire disk using a cloud solution,
+or just select folders,
+and then backup your entire disk with an external drive.</p>
+<p>Whatever option you choose,
+be sure to back up regularly.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="1-email-management.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="3-information-sources-resources.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="1-email-management.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="3-information-sources-resources.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

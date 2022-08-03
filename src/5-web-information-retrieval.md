@@ -1,5 +1,19 @@
 # Web Information Retrieval
 
+## Readings
+
+Please visit links in this section and
+review the following search tips pages for Google Search,
+DuckDuckGo search, and Bing search.
+
+- Refine web searches—Google Search Help. (n.d.). Retrieved August 3, 2022,
+  from https://support.google.com/websearch/answer/2466433?hl=en
+- DuckDuckGo. (n.d.). DuckDuckGo Search Syntax. DuckDuckGo Help Pages.
+  Retrieved August 3, 2022, from
+  https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/
+- Advanced search options. (n.d.). Retrieved August 3, 2022, from
+  https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930
+
 ## Introduction
 
 Whether we want to search the web,

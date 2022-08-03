@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Sources: Part 1 - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html" class="active"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="11-web-sources-part-1.html#web-sources-part-1" id="web-sources-part-1"><h1>Web Sources: Part 1</h1></a>
+<p>Many of us spend most of our time on the web
+visiting a handful of sites.
+These sites vary by country, but in the U.S.,
+we spend much of our time on Google, YouTube,
+Facebook, Twitter, Instagram, Netflix, TikTok,
+Wikipedia, and a few others.</p>
+<p>That's fine, of course, but
+the web is composed of billions of web pages,
+and many are worth knowing and exploring.</p>
+<p>We also spend most of our time on a variety of domains.
+This includes sites ending with <strong>.com, .org, .edu</strong>, etc.
+But remember that you've already learned how to search the web,
+and if you're interested in learning more about what's out there,
+I encourage you to add a <code>:site</code> operator to your web queries
+if you want to vary things up every once in a while.
+Remember that there about <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">1,500 top level domains</a>,
+and it can be fun to add random ones to your searches:</p>
+<pre><code>asthma site:health
+(linux or windows or macos) site:computer
+</code></pre>
+<p>That said, in this and the next section I want to cover a
+few specific sites that are great information resources.</p>
+<a class="header" href="11-web-sources-part-1.html#internet-archive" id="internet-archive"><h2>Internet Archive</h2></a>
+<p>The <a href="https://archive.org">Internet Archive</a> is a &quot;non-profit library
+of millions of free books, movies, software, music,
+websites, and more.&quot;</p>
+<p>For example, you might be interested in playing
+some old PC games that your parents played
+when they were younger:</p>
+<p><a href="https://archive.org/details/classicpcgames?and%5B%5D=subject%3A%22DOS+games%22">Classic PC Games</a></p>
+<p>The Archive also provides the <a href="https://web.archive.org/web/">Wayback Machine</a>.
+The Wayback Machine is an archive of the web from its early days.
+It's fun, for example, to use it to see what the web
+looked like years ago.
+For example, this is likely UK's first web page and
+was captured by the Wayback Machine in 1997:</p>
+<p><a href="https://web.archive.org/web/19970406042950/http://www.uky.edu/">http://www.uky.edu/ (1997)</a></p>
+<p>But the Wayback Machine is also useful to retrieve
+web pages and sites that have been shutdown or removed.
+That is, if you have a broken URL,
+you can enter the URL in the Wayback Machine and
+see if the original page was archived.</p>
+<p>The Internet Archive is also a library, and as such,
+offers collections on a vast range of topics and links
+to all sorts of media,
+including text, audio, video, and images.</p>
+<p>You can view its main collections on the
+home page of the Internet Archive.
+You can also search.
+I've found, for instance, scanned yearbooks from my college.</p>
+<p>The Internet Archive also oversees <a href="https://openlibrary.org/">The Open Library</a>.
+You can use the Open Library to check out and read books for free,
+just like you would use a physical library.</p>
+<a class="header" href="11-web-sources-part-1.html#dpla" id="dpla"><h2>DPLA</h2></a>
+<p>The <a href="https://dp.la">DPLA</a> (Digital Public Library of America)
+is a shared repository of content
+that brings together digital and digitized sources
+from libraries, museums, and archives across the U.S.</p>
+<p>The DPLA is great for browsing, but they also
+<a href="https://dp.la/guides">provide guides for those interested in using the DPLA</a>
+for Education, Family Research, Lifelong Learning, and
+Scholarly Research.</p>
+<p>Like a library, museum, or archive,
+the DPLA offers:</p>
+<ul>
+<li>featured <a href="https://dp.la/exhibitions">exhibitions</a></li>
+<li><a href="https://dp.la/primary-source-sets">primary source sets</a></li>
+<li>the ability to <a href="https://dp.la/browse-by-topic">browse by topic</a></li>
+<li>the ability to <a href="https://dp.la/browse-by-partner">browser by contributor</a></li>
+<li>and more.</li>
+</ul>
+<a class="header" href="11-web-sources-part-1.html#library-of-congress" id="library-of-congress"><h2>Library of Congress</h2></a>
+<p>The <a href="https://www.loc.gov/rr/program/bib/index.html">Library of Congress'</a> has a list of
+bibliographies, research guides, and finding aids
+on a vast range of topics.
+Many of the links in this list go directly to
+digital libraries that focus on specific topics or areas.
+For example, check out this fun collection of resources
+on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
+<p>The Library of Congress also provides access to
+<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
+<strong>American History</strong>, <strong>War &amp; Military</strong>,
+<strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>,
+<strong>Science &amp; Technology</strong>, and more.</p>
+<a class="header" href="11-web-sources-part-1.html#various-government-resources" id="various-government-resources"><h2>Various Government Resources</h2></a>
+<a class="header" href="11-web-sources-part-1.html#us-census" id="us-census"><h3>U.S. Census</h3></a>
+<p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best
+way to get various demographic and some economic
+information about the U.S.
+You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a>
+about your local area.
+You can, for example, also compare demographics by location.
+Here's a
+<a href="https://www.census.gov/quickfacts/fact/table/cincinnaticityohio,lexingtonfayetteurbancountykentucky,US/PST045221">population comparison between Lexington, KY and Cincinnati, OH</a>.</p>
+<a class="header" href="11-web-sources-part-1.html#nasa" id="nasa"><h3>NASA</h3></a>
+<p>[NASA's][nasa] website offers tons of sources on all
+of its major projects.
+From its homepage,
+you can download apps, audio &amp; ringtones,
+e-books, and podcasts.
+The site also provides information on various missions,
+like the recent <a href="https://www.nasa.gov/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
+as well as exciting <a href="https://www.nasa.gov/multimedia/imagegallery/index.html">image</a> and
+<a href="https://www.nasa.gov/multimedia/videogallery/index.html">video</a> galleries.</p>
+<a class="header" href="11-web-sources-part-1.html#us-bureau-of-labor-statistics" id="us-bureau-of-labor-statistics"><h3>U.S. Bureau of Labor Statistics</h3></a>
+<p>The <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics (BLS)</a> is the
+go to site for job and economic information.
+The site takes some exploration to learn all of what it offers,
+but I can provide two examples.</p>
+<p>The Data Tools dropbox box provides employment change
+data for various sectors of the U.S.
+As of <a href="https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm">June 2022</a>, we see that manufacturing jobs
+in the U.S. increased by an estimated 29,000,
+government jobs decreased by an estimated 9,000, and
+overall non-farm jobs increased by 372,000.</p>
+<p>The <a href="https://www.bls.gov/data/inflation_calculator.htm">CPI Inflation Calculator</a> shows how the value
+of the dollar has changed over time.
+For example, I can see that $1.00 in June of 2021
+has the same buying power as $1.09 in June of 2022,
+which shows that, on average, what costs me a $1.09
+in June 2022 cost me a $1.00 the summer prior.</p>
+<p>This calculator is useful in a lot of ways.
+For example, the tuition to attend UK for the
+<a href="http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm">2002-2003 academic year was $1,740 per semester</a>, and for the
+<a href="https://www.uky.edu/financialaid/tuition-and-fees">2022-2023 academic year, it is $6,340</a>.
+The CPI calculator shows that if tuition increased
+at the same rate as inflation,
+then today's tuition cost should only be $2,865.93 per semester
+(from June 2002 to June 2022).
+That means the extra $3,564 spent on tuition today increased
+due to other (complicated) factors.</p>
+<p>You can also see how home prices have changed.
+The house I rent was purchased for $101,650
+during the summer of 2001.
+Today the owners could easily sell for around $250,000
+(estimated by realtor.com).
+But inflation only accounts for a $171,016 price tag.
+Thus the extra $70,000 or so is factor of other market forces.</p>
+<blockquote>
+<p>Property information like this is generally public information.
+Fayette County, the seat of Lexington, KY, provides this information
+at <a href="https://fayettepva.com/">https://fayettepva.com/</a>.
+You can check your local municipality's website for comparable information.
+In fact, many city and county websites make available lots of data.</p>
+</blockquote>
+<a class="header" href="11-web-sources-part-1.html#edgar-us-securities-and-exchange-commission" id="edgar-us-securities-and-exchange-commission"><h3>EDGAR: U.S. Securities and Exchange Commission</h3></a>
+<p><a href="https://www.sec.gov/edgar.shtml">EDGAR</a> is a go to site if you're thinking about investing
+in a public company.
+Of particular interest are the <strong>10-K</strong> and <strong>10-Q</strong> reports.
+The <strong>10-K</strong> report is an annual report that public companies
+are required to submit to the SEC.
+The <strong>10-Q</strong> report is the quarterly version.</p>
+<p>The <strong>10-Q</strong> report:</p>
+<blockquote>
+<p>Provides audited annual financial statements,
+a discussion of material risk factors for the company and its business,
+and a management's discussion and analysis of the company's
+results of operations for the prior fiscal year
+(<a href="https://www.sec.gov/oiea/Article/edgarguide.html">Form Type Description</a>)</p>
+</blockquote>
+<p>The <strong>10-Q</strong> report is unaudited.</p>
+<p>The [EDGAR search page][edgarSearch] is pretty straightforward
+and offers autocomplete as you type.
+My search query in Figure 1 is a search
+for Google's (specifically, Alphabet's) last <strong>10-K</strong> report,
+which was filed on February 2, 2022.</p>
+<figure>
+<img src="images/11-image-1.png"
+alt="EDGAR Search for Alphabet Inc."
+title="EDGAR Search for Alphabet Inc.">
+<figcaption>Fig. 1: EDGAR Search for Alphabet Inc.</figcaption> 
+</figure>
+<p>If you read the report,
+you can see that, for example, more than 80% of Google's
+(or Alphabet, specifically) revenue is based on advertisements, and
+that changes in privacy policies and technologies that protect privacy
+is a concern for them.</p>
+<a class="header" href="11-web-sources-part-1.html#medlineplus" id="medlineplus"><h2>MedlinePlus</h2></a>
+<p>Lastly, I would like to refer you to <a href="https://medlineplus.gov">MedlinePlus</a>,
+which is part of the National Library of Medicine.
+The purpose of this site is to serve as a health and medical reference
+resource for the generaly public.
+Although no online site can take the place of professional medical help,
+MedlinePlus can be an important resource for becoming more
+informed about various health topics.</p>
+<p>Instead of <em>googling</em> that next symptom or condition,
+I highly encourage you to visit MedlinePlus first.
+The site also covers wellness topics and provides recipes
+for a wide range of meals.</p>
+<a class="header" href="11-web-sources-part-1.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>Although it's important to know how to search the web well,
+it's also handy to know about specific go to resources on the
+web that can provide more in-depth information or
+that provide more coverage than most Google etc searches can yield.
+In order to highlight this, in this section I covered a few,
+I think, super interesting and helpful sites that include the:</p>
+<ul>
+<li>Internet Archive</li>
+<li>Open Library</li>
+<li>DPLA</li>
+<li>Library of Congress</li>
+<li>U.S. Census</li>
+<li>NASA</li>
+<li>U.S. Bureau of Labor Statistics</li>
+<li>EDGAR (SEC)</li>
+</ul>
+<p>Be sure to explore these sites, as well as others you find,
+because many of these just don't come up in your everyday
+kind of search.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="10-library-sources-part-2.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="12-web-sources-part-2.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="10-library-sources-part-2.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="12-web-sources-part-2.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

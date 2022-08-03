@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Database Information Retrieval - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html" class="active"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="6-database-information-retrieval.html#database-information-retrieval" id="database-information-retrieval"><h1>Database Information Retrieval</h1></a>
+<a class="header" href="6-database-information-retrieval.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>I introduced the concept of databases in
+<a href="3-information-sources-resources.html">section 3</a>.
+Databases, or sometimes bibliographic databases,
+offer a number of unique advantages over search engines,
+and some disadvantages, too.
+The main advantages are that databases offer
+specialized collections on a variety of topic,
+many sources that are invisible to search engines, and
+greater control over the search process.
+The main disadvantage is that they are a bit complicated to use well,
+there are many databases to choose from (and find),
+each has their own user interface, and
+they are often only accessible via a library.</p>
+<p>Information retrieval (search) in databases works
+similarly and differently than it does with the web.
+Like in the web, information retrieval works on documents in a corpus.
+We search that corpus using queries, and
+how we construct our queries is important.</p>
+<p>Documents in databases though are a bit different.
+As discussed in the previous section,
+while web pages on the web exist in a fairly organized hierarchy
+(with respect to top level domains, etc.),
+web pages themselves are not always very structured.
+But search engines have become really good at taking
+all that unstructured text and making sense of it.</p>
+<p>Databases, on the other hand,
+in particular, the ones we access through libraries,
+generally index fairly structured documents:
+i.e., bibliographic records.
+They may also index full text documents if those
+documents are accessible to the database.
+If only bibliographic records are indexed,
+the database is usually called an
+<strong>abstract and indexing database (A&amp;I database)</strong>.
+Otherwise it's just called a full text database.
+Many of the databases that we have access to at our
+library are a mix of the two.
+That is, some databases will include full text and also
+only abstracts and other bibliographic information.</p>
+<a class="header" href="6-database-information-retrieval.html#searching-bibliographic-records" id="searching-bibliographic-records"><h2>Searching Bibliographic Records</h2></a>
+<p>By bibliographic information, I generally mean <strong>metadata</strong>,
+and by bibliographic records,
+I generally mean metadata about specific items.
+Metadata is broadly defined as data about data,
+or sometimes as information about information.
+For example, a title of a book is metadata about a book. The author name of a journal article is
+metadata about the journal article.
+And so forth.
+All the metadata about a specific item
+(book, journal article, etc)
+is a record.
+In a database, this metadata is controlled,
+and therefore, well structured.
+As searchers, this basically means
+that there are pre-set fields that
+we can search in these databases.
+For example, in <a href="https://libguides.uky.edu/4">Academic Search Complete (ASC)</a>,
+we can search the following fields:</p>
+<ul>
+<li>Author</li>
+<li>Title</li>
+<li>Subject Terms</li>
+<li>Abstract text</li>
+<li>Author supplied keywords</li>
+<li>Geographic terms</li>
+<li>People (names)</li>
+<li>Journal Name</li>
+<li>ISBN</li>
+</ul>
+<p>And more.
+We can also filter by publication date, full text,
+document type, language, number of pages, and images
+(depending on the database and its content).
+In the end, this means we have greater control over
+the search process than we do in a search engine
+because the corpus is better defined.</p>
+<p>For example, in the previous section,
+I showed how we can search the web
+by using the <code>:filetype</code> operator to limit results
+to PDFs, DOCX, XLSX, etc files.
+In a bibliographic database like ASC, however,
+we can often specify that we want PDFs, but
+more importantly,
+we can limit results by <strong>document type</strong>.
+That means we can restrict results to items like:</p>
+<ul>
+<li>articles</li>
+<li>bibliographies</li>
+<li>book chapters</li>
+<li>book reviews</li>
+<li>case studies</li>
+<li>editorials</li>
+<li>film reviews</li>
+<li>interviews</li>
+<li>letters</li>
+<li>obituaries</li>
+<li>opinions</li>
+<li>poems</li>
+<li>recipes</li>
+</ul>
+<p>And much more.</p>
+<p>Otherwise, all the same principles apply to searching
+databases as does searching the web with a search engine.
+Specifically:</p>
+<ol>
+<li>Text has primacy</li>
+<li>Documents exist within a corpus</li>
+<li>Query construction is important</li>
+</ol>
+<p>And many of the same techniques apply, too:</p>
+<ol>
+<li>We can use <strong>quoting</strong> to make sure words are included in the results</li>
+<li>Term order matters</li>
+<li>We can use <strong>OR</strong> between terms to focus on one term or the other or both</li>
+<li>We can use other operators, like <strong>NOT</strong> and <strong>AND</strong></li>
+</ol>
+<blockquote>
+<p>The <strong>AND</strong> operator between two query terms means
+that both terms must be present for each result in a search.
+For example, if I search for <code>dogs AND cats</code> in a database
+like ASC,
+then each result must include both the terms <strong>dogs</strong> and <strong>cats</strong>.
+We usually have to specify this <strong>AND</strong> in a database.
+This not the case with Google and other search engines.
+In search engines, the <strong>AND</strong> is assumed between terms.
+So the equivalent search in, for example,
+Google, Bing, DuckDuckGo, etc is simply <code>dogs cats</code>.</p>
+</blockquote>
+<a class="header" href="6-database-information-retrieval.html#subject-terms-and-thesauri" id="subject-terms-and-thesauri"><h2>Subject Terms and Thesauri</h2></a>
+<p>Many (but not all) databases offer the ability
+to search by subject or thesauri term.
+Subject/thesauri terms are kinds of controlled vocabulary.
+If a database uses these kinds of vocabulary terms,
+it means that each record in the database includes a list of
+these terms that should well describe the contents
+of the item it describes.</p>
+<p>For example, the <em>ASC</em> database uses subject terms.
+One subject term is <strong>Forest animals</strong>, and
+if I use that as my search query,
+then each record that is returned
+must include that subject term,
+and that record should match the contents of the item.
+I can peruse the results and identify other subject terms
+that help narrow my results.
+For example, the subject term <strong>BIRD habitats</strong> appears
+in records with the subject term <strong>Forest animals</strong>,
+since records often have multiple subject terms.
+If I combine those terms with an <strong>AND</strong> operator,
+then I narrow my results down to two journal articles,
+which is pretty precise.
+ASC is a multi-disciplinary database, and
+so feel free to explore subject terms related
+to your own interests.</p>
+<figure>
+<img src="images/6-image-1.png"
+width="600" height="500"
+alt="Academic Search Complete results"
+title="Academic Search Complete results">
+<figcaption>Fig. 1: Academic Search Complete Results</figcaption>
+</figure>
+<a class="header" href="6-database-information-retrieval.html#systematic-browsing" id="systematic-browsing"><h2>Systematic Browsing</h2></a>
+<p>Although database search can be more precise
+than searching in search engines,
+they are also good for browsing.</p>
+<p>We all browse
+(online, in stores, as we page through books, and so on)
+but as a type of search process,
+browsing can become a highly useful tool
+when applied systematically and strategically.
+The result is not simply a way to scan through search results.
+Rather, the result of intentional browsing,
+(reading or skimming a list of titles and abstracts)
+can be the accumulation of highly relevant source material,
+relevant to our information needs and queries.</p>
+<a class="header" href="6-database-information-retrieval.html#browsing-strategies" id="browsing-strategies"><h2>Browsing Strategies</h2></a>
+<p>Although we make a distinction
+between browsing and searching,
+it is oftentimes helpful to begin
+a browsing session with a keyword search,
+and then use something from the search results,
+something like an author's name or subject term,
+to find and collect related information.
+We call this type of browsing <em>pearl growing</em>.</p>
+<a class="header" href="6-database-information-retrieval.html#pearl-growing-subject-browsing" id="pearl-growing-subject-browsing"><h2>Pearl Growing: Subject Browsing</h2></a>
+<p>Below is an image of the <a href="https://eric.ed.gov/">ERIC Database</a> database.
+<em>ERIC</em> stands for <strong>Education Resources Information Center</strong>.
+The database is provided by the U.S. Department of Education and
+is an important access point for millions of bibliographic
+records to journal articles, books, research reports,
+white papers, government and other
+organizational reports, and more on education related topics.</p>
+<figure>
+<img src="images/6-image-2.png"
+width="600" height="500"
+alt="The ERIC database"
+title="The ERIC database">
+<figcaption>Fig. 2: The ERIC database</figcaption>
+</figure>
+<p><em>ERIC</em>, like other databases,
+offers a thesaurus of controlled terms to help aid search.
+For example, let's say I'm interested in research on academic libraries.
+In this screen shot, I'm looking at the page that describes
+the thesaurus <strong>descriptor</strong> for <strong>academic libraries</strong>,
+and as is usual with thesauri,
+it not only describes how the term is defined in the database,
+but it also links to related terms,
+including terms that are conceptually broader than academic libraries,
+conceptually narrower than academic libraries,
+or that are conceptually related to academic libraries.
+I can click on any of these terms,
+and then click on the link that says to
+<strong>Search collection using this descriptor</strong>.
+And in doing so, I engage in subject browsing.</p>
+<figure>
+<img src="images/6-image-3.png"
+width="600" height="500"
+alt="Thesaurus descriptor page for the term academic libraries"
+title="Thesaurus descriptor page for the term academic libraries">
+<figcaption>Fig. 3: Thesaurus descriptor page for the term academic libraries</figcaption>
+</figure>
+<a class="header" href="6-database-information-retrieval.html#pearl-growing-author-browsing" id="pearl-growing-author-browsing"><h2>Pearl Growing: Author Browsing</h2></a>
+<p>I can certainly browse using other access points,
+like author names.
+After perusing the results from above,
+I can click on an author's name to narrow results.</p>
+<figure>
+<img src="images/6-image-4.png"
+alt="Author names list covering academic libraries"
+title="Author names list covering academic libraries">
+<figcaption>Fig. 4: Author names list covering academic libraries</figcaption> 
+</figure>
+<p>Knowing that authors tend to write and research
+on a specific range of topics (i.e., are specialists) is helpful
+because it allows me to browse by author and subject topic.</p>
+<a class="header" href="6-database-information-retrieval.html#pearl-growing-citation-browsing" id="pearl-growing-citation-browsing"><h2>Pearl Growing: Citation Browsing</h2></a>
+<p>I've described abstracting &amp; indexing (A&amp;I) databases, but
+there's another special type of A&amp;I database called
+a <strong>citation database</strong>.
+Three useful ones available to us are</p>
+<ul>
+<li><a href="https://libguides.uky.edu/3347">Scopus</a></li>
+<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and</li>
+<li><a href="https://scholar.google.com/">Google Scholar</a> (more of a scholarly <em>search engine</em>).</li>
+</ul>
+<p>The first two are available via UK Libraries,
+and the latter is available freely on the web.
+A citation database is a database that shows
+who has cited an article (as known by their database)
+and provides a link to those articles that have cited an article.
+Citation theory says that when any two articles
+(or books, or other documents) are cited in this way,
+they are more likely to be about the same thing.
+In fact, this is how Google search works, in part.
+Google's original <em>Page Rank Algorithm</em> posited
+that if a web page links to another web page,
+then the two pages pages are likely to be about the same topic.
+Because of this theory,
+we can follow citations to find more relevant articles.</p>
+<p>Pictured here is a record in <em>Web of Science</em> on information literacy.
+To the far right you can see that it has <strong>4 Citations</strong>.
+If we click on that <strong>4 Citations</strong> link,
+we can begin to browse those 4 articles or documents.
+Per citation theory,
+it's highly probable that those 4 citing documents
+are also about information literacy;
+and thus, browsing them would be of considerable
+help if we were interested in reading more about information literacy.</p>
+<figure>
+<img src="images/6-image-5.png"
+alt="WOS record of article on information literacy" 
+title="WOS record of article on information literacy">
+<figcaption>Fig. 5: WOS record of article on information literacy</figcaption> 
+</figure>
+<p>After clicking on the <strong>4 Citations</strong> link,
+we can see that the term <strong>information literacy</strong>
+appears in the title of all four citing works.
+This is good evidence for our citation theory.</p>
+<figure>
+<img src="images/6-image-6.png"
+alt="Citing articles in WOS" 
+title="Citing articles in WOS">
+<figcaption>Fig. 6: Citing articles in WOS</figcaption> 
+</figure>
+<p><em>Google Scholar</em> works in much the same way.
+Instead of <em>Times Cited</em>, it says <em>Cited by</em>,
+and the search results default by generally listing (we think)
+the most highly cited works rather than the most recent,
+as is the default in <em>Web of Science</em>.
+But if we click on the <em>Cited by</em> link,
+we'll be taken to a page that lists
+the citing articles and documents,
+and like the <em>Web of Science</em> example,
+it's likely that many of the citing articles
+will be relevant in our search on this topic.</p>
+<figure>
+<img src="images/6-image-7.png"
+alt="Cited by in Google Scholar" 
+title="Cited by in Google Scholar">
+<figcaption>Fig. 7: Cited by in Google Scholar</figcaption> 
+</figure>
+<a class="header" href="6-database-information-retrieval.html#combination-browsing" id="combination-browsing"><h2>Combination Browsing</h2></a>
+<p>Like with most other searches,
+we can combine terms and use those combinations
+to focus our browsing sessions.
+The available combinations depend on the database we use.
+Here's a screen shot of an item from the
+<em>Communication &amp; Mass Media Complete (CMMC)</em> database.
+I searched this database using the thesauri term
+<em>DIFFUSION of innovations</em> AND also
+the term <em>regression</em> in the abstract.
+Basically, this tells the database
+to retrieve any record tagged with the thesauri term
+<em>DIFFUSION of innovations</em> and
+where also the term <em>regression</em> appears in the record's abstract.
+If it contains regression in the abstract,
+then the source likely used or refers to a statistical technique
+called linear regression, logistic regression, or like.
+Once I have this initial query,
+I can begin browsing the 11 titles and
+abstracts that are listed in the results.</p>
+<figure>
+<img src="images/6-image-8.png"
+alt="Combination search in CMMC database"
+title="Combination search in CMMC database">
+<figcaption>Fig. 8: Combination search in CMMC database">
+</figure>
+<a class="header" href="6-database-information-retrieval.html#boolean-logic-and-or-not" id="boolean-logic-and-or-not"><h2>Boolean Logic: AND, OR, NOT</h2></a>
+<p>Remember that database searching is more
+structured at the document level, and
+that this structure is reflected
+in the ability to do field searches.
+In the above example, for instance,
+we use two fields.
+The first field is a subject term search
+for the subject <strong>DIFFUSION of innovations</strong>,
+and it's marked as a subject field
+with the <strong>DE</strong> at the beginning.
+The second field is an abstract search,
+and this is shown in the drop down box
+to the right of the query term.
+In between these two fields is a Boolean AND operator.
+The AND operator tells the database that both
+query terms must be present in the results.
+We've seen this AND in prior examples.</p>
+<p>I've mentioned two other Boolean operators:
+<strong>NOT</strong> and <strong>OR</strong>.
+Many bibliographic databases offer all three.
+The <strong>NOT</strong> operator instructs the database
+to exclude the assigned term.
+Thus, if we had chosen <strong>NOT &quot;regression&quot;</strong>,
+then the <em>CMMC</em> database would have
+returned results where the term <strong>regression</strong>
+surely did NOT appear in the abstract for
+records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
+<p>The <strong>OR</strong> Boolean operator is a bit tricky.
+It means, basically, <em>one or the other or both</em>.
+Thus, if we had used it here,
+then <em>CMMC</em> would have returned all records
+having the subject term <strong>DIFFUSION of innovations</strong>,
+as well as those records that did or did not have
+<strong>regression</strong> in the abstract.
+The <strong>OR</strong> operator is more useful when querying
+terms in the same fields.
+For instance, we might want to use the <strong>OR</strong>
+operator to search for two different terms
+that might appear in the abstract fields,
+or the subject term fields,
+such as the following related terms:</p>
+<pre><code>DIFFUSION of innovations theory&quot; OR
+INFORMATION dissemination&quot;
+</code></pre>
+<p>We can see how this plays out in the results.
+In the first record in the following screenshot,
+both terms appear in the subjects list.
+But in the second record,
+only one of the terms appears.</p>
+<figure>
+<img src="images/6-image-9.png"
+alt="Using the OR Boolean operator"
+title="Using the OR Boolean operator">
+<figcaption>Fig. 9: Using the OR Boolean Operator</figcaption>
+</figure>
+<a class="header" href="6-database-information-retrieval.html#how-to-browse" id="how-to-browse"><h2>How to Browse</h2></a>
+<p>When we browse, therefore,
+we are attempting to locate key qualities from our results
+or our initial results lists (e.g., authors, subjects, etc.).
+These lists include the titles, the abstracts, the thesauri,
+and so forth.
+And these key terms will help capture what our search is <strong>about</strong>.</p>
+<a class="header" href="6-database-information-retrieval.html#developing-a-list" id="developing-a-list"><h2>Developing a List</h2></a>
+<p>Many databases will offer a way to create,
+save, and export lists or individual records
+based on browsing and searching.
+This helps us easily manage the documents that
+we highlight as initially important.
+We can curate these lists as they grow and
+our search becomes more focused.</p>
+<p>Creating a list in a specific database
+usually requires us to create an account on
+that database.
+I already have an account with EBSCOhost,
+the vendor that provides the <em>CMMC</em> database
+as well as many others, and
+in the following screenshot,
+I've already signed in to that account.
+To the right of the image,
+you can see a folder icon.
+As I browse through records that look
+relevant to my needs,
+I can click on that icon and save
+the result to a folder.
+I can also create multiple folders
+and email, download, or print the records
+for later use.</p>
+<figure>
+<img src="images/6-image-10.png"
+alt="Using Folders to Save Records" 
+title="Using Folders to Save Records">
+<figcaption>Fig. 10: Using Folders to Save Records</figcaption>
+</figure>
+<p>Of course, alternatively, I prefer to save records
+in Zotero rather than use a database folder or list.
+This way I keep the records with me even if I lose
+access to the database.</p>
+<a class="header" href="6-database-information-retrieval.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>In this section, we learned the following:</p>
+<ul>
+<li>Databases and search engines are different</li>
+<li>Each have advantages and disadvantages</li>
+<li>Search engines are well structured at the file system level</li>
+<li>Databases are well structured at the record level</li>
+<li>Searching in a database means search structured bibliographic records</li>
+<li>Records are structured by pre-set fields</li>
+<li>Subject terms or thesauri descriptors help create precise searches</li>
+<li>Systematic browsing can be a rigorous way to engage in search</li>
+<li>Pearl growing is a browsing strategy that involves collecting items
+based on an initial aspect of a bibliographic record. Such as as:
+<ul>
+<li>subject term</li>
+<li>author name</li>
+<li>citation</li>
+</ul>
+</li>
+<li>Because databases search structured bibliographic records with pre-set
+fields, we can create very precise queries by combining fields</li>
+<li>We can combine fields using Boolean logic: AND, OR, NOT</li>
+<li>We can create and save lists as we browse</li>
+<li>Or we can save items to our reference manager (RM).</li>
+</ul>
+<p>In the end, don't simply browse absentmindedly.
+Rather, browse with smarts: systematically and strategically.
+Make the systems work for you.
+And save your results in Zotero or your
+chosen RM as you go.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="5-web-information-retrieval.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="7-evaluating-information-sources.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="5-web-information-retrieval.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="7-evaluating-information-sources.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

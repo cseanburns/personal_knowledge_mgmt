@@ -2,8 +2,10 @@
 
 ## Readings
 
-Please read through the [Zotero Documentation][zoteroDocs], especially after
-this lecture and the accompanying software demonstration.
+Please visit the links in this section as you read through it, and
+read through the [Zotero Documentation][zoteroDocs],
+especially after watching the accompanying software demonstration.
+
 
 ## Introduction
 
@@ -114,6 +116,15 @@ Specifically, the Zotero Quick Start Guide shows us how to:
 - How to use Zotero and access your Zotero library on multiple devices
 - How to collaborate on research projects using Zotero
 
+> **Note:** If you choose Zotero,
+> as I suggest and recommend,
+> you should create a free account
+> (use your personal email to sign up).
+> As you add material to your Zotero collection,
+> you collection will be synced with and backed up to Zotero's servers.
+> Zotero registration:
+> [https://www.zotero.org/user/register/][zoteroRegistration]
+
 ## Zotero Demo
 
 In the next video, I will show you how to complete the above steps so that you
@@ -151,3 +162,4 @@ Librarianship, 66(Summer 2011). https://doi.org/10.5062/F4Z60KZF
 [zoteroQuickStart]:https://www.zotero.org/support/quick_start_guide
 [wpPlugin]:https://www.zotero.org/support/word_processor_integration
 [zoteroDocs]:https://www.zotero.org/support/
+[zoteroRegistration]:https://www.zotero.org/user/register/

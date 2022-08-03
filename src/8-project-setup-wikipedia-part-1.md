@@ -1,6 +1,21 @@
-# Wikpedia Project: Setup
+# Wikipedia Project: Setup
 
-## Introduction: Becoming a Wikipedia Editor
+## Readings
+
+You are not editing Wikipedia yet, but
+you will near the near the end of this course.
+However, it's not too early to learn about the process.
+Please review this article on it:
+
+- Help:Editing. (2022). In Wikipedia.
+  https://en.wikipedia.org/w/index.php?title=Help:Editing&oldid=1100153153
+
+And this article on **Wikipedia stub articles**:
+
+- Wikipedia:Stub. (2022). In Wikipedia.
+  https://en.wikipedia.org/w/index.php?title=Wikipedia:Stub&oldid=1101615789
+
+## Becoming a Wikipedia Editor
 
 In this course, the main assignment involves identifying
 a Wikipedia article, searching for information sources

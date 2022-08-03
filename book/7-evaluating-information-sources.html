@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Evaluating Information Sources - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html" class="active"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="7-evaluating-information-sources.html#evaluating-information-sources" id="evaluating-information-sources"><h1>Evaluating Information Sources</h1></a>
+<a class="header" href="7-evaluating-information-sources.html#readings" id="readings"><h2>Readings</h2></a>
+<p>Read this short introduction on <strong>reading laterally</strong> as
+a way to evaluate information, and
+watch the short video.</p>
+<ul>
+<li>Newell, C. (n.d.). Jessup Playbooks: How do I read laterally?: Home.
+Retrieved August 3, 2022, from
+https://libguides.pvcc.edu/lateral_reading/home</li>
+<li>Stanford History Education Group (Director). (2020, January 16). Sort Fact
+from Fiction Online with Lateral Reading.
+https://www.youtube.com/watch?v=SHNprb2hgzU</li>
+</ul>
+<a class="header" href="7-evaluating-information-sources.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>When we're doing research or trying to learn something,
+we obviously want to gather content that is true.
+And so the key question is,
+how do we know content is true or false, or
+more or less true,
+or something along those lines.
+Basically, truth and veracity can have nuances that
+are important to identify or disentangle within stories that
+are presented about how things are in the world.
+For example, it's become very common
+for people in the public sphere to refer to <strong>narratives</strong>,
+and to argue that someone's or some group's narratives
+are either true or false.
+Or more accurately, a fiction or a non-fiction.
+Regardless of our political or whatever positions,
+this focus on narrative is interesting and worthwhile.
+It's interesting, in part, because placing information
+within a narrative has ancient origins, and it's
+worthwhile because it places true and false content
+within some context, or story,
+which can itself be evaluated as fairly true or not
+(or fiction or non-).
+Essentially, this is important because
+stories are central to human communication and understanding
+(Fisher, 1989).</p>
+<p>Before we explore this, I want to acknowledge that
+you may have been taught about various existing
+frameworks to help determine the veracity of content.
+Many of these frameworks ask us to ask questions
+and to check off boxes about the content itself
+when evaluating information or information sources.
+For example, who is the author of the content,
+where is the content published,
+on what platform?
+What is the author's or publisher's motivation?
+Is the motivation purely or mostly financial?
+How does that introduce bias?
+What is the date of the publication?
+Is it outdated?
+And so forth.</p>
+<p>Those kinds of questions are important,
+but they may also be insufficient in determining
+some content's veracity.
+What's also important to identify,
+especially for content that is new or new to us,
+are questions that place the content in broader context,
+to fit it within an overall story that's taking place.
+For example, where does some content that
+we're evaluating fit within a story
+someone or some group is trying to tell?
+How does one group's (or author's, or publisher's, etc)
+story conflict with another group's (etc.)?
+Alternatively, what is the consensus among different
+stories that group's tell about a thing?
+How do these stories compete for public acceptance?</p>
+<p>When we try to identify the story, then
+new questions and frameworks open up to us.
+For example, it could be the case that
+the basic facts about an event are agreed upon
+by various storytellers
+(e.g., news articles, politicians, scientists),
+but that the basic facts are presented in ways that
+impact how the story of those facts are told.
+Then, in those different tellings, the stories
+may consequently ring true or not.
+Worse, if the overall story rings false, then
+it may cause doubt about the basic facts, even
+if those basic facts are true.</p>
+<p>Walter Fisher (1989) identified two methods
+for evaluating narratives that he called
+<strong>narrative probability</strong> and <strong>narrative fidelity</strong>.
+Let's discuss these.</p>
+<a class="header" href="7-evaluating-information-sources.html#narrative-probability" id="narrative-probability"><h2>Narrative Probability</h2></a>
+<p>For a story to be probable (probably true, that is),
+it must meet three criteria:</p>
+<ul>
+<li>argumentative or structural coherence</li>
+<li>material coherence</li>
+<li>characterological coherence</li>
+</ul>
+<a class="header" href="7-evaluating-information-sources.html#argumentative-or-structural-coherence" id="argumentative-or-structural-coherence"><h3>Argumentative or Structural Coherence</h3></a>
+<p><em>Argumentative or structural coherence</em> speaks
+to the validity of an underlying
+argument in a story.
+That is, good stories, whether true or not,
+present a series of premises that build off each other
+and that present an overall thesis or argument.
+Or, stories have a structure that makes sense and,
+upon close inspection, contains few holes.
+You all know if a story has argumentative or structural
+coherence because you have all surely watched bad movies
+that fail to convince you that the movie made sense.
+Sometimes this lack of structural coherence in a movie
+is what makes a movie fun (&quot;it's so bad it's great!&quot;).
+But when telling stories about how things are in the world,
+or how they should be, or how they will be,
+it's important for the story to make sense and to be valid, logically.</p>
+<a class="header" href="7-evaluating-information-sources.html#material-coherence" id="material-coherence"><h3>Material Coherence</h3></a>
+<p>If a story is internally consistent, what next?
+As is often the case, group's (e.g., ideological ones)
+may compete with other about what should
+be the dominant narrative.
+In such cases, we can compare and contrast these stories,
+and this is the idea behind the next criteria:
+<em>material coherence</em>.
+This is the idea that we compare and contrast stories
+and note in the process whether
+&quot;important facts may be omitted,
+counterarguments ignored, and
+relevant issues overlooked&quot; (Fisher, 1989, p. 47).
+Such comparisons may happen from a bird's eye view;
+for example, when Democrats or Republicans
+are telling the story of America,
+can we see what important facts each group omits,
+which counterarguments each group ignores,
+and which relevant issues each group overlooks?</p>
+<p>These comparisons may also happen at the micro-level.
+In the social and physical sciences,
+scholars and researchers are engaged in a series of
+discussions with each other about all sorts of theories
+about the social or physical worlds.</p>
+<blockquote>
+<p>A quick note on theories.
+Theories are simply very rigorous explanations given the data.
+These explanations generally provide an account of causality,
+or of how one thing causes another.
+As social and physical scientists gather data,
+they develop theories (like stories) that explain the data.
+As new data is analyzed,
+those theories are tested.
+If the theories no longer explain the additional data,
+they are revised or discarded and replaced with new theories.
+Some theories (like the theory of general relativity) are quite stable
+(i.e., well tested),
+even if they do not explain everything about things within their purview,
+like gravity at the quantum level.
+Other theories still walk a tight rope (like string theory),
+and this is most likely because more data is needed to test them
+but enough data has been analyzed for them to hold for the time being.
+In the social sciences and physical sciences,
+it's more common for theories to explain limited phenomenon.
+The <strong>diffusion of innovation</strong> theory, for example,
+is one of these <strong>middle-range theories</strong> and
+was originally devised to explain how new ideas and technology spread.</p>
+</blockquote>
+<p>You can see these discussions among scientists in the literature review
+and discussion sections of journal articles.
+In these sections, researchers cite and refer to others
+who have completed research on a similar or the same topic.
+The overall goal is to test or develop a theory that explains some phenomenon.
+Essentially, researchers in the sciences are seeking to provide
+a story, based on a rigorous analysis of the data they have,
+that explains some phenomenon, and
+in the process of doing so, they compare and contrast
+their explanations with others.
+As Fisher might say, they <strong>seek important facts that may have been omitted,
+counterarguments that may have been ignored, and
+relevant issues that may have been overlooked</strong>.</p>
+<p>Practically, we can use tools to help immerse ourselves
+in these discussions.
+Tools like Zotero or other reference managers aid us
+in collecting sources, taking notes on those sources,
+and citing those sources in papers that participate in
+these ongoing discussions and contribute to this collective storytelling.
+In the process of writing about the phenomenon under review,
+we attempt to provide a story based on the back and forth
+discussions that have taken place on the topic.
+These RMs, then, basically help us to test <strong>material coherence</strong>.</p>
+<a class="header" href="7-evaluating-information-sources.html#characterological-coherence" id="characterological-coherence"><h3>Characterological Coherence</h3></a>
+<p>Can you think of a story that doesn't have a character at all?
+I can't.
+Even places and things can be characters in stories.
+The Delorean car in the <em>Back to the Future</em> movies
+is, for example, somewhat of a character in those movies.
+But when people are characters,
+they often behave, in movies, plays, etc., <em>characteristically</em>.
+That is, they behave according to their
+values, beliefs, attitudes, ideas, and words.
+They behave according to who they are.
+We don't often see movies or plays or hear stories where
+people behave uncharacteristically because such stories
+are generally not good.
+Or if people do behave uncharacteristically,
+it's usually a part of the plot and somewhere in the story,
+the uncharacteristic behavior was foreshadowed.
+Often, when we see something coming in a movie before it's happened,
+it's because the characters are playing to their character.
+If we don't see something coming, then it's simply likely a
+complex character, and the story supports that.</p>
+<p>In any regard, stories have characters,
+whether people, places, or things.
+And when we investigate stories (or theories),
+it's worthwhile to consider whether the characters are coherent
+in this way, too.</p>
+<a class="header" href="7-evaluating-information-sources.html#closing-the-loop" id="closing-the-loop"><h2>Closing the Loop</h2></a>
+<p>How does this all help you evaluate information sources?
+Well, when you collect sources for a project, like a paper or something,
+it's a good idea, as you collect sources, to think about the story
+you want or need to tell.
+The sources you collect should have
+structural, material, and characterological coherence, too.
+This means that in the process of collecting evidence,
+if you find evidence that degrades the coherence of these things,
+you need to revise your story,
+just like a scientist must revise or discard their theory
+in the face of contradictory or discordant evidence.</p>
+<a class="header" href="7-evaluating-information-sources.html#project" id="project"><h2>Project</h2></a>
+<p>You can test this method yourselves.
+Consider a news event that's going on as you read this.
+Pick three news articles that cover the event,
+from three different publications.
+Choose three publications that lie on different parts
+of the political spectrum.
+Study those three sources, and
+ask the following questions:</p>
+<ol>
+<li>How are the stories structurally coherent? Or not? That is, do the stories
+in the three articles make sense? Are they internally consistent?</li>
+<li>How are the stories materially coherent? Or not? That is, upon comparing
+them, do any of them leave out important facts? Do any of them respond to
+counterarguments (or alternate explanations that fit the data)? Do any of
+them overlook relevant issues?</li>
+<li>Do the characters in the stories characterologically coherent? Who are the
+characters in the story? Do they behave according to what we know of their
+values, attitudes, beliefs, ideas, and words? Do the stories present them
+counter to what we already know of these people?</li>
+</ol>
+<a class="header" href="7-evaluating-information-sources.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>Being able to evaluate information is important, but
+if we have been exposed to lessons on doing so,
+we have often been presented with some kind of framework
+that asks us to check the boxes to see if an information source
+satisfies some pre-existing criteria.
+For example, such a checklist might ask us to ask:
+who are the authors?
+do they have a good reputation?
+is the publisher respected?
+is the motive to publish based on profit?
+are they selling something with the information they provide?</p>
+<p>While that's an important part of the process in evaluating information,
+it's also insufficient.
+A more thorough way to evaluate information is to think of the information
+more broadly and holistically.
+That is, to think of the stories that are being told,
+how the information is contextualized.
+Once we see the story,
+we have three methods to investigate a piece of information's credibility.
+We can test its:</p>
+<ul>
+<li>argumentative or structural coherence</li>
+<li>material coherence, and</li>
+<li>characterological coherence.</li>
+</ul>
+<p>By the way, this method can also apply to the stories
+we tell ourselves or about ourselves or about our beliefs.
+It's important, that is, to evaluate the information we
+believe to be true as much as it is to evaluate others
+posit to be true.</p>
+<a class="header" href="7-evaluating-information-sources.html#references" id="references"><h2>References</h2></a>
+<p>Fisher, W. R. (1989). <em>Human communication as narration: Toward a philosophy of
+reason, value, and action</em>. University of South Carolina Press. https://doi.org/10.2307/j.ctv1nwbqtk</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="6-database-information-retrieval.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="8-project-setup-wikipedia-part-1.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="6-database-information-retrieval.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="8-project-setup-wikipedia-part-1.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

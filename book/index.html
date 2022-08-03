@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Knowledge Management (PKM) Handbook - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html" class="active"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="p1-pkm.html#personal-knowledge-management-handbook" id="personal-knowledge-management-handbook"><h1>Personal Knowledge Management Handbook</h1></a>
+<p>Author: C. Sean Burns<br />
+Date: 2022-08-03<br />
+Email: <a href="sean.burns@uky.edu">sean.burns@uky.edu</a><br />
+Website: <a href="https://cseanburns.net">cseanburns.net</a><br />
+Twitter: <a href="https://twitter.com/cseanburns">@cseanburns</a><br />
+GitHub: <a href="https://github.com/cseanburns">@cseanburns</a></p>
+<p>This short book
+was written and developed for
+a course on personal knowledge management taught at the
+University of Kentucky's School of Information Science.</p>
+<a class="header" href="p1-pkm.html#how-to-use-this-book" id="how-to-use-this-book"><h2>How to Use this Book</h2></a>
+<a class="header" href="p1-pkm.html#text-and-video" id="text-and-video"><h3>Text and Video</h3></a>
+<p>Most sections of this book will be accompanied
+by a video demonstrating the practices described in those sections.
+Try to read through the text first, and
+then watch the video.
+Revisit the text to help cement the ideas in place.</p>
+<a class="header" href="p1-pkm.html#markup" id="markup"><h3>Markup</h3></a>
+<p>There are two markups that I want to bring to your attention:</p>
+<p>Text that looks like <strong>code blocks</strong> indicate some kind
+of command that you should test for yourself.
+For example, I demonstrate search queries in the
+sections that follow.
+When I demonstrate a Google search, for example,
+the search query will appear in a standalone box
+with a basic font and a different color background
+(depending on the theme you're using).</p>
+<pre><code>basketball uky
+</code></pre>
+<p>I occassionally insert some <strong>asides</strong> into the text.
+These asides generally contain notes or extra comments
+about the main content.
+Asides look like this:</p>
+<blockquote>
+<p>This is an aside.
+Asides will contain extra information, notes, or comments.</p>
+</blockquote>
+<a class="header" href="p1-pkm.html#theme" id="theme"><h3>Theme</h3></a>
+<p>At the top of the page is an icon of paint brush.
+The default theme is darker text on a light background,
+but you can change the theme per your preferences.</p>
+<a class="header" href="p1-pkm.html#printing" id="printing"><h3>Printing</h3></a>
+<p>I intend this book to be a live document, and
+therefore it'll be regularly updated.
+But feel free to print it, if you want.
+You can use the print function
+to save the entire book as a PDF file.
+See the printer icon at the top left of the screen
+to get started.</p>
+<p>If you're familiar with <code>git</code> and <a href="https://github.com">GitHub</a>,
+you can also fork the repository for this book at
+<a href="https://github.com/cseanburns/personal_knowledge_mgmt">https://github.com/cseanburns/personal_knowledge_mgmt</a>.</p>
+<p>Note that this work is licensed under the
+<a href="https://github.com/cseanburns/personal_knowledge_mgmt/blob/master/LICENSE">GNU Free Documentation License</a>.
+See <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">the info page for more
+details</a>.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+
+                
+                    <a rel="next" href="0-intro-to-pkm.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+
+            
+                <a href="0-intro-to-pkm.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

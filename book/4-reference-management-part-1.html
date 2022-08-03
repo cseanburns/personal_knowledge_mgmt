@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reference Management: Getting Started - Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html" class="active"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="4-reference-management-part-1.html#reference-managers" id="reference-managers"><h1>Reference Managers</h1></a>
+<a class="header" href="4-reference-management-part-1.html#readings" id="readings"><h2>Readings</h2></a>
+<p>Please visit the links in this section as you read through it, and
+read through the <a href="https://www.zotero.org/support/">Zotero Documentation</a>,
+especially after watching the accompanying software demonstration.</p>
+<a class="header" href="4-reference-management-part-1.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>Now that I have introduced you to some of the different resources for
+information sources that exist (and we will learn about more), our next
+personal knowledge management challenge involves managing the information
+sources that we locate and want to use.</p>
+<p>Imagine, for example, that we need to locate and use three academic sources for
+a class paper assignment. We could, like probably many do, search for
+information on the fly, locate some journal articles, figure out how to cite
+the articles, and add the citations to our Word documents. Perhaps if we're a
+little more advanced, we could download the papers to a folder on our computer
+for later reference (perhaps we have a folder dedicated to the class paper and
+even a subfolder dedicated to any readings that we download). Although that
+might be a bit more organized, it is the 21st century, and we have these
+computers that can do so much more for us than act as simple file cabinets.
+Basically, if we want to be more efficient, to save time, and to do a good job,
+then this is not the way.</p>
+<p>Instead, we can use a <strong>reference manager (RM)</strong> (also called a <em>citation
+manager</em>), which is a piece of software that can help us manage this process of
+saving, collecting, and using information sources. Although generally aimed at
+academic users, RMs can also be used to bookmark, save, and collect all sorts
+of web and print information sources and for all sorts of outcomes, whether
+those outcomes are class papers, engineering projects, musical composition
+projects, biology experiments, and so on. Basically, if we use the web to
+collect and then use information, then a RM is the way.</p>
+<a class="header" href="4-reference-management-part-1.html#reference-manager-software" id="reference-manager-software"><h2>Reference Manager Software</h2></a>
+<p>You will be required to use a RM in this course, and I will focus on the
+<a href="https://www.zotero.org/">Zotero</a> RM. However, you are free to choose other options, even if I
+don't cover them, and there are many. <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">Wikipedia</a> has a page that
+lists around 20 RM options.</p>
+<p>There are a few reasons I will focus on Zotero, though. First, I use it, and I
+know it fairly well, although I'm always learning new things about it. But most
+importantly, it's free (and open source software), it's consistently maintained
+and updated, it provides all the major functions that a RM should provide and
+more, and it's available on Windows and macOS <a href="https://www.zotero.org/download/">desktop and laptop
+computers</a>. For iOS (i.e., mobile) users, there is an <a href="https://apps.apple.com/us/app/zotero/id1513554812">app for
+the iPhone and iPad</a>, but Android users can access their Zotero
+library using their phone's web browsers, which is just as good as the
+dedicated app.</p>
+<p>If you elect to use an alternate RM, be aware that they are not all created
+equal. However, the two most popular, functional, and well-supported
+alternatives are <a href="https://www.mendeley.com/">Mendeley</a> and <a href="https://libguides.uky.edu/endnote">EndNote</a>. Both of these are
+are more academic-centric, though, while Zotero is more agnostic about source
+information.</p>
+<blockquote>
+<p>Mendeley and EndNote are more academically oriented
+because they are owned by companies involved with
+academic publishing and academic databases.
+Mendeley is owned by the company Elsevier,
+which provides the <a href="https://libraries.uky.edu/lnkr.php?lir_id=3347"><em>Scopus</em></a> database,
+a bibliographic, abstract, and citation database, and
+publishes multiple journal titles.
+EndNote is owned by Clarivate, a research analytics company,
+which provides the <a href="https://libguides.uky.edu/467"><em>Web of Science</em></a> and <em>ProQuest</em> databases.
+<em>Web of Science</em> is a citation database like <em>Scopus</em>.</p>
+</blockquote>
+<a class="header" href="4-reference-management-part-1.html#zotero" id="zotero"><h2>Zotero</h2></a>
+<p>Gilmour &amp; Cobus-Kuo (2011) identify the eight functions that a RM should
+provide, and Zotero performs all of these functions. These functions include:</p>
+<ol>
+<li>Import citations from bibliographic databases and websites</li>
+<li>Gather metadata from PDF files</li>
+<li>Allow organization of citations w/in the reference manager database</li>
+<li>Allow annotations of citations</li>
+<li>Allow sharing of the reference management database</li>
+<li>Allow data interchange with other reference manager products through
+standard metadata formats</li>
+<li>Produce formatted citations in a variety of styles</li>
+<li>Work with word processing software to facilitate in-text citation (Gilmour &amp;
+Cobus-Kuo, 2011, Introduction section).</li>
+</ol>
+<p>Regardless of which RM we use, we want to pick one that performs most if not
+all of the above functions because these functions help us identify a useful
+app. Fortunately, the <a href="https://www.zotero.org/support/quick_start_guide">Zotero Quick Start Guide</a> provides a
+nice overview of the basic functions and how to use those functions, and the
+additional documentation describes how to do more. Fortunately, Zotero
+satisfies the requirements listed above.</p>
+<p>Specifically, the Zotero Quick Start Guide shows us how to:</p>
+<ul>
+<li>Install and open the Zotero desktop/laptop application</li>
+<li>Install and use the Zotero browser plugin
+<ul>
+<li>The <a href="https://www.zotero.org/download/">download page</a> provides links for using Zotero with:
+<ul>
+<li>Firefox</li>
+<li>Edge</li>
+<li>Chrome</li>
+<li>Safari</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How to collect items (e.g., books, articles, images, etc.)</li>
+<li>What we can do with those items</li>
+<li>How to create collections to organize items by topic, project, etc</li>
+<li>How to use tags to add additional organizational layers</li>
+<li>How to search, and save your searches, your Zotero library</li>
+<li>How to import or add attachments (like PDF copies of your items)</li>
+<li>How to add notes to your items</li>
+<li>How to cite items in your papers, etc.</li>
+<li>How to use Zotero with Microsoft Word, Google Docs, or other word processors
+<ul>
+<li>The <a href="https://www.zotero.org/support/word_processor_integration">word processor plugin</a> provides links for using Zotero
+with Microsoft Word, LibreOffice Writer, and Google Docs</li>
+</ul>
+</li>
+<li>How to create bibliographies</li>
+<li>How to use Zotero and access your Zotero library on multiple devices</li>
+<li>How to collaborate on research projects using Zotero</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> If you choose Zotero,
+as I suggest and recommend,
+you should create a free account
+(use your personal email to sign up).
+As you add material to your Zotero collection,
+you collection will be synced with and backed up to Zotero's servers.
+Zotero registration:
+<a href="https://www.zotero.org/user/register/">https://www.zotero.org/user/register/</a></p>
+</blockquote>
+<a class="header" href="4-reference-management-part-1.html#zotero-demo" id="zotero-demo"><h2>Zotero Demo</h2></a>
+<p>In the next video, I will show you how to complete the above steps so that you
+may get started using Zotero. Again, you may use an alternate RM, but
+throughout this course, I will demonstrate Zotero.</p>
+<p>Your task this week is to download and start using Zotero, or some alternate
+RM. Please follow the demo video to complete the process.</p>
+<a class="header" href="4-reference-management-part-1.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<ul>
+<li>Reference (or citation) managers (RM) provide more sophisticated tools to
+manage information sources than simple files systems provide.</li>
+<li>There is a slew of RM applications available to use, but we want to be sure
+we pick one that provides as many functions as possible and that is available
+on as many devices and operating systems as possible and can be integrated
+with a variety of word processing applications.</li>
+<li>Although you are welcome to use an alternate RM, in this course we focus on
+the Zotero RM.</li>
+</ul>
+<a class="header" href="4-reference-management-part-1.html#references-created-with-zotero" id="references-created-with-zotero"><h2>References (created with Zotero)</h2></a>
+<p>Gilmour, R., &amp; Cobus-Kuo, L. (2011). Reference Management Software: A
+Comparative Analysis of Four Products. Issues in Science and Technology
+Librarianship, 66(Summer 2011). https://doi.org/10.5062/F4Z60KZF</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="3-information-sources-resources.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="5-web-information-retrieval.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="3-information-sources-resources.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="5-web-information-retrieval.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

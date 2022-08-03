@@ -1,0 +1,3317 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Knowledge Management Handbook</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Personal knowledge management handbook for undergraduate course">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> PKM Learning Goals</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-management-part-1.html"><strong>6.</strong> Reference Management: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-management-part-2.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="print.html#personal-knowledge-management-handbook" id="personal-knowledge-management-handbook"><h1>Personal Knowledge Management Handbook</h1></a>
+<p>Author: C. Sean Burns<br />
+Date: 2022-08-03<br />
+Email: <a href="sean.burns@uky.edu">sean.burns@uky.edu</a><br />
+Website: <a href="https://cseanburns.net">cseanburns.net</a><br />
+Twitter: <a href="https://twitter.com/cseanburns">@cseanburns</a><br />
+GitHub: <a href="https://github.com/cseanburns">@cseanburns</a></p>
+<p>This short book
+was written and developed for
+a course on personal knowledge management taught at the
+University of Kentucky's School of Information Science.</p>
+<a class="header" href="print.html#how-to-use-this-book" id="how-to-use-this-book"><h2>How to Use this Book</h2></a>
+<a class="header" href="print.html#text-and-video" id="text-and-video"><h3>Text and Video</h3></a>
+<p>Most sections of this book will be accompanied
+by a video demonstrating the practices described in those sections.
+Try to read through the text first, and
+then watch the video.
+Revisit the text to help cement the ideas in place.</p>
+<a class="header" href="print.html#markup" id="markup"><h3>Markup</h3></a>
+<p>There are two markups that I want to bring to your attention:</p>
+<p>Text that looks like <strong>code blocks</strong> indicate some kind
+of command that you should test for yourself.
+For example, I demonstrate search queries in the
+sections that follow.
+When I demonstrate a Google search, for example,
+the search query will appear in a standalone box
+with a basic font and a different color background
+(depending on the theme you're using).</p>
+<pre><code>basketball uky
+</code></pre>
+<p>I occassionally insert some <strong>asides</strong> into the text.
+These asides generally contain notes or extra comments
+about the main content.
+Asides look like this:</p>
+<blockquote>
+<p>This is an aside.
+Asides will contain extra information, notes, or comments.</p>
+</blockquote>
+<a class="header" href="print.html#theme" id="theme"><h3>Theme</h3></a>
+<p>At the top of the page is an icon of paint brush.
+The default theme is darker text on a light background,
+but you can change the theme per your preferences.</p>
+<a class="header" href="print.html#printing" id="printing"><h3>Printing</h3></a>
+<p>I intend this book to be a live document, and
+therefore it'll be regularly updated.
+But feel free to print it, if you want.
+You can use the print function
+to save the entire book as a PDF file.
+See the printer icon at the top left of the screen
+to get started.</p>
+<p>If you're familiar with <code>git</code> and <a href="https://github.com">GitHub</a>,
+you can also fork the repository for this book at
+<a href="https://github.com/cseanburns/personal_knowledge_mgmt">https://github.com/cseanburns/personal_knowledge_mgmt</a>.</p>
+<p>Note that this work is licensed under the
+<a href="https://github.com/cseanburns/personal_knowledge_mgmt/blob/master/LICENSE">GNU Free Documentation License</a>.
+See <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">the info page for more
+details</a>.</p>
+<a class="header" href="print.html#introduction-to-personal-knowledge-management" id="introduction-to-personal-knowledge-management"><h1>Introduction to Personal Knowledge Management</h1></a>
+<a class="header" href="print.html#what-is-personal-knowledge-management-pkm" id="what-is-personal-knowledge-management-pkm"><h2>What is personal knowledge management (PKM)?</h2></a>
+<p>What is personal knowledge management (PKM)?
+Well, I'd hazard a guess that most of us depend
+largely on two main sources to search for, locate, and retrieve information,
+either on a daily basis or for more extensive work.
+These two sources are the people we know and the search engines,
+like Google, that we use on a daily basis.
+Relying on these two kinds of sources may get us by for most things,
+but there are times when we will require more rigorous sources
+because the task at hand stipulates better information or
+the risks involved in making a decision
+are weighty enough to require more certainty.
+Good, thorough information can reduce our uncertainty or
+enable us to measure levels of uncertainty, and
+this is helpful when making decisions, writing papers, completing projects,
+and so forth.
+In this course, therefore, our first
+learning goal is focused on <strong>information sources</strong>, and
+specifically, to:</p>
+<ul>
+<li>become aware of other sources of information,</li>
+<li>learn how to search those sources for relevant information, and</li>
+<li>learn how to evaluate found information.</li>
+</ul>
+<p>This only covers part of what we mean by personal knowledge management.
+In addition to being able to search for, locate, and retrieve good information,
+it is also important to manage that information and
+to develop good work flows that help with that.
+What I mean is that,
+it may be great that we know that
+<a href="https://libraries.uky.edu/">UK Libraries</a>
+exists and that we can use it to locate good information, but
+if we don't ever use UK Libraries or other great resources
+because we're not in the habit of doing so,
+then what's the point?
+Shouldn't we live in the <strong>good information age</strong>
+rather than merely the <strong>information age</strong>?</p>
+<p>Therefore, our second learning goal is focused
+on the tools and technologies that will help us
+build personalized information and knowledge work flows.
+As stated above,
+often the point of acquiring good information is
+to perform some task or to make a decision.
+A good work flow is good if it fits our style,
+or our way of getting things done,
+because that makes the work flow more likely to be followed.
+A good work flow also maximizes our use of good sources of
+information as well as helps us to produce desired outcomes,
+like a paper for a class, a project for a boss, or
+a decision that involves some uncertainty.
+Our second learning goal is, therefore,
+focused on <strong>personal knowledge work flows</strong>,
+and specifically, to:</p>
+<ul>
+<li>to become aware of the tools and technologies designed to manage personal
+knowledge work flows,</li>
+<li>to learn how to use these tools and technologies, and</li>
+<li>to incorporate these tools and technologies into our personal knowledge work
+flows</li>
+</ul>
+<p>Our final learning goal <strong>focuses on outcomes</strong> and
+builds off the first two goals.
+Specifically, our goal is to habitually use
+the tools and technologies that incorporate
+a variety of good sources of information
+in order to accomplish a task or make a decision.
+That is, not only may we want to take advantage
+of the many kinds of information sources that exist, and
+not only may we want to make
+it a habit of using those information sources
+in a habitual, personalized way, but
+we may also, as suggested earlier,
+want to accomplish some task.
+It could be that we may simply want to
+satisfy our curiosity about a topic and learn more,
+which is great!
+But there are times in our lives when we need to get things done
+(e.g., write a paper or create a software program) or
+make a decision that involves some risk
+(e.g., buy a house or choose a healthcare procedure).
+In those cases, having a personal knowledge work flow that
+incorporates high quality sources of information
+will facilitate accomplishing such tasks or making such decisions.</p>
+<a class="header" href="print.html#course-outline" id="course-outline"><h3>Course Outline</h3></a>
+<p>In order to accomplish the three goals above,
+this course</p>
+<hr />
+<p>BEGIN REVISING HERE AFTER SETTLING ON NEW COURSE OUTLINE AND MODULES</p>
+<hr />
+<a class="header" href="print.html#course-requirements" id="course-requirements"><h3>Course Requirements</h3></a>
+<p>Back to Canvas---let me highlight the Syllabus section of the site. When you
+click on the Syllabus link in the left side navigation section, you will have
+a chance to read about the course's description, policies, assistance and tips
+section, and the schedule and readings. It's important to review all of the
+syllabus. By the way, you will find an Easter egg in the syllabus. That is, if
+you read the syllabus, you'll find a gift that will make things a bit easier
+for you. So read the syllabus.</p>
+<p>On the Syllabus page, you'll see a Schedule. See also the link to the Calendar
+on the left navigation bar. These are important tools to remind you what's
+happening in the course and when assignments are due. You'll see due dates for
+all course discussions and assignments here. Be sure to refer to this often to
+stay current on upcoming work.</p>
+<p>For most discussion topics, I will post a video lecture, usually of me going
+through a series of slides, and a written transcript of that lecture. The
+slides are all on Google Drive, and you are welcome to save them to your own
+Drive account. You can also download the multimedia lectures and the
+transcripts for later reference. Do note that I do not regurgitate course
+readings---the lectures are largely supplemental to the readings and are not
+a replacement for them. So do keep up on what are largely fairly easy going
+readings in this course.</p>
+<p>Lastly, online courses offer a lot of freedom but require extra effort in some
+ways. Be sure to pay attention to notifications, emails, announcements, due
+dates, and please refer to the syllabus often. All activities have due dates
+and you must be careful with these or you can easily get behind. One important
+tip: make sure you visit Canvas's notification area. You can do that by
+clicking on your account. Set it so that Canvas sends you an email whenever
+I post an announcement. It is your responsibility to stay on top of
+communications about this course, and checking email and having email sent to
+you by Canvas is paramount to accomplishing this. All of this is important
+because for the summer session, we have to cover 15 weeks of material in about
+half of the time.</p>
+<p>If you have any questions, at any time during the semester, please feel free to
+ask them in the General Questions, Comments, and Clarifications discussion
+forum, or contact me personally through Canvas or email. I usually respond to
+emails during the week quickly, but will not likely respond in the evening or
+on weekends. If you have questions about an assignment, try not to ask during
+the evening when it's due, because I likely will not be able to help you at
+that point.</p>
+<p>I really enjoy teaching this class, and I hope you'll find the material as
+useful as I do. So, welcome to the course and I'll see you online.</p>
+<a class="header" href="print.html#email-management" id="email-management"><h1>Email Management</h1></a>
+<a class="header" href="print.html#readings" id="readings"><h2>Readings</h2></a>
+<ul>
+<li>Strategies
+<ul>
+<li>Duffy, J. (2019). 11 Tips for Managing Email More Efficiently. Retrieved
+19 July 2022, from <a href="https://www.pcmag.com/news/11-tips-for-managing-email-more-efficiently">PC Mag</a></li>
+<li>Haupt, A. (2021). Overwhelmed by email? Here’s how to get that inbox
+under control. The Washington Post. Retrieved from <a href="https://www.washingtonpost.com/lifestyle/wellness/email-management-tips-productivity/2021/08/27/36d80376-0692-11ec-8c3f-3526f81b233b_story.html">Washington Post</a></li>
+<li>Tips and Tools for Managing Email. (2021). Retrieved from <a href="https://www.coloradocollege.edu/offices/its/guides/manage-email.html">Colorado College</a></li>
+</ul>
+</li>
+<li>Outlook
+<ul>
+<li>Manage email messages by using rules. Retrieved from <a href="https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59">Using Rules - Microsoft</a></li>
+<li>Manage and organize: Search. Retrieved from <a href="https://support.microsoft.com/en-us/office/Manage-and-organize-b6d7ea98-a81f-492c-8e4b-694b6bb96b30#ID0EBBD=Search">Search - Microsoft</a></li>
+<li>Manage and organize: Clean up Inbox. Retrieved from <a href="https://support.microsoft.com/en-us/office/Manage-and-organize-b6d7ea98-a81f-492c-8e4b-694b6bb96b30#ID0EBBD=Clean_up_Inbox">Clean up Inbox - Microsoft</a></li>
+<li>Flag email messages for follow up. Retrieve from <a href="https://support.microsoft.com/en-us/office/flag-email-messages-for-follow-up-9d0f175f-f3e9-406d-bbf7-9c57e1f781cc?ui=en-us&amp;rs=en-us&amp;ad=us">Flag messages</a></li>
+</ul>
+</li>
+<li>Gmail
+<ul>
+<li>Create rules to filter your emails. Retrieved from <a href="https://support.google.com/mail/answer/6579?hl=en&amp;ref_topic=3394656">Using Rules - Gmail</a></li>
+<li>Create labels to organize Gmail. Retrieved from <a href="https://support.google.com/mail/answer/118708?hl=en&amp;ref_topic=3394656">Create Labels - Google</a></li>
+<li>Group emails into conversations. Retrieved from <a href="https://support.google.com/mail/answer/5900?hl=en&amp;ref_topic=3394656">Group emails - Google</a></li>
+<li>Search in Gmail. Retrieved from <a href="https://support.google.com/mail/answer/6593?hl=en&amp;co=GENIE.Platform%3DDesktop">Search - Gmail</a></li>
+<li>Create &amp; manage Tasks in Google Calendar. Retrieved from <a href="https://support.google.com/calendar/answer/9901136?hl=en&amp;co=GENIE.Platform%3DDesktop">Create &amp; manage Tasks</a></li>
+</ul>
+</li>
+</ul>
+<a class="header" href="print.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<p>Many people today use a variety of social media and text messaging platforms to
+communicate with each other, and this is on top of, or in spite of, the
+existence and use of email, which still reigns as the dominant mode of
+communication across a variety of industries. We can refer to this experience
+of the abundance of communication platforms and the abundance of messaging on
+these platforms as <em>communication overload</em>. This concept basically means that
+there are too many messages coming at us from too many platforms.</p>
+<p>Unfortunately, it's beyond the scope of this lecture to address strategies for
+managing communication from across multiple platforms, but since email reigns
+supreme as a form of communication across industry, it's important to learn
+some strategies for managing our emails and avoiding inboxes with hundreds or
+thousands of unread email.</p>
+<a class="header" href="print.html#strategies" id="strategies"><h2>Strategies</h2></a>
+<p>The first set of readings listed above focus on overall strategies for managing
+our email inboxes. The readings suggest a number of strategies, but the two
+main strategies focus on 1) <strong>organizing our email</strong> and 2) <strong>searching for
+email</strong>. Some of the specific suggestions they make to implement those
+strategies will depend upon whether we use email in the web browser, via a
+desktop application, or a phone app. Thus it may take some exploration to
+figure out how to apply these lessons based on what you use.</p>
+<a class="header" href="print.html#organization" id="organization"><h3>Organization</h3></a>
+<p>Each email service we use (e.g., Outlook, Gmail, etc.) offers similar but also
+different ways to organize our email. Here are some ways to organize your
+emails:</p>
+<ol>
+<li>
+<p>Create folders (Outlook) or labels (Gmail), and then archive or group your
+email.</p>
+</li>
+<li>
+<p>Create rules to filter your email to specific folders or label your emails
+with specific labels.</p>
+<p>For example, I have several folders in Outlook. I have a folder titled
+'university email' and a rule that sends all email from UK officials and UK
+mailings lists to that account. I have another folder titled 'Canvas
+email', where all email from my courses are routed to. And so on. Most of
+these emails are not time-sensitive (e.g., mailing list email) or it's
+simply helpful to group email by category (e.g., Canvas student email), and
+using them, therefore, helps keep email organized. As a student, you might
+want to create folders for specific courses, specific majors/minors,
+administrative functions (registration related emails, for example) and
+like.</p>
+<p>Gmail doesn't use the terms <strong>rules</strong> or <strong>folders</strong>, per say, but instead
+uses the concept of <strong>filters</strong> and <strong>labels</strong>. Gmail will automatically
+assign labels to your email, but you can apply more personalized labels.
+And then you can set up filters that automatically assigns labels that
+match the logic you set up with the filters.</p>
+</li>
+</ol>
+<a class="header" href="print.html#searching" id="searching"><h3>Searching</h3></a>
+<p>All email services provide some kind of search, even if implemented in
+different ways. And like regular search engines, Outlook and Gmail both offer
+advanced searching abilities.</p>
+<p>In Outlook, you can search:</p>
+<ul>
+<li>in specific folders</li>
+<li>by who an email is <strong>From</strong></li>
+<li>by who you sent an <strong>To</strong></li>
+<li>by a <strong>CC</strong> (carbon cop) address or person</li>
+<li>by <strong>Subject</strong> line</li>
+<li>by <strong>Keywords</strong> (that may appear in the email message),</li>
+<li>within specific dates,</li>
+<li>and you can limit results to specific dates</li>
+</ul>
+<p>In Gmail, you can do most of same kinds of things, but you can also:</p>
+<ul>
+<li>search by email size</li>
+<li>and exclude emails that do not include certain terms</li>
+</ul>
+<p>Searches are very similar to filters, and in fact, in both Outlook and Gmail,
+you can save a search as a filter if you find that your search query can be
+re-used.</p>
+<p>Searching not only helps you find specific emails on specific topics and within
+specific time frames, it's also a good way to mass delete old and unnecessary
+email.</p>
+<a class="header" href="print.html#other-strategies" id="other-strategies"><h3>Other Strategies</h3></a>
+<p>Both the <em>PC Mag</em> and <em>The Washington Post</em> articles suggest that <strong>we turn off
+notifications</strong>. The point is that if we receive a lot of emails, then email
+itself becomes too distracting. Instead, <em>The Washington Post</em> suggests that we
+simply <strong>check our email only a few times per day</strong> (but probably at most twice
+a day is sufficient). The aim here is to be intentional about using email (and
+this applies to any other communication technology) rather than mindless and
+distracted by it.</p>
+<p><em>The Washington Post</em> article also suggests applying <strong>the four Ds</strong> to your
+emails: &quot;<strong>do, delete, delegate or defer</strong>. It's up to you how to implement
+these ideas, but the main goal is to get rid of unnecessary email fast. Don't
+let it accumulate. The more emails that sit in our inbox, the more overwhelming
+it becomes afterward. In fact, <strong>unsubscribe</strong> to everything that is not
+important.</p>
+<p>Another good idea is to keep personal and work email separate. In fact, have
+more than one personal email account. Use one personal as a throwaway account
+for signing up to random websites. Use your main personal account for personal
+communication, banking, important social media accounts, and like. Use your
+work account or your school account for work or school related tasks only. Be
+mindful that your work or school account does not belong to you and that you
+will lose that account when you leave a job or graduate from school. In fact,
+the University of Kentucky has a <a href="https://uknow.uky.edu/student-and-academic-life/graduating-what-do-your-uk-accounts-and-mail-you-go">help page about your various UK
+accounts</a> that you should read now.</p>
+<p>As your lives become increasingly busy, in they're not already, using good
+Calendar and Task apps can help keep our days organized and our to-do lists
+manageable. Both Outlook and Gmail integrate <strong>Tasks</strong> and <strong>Calendars</strong>. The
+readings above link to help pages on how to use these functions. These are
+super time-saving functions for me.</p>
+<a class="header" href="print.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>In addition to managing our personal knowledge, one of the main points of this
+class is to become adept at using the various technologies that are available
+to us. If we're only passive users of technology, then that technology can
+easily overwhelm us. Active and intentional use of technology and of the
+specific functions that services provide can actually help improve our lives
+and our personal knowledge management work flows.</p>
+<p>In this lesson, we learned how to think strategically about email services. The
+two main strategies involve how to:</p>
+<ul>
+<li>organize our email, and how to</li>
+<li>search our email.</li>
+</ul>
+<a class="header" href="print.html#back-up-your-work" id="back-up-your-work"><h1>Back Up Your Work</h1></a>
+<a class="header" href="print.html#readings-1" id="readings-1"><h2>Readings</h2></a>
+<ul>
+<li>Velazco, C. (2022). Help desk quick fix: How to back up your phone before you
+lose it. <em>The Washington Post</em>. Retrieved from <a href="https://www.washingtonpost.com/technology/2022/04/11/help-desk-quick-fix/">Washington Post</a></li>
+<li>Back up your Mac. Apple. Retrieved from <a href="https://support.apple.com/mac-backup">Apple</a></li>
+<li>Backup and Restore in Windows. Retrieved from <a href="https://support.microsoft.com/en-us/windows/back-up-and-restore-your-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c">Microsoft</a></li>
+</ul>
+<a class="header" href="print.html#introduction-1" id="introduction-1"><h2>Introduction</h2></a>
+<p>Many of us nowadays have multiple devices, like laptops and smartphones, and
+obviously, as we use those devices, those devices become filled with important
+files, settings, texts, and so forth that we probably don't want to lose. As a
+result, it's a good idea to back up these devices to help insure that we can
+restore our data if something happens to the device.</p>
+<p>Unfortunately, methods to back up our data vary depending on the smartphone
+maker (Android, iPhone, etc) and laptop/desktop (Windows, Apple). We also have
+a variety of storage options, and the two biggest options are the cloud, like
+iCloud, Dropbox, Google Drive, and extra storage devices, like external hard
+drives or large data capacity USB drive.</p>
+<p>In this lecture, I cover how to back up your phones and laptops/desktops for
+long term storage.</p>
+<a class="header" href="print.html#smartphones" id="smartphones"><h2>Smartphones</h2></a>
+<p>A good backup strategy to follow is to first backup your phone, either to the
+cloud or to your computer, and then back up your computer. This is because we
+sometimes will want to use our computers as backups for our phones.</p>
+<p>To get started, <em>The Washington Post</em> <a href="https://www.washingtonpost.com/technology/2022/04/11/help-desk-quick-fix/">has a couple of helpful</a>
+videos on how to back up your iPhone or Android smartphones.</p>
+<a class="header" href="print.html#macs" id="macs"><h2>Macs</h2></a>
+<p>For instructions on backing up your Mac,
+you should follow <a href="https://support.apple.com/mac-backup">Apple's instructions</a>,
+which shows you how to back up your device using Time Machine or iCloud.
+The instructions also show you how to restore your Mac from a backup, how to
+check your storage capacity, how to free up storage, and more.</p>
+<p>If you select to backup with Time Machine, you can select a backup disk, like
+an external hard drive or large data capacity USB drive.</p>
+<a class="header" href="print.html#windows" id="windows"><h2>Windows</h2></a>
+<p>For instructions on backing up your Windows computer, you should likewise start
+with <a href="https://support.microsoft.com/en-us/windows/back-up-and-restore-your-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c">Microsoft's instructions</a>. The instructions at the prior
+link show how to backup for either Windows 10 or Windows 11. As with Macs, if
+you can elect to backup your files using an external disk or a cloud solution.
+Microsoft's instructions also cover how to restore your data if necessary.</p>
+<a class="header" href="print.html#external-drives" id="external-drives"><h2>External Drives</h2></a>
+<p>External hard drives are a great solution for backing up your system.
+Today's drives are relatively inexpensive.
+A 2TB external hard drive may cost as little as $60.
+The advantage of using an external hard drive is that you pay
+a one-time cost (the cost of the drive).</p>
+<p>External hard drives require some setup
+because different operating systems use different file system formats.
+If you are using a macOS computer,
+you will want to format your drive using <a href="https://support.apple.com/guide/disk-utility/erase-and-reformat-a-storage-device-dskutl14079/mac">Disk Utility</a>.
+macOS uses the <a href="https://support.apple.com/guide/disk-utility/file-system-formats-dsku19ed921c/21.0/mac/12.0">Apple File System (APFS)</a> by default.
+If you are using a Windows computer,
+you can use <a href="https://www.hellotech.com/guide/for/how-to-format-a-hard-drive-windows-10">File Explorer</a>, and
+you will most likely want to format your drive
+using the <a href="https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview">New Technology File System (NTFS)</a>,
+However, if you want to be able to access your external
+drive from an Apple computer,
+you should format the drive using the <strong>exFAT</strong> file system.</p>
+<a class="header" href="print.html#encrypting-external-drives" id="encrypting-external-drives"><h3>Encrypting External Drives</h3></a>
+<p>One of the disadvantages of an external hard drive
+is that because it's portable,
+it can be lost or misplaced.
+Therefore, when you begin to format your disk,
+you may want to set up encryption so that
+the drive is protected from other people.</p>
+<p>You setup encryption on macOS when you format the drive.
+Apple provides instructions on its page on
+<a href="https://support.apple.com/guide/disk-utility/encrypt-protect-a-storage-device-password-dskutl35612/mac">Encrypt and protect a storage device</a>
+with a password using Disk Utility on Mac.
+Microsoft also provides instructions for encrypting
+on <a href="https://support.microsoft.com/en-us/windows/turn-on-device-encryption-0c453637-bc88-5f74-5105-741561aae838#ID0EBD=Windows_11">Windows 10/11</a>.
+Be sure to use a strong password, and
+be sure to keep that password safe.
+Also, be aware that if you lose the password, or forget it,
+then you lose access to the drive.</p>
+<p>It's usually a good idea to keep your external drive
+in a separate location from the device that you're backing up.
+This is in case your main device gets stolen
+or is destroyed by fire, flooding, etc.
+However, the downside is that this makes it less likely that
+you backup regularly, and
+<strong>it's important to keep regular backups of your data</strong>.
+Therefore, one option is to purchase a smaller drive
+that you use to backup the most sensitive data
+(e.g., medical information, financial information, etc)
+and store that off-site and encrypted,
+and use an additional drive that you keep on hand (and encrypted)
+for daily or regular backups.</p>
+<a class="header" href="print.html#cloud-solutions" id="cloud-solutions"><h2>Cloud Solutions</h2></a>
+<p>An additional backup option is to use a cloud solution.
+For macOS users, you can use iCloud to back up the files
+on all of your devices, as described above.</p>
+<p>Some of the big name options include:</p>
+<ul>
+<li><a href="https://help.dropbox.com/installs-integrations/desktop/how-to-use-dropbox-backup">Dropbox</a></li>
+<li><a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/pc-cloud-backup">OneDrive</a></li>
+<li><a href="https://www.google.com/drive/download/">Google Drive</a></li>
+</ul>
+<p>There are also less well-known but seemingly respected backup solutions,
+like <a href="https://www.backblaze.com/cloud-backup.html">Backblaze</a> and <a href="https://www.idrive.com/">iDrive</a>.
+<a href="https://www.tomsguide.com/best-picks/best-cloud-backup">Tom's Guide</a> has reviews those and others.</p>
+<p>The main advantage of a cloud solution is that
+you can set it and forget it.
+The main disadvantage is that the amount of data
+you may want to backup may require paying a monthly fee.</p>
+<p>When choosing a cloud backup solution,
+you may want to consider if the service meets
+the following criteria:</p>
+<ul>
+<li>storage size options</li>
+<li>cost</li>
+<li>disk recovery options</li>
+<li>backup and syncing speeds</li>
+<li>web access</li>
+<li>ease of use</li>
+<li>multiple devices (smartphones and/or laptops/desktops)</li>
+<li>security</li>
+<li>version history</li>
+</ul>
+<a class="header" href="print.html#conclusion-1" id="conclusion-1"><h2>Conclusion</h2></a>
+<p>All storage devices fail eventually,
+or may get damaged, lost, stolen, etc.,
+and it really hurts to lose important files,
+like photos of loved ones or homework and projects, etc.
+Backing up your devices is how we prevent or reduce losing that data.</p>
+<p>In this section, we covered various methods to backup your data.
+Unfortunately, every solution requires some cost, and
+so you have to weigh that cost with your sense of risk
+and with what you might lose if you don't backup.</p>
+<p>Note that if you are really risk averse,
+an additional option is to use both
+external storage devices and cloud solutions.
+You can backup your entire disk using a cloud solution,
+or just select folders,
+and then backup your entire disk with an external drive.</p>
+<p>Whatever option you choose,
+be sure to back up regularly.</p>
+<a class="header" href="print.html#information-sources-and-resources" id="information-sources-and-resources"><h1>Information Sources and Resources</h1></a>
+<a class="header" href="print.html#readings-2" id="readings-2"><h2>Readings</h2></a>
+<p>Please visit the links in this section as you read through it.</p>
+<a class="header" href="print.html#primary-secondary-and-tertiary-sources" id="primary-secondary-and-tertiary-sources"><h2>Primary, Secondary, and Tertiary Sources</h2></a>
+<p>It's true that just about anything can be a source of information,
+but we generally think of information sources in a more scholarly way.
+In that light, you likely already know about the differences between
+<strong>primary</strong>, <strong>secondary</strong>, and <strong>tertiary</strong> sources.
+Simply put, primary sources are more direct sources of information.
+They are things that we might study for their own sake because
+of their direct connection to some event, person, place, or thing.
+A 17th century painting is a good example of a primary source,
+but so is a scientific article that creates knowledge.</p>
+<p>Secondary sources reflect on or refer to primary sources.
+A commentary on a 17th century painting
+or a review of the scientific literature are examples of secondary sources.
+Despite these examples,
+it's more helpful to think of the difference between
+primary and secondary sources more contextually.
+This is because a secondary source might be treated as a primary source.
+For example, a researcher studying the history of art
+might treat published art reviews as primary sources,
+even if those reviews might traditionally be considered secondary sources
+at the time they were created.</p>
+<p>Tertiary sources are basically reference works.
+These are things like dictionaries, general encylopedias, and like.</p>
+<a class="header" href="print.html#resource-types" id="resource-types"><h2>Resource Types</h2></a>
+<p>It can be helpful to know about the differences between
+primary, secondary, and tertiary sources at times because
+it's important, when dealing with an information source, to
+understand what we're looking at or reading.
+That is, primary, secondary, and tertiary sources say something
+about the kind of evidence in those respective sources.
+But another way to think about the differences between sources
+is to think about the <strong>type of sources</strong> they are.
+For example, if I do a <a href="https://saalck-uky.primo.exlibrisgroup.com/discovery/search?vid=01SAA_UKY:UKY">library search</a>,
+I have the option to narrow my search by <strong>Resource Type</strong>.
+Example resource types in UK's catalog include:</p>
+<ul>
+<li>Articles</li>
+<li>Newspaper articles</li>
+<li>Dissertations</li>
+<li>Books</li>
+<li>Book chapters</li>
+<li>Review</li>
+<li>Reports</li>
+<li>Reference entries</li>
+<li>Conference proceedings</li>
+<li>Datasets</li>
+<li>Maps</li>
+<li>Images</li>
+<li>Databases</li>
+<li>Government documents</li>
+<li>and more.</li>
+</ul>
+<a class="header" href="print.html#information-resources-of-information-sources" id="information-resources-of-information-sources"><h2>Information Resources of Information Sources</h2></a>
+<p>A resource is really a thing that supplies a thing,
+whatever that thing is.
+For our purposes, we can think of information resources
+as providers of information sources,
+like those listed above.
+One of the more important resources are databases,
+and we can think of databases are great <strong>resources</strong>
+for locating <strong>sources of information</strong>, but
+the term <strong>database</strong> itself is a bit problematic because it has multiple
+meanings, and I think it will help if we start this section by clarifying what
+we mean in this course by the term <em>database</em>.</p>
+<p>According to the
+<a href="https://saalck-uky.primo.exlibrisgroup.com/permalink/01SAA_UKY/ija67f/cdi_proquest_ebookcentral_EBC3312345"><em>Dictionary of Information Science and Technology</em></a>,
+the term <strong>database</strong> can be defined as:</p>
+<blockquote>
+<p>a collection of files containing related information. Database consists of
+files and each file consists of records. Furthermore, each record consists of
+fields, which can be used to store the raw facts or data (p. 246).</p>
+</blockquote>
+<p>This definition is not wrong, per se, but it is rather broad and therefore not
+entirely useful. For example, the definition entails that if I have a folder on
+my desktop, and if that folder contains only Excel spreadsheets on related
+content, and since those spreadsheets contain only records (i.e., rows) and
+fields (i.e., cells), then that folder on my desktop is a database. Although I
+suppose that's kind of true, I don't think that's really what the dictionary
+authors have in mind, and thus it's not an accurate enough nor a very useful
+definition.</p>
+<p>A more specific and applicable definition is provided by the
+<a href="http://products.abc-clio.com/ODLIS/odlis_d#database"><em>Online Dictionary of Library and Information Science</em></a>,
+which defines a <strong>database</strong> as:</p>
+<blockquote>
+<p>A large, regularly updated file of digitized information (bibliographic
+records, abstracts, full-text documents, directory entries, images,
+statistics, etc.) related to a specific subject or field, consisting of
+records of uniform format organized for ease and speed of search and
+retrieval and managed with the aid of database management system (DBMS)
+software. Content is created by the database producer (for example, the
+American Psychological Association), which usually publishes a print version
+(Psychological Abstracts) and leases the content to one or more database
+vendors (EBSCO, OCLC, etc.) that provide electronic access to the data after
+it has been converted to machine-readable form (PsycINFO), usually on CD-ROM
+or online via the Internet, using proprietary search software.</p>
+</blockquote>
+<blockquote>
+<p>Most databases used in libraries are catalogs, periodical indexes,
+abstracting services, and full-text reference resources leased annually under
+licensing agreements that limit access to registered borrowers and library
+staff. Abbreviated db. Compare with data bank. See also: archival database,
+bibliographic database, embedded database, metadatabase, and niche database.</p>
+</blockquote>
+<p>The above definition is more helpful because it provides examples of content
+type (e.g., bibliographic records, abstracts, full-text documents, etc) and how
+to access that content (e.g., library catalogs, periodical indexes), because it
+partitions out the components of a database (records, search, retrieval), and
+because it distinguishes a <em>database</em> proper from a <em>database management system
+(DBMS)</em>, which is what the prior definition was attempting to define. The
+ODLIS definition also highlights the role of database producers in producing
+databases (e.g., the American Psychological Association), which tells us
+something about the subject matter of a database (e.g., psychology).</p>
+<a class="header" href="print.html#what-are-example-databases" id="what-are-example-databases"><h2>What are example databases?</h2></a>
+<p>The ODLIS definition provides some leads to this question. The definition tells
+us that example databases include &quot;digitized information containing
+bibliographic records, abstracts, full-text documents, directory entries,
+images, and statistics&quot; that are &quot;related to a specific field or subject,&quot; and
+that these can be accessed through library &quot;catalogs, periodical indexes,
+abstracting services, and full-text reference resources.&quot; Given that, let's
+look at some examples.</p>
+<a class="header" href="print.html#library-catalogs-and-discovery-services" id="library-catalogs-and-discovery-services"><h3>Library Catalogs and Discovery Services</h3></a>
+<p>We'll start with the most general example, and that's the <strong>library catalog</strong>.
+Traditionally, library catalogs were databases that primarily provided
+information about where we could find content on a library's shelves (i.e.,
+print content). However, given that more content is available online, nowadays
+these catalogs are more often referred to as discovery services. In this
+expanded role, not only can they tell us where to find a book on a shelf, but
+they can also provide full text access to online content in other databases.</p>
+<blockquote>
+<p>We can access the University of Kentucky's library catalog/discovery service
+at their main website at:</p>
+<p><a href="https://libraries.uky.edu/"><strong>https://libraries.uky.edu</strong></a></p>
+<p>Please visit the link and test your own searches.</p>
+</blockquote>
+<p>In the center of UK Libraries' homepage, we find two tabs of interest, the
+<strong>Search</strong> tab and the <strong>Library Catalog</strong> tab. If we enter a search term in
+the search box for either of those resources, our search will take us to the
+same interface. That's because there's really only a small difference between
+how the functions <strong>Search</strong> and <strong>Library Catalog</strong> work. The <strong>Search</strong>
+function will return results, based on a search query, for print items located
+on the library's shelves but also for online items located in various other
+databases. The <strong>Library Catalog</strong> will do the same, but it'll place a bit more
+emphasis on locating print items on the library's shelves. Searching one or the
+other then is really simply a matter of emphasis.</p>
+<p>Regardless, both services return what are called <strong>bibliographic records</strong> and
+not full text access. These bibliographic records do not provide the actual
+content. Rather, they provide access by telling us where to locate the content.
+For example, if that content is a print item someplace on the library's
+shelves, the catalog might tell us it's located on the 5th floor of WT Young
+and has the call number <strong>Z674.82.159 S42 1996</strong>, or something like that.
+However, if that content is online, then the catalog should give us a direct
+link to it. It could also be that the UK Libraries catalog has records for
+information sources but not the actual sources themselves. In those cases, the
+bibliographic records should provide a link to request the item through
+interlibrary loan (ILL).</p>
+<p>Google and other search engines function in much the same way. If I do a search
+for the term <strong>databases</strong> in Google, the search engine will return results to
+sites that are relevant to that term, like a Wikipedia article on databases.
+Google itself does not store the full text content and only provides access
+(i.e., links) to content based on its own indexing of where things are on the
+web. Unlike the library's catalog, if Google returns results for pages it
+cannot access or that don't exist anymore, there is no ILL service offered, and
+we're left to our own devices to find access to that information.</p>
+<a class="header" href="print.html#periodical-indexes-and-abstracting-services" id="periodical-indexes-and-abstracting-services"><h3>Periodical Indexes and Abstracting Services</h3></a>
+<p>The library catalogs and discovery services that I described above return a
+wide variety of bibliographic records that describe and provide access to
+books, ebooks, book chapters, maps, scholarly articles, news articles, images,
+and more. While the discovery service part of the search that we explored above
+functions as a kind of catchall for all the types of works that a library can
+provide access to, as just listed, there will be times when we will want to
+focus our search to a more limited subset of records, such as those that
+produced by periodicals.</p>
+<p>Periodicals are nothing more than magazines and journals. This kind of genre
+produces issues at regular (or even at irregular) intervals, such as weekly,
+bimonthly, monthly, or quarterly issues, with no pre-determined end.
+Periodicals focus on different audiences, such as the general public (e.g.,
+Time magazine), parts of the general public (e.g., <em>WIRED</em>, <em>Elle</em>, <em>Better
+Homes and Gardens</em>), the general scholarly community (e.g., <em>Nature</em>,
+<em>Science</em>), or to specific scholarly communities (e.g, <em>Journal of Information
+Technology</em>, <em>Journal of Synchrotron Radiation</em>, <em>Journal of Sociology</em>).
+Scholarly journals are generally (but not always) peer-reviewed journals, which
+means that when authors submit their manuscripts to these journals, the
+manuscripts are sent out to two to three peers in the scholarly community who
+read the manuscripts and write recommendations to the editors for improving the
+manuscript, or who recommend that the journal editor reject the manuscript.
+Different journals and different scholarly disciplines have different criteria
+for making judgments on quality.</p>
+<p>There are two broad ways to locate sources in periodicals. At the UK Libraries
+<a href="https://libraries.uky.edu/">homepage</a>, we can select the <strong>Journals</strong> tab or the
+<strong>Databases</strong> tab. The <strong>Journals</strong> tab lets us search for specific journal
+titles and, if desired, within disciplinary/subject categories (e.g., Health &amp;
+Biological Sciences, Law, Politics &amp; Government, Language &amp; Literature, or
+Social Sciences, Journalism &amp; Communications, and more). Once we locate a
+journal of interest, we can visit the link and then search within that journal
+or peruse the table of contents for specific issues.</p>
+<p>The <strong>Databases</strong> tab lets us expand our search of records to broader
+categories or subject areas of periodicals. Here we find databases like
+<a href="https://libguides.uky.edu/4"><em>Academic Search Complete</em></a>, which will let us search thousands of
+periodicals, including magazines and scholarly journals, across a range of
+subject categories. <em>JSTOR</em> is another database that indexes a broad subject
+range of periodicals but with greater emphasis on peer-reviewed material.
+Databases may also have a specific focus. For example, the
+<a href="http://ezproxy.uky.edu/login?url=https://www.aac.amdigital.co.uk/"><em>African American Communities</em></a>
+database provides access to archival and historical papers,
+oral histories, essays, letters, pamphlets, and newspapers on African American
+communities and is geographically focused on Atlanta, Chicago, New York, and
+parts of North Carolina. Then we also have access to databases like the
+<em>Kentucky Building Code</em>, which is a database that links to residential and
+commercial regulatory information on building, plumbing, design in Kentucky.</p>
+<p>Many of the resources listed above, as well as the hundreds that UK Libraries
+offers and that I have not described, provide access to full-text content. But
+this isn't necessarily so. All that a periodical index must offer to be
+classified as such are records that contain basic information, such as article
+titles, author names, publication names, publication date information, and
+often subject terms. Abstracting services provide the same information but also
+provide abstracts of journal articles, which are searchable. Since abstracts
+provide summary information of the main articles, this is helpful in locating
+information sources.</p>
+<a class="header" href="print.html#full-text-resources" id="full-text-resources"><h3>Full-text Resources</h3></a>
+<p>Periodical indexes and abstracting services do not necessarily provide direct
+full text access. You might wonder what the point is if you can't get the full
+text of some source that the library tells you exists. The point is that even
+if the library doesn't have immediate access to a source, if it can tell you
+that it exists, then a librarian can likely get the source through interlibrary
+loan (which is fast!) or some other means. So if the stakes are high (e.g., you
+are a cancer researcher) and you really need or just want information (e.g.,
+about a cancer therapy), then periodical indexes and abstracting services are
+great resources even if they do not provide immediate full text access.</p>
+<p>That said, in addition to a variety of periodical indexes and abstracting
+services, UK Libraries provides quite a few full text databases. Visit the
+<a href="https://libguides.uky.edu/az.php">A-Z Databases page</a> to see all of your choices. A full-text database
+may also be an abstracting service, if it provides the basic information listed
+above (title, author name, etc) about periodical content. It becomes a
+full-text abstracting database if it also provides access to the full-text
+source. Other non-periodical database, like the <em>African American Communities</em>
+database, also provides full text access to its sources (and may even be
+thought of as a <em>digital library</em> and not just a database).</p>
+<p>In the next few paragraphs below, I will focus on a few general purpose
+full-text databases that you may find helpful as you work towards your degree.
+Although these databases provide full-text sources, they may not provide
+full-text to everything they have records for, though.</p>
+<a class="header" href="print.html#academic-search-complete" id="academic-search-complete"><h4>Academic Search Complete</h4></a>
+<p><a href="https://libguides.uky.edu/4"><em>Academic Search Complete (ASC)</em></a> is a database of databases. It can
+search over 60 different databases and indexes, each including hundreds of
+journal titles, including:</p>
+<ul>
+<li><em>Communication and Mass Media Complete</em></li>
+<li><em>Sociological Collection</em></li>
+<li><em>Music Index</em></li>
+<li><em>SPORTDiscus</em></li>
+<li><em>MEDLINE</em></li>
+<li><em>eBook K-8 Collection</em>,</li>
+<li>and more.</li>
+</ul>
+<p>In ASC, we can search all 60 plus databases at one time, or we can select one
+or more of them, which might make better sense. For example, if we were
+interested health related information, we might want to search the following
+ASC databases at once:</p>
+<ul>
+<li><em>Consumer Health Reference eBook Collection</em></li>
+<li><em>Health and Psychosocial Instruments</em></li>
+<li><em>MEDLINE</em></li>
+<li><em>APA PsycInfo</em></li>
+</ul>
+<a class="header" href="print.html#proquest" id="proquest"><h4>ProQuest</h4></a>
+<p>Like ASC, <a href="https://libguides.uky.edu/90">ProQuest</a> provides access to many subject based databases,
+and also, many of the database topics overlap. ProQuest uses this to highlight
+database collections. For example, the <em>SciTech Premium Collection</em> includes
+three databases that can be searched at once. These include the:</p>
+<ul>
+<li><em>Natural Science Collection</em></li>
+<li><em>Science Database</em></li>
+<li><em>Technology Collection</em></li>
+</ul>
+<p>ProQuest's <em>Social Science Premium Collection</em> includes databases on
+criminology, education, library and information science, politics, sociology,
+and more.</p>
+<p>ProQuest also provides database access to magazines and news content, including
+<em>The Vogue Archive</em> and various current and historical newspapers, such as an
+archive of <em>The New York Times</em> or current issues of <em>The Courier-Journal</em>
+(Louisville, KY).</p>
+<a class="header" href="print.html#jstor" id="jstor"><h4>JSTOR</h4></a>
+<p><a href="https://libguides.uky.edu/266"><em>JSTOR</em></a> is another multi-disciplinary database. JSTOR covers subjects
+such as:</p>
+<ul>
+<li>Arts</li>
+<li>Business &amp; Economics</li>
+<li>History</li>
+<li>Medicine &amp; Allied Health</li>
+<li>Science &amp; Mathematics</li>
+<li>Security studies</li>
+<li>Social Sciences, and more.</li>
+</ul>
+<p>Each of these subject areas includes access to many journal titles, and
+therefore, many journal articles. <em>JSTOR</em> has long focused on back issues of
+journals, but in recent years has made moves to include current literature and
+open access content (this content that is freely available). <em>JSTOR</em> also
+includes <a href="https://www.artstor.org/public-collections/"><em>ARTSTOR</em></a>, a database of images, video, and other
+multimedia content, much of which is also available as open access.</p>
+<blockquote>
+<p>Note: Open access (OA) content is content that
+is freely available to access.
+That does not, however, mean that the content is
+free of copyright protections.
+There are different types of OA copyright licenses
+and each will stipulate how we can use that content.
+<a href="https://creativecommons.org/about/cclicenses/">CreativeCommons.org</a> provides a list of some
+of the more popular licenses and what the mean for us.
+In all cases, though, if you use OA content,
+be sure to attribute it with source information.</p>
+</blockquote>
+<a class="header" href="print.html#conclusion-2" id="conclusion-2"><h2>Conclusion</h2></a>
+<p>Remember, one of the main ideas of this course is that there are many sources of
+information that are not easily available via Google or some other search
+engine. Even when we do use Google or Bing or Yahoo or something else, there are
+certain advanced tricks we can use to leverage them to find better information.
+And if we apply what we'll learn in this class, we'll simply be better masters
+of our own fate and our own knowledge.</p>
+<p>In short, we are going to learn a bit more about what's hidden from most users
+and from the common view---that which lies under the iceberg---and we'll learn a
+bit about how to manage and apply these sources.</p>
+<a class="header" href="print.html#reference-managers" id="reference-managers"><h1>Reference Managers</h1></a>
+<a class="header" href="print.html#readings-3" id="readings-3"><h2>Readings</h2></a>
+<p>Please visit the links in this section as you read through it, and
+read through the <a href="https://www.zotero.org/support/">Zotero Documentation</a>,
+especially after watching the accompanying software demonstration.</p>
+<a class="header" href="print.html#introduction-2" id="introduction-2"><h2>Introduction</h2></a>
+<p>Now that I have introduced you to some of the different resources for
+information sources that exist (and we will learn about more), our next
+personal knowledge management challenge involves managing the information
+sources that we locate and want to use.</p>
+<p>Imagine, for example, that we need to locate and use three academic sources for
+a class paper assignment. We could, like probably many do, search for
+information on the fly, locate some journal articles, figure out how to cite
+the articles, and add the citations to our Word documents. Perhaps if we're a
+little more advanced, we could download the papers to a folder on our computer
+for later reference (perhaps we have a folder dedicated to the class paper and
+even a subfolder dedicated to any readings that we download). Although that
+might be a bit more organized, it is the 21st century, and we have these
+computers that can do so much more for us than act as simple file cabinets.
+Basically, if we want to be more efficient, to save time, and to do a good job,
+then this is not the way.</p>
+<p>Instead, we can use a <strong>reference manager (RM)</strong> (also called a <em>citation
+manager</em>), which is a piece of software that can help us manage this process of
+saving, collecting, and using information sources. Although generally aimed at
+academic users, RMs can also be used to bookmark, save, and collect all sorts
+of web and print information sources and for all sorts of outcomes, whether
+those outcomes are class papers, engineering projects, musical composition
+projects, biology experiments, and so on. Basically, if we use the web to
+collect and then use information, then a RM is the way.</p>
+<a class="header" href="print.html#reference-manager-software" id="reference-manager-software"><h2>Reference Manager Software</h2></a>
+<p>You will be required to use a RM in this course, and I will focus on the
+<a href="https://www.zotero.org/">Zotero</a> RM. However, you are free to choose other options, even if I
+don't cover them, and there are many. <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">Wikipedia</a> has a page that
+lists around 20 RM options.</p>
+<p>There are a few reasons I will focus on Zotero, though. First, I use it, and I
+know it fairly well, although I'm always learning new things about it. But most
+importantly, it's free (and open source software), it's consistently maintained
+and updated, it provides all the major functions that a RM should provide and
+more, and it's available on Windows and macOS <a href="https://www.zotero.org/download/">desktop and laptop
+computers</a>. For iOS (i.e., mobile) users, there is an <a href="https://apps.apple.com/us/app/zotero/id1513554812">app for
+the iPhone and iPad</a>, but Android users can access their Zotero
+library using their phone's web browsers, which is just as good as the
+dedicated app.</p>
+<p>If you elect to use an alternate RM, be aware that they are not all created
+equal. However, the two most popular, functional, and well-supported
+alternatives are <a href="https://www.mendeley.com/">Mendeley</a> and <a href="https://libguides.uky.edu/endnote">EndNote</a>. Both of these are
+are more academic-centric, though, while Zotero is more agnostic about source
+information.</p>
+<blockquote>
+<p>Mendeley and EndNote are more academically oriented
+because they are owned by companies involved with
+academic publishing and academic databases.
+Mendeley is owned by the company Elsevier,
+which provides the <a href="https://libraries.uky.edu/lnkr.php?lir_id=3347"><em>Scopus</em></a> database,
+a bibliographic, abstract, and citation database, and
+publishes multiple journal titles.
+EndNote is owned by Clarivate, a research analytics company,
+which provides the <a href="https://libguides.uky.edu/467"><em>Web of Science</em></a> and <em>ProQuest</em> databases.
+<em>Web of Science</em> is a citation database like <em>Scopus</em>.</p>
+</blockquote>
+<a class="header" href="print.html#zotero" id="zotero"><h2>Zotero</h2></a>
+<p>Gilmour &amp; Cobus-Kuo (2011) identify the eight functions that a RM should
+provide, and Zotero performs all of these functions. These functions include:</p>
+<ol>
+<li>Import citations from bibliographic databases and websites</li>
+<li>Gather metadata from PDF files</li>
+<li>Allow organization of citations w/in the reference manager database</li>
+<li>Allow annotations of citations</li>
+<li>Allow sharing of the reference management database</li>
+<li>Allow data interchange with other reference manager products through
+standard metadata formats</li>
+<li>Produce formatted citations in a variety of styles</li>
+<li>Work with word processing software to facilitate in-text citation (Gilmour &amp;
+Cobus-Kuo, 2011, Introduction section).</li>
+</ol>
+<p>Regardless of which RM we use, we want to pick one that performs most if not
+all of the above functions because these functions help us identify a useful
+app. Fortunately, the <a href="https://www.zotero.org/support/quick_start_guide">Zotero Quick Start Guide</a> provides a
+nice overview of the basic functions and how to use those functions, and the
+additional documentation describes how to do more. Fortunately, Zotero
+satisfies the requirements listed above.</p>
+<p>Specifically, the Zotero Quick Start Guide shows us how to:</p>
+<ul>
+<li>Install and open the Zotero desktop/laptop application</li>
+<li>Install and use the Zotero browser plugin
+<ul>
+<li>The <a href="https://www.zotero.org/download/">download page</a> provides links for using Zotero with:
+<ul>
+<li>Firefox</li>
+<li>Edge</li>
+<li>Chrome</li>
+<li>Safari</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How to collect items (e.g., books, articles, images, etc.)</li>
+<li>What we can do with those items</li>
+<li>How to create collections to organize items by topic, project, etc</li>
+<li>How to use tags to add additional organizational layers</li>
+<li>How to search, and save your searches, your Zotero library</li>
+<li>How to import or add attachments (like PDF copies of your items)</li>
+<li>How to add notes to your items</li>
+<li>How to cite items in your papers, etc.</li>
+<li>How to use Zotero with Microsoft Word, Google Docs, or other word processors
+<ul>
+<li>The <a href="https://www.zotero.org/support/word_processor_integration">word processor plugin</a> provides links for using Zotero
+with Microsoft Word, LibreOffice Writer, and Google Docs</li>
+</ul>
+</li>
+<li>How to create bibliographies</li>
+<li>How to use Zotero and access your Zotero library on multiple devices</li>
+<li>How to collaborate on research projects using Zotero</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> If you choose Zotero,
+as I suggest and recommend,
+you should create a free account
+(use your personal email to sign up).
+As you add material to your Zotero collection,
+you collection will be synced with and backed up to Zotero's servers.
+Zotero registration:
+<a href="https://www.zotero.org/user/register/">https://www.zotero.org/user/register/</a></p>
+</blockquote>
+<a class="header" href="print.html#zotero-demo" id="zotero-demo"><h2>Zotero Demo</h2></a>
+<p>In the next video, I will show you how to complete the above steps so that you
+may get started using Zotero. Again, you may use an alternate RM, but
+throughout this course, I will demonstrate Zotero.</p>
+<p>Your task this week is to download and start using Zotero, or some alternate
+RM. Please follow the demo video to complete the process.</p>
+<a class="header" href="print.html#conclusion-3" id="conclusion-3"><h2>Conclusion</h2></a>
+<ul>
+<li>Reference (or citation) managers (RM) provide more sophisticated tools to
+manage information sources than simple files systems provide.</li>
+<li>There is a slew of RM applications available to use, but we want to be sure
+we pick one that provides as many functions as possible and that is available
+on as many devices and operating systems as possible and can be integrated
+with a variety of word processing applications.</li>
+<li>Although you are welcome to use an alternate RM, in this course we focus on
+the Zotero RM.</li>
+</ul>
+<a class="header" href="print.html#references-created-with-zotero" id="references-created-with-zotero"><h2>References (created with Zotero)</h2></a>
+<p>Gilmour, R., &amp; Cobus-Kuo, L. (2011). Reference Management Software: A
+Comparative Analysis of Four Products. Issues in Science and Technology
+Librarianship, 66(Summer 2011). https://doi.org/10.5062/F4Z60KZF</p>
+<a class="header" href="print.html#web-information-retrieval" id="web-information-retrieval"><h1>Web Information Retrieval</h1></a>
+<a class="header" href="print.html#readings-4" id="readings-4"><h2>Readings</h2></a>
+<p>Please visit links in this section and
+review the following search tips pages for Google Search,
+DuckDuckGo search, and Bing search.</p>
+<ul>
+<li>Refine web searches—Google Search Help. (n.d.). Retrieved August 3, 2022,
+from https://support.google.com/websearch/answer/2466433?hl=en</li>
+<li>DuckDuckGo. (n.d.). DuckDuckGo Search Syntax. DuckDuckGo Help Pages.
+Retrieved August 3, 2022, from
+https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/</li>
+<li>Advanced search options. (n.d.). Retrieved August 3, 2022, from
+https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930</li>
+</ul>
+<a class="header" href="print.html#introduction-3" id="introduction-3"><h2>Introduction</h2></a>
+<p>Whether we want to search the web,
+a bibliographic database,
+or our Zotero (or like RM) library,
+it's helpful to know a bit how
+information retrieval works in
+order to become good at search.</p>
+<p>In this lesson, we'll cover specific techniques
+that you can use to get better at search,
+but there are three ideas that we
+need to consider when advancing our skills with search.</p>
+<p>First, we should understand that the
+basic information retrieval model centers on <strong>documents</strong>.
+Anything indexed in a database or on the web is treated as a document.
+Documents include text, sound, images, video, etc.</p>
+<p>Second, we should understand that documents
+do not exist independently of other documents.
+Let's call this the <strong>corpus</strong>.
+For the web, the <strong>corpus</strong> is organized
+like a <strong>file system</strong>,
+much like the file system on your personal computers, and
+in a bibliographic database,
+the <strong>corpus</strong> is organized by predefined fields, such
+author names, titles, subject terms, etc.</p>
+<p>Third, our queries are not divorced from the <strong>documents</strong>
+nor the <strong>corpus</strong>.
+That is, each time we search,
+search engines and databases compare
+<strong>documents</strong> in the <strong>corpus</strong>
+to each other based on our <strong>query constructions</strong>,
+and then rank order (in some way) those documents
+by way of that comparison.
+Hence, when we <strong>construct queries</strong>,
+it's useful to think about the content (corpus)
+that we are searching.</p>
+<p>To rehash, a search engine or database uses our queries,
+matches them against how they have indexed the corpus,
+and then rank orders the results based
+on the query and the corpus.</p>
+<p>In order to illustrate the above concepts,
+I'll primarily focus on searching the web, but
+these techniques work across the databases
+that we use in a library.</p>
+<a class="header" href="print.html#the-web-is-for-storing-and-retrieving-documents" id="the-web-is-for-storing-and-retrieving-documents"><h2>The web is for storing and retrieving documents</h2></a>
+<p>When we use Google or another search engine to search,
+we are often looking for documents in a corpus that
+contain specific text that match our query.
+This has some implications:</p>
+<ul>
+<li><em>Text</em> has primacy, even for multimedia, which is often described using text.</li>
+<li>Our queries are matched against the text that appears in documents on the web
+or that describes documents on the web.</li>
+<li>The better our queries match the documents, the better (or more precise) our
+search results will be. (This assumes we can construct good queries.)</li>
+<li>The more ambiguous our queries are, the more work the search engine has to do
+to find relevant results.</li>
+<li>The challenge with search is that we do not always know what text a document
+contains even if that document covers the topic or concept that we think is
+relevant.</li>
+<li>For example, consider <em>synonyms</em>. We might want web pages that contain terms
+that are synonymous with our query term but do not actually contain our query
+term. But this can get complicated. If I search for <code>star</code>, could I also
+mean <code>principal, lead, hero, celebrity, stellar</code>, or <code>sun</code>?</li>
+<li>What if a document only uses terms like <code>principal, lead, hero, celebrity, stellar</code>, or the <code>sun</code>? Might it still be useful if I was interested in
+documents (i.e., web pages) about <code>star</code>? Probably not since some of those
+words, although synonymous with <strong>star</strong>, are not synonymous with each other
+(cf, <strong>principal</strong> and <strong>celebrity</strong>)</li>
+<li>Other <em>wordy</em> issues include things like <em>homonyms</em>, which are words that are
+pronounced or spelled the same but mean different things. Thus, by <code>bark</code>, do
+I mean the bark on a tree or the word we use to signal the sound a dog makes?</li>
+<li>Phrases are also important, with respect to term adjacency and word order. If
+I search for <code>forest fire</code>, search engines are more likely to return results
+where those two terms appear next to each other and in that order. This will
+mean that documents that contain text about someone having a <code>camp fire in a forest</code> will be less likely to appear at the top of my results than a
+document that contains the phrase <code>the forest is on fire</code>. Or documents
+where the terms are or in order but spaced far apart will also rank lower.
+E.g., if the term <strong>forest</strong> appears in the first paragraph on a web page and
+the term <strong>fire</strong> appears on the last paragraph of a web page, this web page
+will rank lower than a page that contains the terms near or adjacent to each
+other.</li>
+</ul>
+<a class="header" href="print.html#the-web-is-organized" id="the-web-is-organized"><h2>The web is organized</h2></a>
+<p>I mentioned above that the web
+is like a file system,
+the kind that you'd find on your own computer.
+By this I mean that the web is organized,
+even though it may not appear so.
+But if we know a bit about its organization,
+we can take good advantage of that when we search
+by narrowing our searches to just parts of the web.
+So the question is, how is it organized?</p>
+<ul>
+<li>The web is organized like a tree. This tree like structure originally
+contained just a few main branches, called <strong>top level domains</strong>, such as:
+.com, .edu, .org, .gov, .mil, and .net. All domains then branched off of
+those main branches.</li>
+<li>The tree has grown over the years and now contains about 1500 of these main
+branches, or top level domains. Examples include .apple, .attorney, .camera,
+.green, .joy .mobile, .office, .science, .space, and <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">many more</a>.</li>
+<li>Included in those are <strong>ccTLD</strong>s, or country code top level domains. For
+example:
+<ul>
+<li><strong>.kr</strong> for South Korea</li>
+<li><strong>.ae</strong> for the United Arab Emirates</li>
+<li><strong>.fr</strong> for France</li>
+<li><strong>.us</strong> for United States</li>
+</ul>
+</li>
+<li>Each of the big branches contains smaller branches, called second level
+domains. For example:
+<ul>
+<li>Under .com is <strong>google</strong> for <strong>google.com</strong></li>
+<li>Under .edu is <strong>uky</strong> for <strong>uky.edu</strong>.</li>
+<li>Under .org is <strong>wikipedia</strong> for <strong>wikipedia.org</strong>,</li>
+<li>Under .gov is <strong>usa</strong> for <strong>usa.gov</strong>,</li>
+<li>Under .apple is <strong>newsroom</strong> for <strong>newsroom.apple</strong>,</li>
+<li>and so on.</li>
+</ul>
+</li>
+<li>Those branches (second level domains) contain even smaller branches that are
+called third level domains. Examples include:
+<ul>
+<li><strong>maps</strong>.google.com</li>
+<li><strong>calendar</strong>.uky.edu</li>
+<li><strong>en</strong>.wikipedia.org</li>
+<li><strong>analytics</strong>.usa.gov</li>
+<li><strong>www</strong>.uky.edu</li>
+<li><strong>ci</strong>.uky.edu</li>
+</ul>
+</li>
+</ul>
+<p>We can take advantage of this organization
+by limiting (or focusing) queries to results
+within smaller sections of the web. In Google, this would entail using
+what is called the <code>site:</code> operator.
+We use this in combination with our search queries.
+For example, let's say I do a search for the term <code>flu</code>, and
+I notice that most of the results
+that I'm interested in are from <code>.gov</code> domains,
+and most of the results I am less interested in
+are from <code>.com</code> domains.
+To focus on the gov domains,
+I add the site operator to my query.
+This is the query I could use to search Google:</p>
+<pre><code>flu site:gov
+</code></pre>
+<p>Then perhaps I find these results too general still.
+For example, let's say I live in Kentucky but Google
+is showing me a lot of <strong>.gov</strong> sites from other states.
+We can focus on just a smaller branch of the tree.
+E.g., if I wanted to focus only on results for Kentucky, then:</p>
+<pre><code>flu site:ky.gov
+</code></pre>
+<p>Or I can specify a part of Kentucky's government, like
+the <em>Cabinet for Health and Family Services</em> or
+the <em>Kentucky Department of Education</em>.
+Then I could try these queries:</p>
+<pre><code>flu site:chfs.ky.gov
+flu site:education.ky.gov
+</code></pre>
+<figure>
+<img src="images/5-image-1.png"
+width="600" height="500"
+alt="The organization of the web by top level domains"
+title="The organization of the web by top level domains">
+<figcaption>Fig. 1: The Organization of the Web by Top Level Domains</figcaption>
+</figure>
+<a class="header" href="print.html#constructing-queries-for-precise-results" id="constructing-queries-for-precise-results"><h2>Constructing queries for precise results</h2></a>
+<p>There are all sorts of other tips and tricks
+we can apply to revise and make our queries more precise.</p>
+<p><strong>Use quotes around our search terms:</strong></p>
+<p>With a search like <code>flu site:gov</code>,
+Google provided us with snippets of text
+that highlighted where the term <strong>flu</strong> appears
+in the web pages that are retrieved.
+For example, we see terms like these in the search results:</p>
+<ul>
+<li><em>flu symptoms</em></li>
+<li><em>flu activity</em>,</li>
+<li><em>flu vaccines</em>, and</li>
+<li><em>flu season</em>.</li>
+</ul>
+<figure>
+<img src="images/5-image-2.png"
+width="600" height="500"
+alt="Google result snippets"
+title="Google result snippets">
+<figcaption>Fig. 2: Google result snippets</figcaption>
+</figure>
+<p>This tells us important information
+about how Google sees the text on web pages,
+and we can use this information to revise our search.
+For example, let's say that I'm interested in web pages
+that contain info about <em>flu vaccines</em> and
+less interested in pages that contain information on
+<em>flu activity</em> or <em>flu season</em>.
+If that's the case, then I can add the additional term
+to my query and enclose the whole query in quotation marks.
+That will force Google to rank pages
+with the literal term <em>&quot;flu vaccines&quot;</em>
+much higher than pages with those other terms or phrases,
+or exclude those other pages altogether.
+So our query will now look like this
+(note: only the query terms,
+and not the <em>site</em> operator, are quoted):</p>
+<pre><code>&quot;flu vaccines&quot; site:gov
+</code></pre>
+<p><strong>Get more recent pages:</strong></p>
+<p>If I'm really interested only in recent pages,
+I can click on the <strong>Tools</strong> button and select
+<strong>Any time</strong>, Past hour, Past 24 hours, Past week, or etc,
+to limit results to certain time frames.</p>
+<p><strong>Exclude results with the minus sign:</strong></p>
+<p>Let's take a look at our flu vaccine search.
+Instead of enclosing <code>&quot;flu vaccines&quot;</code> in quotes
+to return only pages with that phrase and
+to reduce pages retrieved with other phrases,
+I could exclude the other phrases altogether
+(i.e., <strong>activity</strong> and <strong>season</strong>)
+by excluding them with a minus sign.
+To exclude the terms <strong>season</strong> and <strong>activity</strong>
+from our search results,
+this is how our search would look:</p>
+<pre><code>flu -season -activity site:gov
+</code></pre>
+<p>I can also exclude specific domains or specific websites:</p>
+<pre><code>flu vaccines -site:com
+flu vaccines -site:webmd.com
+</code></pre>
+<p><strong>Term order matters</strong>:</p>
+<p>Results will be different depending
+on the order of the query terms.
+Google has gotten good over the years about natural language
+(how we talk in real life),
+and so the suggestion is to use natural language in your query.
+For example, it's generally better to use
+the search terms <strong>flu vaccine</strong> instead of <strong>vaccine flu</strong>,
+since this is how we'd phrase the terms in English.
+This will of course vary by language.
+In many Romance languages, but also others,
+it's common (but varies) for the modifier
+to come after the word being modified.
+For example, in Spanish, we would say <strong>shirt red</strong>:</p>
+<pre><code>camisa roja
+</code></pre>
+<p>Thus, a Spanish speaker from Mexico
+would want to search for <code>camisa roja</code> and not
+<code>roja comisa</code> on Google.com's default landing
+page for those residing in Mexico:</p>
+<p><a href="https://www.google.com.mx/">Google Search - Mexico</a></p>
+<p>However, we can pair some terms together and
+not change the meaning of the query, but
+how we pair them might change the results retrieved,
+especially as you page through the results list.
+For example, consider the following two searches:</p>
+<pre><code>google bing
+</code></pre>
+<p>Or:</p>
+<pre><code>bing google
+</code></pre>
+<p>The above two search queries are semantically equivalent
+(they mean the same thing), but
+search engines implicitly place a priority on term order.
+The first term in the query is prioritized over the second term.
+So if you search Google using the above two queries,
+the first page of results might be mostly the same, but
+as you page through them, you might see more pages on Google
+than on Bing, for the first search,
+and vice versa for the second search.</p>
+<p><strong>One OR the other OR both:</strong></p>
+<p>When we search using multiple terms,
+we can use the <code>OR</code> operator to tell Google to return pages
+with either of the terms or both of the terms.
+Consider the following two searches:</p>
+<pre><code>&quot;google&quot; &quot;bing&quot;
+google OR bing
+</code></pre>
+<p>The first search will return pages with both
+the terms included in the results.
+The second search will return pages with
+either the term <strong>google</strong> in the results,
+the term <strong>bing</strong> in the results,
+or both the terms in the results.
+Note also, based on my personal experience,
+that if I test the second search in
+Google Search and in Bing Search, then
+Google will return more results about Google,
+and Bing will return more results about Bing.</p>
+<p><strong>Other operators:</strong></p>
+<p>There are other operators we can use in search engines, and
+many of them work regardless of which search engine we use.
+Here are some examples:</p>
+<ul>
+<li><code>:related</code> to find related sites
+<ul>
+<li><code>related:twitter.com</code></li>
+<li><code>related:instagram.com</code></li>
+<li><code>related:whitehouse.gov</code></li>
+<li><code>related:google.com</code></li>
+</ul>
+</li>
+<li><code>:filetype</code> to find to return results in specific types of files:
+<ul>
+<li>search <strong>uky.edu</strong> for the term <em>flu vaccine</em> but only retrieve <strong>PDFs</strong>:
+<ul>
+<li><code>flu vaccines filetype:pdf site:uky.edu</code></li>
+</ul>
+</li>
+<li>same as above but only return Microsoft Word files:
+<ul>
+<li><code>flu vaccines filetype:docx site:uky.edu</code></li>
+</ul>
+</li>
+<li>same idea as above but only return Microsoft Excel files:
+<ul>
+<li><code>birth weight filetype:xlsx site:gov</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="print.html#conclusion-4" id="conclusion-4"><h2>Conclusion</h2></a>
+<ul>
+<li>documents on the web
+<ul>
+<li>consider the text</li>
+</ul>
+</li>
+<li>web organization
+<ul>
+<li>take advantage of the how the web is structured with <em>site</em> searches</li>
+</ul>
+</li>
+<li>query construction
+<ul>
+<li>use quotes</li>
+<li>exclude terms with the minus sign</li>
+<li>term order matters</li>
+<li>use OR to select alternate terms</li>
+</ul>
+</li>
+<li>if you forget anything, use advanced search:
+<a href="https://www.google.com/advanced_search">https://www.google.com/advanced_search</a></li>
+<li>Or Advanced Image Search:
+<a href="https://google.com/advanced_image_search">https://google.com/advanced_image_search</a></li>
+<li>Google provides a <a href="https://support.google.com/websearch/answer/2466433?hl=en">list of some of these operators</a>.</li>
+<li>Other search engines also have search operators, and often they're the same:
+<ul>
+<li><a href="https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a></li>
+<li><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Bing</a></li>
+</ul>
+</li>
+</ul>
+<a class="header" href="print.html#ps" id="ps"><h2>P.S.</h2></a>
+<p>Final tip: You can get very advanced:</p>
+<pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov)
+</code></pre>
+<p>Or, limit to specific filetypes:</p>
+<pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov) filteype:pdf
+</code></pre>
+<p>The last search decomposes into the following
+separate queries but searches them all at the same time:</p>
+<ol>
+<li><code>trade surplus site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus site:congress.gov filetype:pdf</code></li>
+<li><code>trade deficit site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade deficit site:congress.gov filetype:pdf</code></li>
+<li><code>trade surplus site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:congress.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:whitehouse.gov filetype:pdf</code></li>
+<li><code>trade surplus deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
+</ol>
+<a class="header" href="print.html#database-information-retrieval" id="database-information-retrieval"><h1>Database Information Retrieval</h1></a>
+<a class="header" href="print.html#introduction-4" id="introduction-4"><h2>Introduction</h2></a>
+<p>I introduced the concept of databases in
+<a href="3-information-sources-resources.html">section 3</a>.
+Databases, or sometimes bibliographic databases,
+offer a number of unique advantages over search engines,
+and some disadvantages, too.
+The main advantages are that databases offer
+specialized collections on a variety of topic,
+many sources that are invisible to search engines, and
+greater control over the search process.
+The main disadvantage is that they are a bit complicated to use well,
+there are many databases to choose from (and find),
+each has their own user interface, and
+they are often only accessible via a library.</p>
+<p>Information retrieval (search) in databases works
+similarly and differently than it does with the web.
+Like in the web, information retrieval works on documents in a corpus.
+We search that corpus using queries, and
+how we construct our queries is important.</p>
+<p>Documents in databases though are a bit different.
+As discussed in the previous section,
+while web pages on the web exist in a fairly organized hierarchy
+(with respect to top level domains, etc.),
+web pages themselves are not always very structured.
+But search engines have become really good at taking
+all that unstructured text and making sense of it.</p>
+<p>Databases, on the other hand,
+in particular, the ones we access through libraries,
+generally index fairly structured documents:
+i.e., bibliographic records.
+They may also index full text documents if those
+documents are accessible to the database.
+If only bibliographic records are indexed,
+the database is usually called an
+<strong>abstract and indexing database (A&amp;I database)</strong>.
+Otherwise it's just called a full text database.
+Many of the databases that we have access to at our
+library are a mix of the two.
+That is, some databases will include full text and also
+only abstracts and other bibliographic information.</p>
+<a class="header" href="print.html#searching-bibliographic-records" id="searching-bibliographic-records"><h2>Searching Bibliographic Records</h2></a>
+<p>By bibliographic information, I generally mean <strong>metadata</strong>,
+and by bibliographic records,
+I generally mean metadata about specific items.
+Metadata is broadly defined as data about data,
+or sometimes as information about information.
+For example, a title of a book is metadata about a book. The author name of a journal article is
+metadata about the journal article.
+And so forth.
+All the metadata about a specific item
+(book, journal article, etc)
+is a record.
+In a database, this metadata is controlled,
+and therefore, well structured.
+As searchers, this basically means
+that there are pre-set fields that
+we can search in these databases.
+For example, in <a href="https://libguides.uky.edu/4">Academic Search Complete (ASC)</a>,
+we can search the following fields:</p>
+<ul>
+<li>Author</li>
+<li>Title</li>
+<li>Subject Terms</li>
+<li>Abstract text</li>
+<li>Author supplied keywords</li>
+<li>Geographic terms</li>
+<li>People (names)</li>
+<li>Journal Name</li>
+<li>ISBN</li>
+</ul>
+<p>And more.
+We can also filter by publication date, full text,
+document type, language, number of pages, and images
+(depending on the database and its content).
+In the end, this means we have greater control over
+the search process than we do in a search engine
+because the corpus is better defined.</p>
+<p>For example, in the previous section,
+I showed how we can search the web
+by using the <code>:filetype</code> operator to limit results
+to PDFs, DOCX, XLSX, etc files.
+In a bibliographic database like ASC, however,
+we can often specify that we want PDFs, but
+more importantly,
+we can limit results by <strong>document type</strong>.
+That means we can restrict results to items like:</p>
+<ul>
+<li>articles</li>
+<li>bibliographies</li>
+<li>book chapters</li>
+<li>book reviews</li>
+<li>case studies</li>
+<li>editorials</li>
+<li>film reviews</li>
+<li>interviews</li>
+<li>letters</li>
+<li>obituaries</li>
+<li>opinions</li>
+<li>poems</li>
+<li>recipes</li>
+</ul>
+<p>And much more.</p>
+<p>Otherwise, all the same principles apply to searching
+databases as does searching the web with a search engine.
+Specifically:</p>
+<ol>
+<li>Text has primacy</li>
+<li>Documents exist within a corpus</li>
+<li>Query construction is important</li>
+</ol>
+<p>And many of the same techniques apply, too:</p>
+<ol>
+<li>We can use <strong>quoting</strong> to make sure words are included in the results</li>
+<li>Term order matters</li>
+<li>We can use <strong>OR</strong> between terms to focus on one term or the other or both</li>
+<li>We can use other operators, like <strong>NOT</strong> and <strong>AND</strong></li>
+</ol>
+<blockquote>
+<p>The <strong>AND</strong> operator between two query terms means
+that both terms must be present for each result in a search.
+For example, if I search for <code>dogs AND cats</code> in a database
+like ASC,
+then each result must include both the terms <strong>dogs</strong> and <strong>cats</strong>.
+We usually have to specify this <strong>AND</strong> in a database.
+This not the case with Google and other search engines.
+In search engines, the <strong>AND</strong> is assumed between terms.
+So the equivalent search in, for example,
+Google, Bing, DuckDuckGo, etc is simply <code>dogs cats</code>.</p>
+</blockquote>
+<a class="header" href="print.html#subject-terms-and-thesauri" id="subject-terms-and-thesauri"><h2>Subject Terms and Thesauri</h2></a>
+<p>Many (but not all) databases offer the ability
+to search by subject or thesauri term.
+Subject/thesauri terms are kinds of controlled vocabulary.
+If a database uses these kinds of vocabulary terms,
+it means that each record in the database includes a list of
+these terms that should well describe the contents
+of the item it describes.</p>
+<p>For example, the <em>ASC</em> database uses subject terms.
+One subject term is <strong>Forest animals</strong>, and
+if I use that as my search query,
+then each record that is returned
+must include that subject term,
+and that record should match the contents of the item.
+I can peruse the results and identify other subject terms
+that help narrow my results.
+For example, the subject term <strong>BIRD habitats</strong> appears
+in records with the subject term <strong>Forest animals</strong>,
+since records often have multiple subject terms.
+If I combine those terms with an <strong>AND</strong> operator,
+then I narrow my results down to two journal articles,
+which is pretty precise.
+ASC is a multi-disciplinary database, and
+so feel free to explore subject terms related
+to your own interests.</p>
+<figure>
+<img src="images/6-image-1.png"
+width="600" height="500"
+alt="Academic Search Complete results"
+title="Academic Search Complete results">
+<figcaption>Fig. 1: Academic Search Complete Results</figcaption>
+</figure>
+<a class="header" href="print.html#systematic-browsing" id="systematic-browsing"><h2>Systematic Browsing</h2></a>
+<p>Although database search can be more precise
+than searching in search engines,
+they are also good for browsing.</p>
+<p>We all browse
+(online, in stores, as we page through books, and so on)
+but as a type of search process,
+browsing can become a highly useful tool
+when applied systematically and strategically.
+The result is not simply a way to scan through search results.
+Rather, the result of intentional browsing,
+(reading or skimming a list of titles and abstracts)
+can be the accumulation of highly relevant source material,
+relevant to our information needs and queries.</p>
+<a class="header" href="print.html#browsing-strategies" id="browsing-strategies"><h2>Browsing Strategies</h2></a>
+<p>Although we make a distinction
+between browsing and searching,
+it is oftentimes helpful to begin
+a browsing session with a keyword search,
+and then use something from the search results,
+something like an author's name or subject term,
+to find and collect related information.
+We call this type of browsing <em>pearl growing</em>.</p>
+<a class="header" href="print.html#pearl-growing-subject-browsing" id="pearl-growing-subject-browsing"><h2>Pearl Growing: Subject Browsing</h2></a>
+<p>Below is an image of the <a href="https://eric.ed.gov/">ERIC Database</a> database.
+<em>ERIC</em> stands for <strong>Education Resources Information Center</strong>.
+The database is provided by the U.S. Department of Education and
+is an important access point for millions of bibliographic
+records to journal articles, books, research reports,
+white papers, government and other
+organizational reports, and more on education related topics.</p>
+<figure>
+<img src="images/6-image-2.png"
+width="600" height="500"
+alt="The ERIC database"
+title="The ERIC database">
+<figcaption>Fig. 2: The ERIC database</figcaption>
+</figure>
+<p><em>ERIC</em>, like other databases,
+offers a thesaurus of controlled terms to help aid search.
+For example, let's say I'm interested in research on academic libraries.
+In this screen shot, I'm looking at the page that describes
+the thesaurus <strong>descriptor</strong> for <strong>academic libraries</strong>,
+and as is usual with thesauri,
+it not only describes how the term is defined in the database,
+but it also links to related terms,
+including terms that are conceptually broader than academic libraries,
+conceptually narrower than academic libraries,
+or that are conceptually related to academic libraries.
+I can click on any of these terms,
+and then click on the link that says to
+<strong>Search collection using this descriptor</strong>.
+And in doing so, I engage in subject browsing.</p>
+<figure>
+<img src="images/6-image-3.png"
+width="600" height="500"
+alt="Thesaurus descriptor page for the term academic libraries"
+title="Thesaurus descriptor page for the term academic libraries">
+<figcaption>Fig. 3: Thesaurus descriptor page for the term academic libraries</figcaption>
+</figure>
+<a class="header" href="print.html#pearl-growing-author-browsing" id="pearl-growing-author-browsing"><h2>Pearl Growing: Author Browsing</h2></a>
+<p>I can certainly browse using other access points,
+like author names.
+After perusing the results from above,
+I can click on an author's name to narrow results.</p>
+<figure>
+<img src="images/6-image-4.png"
+alt="Author names list covering academic libraries"
+title="Author names list covering academic libraries">
+<figcaption>Fig. 4: Author names list covering academic libraries</figcaption> 
+</figure>
+<p>Knowing that authors tend to write and research
+on a specific range of topics (i.e., are specialists) is helpful
+because it allows me to browse by author and subject topic.</p>
+<a class="header" href="print.html#pearl-growing-citation-browsing" id="pearl-growing-citation-browsing"><h2>Pearl Growing: Citation Browsing</h2></a>
+<p>I've described abstracting &amp; indexing (A&amp;I) databases, but
+there's another special type of A&amp;I database called
+a <strong>citation database</strong>.
+Three useful ones available to us are</p>
+<ul>
+<li><a href="https://libguides.uky.edu/3347">Scopus</a></li>
+<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and</li>
+<li><a href="https://scholar.google.com/">Google Scholar</a> (more of a scholarly <em>search engine</em>).</li>
+</ul>
+<p>The first two are available via UK Libraries,
+and the latter is available freely on the web.
+A citation database is a database that shows
+who has cited an article (as known by their database)
+and provides a link to those articles that have cited an article.
+Citation theory says that when any two articles
+(or books, or other documents) are cited in this way,
+they are more likely to be about the same thing.
+In fact, this is how Google search works, in part.
+Google's original <em>Page Rank Algorithm</em> posited
+that if a web page links to another web page,
+then the two pages pages are likely to be about the same topic.
+Because of this theory,
+we can follow citations to find more relevant articles.</p>
+<p>Pictured here is a record in <em>Web of Science</em> on information literacy.
+To the far right you can see that it has <strong>4 Citations</strong>.
+If we click on that <strong>4 Citations</strong> link,
+we can begin to browse those 4 articles or documents.
+Per citation theory,
+it's highly probable that those 4 citing documents
+are also about information literacy;
+and thus, browsing them would be of considerable
+help if we were interested in reading more about information literacy.</p>
+<figure>
+<img src="images/6-image-5.png"
+alt="WOS record of article on information literacy" 
+title="WOS record of article on information literacy">
+<figcaption>Fig. 5: WOS record of article on information literacy</figcaption> 
+</figure>
+<p>After clicking on the <strong>4 Citations</strong> link,
+we can see that the term <strong>information literacy</strong>
+appears in the title of all four citing works.
+This is good evidence for our citation theory.</p>
+<figure>
+<img src="images/6-image-6.png"
+alt="Citing articles in WOS" 
+title="Citing articles in WOS">
+<figcaption>Fig. 6: Citing articles in WOS</figcaption> 
+</figure>
+<p><em>Google Scholar</em> works in much the same way.
+Instead of <em>Times Cited</em>, it says <em>Cited by</em>,
+and the search results default by generally listing (we think)
+the most highly cited works rather than the most recent,
+as is the default in <em>Web of Science</em>.
+But if we click on the <em>Cited by</em> link,
+we'll be taken to a page that lists
+the citing articles and documents,
+and like the <em>Web of Science</em> example,
+it's likely that many of the citing articles
+will be relevant in our search on this topic.</p>
+<figure>
+<img src="images/6-image-7.png"
+alt="Cited by in Google Scholar" 
+title="Cited by in Google Scholar">
+<figcaption>Fig. 7: Cited by in Google Scholar</figcaption> 
+</figure>
+<a class="header" href="print.html#combination-browsing" id="combination-browsing"><h2>Combination Browsing</h2></a>
+<p>Like with most other searches,
+we can combine terms and use those combinations
+to focus our browsing sessions.
+The available combinations depend on the database we use.
+Here's a screen shot of an item from the
+<em>Communication &amp; Mass Media Complete (CMMC)</em> database.
+I searched this database using the thesauri term
+<em>DIFFUSION of innovations</em> AND also
+the term <em>regression</em> in the abstract.
+Basically, this tells the database
+to retrieve any record tagged with the thesauri term
+<em>DIFFUSION of innovations</em> and
+where also the term <em>regression</em> appears in the record's abstract.
+If it contains regression in the abstract,
+then the source likely used or refers to a statistical technique
+called linear regression, logistic regression, or like.
+Once I have this initial query,
+I can begin browsing the 11 titles and
+abstracts that are listed in the results.</p>
+<figure>
+<img src="images/6-image-8.png"
+alt="Combination search in CMMC database"
+title="Combination search in CMMC database">
+<figcaption>Fig. 8: Combination search in CMMC database">
+</figure>
+<a class="header" href="print.html#boolean-logic-and-or-not" id="boolean-logic-and-or-not"><h2>Boolean Logic: AND, OR, NOT</h2></a>
+<p>Remember that database searching is more
+structured at the document level, and
+that this structure is reflected
+in the ability to do field searches.
+In the above example, for instance,
+we use two fields.
+The first field is a subject term search
+for the subject <strong>DIFFUSION of innovations</strong>,
+and it's marked as a subject field
+with the <strong>DE</strong> at the beginning.
+The second field is an abstract search,
+and this is shown in the drop down box
+to the right of the query term.
+In between these two fields is a Boolean AND operator.
+The AND operator tells the database that both
+query terms must be present in the results.
+We've seen this AND in prior examples.</p>
+<p>I've mentioned two other Boolean operators:
+<strong>NOT</strong> and <strong>OR</strong>.
+Many bibliographic databases offer all three.
+The <strong>NOT</strong> operator instructs the database
+to exclude the assigned term.
+Thus, if we had chosen <strong>NOT &quot;regression&quot;</strong>,
+then the <em>CMMC</em> database would have
+returned results where the term <strong>regression</strong>
+surely did NOT appear in the abstract for
+records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
+<p>The <strong>OR</strong> Boolean operator is a bit tricky.
+It means, basically, <em>one or the other or both</em>.
+Thus, if we had used it here,
+then <em>CMMC</em> would have returned all records
+having the subject term <strong>DIFFUSION of innovations</strong>,
+as well as those records that did or did not have
+<strong>regression</strong> in the abstract.
+The <strong>OR</strong> operator is more useful when querying
+terms in the same fields.
+For instance, we might want to use the <strong>OR</strong>
+operator to search for two different terms
+that might appear in the abstract fields,
+or the subject term fields,
+such as the following related terms:</p>
+<pre><code>DIFFUSION of innovations theory&quot; OR
+INFORMATION dissemination&quot;
+</code></pre>
+<p>We can see how this plays out in the results.
+In the first record in the following screenshot,
+both terms appear in the subjects list.
+But in the second record,
+only one of the terms appears.</p>
+<figure>
+<img src="images/6-image-9.png"
+alt="Using the OR Boolean operator"
+title="Using the OR Boolean operator">
+<figcaption>Fig. 9: Using the OR Boolean Operator</figcaption>
+</figure>
+<a class="header" href="print.html#how-to-browse" id="how-to-browse"><h2>How to Browse</h2></a>
+<p>When we browse, therefore,
+we are attempting to locate key qualities from our results
+or our initial results lists (e.g., authors, subjects, etc.).
+These lists include the titles, the abstracts, the thesauri,
+and so forth.
+And these key terms will help capture what our search is <strong>about</strong>.</p>
+<a class="header" href="print.html#developing-a-list" id="developing-a-list"><h2>Developing a List</h2></a>
+<p>Many databases will offer a way to create,
+save, and export lists or individual records
+based on browsing and searching.
+This helps us easily manage the documents that
+we highlight as initially important.
+We can curate these lists as they grow and
+our search becomes more focused.</p>
+<p>Creating a list in a specific database
+usually requires us to create an account on
+that database.
+I already have an account with EBSCOhost,
+the vendor that provides the <em>CMMC</em> database
+as well as many others, and
+in the following screenshot,
+I've already signed in to that account.
+To the right of the image,
+you can see a folder icon.
+As I browse through records that look
+relevant to my needs,
+I can click on that icon and save
+the result to a folder.
+I can also create multiple folders
+and email, download, or print the records
+for later use.</p>
+<figure>
+<img src="images/6-image-10.png"
+alt="Using Folders to Save Records" 
+title="Using Folders to Save Records">
+<figcaption>Fig. 10: Using Folders to Save Records</figcaption>
+</figure>
+<p>Of course, alternatively, I prefer to save records
+in Zotero rather than use a database folder or list.
+This way I keep the records with me even if I lose
+access to the database.</p>
+<a class="header" href="print.html#conclusion-5" id="conclusion-5"><h2>Conclusion</h2></a>
+<p>In this section, we learned the following:</p>
+<ul>
+<li>Databases and search engines are different</li>
+<li>Each have advantages and disadvantages</li>
+<li>Search engines are well structured at the file system level</li>
+<li>Databases are well structured at the record level</li>
+<li>Searching in a database means search structured bibliographic records</li>
+<li>Records are structured by pre-set fields</li>
+<li>Subject terms or thesauri descriptors help create precise searches</li>
+<li>Systematic browsing can be a rigorous way to engage in search</li>
+<li>Pearl growing is a browsing strategy that involves collecting items
+based on an initial aspect of a bibliographic record. Such as as:
+<ul>
+<li>subject term</li>
+<li>author name</li>
+<li>citation</li>
+</ul>
+</li>
+<li>Because databases search structured bibliographic records with pre-set
+fields, we can create very precise queries by combining fields</li>
+<li>We can combine fields using Boolean logic: AND, OR, NOT</li>
+<li>We can create and save lists as we browse</li>
+<li>Or we can save items to our reference manager (RM).</li>
+</ul>
+<p>In the end, don't simply browse absentmindedly.
+Rather, browse with smarts: systematically and strategically.
+Make the systems work for you.
+And save your results in Zotero or your
+chosen RM as you go.</p>
+<a class="header" href="print.html#evaluating-information-sources" id="evaluating-information-sources"><h1>Evaluating Information Sources</h1></a>
+<a class="header" href="print.html#readings-5" id="readings-5"><h2>Readings</h2></a>
+<p>Read this short introduction on <strong>reading laterally</strong> as
+a way to evaluate information, and
+watch the short video.</p>
+<ul>
+<li>Newell, C. (n.d.). Jessup Playbooks: How do I read laterally?: Home.
+Retrieved August 3, 2022, from
+https://libguides.pvcc.edu/lateral_reading/home</li>
+<li>Stanford History Education Group (Director). (2020, January 16). Sort Fact
+from Fiction Online with Lateral Reading.
+https://www.youtube.com/watch?v=SHNprb2hgzU</li>
+</ul>
+<a class="header" href="print.html#introduction-5" id="introduction-5"><h2>Introduction</h2></a>
+<p>When we're doing research or trying to learn something,
+we obviously want to gather content that is true.
+And so the key question is,
+how do we know content is true or false, or
+more or less true,
+or something along those lines.
+Basically, truth and veracity can have nuances that
+are important to identify or disentangle within stories that
+are presented about how things are in the world.
+For example, it's become very common
+for people in the public sphere to refer to <strong>narratives</strong>,
+and to argue that someone's or some group's narratives
+are either true or false.
+Or more accurately, a fiction or a non-fiction.
+Regardless of our political or whatever positions,
+this focus on narrative is interesting and worthwhile.
+It's interesting, in part, because placing information
+within a narrative has ancient origins, and it's
+worthwhile because it places true and false content
+within some context, or story,
+which can itself be evaluated as fairly true or not
+(or fiction or non-).
+Essentially, this is important because
+stories are central to human communication and understanding
+(Fisher, 1989).</p>
+<p>Before we explore this, I want to acknowledge that
+you may have been taught about various existing
+frameworks to help determine the veracity of content.
+Many of these frameworks ask us to ask questions
+and to check off boxes about the content itself
+when evaluating information or information sources.
+For example, who is the author of the content,
+where is the content published,
+on what platform?
+What is the author's or publisher's motivation?
+Is the motivation purely or mostly financial?
+How does that introduce bias?
+What is the date of the publication?
+Is it outdated?
+And so forth.</p>
+<p>Those kinds of questions are important,
+but they may also be insufficient in determining
+some content's veracity.
+What's also important to identify,
+especially for content that is new or new to us,
+are questions that place the content in broader context,
+to fit it within an overall story that's taking place.
+For example, where does some content that
+we're evaluating fit within a story
+someone or some group is trying to tell?
+How does one group's (or author's, or publisher's, etc)
+story conflict with another group's (etc.)?
+Alternatively, what is the consensus among different
+stories that group's tell about a thing?
+How do these stories compete for public acceptance?</p>
+<p>When we try to identify the story, then
+new questions and frameworks open up to us.
+For example, it could be the case that
+the basic facts about an event are agreed upon
+by various storytellers
+(e.g., news articles, politicians, scientists),
+but that the basic facts are presented in ways that
+impact how the story of those facts are told.
+Then, in those different tellings, the stories
+may consequently ring true or not.
+Worse, if the overall story rings false, then
+it may cause doubt about the basic facts, even
+if those basic facts are true.</p>
+<p>Walter Fisher (1989) identified two methods
+for evaluating narratives that he called
+<strong>narrative probability</strong> and <strong>narrative fidelity</strong>.
+Let's discuss these.</p>
+<a class="header" href="print.html#narrative-probability" id="narrative-probability"><h2>Narrative Probability</h2></a>
+<p>For a story to be probable (probably true, that is),
+it must meet three criteria:</p>
+<ul>
+<li>argumentative or structural coherence</li>
+<li>material coherence</li>
+<li>characterological coherence</li>
+</ul>
+<a class="header" href="print.html#argumentative-or-structural-coherence" id="argumentative-or-structural-coherence"><h3>Argumentative or Structural Coherence</h3></a>
+<p><em>Argumentative or structural coherence</em> speaks
+to the validity of an underlying
+argument in a story.
+That is, good stories, whether true or not,
+present a series of premises that build off each other
+and that present an overall thesis or argument.
+Or, stories have a structure that makes sense and,
+upon close inspection, contains few holes.
+You all know if a story has argumentative or structural
+coherence because you have all surely watched bad movies
+that fail to convince you that the movie made sense.
+Sometimes this lack of structural coherence in a movie
+is what makes a movie fun (&quot;it's so bad it's great!&quot;).
+But when telling stories about how things are in the world,
+or how they should be, or how they will be,
+it's important for the story to make sense and to be valid, logically.</p>
+<a class="header" href="print.html#material-coherence" id="material-coherence"><h3>Material Coherence</h3></a>
+<p>If a story is internally consistent, what next?
+As is often the case, group's (e.g., ideological ones)
+may compete with other about what should
+be the dominant narrative.
+In such cases, we can compare and contrast these stories,
+and this is the idea behind the next criteria:
+<em>material coherence</em>.
+This is the idea that we compare and contrast stories
+and note in the process whether
+&quot;important facts may be omitted,
+counterarguments ignored, and
+relevant issues overlooked&quot; (Fisher, 1989, p. 47).
+Such comparisons may happen from a bird's eye view;
+for example, when Democrats or Republicans
+are telling the story of America,
+can we see what important facts each group omits,
+which counterarguments each group ignores,
+and which relevant issues each group overlooks?</p>
+<p>These comparisons may also happen at the micro-level.
+In the social and physical sciences,
+scholars and researchers are engaged in a series of
+discussions with each other about all sorts of theories
+about the social or physical worlds.</p>
+<blockquote>
+<p>A quick note on theories.
+Theories are simply very rigorous explanations given the data.
+These explanations generally provide an account of causality,
+or of how one thing causes another.
+As social and physical scientists gather data,
+they develop theories (like stories) that explain the data.
+As new data is analyzed,
+those theories are tested.
+If the theories no longer explain the additional data,
+they are revised or discarded and replaced with new theories.
+Some theories (like the theory of general relativity) are quite stable
+(i.e., well tested),
+even if they do not explain everything about things within their purview,
+like gravity at the quantum level.
+Other theories still walk a tight rope (like string theory),
+and this is most likely because more data is needed to test them
+but enough data has been analyzed for them to hold for the time being.
+In the social sciences and physical sciences,
+it's more common for theories to explain limited phenomenon.
+The <strong>diffusion of innovation</strong> theory, for example,
+is one of these <strong>middle-range theories</strong> and
+was originally devised to explain how new ideas and technology spread.</p>
+</blockquote>
+<p>You can see these discussions among scientists in the literature review
+and discussion sections of journal articles.
+In these sections, researchers cite and refer to others
+who have completed research on a similar or the same topic.
+The overall goal is to test or develop a theory that explains some phenomenon.
+Essentially, researchers in the sciences are seeking to provide
+a story, based on a rigorous analysis of the data they have,
+that explains some phenomenon, and
+in the process of doing so, they compare and contrast
+their explanations with others.
+As Fisher might say, they <strong>seek important facts that may have been omitted,
+counterarguments that may have been ignored, and
+relevant issues that may have been overlooked</strong>.</p>
+<p>Practically, we can use tools to help immerse ourselves
+in these discussions.
+Tools like Zotero or other reference managers aid us
+in collecting sources, taking notes on those sources,
+and citing those sources in papers that participate in
+these ongoing discussions and contribute to this collective storytelling.
+In the process of writing about the phenomenon under review,
+we attempt to provide a story based on the back and forth
+discussions that have taken place on the topic.
+These RMs, then, basically help us to test <strong>material coherence</strong>.</p>
+<a class="header" href="print.html#characterological-coherence" id="characterological-coherence"><h3>Characterological Coherence</h3></a>
+<p>Can you think of a story that doesn't have a character at all?
+I can't.
+Even places and things can be characters in stories.
+The Delorean car in the <em>Back to the Future</em> movies
+is, for example, somewhat of a character in those movies.
+But when people are characters,
+they often behave, in movies, plays, etc., <em>characteristically</em>.
+That is, they behave according to their
+values, beliefs, attitudes, ideas, and words.
+They behave according to who they are.
+We don't often see movies or plays or hear stories where
+people behave uncharacteristically because such stories
+are generally not good.
+Or if people do behave uncharacteristically,
+it's usually a part of the plot and somewhere in the story,
+the uncharacteristic behavior was foreshadowed.
+Often, when we see something coming in a movie before it's happened,
+it's because the characters are playing to their character.
+If we don't see something coming, then it's simply likely a
+complex character, and the story supports that.</p>
+<p>In any regard, stories have characters,
+whether people, places, or things.
+And when we investigate stories (or theories),
+it's worthwhile to consider whether the characters are coherent
+in this way, too.</p>
+<a class="header" href="print.html#closing-the-loop" id="closing-the-loop"><h2>Closing the Loop</h2></a>
+<p>How does this all help you evaluate information sources?
+Well, when you collect sources for a project, like a paper or something,
+it's a good idea, as you collect sources, to think about the story
+you want or need to tell.
+The sources you collect should have
+structural, material, and characterological coherence, too.
+This means that in the process of collecting evidence,
+if you find evidence that degrades the coherence of these things,
+you need to revise your story,
+just like a scientist must revise or discard their theory
+in the face of contradictory or discordant evidence.</p>
+<a class="header" href="print.html#project" id="project"><h2>Project</h2></a>
+<p>You can test this method yourselves.
+Consider a news event that's going on as you read this.
+Pick three news articles that cover the event,
+from three different publications.
+Choose three publications that lie on different parts
+of the political spectrum.
+Study those three sources, and
+ask the following questions:</p>
+<ol>
+<li>How are the stories structurally coherent? Or not? That is, do the stories
+in the three articles make sense? Are they internally consistent?</li>
+<li>How are the stories materially coherent? Or not? That is, upon comparing
+them, do any of them leave out important facts? Do any of them respond to
+counterarguments (or alternate explanations that fit the data)? Do any of
+them overlook relevant issues?</li>
+<li>Do the characters in the stories characterologically coherent? Who are the
+characters in the story? Do they behave according to what we know of their
+values, attitudes, beliefs, ideas, and words? Do the stories present them
+counter to what we already know of these people?</li>
+</ol>
+<a class="header" href="print.html#conclusion-6" id="conclusion-6"><h2>Conclusion</h2></a>
+<p>Being able to evaluate information is important, but
+if we have been exposed to lessons on doing so,
+we have often been presented with some kind of framework
+that asks us to check the boxes to see if an information source
+satisfies some pre-existing criteria.
+For example, such a checklist might ask us to ask:
+who are the authors?
+do they have a good reputation?
+is the publisher respected?
+is the motive to publish based on profit?
+are they selling something with the information they provide?</p>
+<p>While that's an important part of the process in evaluating information,
+it's also insufficient.
+A more thorough way to evaluate information is to think of the information
+more broadly and holistically.
+That is, to think of the stories that are being told,
+how the information is contextualized.
+Once we see the story,
+we have three methods to investigate a piece of information's credibility.
+We can test its:</p>
+<ul>
+<li>argumentative or structural coherence</li>
+<li>material coherence, and</li>
+<li>characterological coherence.</li>
+</ul>
+<p>By the way, this method can also apply to the stories
+we tell ourselves or about ourselves or about our beliefs.
+It's important, that is, to evaluate the information we
+believe to be true as much as it is to evaluate others
+posit to be true.</p>
+<a class="header" href="print.html#references" id="references"><h2>References</h2></a>
+<p>Fisher, W. R. (1989). <em>Human communication as narration: Toward a philosophy of
+reason, value, and action</em>. University of South Carolina Press. https://doi.org/10.2307/j.ctv1nwbqtk</p>
+<a class="header" href="print.html#wikipedia-project-setup" id="wikipedia-project-setup"><h1>Wikipedia Project: Setup</h1></a>
+<a class="header" href="print.html#readings-6" id="readings-6"><h2>Readings</h2></a>
+<p>You are not editing Wikipedia yet, but
+you will near the near the end of this course.
+However, it's not too early to learn about the process.
+Please review this article on it:</p>
+<ul>
+<li>Help:Editing. (2022). In Wikipedia.
+https://en.wikipedia.org/w/index.php?title=Help:Editing&amp;oldid=1100153153</li>
+</ul>
+<p>And this article on <strong>Wikipedia stub articles</strong>:</p>
+<ul>
+<li>Wikipedia:Stub. (2022). In Wikipedia.
+https://en.wikipedia.org/w/index.php?title=Wikipedia:Stub&amp;oldid=1101615789</li>
+</ul>
+<a class="header" href="print.html#becoming-a-wikipedia-editor" id="becoming-a-wikipedia-editor"><h2>Becoming a Wikipedia Editor</h2></a>
+<p>In this course, the main assignment involves identifying
+a Wikipedia article, searching for information sources
+that we can add to the article, collecting those sources
+in our reference manager (RM), and then editing the
+Wikipedia article in order to add our findings
+that summarize those sources in a way that makes
+sense for a Wikipedia article.</p>
+<p>So far, we have covered the following topics that
+will help us with our project:</p>
+<ol>
+<li>Information sources and resources</li>
+<li>Bibliographic reference management</li>
+<li>Information retrieval: the web</li>
+<li>Information retrieval: databases</li>
+<li>Analyzing evaluating information sources</li>
+</ol>
+<p>And for the remainder of the course,
+we will continue to cover specific library and web resources,
+how to use them, and
+how to incorporate them into our work flows.
+By the end of the semester,
+we will have collected enough material to
+edit the Wikipedia article that we have identified
+this week.</p>
+<a class="header" href="print.html#details" id="details"><h2>Details</h2></a>
+<p>For this week, your task is to identify a Wikipedia article to edit.
+<strong>The Wikipedia article must be a stub article,</strong>
+which are articles that are
+<a href="https://en.wikipedia.org/wiki/Wikipedia:Stub">&quot;deemed too short to provide encyclopedic coverage of a subject.&quot;</a>
+You will analyze the article for informational shortcomings, and
+collect sources that will address those shortcomings
+using the search skills and source knowledge you have
+and will acquire this semester.
+At the end of this semester,
+in the second part of this project,
+you will edit the Wikipedia article, and
+add any relevant text as well as the references to the sources
+that you collected.</p>
+<p>For now, your job is to:</p>
+<ul>
+<li>Create an account on Wikipedia (if you do not already have one).</li>
+<li>Identify a Wikipedia stub article that you would like to analyze and edit
+later. See below on tips to do this.</li>
+<li>Begin to analyze the stub article for informational shortcomings.
+<ul>
+<li>That is, stub articles are incomplete articles, and thus they are missing
+information to complete them. Your goal will be to complete these articles.</li>
+<li>You can start thinking about what's missing from this articles with respect
+to the <strong>W</strong> questions: who, what, when, where, why, and of course, how.</li>
+</ul>
+</li>
+<li>Begin to collect and describe at least four sources over the course of the
+next four weeks.
+<ul>
+<li>Two sources will come from the library.</li>
+<li>Two sources will come from the general web.</li>
+</ul>
+</li>
+</ul>
+<p>For this week, you will submit to the discussion board a post that
+describes your activities.
+Your post should respond to the following:</p>
+<ol>
+<li>Provide your <strong>Wikipedia account name</strong> and a link to your Wikipedia
+homepage.</li>
+</ol>
+<ul>
+<li>For example, my account name is <strong>Cseanburns</strong> and my Wikipedia homepage is
+<a href="Cseanburns">https://en.wikipedia.org/wiki/User:Cseanburns</a>.</li>
+<li>You must edit your Wikipedia homepage and add some basic biographical
+information. <strong>Note: it's not necessary to identify yourself as a
+student or use your <strong>linkblue</strong> username for this assignment.</strong></li>
+</ul>
+<ol start="2">
+<li>Provide the title of the stub article that you would like to edit and a link
+to the page.</li>
+</ol>
+<ul>
+<li>For example, I might choose the <em>Diskworld</em> stub article, which is
+located at
+<a href="https://en.wikipedia.org/wiki/Diskworld">https://en.wikipedia.org/wiki/Diskworld</a></li>
+</ul>
+<ol start="3">
+<li>State why you chose the stub article.</li>
+</ol>
+<a class="header" href="print.html#identifying-a-stub" id="identifying-a-stub"><h2>Identifying a stub</h2></a>
+<p>In the <a href="5-information-retrieval-web.html">Information Retrieval: Web</a>
+section, you might recall that I wrote the following:</p>
+<blockquote>
+<p>...our queries are not divorced from the <strong>documents</strong> nor the <strong>corpus</strong>.
+When we <strong>construct queries</strong>,
+it's useful to think about the content (corpus) that we are searching.</p>
+</blockquote>
+<p>This, along with the search techniques I covered in that section,
+offer a major clue on how to locate a Wikipedia stub article.
+Basically, the process requires knowing something about how
+stub articles are identified on Wikipedia.
+That is, it's helpful &quot;to think about the content that we are searching.&quot;
+Specifically, Wikipedia editors take great care in labeling
+stub articles as stub articles,
+and you can see this on the <em>Diskworld</em> stub article I link to above.
+At the bottom of that article, you'll see the following text:</p>
+<blockquote>
+<p>This computer magazine or journal-related <strong>article is a stub</strong>
+[emphasis added].</p>
+</blockquote>
+<p>If we look at other stub articles,
+we'll see the same four words at the bottom of their pages.
+We can use this pattern
+to build a search query in Google (or other search engines).
+For example, we can figure that the phrase &quot;article is a stub&quot;
+probably appears consistently at the bottom of all stub articles.
+So let's include that in our search query within quotes
+so that the search engine treats it as required.
+Then we can add a keyword based on our own interests.
+For example, I'm interested in technology, and
+so I might add that as a query term.
+Finally, knowing that we're searching Wikipedia only,
+since this is a Wikipedia-based project,
+we can use the <code>site:</code> operator in our search query.
+Basically, I found the <em>Diskworld</em> article
+using Google query below:</p>
+<pre><code>&quot;article is a stub&quot; technology site:en.wikipedia.org
+</code></pre>
+<p>And then I simply browsed through the results until
+I identified an article I was interested in looking at more closely.</p>
+<a class="header" href="print.html#library-sources-part-1" id="library-sources-part-1"><h1>Library Sources: Part 1</h1></a>
+<a class="header" href="print.html#readings-7" id="readings-7"><h2>Readings</h2></a>
+<p>Please review the aspects of Infokat searching here:</p>
+<ul>
+<li>Naas, D. (n.d.). Research Guides: InfoKat Discovery: Getting Started.
+Retrieved August 3, 2022, from
+https://libguides.uky.edu/c.php?g=457383&amp;p=3126835</li>
+</ul>
+<a class="header" href="print.html#introduction-6" id="introduction-6"><h2>Introduction</h2></a>
+<p>UK Libraries provides access to many millions of sources
+that include books (ebooks and print books),
+databases, journals, archival works, image collections,
+multimedia collections, and more.</p>
+<p>In this and the next,
+I'll focus on two of the most common usages of the library's resources:</p>
+<ul>
+<li>Infokat: for searching books and also database offerings</li>
+<li>Databases: for searching specific database offerings</li>
+</ul>
+<p>However, it's worth your time to explore the UK Libraries' website
+in order to learn what you have access to.
+Or even, you could use Google's <code>:site</code> operator
+to locate resources of interest that the library provides:</p>
+<pre><code>[something of interest] site:libraries.uky.edu
+</code></pre>
+<a class="header" href="print.html#infokat" id="infokat"><h2>Infokat</h2></a>
+<p><em>Infokat</em> is short for <a href="https://saalck-uky.primo.exlibrisgroup.com/discovery/search?vid=01SAA_UKY:UKY">Infokat Discovery</a>, and</p>
+<blockquote>
+<p>is the primary search tool for browsing
+and finding materials from UK Libraries' collections,
+and a great place to begin your research.
+Infokat searches our libraries' physical holdings
+together with a majority of the
+individual databases to which we subscribe
+<a href="https://libraries.uky.edu/find-borrow/where-do-i-start">About Infokat</a>.</p>
+</blockquote>
+<p>In short, it's the modern equivalent of an
+online card catalog system, but
+because it's modern,
+it's much more than that.
+Not only can Infokat locate books on the shelves
+at W.T. Young or at the other <a href="https://libraries.uky.edu/locations">library locations at UK</a>,
+Infokat is also good for discovering digital collections,
+database resources, and more.
+And if the library doesn't have a resource,
+Infokat can facilitate an interlibrary loan request.
+Although interlibrary loans mean that we
+won't get immediate access to the requested source,
+they are still often fast.
+In my experience,
+I usually receive PDF copies of journal articles within 24 hours,
+and for many books that I've requested through interlibrary loan,
+I generally receive copies within one to three days.</p>
+<p>Infokat also works well with Zotero and
+other reference management software.
+I'll cover that in a follow up demonstration video.</p>
+<a class="header" href="print.html#searching-infokat" id="searching-infokat"><h2>Searching Infokat</h2></a>
+<p>There are two initial ways to search Infokat:</p>
+<ul>
+<li>Basic search</li>
+<li>Advanced search</li>
+</ul>
+<p>Basic search works just like how you would use
+Google or some other search engine.
+You enter a query into the search box and press enter.</p>
+<p>However, because the <strong>corpus</strong> you're querying is structured,
+like a database,
+it's not necessarily advisable to use <em>natural language</em>
+for your queries like you might in a web search engine.
+Remember that our queries should always consider the
+corpus we're searching.
+Instead, you should devise queries that highlight
+the subject matter.
+That means that you want to pick one or more keywords
+for your queries that express the topic
+that you're interested in retrieving.
+Also, because the corpus you're searching in Infokat is structured,
+advanced search offers fine-tuned, precision search
+functions that let us search by specific fields,
+dates, and includes Boolean logic.</p>
+<a class="header" href="print.html#basic-search" id="basic-search"><h3>Basic Search</h3></a>
+<p>Basic search is a great place to start your research,
+especially when starting on a new project.
+From there you can use hints that you see in your retrieval
+results to practice <em>pearl growing</em> or
+to refine and narrow your search results.</p>
+<figure>
+<img src="images/9-image-1.png"
+alt="Infokat basic search"
+title="Infokat basic search">
+<figcaption>Fig. 1: Infokat basic search</figcaption> 
+</figure>
+<p>You can apply <em>pearl growing</em> by noticing title information,
+subject terms, publication information, or more and
+as a way to follow up on leads/hints you find in the results you retrieve.
+You can refine results by availability, resource type,
+subject heading, language, and more.</p>
+<p>Like web search engines,
+term order matters.
+Therefore, you should enclose queries in double quotes in order
+to force Infokat to return results using the exact
+terminology and to return results in the same order as your terms.
+For example, if my query is:</p>
+<pre><code>web development
+</code></pre>
+<p>Then results will include titles like:</p>
+<pre><code>**Development** of a **web** tool to ...
+</code></pre>
+<p>But if I wrap my query in quotes, like so:</p>
+<pre><code>&quot;web development&quot;
+</code></pre>
+<p>Then results will literally reflect those terms and in that order.
+For example:</p>
+<pre><code>Hands-On Full Stack **Web Development** with Angular...
+</code></pre>
+<a class="header" href="print.html#advanced-search" id="advanced-search"><h3>Advanced Search</h3></a>
+<p>Advanced search in Infokat provides a form
+where you can focus on constructing precise queries.
+You can apply a variety of search filters that
+limit queries to specific fields in the structured data,
+such as title information, author/creator information, and subject terms.</p>
+<figure>
+<img src="images/9-image-2.png"
+alt="Infokat advanced search"
+title="Infokat advanced search">
+<figcaption>Fig. 2: Infokat advanced search</figcaption> 
+</figure>
+<p>Instead of using double quotes to force results to match your query,
+you have other options.
+These include the ability to state whether the search results should
+contain the terms in your query, match exactly as the terms in your query,
+which is like using double quotes, or
+whether the search results should start with the same terms
+as your query.</p>
+<p>You can also use Boolean logic in advanced search.
+This is especially helpful as you refine your queries.
+For example, if you're interested in web development
+but not interested in &quot;embedded web development&quot;,
+you can use the Boolean <strong>NOT</strong> to removed retrieved records that
+contain the word &quot;embedded&quot; from the results.
+You can also limit results by time period (publication date)
+in order to focus on either historical works or recent works.</p>
+<p>If you're using Zotero and the browser add-on,
+you will see a folder icon in your browser bar
+when you're on the result page.
+This will let you save multiple items to your Zotero
+library or to a specific Zotero folder in your library.</p>
+<a class="header" href="print.html#record-page" id="record-page"><h2>Record Page</h2></a>
+<p>When you find a result that interests you,
+click on the link to get more information and
+do more with the result.
+From here you can save the specific item to Zotero,
+but Infokat let's you export citations manually, too.
+You can have the item emailed to you, or print it out,
+and more.
+If the items is available as a print item,
+Infokat will tell you where in the library it's located
+(i.e., shelf and floor), and
+it will also tell you which library the book is located,
+since UK Libraries has many locations aside from W.T. Young.
+If the items is not available electronically or in print
+at one of the UK Library locations,
+this is where you can request the items via interlibrary loan.</p>
+<p>When you sign in via your linkblue information,
+you can request the item directly, and if you have
+loans out, you can request that they be renewed.</p>
+<figure>
+<img src="images/9-image-3.png"
+alt="Infokat record page"
+title="Infokat record page">
+<figcaption>Fig. 3: Infokat record page</figcaption> 
+</figure>
+<a class="header" href="print.html#conclusion-7" id="conclusion-7"><h2>Conclusion</h2></a>
+<p>UK Libraries provides access to millions of items
+in both digital and print versions.
+In this section, I focused on accessing their collections
+using Infokat Discovery,
+and we focused on using Basic and Advanced Search.</p>
+<p>It's fine to know the basics of a technology like Infokat,
+but it's another level to integrate this technology into your workflow.
+In order to do that,
+you should use Zotero, or your reference manager of choice,
+to save items to you Zotero library.
+As you save items,
+return to them, read them, and take notes on them.
+This process will become streamlined and feel natural over time,
+and eventually you'll have amassed your own personal knowledge repository.</p>
+<p>In the next section, I'll focus on specific databases
+that UK Libraries provides access to for more topical searches.</p>
+<a class="header" href="print.html#library-sources-part-2" id="library-sources-part-2"><h1>Library Sources: Part 2</h1></a>
+<p>UK Libraries provides access to many millions of sources
+that include books (ebooks and print books),
+databases, journals, archival works, image collections,
+multimedia collections, and more.</p>
+<p>In the prior section,
+I focused on using Infokat to search the UK Libraries' collections.
+In this section, I focus on a handful of the
+databases that UK Libraries offers.
+I can only focus on a handful of databases
+because UK Libraries,
+as a major research institution and because of its
+large student body and wide range of majors,
+provides access to 712 total databases
+(as of summer 2022).
+Many of these databases are specialized
+(e.g., African American and Africana Studies, Appalachian Studies)
+or cover a broad general research area (e.g., Chemistry, Education).
+But a few are designed to be super broad;
+that is, they are databases of databases.
+I've already covered <em>Academic Search Complete</em> in prior sections,
+which is one example of a database of databases.
+In this section, I'll cover another one plus some
+citation databases.</p>
+<p>Remember that if you have desktop Zotero
+plus the Zotero browser add-on installed,
+Zotero will automatically recognize when you have a
+web page open for a specific item in of these databases.
+Thus, use Zotero when examining these databases
+to collect information on your Wikipedia topic.</p>
+<p>While I will only cover a few databases in this section,
+I encourage you to explore all that's offered.
+To access the databases,
+you can browse the list on UK Libraries' website:</p>
+<p><a href="https://libguides.uky.edu/az.php">A-Z Databases</a></p>
+<p>You can also search that list using
+topical keywords in the search box,
+you can limit results to specific subject areas, and
+you can focus on <em>database types</em>.
+Like <em>document types</em> in the <em>ASC</em> database,
+database types indicate something about the source.
+Potential types include:</p>
+<ul>
+<li>Audio/Video</li>
+<li>Digitize primary sources</li>
+<li>E-book collections</li>
+<li>Government documents</li>
+<li>Image collections, and more.</li>
+</ul>
+<figure>
+<img src="images/10-image-1.png"
+alt="A-Z Databases"
+title="A-Z Databases">
+<figcaption>Fig. 1: A-Z Databases</figcaption> 
+</figure>
+<a class="header" href="print.html#factiva" id="factiva"><h2>Factiva</h2></a>
+<p><a href="https://libguides.uky.edu/720"><em>Factiva</em></a> is a helpful database for locating news,
+market, and company information.
+You can search against subjects, industries, within regions, and
+you can add other limits.
+There are a slew of some advanced search operators that
+help power up your search.
+One bonus is this thing called the Query Genius.
+I'll share with you a list of operators and
+field codes to use when searching here and
+also demonstrate how to use this.</p>
+<figure>
+<img src="images/10-image-2.png"
+alt="Factiva Search Builder"
+title="Factiva Search Builder">
+<figcaption>Fig. 2: Factiva Search Builder</figcaption> 
+</figure>
+<p>We can try an example search.
+Let's say I'm interested in any news about
+Google and open source software.
+To search this in <em>Factiva</em>,
+I can approach the query simply, like so
+(being sure to wrap <em>open source</em> in quotes):</p>
+<pre><code>&quot;open source&quot; AND google 
+</code></pre>
+<p>This search was conducted on Aug 1, 2022, and
+you can see there are 4,244 results.</p>
+<p>On the left side you can see a distribution of articles
+by date of publication,
+a list of relevant companies that appear
+in the documents that were retrieved,
+as well as lists of sources, subjects, industries,
+languages, regions, and so forth.</p>
+<p>If I wanted to export any of these documents,
+I can click on specific check boxes and
+export the results in various ways,
+either as an RTF or a PDF file,
+or have it email the results to me or print them.
+We can look at the publication data distribution and
+note whether there are more results on a
+given day than on others.
+This may suggest a hot news day for this particular topic and
+that may be something we want to explore.</p>
+<p>Let's go back to the search builder.
+Say I found that the previous set of results
+were hit or miss and, as a result,
+I want to refine my search.
+Now I can try the <strong>adjacent operator</strong>.
+The adjacent operator tells the database to only return documents
+where the terms appear within a set amount of space between each other.
+The assumption is that the closer any terms are to each other,
+the more likely the document will be about those terms.
+Thus, if I replace the <strong>and</strong> operator with the <strong>adj5</strong> operator,
+I ask <em>Factiva</em> to return documents where the term <em>open source</em>
+is within five words with the term <em>Google</em>:</p>
+<pre><code>&quot;open source&quot; adj5 google
+</code></pre>
+<p>You can see that the results are much different than the previous one.
+Here I only have 205 results.
+The list of companies have also changed, and more.
+If we investigate any of these documents,
+you and confirm that our two terms,
+which are highlighted,
+appear within five words of each other.</p>
+<p>There are <a href="http://factiva.com/CP_Developer/ProductHelp/FDK/FDK38/search_factiva/query_expressions/search_statement_operators.htm">many operators in Factiva</a> besides <strong>adj[N]</strong>.
+At that link, you can see that the standard Boolean
+operators are available: <strong>and</strong>, <strong>or</strong>, <strong>not</strong>.
+There are more proximity and other operators, such as:</p>
+<ul>
+<li><strong>w/N</strong></li>
+<li><code>&quot;open soruce&quot; w/5 google</code></li>
+<li>like the <code>adj</code> operators</li>
+<li><strong>same</strong>
+<ul>
+<li><code>&quot;open source&quot; same google</code></li>
+<li>terms must appear in same paragraph</li>
+</ul>
+</li>
+<li><strong>near[N]</strong>
+<ul>
+<li><code>&quot;open source&quot; near5 google</code></li>
+<li>like <code>adj</code> but bi-directional</li>
+</ul>
+</li>
+<li><strong>atleastN</strong>
+<ul>
+<li><code>atleast5 google and &quot;open source&quot;</code></li>
+<li>'google' must appear at least 5 times in document</li>
+</ul>
+</li>
+</ul>
+<p>Remember that you can create an account for <em>Factiva</em>
+if you want to save or export your searches.
+Zotero is also capable of extracting bibliographic information
+from <em>Factiva</em> and
+will recognize that a source document is,
+for example,
+a news article or like.</p>
+<a class="header" href="print.html#web-of-science" id="web-of-science"><h2>Web of Science</h2></a>
+<p><a href="https://libguides.uky.edu/467"><em>Web of Science (WoS)</em></a> is an abstract &amp; indexing citation database.
+This means that the database does not directly provide full text access
+but it does link to UK Libraries' when full text is available for results.
+As a citation database,
+it also provides the number of citations each result has received,
+and this is a way to find additional relevant documents.</p>
+<p>The Core Collection is the default collection/database.
+This is <em>Web of Sciences</em> main database and
+includes coverage of the sciences, the arts, and the humanities.
+WoS offers other databases that mostly cover the sciences, and
+you can search all of those databases at the same time, but
+it's often better to focus on the core collection when starting.</p>
+<p>Let's try a search. We can try our open source and Google search,
+as seen in Figure 3:</p>
+<figure>
+<img src="images/10-image-3.png"
+alt="WoS search for 'open source' and google"
+title="WoS search for 'open source' and google">
+<figcaption>Fig. 3: WoS search for 'open source' and google</figcaption> 
+</figure>
+<p>I can keep the default field search set to <strong>All Fields</strong>, or
+focus on other fields, like <strong>Topic</strong>,
+which searches titles, abstracts, and keywords.</p>
+<p>As of August 1, 2022, this query retrieves 1,134 results.
+Let's say that my search is a bit too broad still, and
+I want to narrow first by refining my query.
+Just like in <em>Factiva</em>,
+<em>WoS</em> offers a proximity operator called NEAR.
+Let's try it out with the following query
+on the <em>WoS</em> advanced search page:</p>
+<figure>
+<img src="images/10-image-4.png"
+alt="WoS advanced search for TS=("open source" NEAR google)"
+title="WoS advanced search for TS=("open source" NEAR google)">
+<figcaption>Fig. 4: WoS advanced search for TS=("open source" NEAR google)</figcaption> 
+</figure>
+<p>Now there are only 9 results,
+and if I examine the title, abstract, or keywords for the results,
+I'll see that the term &quot;google&quot; is placed within five words of
+the term &quot;open source&quot;.
+If I want to really narrow down my search,
+I can change the field to <strong>Title</strong> only.</p>
+<p>The default results list is to show articles
+that are published more recently.
+I can change this default sorting method so that
+WoS sorts based on sources that have the highest citations first.
+Once I do this, I can go to the right side,
+and look at the <strong>Times Cited</strong> link and
+see which articles have been cited the most.
+This is what makes WoS a citation database.
+We don't have to use WoS as a citation database,
+but this is what really separates WoS
+from many other scholarly databases.</p>
+<p>Theoretically, each one of these citing articles should be
+related to the article that is cited by them. I can them peruse
+these citing articles to help me find, perhaps, even more
+relevant sources of information.</p>
+<p>Instead of basic search, we can search
+by author, cited reference, and more.
+If you click on the big question mark button in WoS,
+you'll find a guide on how to use WoS.
+The guide includes some tips on the use of various search operators,
+including the <em>near</em> operator as well as the Boolean operators.</p>
+<p>Remember that <em>Web of Science</em> doesn't offer direct access to content,
+but notice that there is this <strong>Full Text @ W. T. Young</strong> link
+at the bottom of some records in the search results.
+This link is connected to Infokat,
+which knows that if the article is available,
+Infokat can retrieve it.
+If not, then we can request it through interlibrary loan.
+Also, in some cases there's also a link
+to look up the full text in Google Scholar if the source
+is freely available on the web
+(this is usually called <strong>open access</strong>).</p>
+<p>Remember that you can create an account for <em>WoS</em>
+if you want to save your searches or create folders
+(called <strong>Marked Lists</strong>) in <em>WoS</em>.
+Although the vendor that provides <em>WoS</em>
+is also the same vendor that provides the <em>EndNote</em> reference manager,
+Zotero is also capable of extracting bibliographic information here.</p>
+<a class="header" href="print.html#google-scholar" id="google-scholar"><h2>Google Scholar</h2></a>
+<p>Let's try <a href="https://scholar.google.com"><em>Google Scholar</em></a> now.
+<em>Google Scholar</em> doesn't have the kind of search operators
+that either <em>Factiva</em> or <em>Web of Science</em> have, but
+it's a freely available citation database that indexes a lot of content.
+In Google and related search products,
+like <em>Google Scholar</em>, the <strong>AND</strong> operator does not
+need to be specified.
+Thus the following search is translated as:
+<strong>&quot;open source&quot; AND google</strong></p>
+<figure>
+<img src="images/10-image-5.png"
+alt="Google Scholar search for "open source" google"
+title="Google Scholar search for "open source" google">
+<figcaption>Fig. 5: Google Scholar search for "open source" google</figcaption> 
+</figure>
+<p>You can see here we get a lot of results.
+Maybe even too much.
+If we want to limit our results,
+we have to use other tricks.
+The most common one is simply to add
+more specific keywords to our query.
+E.g., if I add &quot;android&quot; to the query,
+that reduces the results.</p>
+<pre><code>&quot;open source&quot; google android
+</code></pre>
+<p>There is an advanced search option.
+However, since <em>Google Scholar</em> is indexing full text sources
+and not structured bibliographic records,
+this means that it can't offer the kind of advanced
+search we've seen so far.
+It is pretty useful, though.
+For example, Figure 6 shows an advanced search for the terms
+<strong>google</strong> and <strong>&quot;open sources&quot;</strong> but it
+excludes the term <strong>android</strong> in the title,
+and it asks for results published from 2018 to today.
+You can see that this substantially narrows our results.
+As of August 1, 2022, <em>Google Scholar</em> returns only 35 hits.</p>
+<figure>
+<img src="images/10-image-6.png"
+alt="Google Scholar search for "open source" google not android in title"
+title="Google Scholar search for "open source" google not android in title">
+<figcaption>Fig. 6: Google Scholar search for "open source" google not android in title</figcaption> 
+</figure>
+<p>Other than that, one of the nice things about
+<em>Google Scholar</em> is that it's also a citation database.
+You can see the <strong>Cited by N</strong> link just below each result.
+If something has been cited,
+click on that to follow citations.</p>
+<p>The reason <em>Google Scholar</em> returns so many more results is
+because it casts a bigger net than something like
+<em>Web of Science</em> does,
+which purposefully casts a smaller net.
+Because of that, I find <em>Google Scholar</em> can return
+many non-relevant works, but
+it makes it nice for browsing or discovery.
+<em>Web of Science</em> is shines for more
+rigorous and methodical literature searches.</p>
+<p>The observant among you may have noticed that in Figure 5,
+there is a <strong>View Now @ UK</strong> link.
+The reason <em>Google Scholar</em> provides that link is that
+I've configured it to talk with UK's Infokat.
+This is something you have to set up, but
+it's pretty simple to do.
+Just click on settings,
+and then go to <strong>Library Links</strong>, and
+then search for the University of Kentucky.
+Check the box next to it.
+Be sure that you're signed into Google
+if you want to save this as a preference.
+After that,
+you should see the <strong>View Now</strong> option when something is
+available via UK Libraries.</p>
+<a class="header" href="print.html#jstor-1" id="jstor-1"><h2>JSTOR</h2></a>
+<p><a href="https://libguides.uky.edu/266"><em>JSTOR</em></a> is multi-disciplinary database.
+JSTOR covers subjects such as:</p>
+<ul>
+<li>Arts</li>
+<li>Business &amp; Economics</li>
+<li>History</li>
+<li>Medicine &amp; Allied Health</li>
+<li>Science &amp; Mathematics</li>
+<li>Security studies</li>
+<li>Social Sciences, and more.</li>
+</ul>
+<p>Each of these subject areas includes access to many journal titles, and
+therefore, many journal articles.
+<em>JSTOR</em> has long focused on back issues of journals, but
+in recent years has made moves to include current literature and
+open access content (this content that is freely available).
+The content in <em>JSTOR</em> is high quality, peer-reviewed work, which
+makes <em>JSTOR</em> a great place to gather documents on a topic
+that you want to research in-depth.
+<em>JSTOR</em> also includes [<em>ARTSTOR</em>][artstor],
+a database of images, video, and other multimedia content,
+much of which is also available as open access.</p>
+<p>The following search repeats my <strong>&quot;open access&quot; and google</strong> query, and
+you can see that the retrieved items,
+while in the thousands,
+is much fewer than other databases.
+This is because <em>JSTOR</em> indexes fewer titles (or works)
+than those others.
+But like other databases,
+you can limit results by <strong>Item Type</strong>, <strong>Language</strong>,
+<strong>Publication Date</strong>, <strong>subject area</strong>, and more.
+<em>JSTOR</em> also provides proximity search using the <strong>NEAR</strong> operator.</p>
+<p><em>JSTOR</em> also provides image search, via <em>ARTSTOR</em>.
+My <strong>&quot;open source&quot; and google</strong> query for Images
+returns 26 results.</p>
+<figure>
+<img src="images/10-image-7.png"
+alt="JSTOR image search"
+title="JSTOR image search">
+<figcaption>Fig. 7: JSTOR Image Search</figcaption> 
+</figure>
+<p>Again, remember that if you have desktop Zotero
+plus the Zotero browser add-on installed,
+Zotero will automatically recognize when you have a
+web page open for a specific item in in <em>JSTOR</em>.
+Thus, you can use Zotero with <em>JSTOR</em>
+to collect information on your Wikipedia topic.</p>
+<a class="header" href="print.html#conclusion-8" id="conclusion-8"><h2>Conclusion</h2></a>
+<p>That covers <em>Factiva</em>, <em>Web of Science</em>,
+<em>Google Scholar</em>, and <em>JSTOR</em>.
+Remember that <em>Factiva</em> is a general-interest news database, and
+<em>WoS</em> and <em>GS</em> are both citation, scholarly databases, and
+<em>JSTOR</em> is a scholarly and image database.</p>
+<p>In the next section,
+we begin to cover web content.
+Although it might have been appropriate to include <em>Google Scholar</em>
+in the next sections,
+I included it here because of its ability to link directly to
+UK's Infokat.
+This won't be the case for resources I cover next.</p>
+<a class="header" href="print.html#web-sources-part-1" id="web-sources-part-1"><h1>Web Sources: Part 1</h1></a>
+<p>Many of us spend most of our time on the web
+visiting a handful of sites.
+These sites vary by country, but in the U.S.,
+we spend much of our time on Google, YouTube,
+Facebook, Twitter, Instagram, Netflix, TikTok,
+Wikipedia, and a few others.</p>
+<p>That's fine, of course, but
+the web is composed of billions of web pages,
+and many are worth knowing and exploring.</p>
+<p>We also spend most of our time on a variety of domains.
+This includes sites ending with <strong>.com, .org, .edu</strong>, etc.
+But remember that you've already learned how to search the web,
+and if you're interested in learning more about what's out there,
+I encourage you to add a <code>:site</code> operator to your web queries
+if you want to vary things up every once in a while.
+Remember that there about <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">1,500 top level domains</a>,
+and it can be fun to add random ones to your searches:</p>
+<pre><code>asthma site:health
+(linux or windows or macos) site:computer
+</code></pre>
+<p>That said, in this and the next section I want to cover a
+few specific sites that are great information resources.</p>
+<a class="header" href="print.html#internet-archive" id="internet-archive"><h2>Internet Archive</h2></a>
+<p>The <a href="https://archive.org">Internet Archive</a> is a &quot;non-profit library
+of millions of free books, movies, software, music,
+websites, and more.&quot;</p>
+<p>For example, you might be interested in playing
+some old PC games that your parents played
+when they were younger:</p>
+<p><a href="https://archive.org/details/classicpcgames?and%5B%5D=subject%3A%22DOS+games%22">Classic PC Games</a></p>
+<p>The Archive also provides the <a href="https://web.archive.org/web/">Wayback Machine</a>.
+The Wayback Machine is an archive of the web from its early days.
+It's fun, for example, to use it to see what the web
+looked like years ago.
+For example, this is likely UK's first web page and
+was captured by the Wayback Machine in 1997:</p>
+<p><a href="https://web.archive.org/web/19970406042950/http://www.uky.edu/">http://www.uky.edu/ (1997)</a></p>
+<p>But the Wayback Machine is also useful to retrieve
+web pages and sites that have been shutdown or removed.
+That is, if you have a broken URL,
+you can enter the URL in the Wayback Machine and
+see if the original page was archived.</p>
+<p>The Internet Archive is also a library, and as such,
+offers collections on a vast range of topics and links
+to all sorts of media,
+including text, audio, video, and images.</p>
+<p>You can view its main collections on the
+home page of the Internet Archive.
+You can also search.
+I've found, for instance, scanned yearbooks from my college.</p>
+<p>The Internet Archive also oversees <a href="https://openlibrary.org/">The Open Library</a>.
+You can use the Open Library to check out and read books for free,
+just like you would use a physical library.</p>
+<a class="header" href="print.html#dpla" id="dpla"><h2>DPLA</h2></a>
+<p>The <a href="https://dp.la">DPLA</a> (Digital Public Library of America)
+is a shared repository of content
+that brings together digital and digitized sources
+from libraries, museums, and archives across the U.S.</p>
+<p>The DPLA is great for browsing, but they also
+<a href="https://dp.la/guides">provide guides for those interested in using the DPLA</a>
+for Education, Family Research, Lifelong Learning, and
+Scholarly Research.</p>
+<p>Like a library, museum, or archive,
+the DPLA offers:</p>
+<ul>
+<li>featured <a href="https://dp.la/exhibitions">exhibitions</a></li>
+<li><a href="https://dp.la/primary-source-sets">primary source sets</a></li>
+<li>the ability to <a href="https://dp.la/browse-by-topic">browse by topic</a></li>
+<li>the ability to <a href="https://dp.la/browse-by-partner">browser by contributor</a></li>
+<li>and more.</li>
+</ul>
+<a class="header" href="print.html#library-of-congress" id="library-of-congress"><h2>Library of Congress</h2></a>
+<p>The <a href="https://www.loc.gov/rr/program/bib/index.html">Library of Congress'</a> has a list of
+bibliographies, research guides, and finding aids
+on a vast range of topics.
+Many of the links in this list go directly to
+digital libraries that focus on specific topics or areas.
+For example, check out this fun collection of resources
+on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
+<p>The Library of Congress also provides access to
+<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
+<strong>American History</strong>, <strong>War &amp; Military</strong>,
+<strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>,
+<strong>Science &amp; Technology</strong>, and more.</p>
+<a class="header" href="print.html#various-government-resources" id="various-government-resources"><h2>Various Government Resources</h2></a>
+<a class="header" href="print.html#us-census" id="us-census"><h3>U.S. Census</h3></a>
+<p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best
+way to get various demographic and some economic
+information about the U.S.
+You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a>
+about your local area.
+You can, for example, also compare demographics by location.
+Here's a
+<a href="https://www.census.gov/quickfacts/fact/table/cincinnaticityohio,lexingtonfayetteurbancountykentucky,US/PST045221">population comparison between Lexington, KY and Cincinnati, OH</a>.</p>
+<a class="header" href="print.html#nasa" id="nasa"><h3>NASA</h3></a>
+<p>[NASA's][nasa] website offers tons of sources on all
+of its major projects.
+From its homepage,
+you can download apps, audio &amp; ringtones,
+e-books, and podcasts.
+The site also provides information on various missions,
+like the recent <a href="https://www.nasa.gov/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
+as well as exciting <a href="https://www.nasa.gov/multimedia/imagegallery/index.html">image</a> and
+<a href="https://www.nasa.gov/multimedia/videogallery/index.html">video</a> galleries.</p>
+<a class="header" href="print.html#us-bureau-of-labor-statistics" id="us-bureau-of-labor-statistics"><h3>U.S. Bureau of Labor Statistics</h3></a>
+<p>The <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics (BLS)</a> is the
+go to site for job and economic information.
+The site takes some exploration to learn all of what it offers,
+but I can provide two examples.</p>
+<p>The Data Tools dropbox box provides employment change
+data for various sectors of the U.S.
+As of <a href="https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm">June 2022</a>, we see that manufacturing jobs
+in the U.S. increased by an estimated 29,000,
+government jobs decreased by an estimated 9,000, and
+overall non-farm jobs increased by 372,000.</p>
+<p>The <a href="https://www.bls.gov/data/inflation_calculator.htm">CPI Inflation Calculator</a> shows how the value
+of the dollar has changed over time.
+For example, I can see that $1.00 in June of 2021
+has the same buying power as $1.09 in June of 2022,
+which shows that, on average, what costs me a $1.09
+in June 2022 cost me a $1.00 the summer prior.</p>
+<p>This calculator is useful in a lot of ways.
+For example, the tuition to attend UK for the
+<a href="http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm">2002-2003 academic year was $1,740 per semester</a>, and for the
+<a href="https://www.uky.edu/financialaid/tuition-and-fees">2022-2023 academic year, it is $6,340</a>.
+The CPI calculator shows that if tuition increased
+at the same rate as inflation,
+then today's tuition cost should only be $2,865.93 per semester
+(from June 2002 to June 2022).
+That means the extra $3,564 spent on tuition today increased
+due to other (complicated) factors.</p>
+<p>You can also see how home prices have changed.
+The house I rent was purchased for $101,650
+during the summer of 2001.
+Today the owners could easily sell for around $250,000
+(estimated by realtor.com).
+But inflation only accounts for a $171,016 price tag.
+Thus the extra $70,000 or so is factor of other market forces.</p>
+<blockquote>
+<p>Property information like this is generally public information.
+Fayette County, the seat of Lexington, KY, provides this information
+at <a href="https://fayettepva.com/">https://fayettepva.com/</a>.
+You can check your local municipality's website for comparable information.
+In fact, many city and county websites make available lots of data.</p>
+</blockquote>
+<a class="header" href="print.html#edgar-us-securities-and-exchange-commission" id="edgar-us-securities-and-exchange-commission"><h3>EDGAR: U.S. Securities and Exchange Commission</h3></a>
+<p><a href="https://www.sec.gov/edgar.shtml">EDGAR</a> is a go to site if you're thinking about investing
+in a public company.
+Of particular interest are the <strong>10-K</strong> and <strong>10-Q</strong> reports.
+The <strong>10-K</strong> report is an annual report that public companies
+are required to submit to the SEC.
+The <strong>10-Q</strong> report is the quarterly version.</p>
+<p>The <strong>10-Q</strong> report:</p>
+<blockquote>
+<p>Provides audited annual financial statements,
+a discussion of material risk factors for the company and its business,
+and a management's discussion and analysis of the company's
+results of operations for the prior fiscal year
+(<a href="https://www.sec.gov/oiea/Article/edgarguide.html">Form Type Description</a>)</p>
+</blockquote>
+<p>The <strong>10-Q</strong> report is unaudited.</p>
+<p>The [EDGAR search page][edgarSearch] is pretty straightforward
+and offers autocomplete as you type.
+My search query in Figure 1 is a search
+for Google's (specifically, Alphabet's) last <strong>10-K</strong> report,
+which was filed on February 2, 2022.</p>
+<figure>
+<img src="images/11-image-1.png"
+alt="EDGAR Search for Alphabet Inc."
+title="EDGAR Search for Alphabet Inc.">
+<figcaption>Fig. 1: EDGAR Search for Alphabet Inc.</figcaption> 
+</figure>
+<p>If you read the report,
+you can see that, for example, more than 80% of Google's
+(or Alphabet, specifically) revenue is based on advertisements, and
+that changes in privacy policies and technologies that protect privacy
+is a concern for them.</p>
+<a class="header" href="print.html#medlineplus" id="medlineplus"><h2>MedlinePlus</h2></a>
+<p>Lastly, I would like to refer you to <a href="https://medlineplus.gov">MedlinePlus</a>,
+which is part of the National Library of Medicine.
+The purpose of this site is to serve as a health and medical reference
+resource for the generaly public.
+Although no online site can take the place of professional medical help,
+MedlinePlus can be an important resource for becoming more
+informed about various health topics.</p>
+<p>Instead of <em>googling</em> that next symptom or condition,
+I highly encourage you to visit MedlinePlus first.
+The site also covers wellness topics and provides recipes
+for a wide range of meals.</p>
+<a class="header" href="print.html#conclusion-9" id="conclusion-9"><h2>Conclusion</h2></a>
+<p>Although it's important to know how to search the web well,
+it's also handy to know about specific go to resources on the
+web that can provide more in-depth information or
+that provide more coverage than most Google etc searches can yield.
+In order to highlight this, in this section I covered a few,
+I think, super interesting and helpful sites that include the:</p>
+<ul>
+<li>Internet Archive</li>
+<li>Open Library</li>
+<li>DPLA</li>
+<li>Library of Congress</li>
+<li>U.S. Census</li>
+<li>NASA</li>
+<li>U.S. Bureau of Labor Statistics</li>
+<li>EDGAR (SEC)</li>
+</ul>
+<p>Be sure to explore these sites, as well as others you find,
+because many of these just don't come up in your everyday
+kind of search.</p>
+<a class="header" href="print.html#web-sources-part-2" id="web-sources-part-2"><h1>Web Sources: Part 2</h1></a>
+<p>We continue this section by covering a variety of
+web resources that are invaluable but that don't
+necessarily show up in our everyday web searches.</p>
+<p>In particular, in this section, I'd like to cover
+a variety of open educational resources and digital libraries.
+Your education at UK should be, I hope, super beneficial,
+but you won't be in college forever, and
+you may have the kind of mind that wants to continue to grow
+and learn and improve.</p>
+<p>Fortunately, the number and quality of
+open educational resources has been blossoming in recent years,
+and these sites offer free, online textbooks on
+a vast range of subjects.</p>
+<a class="header" href="print.html#education" id="education"><h2>Education</h2></a>
+<a class="header" href="print.html#directory-of-open-access-books" id="directory-of-open-access-books"><h3>Directory of Open Access Books</h3></a>
+<p>The <a href="https://directory.doabooks.org/">Directory of Open Access Books (DOAB)</a> provides
+references to hundreds of free textbooks or scholarly works
+on a wide range of topics.
+It's easy to browse by topic or subject, such as
+<a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Sociology">sociology</a>,
+<a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Economics">economics</a>,
+<a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Earth+sciences">earth sciences</a>,
+<a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Technology%3A+general+issues">technology</a>, and more.</p>
+<a class="header" href="print.html#oer-commons" id="oer-commons"><h3>OER Commons</h3></a>
+<p><a href="https://www.oercommons.org">OER Commons</a> is probably a bigger resource
+for open educational content.
+It provides access to <a href="https://www.oercommons.org/oer">subject areas</a>
+ranging from applied science to education to mathematics to social sciences.
+It goes beyond providing access to textbooks and also includes
+access to various materials types, such as
+case studies, games, data sets, lesson plans, and more.</p>
+<a class="header" href="print.html#university-of-kentucky-libraries" id="university-of-kentucky-libraries"><h3>University of Kentucky Libraries</h3></a>
+<p>UK Libraries provides more links to open educational resources
+and supports a program for UK faculty to create free, digital textbooks.
+You can find a lot of this material on <a href="https://uknowledge.uky.edu/">UKnowledge</a>,
+and there is a <a href="https://libguides.uky.edu/alternative_textbooks/find">OER Research Guide</a> that lists
+more links to a wide range of open educational content.</p>
+<a class="header" href="print.html#moocs" id="moocs"><h3>MOOCs</h3></a>
+<p>MOOC sites are massive online open course providers.
+Two major MOOCs are [Coursera][coursera] (via Stanford University)
+and [edX][edX] (via Harvard and MIT).
+Both sites offer courses on all the subjects you'd find
+in college for free,
+but you can also pay to earn certificates, if you want that.
+These courses are like online learning courses.
+They provide lectures and online activities to work through
+and to learn the material.</p>
+<a class="header" href="print.html#digital-libraries" id="digital-libraries"><h2>Digital Libraries</h2></a>
+<p>In addition to the open educational resources that are available,
+there are also some really interesting digital libraries that exist
+and are worth exploring.</p>
+<a class="header" href="print.html#the-national-science-digital-library" id="the-national-science-digital-library"><h3>The National Science Digital Library</h3></a>
+<p><a href="https://nsdl.oercommons.org/">The National Science Digital Library</a> is a digital library
+that provides educational resources on STEM
+(science, technology, engineering, and mathematics) and
+for all educational levels.
+Topics include applied science, mathematics,
+statistics and probability, trigonometry, technology,
+chemistry, and much more.</p>
+<a class="header" href="print.html#civil-rights-digital-library" id="civil-rights-digital-library"><h3>Civil Rights Digital Library</h3></a>
+<p><a href="http://crdl.usg.edu/?Welcome&amp;Welcome">The Civil Rights Digital Library</a> is a digital library provides
+resources on the Civil Rights Movement.
+The library can be browsed by events, places, people, topics, and more.
+Due to the nature of the topic,
+some of the content can be disturbing or challenging,
+but if you are interested in civil rights,
+then this is an invaluable and necessary resource.</p>
+<a class="header" href="print.html#the-new-york-public-library-digital-collections" id="the-new-york-public-library-digital-collections"><h3>The New York Public Library Digital Collections</h3></a>
+<p>The New York Public Library (NYPL) is one of the
+biggest public libraries in the U.S.
+with more than 25 million items in its collections.
+<a href="https://digitalcollections.nypl.org/">The New York Public Library Digital Collections</a>
+is an effort by NYPL librarians to make much of that
+collection accessible to the wider public.
+The digital collections provide access to
+&quot;prints, photographs, maps, manuscripts, streaming video, and more.&quot;
+Visitors can browse by collection or search the site.</p>
+<a class="header" href="print.html#europeana" id="europeana"><h3>europeana</h3></a>
+<p><a href="https://www.europeana.eu/en">europeana</a> is a digital library that acts
+as a central repository for libraries, museums, and archives
+across the European Union.
+In that way, it's very much like the <a href="https://dp.la">DPLA</a>
+that we covered in the prior section.</p>
+<a class="header" href="print.html#hathitrust" id="hathitrust"><h3>HathiTrust</h3></a>
+<p>[HathiTrust][hathitrust] provides access to books and other items
+scanned from major U.S. research libraries, Google, and the Internet Archive.
+There is a big focus on public domain works,
+which are works that are free of copyright restrictions.
+However, UK Libraries is a partner institution,
+which means you can login to HathiTrust and check out works
+that are still under copyright.</p>
+<a class="header" href="print.html#project-gutenberg" id="project-gutenberg"><h3>Project Gutenberg</h3></a>
+<p><a href="http://gutenberg.org/">Project Gutenberg</a> is the oldest online ebook
+collection on the web,
+and even predates the web by 20 years.
+All ebooks one Project Gutenberg are free,
+and be read on your computer or ebook reader.</p>
+<a class="header" href="print.html#conclusion-10" id="conclusion-10"><h2>Conclusion</h2></a>
+<p>In this section, I largely covered educational resources
+and digital libraries.
+These kinds of sites don't generally pop up in our
+everyday web searches unless we're really looking for them.
+Thus it's worthwhile to know they exist and explore them
+if we're interested in the content.</p>
+<p>Thus, there are two takeaways here.
+First, be good at web search.
+We covered this in <a href="5-information-retrieval-web.html">section 5</a>.
+Second, when search fails,
+know the good sites to go to.
+I've only covered a handful of them in this and
+the prior lecture,
+so keep exploring the real stuff.</p>
+<a class="header" href="print.html#reference-management-part-2" id="reference-management-part-2"><h1>Reference Management: Part 2</h1></a>
+<a class="header" href="print.html#readings-8" id="readings-8"><h2>Readings</h2></a>
+<ul>
+<li>Notes [Zotero Documentation]. (2017). Retrieved August 3, 2022, from
+https://www.zotero.org/support/notes</li>
+<li>PDF reader [Zotero Documentation]. (2022). Retrieved August 3, 2022, from
+https://www.zotero.org/support/pdf_reader</li>
+<li>Creating bibliographies [Zotero Documentation]. (2018). Retrieved August 3,
+2022, from https://www.zotero.org/support/creating_bibliographies</li>
+<li>Word processor integration [Zotero Documentation]. (2018). Retrieved August
+3, 2022, from https://www.zotero.org/support/word_processor_integration</li>
+<li>Styles [Zotero Documentation]. (2017). Retrieved August 3, 2022, from
+https://www.zotero.org/support/styles</li>
+</ul>
+<a class="header" href="print.html#introduction-7" id="introduction-7"><h2>Introduction</h2></a>
+<p>At this point you should have built up a decent collection
+of information sources in your Zotero library for your Wikipedia project.
+You may have even been using it for your other courses, too, and
+if not, then start!
+If you need to collect more sources for your Wikipedia article,
+this is the time to do it.
+Revisit the previous sections to remind yourself
+about the existing sources that exist on the web and at the library,
+and to emind yourself how to search those sources.</p>
+<p>In the last few weeks of this course,
+your final goal is to edit your chosen Wikipedia article
+based on the information resources you've collected.</p>
+<p>In order to prepare for the Wikipedia edit,
+it's time to return to your Zotero collection.
+You should have been reading the sources you've collected,
+and taking notes on them in Zotero.
+Now is a good time to get caught up and add (more) notes
+or refine and edit them,
+synthesize them,
+and begin writing content for your Wikipedia article.</p>
+<p>Zotero and other reference managers offer a number of tools
+to help with this process.
+As a reminder,
+you can use your Zotero browser plugin to automatically add
+information sources to your Zotero library.
+You can store those sources in folders in your Zotero library.
+A folder can be project based.
+You can also tag each information source for more organization.
+You can highlight and add notes to PDF copies in Zotero.</p>
+<p>In the next section,
+I will discuss ways to export your work to a
+word processor program and how to edit your Wikipedia article.</p>
+<a class="header" href="print.html#integrating-with-word-processors" id="integrating-with-word-processors"><h2>Integrating with Word Processors</h2></a>
+<p>Although our main project this semester is
+to edit a Wikipedia article,
+in most cases you will want to work on papers
+in a word processing program like Microsoft Word,
+Google Docs, or <a href="https://www.libreoffice.org/">LibreOffice Writer</a>.</p>
+<p>Zotero is able to work with the above three word processors.
+Mendeley and EndNote are primarily geered toward Microsoft Word,
+and if you elected to use those two RMs,
+then reach out to your instructor,
+or search the web,
+for guidance on using
+these with those Google Docs or LibreOffice Writer,
+if you use those, too.</p>
+<p>Using Zotero with Word, Docs, or Writer is straightforward.
+The necessary plugins are already installed when you installed
+Zotero Desktop, and
+<a href="https://www.zotero.org/support/word_processor_integration">additional instructions are available, too</a>.</p>
+<p>You'll want to use Zotero as you write papers, etc.
+to insert in-text citations and bibliographies.
+While Zotero or other reference managers can handle this automatically,
+you should still review your in-text citations and bibliographies
+to check for any errors.
+If there are errors,
+it's likely because the item in Zotero is missing metadata for
+some fields (like author, title, journal title, publication date, etc.).
+This happens because the source information Zotero extacts
+metadata from may be incomplete or malformed.</p>
+<p>With Zotero, you can add in-text citations like:
+(Smith, 2007) or (Chan, 2018, p. 144) or &quot;Garcia (2020) stated ...&quot;.
+You can also generate bibliographies using many different styles,
+like APA, MLA, Chicago, and so forth.
+Zotero will auto-update your bibliography
+as you add more in-text citations.
+To set a default style, in Zotero,
+click on the <strong>Edit</strong> button in the Zotero menu bar,
+click on the <strong>Cite</strong> tab, and
+then choose your default style,
+which will most likely be one of these:</p>
+<ul>
+<li>American Psychological Association 7th edition</li>
+<li>Chicago Manual of Style edition (author-date or full note)</li>
+<li>Modern Language Association 9th edition</li>
+<li>American Medical Association 11th edition</li>
+</ul>
+<blockquote>
+<p>While the preferences window is open,
+go ahead and click on the <strong>Export</strong> tab, and under <strong>Item Format</strong>,
+select <strong>Wikipedia Citation Templates</strong> from the drop down menu.
+This will come in handy when you edit your Wikipedia article.</p>
+</blockquote>
+<a class="header" href="print.html#wikipedia-project-completion" id="wikipedia-project-completion"><h1>Wikipedia Project: Completion</h1></a>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+
+                
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+        <script>
+            $(document).ready(function() {
+                window.print();
+            })
+        </script>
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

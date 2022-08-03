@@ -1,5 +1,9 @@
 # Information Sources and Resources
 
+## Readings
+
+Please visit the links in this section as you read through it.
+
 ## Primary, Secondary, and Tertiary Sources
 
 It's true that just about anything can be a source of information,
