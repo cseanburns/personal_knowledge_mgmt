@@ -40,7 +40,7 @@ with a basic font and a different color background
 basketball uky
 ```
 
-I occassionally insert some **asides** into the text.
+I occasionally insert some **asides** into the text.
 These asides generally contain notes or extra comments
 about the main content.
 Asides look like this:
@@ -50,7 +50,7 @@ Asides look like this:
 
 ### Theme
 
-At the top of the page is an icon of paint brush.
+At the top of the page is an icon of a paint brush.
 The default theme is darker text on a light background,
 but you can change the theme per your preferences.
 
@@ -61,7 +61,7 @@ therefore it'll be regularly updated.
 But feel free to print it, if you want.
 You can use the print function
 to save the entire book as a PDF file.
-See the printer icon at the top left of the screen
+See the printer icon at the top right of the screen
 to get started.
 
 If you're familiar with ``git`` and [GitHub](https://github.com),
@@ -70,7 +70,7 @@ you can also fork the repository for this book at
 
 Note that this work is licensed under the
 [GNU Free Documentation License](https://github.com/cseanburns/personal_knowledge_mgmt/blob/master/LICENSE).
-See [the info page for more
+See [the licensing page for more
 details](https://www.gnu.org/licenses/fdl-1.3.en.html).
 
 ---

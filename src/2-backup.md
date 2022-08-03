@@ -9,52 +9,73 @@
 
 ## Introduction
 
-Many of us nowadays have multiple devices, like laptops and smartphones, and
-obviously, as we use those devices, those devices become filled with important
-files, settings, texts, and so forth that we probably don't want to lose. As a
-result, it's a good idea to back up these devices to help insure that we can
-restore our data if something happens to the device.
+Many of us nowadays have multiple devices,
+like laptops and smartphones, and
+as we use those devices,
+they become full with important files, photos, settings, texts,
+and so forth that we probably don't want to lose.
+As a result,
+it's a good idea to back up these devices
+to help insure that we can restore our data
+if something happens to the device.
 
-Unfortunately, methods to back up our data vary depending on the smartphone
-maker (Android, iPhone, etc) and laptop/desktop (Windows, Apple). We also have
-a variety of storage options, and the two biggest options are the cloud, like
-iCloud, Dropbox, Google Drive, and extra storage devices, like external hard
-drives or large data capacity USB drive.
+Unfortunately, methods to back up our data vary
+depending on the smartphone maker (Android, iPhone) and
+operating system (Windows, macOS, iOS).
+We also have a variety of storage options, and
+the two biggest options are the cloud,
+like iCloud, Dropbox, Google Drive, and
+extra storage devices,
+like external disk drives or large data capacity USB drive.
 
-In this lecture, I cover how to back up your phones and laptops/desktops for
-long term storage.
+In this lecture,
+I cover how to back up your phones and
+laptops/desktops for long term storage.
 
 ## Smartphones
 
-A good backup strategy to follow is to first backup your phone, either to the
-cloud or to your computer, and then back up your computer. This is because we
-sometimes will want to use our computers as backups for our phones.
+A good backup strategy to follow is to first backup your phone,
+either to the cloud or to your computer, and
+then back up your computer.
+This is because we sometimes will want to use our computers
+as backups for our phones.
 
-To get started, *The Washington Post* [has a couple of helpful][backupWashPost]
+To get started, *The Washington Post*
+[has a couple of helpful][backupWashPost]
 videos on how to back up your iPhone or Android smartphones. 
 
 ## Macs
 
 For instructions on backing up your Mac,
 you should follow [Apple's instructions][macBackup],
-which shows you how to back up your device using Time Machine or iCloud.
-The instructions also show you how to restore your Mac from a backup, how to
-check your storage capacity, how to free up storage, and more.
+which shows you how to back up your device
+using Time Machine or iCloud.
+The instructions also show you how to
+restore your Mac from a backup,
+how to check your storage capacity,
+how to free up storage, and more.
 
-If you select to backup with Time Machine, you can select a backup disk, like
-an external hard drive or large data capacity USB drive.
+If you select to backup with Time Machine,
+you can select a backup disk,
+like an external hard drive or
+large data capacity USB drive.
 
 ## Windows
 
-For instructions on backing up your Windows computer, you should likewise start
-with [Microsoft's instructions][microsoftBackup]. The instructions at the prior
-link show how to backup for either Windows 10 or Windows 11. As with Macs, if
-you can elect to backup your files using an external disk or a cloud solution.
+For instructions on backing up your Windows computer,
+you should likewise start with
+[Microsoft's instructions][microsoftBackup].
+The instructions at the link
+show how to backup for either Windows 10 or Windows 11.
+As with Macs,
+if you can elect to backup your files
+using an external disk or a cloud solution.
 Microsoft's instructions also cover how to restore your data if necessary.
 
 ## External Drives 
 
-External hard drives are a great solution for backing up your system.
+External hard drives are a great solution
+for backing up your system.
 Today's drives are relatively inexpensive.
 A 2TB external hard drive may cost as little as $60.
 The advantage of using an external hard drive is that you pay 
@@ -78,9 +99,9 @@ you should format the drive using the **exFAT** file system.
 One of the disadvantages of an external hard drive
 is that because it's portable,
 it can be lost or misplaced.
-Therefore, when you begin to format your disk,
+Therefore, when you format your disk,
 you may want to set up encryption so that 
-the drive is protected from other people.
+the drive is protected. 
 
 You setup encryption on macOS when you format the drive.
 Apple provides instructions on its page on
@@ -90,7 +111,7 @@ Microsoft also provides instructions for encrypting
 on [Windows 10/11][windowsEncrypt].
 Be sure to use a strong password, and
 be sure to keep that password safe.
-Also, be aware that if you lose the password, or forget it,
+Be aware that if you lose the password, or forget it,
 then you lose access to the drive.
 
 It's usually a good idea to keep your external drive
@@ -113,13 +134,15 @@ An additional backup option is to use a cloud solution.
 For macOS users, you can use iCloud to back up the files
 on all of your devices, as described above.
 
-Some of the big name options include:
+Regardless of what operating system you use,
+some of the big name backup options include:
 
 - [Dropbox][dropboxBackup]
 - [OneDrive][onedriveBackup]
 - [Google Drive][googleBackup]
 
-There are also less well-known but seemingly respected backup solutions,
+There are also less well-known but
+seemingly respected backup solutions,
 like [Backblaze][backblaze] and [iDrive][idrive].
 [Tom's Guide][tomsBackupServices] has reviews those and others.
 
@@ -157,10 +180,10 @@ and with what you might lose if you don't backup.
 
 Note that if you are really risk averse,
 an additional option is to use both
-external storage devices and cloud solutions.
+external storage devices and cloud solutions (I do!).
 You can backup your entire disk using a cloud solution,
 or just select folders,
-and then backup your entire disk with an external drive.
+and then backup your entire disk to an external drive.
 
 Whatever option you choose,
 be sure to back up regularly.
