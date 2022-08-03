@@ -1,0 +1,15 @@
+[book]
+title = "Personal Knowledge Management Handbook"
+author = "C. Sean Burns"
+description = "Personal knowledge management handbook for undergraduate course"
+language = "en"
+multilingual = false
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/cseanburns/personal_knowledge_mgmt"
+site-url = "https://cseanburns.net"
+
+[output.html.print]
+enable = true
+page-break = true
