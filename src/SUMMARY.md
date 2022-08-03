@@ -16,3 +16,4 @@
 - [Web Sources: Part 2](12-web-sources-part-2.md)
 - [Reference Managers: Finishing Up](13-reference-management-part-2.md)
 - [Wikipedia Project: Completion](14-project-close-wikipedia-part-2.md)
+- [GNU Free Documentation License](gnu-free-documentation-license.md)
