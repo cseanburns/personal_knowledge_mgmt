@@ -437,8 +437,19 @@ we'll become that much more accomlished.
 
 In short, we are going to learn a bit
 more about what's hidden from most users and from the common view.
-We needed to understand the difference between **information sources**
-and **information resources** to get started on that.
+To do that,
+we needed to understand the difference between **information sources**
+and **information resources**.
+Remember that an **information source** is the main item
+we often aim to acquire.
+They are generally things like articles, newspaper articles,
+books, book chapters, maps that some things,
+unfortunately, refer to as resource types.
+An **information resource** is the kind of thing
+that provides access to information sources.
+In this section, some examples of information resources
+are the library discovery service, a search engine,
+and a database like *JSTOR*, *ASC*, or *ProQuest*.
 
 [dictInfoSciTech]:https://saalck-uky.primo.exlibrisgroup.com/permalink/01SAA_UKY/ija67f/cdi_proquest_ebookcentral_EBC3312345
 [odlis]:http://products.abc-clio.com/ODLIS/odlis_d#database
