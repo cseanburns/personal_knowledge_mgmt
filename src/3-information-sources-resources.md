@@ -1,7 +1,4 @@
-# Sources of Information
-
-## Readings
-
+# Information Sources and Resources
 
 ## Primary, Secondary, and Tertiary Sources
 

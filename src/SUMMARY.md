@@ -1,0 +1,18 @@
+# Summary
+
+- [Introduction to Personal Knowledge Management](0-intro-to-pkm.md)
+- [Email Management](1-email-management.md)
+- [Back Up Your Work](2-backup.md)
+- [Information Sources and Resources](3-information-sources-resources.md)
+- [Reference Management](4-reference-management.md)
+- [Web Information Retrieval](5-web-information-retrieval.md)
+- [Database Information Retrieval](6-database-information-retrieval.md)
+- [Evaluating Information Sources](7-evaluating-information-sources.md)
+- [Wikipedia Project: Setup](8-project-setup-wikipedia-part-1.md)
+- [Library Sources: Part 1](9-library-sources-part-1.md)
+- [Library Sources: Part 2](10-library-sources-part-2.md)
+- [Web Sources: Part 1](11-web-sources-part-1.md)
+- [Web Sources: Part 2](12-web-sources-part-2.md)
+- [Reference Managers: Closing the Loop](13-closing-loop-reference-managers.md)
+- [Reference Managers: Word Processors](14-reference-managers-word-processors.md)
+- [Wikipedia Project: Completion](15-project-close-wikipedia-part-2.md)

@@ -1,4 +1,4 @@
-# Searching Collecting Organizing Web Sources: Part 2
+# Web Sources: Part 2
 
 We continue this section by covering a variety of
 web resources that are invaluable but that don't 

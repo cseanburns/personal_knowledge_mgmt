@@ -1,4 +1,4 @@
-# Searching Collecting Organizing Web Sources: Part 1
+# Web Sources: Part 1
 
 Many of us spend most of our time on the web
 visiting a handful of sites.

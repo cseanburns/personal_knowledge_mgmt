@@ -1,4 +1,4 @@
-# Project Setup Wikipedia: Part 1
+# Wikpedia Project: Setup
 
 ## Introduction: Becoming a Wikipedia Editor
 

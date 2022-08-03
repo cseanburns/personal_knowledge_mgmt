@@ -1,4 +1,4 @@
-# Analyzing Evaluating Information Sources
+# Evaluating Information Sources
 
 When we're doing research or trying to learn something,
 we obviously want to gather content that is true.

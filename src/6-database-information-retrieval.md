@@ -1,4 +1,4 @@
-# Information Retrieval: Databases
+# Database Information Retrieval
 
 I introduced the concept of databases in 
 [section 3](3-information-sources-resources.html).

@@ -1,4 +1,4 @@
-# Searching Collecting Organizing Library Sources: Part 2
+# Library Sources: Part 2
 
 UK Libraries provides access to many millions of sources
 that include books (ebooks and print books),

@@ -1,14 +1,4 @@
-# Course and Canvas Shell Review
-
-Hi Class, welcome to IS/ICT 201: Personal Knowledge Management.
-
-This week our job is to review the syllabus, become acquainted with the Canvas
-learning management system, and also get started on the content. I'll start
-this introduction by discussing the basic topics of this course and its
-outline, and some of the requirements, and then I'll speak about Canvas for
-a bit.
-
-## Course Review
+# Introduction to Personal Knowledge Management
 
 ### What is personal knowledge management?
 

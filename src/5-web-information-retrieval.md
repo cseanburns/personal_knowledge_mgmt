@@ -1,4 +1,4 @@
-# Information Retrieval: The Web
+# Web Information Retrieval
 
 ## Introduction
 
