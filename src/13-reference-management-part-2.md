@@ -2,16 +2,15 @@
 
 ## Readings
 
-- Notes [Zotero Documentation]. (2017). Retrieved August 3, 2022, from
-  https://www.zotero.org/support/notes
+- Notes [Zotero Documentation]. (2017). Retrieved August 3, 2022, from [Notes -
+  Zotero][zoteroNotes]
 - PDF reader [Zotero Documentation]. (2022). Retrieved August 3, 2022, from
-  https://www.zotero.org/support/pdf_reader
+  [PDF - Zotero][zoteroPDF]
 - Creating bibliographies [Zotero Documentation]. (2018). Retrieved August 3,
-  2022, from https://www.zotero.org/support/creating_bibliographies
+  2022, from [Bibliographies - Zotero][zoteroBibs]
 - Word processor integration [Zotero Documentation]. (2018). Retrieved August
-  3, 2022, from https://www.zotero.org/support/word_processor_integration
-- Styles [Zotero Documentation]. (2017). Retrieved August 3, 2022, from
-  https://www.zotero.org/support/styles
+  3, 2022, from [Word Processors - Zotero][zoteroWP]
+- Styles [Zotero Documentation]. (2017). Retrieved August 3, 2022, from [Styles Zotero][zoteroStyles]
 
 ## Introduction
 
@@ -23,9 +22,9 @@ If you need to collect more sources for your Wikipedia article,
 this is the time to do it.
 Revisit the previous sections to remind yourself
 about the existing sources that exist on the web and at the library,
-and to emind yourself how to search those sources.
+and to remind yourself how to search those sources.
 
-In the last few weeks of this course,
+In the weeks of this course,
 your final goal is to edit your chosen Wikipedia article
 based on the information resources you've collected.
 
@@ -48,7 +47,7 @@ A folder can be project based.
 You can also tag each information source for more organization.
 You can highlight and add notes to PDF copies in Zotero.
 
-In the next section,
+In the section below,
 I will discuss ways to export your work to a
 word processor program and how to edit your Wikipedia article.
 
@@ -72,7 +71,7 @@ if you use those, too.
 Using Zotero with Word, Docs, or Writer is straightforward.
 The necessary plugins are already installed when you installed
 Zotero Desktop, and 
-[additional instructions are available, too][zoteroWordProcessors].
+[additional instructions are available, too][zoteroWP].
 
 You'll want to use Zotero as you write papers, etc.
 to insert in-text citations and bibliographies.
@@ -89,7 +88,7 @@ With Zotero, you can add in-text citations like:
 (Smith, 2007) or (Chan, 2018, p. 144) or "Garcia (2020) stated ...".
 You can also generate bibliographies using many different styles,
 like APA, MLA, Chicago, and so forth.
-Zotero will auto-update your bibliography
+Zotero will auto-update the bibliography in your document
 as you add more in-text citations.
 To set a default style, in Zotero,
 click on the **Edit** button in the Zotero menu bar,
@@ -102,10 +101,44 @@ which will most likely be one of these:
 - Modern Language Association 9th edition
 - American Medical Association 11th edition
 
-> While the preferences window is open,
-> go ahead and click on the **Export** tab, and under **Item Format**,
-> select **Wikipedia Citation Templates** from the drop down menu.
-> This will come in handy when you edit your Wikipedia article.
+While the preferences window is open,
+there are two more things to set.
+First, click on the **Export** tab, and under **Item Format**,
+select **Wikipedia Citation Templates** from the drop down menu.
+This will come in handy when you edit your Wikipedia article.
+
+Second, click on the **Advanced** tab,
+and then click on the drop down menu
+under the **OperURL** section, and
+scroll down until you find **University of Kentucky**.
+This will enable Zotero to retrieve full text 
+items through InfoKat.
+
+## Using Zotero and a Word Processor
+
+Once you've set up some basic preferences,
+you can start writing in your preferred word processor.
+
+Zotero will add a new tab in Microsof Word,
+or new toolbar items if you're using Google Docs or LibreOffice Word.
+You can use these new functions to add in-text citations,
+to extract and insert Zotero notes for items, and
+a bibliography.
+
+## Conclusion
+
+In this section,
+I covered the basics of integrating Zotero
+with your word processor.
+Although the basics are pretty straightforward,
+given the variety of options you have available to you,
+you may need to refer to the Zotero documentation for
+additional help.
+you'll need to read through 
 
 [lowriter]:https://www.libreoffice.org/
-[zoteroWordProcessors]:https://www.zotero.org/support/word_processor_integration
+[zoteroNotes]:https://www.zotero.org/support/notes
+[zoteroPDF]:https://www.zotero.org/support/pdf_reader
+[zoteroBibs]:https://www.zotero.org/support/creating_bibliographies
+[zoteroWP]:https://www.zotero.org/support/word_processor_integration
+[zoteroStyles]:https://www.zotero.org/support/styles

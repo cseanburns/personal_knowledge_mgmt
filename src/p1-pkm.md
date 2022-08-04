@@ -68,10 +68,17 @@ If you're familiar with ``git`` and [GitHub](https://github.com),
 you can also fork the repository for this book at
 [https://github.com/cseanburns/personal_knowledge_mgmt](https://github.com/cseanburns/personal_knowledge_mgmt).
 
+### About
+
 Note that this work is licensed under the
 [GNU Free Documentation License](https://github.com/cseanburns/personal_knowledge_mgmt/blob/master/LICENSE).
-See [the licensing page for more
-details](https://www.gnu.org/licenses/fdl-1.3.en.html).
+See
+[the licensing page for more details](https://www.gnu.org/licenses/fdl-1.3.en.html).
+
+
+This book was generated using [mdbook][mdbook].
+
+[mdbook]:https://github.com/rust-lang/mdBook
 
 ---
 

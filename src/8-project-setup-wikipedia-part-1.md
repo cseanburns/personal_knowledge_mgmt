@@ -7,13 +7,11 @@ you will near the near the end of this course.
 However, it's not too early to learn about the process.
 Please review this article on it:
 
-- Help:Editing. (2022). In Wikipedia.
-  https://en.wikipedia.org/w/index.php?title=Help:Editing&oldid=1100153153
+- Help:Editing. (2022). In Wikipedia, from [Help:Editing][helpEditing]
 
 And this article on **Wikipedia stub articles**:
 
-- Wikipedia:Stub. (2022). In Wikipedia.
-  https://en.wikipedia.org/w/index.php?title=Wikipedia:Stub&oldid=1101615789
+- Wikipedia:Stub. (2022). In Wikipedia, from [Wikipedia:Stub][wikipediaStub]
 
 ## Becoming a Wikipedia Editor
 
@@ -49,7 +47,7 @@ For this week, your task is to identify a Wikipedia article to edit.
 **The Wikipedia article must be a stub article,**
 which are articles that are
 ["deemed too short to provide encyclopedic coverage of a subject."][wikistub]
-You will analyze the article for informational shortcomings, and
+You will analyze the article for shortcomings, and
 collect sources that will address those shortcomings
 using the search skills and source knowledge you have
 and will acquire this semester.
@@ -69,6 +67,8 @@ For now, your job is to:
     information to complete them. Your goal will be to complete these articles.
   - You can start thinking about what's missing from this articles with respect
     to the **W** questions: who, what, when, where, why, and of course, how.
+  - But you can also think about these articles as narratives, as we discussed
+    in the prior section.
 - Begin to collect and describe at least four sources over the course of the
   next four weeks.
   - Two sources will come from the library.
@@ -79,17 +79,16 @@ describes your activities.
 Your post should respond to the following:
 
 1. Provide your **Wikipedia account name** and a link to your Wikipedia
-  homepage.
-  - For example, my account name is **Cseanburns** and my Wikipedia homepage is
-    [https://en.wikipedia.org/wiki/User:Cseanburns](Cseanburns).
-  - You must edit your Wikipedia homepage and add some basic biographical
-    information. **Note: it's not necessary to identify yourself as a
-    student or use your **linkblue** username for this assignment.**
+   homepage.
+    - For example, my account name is **Cseanburns** and my Wikipedia homepage
+      is [https://en.wikipedia.org/wiki/User:Cseanburns](Cseanburns).
+    - You must edit your Wikipedia homepage and add some basic biographical
+      information. **Note: it's not necessary to identify yourself as a student
+      or use your **linkblue** username for this assignment.**
 2. Provide the title of the stub article that you would like to edit and a link
    to the page.
-  - For example, I might choose the *Diskworld* stub article, which is
-    located at
-    [https://en.wikipedia.org/wiki/Diskworld][Diskworld]
+    - For example, I might choose the *Diskworld* stub article, which is
+      located at [https://en.wikipedia.org/wiki/Diskworld][Diskworld]
 3. State why you chose the stub article.
 
 ## Identifying a stub
@@ -129,7 +128,7 @@ Finally, knowing that we're searching Wikipedia only,
 since this is a Wikipedia-based project,
 we can use the ``site:`` operator in our search query.
 Basically, I found the *Diskworld* article 
-using Google query below:
+using the Google query below:
 
 ```
 "article is a stub" technology site:en.wikipedia.org
@@ -141,3 +140,5 @@ I identified an article I was interested in looking at more closely.
 [Cseanburns]:https://en.wikipedia.org/wiki/User:Cseanburns
 [Diskworld]:https://en.wikipedia.org/wiki/Diskworld
 [wikistub]:https://en.wikipedia.org/wiki/Wikipedia:Stub
+[helpEditing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
+[wikipediaStub]:https://en.wikipedia.org/wiki/Wikipedia:Stub

@@ -7,11 +7,9 @@ a way to evaluate information, and
 watch the short video.
 
 - Newell, C. (n.d.). Jessup Playbooks: How do I read laterally?: Home.
-  Retrieved August 3, 2022, from
-  https://libguides.pvcc.edu/lateral_reading/home
+  Retrieved August 3, 2022, from [PVCC.edu][readingLaterally]
 - Stanford History Education Group (Director). (2020, January 16). Sort Fact
-  from Fiction Online with Lateral Reading.
-  https://www.youtube.com/watch?v=SHNprb2hgzU
+  from Fiction Online with Lateral Reading, from [YouTube][latterallyYouTube]
 
 ## Introduction
 
@@ -34,7 +32,7 @@ this focus on narrative is interesting and worthwhile.
 It's interesting, in part, because placing information
 within a narrative has ancient origins, and it's 
 worthwhile because it places true and false content
-within some context, or story,
+within some context, a story,
 which can itself be evaluated as fairly true or not
 (or fiction or non-).
 Essentially, this is important because
@@ -43,7 +41,9 @@ stories are central to human communication and understanding
 
 Before we explore this, I want to acknowledge that
 you may have been taught about various existing
-frameworks to help determine the veracity of content.
+frameworks,
+like the [CRAAP test][craap],
+to help determine the veracity of content.
 Many of these frameworks ask us to ask questions
 and to check off boxes about the content itself
 when evaluating information or information sources.
@@ -87,6 +87,7 @@ Worse, if the overall story rings false, then
 it may cause doubt about the basic facts, even
 if those basic facts are true.
 
+Fortunately, we have ways to think about stories, and
 Walter Fisher (1989) identified two methods
 for evaluating narratives that he called
 **narrative probability** and **narrative fidelity**.
@@ -95,7 +96,7 @@ Let's discuss these.
 ## Narrative Probability
 
 For a story to be probable (probably true, that is),
-it must meet three criteria:
+it must satisfy three criteria:
 
 - argumentative or structural coherence
 - material coherence
@@ -123,20 +124,20 @@ it's important for the story to make sense and to be valid, logically.
 ### Material Coherence
 
 If a story is internally consistent, what next?
-As is often the case, group's (e.g., ideological ones)
-may compete with other about what should
+As is often the case, a group (e.g., ideological ones)
+may compete with another group about what should
 be the dominant narrative.
-In such cases, we can compare and contrast these stories,
-and this is the idea behind the next criteria:
-*material coherence*. 
+In such cases, we can compare and contrast their narratives,
+and doing so is testing their *material coherence*. 
 This is the idea that we compare and contrast stories
 and note in the process whether
 "important facts may be omitted,
 counterarguments ignored, and
-relevant issues overlooked" (Fisher, 1989, p. 47).
+relevant issues overlooked" in the process
+of comparing and contrasting them (Fisher, 1989, p. 47).
 Such comparisons may happen from a bird's eye view;
 for example, when Democrats or Republicans
-are telling the story of America,
+are telling the story of the United States,
 can we see what important facts each group omits,
 which counterarguments each group ignores,
 and which relevant issues each group overlooks?
@@ -166,15 +167,18 @@ about the social or physical worlds.
 > but enough data has been analyzed for them to hold for the time being.
 > In the social sciences and physical sciences,
 > it's more common for theories to explain limited phenomenon.
+> These are called **middle-range theories**.
 > The **diffusion of innovation** theory, for example, 
-> is one of these **middle-range theories** and
+> is a **middle-range theories** that 
 > was originally devised to explain how new ideas and technology spread.
 
-You can see these discussions among scientists in the literature review
+You can see these discussions among scientists and researchers
+take place in the literature review
 and discussion sections of journal articles.
 In these sections, researchers cite and refer to others 
 who have completed research on a similar or the same topic.
-The overall goal is to test or develop a theory that explains some phenomenon.
+The overall goal of these discussions
+is to test or develop theories that explain some phenomenon.
 Essentially, researchers in the sciences are seeking to provide
 a story, based on a rigorous analysis of the data they have,
 that explains some phenomenon, and
@@ -200,19 +204,21 @@ These RMs, then, basically help us to test **material coherence**.
 Can you think of a story that doesn't have a character at all?
 I can't.
 Even places and things can be characters in stories.
-The Delorean car in the *Back to the Future* movies
+The [Delorean car][delorean] in the *Back to the Future* movies
 is, for example, somewhat of a character in those movies.
 But when people are characters,
 they often behave, in movies, plays, etc., *characteristically*.
 That is, they behave according to their
 values, beliefs, attitudes, ideas, and words.
 They behave according to who they are.
+
 We don't often see movies or plays or hear stories where
 people behave uncharacteristically because such stories
 are generally not good.
 Or if people do behave uncharacteristically,
-it's usually a part of the plot and somewhere in the story,
-the uncharacteristic behavior was foreshadowed.
+it's usually a part of the plot
+and the uncharacteristic behavior was foreshadowed
+somewhere earlier in the story.
 Often, when we see something coming in a movie before it's happened,
 it's because the characters are playing to their character.
 If we don't see something coming, then it's simply likely a 
@@ -223,6 +229,13 @@ whether people, places, or things.
 And when we investigate stories (or theories),
 it's worthwhile to consider whether the characters are coherent
 in this way, too.
+You can put this to the test.
+When thinking about big issues taking place in the world,
+think about who is involved,
+how they are acting,
+what they are saying, etc.
+Is what they are saying make sense,
+per the above ideas?
 
 ## Closing the Loop
 
@@ -255,7 +268,7 @@ ask the following questions:
    them, do any of them leave out important facts? Do any of them respond to
    counterarguments (or alternate explanations that fit the data)? Do any of
    them overlook relevant issues?
-3. Do the characters in the stories characterologically coherent? Who are the
+3. Are the characters in the stories characterologically coherent? Who are the
    characters in the story? Do they behave according to what we know of their
    values, attitudes, beliefs, ideas, and words? Do the stories present them
    counter to what we already know of these people?
@@ -279,7 +292,7 @@ it's also insufficient.
 A more thorough way to evaluate information is to think of the information
 more broadly and holistically.
 That is, to think of the stories that are being told,
-how the information is contextualized.
+and how the information is contextualized.
 Once we see the story,
 we have three methods to investigate a piece of information's credibility.
 We can test its:
@@ -291,10 +304,15 @@ We can test its:
 By the way, this method can also apply to the stories
 we tell ourselves or about ourselves or about our beliefs.
 It's important, that is, to evaluate the information we 
-believe to be true as much as it is to evaluate others 
+believe to be true as much as it is to evaluate what others 
 posit to be true.
 
 ## References
 
 Fisher, W. R. (1989). *Human communication as narration: Toward a philosophy of
-reason, value, and action*. University of South Carolina Press. https://doi.org/10.2307/j.ctv1nwbqtk
+reason, value, and action*. University of South Carolina Press. [https://doi.org/10.2307/j.ctv1nwbqtk](https://doi.org/10.2307/j.ctv1nwbqtk)
+
+[readingLaterally]:https://libguides.pvcc.edu/lateral_reading/home
+[latterallyYouTube]:https://www.youtube.com/watch?v=SHNprb2hgzU
+[craap]:https://en.wikipedia.org/wiki/CRAAP_test
+[delorean]:https://en.wikipedia.org/wiki/DMC_DeLorean

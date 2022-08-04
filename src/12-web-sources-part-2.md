@@ -10,6 +10,8 @@ Your education at UK should be, I hope, super beneficial,
 but you won't be in college forever, and
 you may have the kind of mind that wants to continue to grow
 and learn and improve.
+These sites may also help with various research projects, but
+they're also just enlightening and educational.
 
 Fortunately, the number and quality of
 open educational resources has been blossoming in recent years,
@@ -44,20 +46,21 @@ case studies, games, data sets, lesson plans, and more.
 UK Libraries provides more links to open educational resources
 and supports a program for UK faculty to create free, digital textbooks.
 You can find a lot of this material on [UKnowledge][uknowledge],
-and there is a [OER Research Guide][oerUK] that lists
+and there is an [OER Research Guide][oerUK] that lists
 more links to a wide range of open educational content.
 
 ### MOOCs
 
 MOOC sites are massive online open course providers.
 Two major MOOCs are [Coursera][coursera] (via Stanford University)
-and [edX][edX] (via Harvard and MIT).
+and [edX][edx] (via Harvard and MIT).
 Both sites offer courses on all the subjects you'd find
 in college for free,
 but you can also pay to earn certificates, if you want that.
 These courses are like online learning courses.
 They provide lectures and online activities to work through
 and to learn the material.
+
 
 ## Digital Libraries
 
@@ -69,7 +72,7 @@ and are worth exploring.
 
 [The National Science Digital Library][ndsl] is a digital library
 that provides educational resources on STEM
-(science, technology, engineering, and mathematics) and
+(science, technology, engineering, and mathematics) topics and
 for all educational levels.
 Topics include applied science, mathematics,
 statistics and probability, trigonometry, technology,
@@ -77,8 +80,8 @@ chemistry, and much more.
 
 ### Civil Rights Digital Library
 
-[The Civil Rights Digital Library][crdl] is a digital library provides
-resources on the Civil Rights Movement.
+[The Civil Rights Digital Library][crdl] is a digital library
+that provides resources on the Civil Rights Movement.
 The library can be browsed by events, places, people, topics, and more.
 Due to the nature of the topic,
 some of the content can be disturbing or challenging,
@@ -102,8 +105,8 @@ Visitors can browse by collection or search the site.
 [europeana][europeana] is a digital library that acts
 as a central repository for libraries, museums, and archives
 across the European Union.
-In that way, it's very much like the [DPLA][dpla]
-that we covered in the prior section.
+In that way, it's very much a European version of the [DPLA][dpla],
+which we covered in the prior section.
 
 [europeana]:https://www.europeana.eu/en
 
@@ -113,7 +116,9 @@ that we covered in the prior section.
 scanned from major U.S. research libraries, Google, and the Internet Archive.
 There is a big focus on public domain works,
 which are works that are free of copyright restrictions.
-However, UK Libraries is a partner institution,
+Although that's why I've included it in this section
+on web resources,
+UK Libraries is a partner institution,
 which means you can login to HathiTrust and check out works
 that are still under copyright.
 
@@ -123,7 +128,7 @@ that are still under copyright.
 collection on the web,
 and even predates the web by 20 years.
 All ebooks one Project Gutenberg are free,
-and be read on your computer or ebook reader.
+and can be read on your computer or ebook reader.
 
 ## Conclusion
 
@@ -134,9 +139,9 @@ everyday web searches unless we're really looking for them.
 Thus it's worthwhile to know they exist and explore them
 if we're interested in the content.
 
-Thus, there are two takeaways here.
+There are two takeaways here on this topic of web resources.
 First, be good at web search.
-We covered this in [section 5](5-information-retrieval-web.html).
+We covered this in [section 5](5-web-information-retrieval.html).
 Second, when search fails,
 know the good sites to go to.
 I've only covered a handful of them in this and
@@ -157,3 +162,6 @@ so keep exploring the real stuff.
 [oerUK]:https://libguides.uky.edu/alternative_textbooks/find
 [dpla]:https://dp.la 
 [projectgutenberg]:http://gutenberg.org/
+[coursera]:https://www.coursera.org/
+[edx]:https://www.edx.org/
+[hathitrust]:https://libguides.uky.edu/3051

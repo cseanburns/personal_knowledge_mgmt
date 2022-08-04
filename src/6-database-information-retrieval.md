@@ -8,17 +8,23 @@ Databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
 The main advantages are that databases offer 
-specialized collections on a variety of topic,
-many sources that are invisible to search engines, and
-greater control over the search process.
+specialized collections on a variety of topics;
+they offer many sources that are invisible to search engines; and
+they provide greater control over the search process.
 The main disadvantage is that they are a bit complicated to use well, 
 there are many databases to choose from (and find),
 each has their own user interface, and
 they are often only accessible via a library.
 
+> Many databases are only accessible via a library
+> because a library pays to use them.
+> Google and other search engines operate on different
+> revenue models, like serving ads.
+
 Information retrieval (search) in databases works
 similarly and differently than it does with the web.
-Like in the web, information retrieval works on documents in a corpus.
+Like with the web,
+database information retrieval works on documents in a corpus.
 We search that corpus using queries, and
 how we construct our queries is important.
 
@@ -27,7 +33,7 @@ As discussed in the previous section,
 while web pages on the web exist in a fairly organized hierarchy
 (with respect to top level domains, etc.),
 web pages themselves are not always very structured.
-But search engines have become really good at taking
+Search engines have become really good at taking
 all that unstructured text and making sense of it.
 
 Databases, on the other hand,
@@ -35,21 +41,23 @@ in particular, the ones we access through libraries,
 generally index fairly structured documents:
 i.e., bibliographic records.
 They may also index full text documents if those
-documents are accessible to the database.
+documents are accessible to the database, but
+the focus is on those bibliographic records.
+You can see examples of bibliogrpahic records
+[at the Library of Congress][bibRecordsLOC].
 If only bibliographic records are indexed,
 the database is usually called an
 **abstract and indexing database (A&I database)**.
 Otherwise it's just called a full text database.
 Many of the databases that we have access to at our
 library are a mix of the two.
-That is, some databases will include full text and also
-only abstracts and other bibliographic information.
 
 ## Searching Bibliographic Records
 
 By bibliographic information, I generally mean **metadata**,
 and by bibliographic records,
-I generally mean metadata about specific items.
+I generally mean metadata about specific items
+(books, articles, photos, etc.).
 Metadata is broadly defined as data about data,
 or sometimes as information about information.
 For example, a title of a book is metadata about a book. The author name of a journal article is
@@ -59,10 +67,13 @@ All the metadata about a specific item
 (book, journal article, etc)
 is a record.
 In a database, this metadata is controlled,
-and therefore, well structured.
+and therefore, well structured 
+(see the Libary of Congress link above).
 As searchers, this basically means
 that there are pre-set fields that 
-we can search in these databases.
+we can search in these databases and that
+these pre-set fields specifically search the
+corresponding metadata.
 For example, in [Academic Search Complete (ASC)][asc],
 we can search the following fields:
 
@@ -77,7 +88,7 @@ we can search the following fields:
 - ISBN
 
 And more.
-We can also filter by publication date, full text,
+We can also filter by publication date, full text availability,
 document type, language, number of pages, and images
 (depending on the database and its content).
 In the end, this means we have greater control over
@@ -88,7 +99,7 @@ For example, in the previous section,
 I showed how we can search the web
 by using the ``:filetype`` operator to limit results
 to PDFs, DOCX, XLSX, etc files.
-In a bibliographic database like ASC, however,
+In a bibliographic database like *ASC*, however,
 we can often specify that we want PDFs, but 
 more importantly,
 we can limit results by **document type**.
@@ -111,10 +122,10 @@ That means we can restrict results to items like:
 And much more.
 
 Otherwise, all the same principles apply to searching
-databases as does searching the web with a search engine.
+databases as searching the web with a search engine.
 Specifically:
 
-1. Text has primacy
+1. Document-centered (bibliographic records are documents)
 2. Documents exist within a corpus
 3. Query construction is important
 
@@ -128,7 +139,7 @@ And many of the same techniques apply, too:
 > The **AND** operator between two query terms means
 > that both terms must be present for each result in a search.
 > For example, if I search for ``dogs AND cats`` in a database
-> like ASC,
+> like *ASC*,
 > then each result must include both the terms **dogs** and **cats**.
 > We usually have to specify this **AND** in a database.
 > This not the case with Google and other search engines.
@@ -145,6 +156,8 @@ If a database uses these kinds of vocabulary terms,
 it means that each record in the database includes a list of
 these terms that should well describe the contents
 of the item it describes.
+Further, this means that all bibliographic records
+that share a specific subject term are linked together.
 
 For example, the *ASC* database uses subject terms.
 One subject term is **Forest animals**, and
@@ -160,7 +173,7 @@ since records often have multiple subject terms.
 If I combine those terms with an **AND** operator,
 then I narrow my results down to two journal articles,
 which is pretty precise.
-ASC is a multi-disciplinary database, and
+*ASC* is a multi-disciplinary database, and
 so feel free to explore subject terms related
 to your own interests.
 
@@ -176,7 +189,7 @@ title="Academic Search Complete results">
 
 Although database search can be more precise
 than searching in search engines,
-they are also good for browsing.
+databases are also good for browsing.
 
 We all browse
 (online, in stores, as we page through books, and so on)
@@ -200,12 +213,12 @@ something like an author's name or subject term,
 to find and collect related information.
 We call this type of browsing *pearl growing*.
 
-## Pearl Growing: Subject Browsing
+### Subject Browsing
 
-Below is an image of the [ERIC Database][eric] database.
+Below is an image of the [ERIC Database][eric].
 *ERIC* stands for **Education Resources Information Center**.
-The database is provided by the U.S. Department of Education and
-is an important access point for millions of bibliographic
+It is provided by the U.S. Department of Education, and
+it is an important access point for millions of bibliographic
 records to journal articles, books, research reports,
 white papers, government and other
 organizational reports, and more on education related topics.
@@ -242,7 +255,7 @@ title="Thesaurus descriptor page for the term academic libraries">
 <figcaption>Fig. 3: Thesaurus descriptor page for the term academic libraries</figcaption>
 </figure>
 
-## Pearl Growing: Author Browsing
+### Author Browsing
 
 I can certainly browse using other access points,
 like author names.
@@ -260,7 +273,7 @@ Knowing that authors tend to write and research
 on a specific range of topics (i.e., are specialists) is helpful
 because it allows me to browse by author and subject topic.
 
-## Pearl Growing: Citation Browsing
+### Citation Browsing
 
 I've described abstracting & indexing (A&I) databases, but
 there's another special type of A&I database called
@@ -282,7 +295,7 @@ they are more likely to be about the same thing.
 In fact, this is how Google search works, in part.
 Google's original *Page Rank Algorithm* posited
 that if a web page links to another web page,
-then the two pages pages are likely to be about the same topic.
+then the two pages are likely to be about the same topic.
 Because of this theory,
 we can follow citations to find more relevant articles.
 
@@ -306,7 +319,8 @@ title="WOS record of article on information literacy">
 After clicking on the **4 Citations** link,
 we can see that the term **information literacy**
 appears in the title of all four citing works.
-This is good evidence for our citation theory.
+This is good evidence for our citation theory, but
+it's also a useful trick for us.
 
 <figure>
 <img src="images/6-image-6.png"
@@ -334,7 +348,7 @@ title="Cited by in Google Scholar">
 <figcaption>Fig. 7: Cited by in Google Scholar</figcaption> 
 </figure>
 
-## Combination Browsing
+### Combination Browsing
 
 Like with most other searches,
 we can combine terms and use those combinations
@@ -378,10 +392,10 @@ with the **DE** at the beginning.
 The second field is an abstract search,
 and this is shown in the drop down box
 to the right of the query term.
-In between these two fields is a Boolean AND operator.
+In between these two fields is a Boolean **AND** operator.
 The AND operator tells the database that both
 query terms must be present in the results.
-We've seen this AND in prior examples.
+We've seen this **AND** in prior examples.
 
 I've mentioned two other Boolean operators:
 **NOT** and **OR**.
@@ -402,7 +416,7 @@ having the subject term **DIFFUSION of innovations**,
 as well as those records that did or did not have
 **regression** in the abstract.
 The **OR** operator is more useful when querying
-terms in the same fields.
+terms in the same search fields.
 For instance, we might want to use the **OR**
 operator to search for two different terms 
 that might appear in the abstract fields,
@@ -427,7 +441,7 @@ title="Using the OR Boolean operator">
 <figcaption>Fig. 9: Using the OR Boolean Operator</figcaption>
 </figure>
 
-## How to Browse
+### How to Browse
 
 When we browse, therefore,
 we are attempting to locate key qualities from our results
@@ -471,7 +485,7 @@ title="Using Folders to Save Records">
 <figcaption>Fig. 10: Using Folders to Save Records</figcaption>
 </figure>
 
-Of course, alternatively, I prefer to save records
+Of course, I prefer to save records
 in Zotero rather than use a database folder or list.
 This way I keep the records with me even if I lose
 access to the database.
@@ -510,3 +524,4 @@ chosen RM as you go.
 [wos]:https://libguides.uky.edu/467
 [GS]:https://scholar.google.com/
 [asc]:https://libguides.uky.edu/4
+[bibRecordsLOC]:https://www.loc.gov/marc/bibliographic/examples.html

@@ -41,7 +41,8 @@ when they were younger:
 [Classic PC Games][classPCgames]
 
 The Archive also provides the [Wayback Machine][wayback].
-The Wayback Machine is an archive of the web from its early days.
+The Wayback Machine is an archive of the web from its early days
+to the present.
 It's fun, for example, to use it to see what the web
 looked like years ago.
 For example, this is likely UK's first web page and
@@ -92,7 +93,7 @@ the DPLA offers:
 
 ## Library of Congress
 
-The [Library of Congress'][locResearch] has a list of
+The [Library of Congress][locResearch] provides a list of
 bibliographies, research guides, and finding aids
 on a vast range of topics.
 Many of the links in this list go directly to
@@ -138,7 +139,7 @@ as well as exciting [image][nasaImage] and
 
 The [U.S. Bureau of Labor Statistics (BLS)][bls] is the
 go to site for job and economic information.
-The site takes some exploration to learn all of what it offers,
+The site takes some exploration to learn all that it offers,
 but I can provide two examples.
 
 The Data Tools dropbox box provides employment change
@@ -189,7 +190,7 @@ The **10-K** report is an annual report that public companies
 are required to submit to the SEC.
 The **10-Q** report is the quarterly version.
 
-The **10-Q** report:
+The **10-K** report:
 
 > Provides audited annual financial statements,
 > a discussion of material risk factors for the company and its business,
@@ -223,7 +224,7 @@ is a concern for them.
 Lastly, I would like to refer you to [MedlinePlus][medlineplus],
 which is part of the National Library of Medicine.
 The purpose of this site is to serve as a health and medical reference
-resource for the generaly public.
+resource for the general public.
 Although no online site can take the place of professional medical help,
 MedlinePlus can be an important resource for becoming more
 informed about various health topics.
@@ -250,6 +251,7 @@ I think, super interesting and helpful sites that include the:
 - NASA
 - U.S. Bureau of Labor Statistics
 - EDGAR (SEC)
+- MedlinePlus
 
 Be sure to explore these sites, as well as others you find,
 because many of these just don't come up in your everyday
@@ -283,3 +285,5 @@ kind of search.
 [secForm]:https://www.sec.gov/oiea/Article/edgarguide.html
 [fayetteProperty]:https://fayettepva.com/
 [medlineplus]:https://medlineplus.gov
+[nasa]:https://www.nasa.gov/
+[edgarSearch]:https://www.sec.gov/edgar/search/

@@ -5,11 +5,15 @@
 Please review the aspects of Infokat searching here:
 
 - Naas, D. (n.d.). Research Guides: InfoKat Discovery: Getting Started.
-  Retrieved August 3, 2022, from
-  https://libguides.uky.edu/c.php?g=457383&p=3126835
+  Retrieved August 3, 2022, from [UK LibGuides][infokatLibGuide].
 
 ## Introduction
 
+We have already discussed
+[database information retrieval](6-database-information-retrieval.html).
+In this section we're going to explore a bit more
+the places where we can apply that knowlege.
+Specifically,
 UK Libraries provides access to many millions of sources
 that include books (ebooks and print books),
 databases, journals, archival works, image collections,
@@ -50,13 +54,14 @@ Not only can Infokat locate books on the shelves
 at W.T. Young or at the other [library locations at UK][uklibLocations],
 Infokat is also good for discovering digital collections,
 database resources, and more.
-And if the library doesn't have a resource,
+And if the library doesn't have a source,
 Infokat can facilitate an interlibrary loan request.
 Although interlibrary loans mean that we
 won't get immediate access to the requested source,
-they are still often fast.
+it's often very fast.
 In my experience,
-I usually receive PDF copies of journal articles within 24 hours,
+I usually receive PDF copies of 
+requested journal articles within 24 hours,
 and for many books that I've requested through interlibrary loan,
 I generally receive copies within one to three days. 
 
@@ -81,9 +86,9 @@ it's not necessarily advisable to use *natural language*
 for your queries like you might in a web search engine.
 Remember that our queries should always consider the
 corpus we're searching.
-Instead, you should devise queries that highlight
+This means you should devise queries that highlight
 the subject matter.
-That means that you want to pick one or more keywords
+You can do this by picking one or more keywords
 for your queries that express the topic
 that you're interested in retrieving.
 Also, because the corpus you're searching in Infokat is structured,
@@ -109,7 +114,7 @@ title="Infokat basic search">
 You can apply *pearl growing* by noticing title information,
 subject terms, publication information, or more and
 as a way to follow up on leads/hints you find in the results you retrieve.
-You can refine results by availability, resource type,
+You can also refine results by availability, resource type,
 subject heading, language, and more.
 
 Like web search engines,
@@ -126,7 +131,7 @@ web development
 Then results will include titles like:
 
 ```
-**Development** of a **web** tool to ...
+Development of a web tool to ...
 ```
 
 But if I wrap my query in quotes, like so:
@@ -140,7 +145,7 @@ Then results will literally reflect those terms and in that order.
 For example:
 
 ```
-Hands-On Full Stack **Web Development** with Angular...
+Hands-On Full Stack Web Development with Angular...
 ```
 
 ### Advanced Search
@@ -161,7 +166,7 @@ title="Infokat advanced search">
 Instead of using double quotes to force results to match your query,
 you have other options.
 These include the ability to state whether the search results should 
-contain the terms in your query, match exactly as the terms in your query,
+contain the terms in your query, match exactly the terms in your query,
 which is like using double quotes, or
 whether the search results should start with the same terms
 as your query.
@@ -190,12 +195,13 @@ From here you can save the specific item to Zotero,
 but Infokat let's you export citations manually, too.
 You can have the item emailed to you, or print it out,
 and more.
-If the items is available as a print item,
+
+If the item is available as a print item,
 Infokat will tell you where in the library it's located
 (i.e., shelf and floor), and
 it will also tell you which library the book is located,
 since UK Libraries has many locations aside from W.T. Young.
-If the items is not available electronically or in print 
+If the item is not available electronically or in print 
 at one of the UK Library locations,
 this is where you can request the items via interlibrary loan.
 
@@ -235,3 +241,4 @@ that UK Libraries provides access to for more topical searches.
 [infokatD]:https://saalck-uky.primo.exlibrisgroup.com/discovery/search?vid=01SAA_UKY:UKY
 [aboutInfokat]:https://libraries.uky.edu/find-borrow/where-do-i-start
 [uklibLocations]:https://libraries.uky.edu/locations
+[infokatLibGuide]:https://libguides.uky.edu/c.php?g=457383&p=3126835

@@ -4,11 +4,11 @@ UK Libraries provides access to many millions of sources
 that include books (ebooks and print books),
 databases, journals, archival works, image collections,
 multimedia collections, and more.
-
 In the prior section,
-I focused on using Infokat to search the UK Libraries' collections.
+I focused on using Infokat to search some of these collections.
 In this section, I focus on a handful of the
 databases that UK Libraries offers.
+
 I can only focus on a handful of databases
 because UK Libraries,
 as a major research institution and because of its 
@@ -68,10 +68,8 @@ You can search against subjects, industries, within regions, and
 you can add other limits.
 There are a slew of some advanced search operators that 
 help power up your search.
-One bonus is this thing called the Query Genius.
-I'll share with you a list of operators and
-field codes to use when searching here and
-also demonstrate how to use this.
+You can [read through the list of operators][factivaOperators] and
+field codes to use when searching *Factiva*.
 
 <figure>
 <img src="images/10-image-2.png"
@@ -104,7 +102,7 @@ languages, regions, and so forth.
 If I wanted to export any of these documents,
 I can click on specific check boxes and
 export the results in various ways,
-either as an RTF or a PDF file,
+either as RTF or a PDF files,
 or have it email the results to me or print them.
 We can look at the publication data distribution and
 note whether there are more results on a
@@ -118,12 +116,13 @@ were hit or miss and, as a result,
 I want to refine my search.
 Now I can try the **adjacent operator**.
 The adjacent operator tells the database to only return documents
-where the terms appear within a set amount of space between each other.
+where the query terms appear within a
+set amount of space between each other.
 The assumption is that the closer any terms are to each other,
 the more likely the document will be about those terms.
 Thus, if I replace the **and** operator with the **adj5** operator,
 I ask *Factiva* to return documents where the term *open source* 
-is within five words with the term *Google*: 
+is within five words of the term *Google*: 
 
 ```
 "open source" adj5 google
@@ -135,9 +134,12 @@ The list of companies have also changed, and more.
 If we investigate any of these documents,
 you and confirm that our two terms,
 which are highlighted,
-appear within five words of each other.
+appear within five words of each other
+in all the results.
 
-There are [many operators in Factiva][factivaOperators] besides **adj[N]**.
+As stated,
+there are [many operators in Factiva][factivaOperators]
+besides **adj[N]**.
 At that link, you can see that the standard Boolean
 operators are available: **and**, **or**, **not**.
 There are more proximity and other operators, such as:
@@ -168,15 +170,15 @@ a news article or like.
 
 [*Web of Science (WoS)*][wos] is an abstract & indexing citation database.
 This means that the database does not directly provide full text access
-but it does link to UK Libraries' when full text is available for results.
+but it does link to UK Library when full text is available for results.
 As a citation database,
 it also provides the number of citations each result has received,
 and this is a way to find additional relevant documents.
 
-The Core Collection is the default collection/database.
-This is *Web of Sciences* main database and
+The **Core Collection** is the default collection/database.
+This is *Web of Sciences'* main database and
 includes coverage of the sciences, the arts, and the humanities.
-WoS offers other databases that mostly cover the sciences, and
+*WoS* offers other databases that mostly cover the sciences, and
 you can search all of those databases at the same time, but
 it's often better to focus on the core collection when starting.
 
@@ -187,7 +189,7 @@ as seen in Figure 3:
 <img src="images/10-image-3.png"
 alt="WoS search for 'open source' and google"
 title="WoS search for 'open source' and google">
-<figcaption>Fig. 3: WoS search for 'open source' and google</figcaption> 
+<figcaption>Fig. 3: <i>WoS</i> search for 'open source' and google</figcaption> 
 </figure>
 
 I can keep the default field search set to **All Fields**, or
@@ -196,7 +198,7 @@ which searches titles, abstracts, and keywords.
 
 As of August 1, 2022, this query retrieves 1,134 results.
 Let's say that my search is a bit too broad still, and
-I want to narrow first by refining my query.
+I want to refine my query to narrow my results.
 Just like in *Factiva*,
 *WoS* offers a proximity operator called NEAR.
 Let's try it out with the following query
@@ -206,7 +208,7 @@ on the *WoS* advanced search page:
 <img src="images/10-image-4.png"
 alt="WoS advanced search for TS=("open source" NEAR google)"
 title="WoS advanced search for TS=("open source" NEAR google)">
-<figcaption>Fig. 4: WoS advanced search for TS=("open source" NEAR google)</figcaption> 
+<figcaption>Fig. 4: <i>WoS</i> advanced search for TS=("open source" NEAR google)</figcaption> 
 </figure>
 
 Now there are only 9 results,
@@ -219,26 +221,26 @@ I can change the field to **Title** only.
 The default results list is to show articles
 that are published more recently.
 I can change this default sorting method so that
-WoS sorts based on sources that have the highest citations first. 
+*WoS* sorts based on sources that have the highest citations first. 
 Once I do this, I can go to the right side,
 and look at the **Times Cited** link and
 see which articles have been cited the most.
-This is what makes WoS a citation database.
-We don't have to use WoS as a citation database,
-but this is what really separates WoS
+This is what makes *WoS* a citation database.
+We don't have to use *WoS* as a citation database,
+but this is what separates *WoS*
 from many other scholarly databases.
 
 Theoretically, each one of these citing articles should be 
 related to the article that is cited by them. I can them peruse 
-these citing articles to help me find, perhaps, even more 
+these citing articles to help me find even more 
 relevant sources of information.
 
 Instead of basic search, we can search
 by author, cited reference, and more.
-If you click on the big question mark button in WoS, 
-you'll find a guide on how to use WoS.
+If you click on the big question mark button in *WoS*, 
+you'll find a guide on how to use *WoS*.
 The guide includes some tips on the use of various search operators,
-including the *near* operator as well as the Boolean operators. 
+including the *NEAR* operator as well as the Boolean operators. 
 
 Remember that *Web of Science* doesn't offer direct access to content,
 but notice that there is this **Full Text @ W. T. Young** link
@@ -262,6 +264,11 @@ Zotero is also capable of extracting bibliographic information here.
 ## Google Scholar
 
 Let's try [*Google Scholar*][googleScholar] now.
+*Google Scholar* isn't technically a library database
+since it's freely accessible on the web, but
+I will show you how to connect it to Infokat so
+that it functions like *WoS* or other databases that we've covered.
+
 *Google Scholar* doesn't have the kind of search operators
 that either *Factiva* or *Web of Science* have, but
 it's a freely available citation database that indexes a lot of content.
@@ -275,7 +282,7 @@ Thus the following search is translated as:
 <img src="images/10-image-5.png"
 alt="Google Scholar search for "open source" google"
 title="Google Scholar search for "open source" google">
-<figcaption>Fig. 5: Google Scholar search for "open source" google</figcaption> 
+<figcaption>Fig. 5: <i>Google Scholar</i> search for "open source" google</figcaption> 
 </figure>
 
 You can see here we get a lot of results.
@@ -295,7 +302,7 @@ There is an advanced search option.
 However, since *Google Scholar* is indexing full text sources
 and not structured bibliographic records,
 this means that it can't offer the kind of advanced
-search we've seen so far.
+search we've seen in database searches.
 It is pretty useful, though.
 For example, Figure 6 shows an advanced search for the terms
 **google** and **"open sources"** but it 
@@ -308,7 +315,7 @@ As of August 1, 2022, *Google Scholar* returns only 35 hits.
 <img src="images/10-image-6.png"
 alt="Google Scholar search for "open source" google not android in title"
 title="Google Scholar search for "open source" google not android in title">
-<figcaption>Fig. 6: Google Scholar search for "open source" google not android in title</figcaption> 
+<figcaption>Fig. 6: <i>Google Scholar</i> search for "open source" google not android in title</figcaption> 
 </figure>
 
 Other than that, one of the nice things about
@@ -324,7 +331,7 @@ which purposefully casts a smaller net.
 Because of that, I find *Google Scholar* can return
 many non-relevant works, but
 it makes it nice for browsing or discovery. 
-*Web of Science* is shines for more
+*Web of Science* shines for more
 rigorous and methodical literature searches.
 
 The observant among you may have noticed that in Figure 5,
@@ -343,9 +350,21 @@ After that,
 you should see the **View Now** option when something is 
 available via UK Libraries.
 
+<figure>
+<img src="images/10-image-7.png"
+alt="Google Scholar View Now Setup"
+title="Google Scholar View Now Setup">
+<figcaption>Fig. 7: <i>Google Scholar</i> View Now Setup</figcaption> 
+</figure>
+
 ## JSTOR
 
 [*JSTOR*][jstor] is multi-disciplinary database.
+Like other databases,
+you can limit results by **Item Type**, **Language**,
+**Publication Date**, **subject area**, and more.
+*JSTOR* also provides proximity search using the **NEAR** operator.
+
 JSTOR covers subjects such as:
 
 - Arts
@@ -360,35 +379,24 @@ Each of these subject areas includes access to many journal titles, and
 therefore, many journal articles.
 *JSTOR* has long focused on back issues of journals, but
 in recent years has made moves to include current literature and
-open access content (this content that is freely available).
+open access content (this is content that is freely available).
 The content in *JSTOR* is high quality, peer-reviewed work, which 
 makes *JSTOR* a great place to gather documents on a topic
 that you want to research in-depth.
-*JSTOR* also includes [*ARTSTOR*][artstor],
-a database of images, video, and other multimedia content,
-much of which is also available as open access.
-
-The following search repeats my **"open access" and google** query, and
-you can see that the retrieved items,
-while in the thousands,
-is much fewer than other databases.
-This is because *JSTOR* indexes fewer titles (or works)
-than those others.
-But like other databases,
-you can limit results by **Item Type**, **Language**,
-**Publication Date**, **subject area**, and more.
-*JSTOR* also provides proximity search using the **NEAR** operator.
-
-*JSTOR* also provides image search, via *ARTSTOR*.
 My **"open source" and google** query for Images
 returns 26 results.
 
 <figure>
-<img src="images/10-image-7.png"
+<img src="images/10-image-8.png"
 alt="JSTOR image search"
 title="JSTOR image search">
-<figcaption>Fig. 7: JSTOR Image Search</figcaption> 
+<figcaption>Fig. 8: <i>JSTOR</i> Image Search</figcaption> 
 </figure>
+
+*JSTOR* also includes [*ARTSTOR*][artstor],
+which is separate from the *JSTOR* images search above.
+*ARTSTOR* is database of art and multimedia objects,
+much of which is also available as open access.
 
 Again, remember that if you have desktop Zotero 
 plus the Zotero browser add-on installed,
@@ -401,14 +409,14 @@ to collect information on your Wikipedia topic.
 
 That covers *Factiva*, *Web of Science*,
 *Google Scholar*, and *JSTOR*.
-Remember that *Factiva* is a general-interest news database, and
-*WoS* and *GS* are both citation, scholarly databases, and
+Remember that *Factiva* is a general-interest news database; 
+*WoS* and *Google Scholar* are both citation, scholarly databases; and
 *JSTOR* is a scholarly and image database.
 
 In the next section,
 we begin to cover web content.
 Although it might have been appropriate to include *Google Scholar*
-in the next sections,
+in the next section,
 I included it here because of its ability to link directly to 
 UK's Infokat.
 This won't be the case for resources I cover next.
@@ -419,3 +427,4 @@ This won't be the case for resources I cover next.
 [googleScholar]:https://scholar.google.com
 [jstor]:https://libguides.uky.edu/266
 [factivaOperators]:http://factiva.com/CP_Developer/ProductHelp/FDK/FDK38/search_factiva/query_expressions/search_statement_operators.htm
+[artstor]:https://libguides.uky.edu/551

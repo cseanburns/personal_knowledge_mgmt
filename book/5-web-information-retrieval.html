@@ -93,24 +93,23 @@ review the following search tips pages for Google Search,
 DuckDuckGo search, and Bing search.</p>
 <ul>
 <li>Refine web searches—Google Search Help. (n.d.). Retrieved August 3, 2022,
-from https://support.google.com/websearch/answer/2466433?hl=en</li>
+from <a href="https://support.google.com/websearch/answer/2466433?hl=en">Google</a></li>
 <li>DuckDuckGo. (n.d.). DuckDuckGo Search Syntax. DuckDuckGo Help Pages.
-Retrieved August 3, 2022, from
-https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/</li>
+Retrieved August 3, 2022, from <a href="https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a></li>
 <li>Advanced search options. (n.d.). Retrieved August 3, 2022, from
-https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930</li>
+<a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Microsoft</a></li>
 </ul>
 <a class="header" href="5-web-information-retrieval.html#introduction" id="introduction"><h2>Introduction</h2></a>
 <p>Whether we want to search the web,
 a bibliographic database,
-or our Zotero (or like RM) library,
+or our Zotero library,
 it's helpful to know a bit how
 information retrieval works in
 order to become good at search.</p>
-<p>In this lesson, we'll cover specific techniques
-that you can use to get better at search,
-but there are three ideas that we
-need to consider when advancing our skills with search.</p>
+<p>In this lesson, we'll cover specific search techniques
+that you can use to get better,
+but there are three principles that we
+need to consider when advancing our search skills.</p>
 <p>First, we should understand that the
 basic information retrieval model centers on <strong>documents</strong>.
 Anything indexed in a database or on the web is treated as a document.
@@ -120,16 +119,18 @@ do not exist independently of other documents.
 Let's call this the <strong>corpus</strong>.
 For the web, the <strong>corpus</strong> is organized
 like a <strong>file system</strong>,
-much like the file system on your personal computers, and
-in a bibliographic database,
+much like the file system on your personal computers.
+In a bibliographic database,
 the <strong>corpus</strong> is organized by predefined fields, such
-author names, titles, subject terms, etc.</p>
+author names, title names, subject terms, etc.</p>
 <p>Third, our queries are not divorced from the <strong>documents</strong>
-nor the <strong>corpus</strong>.
-That is, each time we search,
+nor the <strong>corpus</strong> nor the <strong>organization of the corpus</strong>.
+These things are all intertwined.
+Each time we search,
 search engines and databases compare
 <strong>documents</strong> in the <strong>corpus</strong>
-to each other based on our <strong>query constructions</strong>,
+to each other and to how they are organized
+based on our <strong>query constructions</strong>,
 and then rank order (in some way) those documents
 by way of that comparison.
 Hence, when we <strong>construct queries</strong>,
@@ -140,7 +141,7 @@ matches them against how they have indexed the corpus,
 and then rank orders the results based
 on the query and the corpus.</p>
 <p>In order to illustrate the above concepts,
-I'll primarily focus on searching the web, but
+I'll primarily focus on searching the web in this section, but
 these techniques work across the databases
 that we use in a library.</p>
 <a class="header" href="5-web-information-retrieval.html#the-web-is-for-storing-and-retrieving-documents" id="the-web-is-for-storing-and-retrieving-documents"><h2>The web is for storing and retrieving documents</h2></a>
@@ -161,21 +162,23 @@ contains even if that document covers the topic or concept that we think is
 relevant.</li>
 <li>For example, consider <em>synonyms</em>. We might want web pages that contain terms
 that are synonymous with our query term but do not actually contain our query
-term. But this can get complicated. If I search for <code>star</code>, could I also
-mean <code>principal, lead, hero, celebrity, stellar</code>, or <code>sun</code>?</li>
-<li>What if a document only uses terms like <code>principal, lead, hero, celebrity, stellar</code>, or the <code>sun</code>? Might it still be useful if I was interested in
-documents (i.e., web pages) about <code>star</code>? Probably not since some of those
+term. But this can get complicated. If I search for <strong>star</strong>, could I also
+mean <strong>principal, lead, hero, celebrity, stellar</strong>, or <strong>sun</strong>?</li>
+<li>What if a document only uses terms like <strong>principal, lead, hero, celebrity,
+stellar</strong>, or <strong>sun</strong>? Might it still be useful if I was interested in
+documents (i.e., web pages) about <strong>star</strong>? Probably not since some of those
 words, although synonymous with <strong>star</strong>, are not synonymous with each other
 (cf, <strong>principal</strong> and <strong>celebrity</strong>)</li>
 <li>Other <em>wordy</em> issues include things like <em>homonyms</em>, which are words that are
-pronounced or spelled the same but mean different things. Thus, by <code>bark</code>, do
+pronounced or spelled the same but mean different things. Thus, by <strong>bark</strong>, do
 I mean the bark on a tree or the word we use to signal the sound a dog makes?</li>
 <li>Phrases are also important, with respect to term adjacency and word order. If
-I search for <code>forest fire</code>, search engines are more likely to return results
+I search for <strong>forest fire</strong>, search engines are more likely to return results
 where those two terms appear next to each other and in that order. This will
-mean that documents that contain text about someone having a <code>camp fire in a forest</code> will be less likely to appear at the top of my results than a
-document that contains the phrase <code>the forest is on fire</code>. Or documents
-where the terms are or in order but spaced far apart will also rank lower.
+mean that documents that contain text about someone having a <strong>camp fire in a
+forest</strong> will be less likely to appear at the top of my results than a
+document that contains the phrase <strong>the forest is on fire</strong>. Or documents
+where the terms are in order but spaced far apart will also rank lower.
 E.g., if the term <strong>forest</strong> appears in the first paragraph on a web page and
 the term <strong>fire</strong> appears on the last paragraph of a web page, this web page
 will rank lower than a page that contains the terms near or adjacent to each
@@ -187,19 +190,20 @@ is like a file system,
 the kind that you'd find on your own computer.
 By this I mean that the web is organized,
 even though it may not appear so.
-But if we know a bit about its organization,
-we can take good advantage of that when we search
-by narrowing our searches to just parts of the web.
-So the question is, how is it organized?</p>
+If we know a bit about its organization,
+we can take good advantage of that when we search.
+For instance, we can narrow our searches to parts of the web.
+So the questions are: how is it organized?
+And how can we use that in search?</p>
 <ul>
 <li>The web is organized like a tree. This tree like structure originally
-contained just a few main branches, called <strong>top level domains</strong>, such as:
-.com, .edu, .org, .gov, .mil, and .net. All domains then branched off of
-those main branches.</li>
+contained a few main branches, called <strong>top level domains (TLDs)</strong>. Example
+TLDs are .com, .edu, .org, .gov, .mil, and .net. All domains then branched
+off of those main branches.</li>
 <li>The tree has grown over the years and now contains about 1500 of these main
-branches, or top level domains. Examples include .apple, .attorney, .camera,
-.green, .joy .mobile, .office, .science, .space, and <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">many more</a>.</li>
-<li>Included in those are <strong>ccTLD</strong>s, or country code top level domains. For
+branches (TLDs). Newer TLDs include .apple, .attorney, .camera, .green, .joy
+.mobile, .office, .science, .space, and <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">many more</a>.</li>
+<li>Included in those are <strong>ccTLD</strong>s, or <strong>country code top level domains</strong>. For
 example:
 <ul>
 <li><strong>.kr</strong> for South Korea</li>
@@ -220,14 +224,14 @@ domains. For example:
 </ul>
 </li>
 <li>Those branches (second level domains) contain even smaller branches that are
-called third level domains. Examples include:
+called third level domains or subdomains. Examples include:
 <ul>
-<li><strong>maps</strong>.google.com</li>
-<li><strong>calendar</strong>.uky.edu</li>
-<li><strong>en</strong>.wikipedia.org</li>
-<li><strong>analytics</strong>.usa.gov</li>
-<li><strong>www</strong>.uky.edu</li>
-<li><strong>ci</strong>.uky.edu</li>
+<li><strong>maps</strong> for maps.google.com</li>
+<li><strong>calendar</strong> for calendar.uky.edu</li>
+<li><strong>en</strong> for en.wikipedia.org</li>
+<li><strong>analytics</strong> for analytics.usa.gov</li>
+<li><strong>www</strong> for www.uky.edu</li>
+<li><strong>ci</strong> for ci.uky.edu</li>
 </ul>
 </li>
 </ul>
@@ -243,26 +247,27 @@ and most of the results I am less interested in
 are from <code>.com</code> domains.
 To focus on the gov domains,
 I add the site operator to my query.
-This is the query I could use to search Google:</p>
+This is the Google query I could use to search
+for the topic <strong>flu</strong> only on <strong>.gov</strong> sites:</p>
 <pre><code>flu site:gov
 </code></pre>
 <p>Then perhaps I find these results too general still.
 For example, let's say I live in Kentucky but Google
-is showing me a lot of <strong>.gov</strong> sites from other states.
+keeps showing me <strong>.gov</strong> sites from other states.
 We can focus on just a smaller branch of the tree.
-E.g., if I wanted to focus only on results for Kentucky, then:</p>
+E.g., if I wanted to focus only on results from Kentucky, then:</p>
 <pre><code>flu site:ky.gov
 </code></pre>
 <p>Or I can specify a part of Kentucky's government, like
 the <em>Cabinet for Health and Family Services</em> or
-the <em>Kentucky Department of Education</em>.
-Then I could try these queries:</p>
+the <em>Kentucky Department of Education</em>
+with these queries:</p>
 <pre><code>flu site:chfs.ky.gov
 flu site:education.ky.gov
 </code></pre>
 <figure>
 <img src="images/5-image-1.png"
-width="600" height="500"
+width="450" height="375"
 alt="The organization of the web by top level domains"
 title="The organization of the web by top level domains">
 <figcaption>Fig. 1: The Organization of the Web by Top Level Domains</figcaption>
@@ -270,7 +275,7 @@ title="The organization of the web by top level domains">
 <a class="header" href="5-web-information-retrieval.html#constructing-queries-for-precise-results" id="constructing-queries-for-precise-results"><h2>Constructing queries for precise results</h2></a>
 <p>There are all sorts of other tips and tricks
 we can apply to revise and make our queries more precise.</p>
-<p><strong>Use quotes around our search terms:</strong></p>
+<p><strong>Use quotes around our search terms</strong></p>
 <p>With a search like <code>flu site:gov</code>,
 Google provided us with snippets of text
 that highlighted where the term <strong>flu</strong> appears
@@ -284,7 +289,6 @@ For example, we see terms like these in the search results:</p>
 </ul>
 <figure>
 <img src="images/5-image-2.png"
-width="600" height="500"
 alt="Google result snippets"
 title="Google result snippets">
 <figcaption>Fig. 2: Google result snippets</figcaption>
@@ -292,14 +296,14 @@ title="Google result snippets">
 <p>This tells us important information
 about how Google sees the text on web pages,
 and we can use this information to revise our search.
-For example, let's say that I'm interested in web pages
-that contain info about <em>flu vaccines</em> and
+For example, let's say I'm interested in web pages
+that contain info about <strong>flu vaccines</strong> and
 less interested in pages that contain information on
-<em>flu activity</em> or <em>flu season</em>.
+<strong>flu activity</strong> or <strong>flu season</strong>.
 If that's the case, then I can add the additional term
 to my query and enclose the whole query in quotation marks.
 That will force Google to rank pages
-with the literal term <em>&quot;flu vaccines&quot;</em>
+with the literal term <strong>&quot;flu vaccines&quot;</strong>
 much higher than pages with those other terms or phrases,
 or exclude those other pages altogether.
 So our query will now look like this
@@ -307,29 +311,29 @@ So our query will now look like this
 and not the <em>site</em> operator, are quoted):</p>
 <pre><code>&quot;flu vaccines&quot; site:gov
 </code></pre>
-<p><strong>Get more recent pages:</strong></p>
+<p><strong>Get more recent pages</strong></p>
 <p>If I'm really interested only in recent pages,
 I can click on the <strong>Tools</strong> button and select
-<strong>Any time</strong>, Past hour, Past 24 hours, Past week, or etc,
-to limit results to certain time frames.</p>
-<p><strong>Exclude results with the minus sign:</strong></p>
+<strong>Any time, Past hour, Past 24 hours, Past week</strong>, or etc,
+to limit results to certain time periods.</p>
+<p><strong>Exclude results with the minus sign</strong></p>
 <p>Let's take a look at our flu vaccine search.
-Instead of enclosing <code>&quot;flu vaccines&quot;</code> in quotes
+Instead of enclosing <strong>&quot;flu vaccines&quot;</strong> in quotes
 to return only pages with that phrase and
 to reduce pages retrieved with other phrases,
 I could exclude the other phrases altogether
 (i.e., <strong>activity</strong> and <strong>season</strong>)
 by excluding them with a minus sign.
-To exclude the terms <strong>season</strong> and <strong>activity</strong>
+To exclude the terms <strong>activity</strong> and <strong>season</strong>
 from our search results,
 this is how our search would look:</p>
-<pre><code>flu -season -activity site:gov
+<pre><code>flu -activity -season site:gov
 </code></pre>
 <p>I can also exclude specific domains or specific websites:</p>
 <pre><code>flu vaccines -site:com
 flu vaccines -site:webmd.com
 </code></pre>
-<p><strong>Term order matters</strong>:</p>
+<p><strong>Term order matters</strong></p>
 <p>Results will be different depending
 on the order of the query terms.
 Google has gotten good over the years about natural language
@@ -337,7 +341,7 @@ Google has gotten good over the years about natural language
 and so the suggestion is to use natural language in your query.
 For example, it's generally better to use
 the search terms <strong>flu vaccine</strong> instead of <strong>vaccine flu</strong>,
-since this is how we'd phrase the terms in English.
+since the former is how we'd phrase the terms in English.
 This will of course vary by language.
 In many Romance languages, but also others,
 it's common (but varies) for the modifier
@@ -345,15 +349,23 @@ to come after the word being modified.
 For example, in Spanish, we would say <strong>shirt red</strong>:</p>
 <pre><code>camisa roja
 </code></pre>
-<p>Thus, a Spanish speaker from Mexico
+<p>Thus, a Spanish speaker
 would want to search for <code>camisa roja</code> and not
-<code>roja comisa</code> on Google.com's default landing
-page for those residing in Mexico:</p>
-<p><a href="https://www.google.com.mx/">Google Search - Mexico</a></p>
-<p>However, we can pair some terms together and
-not change the meaning of the query, but
-how we pair them might change the results retrieved,
-especially as you page through the results list.
+<code>roja comisa</code>.
+This of course is regardless of the country of origin,
+but note that Google has separate landing pages for
+Google.com depending on the country you're located in.
+For example, for those residing in Mexico, <strong>google.com</strong>
+directs to <strong>google.com.mx</strong>,
+where <strong>mx</strong> is the ccTLD for Mexico:
+<a href="https://www.google.com.mx/">Google Search - Mexico</a>.
+For those residing in Canada, it's <strong>google.ca</strong>.</p>
+<p>Although term order can determine meaning
+or reflect natural language,
+we can pair some terms together as lists,
+without any impact on meaning or natural language.
+How we pair them might change the results retrieved, though,
+which becomes noticable as we scan the search results lists.
 For example, consider the following two searches:</p>
 <pre><code>google bing
 </code></pre>
@@ -361,7 +373,7 @@ For example, consider the following two searches:</p>
 <pre><code>bing google
 </code></pre>
 <p>The above two search queries are semantically equivalent
-(they mean the same thing), but
+(they mean the same thing) and their order is arbitrary in our list, but
 search engines implicitly place a priority on term order.
 The first term in the query is prioritized over the second term.
 So if you search Google using the above two queries,
@@ -369,7 +381,7 @@ the first page of results might be mostly the same, but
 as you page through them, you might see more pages on Google
 than on Bing, for the first search,
 and vice versa for the second search.</p>
-<p><strong>One OR the other OR both:</strong></p>
+<p><strong>One OR the other OR both</strong></p>
 <p>When we search using multiple terms,
 we can use the <code>OR</code> operator to tell Google to return pages
 with either of the terms or both of the terms.
@@ -378,22 +390,24 @@ Consider the following two searches:</p>
 google OR bing
 </code></pre>
 <p>The first search will return pages with both
-the terms included in the results.
-The second search will return pages with
+the terms included in the results
+because the quotes enforce that.</p>
+<p>The second search will return pages with
 either the term <strong>google</strong> in the results,
 the term <strong>bing</strong> in the results,
 or both the terms in the results.
 Note also, based on my personal experience,
 that if I test the second search in
-Google Search and in Bing Search, then
+Google Search and also in Bing Search, then
 Google will return more results about Google,
-and Bing will return more results about Bing.</p>
-<p><strong>Other operators:</strong></p>
+and Bing will return more results about Bing,
+respectively.</p>
+<p><strong>Other operators</strong></p>
 <p>There are other operators we can use in search engines, and
 many of them work regardless of which search engine we use.
-Here are some examples:</p>
+Here are some examples that you can test in Google or elsewhere:</p>
 <ul>
-<li><code>:related</code> to find related sites
+<li><strong>:related</strong> to find related sites
 <ul>
 <li><code>related:twitter.com</code></li>
 <li><code>related:instagram.com</code></li>
@@ -401,9 +415,9 @@ Here are some examples:</p>
 <li><code>related:google.com</code></li>
 </ul>
 </li>
-<li><code>:filetype</code> to find to return results in specific types of files:
+<li><strong>:filetype</strong> to return results in specific types of files:
 <ul>
-<li>search <strong>uky.edu</strong> for the term <em>flu vaccine</em> but only retrieve <strong>PDFs</strong>:
+<li>search <strong>uky.edu</strong> for the term <strong>flu vaccine</strong> but only retrieve <strong>PDFs</strong>:
 <ul>
 <li><code>flu vaccines filetype:pdf site:uky.edu</code></li>
 </ul>
@@ -422,46 +436,58 @@ Here are some examples:</p>
 </li>
 </ul>
 <a class="header" href="5-web-information-retrieval.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<p>Information retrieval (or search) can be complex but fun.
+Remember the three principals we stared with in this section,
+and apply those principals when constructing your queries.</p>
 <ul>
-<li>documents on the web
+<li>document centered
 <ul>
 <li>consider the text</li>
 </ul>
 </li>
-<li>web organization
+<li>no document is an island
+<ul>
+<li>consider the document with respect to the corpus</li>
+</ul>
+</li>
+<li>the web is organizated
 <ul>
 <li>take advantage of the how the web is structured with <em>site</em> searches</li>
 </ul>
 </li>
+</ul>
+<p>Remember and practice the techniques I discussed here:</p>
+<ul>
 <li>query construction
 <ul>
-<li>use quotes</li>
+<li>use quotes to force exact matches</li>
 <li>exclude terms with the minus sign</li>
 <li>term order matters</li>
 <li>use OR to select alternate terms</li>
 </ul>
 </li>
-<li>if you forget anything, use advanced search:
-<a href="https://www.google.com/advanced_search">https://www.google.com/advanced_search</a></li>
-<li>Or Advanced Image Search:
-<a href="https://google.com/advanced_image_search">https://google.com/advanced_image_search</a></li>
-<li>Google provides a <a href="https://support.google.com/websearch/answer/2466433?hl=en">list of some of these operators</a>.</li>
-<li>Other search engines also have search operators, and often they're the same:
+</ul>
+<p>If you forget anything, use advanced search:
+<a href="https://www.google.com/advanced_search">https://www.google.com/advanced_search</a></p>
+<p>Or Advanced Image Search:
+<a href="https://google.com/advanced_image_search">https://google.com/advanced_image_search</a></p>
+<p>Google provides a <a href="https://support.google.com/websearch/answer/2466433?hl=en">list of some of these operators</a>.</p>
+<p>Other search engines also have search operators, and often they're the same:</p>
 <ul>
 <li><a href="https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a></li>
 <li><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Bing</a></li>
 </ul>
-</li>
-</ul>
 <a class="header" href="5-web-information-retrieval.html#ps" id="ps"><h2>P.S.</h2></a>
-<p>Final tip: You can get very advanced:</p>
+<p>You can get very advanced with your queries.
+Here are some examples:</p>
 <pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov)
 </code></pre>
 <p>Or, limit to specific filetypes:</p>
 <pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov) filteype:pdf
 </code></pre>
-<p>The last search decomposes into the following
-separate queries but searches them all at the same time:</p>
+<p>The last search query is so complicated that it
+decomposes into the following separate queries but
+searches them all at the same time:</p>
 <ol>
 <li><code>trade surplus site:whitehouse.gov filetype:pdf</code></li>
 <li><code>trade surplus site:congress.gov filetype:pdf</code></li>
