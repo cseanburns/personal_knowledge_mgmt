@@ -101,10 +101,12 @@ We will use the material and tools covered here
 to produce content for a Wikipedia article
 that you have selected.
 
-But I start this book by covering two basic topics:
+I start this book by covering two basic topics:
 email management and back ups.
 Although these topics do not necessarily fit within
-the work flow model that this book,
-they're basic to personal knowledge management, in general.
+the work flow model that frames this book,
+I discuss them because they are
+basic personal knowledge management skills, and
+it's good to not overlook the basics.
 
 [uklibraries]:https://libraries.uky.edu/
