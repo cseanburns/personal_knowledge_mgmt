@@ -1,4 +1,4 @@
-# Reference Managers 
+# Reference Managers: Getting Started
 
 ## Readings
 

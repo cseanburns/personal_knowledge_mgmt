@@ -1,11 +1,11 @@
 # Summary
 
 - [Personal Knowledge Management (PKM) Handbook](p1-pkm.md)
-- [PKM Learning Goals](0-intro-to-pkm.md)
+- [Introduction to PKM](0-intro-to-pkm.md)
 - [Email Management](1-email-management.md)
 - [Back Up Your Work](2-backup.md)
 - [Information Sources and Resources](3-information-sources-resources.md)
-- [Reference Management: Getting Started](4-reference-management-part-1.md)
+- [Reference Managers: Getting Started](4-reference-managers-getting-started.md)
 - [Web Information Retrieval](5-web-information-retrieval.md)
 - [Database Information Retrieval](6-database-information-retrieval.md)
 - [Evaluating Information Sources](7-evaluating-information-sources.md)
@@ -14,6 +14,6 @@
 - [Library Sources: Part 2](10-library-sources-part-2.md)
 - [Web Sources: Part 1](11-web-sources-part-1.md)
 - [Web Sources: Part 2](12-web-sources-part-2.md)
-- [Reference Managers: Finishing Up](13-reference-management-part-2.md)
+- [Reference Managers: Finishing Up](13-reference-managers-finishing-up.md)
 - [Wikipedia Project: Completion](14-project-close-wikipedia-part-2.md)
 - [GNU Free Documentation License](gnu-free-documentation-license.md)

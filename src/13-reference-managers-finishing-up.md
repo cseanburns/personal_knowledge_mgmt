@@ -1,4 +1,4 @@
-# Reference Management: Part 2 
+# Reference Managers: Finishing Up
 
 ## Readings
 
