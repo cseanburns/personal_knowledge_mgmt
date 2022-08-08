@@ -1,8 +1,8 @@
 # Personal Knowledge Management Handbook
 
-This repository serves as a handbook on 
-personal knowledge management for a 
-course taught in the undergraduate ICT program
+This repository serves as a
+[handbook on personal knowledge management](book/index.html)
+for a course taught in the undergraduate ICT program
 at the University of Kentucky's School of Information Science.
 
 The handbook was created using
