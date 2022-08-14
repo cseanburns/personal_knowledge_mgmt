@@ -1,103 +1,154 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
+        <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Database Information Retrieval - Personal Knowledge Management Handbook</title>
+        <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
 
-        <base href="">
-
-        <link rel="stylesheet" href="book.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
-
+        <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
-        <!-- Custom theme -->
-        
-
-        
-
-        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
-        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
-        <script>
-            if (typeof Clipboard == 'undefined') {
-                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
-            }
-        </script>
-
-        <!-- Fetch JQuery from CDN but have a local fallback -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script>
-            if (typeof jQuery == 'undefined') {
-                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
-            }
-        </script>
-
-        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
-        <script src="store.js"></script>
-
+        <!-- Custom theme stylesheets -->
     </head>
-    <body class="light">
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script type="text/javascript">
-            var theme = store.get('mdbook-theme');
-            if (theme === null || theme === undefined) { theme = 'light'; }
-            $('body').removeClass().addClass(theme);
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script type="text/javascript">
-            var sidebar = store.get('mdbook-sidebar');
-            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
-            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
-        <div id="sidebar" class="sidebar">
-            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> Introduction to PKM</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-managers-getting-started.html"><strong>6.</strong> Reference Managers: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html" class="active"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-managers-finishing-up.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li><li><a href="gnu-free-documentation-license.html"><strong>17.</strong> GNU Free Documentation License</a></li></ul>
-        </div>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li class="chapter-item expanded "><a href="0-intro-to-pkm.html"><strong aria-hidden="true">2.</strong> Introduction to PKM</a></li><li class="chapter-item expanded "><a href="1-email-management.html"><strong aria-hidden="true">3.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2-backup.html"><strong aria-hidden="true">4.</strong> Back Up Your Work</a></li><li class="chapter-item expanded "><a href="3-information-sources-resources.html"><strong aria-hidden="true">5.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="4-reference-managers-getting-started.html"><strong aria-hidden="true">6.</strong> Reference Managers: Getting Started</a></li><li class="chapter-item expanded "><a href="5-web-information-retrieval.html"><strong aria-hidden="true">7.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="6-database-information-retrieval.html" class="active"><strong aria-hidden="true">8.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="7-evaluating-information-sources.html"><strong aria-hidden="true">9.</strong> Evaluating Information Sources</a></li><li class="chapter-item expanded "><a href="8-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">10.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="9-library-sources-part-1.html"><strong aria-hidden="true">11.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="10-library-sources-part-2.html"><strong aria-hidden="true">12.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="11-web-sources-part-1.html"><strong aria-hidden="true">13.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="12-web-sources-part-2.html"><strong aria-hidden="true">14.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="13-reference-managers-finishing-up.html"><strong aria-hidden="true">15.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="14-project-close-wikipedia-part-2.html"><strong aria-hidden="true">16.</strong> Wikipedia Project: Completion</a></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">17.</strong> GNU Free Documentation License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
-            <div class="page" tabindex="-1">
-                
-                <div id="menu-bar" class="menu-bar">
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
-                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
-                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
 
                     <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html">
-                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/cseanburns/personal_knowledge_mgmt" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                     </div>
                 </div>
 
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
                 <div id="content" class="content">
-                    <a class="header" href="6-database-information-retrieval.html#database-information-retrieval" id="database-information-retrieval"><h1>Database Information Retrieval</h1></a>
-<a class="header" href="6-database-information-retrieval.html#introduction" id="introduction"><h2>Introduction</h2></a>
-<p>I introduced the concept of databases in
+                    <main>
+                        <h1 id="database-information-retrieval"><a class="header" href="#database-information-retrieval">Database Information Retrieval</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>I introduced the concept of databases in 
 <a href="3-information-sources-resources.html">section 3</a>.
 Databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
-The main advantages are that databases offer
+The main advantages are that databases offer 
 specialized collections on a variety of topics;
 they offer many sources that are invisible to search engines; and
 they provide greater control over the search process.
-The main disadvantage is that they are a bit complicated to use well,
+The main disadvantage is that they are a bit complicated to use well, 
 there are many databases to choose from (and find),
 each has their own user interface, and
 they are often only accessible via a library.</p>
@@ -135,7 +186,7 @@ the database is usually called an
 Otherwise it's just called a full text database.
 Many of the databases that we have access to at our
 library are a mix of the two.</p>
-<a class="header" href="6-database-information-retrieval.html#searching-bibliographic-records" id="searching-bibliographic-records"><h2>Searching Bibliographic Records</h2></a>
+<h2 id="searching-bibliographic-records"><a class="header" href="#searching-bibliographic-records">Searching Bibliographic Records</a></h2>
 <p>By bibliographic information, I generally mean <strong>metadata</strong>,
 and by bibliographic records,
 I generally mean metadata about specific items
@@ -149,10 +200,10 @@ All the metadata about a specific item
 (book, journal article, etc)
 is a record.
 In a database, this metadata is controlled,
-and therefore, well structured
+and therefore, well structured 
 (see the Libary of Congress link above).
 As searchers, this basically means
-that there are pre-set fields that
+that there are pre-set fields that 
 we can search in these databases and that
 these pre-set fields specifically search the
 corresponding metadata.
@@ -174,14 +225,14 @@ We can also filter by publication date, full text availability,
 document type, language, number of pages, and images
 (depending on the database and its content).
 In the end, this means we have greater control over
-the search process than we do in a search engine
+the search process than we do in a search engine 
 because the corpus is better defined.</p>
 <p>For example, in the previous section,
 I showed how we can search the web
 by using the <code>:filetype</code> operator to limit results
 to PDFs, DOCX, XLSX, etc files.
 In a bibliographic database like <em>ASC</em>, however,
-we can often specify that we want PDFs, but
+we can often specify that we want PDFs, but 
 more importantly,
 we can limit results by <strong>document type</strong>.
 That means we can restrict results to items like:</p>
@@ -228,7 +279,7 @@ In search engines, the <strong>AND</strong> is assumed between terms.
 So the equivalent search in, for example,
 Google, Bing, DuckDuckGo, etc is simply <code>dogs cats</code>.</p>
 </blockquote>
-<a class="header" href="6-database-information-retrieval.html#subject-terms-and-thesauri" id="subject-terms-and-thesauri"><h2>Subject Terms and Thesauri</h2></a>
+<h2 id="subject-terms-and-thesauri"><a class="header" href="#subject-terms-and-thesauri">Subject Terms and Thesauri</a></h2>
 <p>Many (but not all) databases offer the ability
 to search by subject or thesauri term.
 Subject/thesauri terms are kinds of controlled vocabulary.
@@ -246,7 +297,7 @@ must include that subject term,
 and that record should match the contents of the item.
 I can peruse the results and identify other subject terms
 that help narrow my results.
-For example, the subject term <strong>BIRD habitats</strong> appears
+For example, the subject term <strong>BIRD habitats</strong> appears 
 in records with the subject term <strong>Forest animals</strong>,
 since records often have multiple subject terms.
 If I combine those terms with an <strong>AND</strong> operator,
@@ -262,7 +313,7 @@ alt="Academic Search Complete results"
 title="Academic Search Complete results">
 <figcaption>Fig. 1: Academic Search Complete Results</figcaption>
 </figure>
-<a class="header" href="6-database-information-retrieval.html#systematic-browsing" id="systematic-browsing"><h2>Systematic Browsing</h2></a>
+<h2 id="systematic-browsing"><a class="header" href="#systematic-browsing">Systematic Browsing</a></h2>
 <p>Although database search can be more precise
 than searching in search engines,
 databases are also good for browsing.</p>
@@ -276,7 +327,7 @@ Rather, the result of intentional browsing,
 (reading or skimming a list of titles and abstracts)
 can be the accumulation of highly relevant source material,
 relevant to our information needs and queries.</p>
-<a class="header" href="6-database-information-retrieval.html#browsing-strategies" id="browsing-strategies"><h2>Browsing Strategies</h2></a>
+<h2 id="browsing-strategies"><a class="header" href="#browsing-strategies">Browsing Strategies</a></h2>
 <p>Although we make a distinction
 between browsing and searching,
 it is oftentimes helpful to begin
@@ -285,7 +336,7 @@ and then use something from the search results,
 something like an author's name or subject term,
 to find and collect related information.
 We call this type of browsing <em>pearl growing</em>.</p>
-<a class="header" href="6-database-information-retrieval.html#subject-browsing" id="subject-browsing"><h3>Subject Browsing</h3></a>
+<h3 id="subject-browsing"><a class="header" href="#subject-browsing">Subject Browsing</a></h3>
 <p>Below is an image of the <a href="https://eric.ed.gov/">ERIC Database</a>.
 <em>ERIC</em> stands for <strong>Education Resources Information Center</strong>.
 It is provided by the U.S. Department of Education, and
@@ -322,7 +373,7 @@ alt="Thesaurus descriptor page for the term academic libraries"
 title="Thesaurus descriptor page for the term academic libraries">
 <figcaption>Fig. 3: Thesaurus descriptor page for the term academic libraries</figcaption>
 </figure>
-<a class="header" href="6-database-information-retrieval.html#author-browsing" id="author-browsing"><h3>Author Browsing</h3></a>
+<h3 id="author-browsing"><a class="header" href="#author-browsing">Author Browsing</a></h3>
 <p>I can certainly browse using other access points,
 like author names.
 After perusing the results from above,
@@ -336,14 +387,14 @@ title="Author names list covering academic libraries">
 <p>Knowing that authors tend to write and research
 on a specific range of topics (i.e., are specialists) is helpful
 because it allows me to browse by author and subject topic.</p>
-<a class="header" href="6-database-information-retrieval.html#citation-browsing" id="citation-browsing"><h3>Citation Browsing</h3></a>
+<h3 id="citation-browsing"><a class="header" href="#citation-browsing">Citation Browsing</a></h3>
 <p>I've described abstracting &amp; indexing (A&amp;I) databases, but
 there's another special type of A&amp;I database called
 a <strong>citation database</strong>.
 Three useful ones available to us are</p>
 <ul>
 <li><a href="https://libguides.uky.edu/3347">Scopus</a></li>
-<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and</li>
+<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and </li>
 <li><a href="https://scholar.google.com/">Google Scholar</a> (more of a scholarly <em>search engine</em>).</li>
 </ul>
 <p>The first two are available via UK Libraries,
@@ -361,7 +412,7 @@ then the two pages are likely to be about the same topic.
 Because of this theory,
 we can follow citations to find more relevant articles.</p>
 <p>Pictured here is a record in <em>Web of Science</em> on information literacy.
-To the far right you can see that it has <strong>4 Citations</strong>.
+To the far right you can see that it has <strong>4 Citations</strong>. 
 If we click on that <strong>4 Citations</strong> link,
 we can begin to browse those 4 articles or documents.
 Per citation theory,
@@ -403,7 +454,7 @@ alt="Cited by in Google Scholar"
 title="Cited by in Google Scholar">
 <figcaption>Fig. 7: Cited by in Google Scholar</figcaption> 
 </figure>
-<a class="header" href="6-database-information-retrieval.html#combination-browsing" id="combination-browsing"><h3>Combination Browsing</h3></a>
+<h3 id="combination-browsing"><a class="header" href="#combination-browsing">Combination Browsing</a></h3>
 <p>Like with most other searches,
 we can combine terms and use those combinations
 to focus our browsing sessions.
@@ -429,7 +480,7 @@ alt="Combination search in CMMC database"
 title="Combination search in CMMC database">
 <figcaption>Fig. 8: Combination search in CMMC database">
 </figure>
-<a class="header" href="6-database-information-retrieval.html#boolean-logic-and-or-not" id="boolean-logic-and-or-not"><h2>Boolean Logic: AND, OR, NOT</h2></a>
+<h2 id="boolean-logic-and-or-not"><a class="header" href="#boolean-logic-and-or-not">Boolean Logic: AND, OR, NOT</a></h2>
 <p>Remember that database searching is more
 structured at the document level, and
 that this structure is reflected
@@ -453,7 +504,7 @@ Many bibliographic databases offer all three.
 The <strong>NOT</strong> operator instructs the database
 to exclude the assigned term.
 Thus, if we had chosen <strong>NOT &quot;regression&quot;</strong>,
-then the <em>CMMC</em> database would have
+then the <em>CMMC</em> database would have 
 returned results where the term <strong>regression</strong>
 surely did NOT appear in the abstract for
 records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
@@ -467,7 +518,7 @@ as well as those records that did or did not have
 The <strong>OR</strong> operator is more useful when querying
 terms in the same search fields.
 For instance, we might want to use the <strong>OR</strong>
-operator to search for two different terms
+operator to search for two different terms 
 that might appear in the abstract fields,
 or the subject term fields,
 such as the following related terms:</p>
@@ -485,14 +536,14 @@ alt="Using the OR Boolean operator"
 title="Using the OR Boolean operator">
 <figcaption>Fig. 9: Using the OR Boolean Operator</figcaption>
 </figure>
-<a class="header" href="6-database-information-retrieval.html#how-to-browse" id="how-to-browse"><h3>How to Browse</h3></a>
+<h3 id="how-to-browse"><a class="header" href="#how-to-browse">How to Browse</a></h3>
 <p>When we browse, therefore,
 we are attempting to locate key qualities from our results
 or our initial results lists (e.g., authors, subjects, etc.).
 These lists include the titles, the abstracts, the thesauri,
 and so forth.
 And these key terms will help capture what our search is <strong>about</strong>.</p>
-<a class="header" href="6-database-information-retrieval.html#developing-a-list" id="developing-a-list"><h2>Developing a List</h2></a>
+<h2 id="developing-a-list"><a class="header" href="#developing-a-list">Developing a List</a></h2>
 <p>Many databases will offer a way to create,
 save, and export lists or individual records
 based on browsing and searching.
@@ -527,7 +578,7 @@ title="Using Folders to Save Records">
 in Zotero rather than use a database folder or list.
 This way I keep the records with me even if I lose
 access to the database.</p>
-<a class="header" href="6-database-information-retrieval.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>In this section, we learned the following:</p>
 <ul>
 <li>Databases and search engines are different</li>
@@ -558,59 +609,42 @@ Make the systems work for you.
 And save your results in Zotero or your
 chosen RM as you go.</p>
 
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="5-web-information-retrieval.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="7-evaluating-information-sources.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
                 </div>
-
-                <!-- Mobile navigation buttons -->
-                
-                    <a rel="prev" href="5-web-information-retrieval.html" class="mobile-nav-chapters previous" title="Previous chapter">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                
-
-                
-                    <a rel="next" href="7-evaluating-information-sources.html" class="mobile-nav-chapters next" title="Next chapter">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                
-
             </div>
 
-            
-                <a href="5-web-information-retrieval.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-            
-
-            
-                <a href="7-evaluating-information-sources.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="5-web-information-retrieval.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="7-evaluating-information-sources.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
 
         </div>
 
-
-        <!-- Local fallback for Font Awesome -->
-        <script>
-            if ($(".fa").css("font-family") !== "FontAwesome") {
-                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
-            }
+        <script type="text/javascript">
+            window.playground_copyable = true;
         </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        
-
-        
-
-        
-
-        
-
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
-
-        <!-- Custom JS script -->
-        
-
+        <!-- Custom JS scripts -->
     </body>
 </html>

@@ -1,114 +1,166 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
+        <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Personal Knowledge Management Handbook</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
 
-        <base href="">
-
-        <link rel="stylesheet" href="book.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
-
+        <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
-        <!-- Custom theme -->
-        
-
-        
-
-        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
-        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
-        <script>
-            if (typeof Clipboard == 'undefined') {
-                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
-            }
-        </script>
-
-        <!-- Fetch JQuery from CDN but have a local fallback -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script>
-            if (typeof jQuery == 'undefined') {
-                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
-            }
-        </script>
-
-        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
-        <script src="store.js"></script>
-
+        <!-- Custom theme stylesheets -->
     </head>
-    <body class="light">
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script type="text/javascript">
-            var theme = store.get('mdbook-theme');
-            if (theme === null || theme === undefined) { theme = 'light'; }
-            $('body').removeClass().addClass(theme);
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script type="text/javascript">
-            var sidebar = store.get('mdbook-sidebar');
-            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
-            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
-        <div id="sidebar" class="sidebar">
-            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> Introduction to PKM</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-managers-getting-started.html"><strong>6.</strong> Reference Managers: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-managers-finishing-up.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li><li><a href="gnu-free-documentation-license.html"><strong>17.</strong> GNU Free Documentation License</a></li></ul>
-        </div>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li class="chapter-item expanded "><a href="0-intro-to-pkm.html"><strong aria-hidden="true">2.</strong> Introduction to PKM</a></li><li class="chapter-item expanded "><a href="1-email-management.html"><strong aria-hidden="true">3.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2-backup.html"><strong aria-hidden="true">4.</strong> Back Up Your Work</a></li><li class="chapter-item expanded "><a href="3-information-sources-resources.html"><strong aria-hidden="true">5.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="4-reference-managers-getting-started.html"><strong aria-hidden="true">6.</strong> Reference Managers: Getting Started</a></li><li class="chapter-item expanded "><a href="5-web-information-retrieval.html"><strong aria-hidden="true">7.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="6-database-information-retrieval.html"><strong aria-hidden="true">8.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="7-evaluating-information-sources.html"><strong aria-hidden="true">9.</strong> Evaluating Information Sources</a></li><li class="chapter-item expanded "><a href="8-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">10.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="9-library-sources-part-1.html"><strong aria-hidden="true">11.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="10-library-sources-part-2.html"><strong aria-hidden="true">12.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="11-web-sources-part-1.html"><strong aria-hidden="true">13.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="12-web-sources-part-2.html"><strong aria-hidden="true">14.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="13-reference-managers-finishing-up.html"><strong aria-hidden="true">15.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="14-project-close-wikipedia-part-2.html"><strong aria-hidden="true">16.</strong> Wikipedia Project: Completion</a></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">17.</strong> GNU Free Documentation License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
-            <div class="page" tabindex="-1">
-                
-                <div id="menu-bar" class="menu-bar">
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
-                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
-                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
 
                     <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html">
-                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/cseanburns/personal_knowledge_mgmt" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                     </div>
                 </div>
 
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
                 <div id="content" class="content">
-                    <a class="header" href="print.html#personal-knowledge-management-handbook" id="personal-knowledge-management-handbook"><h1>Personal Knowledge Management Handbook</h1></a>
+                    <main>
+                        <h1 id="personal-knowledge-management-handbook"><a class="header" href="#personal-knowledge-management-handbook">Personal Knowledge Management Handbook</a></h1>
 <p>Author: C. Sean Burns<br />
 Date: 2022-08-03<br />
 Email: <a href="sean.burns@uky.edu">sean.burns@uky.edu</a><br />
 Website: <a href="https://cseanburns.net">cseanburns.net</a><br />
 Twitter: <a href="https://twitter.com/cseanburns">@cseanburns</a><br />
 GitHub: <a href="https://github.com/cseanburns">@cseanburns</a></p>
-<p>This short book
-was written and developed for
+<p>This short book 
+was written and developed for 
 a course on personal knowledge management taught at the
 University of Kentucky's School of Information Science.</p>
-<a class="header" href="print.html#how-to-use-this-book" id="how-to-use-this-book"><h2>How to Use this Book</h2></a>
-<a class="header" href="print.html#text-and-video" id="text-and-video"><h3>Text and Video</h3></a>
+<h2 id="how-to-use-this-book"><a class="header" href="#how-to-use-this-book">How to Use this Book</a></h2>
+<h3 id="text-and-video"><a class="header" href="#text-and-video">Text and Video</a></h3>
 <p>Most sections of this book will be accompanied
 by a video demonstrating the practices described in those sections.
 Try to read through the text first, and
 then watch the video.
 Revisit the text to help cement the ideas in place.</p>
-<a class="header" href="print.html#markup" id="markup"><h3>Markup</h3></a>
+<h3 id="markup"><a class="header" href="#markup">Markup</a></h3>
 <p>There are two markups that I want to bring to your attention:</p>
 <p>Text that looks like <strong>code blocks</strong> indicate some kind
 of command that you should test for yourself.
-For example, I demonstrate search queries in the
+For example, I demonstrate search queries in the 
 sections that follow.
 When I demonstrate a Google search, for example,
 the search query will appear in a standalone box
@@ -124,11 +176,11 @@ Asides look like this:</p>
 <p>This is an aside.
 Asides will contain extra information, notes, or comments.</p>
 </blockquote>
-<a class="header" href="print.html#theme" id="theme"><h3>Theme</h3></a>
+<h3 id="theme"><a class="header" href="#theme">Theme</a></h3>
 <p>At the top of the page is an icon of a paint brush.
 The default theme is darker text on a light background,
 but you can change the theme per your preferences.</p>
-<a class="header" href="print.html#printing" id="printing"><h3>Printing</h3></a>
+<h3 id="printing"><a class="header" href="#printing">Printing</a></h3>
 <p>I intend this book to be a live document, and
 therefore it'll be regularly updated.
 But feel free to print it, if you want.
@@ -139,7 +191,7 @@ to get started.</p>
 <p>If you're familiar with <code>git</code> and <a href="https://github.com">GitHub</a>,
 you can also fork the repository for this book at
 <a href="https://github.com/cseanburns/personal_knowledge_mgmt">https://github.com/cseanburns/personal_knowledge_mgmt</a>.</p>
-<a class="header" href="print.html#about" id="about"><h3>About</h3></a>
+<h3 id="about"><a class="header" href="#about">About</a></h3>
 <p>Note that this work is licensed under the
 <a href="https://github.com/cseanburns/personal_knowledge_mgmt/blob/master/LICENSE">GNU Free Documentation License</a>.
 See
@@ -153,8 +205,8 @@ or any later version published by the Free Software Foundation;
 with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the section entitled &quot;GNU
 Free Documentation License&quot;.</p>
-<a class="header" href="print.html#introduction-to-personal-knowledge-management" id="introduction-to-personal-knowledge-management"><h1>Introduction to Personal Knowledge Management</h1></a>
-<a class="header" href="print.html#what-is-personal-knowledge-management-pkm" id="what-is-personal-knowledge-management-pkm"><h2>What is personal knowledge management (PKM)?</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-to-personal-knowledge-management"><a class="header" href="#introduction-to-personal-knowledge-management">Introduction to Personal Knowledge Management</a></h1>
+<h2 id="what-is-personal-knowledge-management-pkm"><a class="header" href="#what-is-personal-knowledge-management-pkm">What is personal knowledge management (PKM)?</a></h2>
 <p>What is personal knowledge management (PKM)?
 Well, I'd hazard a guess that most of us depend
 largely on two main sources to search for, locate, and retrieve information,
@@ -189,7 +241,7 @@ exists and that we can use it to locate good information, but
 if we don't ever use the library or other great resources
 because we're not in the habit of doing so,
 then what's the point?</p>
-<p>Personally, I want to live in a <strong>good information age</strong>
+<p>Personally, I want to live in a <strong>good information age</strong> 
 rather than merely the <strong>information age</strong>.
 Therefore, our second learning goal is focused
 on the tools and technologies that will help us
@@ -206,7 +258,7 @@ like a paper for a class, a project for a boss, or
 a decision that involves some uncertainty.
 Our second learning goal is, therefore,
 focused on <strong>personal knowledge work flows</strong>,
-and specifically, to:</p>
+and specifically, to: </p>
 <ul>
 <li>become aware of the tools and technologies designed to manage personal
 knowledge work flows,</li>
@@ -237,7 +289,7 @@ make a decision that involves some risk
 In those cases, having a personal knowledge work flow that
 incorporates high quality sources of information
 will facilitate accomplishing such tasks or making such decisions.</p>
-<a class="header" href="print.html#topic-outline" id="topic-outline"><h3>Topic Outline</h3></a>
+<h3 id="topic-outline"><a class="header" href="#topic-outline">Topic Outline</a></h3>
 <p>In order to accomplish the three goals above,
 this book covers the differences between
 information sources and resources,
@@ -256,8 +308,8 @@ the work flow model that frames this book,
 I discuss them because they are
 basic personal knowledge management skills, and
 it's good to not overlook the basics.</p>
-<a class="header" href="print.html#email-management" id="email-management"><h1>Email Management</h1></a>
-<a class="header" href="print.html#readings" id="readings"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="email-management"><a class="header" href="#email-management">Email Management</a></h1>
+<h2 id="readings"><a class="header" href="#readings">Readings</a></h2>
 <ul>
 <li>Strategies
 <ul>
@@ -270,7 +322,7 @@ Post</a></li>
 College</a></li>
 </ul>
 </li>
-<li>Outlook
+<li>Outlook 
 <ul>
 <li>Manage email messages by using rules. Retrieved from <a href="https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59">Using Rules -
 Microsoft</a></li>
@@ -296,7 +348,7 @@ Tasks</a></li>
 </ul>
 </li>
 </ul>
-<a class="header" href="print.html#introduction" id="introduction"><h2>Introduction</h2></a>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
 <p>Many people today use a variety of social media
 and text messaging platforms to communicate with each other, and
 this is on top of, or in spite of, the existence and use of email,
@@ -315,8 +367,8 @@ since email reigns supreme as a form of communication
 across industry,
 it's important to learn some strategies
 for managing our emails and avoiding inboxes
-with hundreds or thousands of unread email.</p>
-<a class="header" href="print.html#strategies" id="strategies"><h2>Strategies</h2></a>
+with hundreds or thousands of unread email. </p>
+<h2 id="strategies"><a class="header" href="#strategies">Strategies</a></h2>
 <p>The first set of readings listed above focus
 on overall strategies for managing our email inboxes.
 The readings suggest a number of strategies, but
@@ -331,11 +383,11 @@ we use email in the web browser, via a desktop application,
 or a phone app.
 Thus it may take some exploration to figure out
 how to apply these lessons based on what you use.</p>
-<a class="header" href="print.html#organization" id="organization"><h3>Organization</h3></a>
+<h3 id="organization"><a class="header" href="#organization">Organization</a></h3>
 <p>Each email service we use (e.g., Outlook, Gmail, etc.)
 offers similar but different ways to organize our email.
 Here are some ways to organize your emails
-for two of the most common services, but
+for two of the most common services, but 
 keep in mind that the underlying principals apply elsewhere:</p>
 <ol>
 <li>
@@ -350,7 +402,7 @@ labels.</p>
 mailings lists to that account. I have another folder titled 'Canvas
 email', where all email from my courses are routed to. And so on. Most of
 these emails are not time-sensitive (e.g., mailing list email) or it's
-simply helpful to group email by category (e.g., Canvas student email).
+simply helpful to group email by category (e.g., Canvas student email). 
 Using them thus helps keep email organized. As a student, you might
 want to create folders for specific courses, specific majors/minors,
 administrative functions (registration related emails, for example) and
@@ -362,7 +414,7 @@ and then you can set up filters that automatically assigns labels that
 match the logic you set up with the filters.</p>
 </li>
 </ol>
-<a class="header" href="print.html#searching" id="searching"><h3>Searching</h3></a>
+<h3 id="searching"><a class="header" href="#searching">Searching</a></h3>
 <p>All email services provide some kind of search,
 even if implemented in different ways.
 And like regular search engines,
@@ -370,7 +422,7 @@ Outlook and Gmail both offer advanced searching abilities.</p>
 <p>In Outlook, you can search:</p>
 <ul>
 <li>in specific folders</li>
-<li>by whom an email is <strong>From</strong></li>
+<li>by whom an email is <strong>From</strong> </li>
 <li>by whom you sent an email <strong>To</strong></li>
 <li>by a <strong>CC</strong> (carbon copy) address or person</li>
 <li>by <strong>Subject</strong> line</li>
@@ -391,7 +443,7 @@ find that your search query can be re-used.</p>
 <p>Searching not only helps you find specific emails
 on specific topics and within specific time frames,
 it's also a good way to mass delete old and unnecessary email.</p>
-<a class="header" href="print.html#other-strategies" id="other-strategies"><h3>Other Strategies</h3></a>
+<h3 id="other-strategies"><a class="header" href="#other-strategies">Other Strategies</a></h3>
 <p>The <em>PC Mag</em> and <em>The Washington Post</em> articles
 suggest that <strong>we turn off notifications</strong>.
 The point is that if we receive a lot of emails,
@@ -410,7 +462,7 @@ the main goal is to get rid of unnecessary email fast.
 Don't let it accumulate.
 The more emails that sit in our inbox,
 the more overwhelming it becomes afterward.
-In fact, you can <strong>unsubscribe</strong> to everything that is not important.</p>
+In fact, you can <strong>unsubscribe</strong> to everything that is not important. </p>
 <p>Another good idea is to keep personal and work email separate.
 In fact, have more than one personal email account.
 Use one personal as a throwaway account for signing up to random websites.
@@ -429,8 +481,8 @@ using good Calendar and Task apps can help
 keep our days organized and our to-do lists manageable.
 Both Outlook and Gmail integrate <strong>Tasks</strong> and <strong>Calendars</strong>.
 The readings above link to help pages on how to use these functions.
-These are super time-saving functions for me.</p>
-<a class="header" href="print.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+These are super time-saving functions for me. </p>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>In addition to managing our personal knowledge,
 one of the main points of this class is
 to become adept at using the various technologies
@@ -448,15 +500,15 @@ The two main strategies involve how to:</p>
 <li>organize our email, and how to</li>
 <li>search our email.</li>
 </ul>
-<a class="header" href="print.html#back-up-your-work" id="back-up-your-work"><h1>Back Up Your Work</h1></a>
-<a class="header" href="print.html#readings-1" id="readings-1"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="back-up-your-work"><a class="header" href="#back-up-your-work">Back Up Your Work</a></h1>
+<h2 id="readings-1"><a class="header" href="#readings-1">Readings</a></h2>
 <ul>
 <li>Velazco, C. (2022). Help desk quick fix: How to back up your phone before you
 lose it. <em>The Washington Post</em>. Retrieved from <a href="https://www.washingtonpost.com/technology/2022/04/11/help-desk-quick-fix/">Washington Post</a></li>
 <li>Back up your Mac. Apple. Retrieved from <a href="https://support.apple.com/mac-backup">Apple</a></li>
 <li>Backup and Restore in Windows. Retrieved from <a href="https://support.microsoft.com/en-us/windows/back-up-and-restore-your-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c">Microsoft</a></li>
 </ul>
-<a class="header" href="print.html#introduction-1" id="introduction-1"><h2>Introduction</h2></a>
+<h2 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h2>
 <p>Many of us nowadays have multiple devices,
 like laptops and smartphones, and
 as we use those devices,
@@ -477,7 +529,7 @@ like external disk drives or large data capacity USB drive.</p>
 <p>In this lecture,
 I cover how to back up your phones and
 laptops/desktops for long term storage.</p>
-<a class="header" href="print.html#smartphones" id="smartphones"><h2>Smartphones</h2></a>
+<h2 id="smartphones"><a class="header" href="#smartphones">Smartphones</a></h2>
 <p>A good backup strategy to follow is to first backup your phone,
 either to the cloud or to your computer, and
 then back up your computer.
@@ -485,8 +537,8 @@ This is because we sometimes will want to use our computers
 as backups for our phones.</p>
 <p>To get started, <em>The Washington Post</em>
 <a href="https://www.washingtonpost.com/technology/2022/04/11/help-desk-quick-fix/">has a couple of helpful</a>
-videos on how to back up your iPhone or Android smartphones.</p>
-<a class="header" href="print.html#macs" id="macs"><h2>Macs</h2></a>
+videos on how to back up your iPhone or Android smartphones. </p>
+<h2 id="macs"><a class="header" href="#macs">Macs</a></h2>
 <p>For instructions on backing up your Mac,
 you should follow <a href="https://support.apple.com/mac-backup">Apple's instructions</a>,
 which shows you how to back up your device
@@ -499,7 +551,7 @@ how to free up storage, and more.</p>
 you can select a backup disk,
 like an external hard drive or
 large data capacity USB drive.</p>
-<a class="header" href="print.html#windows" id="windows"><h2>Windows</h2></a>
+<h2 id="windows"><a class="header" href="#windows">Windows</a></h2>
 <p>For instructions on backing up your Windows computer,
 you should likewise start with
 <a href="https://support.microsoft.com/en-us/windows/back-up-and-restore-your-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c">Microsoft's instructions</a>.
@@ -509,12 +561,12 @@ As with Macs,
 if you can elect to backup your files
 using an external disk or a cloud solution.
 Microsoft's instructions also cover how to restore your data if necessary.</p>
-<a class="header" href="print.html#external-drives" id="external-drives"><h2>External Drives</h2></a>
+<h2 id="external-drives"><a class="header" href="#external-drives">External Drives</a></h2>
 <p>External hard drives are a great solution
 for backing up your system.
 Today's drives are relatively inexpensive.
 A 2TB external hard drive may cost as little as $60.
-The advantage of using an external hard drive is that you pay
+The advantage of using an external hard drive is that you pay 
 a one-time cost (the cost of the drive).</p>
 <p>External hard drives require some setup
 because different operating systems use different file system formats.
@@ -524,17 +576,17 @@ macOS uses the <a href="https://support.apple.com/guide/disk-utility/file-system
 If you are using a Windows computer,
 you can use <a href="https://www.hellotech.com/guide/for/how-to-format-a-hard-drive-windows-10">File Explorer</a>, and
 you will most likely want to format your drive
-using the <a href="https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview">New Technology File System (NTFS)</a>,
+using the <a href="https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview">New Technology File System (NTFS)</a>, 
 However, if you want to be able to access your external
 drive from an Apple computer,
 you should format the drive using the <strong>exFAT</strong> file system.</p>
-<a class="header" href="print.html#encrypting-external-drives" id="encrypting-external-drives"><h3>Encrypting External Drives</h3></a>
+<h3 id="encrypting-external-drives"><a class="header" href="#encrypting-external-drives">Encrypting External Drives</a></h3>
 <p>One of the disadvantages of an external hard drive
 is that because it's portable,
 it can be lost or misplaced.
 Therefore, when you format your disk,
-you may want to set up encryption so that
-the drive is protected.</p>
+you may want to set up encryption so that 
+the drive is protected. </p>
 <p>You setup encryption on macOS when you format the drive.
 Apple provides instructions on its page on
 <a href="https://support.apple.com/guide/disk-utility/encrypt-protect-a-storage-device-password-dskutl35612/mac">Encrypt and protect a storage device</a>
@@ -549,16 +601,16 @@ then you lose access to the drive.</p>
 in a separate location from the device that you're backing up.
 This is in case your main device gets stolen
 or is destroyed by fire, flooding, etc.
-However, the downside is that this makes it less likely that
+However, the downside is that this makes it less likely that 
 you backup regularly, and
 <strong>it's important to keep regular backups of your data</strong>.
-Therefore, one option is to purchase a smaller drive
+Therefore, one option is to purchase a smaller drive 
 that you use to backup the most sensitive data
 (e.g., medical information, financial information, etc)
 and store that off-site and encrypted,
 and use an additional drive that you keep on hand (and encrypted)
 for daily or regular backups.</p>
-<a class="header" href="print.html#cloud-solutions" id="cloud-solutions"><h2>Cloud Solutions</h2></a>
+<h2 id="cloud-solutions"><a class="header" href="#cloud-solutions">Cloud Solutions</a></h2>
 <p>An additional backup option is to use a cloud solution.
 For macOS users, you can use iCloud to back up the files
 on all of your devices, as described above.</p>
@@ -575,10 +627,10 @@ like <a href="https://www.backblaze.com/cloud-backup.html">Backblaze</a> and <a 
 <a href="https://www.tomsguide.com/best-picks/best-cloud-backup">Tom's Guide</a> has reviews those and others.</p>
 <p>The main advantage of a cloud solution is that
 you can set it and forget it.
-The main disadvantage is that the amount of data
+The main disadvantage is that the amount of data 
 you may want to backup may require paying a monthly fee.</p>
 <p>When choosing a cloud backup solution,
-you may want to consider if the service meets
+you may want to consider if the service meets 
 the following criteria:</p>
 <ul>
 <li>storage size options</li>
@@ -591,8 +643,8 @@ the following criteria:</p>
 <li>security</li>
 <li>version history</li>
 </ul>
-<a class="header" href="print.html#conclusion-1" id="conclusion-1"><h2>Conclusion</h2></a>
-<p>All storage devices fail eventually,
+<h2 id="conclusion-1"><a class="header" href="#conclusion-1">Conclusion</a></h2>
+<p>All storage devices fail eventually, 
 or may get damaged, lost, stolen, etc.,
 and it really hurts to lose important files,
 like photos of loved ones or homework and projects, etc.
@@ -609,10 +661,10 @@ or just select folders,
 and then backup your entire disk to an external drive.</p>
 <p>Whatever option you choose,
 be sure to back up regularly.</p>
-<a class="header" href="print.html#information-sources-and-resources" id="information-sources-and-resources"><h1>Information Sources and Resources</h1></a>
-<a class="header" href="print.html#readings-2" id="readings-2"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="information-sources-and-resources"><a class="header" href="#information-sources-and-resources">Information Sources and Resources</a></h1>
+<h2 id="readings-2"><a class="header" href="#readings-2">Readings</a></h2>
 <p>Please visit the links in this section as you read through it.</p>
-<a class="header" href="print.html#primary-secondary-and-tertiary-sources" id="primary-secondary-and-tertiary-sources"><h2>Primary, Secondary, and Tertiary Sources</h2></a>
+<h2 id="primary-secondary-and-tertiary-sources"><a class="header" href="#primary-secondary-and-tertiary-sources">Primary, Secondary, and Tertiary Sources</a></h2>
 <p>It's true that just about anything can be a source of information,
 but we generally think of information sources in a more scholarly way.
 In that light, you likely already know about the differences between
@@ -623,7 +675,7 @@ of their direct connection to some event, person, place, or thing.
 A 17th century painting is a good example of a primary source,
 but so is a scientific article that creates knowledge.</p>
 <p>Secondary sources reflect on or refer to primary sources.
-A commentary on a 17th century painting
+A commentary on a 17th century painting 
 or a review of the scientific literature are examples of secondary sources.
 Despite these examples,
 it's helpful to think of the difference between
@@ -635,7 +687,7 @@ even if those reviews might traditionally be considered secondary sources
 at the time they were created.</p>
 <p>Tertiary sources are basically reference works.
 These are things like dictionaries, general encyclopedias, handbooks, and like.</p>
-<a class="header" href="print.html#resource-types" id="resource-types"><h2>Resource Types</h2></a>
+<h2 id="resource-types"><a class="header" href="#resource-types">Resource Types</a></h2>
 <p>It can be helpful to know about the differences between
 primary, secondary, and tertiary sources at times because
 it's important, when dealing with an information source, to
@@ -664,7 +716,7 @@ Example resource types in UK's catalog include:</p>
 <li>Government documents</li>
 <li>and more.</li>
 </ul>
-<a class="header" href="print.html#information-resources-of-information-sources" id="information-resources-of-information-sources"><h2>Information Resources of Information Sources</h2></a>
+<h2 id="information-resources-of-information-sources"><a class="header" href="#information-resources-of-information-sources">Information Resources of Information Sources</a></h2>
 <p>A resource is really a thing that supplies a thing,
 whatever that thing is.
 For our purposes,
@@ -696,7 +748,7 @@ since those spreadsheets contain only records
 that folder on my desktop is a database.
 Although I suppose that's kind of true,
 I don't think that's really what the dictionary authors have in mind, and
-thus it's not an accurate enough nor a very useful definition.</p>
+thus it's not an accurate enough nor a very useful definition. </p>
 <p>A more specific and applicable definition is provided by the
 <a href="http://products.abc-clio.com/ODLIS/odlis_d#database"><em>Online Dictionary of Library and Information Science</em></a>,
 which defines a <strong>database</strong> as:</p>
@@ -718,7 +770,7 @@ or online via the Internet, using proprietary search software.</p>
 abstracting services, and full-text reference resources leased annually under
 licensing agreements that limit access to registered borrowers and library
 staff. Abbreviated db. Compare with data bank. See also: archival database,
-bibliographic database, embedded database, metadatabase, and niche database.</p>
+bibliographic database, embedded database, metadatabase, and niche database. </p>
 </blockquote>
 <p>The above definition is more helpful because
 it provides examples of content type
@@ -734,7 +786,7 @@ The <em>ODLIS</em> definition also highlights the role of database producers
 in producing databases (e.g., the American Psychological Association),
 which tells us something about the subject matter of a database
 (e.g., psychology).</p>
-<a class="header" href="print.html#what-are-example-databases" id="what-are-example-databases"><h2>What are example databases?</h2></a>
+<h2 id="what-are-example-databases"><a class="header" href="#what-are-example-databases">What are example databases?</a></h2>
 <p>The <em>ODLIS</em> definition provides some leads to this question.
 The definition tells us that example databases include
 &quot;digitized information containing bibliographic records,
@@ -745,7 +797,7 @@ that these can be accessed through library &quot;catalogs,
 periodical indexes, abstracting services, and
 full-text reference resources.&quot;
 Given that, let's look at some examples.</p>
-<a class="header" href="print.html#library-catalogs-and-discovery-services" id="library-catalogs-and-discovery-services"><h3>Library Catalogs and Discovery Services</h3></a>
+<h3 id="library-catalogs-and-discovery-services"><a class="header" href="#library-catalogs-and-discovery-services">Library Catalogs and Discovery Services</a></h3>
 <p>We'll start with the most general example, and
 that's the <strong>library catalog</strong>.
 Traditionally, library catalogs were databases
@@ -759,7 +811,7 @@ not only can they tell us where to find a book on a shelf,
 but they can also provide full text access to online content in other databases.</p>
 <blockquote>
 <p>We can access the University of Kentucky's library catalog/discovery service
-at their main website at:</p>
+at their main website at: </p>
 <p><a href="https://libraries.uky.edu/"><strong>https://libraries.uky.edu</strong></a></p>
 <p>Please visit the link and test your own searches.</p>
 </blockquote>
@@ -808,7 +860,7 @@ if Google returns results for pages it
 cannot access or that don't exist anymore,
 there is no ILL service offered, and
 we're left to our own devices to find access to that information.</p>
-<a class="header" href="print.html#periodical-indexes-and-abstracting-services" id="periodical-indexes-and-abstracting-services"><h3>Periodical Indexes and Abstracting Services</h3></a>
+<h3 id="periodical-indexes-and-abstracting-services"><a class="header" href="#periodical-indexes-and-abstracting-services">Periodical Indexes and Abstracting Services</a></h3>
 <p>The library catalogs and discovery services that
 I described above return a wide variety of bibliographic records
 that describe and provide access to
@@ -873,7 +925,7 @@ Atlanta, Chicago, New York, and parts of North Carolina.
 Then we also have access to databases like the <em>Kentucky Building Code</em>,
 which is a database that links to
 residential and commercial regulatory information on building,
-plumbing, design in Kentucky.</p>
+plumbing, design in Kentucky. </p>
 <p>Many of the resources listed above,
 as well as the hundreds that UK Libraries offers and
 that I have not described,
@@ -888,7 +940,7 @@ provide abstracts of journal articles,
 which are searchable.
 Since abstracts provide summary information of the main articles,
 this is helpful in locating information sources.</p>
-<a class="header" href="print.html#full-text-resources" id="full-text-resources"><h3>Full-text Resources</h3></a>
+<h3 id="full-text-resources"><a class="header" href="#full-text-resources">Full-text Resources</a></h3>
 <p>Periodical indexes and abstracting services
 do not necessarily provide direct full text access.
 You might wonder what the point is if
@@ -923,8 +975,8 @@ and not just a database.</p>
 I will focus on a few general purpose full-text databases
 that you may find helpful as you work towards your degree.
 Although these databases provide full-text sources,
-they may not provide full-text to everything they have records for, though.</p>
-<a class="header" href="print.html#academic-search-complete" id="academic-search-complete"><h4>Academic Search Complete</h4></a>
+they may not provide full-text to everything they have records for, though. </p>
+<h4 id="academic-search-complete"><a class="header" href="#academic-search-complete">Academic Search Complete</a></h4>
 <p><a href="https://libguides.uky.edu/4"><em>Academic Search Complete (ASC)</em></a> is a database of databases.
 It can search over 60 different databases and indexes,
 each including hundreds of journal titles, including:</p>
@@ -948,7 +1000,7 @@ we might want to search the following <em>ASC</em> databases at once:</p>
 <li><em>MEDLINE</em></li>
 <li><em>APA PsycInfo</em></li>
 </ul>
-<a class="header" href="print.html#proquest" id="proquest"><h4>ProQuest</h4></a>
+<h4 id="proquest"><a class="header" href="#proquest">ProQuest</a></h4>
 <p>Like <em>ASC</em>, <a href="https://libguides.uky.edu/90"><em>ProQuest</em></a> provides access
 to many subject based databases, and also,
 many of the database topics overlap.
@@ -968,7 +1020,7 @@ and more.</p>
 including <em>The Vogue Archive</em> and various current and historical newspapers,
 such as an archive of <em>The New York Times</em> or
 current issues of <em>The Courier-Journal</em> (Louisville, KY).</p>
-<a class="header" href="print.html#jstor" id="jstor"><h4>JSTOR</h4></a>
+<h4 id="jstor"><a class="header" href="#jstor">JSTOR</a></h4>
 <p><a href="https://libguides.uky.edu/266"><em>JSTOR</em></a> is another multi-disciplinary database. JSTOR covers subjects
 such as:</p>
 <ul>
@@ -1001,7 +1053,7 @@ of the more popular licenses and what the mean for us.
 In all cases, though, if you use OA content,
 be sure to attribute it with source information.</p>
 </blockquote>
-<a class="header" href="print.html#conclusion-2" id="conclusion-2"><h2>Conclusion</h2></a>
+<h2 id="conclusion-2"><a class="header" href="#conclusion-2">Conclusion</a></h2>
 <p>Remember, one of the main ideas of this course is
 that there are many sources of information that are not
 easily available via Google or some other search engine.
@@ -1009,7 +1061,7 @@ Even when we do use Google or Bing or Yahoo or something else,
 there are certain advanced tricks we can use to
 leverage them to find better information.
 And if we apply what we'll learn in this class,
-we'll become that much more accomlished.</p>
+we'll become that much more accomlished. </p>
 <p>In short, we are going to learn a bit
 more about what's hidden from most users and from the common view.
 To do that,
@@ -1025,12 +1077,12 @@ that provides access to information sources.
 In this section, some examples of information resources
 are the library discovery service, a search engine,
 and a database like <em>JSTOR</em>, <em>ASC</em>, or <em>ProQuest</em>.</p>
-<a class="header" href="print.html#reference-managers-getting-started" id="reference-managers-getting-started"><h1>Reference Managers: Getting Started</h1></a>
-<a class="header" href="print.html#readings-3" id="readings-3"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="reference-managers-getting-started"><a class="header" href="#reference-managers-getting-started">Reference Managers: Getting Started</a></h1>
+<h2 id="readings-3"><a class="header" href="#readings-3">Readings</a></h2>
 <p>Please visit the links in this section as you read through it, and
 read through the <a href="https://www.zotero.org/support/">Zotero Documentation</a>,
 especially after watching the accompanying software demonstration.</p>
-<a class="header" href="print.html#introduction-2" id="introduction-2"><h2>Introduction</h2></a>
+<h2 id="introduction-2"><a class="header" href="#introduction-2">Introduction</a></h2>
 <p>Now that I have introduced you to
 some of the different resources for information sources
 that exist (and we will learn about more),
@@ -1069,7 +1121,7 @@ engineering projects, musical composition projects,
 biology experiments, and so on.
 Basically, if we use the web to collect and
 then use information, then <em>this is the way</em>.</p>
-<a class="header" href="print.html#reference-manager-software" id="reference-manager-software"><h2>Reference Manager Software</h2></a>
+<h2 id="reference-manager-software"><a class="header" href="#reference-manager-software">Reference Manager Software</a></h2>
 <p>You are required to use a RM in this course, and
 I will focus on the <a href="https://www.zotero.org/">Zotero</a> RM.
 However, you are free to choose other options,
@@ -1100,14 +1152,14 @@ while Zotero is more agnostic about source information and usage.</p>
 because they are owned by companies involved with
 academic publishing and academic databases.
 Mendeley is owned by the company Elsevier,
-which provides the <a href="https://libraries.uky.edu/lnkr.php?lir_id=3347"><em>Scopus</em></a> database,
+which provides the <a href="https://libraries.uky.edu/lnkr.php?lir_id=3347"><em>Scopus</em></a> database, 
 a bibliographic, abstract, and citation database, and
 publishes multiple journal titles.
 EndNote is owned by Clarivate, a research analytics company,
 which provides the <a href="https://libguides.uky.edu/467"><em>Web of Science</em></a> and <em>ProQuest</em> databases.
 <em>Web of Science</em> is a citation database like <em>Scopus</em>.</p>
 </blockquote>
-<a class="header" href="print.html#zotero" id="zotero"><h2>Zotero</h2></a>
+<h2 id="zotero"><a class="header" href="#zotero">Zotero</a></h2>
 <p>Gilmour &amp; Cobus-Kuo (2011) identify eight functions
 that a RM should provide, and
 Zotero performs all of these functions.
@@ -1177,7 +1229,7 @@ you collection will be synced with and backed up to Zotero's servers.
 Zotero registration:
 <a href="https://www.zotero.org/user/register/">https://www.zotero.org/user/register/</a></p>
 </blockquote>
-<a class="header" href="print.html#zotero-demo" id="zotero-demo"><h2>Zotero Demo</h2></a>
+<h2 id="zotero-demo"><a class="header" href="#zotero-demo">Zotero Demo</a></h2>
 <p>In the next video,
 I will show you how to complete the above steps
 so that you may get started using Zotero.
@@ -1187,7 +1239,7 @@ I will demonstrate Zotero.</p>
 <p>Your task this week is to download and start using Zotero, or
 some alternate RM.
 Please follow the demo video to complete the process.</p>
-<a class="header" href="print.html#conclusion-3" id="conclusion-3"><h2>Conclusion</h2></a>
+<h2 id="conclusion-3"><a class="header" href="#conclusion-3">Conclusion</a></h2>
 <ul>
 <li>Reference (or citation) managers (RM) provide more sophisticated tools to
 manage information sources than simple files systems provide.</li>
@@ -1198,12 +1250,12 @@ with a variety of word processing applications.</li>
 <li>Although you are welcome to use an alternate RM, in this course we focus on
 the Zotero RM.</li>
 </ul>
-<a class="header" href="print.html#references-created-with-zotero" id="references-created-with-zotero"><h2>References (created with Zotero)</h2></a>
+<h2 id="references-created-with-zotero"><a class="header" href="#references-created-with-zotero">References (created with Zotero)</a></h2>
 <p>Gilmour, R., &amp; Cobus-Kuo, L. (2011). Reference Management Software: A
 Comparative Analysis of Four Products. Issues in Science and Technology
 Librarianship, 66(Summer 2011). https://doi.org/10.5062/F4Z60KZF</p>
-<a class="header" href="print.html#web-information-retrieval" id="web-information-retrieval"><h1>Web Information Retrieval</h1></a>
-<a class="header" href="print.html#readings-4" id="readings-4"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web-information-retrieval"><a class="header" href="#web-information-retrieval">Web Information Retrieval</a></h1>
+<h2 id="readings-4"><a class="header" href="#readings-4">Readings</a></h2>
 <p>Please visit links in this section and
 review the following search tips pages for Google Search,
 DuckDuckGo search, and Bing search.</p>
@@ -1215,11 +1267,11 @@ Retrieved August 3, 2022, from <a href="https://help.duckduckgo.com/duckduckgo-h
 <li>Advanced search options. (n.d.). Retrieved August 3, 2022, from
 <a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Microsoft</a></li>
 </ul>
-<a class="header" href="print.html#introduction-3" id="introduction-3"><h2>Introduction</h2></a>
+<h2 id="introduction-3"><a class="header" href="#introduction-3">Introduction</a></h2>
 <p>Whether we want to search the web,
 a bibliographic database,
 or our Zotero library,
-it's helpful to know a bit how
+it's helpful to know a bit how 
 information retrieval works in
 order to become good at search.</p>
 <p>In this lesson, we'll cover specific search techniques
@@ -1231,7 +1283,7 @@ basic information retrieval model centers on <strong>documents</strong>.
 Anything indexed in a database or on the web is treated as a document.
 Documents include text, sound, images, video, etc.</p>
 <p>Second, we should understand that documents
-do not exist independently of other documents.
+do not exist independently of other documents. 
 Let's call this the <strong>corpus</strong>.
 For the web, the <strong>corpus</strong> is organized
 like a <strong>file system</strong>,
@@ -1258,9 +1310,9 @@ and then rank orders the results based
 on the query and the corpus.</p>
 <p>In order to illustrate the above concepts,
 I'll primarily focus on searching the web in this section, but
-these techniques work across the databases
+these techniques work across the databases 
 that we use in a library.</p>
-<a class="header" href="print.html#the-web-is-for-storing-and-retrieving-documents" id="the-web-is-for-storing-and-retrieving-documents"><h2>The web is for storing and retrieving documents</h2></a>
+<h2 id="the-web-is-for-storing-and-retrieving-documents"><a class="header" href="#the-web-is-for-storing-and-retrieving-documents">The web is for storing and retrieving documents</a></h2>
 <p>When we use Google or another search engine to search,
 we are often looking for documents in a corpus that
 contain specific text that match our query.
@@ -1300,7 +1352,7 @@ the term <strong>fire</strong> appears on the last paragraph of a web page, this
 will rank lower than a page that contains the terms near or adjacent to each
 other.</li>
 </ul>
-<a class="header" href="print.html#the-web-is-organized" id="the-web-is-organized"><h2>The web is organized</h2></a>
+<h2 id="the-web-is-organized"><a class="header" href="#the-web-is-organized">The web is organized</a></h2>
 <p>I mentioned above that the web
 is like a file system,
 the kind that you'd find on your own computer.
@@ -1322,7 +1374,7 @@ branches (TLDs). Newer TLDs include .apple, .attorney, .camera, .green, .joy
 <li>Included in those are <strong>ccTLD</strong>s, or <strong>country code top level domains</strong>. For
 example:
 <ul>
-<li><strong>.kr</strong> for South Korea</li>
+<li><strong>.kr</strong> for South Korea </li>
 <li><strong>.ae</strong> for the United Arab Emirates</li>
 <li><strong>.fr</strong> for France</li>
 <li><strong>.us</strong> for United States</li>
@@ -1388,7 +1440,7 @@ alt="The organization of the web by top level domains"
 title="The organization of the web by top level domains">
 <figcaption>Fig. 1: The Organization of the Web by Top Level Domains</figcaption>
 </figure>
-<a class="header" href="print.html#constructing-queries-for-precise-results" id="constructing-queries-for-precise-results"><h2>Constructing queries for precise results</h2></a>
+<h2 id="constructing-queries-for-precise-results"><a class="header" href="#constructing-queries-for-precise-results">Constructing queries for precise results</a></h2>
 <p>There are all sorts of other tips and tricks
 we can apply to revise and make our queries more precise.</p>
 <p><strong>Use quotes around our search terms</strong></p>
@@ -1430,12 +1482,12 @@ and not the <em>site</em> operator, are quoted):</p>
 <p><strong>Get more recent pages</strong></p>
 <p>If I'm really interested only in recent pages,
 I can click on the <strong>Tools</strong> button and select
-<strong>Any time, Past hour, Past 24 hours, Past week</strong>, or etc,
+<strong>Any time, Past hour, Past 24 hours, Past week</strong>, or etc, 
 to limit results to certain time periods.</p>
 <p><strong>Exclude results with the minus sign</strong></p>
 <p>Let's take a look at our flu vaccine search.
 Instead of enclosing <strong>&quot;flu vaccines&quot;</strong> in quotes
-to return only pages with that phrase and
+to return only pages with that phrase and 
 to reduce pages retrieved with other phrases,
 I could exclude the other phrases altogether
 (i.e., <strong>activity</strong> and <strong>season</strong>)
@@ -1470,7 +1522,7 @@ would want to search for <code>camisa roja</code> and not
 <code>roja comisa</code>.
 This of course is regardless of the country of origin,
 but note that Google has separate landing pages for
-Google.com depending on the country you're located in.
+Google.com depending on the country you're located in. 
 For example, for those residing in Mexico, <strong>google.com</strong>
 directs to <strong>google.com.mx</strong>,
 where <strong>mx</strong> is the ccTLD for Mexico:
@@ -1525,9 +1577,9 @@ Here are some examples that you can test in Google or elsewhere:</p>
 <ul>
 <li><strong>:related</strong> to find related sites
 <ul>
-<li><code>related:twitter.com</code></li>
-<li><code>related:instagram.com</code></li>
-<li><code>related:whitehouse.gov</code></li>
+<li><code>related:twitter.com</code> </li>
+<li><code>related:instagram.com</code> </li>
+<li><code>related:whitehouse.gov</code> </li>
 <li><code>related:google.com</code></li>
 </ul>
 </li>
@@ -1551,19 +1603,19 @@ Here are some examples that you can test in Google or elsewhere:</p>
 </ul>
 </li>
 </ul>
-<a class="header" href="print.html#conclusion-4" id="conclusion-4"><h2>Conclusion</h2></a>
+<h2 id="conclusion-4"><a class="header" href="#conclusion-4">Conclusion</a></h2>
 <p>Information retrieval (or search) can be complex but fun.
 Remember the three principals we stared with in this section,
 and apply those principals when constructing your queries.</p>
 <ul>
-<li>document centered
+<li>document centered 
 <ul>
 <li>consider the text</li>
 </ul>
 </li>
 <li>no document is an island
 <ul>
-<li>consider the document with respect to the corpus</li>
+<li>consider the document with respect to the corpus </li>
 </ul>
 </li>
 <li>the web is organizated
@@ -1593,7 +1645,7 @@ and apply those principals when constructing your queries.</p>
 <li><a href="https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a></li>
 <li><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Bing</a></li>
 </ul>
-<a class="header" href="print.html#ps" id="ps"><h2>P.S.</h2></a>
+<h2 id="ps"><a class="header" href="#ps">P.S.</a></h2>
 <p>You can get very advanced with your queries.
 Here are some examples:</p>
 <pre><code>trade (&quot;surplus&quot; OR &quot;deficit&quot;) (site:whitehouse.gov OR site:congress.gov)
@@ -1616,18 +1668,18 @@ searches them all at the same time:</p>
 <li><code>trade surplus deficit site:whitehouse.gov filetype:pdf</code></li>
 <li><code>trade surplus deficit site:congress.gov site:whitehouse.gov filetype:pdf</code></li>
 </ol>
-<a class="header" href="print.html#database-information-retrieval" id="database-information-retrieval"><h1>Database Information Retrieval</h1></a>
-<a class="header" href="print.html#introduction-4" id="introduction-4"><h2>Introduction</h2></a>
-<p>I introduced the concept of databases in
+<div style="break-before: page; page-break-before: always;"></div><h1 id="database-information-retrieval"><a class="header" href="#database-information-retrieval">Database Information Retrieval</a></h1>
+<h2 id="introduction-4"><a class="header" href="#introduction-4">Introduction</a></h2>
+<p>I introduced the concept of databases in 
 <a href="3-information-sources-resources.html">section 3</a>.
 Databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
-The main advantages are that databases offer
+The main advantages are that databases offer 
 specialized collections on a variety of topics;
 they offer many sources that are invisible to search engines; and
 they provide greater control over the search process.
-The main disadvantage is that they are a bit complicated to use well,
+The main disadvantage is that they are a bit complicated to use well, 
 there are many databases to choose from (and find),
 each has their own user interface, and
 they are often only accessible via a library.</p>
@@ -1665,7 +1717,7 @@ the database is usually called an
 Otherwise it's just called a full text database.
 Many of the databases that we have access to at our
 library are a mix of the two.</p>
-<a class="header" href="print.html#searching-bibliographic-records" id="searching-bibliographic-records"><h2>Searching Bibliographic Records</h2></a>
+<h2 id="searching-bibliographic-records"><a class="header" href="#searching-bibliographic-records">Searching Bibliographic Records</a></h2>
 <p>By bibliographic information, I generally mean <strong>metadata</strong>,
 and by bibliographic records,
 I generally mean metadata about specific items
@@ -1679,10 +1731,10 @@ All the metadata about a specific item
 (book, journal article, etc)
 is a record.
 In a database, this metadata is controlled,
-and therefore, well structured
+and therefore, well structured 
 (see the Libary of Congress link above).
 As searchers, this basically means
-that there are pre-set fields that
+that there are pre-set fields that 
 we can search in these databases and that
 these pre-set fields specifically search the
 corresponding metadata.
@@ -1704,14 +1756,14 @@ We can also filter by publication date, full text availability,
 document type, language, number of pages, and images
 (depending on the database and its content).
 In the end, this means we have greater control over
-the search process than we do in a search engine
+the search process than we do in a search engine 
 because the corpus is better defined.</p>
 <p>For example, in the previous section,
 I showed how we can search the web
 by using the <code>:filetype</code> operator to limit results
 to PDFs, DOCX, XLSX, etc files.
 In a bibliographic database like <em>ASC</em>, however,
-we can often specify that we want PDFs, but
+we can often specify that we want PDFs, but 
 more importantly,
 we can limit results by <strong>document type</strong>.
 That means we can restrict results to items like:</p>
@@ -1758,7 +1810,7 @@ In search engines, the <strong>AND</strong> is assumed between terms.
 So the equivalent search in, for example,
 Google, Bing, DuckDuckGo, etc is simply <code>dogs cats</code>.</p>
 </blockquote>
-<a class="header" href="print.html#subject-terms-and-thesauri" id="subject-terms-and-thesauri"><h2>Subject Terms and Thesauri</h2></a>
+<h2 id="subject-terms-and-thesauri"><a class="header" href="#subject-terms-and-thesauri">Subject Terms and Thesauri</a></h2>
 <p>Many (but not all) databases offer the ability
 to search by subject or thesauri term.
 Subject/thesauri terms are kinds of controlled vocabulary.
@@ -1776,7 +1828,7 @@ must include that subject term,
 and that record should match the contents of the item.
 I can peruse the results and identify other subject terms
 that help narrow my results.
-For example, the subject term <strong>BIRD habitats</strong> appears
+For example, the subject term <strong>BIRD habitats</strong> appears 
 in records with the subject term <strong>Forest animals</strong>,
 since records often have multiple subject terms.
 If I combine those terms with an <strong>AND</strong> operator,
@@ -1792,7 +1844,7 @@ alt="Academic Search Complete results"
 title="Academic Search Complete results">
 <figcaption>Fig. 1: Academic Search Complete Results</figcaption>
 </figure>
-<a class="header" href="print.html#systematic-browsing" id="systematic-browsing"><h2>Systematic Browsing</h2></a>
+<h2 id="systematic-browsing"><a class="header" href="#systematic-browsing">Systematic Browsing</a></h2>
 <p>Although database search can be more precise
 than searching in search engines,
 databases are also good for browsing.</p>
@@ -1806,7 +1858,7 @@ Rather, the result of intentional browsing,
 (reading or skimming a list of titles and abstracts)
 can be the accumulation of highly relevant source material,
 relevant to our information needs and queries.</p>
-<a class="header" href="print.html#browsing-strategies" id="browsing-strategies"><h2>Browsing Strategies</h2></a>
+<h2 id="browsing-strategies"><a class="header" href="#browsing-strategies">Browsing Strategies</a></h2>
 <p>Although we make a distinction
 between browsing and searching,
 it is oftentimes helpful to begin
@@ -1815,7 +1867,7 @@ and then use something from the search results,
 something like an author's name or subject term,
 to find and collect related information.
 We call this type of browsing <em>pearl growing</em>.</p>
-<a class="header" href="print.html#subject-browsing" id="subject-browsing"><h3>Subject Browsing</h3></a>
+<h3 id="subject-browsing"><a class="header" href="#subject-browsing">Subject Browsing</a></h3>
 <p>Below is an image of the <a href="https://eric.ed.gov/">ERIC Database</a>.
 <em>ERIC</em> stands for <strong>Education Resources Information Center</strong>.
 It is provided by the U.S. Department of Education, and
@@ -1852,7 +1904,7 @@ alt="Thesaurus descriptor page for the term academic libraries"
 title="Thesaurus descriptor page for the term academic libraries">
 <figcaption>Fig. 3: Thesaurus descriptor page for the term academic libraries</figcaption>
 </figure>
-<a class="header" href="print.html#author-browsing" id="author-browsing"><h3>Author Browsing</h3></a>
+<h3 id="author-browsing"><a class="header" href="#author-browsing">Author Browsing</a></h3>
 <p>I can certainly browse using other access points,
 like author names.
 After perusing the results from above,
@@ -1866,14 +1918,14 @@ title="Author names list covering academic libraries">
 <p>Knowing that authors tend to write and research
 on a specific range of topics (i.e., are specialists) is helpful
 because it allows me to browse by author and subject topic.</p>
-<a class="header" href="print.html#citation-browsing" id="citation-browsing"><h3>Citation Browsing</h3></a>
+<h3 id="citation-browsing"><a class="header" href="#citation-browsing">Citation Browsing</a></h3>
 <p>I've described abstracting &amp; indexing (A&amp;I) databases, but
 there's another special type of A&amp;I database called
 a <strong>citation database</strong>.
 Three useful ones available to us are</p>
 <ul>
 <li><a href="https://libguides.uky.edu/3347">Scopus</a></li>
-<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and</li>
+<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and </li>
 <li><a href="https://scholar.google.com/">Google Scholar</a> (more of a scholarly <em>search engine</em>).</li>
 </ul>
 <p>The first two are available via UK Libraries,
@@ -1891,7 +1943,7 @@ then the two pages are likely to be about the same topic.
 Because of this theory,
 we can follow citations to find more relevant articles.</p>
 <p>Pictured here is a record in <em>Web of Science</em> on information literacy.
-To the far right you can see that it has <strong>4 Citations</strong>.
+To the far right you can see that it has <strong>4 Citations</strong>. 
 If we click on that <strong>4 Citations</strong> link,
 we can begin to browse those 4 articles or documents.
 Per citation theory,
@@ -1933,7 +1985,7 @@ alt="Cited by in Google Scholar"
 title="Cited by in Google Scholar">
 <figcaption>Fig. 7: Cited by in Google Scholar</figcaption> 
 </figure>
-<a class="header" href="print.html#combination-browsing" id="combination-browsing"><h3>Combination Browsing</h3></a>
+<h3 id="combination-browsing"><a class="header" href="#combination-browsing">Combination Browsing</a></h3>
 <p>Like with most other searches,
 we can combine terms and use those combinations
 to focus our browsing sessions.
@@ -1959,7 +2011,7 @@ alt="Combination search in CMMC database"
 title="Combination search in CMMC database">
 <figcaption>Fig. 8: Combination search in CMMC database">
 </figure>
-<a class="header" href="print.html#boolean-logic-and-or-not" id="boolean-logic-and-or-not"><h2>Boolean Logic: AND, OR, NOT</h2></a>
+<h2 id="boolean-logic-and-or-not"><a class="header" href="#boolean-logic-and-or-not">Boolean Logic: AND, OR, NOT</a></h2>
 <p>Remember that database searching is more
 structured at the document level, and
 that this structure is reflected
@@ -1983,7 +2035,7 @@ Many bibliographic databases offer all three.
 The <strong>NOT</strong> operator instructs the database
 to exclude the assigned term.
 Thus, if we had chosen <strong>NOT &quot;regression&quot;</strong>,
-then the <em>CMMC</em> database would have
+then the <em>CMMC</em> database would have 
 returned results where the term <strong>regression</strong>
 surely did NOT appear in the abstract for
 records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
@@ -1997,7 +2049,7 @@ as well as those records that did or did not have
 The <strong>OR</strong> operator is more useful when querying
 terms in the same search fields.
 For instance, we might want to use the <strong>OR</strong>
-operator to search for two different terms
+operator to search for two different terms 
 that might appear in the abstract fields,
 or the subject term fields,
 such as the following related terms:</p>
@@ -2015,14 +2067,14 @@ alt="Using the OR Boolean operator"
 title="Using the OR Boolean operator">
 <figcaption>Fig. 9: Using the OR Boolean Operator</figcaption>
 </figure>
-<a class="header" href="print.html#how-to-browse" id="how-to-browse"><h3>How to Browse</h3></a>
+<h3 id="how-to-browse"><a class="header" href="#how-to-browse">How to Browse</a></h3>
 <p>When we browse, therefore,
 we are attempting to locate key qualities from our results
 or our initial results lists (e.g., authors, subjects, etc.).
 These lists include the titles, the abstracts, the thesauri,
 and so forth.
 And these key terms will help capture what our search is <strong>about</strong>.</p>
-<a class="header" href="print.html#developing-a-list" id="developing-a-list"><h2>Developing a List</h2></a>
+<h2 id="developing-a-list"><a class="header" href="#developing-a-list">Developing a List</a></h2>
 <p>Many databases will offer a way to create,
 save, and export lists or individual records
 based on browsing and searching.
@@ -2057,7 +2109,7 @@ title="Using Folders to Save Records">
 in Zotero rather than use a database folder or list.
 This way I keep the records with me even if I lose
 access to the database.</p>
-<a class="header" href="print.html#conclusion-5" id="conclusion-5"><h2>Conclusion</h2></a>
+<h2 id="conclusion-5"><a class="header" href="#conclusion-5">Conclusion</a></h2>
 <p>In this section, we learned the following:</p>
 <ul>
 <li>Databases and search engines are different</li>
@@ -2087,9 +2139,9 @@ Rather, browse with smarts: systematically and strategically.
 Make the systems work for you.
 And save your results in Zotero or your
 chosen RM as you go.</p>
-<a class="header" href="print.html#evaluating-information-sources" id="evaluating-information-sources"><h1>Evaluating Information Sources</h1></a>
-<a class="header" href="print.html#readings-5" id="readings-5"><h2>Readings</h2></a>
-<p>Read this short introduction on <strong>reading laterally</strong> as
+<div style="break-before: page; page-break-before: always;"></div><h1 id="evaluating-information-sources"><a class="header" href="#evaluating-information-sources">Evaluating Information Sources</a></h1>
+<h2 id="readings-5"><a class="header" href="#readings-5">Readings</a></h2>
+<p>Read this short introduction on <strong>reading laterally</strong> as 
 a way to evaluate information, and
 watch the short video.</p>
 <ul>
@@ -2098,7 +2150,7 @@ Retrieved August 3, 2022, from <a href="https://libguides.pvcc.edu/lateral_readi
 <li>Stanford History Education Group (Director). (2020, January 16). Sort Fact
 from Fiction Online with Lateral Reading, from <a href="https://www.youtube.com/watch?v=SHNprb2hgzU">YouTube</a></li>
 </ul>
-<a class="header" href="print.html#introduction-5" id="introduction-5"><h2>Introduction</h2></a>
+<h2 id="introduction-5"><a class="header" href="#introduction-5">Introduction</a></h2>
 <p>When we're doing research or trying to learn something,
 we obviously want to gather content that is true.
 And so the key question is,
@@ -2116,7 +2168,7 @@ Or more accurately, a fiction or a non-fiction.
 Regardless of our political or whatever positions,
 this focus on narrative is interesting and worthwhile.
 It's interesting, in part, because placing information
-within a narrative has ancient origins, and it's
+within a narrative has ancient origins, and it's 
 worthwhile because it places true and false content
 within some context, a story,
 which can itself be evaluated as fairly true or not
@@ -2142,7 +2194,7 @@ What is the date of the publication?
 Is it outdated?
 And so forth.</p>
 <p>Those kinds of questions are important,
-but they may also be insufficient in determining
+but they may also be insufficient in determining 
 some content's veracity.
 What's also important to identify,
 especially for content that is new or new to us,
@@ -2174,7 +2226,7 @@ Walter Fisher (1989) identified two methods
 for evaluating narratives that he called
 <strong>narrative probability</strong> and <strong>narrative fidelity</strong>.
 Let's discuss these.</p>
-<a class="header" href="print.html#narrative-probability" id="narrative-probability"><h2>Narrative Probability</h2></a>
+<h2 id="narrative-probability"><a class="header" href="#narrative-probability">Narrative Probability</a></h2>
 <p>For a story to be probable (probably true, that is),
 it must satisfy three criteria:</p>
 <ul>
@@ -2182,7 +2234,7 @@ it must satisfy three criteria:</p>
 <li>material coherence</li>
 <li>characterological coherence</li>
 </ul>
-<a class="header" href="print.html#argumentative-or-structural-coherence" id="argumentative-or-structural-coherence"><h3>Argumentative or Structural Coherence</h3></a>
+<h3 id="argumentative-or-structural-coherence"><a class="header" href="#argumentative-or-structural-coherence">Argumentative or Structural Coherence</a></h3>
 <p><em>Argumentative or structural coherence</em> speaks
 to the validity of an underlying
 argument in a story.
@@ -2199,13 +2251,13 @@ is what makes a movie fun (&quot;it's so bad it's great!&quot;).
 But when telling stories about how things are in the world,
 or how they should be, or how they will be,
 it's important for the story to make sense and to be valid, logically.</p>
-<a class="header" href="print.html#material-coherence" id="material-coherence"><h3>Material Coherence</h3></a>
+<h3 id="material-coherence"><a class="header" href="#material-coherence">Material Coherence</a></h3>
 <p>If a story is internally consistent, what next?
 As is often the case, a group (e.g., ideological ones)
 may compete with another group about what should
 be the dominant narrative.
 In such cases, we can compare and contrast their narratives,
-and doing so is testing their <em>material coherence</em>.
+and doing so is testing their <em>material coherence</em>. 
 This is the idea that we compare and contrast stories
 and note in the process whether
 &quot;important facts may be omitted,
@@ -2220,7 +2272,7 @@ which counterarguments each group ignores,
 and which relevant issues each group overlooks?</p>
 <p>These comparisons may also happen at the micro-level.
 In the social and physical sciences,
-scholars and researchers are engaged in a series of
+scholars and researchers are engaged in a series of 
 discussions with each other about all sorts of theories
 about the social or physical worlds.</p>
 <blockquote>
@@ -2244,14 +2296,14 @@ but enough data has been analyzed for them to hold for the time being.
 In the social sciences and physical sciences,
 it's more common for theories to explain limited phenomenon.
 These are called <strong>middle-range theories</strong>.
-The <strong>diffusion of innovation</strong> theory, for example,
-is a <strong>middle-range theories</strong> that
+The <strong>diffusion of innovation</strong> theory, for example, 
+is a <strong>middle-range theories</strong> that 
 was originally devised to explain how new ideas and technology spread.</p>
 </blockquote>
 <p>You can see these discussions among scientists and researchers
 take place in the literature review
 and discussion sections of journal articles.
-In these sections, researchers cite and refer to others
+In these sections, researchers cite and refer to others 
 who have completed research on a similar or the same topic.
 The overall goal of these discussions
 is to test or develop theories that explain some phenomenon.
@@ -2267,13 +2319,13 @@ relevant issues that may have been overlooked</strong>.</p>
 in these discussions.
 Tools like Zotero or other reference managers aid us
 in collecting sources, taking notes on those sources,
-and citing those sources in papers that participate in
+and citing those sources in papers that participate in 
 these ongoing discussions and contribute to this collective storytelling.
 In the process of writing about the phenomenon under review,
 we attempt to provide a story based on the back and forth
 discussions that have taken place on the topic.
 These RMs, then, basically help us to test <strong>material coherence</strong>.</p>
-<a class="header" href="print.html#characterological-coherence" id="characterological-coherence"><h3>Characterological Coherence</h3></a>
+<h3 id="characterological-coherence"><a class="header" href="#characterological-coherence">Characterological Coherence</a></h3>
 <p>Can you think of a story that doesn't have a character at all?
 I can't.
 Even places and things can be characters in stories.
@@ -2293,7 +2345,7 @@ and the uncharacteristic behavior was foreshadowed
 somewhere earlier in the story.
 Often, when we see something coming in a movie before it's happened,
 it's because the characters are playing to their character.
-If we don't see something coming, then it's simply likely a
+If we don't see something coming, then it's simply likely a 
 complex character, and the story supports that.</p>
 <p>In any regard, stories have characters,
 whether people, places, or things.
@@ -2307,7 +2359,7 @@ how they are acting,
 what they are saying, etc.
 Is what they are saying make sense,
 per the above ideas?</p>
-<a class="header" href="print.html#closing-the-loop" id="closing-the-loop"><h2>Closing the Loop</h2></a>
+<h2 id="closing-the-loop"><a class="header" href="#closing-the-loop">Closing the Loop</a></h2>
 <p>How does this all help you evaluate information sources?
 Well, when you collect sources for a project, like a paper or something,
 it's a good idea, as you collect sources, to think about the story
@@ -2319,7 +2371,7 @@ if you find evidence that degrades the coherence of these things,
 you need to revise your story,
 just like a scientist must revise or discard their theory
 in the face of contradictory or discordant evidence.</p>
-<a class="header" href="print.html#project" id="project"><h2>Project</h2></a>
+<h2 id="project"><a class="header" href="#project">Project</a></h2>
 <p>You can test this method yourselves.
 Consider a news event that's going on as you read this.
 Pick three news articles that cover the event,
@@ -2340,10 +2392,10 @@ characters in the story? Do they behave according to what we know of their
 values, attitudes, beliefs, ideas, and words? Do the stories present them
 counter to what we already know of these people?</li>
 </ol>
-<a class="header" href="print.html#conclusion-6" id="conclusion-6"><h2>Conclusion</h2></a>
+<h2 id="conclusion-6"><a class="header" href="#conclusion-6">Conclusion</a></h2>
 <p>Being able to evaluate information is important, but
 if we have been exposed to lessons on doing so,
-we have often been presented with some kind of framework
+we have often been presented with some kind of framework 
 that asks us to check the boxes to see if an information source
 satisfies some pre-existing criteria.
 For example, such a checklist might ask us to ask:
@@ -2368,14 +2420,14 @@ We can test its:</p>
 </ul>
 <p>By the way, this method can also apply to the stories
 we tell ourselves or about ourselves or about our beliefs.
-It's important, that is, to evaluate the information we
-believe to be true as much as it is to evaluate what others
+It's important, that is, to evaluate the information we 
+believe to be true as much as it is to evaluate what others 
 posit to be true.</p>
-<a class="header" href="print.html#references" id="references"><h2>References</h2></a>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
 <p>Fisher, W. R. (1989). <em>Human communication as narration: Toward a philosophy of
 reason, value, and action</em>. University of South Carolina Press. <a href="https://doi.org/10.2307/j.ctv1nwbqtk">https://doi.org/10.2307/j.ctv1nwbqtk</a></p>
-<a class="header" href="print.html#wikipedia-project-setup" id="wikipedia-project-setup"><h1>Wikipedia Project: Setup</h1></a>
-<a class="header" href="print.html#readings-6" id="readings-6"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wikipedia-project-setup"><a class="header" href="#wikipedia-project-setup">Wikipedia Project: Setup</a></h1>
+<h2 id="readings-6"><a class="header" href="#readings-6">Readings</a></h2>
 <p>You are not editing Wikipedia yet, but
 you will near the near the end of this course.
 However, it's not too early to learn about the process.
@@ -2387,7 +2439,7 @@ Please review this article on it:</p>
 <ul>
 <li>Wikipedia:Stub. (2022). In Wikipedia, from <a href="https://en.wikipedia.org/wiki/Wikipedia:Stub">Wikipedia:Stub</a></li>
 </ul>
-<a class="header" href="print.html#becoming-a-wikipedia-editor" id="becoming-a-wikipedia-editor"><h2>Becoming a Wikipedia Editor</h2></a>
+<h2 id="becoming-a-wikipedia-editor"><a class="header" href="#becoming-a-wikipedia-editor">Becoming a Wikipedia Editor</a></h2>
 <p>In this course, the main assignment involves identifying
 a Wikipedia article, searching for information sources
 that we can add to the article, collecting those sources
@@ -2412,7 +2464,7 @@ By the end of the semester,
 we will have collected enough material to
 edit the Wikipedia article that we have identified
 this week.</p>
-<a class="header" href="print.html#details" id="details"><h2>Details</h2></a>
+<h2 id="details"><a class="header" href="#details">Details</a></h2>
 <p>For this week, your task is to identify a Wikipedia article to edit.
 <strong>The Wikipedia article must be a stub article,</strong>
 which are articles that are
@@ -2472,7 +2524,7 @@ located at <a href="https://en.wikipedia.org/wiki/Diskworld">https://en.wikipedi
 </li>
 <li>State why you chose the stub article.</li>
 </ol>
-<a class="header" href="print.html#identifying-a-stub" id="identifying-a-stub"><h2>Identifying a stub</h2></a>
+<h2 id="identifying-a-stub"><a class="header" href="#identifying-a-stub">Identifying a stub</a></h2>
 <p>In the <a href="5-information-retrieval-web.html">Information Retrieval: Web</a>
 section, you might recall that I wrote the following:</p>
 <blockquote>
@@ -2490,7 +2542,7 @@ stub articles as stub articles,
 and you can see this on the <em>Diskworld</em> stub article I link to above.
 At the bottom of that article, you'll see the following text:</p>
 <blockquote>
-<p>This computer magazine or journal-related <strong>article is a stub</strong>
+<p>This computer magazine or journal-related <strong>article is a stub</strong> 
 [emphasis added].</p>
 </blockquote>
 <p>If we look at other stub articles,
@@ -2507,20 +2559,20 @@ so I might add that as a query term.
 Finally, knowing that we're searching Wikipedia only,
 since this is a Wikipedia-based project,
 we can use the <code>site:</code> operator in our search query.
-Basically, I found the <em>Diskworld</em> article
+Basically, I found the <em>Diskworld</em> article 
 using the Google query below:</p>
 <pre><code>&quot;article is a stub&quot; technology site:en.wikipedia.org
 </code></pre>
 <p>And then I simply browsed through the results until
 I identified an article I was interested in looking at more closely.</p>
-<a class="header" href="print.html#library-sources-part-1" id="library-sources-part-1"><h1>Library Sources: Part 1</h1></a>
-<a class="header" href="print.html#readings-7" id="readings-7"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="library-sources-part-1"><a class="header" href="#library-sources-part-1">Library Sources: Part 1</a></h1>
+<h2 id="readings-7"><a class="header" href="#readings-7">Readings</a></h2>
 <p>Please review the aspects of Infokat searching here:</p>
 <ul>
 <li>Naas, D. (n.d.). Research Guides: InfoKat Discovery: Getting Started.
 Retrieved August 3, 2022, from <a href="https://libguides.uky.edu/c.php?g=457383&amp;p=3126835">UK LibGuides</a>.</li>
 </ul>
-<a class="header" href="print.html#introduction-6" id="introduction-6"><h2>Introduction</h2></a>
+<h2 id="introduction-6"><a class="header" href="#introduction-6">Introduction</a></h2>
 <p>We have already discussed
 <a href="6-database-information-retrieval.html">database information retrieval</a>.
 In this section we're going to explore a bit more
@@ -2534,7 +2586,7 @@ multimedia collections, and more.</p>
 I'll focus on two of the most common usages of the library's resources:</p>
 <ul>
 <li>Infokat: for searching books and also database offerings</li>
-<li>Databases: for searching specific database offerings</li>
+<li>Databases: for searching specific database offerings </li>
 </ul>
 <p>However, it's worth your time to explore the UK Libraries' website
 in order to learn what you have access to.
@@ -2542,7 +2594,7 @@ Or even, you could use Google's <code>:site</code> operator
 to locate resources of interest that the library provides:</p>
 <pre><code>[something of interest] site:libraries.uky.edu
 </code></pre>
-<a class="header" href="print.html#infokat" id="infokat"><h2>Infokat</h2></a>
+<h2 id="infokat"><a class="header" href="#infokat">Infokat</a></h2>
 <p><em>Infokat</em> is short for <a href="https://saalck-uky.primo.exlibrisgroup.com/discovery/search?vid=01SAA_UKY:UKY">Infokat Discovery</a>, and</p>
 <blockquote>
 <p>is the primary search tool for browsing
@@ -2567,14 +2619,14 @@ Although interlibrary loans mean that we
 won't get immediate access to the requested source,
 it's often very fast.
 In my experience,
-I usually receive PDF copies of
+I usually receive PDF copies of 
 requested journal articles within 24 hours,
 and for many books that I've requested through interlibrary loan,
-I generally receive copies within one to three days.</p>
+I generally receive copies within one to three days. </p>
 <p>Infokat also works well with Zotero and
 other reference management software.
 I'll cover that in a follow up demonstration video.</p>
-<a class="header" href="print.html#searching-infokat" id="searching-infokat"><h2>Searching Infokat</h2></a>
+<h2 id="searching-infokat"><a class="header" href="#searching-infokat">Searching Infokat</a></h2>
 <p>There are two initial ways to search Infokat:</p>
 <ul>
 <li>Basic search</li>
@@ -2598,7 +2650,7 @@ Also, because the corpus you're searching in Infokat is structured,
 advanced search offers fine-tuned, precision search
 functions that let us search by specific fields,
 dates, and includes Boolean logic.</p>
-<a class="header" href="print.html#basic-search" id="basic-search"><h3>Basic Search</h3></a>
+<h3 id="basic-search"><a class="header" href="#basic-search">Basic Search</a></h3>
 <p>Basic search is a great place to start your research,
 especially when starting on a new project.
 From there you can use hints that you see in your retrieval
@@ -2618,8 +2670,8 @@ subject heading, language, and more.</p>
 <p>Like web search engines,
 term order matters.
 Therefore, you should enclose queries in double quotes in order
-to force Infokat to return results using the exact
-terminology and to return results in the same order as your terms.
+to force Infokat to return results using the exact 
+terminology and to return results in the same order as your terms. 
 For example, if my query is:</p>
 <pre><code>web development
 </code></pre>
@@ -2633,10 +2685,10 @@ For example, if my query is:</p>
 For example:</p>
 <pre><code>Hands-On Full Stack Web Development with Angular...
 </code></pre>
-<a class="header" href="print.html#advanced-search" id="advanced-search"><h3>Advanced Search</h3></a>
+<h3 id="advanced-search"><a class="header" href="#advanced-search">Advanced Search</a></h3>
 <p>Advanced search in Infokat provides a form
 where you can focus on constructing precise queries.
-You can apply a variety of search filters that
+You can apply a variety of search filters that 
 limit queries to specific fields in the structured data,
 such as title information, author/creator information, and subject terms.</p>
 <figure>
@@ -2647,7 +2699,7 @@ title="Infokat advanced search">
 </figure>
 <p>Instead of using double quotes to force results to match your query,
 you have other options.
-These include the ability to state whether the search results should
+These include the ability to state whether the search results should 
 contain the terms in your query, match exactly the terms in your query,
 which is like using double quotes, or
 whether the search results should start with the same terms
@@ -2665,7 +2717,7 @@ you will see a folder icon in your browser bar
 when you're on the result page.
 This will let you save multiple items to your Zotero
 library or to a specific Zotero folder in your library.</p>
-<a class="header" href="print.html#record-page" id="record-page"><h2>Record Page</h2></a>
+<h2 id="record-page"><a class="header" href="#record-page">Record Page</a></h2>
 <p>When you find a result that interests you,
 click on the link to get more information and
 do more with the result.
@@ -2678,11 +2730,11 @@ Infokat will tell you where in the library it's located
 (i.e., shelf and floor), and
 it will also tell you which library the book is located,
 since UK Libraries has many locations aside from W.T. Young.
-If the item is not available electronically or in print
+If the item is not available electronically or in print 
 at one of the UK Library locations,
 this is where you can request the items via interlibrary loan.</p>
 <p>When you sign in via your linkblue information,
-you can request the item directly, and if you have
+you can request the item directly, and if you have 
 loans out, you can request that they be renewed.</p>
 <figure>
 <img src="images/9-image-3.png"
@@ -2690,7 +2742,7 @@ alt="Infokat record page"
 title="Infokat record page">
 <figcaption>Fig. 3: Infokat record page</figcaption> 
 </figure>
-<a class="header" href="print.html#conclusion-7" id="conclusion-7"><h2>Conclusion</h2></a>
+<h2 id="conclusion-7"><a class="header" href="#conclusion-7">Conclusion</a></h2>
 <p>UK Libraries provides access to millions of items
 in both digital and print versions.
 In this section, I focused on accessing their collections
@@ -2707,7 +2759,7 @@ This process will become streamlined and feel natural over time,
 and eventually you'll have amassed your own personal knowledge repository.</p>
 <p>In the next section, I'll focus on specific databases
 that UK Libraries provides access to for more topical searches.</p>
-<a class="header" href="print.html#library-sources-part-2" id="library-sources-part-2"><h1>Library Sources: Part 2</h1></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="library-sources-part-2"><a class="header" href="#library-sources-part-2">Library Sources: Part 2</a></h1>
 <p>UK Libraries provides access to many millions of sources
 that include books (ebooks and print books),
 databases, journals, archival works, image collections,
@@ -2718,24 +2770,24 @@ In this section, I focus on a handful of the
 databases that UK Libraries offers.</p>
 <p>I can only focus on a handful of databases
 because UK Libraries,
-as a major research institution and because of its
+as a major research institution and because of its 
 large student body and wide range of majors,
 provides access to 712 total databases
 (as of summer 2022).
-Many of these databases are specialized
+Many of these databases are specialized 
 (e.g., African American and Africana Studies, Appalachian Studies)
 or cover a broad general research area (e.g., Chemistry, Education).
 But a few are designed to be super broad;
 that is, they are databases of databases.
 I've already covered <em>Academic Search Complete</em> in prior sections,
 which is one example of a database of databases.
-In this section, I'll cover another one plus some
+In this section, I'll cover another one plus some 
 citation databases.</p>
-<p>Remember that if you have desktop Zotero
+<p>Remember that if you have desktop Zotero 
 plus the Zotero browser add-on installed,
 Zotero will automatically recognize when you have a
 web page open for a specific item in of these databases.
-Thus, use Zotero when examining these databases
+Thus, use Zotero when examining these databases 
 to collect information on your Wikipedia topic.</p>
 <p>While I will only cover a few databases in this section,
 I encourage you to explore all that's offered.
@@ -2762,12 +2814,12 @@ alt="A-Z Databases"
 title="A-Z Databases">
 <figcaption>Fig. 1: A-Z Databases</figcaption> 
 </figure>
-<a class="header" href="print.html#factiva" id="factiva"><h2>Factiva</h2></a>
+<h2 id="factiva"><a class="header" href="#factiva">Factiva</a></h2>
 <p><a href="https://libguides.uky.edu/720"><em>Factiva</em></a> is a helpful database for locating news,
 market, and company information.
 You can search against subjects, industries, within regions, and
 you can add other limits.
-There are a slew of some advanced search operators that
+There are a slew of some advanced search operators that 
 help power up your search.
 You can <a href="http://factiva.com/CP_Developer/ProductHelp/FDK/FDK38/search_factiva/query_expressions/search_statement_operators.htm">read through the list of operators</a> and
 field codes to use when searching <em>Factiva</em>.</p>
@@ -2786,7 +2838,7 @@ I can approach the query simply, like so
 <pre><code>&quot;open source&quot; AND google 
 </code></pre>
 <p>This search was conducted on Aug 1, 2022, and
-you can see there are 4,244 results.</p>
+you can see there are 4,244 results. </p>
 <p>On the left side you can see a distribution of articles
 by date of publication,
 a list of relevant companies that appear
@@ -2802,7 +2854,7 @@ We can look at the publication data distribution and
 note whether there are more results on a
 given day than on others.
 This may suggest a hot news day for this particular topic and
-that may be something we want to explore.</p>
+that may be something we want to explore. </p>
 <p>Let's go back to the search builder.
 Say I found that the previous set of results
 were hit or miss and, as a result,
@@ -2814,8 +2866,8 @@ set amount of space between each other.
 The assumption is that the closer any terms are to each other,
 the more likely the document will be about those terms.
 Thus, if I replace the <strong>and</strong> operator with the <strong>adj5</strong> operator,
-I ask <em>Factiva</em> to return documents where the term <em>open source</em>
-is within five words of the term <em>Google</em>:</p>
+I ask <em>Factiva</em> to return documents where the term <em>open source</em> 
+is within five words of the term <em>Google</em>: </p>
 <pre><code>&quot;open source&quot; adj5 google
 </code></pre>
 <p>You can see that the results are much different than the previous one.
@@ -2835,7 +2887,7 @@ There are more proximity and other operators, such as:</p>
 <ul>
 <li><strong>w/N</strong></li>
 <li><code>&quot;open soruce&quot; w/5 google</code></li>
-<li>like the <code>adj</code> operators</li>
+<li>like the <code>adj</code> operators </li>
 <li><strong>same</strong>
 <ul>
 <li><code>&quot;open source&quot; same google</code></li>
@@ -2851,7 +2903,7 @@ There are more proximity and other operators, such as:</p>
 <li><strong>atleastN</strong>
 <ul>
 <li><code>atleast5 google and &quot;open source&quot;</code></li>
-<li>'google' must appear at least 5 times in document</li>
+<li>'google' must appear at least 5 times in document </li>
 </ul>
 </li>
 </ul>
@@ -2862,7 +2914,7 @@ from <em>Factiva</em> and
 will recognize that a source document is,
 for example,
 a news article or like.</p>
-<a class="header" href="print.html#web-of-science" id="web-of-science"><h2>Web of Science</h2></a>
+<h2 id="web-of-science"><a class="header" href="#web-of-science">Web of Science</a></h2>
 <p><a href="https://libguides.uky.edu/467"><em>Web of Science (WoS)</em></a> is an abstract &amp; indexing citation database.
 This means that the database does not directly provide full text access
 but it does link to UK Library when full text is available for results.
@@ -2900,15 +2952,15 @@ title="WoS advanced search for TS=("open source" NEAR google)">
 <figcaption>Fig. 4: <i>WoS</i> advanced search for TS=("open source" NEAR google)</figcaption> 
 </figure>
 <p>Now there are only 9 results,
-and if I examine the title, abstract, or keywords for the results,
-I'll see that the term &quot;google&quot; is placed within five words of
+and if I examine the title, abstract, or keywords for the results, 
+I'll see that the term &quot;google&quot; is placed within five words of 
 the term &quot;open source&quot;.
 If I want to really narrow down my search,
 I can change the field to <strong>Title</strong> only.</p>
 <p>The default results list is to show articles
 that are published more recently.
 I can change this default sorting method so that
-<em>WoS</em> sorts based on sources that have the highest citations first.
+<em>WoS</em> sorts based on sources that have the highest citations first. 
 Once I do this, I can go to the right side,
 and look at the <strong>Times Cited</strong> link and
 see which articles have been cited the most.
@@ -2916,16 +2968,16 @@ This is what makes <em>WoS</em> a citation database.
 We don't have to use <em>WoS</em> as a citation database,
 but this is what separates <em>WoS</em>
 from many other scholarly databases.</p>
-<p>Theoretically, each one of these citing articles should be
-related to the article that is cited by them. I can them peruse
-these citing articles to help me find even more
+<p>Theoretically, each one of these citing articles should be 
+related to the article that is cited by them. I can them peruse 
+these citing articles to help me find even more 
 relevant sources of information.</p>
 <p>Instead of basic search, we can search
 by author, cited reference, and more.
-If you click on the big question mark button in <em>WoS</em>,
+If you click on the big question mark button in <em>WoS</em>, 
 you'll find a guide on how to use <em>WoS</em>.
 The guide includes some tips on the use of various search operators,
-including the <em>NEAR</em> operator as well as the Boolean operators.</p>
+including the <em>NEAR</em> operator as well as the Boolean operators. </p>
 <p>Remember that <em>Web of Science</em> doesn't offer direct access to content,
 but notice that there is this <strong>Full Text @ W. T. Young</strong> link
 at the bottom of some records in the search results.
@@ -2943,7 +2995,7 @@ if you want to save your searches or create folders
 Although the vendor that provides <em>WoS</em>
 is also the same vendor that provides the <em>EndNote</em> reference manager,
 Zotero is also capable of extracting bibliographic information here.</p>
-<a class="header" href="print.html#google-scholar" id="google-scholar"><h2>Google Scholar</h2></a>
+<h2 id="google-scholar"><a class="header" href="#google-scholar">Google Scholar</a></h2>
 <p>Let's try <a href="https://scholar.google.com"><em>Google Scholar</em></a> now.
 <em>Google Scholar</em> isn't technically a library database
 since it's freely accessible on the web, but
@@ -2980,7 +3032,7 @@ this means that it can't offer the kind of advanced
 search we've seen in database searches.
 It is pretty useful, though.
 For example, Figure 6 shows an advanced search for the terms
-<strong>google</strong> and <strong>&quot;open sources&quot;</strong> but it
+<strong>google</strong> and <strong>&quot;open sources&quot;</strong> but it 
 excludes the term <strong>android</strong> in the title,
 and it asks for results published from 2018 to today.
 You can see that this substantially narrows our results.
@@ -2996,13 +3048,13 @@ title="Google Scholar search for "open source" google not android in title">
 You can see the <strong>Cited by N</strong> link just below each result.
 If something has been cited,
 click on that to follow citations.</p>
-<p>The reason <em>Google Scholar</em> returns so many more results is
+<p>The reason <em>Google Scholar</em> returns so many more results is 
 because it casts a bigger net than something like
 <em>Web of Science</em> does,
 which purposefully casts a smaller net.
 Because of that, I find <em>Google Scholar</em> can return
 many non-relevant works, but
-it makes it nice for browsing or discovery.
+it makes it nice for browsing or discovery. 
 <em>Web of Science</em> shines for more
 rigorous and methodical literature searches.</p>
 <p>The observant among you may have noticed that in Figure 5,
@@ -3012,13 +3064,13 @@ I've configured it to talk with UK's Infokat.
 This is something you have to set up, but
 it's pretty simple to do.
 Just click on settings,
-and then go to <strong>Library Links</strong>, and
+and then go to <strong>Library Links</strong>, and 
 then search for the University of Kentucky.
 Check the box next to it.
 Be sure that you're signed into Google
-if you want to save this as a preference.
+if you want to save this as a preference. 
 After that,
-you should see the <strong>View Now</strong> option when something is
+you should see the <strong>View Now</strong> option when something is 
 available via UK Libraries.</p>
 <figure>
 <img src="images/10-image-7.png"
@@ -3026,7 +3078,7 @@ alt="Google Scholar View Now Setup"
 title="Google Scholar View Now Setup">
 <figcaption>Fig. 7: <i>Google Scholar</i> View Now Setup</figcaption> 
 </figure>
-<a class="header" href="print.html#jstor-1" id="jstor-1"><h2>JSTOR</h2></a>
+<h2 id="jstor-1"><a class="header" href="#jstor-1">JSTOR</a></h2>
 <p><a href="https://libguides.uky.edu/266"><em>JSTOR</em></a> is multi-disciplinary database.
 Like other databases,
 you can limit results by <strong>Item Type</strong>, <strong>Language</strong>,
@@ -3047,7 +3099,7 @@ therefore, many journal articles.
 <em>JSTOR</em> has long focused on back issues of journals, but
 in recent years has made moves to include current literature and
 open access content (this is content that is freely available).
-The content in <em>JSTOR</em> is high quality, peer-reviewed work, which
+The content in <em>JSTOR</em> is high quality, peer-reviewed work, which 
 makes <em>JSTOR</em> a great place to gather documents on a topic
 that you want to research in-depth.
 My <strong>&quot;open source&quot; and google</strong> query for Images
@@ -3062,26 +3114,26 @@ title="JSTOR image search">
 which is separate from the <em>JSTOR</em> images search above.
 <em>ARTSTOR</em> is database of art and multimedia objects,
 much of which is also available as open access.</p>
-<p>Again, remember that if you have desktop Zotero
+<p>Again, remember that if you have desktop Zotero 
 plus the Zotero browser add-on installed,
 Zotero will automatically recognize when you have a
-web page open for a specific item in in <em>JSTOR</em>.
-Thus, you can use Zotero with <em>JSTOR</em>
+web page open for a specific item in in <em>JSTOR</em>. 
+Thus, you can use Zotero with <em>JSTOR</em> 
 to collect information on your Wikipedia topic.</p>
-<a class="header" href="print.html#conclusion-8" id="conclusion-8"><h2>Conclusion</h2></a>
+<h2 id="conclusion-8"><a class="header" href="#conclusion-8">Conclusion</a></h2>
 <p>That covers <em>Factiva</em>, <em>Web of Science</em>,
 <em>Google Scholar</em>, and <em>JSTOR</em>.
-Remember that <em>Factiva</em> is a general-interest news database;
+Remember that <em>Factiva</em> is a general-interest news database; 
 <em>WoS</em> and <em>Google Scholar</em> are both citation, scholarly databases; and
 <em>JSTOR</em> is a scholarly and image database.</p>
 <p>In the next section,
 we begin to cover web content.
 Although it might have been appropriate to include <em>Google Scholar</em>
 in the next section,
-I included it here because of its ability to link directly to
+I included it here because of its ability to link directly to 
 UK's Infokat.
 This won't be the case for resources I cover next.</p>
-<a class="header" href="print.html#web-sources-part-1" id="web-sources-part-1"><h1>Web Sources: Part 1</h1></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web-sources-part-1"><a class="header" href="#web-sources-part-1">Web Sources: Part 1</a></h1>
 <p>Many of us spend most of our time on the web
 visiting a handful of sites.
 These sites vary by country, but in the U.S.,
@@ -3102,9 +3154,9 @@ and it can be fun to add random ones to your searches:</p>
 <pre><code>asthma site:health
 (linux or windows or macos) site:computer
 </code></pre>
-<p>That said, in this and the next section I want to cover a
+<p>That said, in this and the next section I want to cover a 
 few specific sites that are great information resources.</p>
-<a class="header" href="print.html#internet-archive" id="internet-archive"><h2>Internet Archive</h2></a>
+<h2 id="internet-archive"><a class="header" href="#internet-archive">Internet Archive</a></h2>
 <p>The <a href="https://archive.org">Internet Archive</a> is a &quot;non-profit library
 of millions of free books, movies, software, music,
 websites, and more.&quot;</p>
@@ -3123,7 +3175,7 @@ was captured by the Wayback Machine in 1997:</p>
 <p>But the Wayback Machine is also useful to retrieve
 web pages and sites that have been shutdown or removed.
 That is, if you have a broken URL,
-you can enter the URL in the Wayback Machine and
+you can enter the URL in the Wayback Machine and 
 see if the original page was archived.</p>
 <p>The Internet Archive is also a library, and as such,
 offers collections on a vast range of topics and links
@@ -3136,7 +3188,7 @@ I've found, for instance, scanned yearbooks from my college.</p>
 <p>The Internet Archive also oversees <a href="https://openlibrary.org/">The Open Library</a>.
 You can use the Open Library to check out and read books for free,
 just like you would use a physical library.</p>
-<a class="header" href="print.html#dpla" id="dpla"><h2>DPLA</h2></a>
+<h2 id="dpla"><a class="header" href="#dpla">DPLA</a></h2>
 <p>The <a href="https://dp.la">DPLA</a> (Digital Public Library of America)
 is a shared repository of content
 that brings together digital and digitized sources
@@ -3154,7 +3206,7 @@ the DPLA offers:</p>
 <li>the ability to <a href="https://dp.la/browse-by-partner">browser by contributor</a></li>
 <li>and more.</li>
 </ul>
-<a class="header" href="print.html#library-of-congress" id="library-of-congress"><h2>Library of Congress</h2></a>
+<h2 id="library-of-congress"><a class="header" href="#library-of-congress">Library of Congress</a></h2>
 <p>The <a href="https://www.loc.gov/rr/program/bib/index.html">Library of Congress</a> provides a list of
 bibliographies, research guides, and finding aids
 on a vast range of topics.
@@ -3163,21 +3215,21 @@ digital libraries that focus on specific topics or areas.
 For example, check out this fun collection of resources
 on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
 <p>The Library of Congress also provides access to
-<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
+<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from 
 <strong>American History</strong>, <strong>War &amp; Military</strong>,
 <strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>,
 <strong>Science &amp; Technology</strong>, and more.</p>
-<a class="header" href="print.html#various-government-resources" id="various-government-resources"><h2>Various Government Resources</h2></a>
-<a class="header" href="print.html#us-census" id="us-census"><h3>U.S. Census</h3></a>
+<h2 id="various-government-resources"><a class="header" href="#various-government-resources">Various Government Resources</a></h2>
+<h3 id="us-census"><a class="header" href="#us-census">U.S. Census</a></h3>
 <p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best
-way to get various demographic and some economic
+way to get various demographic and some economic 
 information about the U.S.
 You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a>
 about your local area.
 You can, for example, also compare demographics by location.
 Here's a
 <a href="https://www.census.gov/quickfacts/fact/table/cincinnaticityohio,lexingtonfayetteurbancountykentucky,US/PST045221">population comparison between Lexington, KY and Cincinnati, OH</a>.</p>
-<a class="header" href="print.html#nasa" id="nasa"><h3>NASA</h3></a>
+<h3 id="nasa"><a class="header" href="#nasa">NASA</a></h3>
 <p><a href="https://www.nasa.gov/">NASA's</a> website offers tons of sources on all
 of its major projects.
 From its homepage,
@@ -3187,7 +3239,7 @@ The site also provides information on various missions,
 like the recent <a href="https://www.nasa.gov/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
 as well as exciting <a href="https://www.nasa.gov/multimedia/imagegallery/index.html">image</a> and
 <a href="https://www.nasa.gov/multimedia/videogallery/index.html">video</a> galleries.</p>
-<a class="header" href="print.html#us-bureau-of-labor-statistics" id="us-bureau-of-labor-statistics"><h3>U.S. Bureau of Labor Statistics</h3></a>
+<h3 id="us-bureau-of-labor-statistics"><a class="header" href="#us-bureau-of-labor-statistics">U.S. Bureau of Labor Statistics</a></h3>
 <p>The <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics (BLS)</a> is the
 go to site for job and economic information.
 The site takes some exploration to learn all that it offers,
@@ -3228,7 +3280,7 @@ at <a href="https://fayettepva.com/">https://fayettepva.com/</a>.
 You can check your local municipality's website for comparable information.
 In fact, many city and county websites make available lots of data.</p>
 </blockquote>
-<a class="header" href="print.html#edgar-us-securities-and-exchange-commission" id="edgar-us-securities-and-exchange-commission"><h3>EDGAR: U.S. Securities and Exchange Commission</h3></a>
+<h3 id="edgar-us-securities-and-exchange-commission"><a class="header" href="#edgar-us-securities-and-exchange-commission">EDGAR: U.S. Securities and Exchange Commission</a></h3>
 <p><a href="https://www.sec.gov/edgar.shtml">EDGAR</a> is a go to site if you're thinking about investing
 in a public company.
 Of particular interest are the <strong>10-K</strong> and <strong>10-Q</strong> reports.
@@ -3260,7 +3312,7 @@ you can see that, for example, more than 80% of Google's
 (or Alphabet, specifically) revenue is based on advertisements, and
 that changes in privacy policies and technologies that protect privacy
 is a concern for them.</p>
-<a class="header" href="print.html#medlineplus" id="medlineplus"><h2>MedlinePlus</h2></a>
+<h2 id="medlineplus"><a class="header" href="#medlineplus">MedlinePlus</a></h2>
 <p>Lastly, I would like to refer you to <a href="https://medlineplus.gov">MedlinePlus</a>,
 which is part of the National Library of Medicine.
 The purpose of this site is to serve as a health and medical reference
@@ -3272,10 +3324,10 @@ informed about various health topics.</p>
 I highly encourage you to visit MedlinePlus first.
 The site also covers wellness topics and provides recipes
 for a wide range of meals.</p>
-<a class="header" href="print.html#conclusion-9" id="conclusion-9"><h2>Conclusion</h2></a>
+<h2 id="conclusion-9"><a class="header" href="#conclusion-9">Conclusion</a></h2>
 <p>Although it's important to know how to search the web well,
 it's also handy to know about specific go to resources on the
-web that can provide more in-depth information or
+web that can provide more in-depth information or 
 that provide more coverage than most Google etc searches can yield.
 In order to highlight this, in this section I covered a few,
 I think, super interesting and helpful sites that include the:</p>
@@ -3293,9 +3345,9 @@ I think, super interesting and helpful sites that include the:</p>
 <p>Be sure to explore these sites, as well as others you find,
 because many of these just don't come up in your everyday
 kind of search.</p>
-<a class="header" href="print.html#web-sources-part-2" id="web-sources-part-2"><h1>Web Sources: Part 2</h1></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web-sources-part-2"><a class="header" href="#web-sources-part-2">Web Sources: Part 2</a></h1>
 <p>We continue this section by covering a variety of
-web resources that are invaluable but that don't
+web resources that are invaluable but that don't 
 necessarily show up in our everyday web searches.</p>
 <p>In particular, in this section, I'd like to cover
 a variety of open educational resources and digital libraries.
@@ -3307,10 +3359,10 @@ These sites may also help with various research projects, but
 they're also just enlightening and educational.</p>
 <p>Fortunately, the number and quality of
 open educational resources has been blossoming in recent years,
-and these sites offer free, online textbooks on
+and these sites offer free, online textbooks on 
 a vast range of subjects.</p>
-<a class="header" href="print.html#education" id="education"><h2>Education</h2></a>
-<a class="header" href="print.html#directory-of-open-access-books" id="directory-of-open-access-books"><h3>Directory of Open Access Books</h3></a>
+<h2 id="education"><a class="header" href="#education">Education</a></h2>
+<h3 id="directory-of-open-access-books"><a class="header" href="#directory-of-open-access-books">Directory of Open Access Books</a></h3>
 <p>The <a href="https://directory.doabooks.org/">Directory of Open Access Books (DOAB)</a> provides
 references to hundreds of free textbooks or scholarly works
 on a wide range of topics.
@@ -3319,7 +3371,7 @@ It's easy to browse by topic or subject, such as
 <a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Economics">economics</a>,
 <a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Earth+sciences">earth sciences</a>,
 <a href="https://directory.doabooks.org/browse?type=classification_text&amp;value=Technology%3A+general+issues">technology</a>, and more.</p>
-<a class="header" href="print.html#oer-commons" id="oer-commons"><h3>OER Commons</h3></a>
+<h3 id="oer-commons"><a class="header" href="#oer-commons">OER Commons</a></h3>
 <p><a href="https://www.oercommons.org">OER Commons</a> is probably a bigger resource
 for open educational content.
 It provides access to <a href="https://www.oercommons.org/oer">subject areas</a>
@@ -3327,13 +3379,13 @@ ranging from applied science to education to mathematics to social sciences.
 It goes beyond providing access to textbooks and also includes
 access to various materials types, such as
 case studies, games, data sets, lesson plans, and more.</p>
-<a class="header" href="print.html#university-of-kentucky-libraries" id="university-of-kentucky-libraries"><h3>University of Kentucky Libraries</h3></a>
+<h3 id="university-of-kentucky-libraries"><a class="header" href="#university-of-kentucky-libraries">University of Kentucky Libraries</a></h3>
 <p>UK Libraries provides more links to open educational resources
 and supports a program for UK faculty to create free, digital textbooks.
 You can find a lot of this material on <a href="https://uknowledge.uky.edu/">UKnowledge</a>,
 and there is an <a href="https://libguides.uky.edu/alternative_textbooks/find">OER Research Guide</a> that lists
 more links to a wide range of open educational content.</p>
-<a class="header" href="print.html#moocs" id="moocs"><h3>MOOCs</h3></a>
+<h3 id="moocs"><a class="header" href="#moocs">MOOCs</a></h3>
 <p>MOOC sites are massive online open course providers.
 Two major MOOCs are <a href="https://www.coursera.org/">Coursera</a> (via Stanford University)
 and <a href="https://www.edx.org/">edX</a> (via Harvard and MIT).
@@ -3343,11 +3395,11 @@ but you can also pay to earn certificates, if you want that.
 These courses are like online learning courses.
 They provide lectures and online activities to work through
 and to learn the material.</p>
-<a class="header" href="print.html#digital-libraries" id="digital-libraries"><h2>Digital Libraries</h2></a>
+<h2 id="digital-libraries"><a class="header" href="#digital-libraries">Digital Libraries</a></h2>
 <p>In addition to the open educational resources that are available,
 there are also some really interesting digital libraries that exist
 and are worth exploring.</p>
-<a class="header" href="print.html#the-national-science-digital-library" id="the-national-science-digital-library"><h3>The National Science Digital Library</h3></a>
+<h3 id="the-national-science-digital-library"><a class="header" href="#the-national-science-digital-library">The National Science Digital Library</a></h3>
 <p><a href="https://nsdl.oercommons.org/">The National Science Digital Library</a> is a digital library
 that provides educational resources on STEM
 (science, technology, engineering, and mathematics) topics and
@@ -3355,7 +3407,7 @@ for all educational levels.
 Topics include applied science, mathematics,
 statistics and probability, trigonometry, technology,
 chemistry, and much more.</p>
-<a class="header" href="print.html#civil-rights-digital-library" id="civil-rights-digital-library"><h3>Civil Rights Digital Library</h3></a>
+<h3 id="civil-rights-digital-library"><a class="header" href="#civil-rights-digital-library">Civil Rights Digital Library</a></h3>
 <p><a href="http://crdl.usg.edu/?Welcome&amp;Welcome">The Civil Rights Digital Library</a> is a digital library
 that provides resources on the Civil Rights Movement.
 The library can be browsed by events, places, people, topics, and more.
@@ -3363,7 +3415,7 @@ Due to the nature of the topic,
 some of the content can be disturbing or challenging,
 but if you are interested in civil rights,
 then this is an invaluable and necessary resource.</p>
-<a class="header" href="print.html#the-new-york-public-library-digital-collections" id="the-new-york-public-library-digital-collections"><h3>The New York Public Library Digital Collections</h3></a>
+<h3 id="the-new-york-public-library-digital-collections"><a class="header" href="#the-new-york-public-library-digital-collections">The New York Public Library Digital Collections</a></h3>
 <p>The New York Public Library (NYPL) is one of the
 biggest public libraries in the U.S.
 with more than 25 million items in its collections.
@@ -3373,13 +3425,13 @@ collection accessible to the wider public.
 The digital collections provide access to
 &quot;prints, photographs, maps, manuscripts, streaming video, and more.&quot;
 Visitors can browse by collection or search the site.</p>
-<a class="header" href="print.html#europeana" id="europeana"><h3>europeana</h3></a>
+<h3 id="europeana"><a class="header" href="#europeana">europeana</a></h3>
 <p><a href="https://www.europeana.eu/en">europeana</a> is a digital library that acts
 as a central repository for libraries, museums, and archives
 across the European Union.
 In that way, it's very much a European version of the <a href="https://dp.la">DPLA</a>,
 which we covered in the prior section.</p>
-<a class="header" href="print.html#hathitrust" id="hathitrust"><h3>HathiTrust</h3></a>
+<h3 id="hathitrust"><a class="header" href="#hathitrust">HathiTrust</a></h3>
 <p><a href="https://libguides.uky.edu/3051">HathiTrust</a> provides access to books and other items
 scanned from major U.S. research libraries, Google, and the Internet Archive.
 There is a big focus on public domain works,
@@ -3389,13 +3441,13 @@ on web resources,
 UK Libraries is a partner institution,
 which means you can login to HathiTrust and check out works
 that are still under copyright.</p>
-<a class="header" href="print.html#project-gutenberg" id="project-gutenberg"><h3>Project Gutenberg</h3></a>
+<h3 id="project-gutenberg"><a class="header" href="#project-gutenberg">Project Gutenberg</a></h3>
 <p><a href="http://gutenberg.org/">Project Gutenberg</a> is the oldest online ebook
 collection on the web,
 and even predates the web by 20 years.
 All ebooks one Project Gutenberg are free,
 and can be read on your computer or ebook reader.</p>
-<a class="header" href="print.html#conclusion-10" id="conclusion-10"><h2>Conclusion</h2></a>
+<h2 id="conclusion-10"><a class="header" href="#conclusion-10">Conclusion</a></h2>
 <p>In this section, I largely covered educational resources
 and digital libraries.
 These kinds of sites don't generally pop up in our
@@ -3410,8 +3462,8 @@ know the good sites to go to.
 I've only covered a handful of them in this and
 the prior lecture,
 so keep exploring the real stuff.</p>
-<a class="header" href="print.html#reference-managers-finishing-up" id="reference-managers-finishing-up"><h1>Reference Managers: Finishing Up</h1></a>
-<a class="header" href="print.html#readings-8" id="readings-8"><h2>Readings</h2></a>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="reference-managers-finishing-up"><a class="header" href="#reference-managers-finishing-up">Reference Managers: Finishing Up</a></h1>
+<h2 id="readings-8"><a class="header" href="#readings-8">Readings</a></h2>
 <ul>
 <li>Notes [Zotero Documentation]. (2017). Retrieved August 3, 2022, from <a href="https://www.zotero.org/support/notes">Notes -
 Zotero</a></li>
@@ -3423,7 +3475,7 @@ Zotero</a></li>
 3, 2022, from <a href="https://www.zotero.org/support/word_processor_integration">Word Processors - Zotero</a></li>
 <li>Styles [Zotero Documentation]. (2017). Retrieved August 3, 2022, from <a href="https://www.zotero.org/support/styles">Styles Zotero</a></li>
 </ul>
-<a class="header" href="print.html#introduction-7" id="introduction-7"><h2>Introduction</h2></a>
+<h2 id="introduction-7"><a class="header" href="#introduction-7">Introduction</a></h2>
 <p>At this point you should have built up a decent collection
 of information sources in your Zotero library for your Wikipedia project.
 You may have even been using it for your other courses, too, and
@@ -3456,7 +3508,7 @@ You can highlight and add notes to PDF copies in Zotero.</p>
 <p>In the section below,
 I will discuss ways to export your work to a
 word processor program and how to edit your Wikipedia article.</p>
-<a class="header" href="print.html#integrating-with-word-processors" id="integrating-with-word-processors"><h2>Integrating with Word Processors</h2></a>
+<h2 id="integrating-with-word-processors"><a class="header" href="#integrating-with-word-processors">Integrating with Word Processors</a></h2>
 <p>Although our main project this semester is
 to edit a Wikipedia article,
 in most cases you will want to work on papers
@@ -3469,10 +3521,10 @@ then reach out to your instructor,
 or search the web,
 for guidance on using
 these with those Google Docs or LibreOffice Writer,
-if you use those, too.</p>
+if you use those, too. </p>
 <p>Using Zotero with Word, Docs, or Writer is straightforward.
 The necessary plugins are already installed when you installed
-Zotero Desktop, and
+Zotero Desktop, and 
 <a href="https://www.zotero.org/support/word_processor_integration">additional instructions are available, too</a>.</p>
 <p>You'll want to use Zotero as you write papers, etc.
 to insert in-text citations and bibliographies.
@@ -3510,9 +3562,9 @@ This will come in handy when you edit your Wikipedia article.</p>
 and then click on the drop down menu
 under the <strong>OperURL</strong> section, and
 scroll down until you find <strong>University of Kentucky</strong>.
-This will enable Zotero to retrieve full text
+This will enable Zotero to retrieve full text 
 items through InfoKat.</p>
-<a class="header" href="print.html#using-zotero-and-a-word-processor" id="using-zotero-and-a-word-processor"><h2>Using Zotero and a Word Processor</h2></a>
+<h2 id="using-zotero-and-a-word-processor"><a class="header" href="#using-zotero-and-a-word-processor">Using Zotero and a Word Processor</a></h2>
 <p>Once you've set up some basic preferences,
 you can start writing in your preferred word processor.</p>
 <p>Zotero will add a new tab in Microsof Word,
@@ -3520,7 +3572,7 @@ or new toolbar items if you're using Google Docs or LibreOffice Word.
 You can use these new functions to add in-text citations,
 to extract and insert Zotero notes for items, and
 a bibliography.</p>
-<a class="header" href="print.html#conclusion-11" id="conclusion-11"><h2>Conclusion</h2></a>
+<h2 id="conclusion-11"><a class="header" href="#conclusion-11">Conclusion</a></h2>
 <p>In this section,
 I covered the basics of integrating Zotero
 with your word processor.
@@ -3528,16 +3580,16 @@ Although the basics are pretty straightforward,
 given the variety of options you have available to you,
 you may need to refer to the Zotero documentation for
 additional help.
-you'll need to read through</p>
-<a class="header" href="print.html#wikipedia-project-completion" id="wikipedia-project-completion"><h1>Wikipedia Project: Completion</h1></a>
-<a class="header" href="print.html#readings-9" id="readings-9"><h2>Readings</h2></a>
+you'll need to read through </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wikipedia-project-completion"><a class="header" href="#wikipedia-project-completion">Wikipedia Project: Completion</a></h1>
+<h2 id="readings-9"><a class="header" href="#readings-9">Readings</a></h2>
 <ul>
 <li>Help:Introduction to referencing with Wiki Markup/1—Wikipedia. (n.d.).
 Retrieved August 4, 2022, from <a href="https://en.wikipedia.org/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1">Verifiability</a></li>
 <li>Help:Introduction to referencing with Wiki Markup/4. (2021). <a href="https://en.wikipedia.org/w/index.php?title=Help:Introduction_to_referencing_with_Wiki_Markup/4">Reliable Sources</a></li>
 <li>Wikipedia:References dos and don’ts. (2020). <a href="https://en.wikipedia.org/w/index.php?title=Wikipedia:References_dos_and_don%27ts">Do's and Don'ts</a></li>
 </ul>
-<a class="header" href="print.html#introduction-8" id="introduction-8"><h2>Introduction</h2></a>
+<h2 id="introduction-8"><a class="header" href="#introduction-8">Introduction</a></h2>
 <p>In the
 <a href="8-project-setup-wikipedia-part-1.html">Wikipedia Project: Setup</a>
 you read about editing Wikipedia articles and
@@ -3559,7 +3611,7 @@ the article so that it is no longer counted as a stub article.</p>
 when making your edits.
 If you are not signed in,
 you will not be able to earn credit for this assignment.</p>
-<a class="header" href="print.html#to-edit" id="to-edit"><h2>To Edit</h2></a>
+<h2 id="to-edit"><a class="header" href="#to-edit">To Edit</a></h2>
 <ul>
 <li>Log into Wikipedia and make sure you are logged in when you make all edits to
 Wikipedia.</li>
@@ -3568,15 +3620,13 @@ Wikipedia assignment. Add your text (you're writing the article) and add your
 references. You must integrate all four sources and add text that makes sense
 of those sources.</li>
 </ul>
-<p>GNU Free Documentation License</p>
+<div style="break-before: page; page-break-before: always;"></div><p>GNU Free Documentation License</p>
 <p>Version 1.3, 3 November 2008</p>
 <p>Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
 <a href="https://fsf.org/">https://fsf.org/</a></p>
 <p>Everyone is permitted to copy and distribute verbatim copies of this license
-document, but changing it is not allowed.</p>
-<ol start="0">
-<li>PREAMBLE</li>
-</ol>
+document, but changing it is not allowed.
+0. PREAMBLE</p>
 <p>The purpose of this License is to make a manual, textbook, or other functional
 and useful document &quot;free&quot; in the sense of freedom: to assure everyone the
 effective freedom to copy and redistribute it, with or without modifying it,
@@ -3926,49 +3976,35 @@ releasing these examples in parallel under your choice of free software
 license, such as the GNU General Public License, to permit their use in free
 software.</p>
 
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
                 </div>
-
-                <!-- Mobile navigation buttons -->
-                
-
-                
-
             </div>
 
-            
-
-            
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
 
         </div>
 
-
-        <!-- Local fallback for Font Awesome -->
-        <script>
-            if ($(".fa").css("font-family") !== "FontAwesome") {
-                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
-            }
+        <script type="text/javascript">
+            window.playground_copyable = true;
         </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        
-
-        
-
-        
-
-        
-        <script>
-            $(document).ready(function() {
-                window.print();
-            })
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
         </script>
-        
-
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
-
-        <!-- Custom JS script -->
-        
-
     </body>
 </html>

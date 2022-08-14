@@ -1,92 +1,143 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
+        <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Web Sources: Part 1 - Personal Knowledge Management Handbook</title>
+        <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
 
-        <base href="">
-
-        <link rel="stylesheet" href="book.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
-
+        <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
-        <!-- Custom theme -->
-        
-
-        
-
-        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
-        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
-        <script>
-            if (typeof Clipboard == 'undefined') {
-                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
-            }
-        </script>
-
-        <!-- Fetch JQuery from CDN but have a local fallback -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script>
-            if (typeof jQuery == 'undefined') {
-                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
-            }
-        </script>
-
-        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
-        <script src="store.js"></script>
-
+        <!-- Custom theme stylesheets -->
     </head>
-    <body class="light">
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script type="text/javascript">
-            var theme = store.get('mdbook-theme');
-            if (theme === null || theme === undefined) { theme = 'light'; }
-            $('body').removeClass().addClass(theme);
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script type="text/javascript">
-            var sidebar = store.get('mdbook-sidebar');
-            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
-            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
-        <div id="sidebar" class="sidebar">
-            <ul class="chapter"><li><a href="p1-pkm.html"><strong>1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><a href="0-intro-to-pkm.html"><strong>2.</strong> Introduction to PKM</a></li><li><a href="1-email-management.html"><strong>3.</strong> Email Management</a></li><li><a href="2-backup.html"><strong>4.</strong> Back Up Your Work</a></li><li><a href="3-information-sources-resources.html"><strong>5.</strong> Information Sources and Resources</a></li><li><a href="4-reference-managers-getting-started.html"><strong>6.</strong> Reference Managers: Getting Started</a></li><li><a href="5-web-information-retrieval.html"><strong>7.</strong> Web Information Retrieval</a></li><li><a href="6-database-information-retrieval.html"><strong>8.</strong> Database Information Retrieval</a></li><li><a href="7-evaluating-information-sources.html"><strong>9.</strong> Evaluating Information Sources</a></li><li><a href="8-project-setup-wikipedia-part-1.html"><strong>10.</strong> Wikipedia Project: Setup</a></li><li><a href="9-library-sources-part-1.html"><strong>11.</strong> Library Sources: Part 1</a></li><li><a href="10-library-sources-part-2.html"><strong>12.</strong> Library Sources: Part 2</a></li><li><a href="11-web-sources-part-1.html" class="active"><strong>13.</strong> Web Sources: Part 1</a></li><li><a href="12-web-sources-part-2.html"><strong>14.</strong> Web Sources: Part 2</a></li><li><a href="13-reference-managers-finishing-up.html"><strong>15.</strong> Reference Managers: Finishing Up</a></li><li><a href="14-project-close-wikipedia-part-2.html"><strong>16.</strong> Wikipedia Project: Completion</a></li><li><a href="gnu-free-documentation-license.html"><strong>17.</strong> GNU Free Documentation License</a></li></ul>
-        </div>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li class="chapter-item expanded "><a href="0-intro-to-pkm.html"><strong aria-hidden="true">2.</strong> Introduction to PKM</a></li><li class="chapter-item expanded "><a href="1-email-management.html"><strong aria-hidden="true">3.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2-backup.html"><strong aria-hidden="true">4.</strong> Back Up Your Work</a></li><li class="chapter-item expanded "><a href="3-information-sources-resources.html"><strong aria-hidden="true">5.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="4-reference-managers-getting-started.html"><strong aria-hidden="true">6.</strong> Reference Managers: Getting Started</a></li><li class="chapter-item expanded "><a href="5-web-information-retrieval.html"><strong aria-hidden="true">7.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="6-database-information-retrieval.html"><strong aria-hidden="true">8.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="7-evaluating-information-sources.html"><strong aria-hidden="true">9.</strong> Evaluating Information Sources</a></li><li class="chapter-item expanded "><a href="8-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">10.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="9-library-sources-part-1.html"><strong aria-hidden="true">11.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="10-library-sources-part-2.html"><strong aria-hidden="true">12.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="11-web-sources-part-1.html" class="active"><strong aria-hidden="true">13.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="12-web-sources-part-2.html"><strong aria-hidden="true">14.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="13-reference-managers-finishing-up.html"><strong aria-hidden="true">15.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="14-project-close-wikipedia-part-2.html"><strong aria-hidden="true">16.</strong> Wikipedia Project: Completion</a></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">17.</strong> GNU Free Documentation License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
-            <div class="page" tabindex="-1">
-                
-                <div id="menu-bar" class="menu-bar">
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
-                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
-                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
 
                     <h1 class="menu-title">Personal Knowledge Management Handbook</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html">
-                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/cseanburns/personal_knowledge_mgmt" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                     </div>
                 </div>
 
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
                 <div id="content" class="content">
-                    <a class="header" href="11-web-sources-part-1.html#web-sources-part-1" id="web-sources-part-1"><h1>Web Sources: Part 1</h1></a>
+                    <main>
+                        <h1 id="web-sources-part-1"><a class="header" href="#web-sources-part-1">Web Sources: Part 1</a></h1>
 <p>Many of us spend most of our time on the web
 visiting a handful of sites.
 These sites vary by country, but in the U.S.,
@@ -107,9 +158,9 @@ and it can be fun to add random ones to your searches:</p>
 <pre><code>asthma site:health
 (linux or windows or macos) site:computer
 </code></pre>
-<p>That said, in this and the next section I want to cover a
+<p>That said, in this and the next section I want to cover a 
 few specific sites that are great information resources.</p>
-<a class="header" href="11-web-sources-part-1.html#internet-archive" id="internet-archive"><h2>Internet Archive</h2></a>
+<h2 id="internet-archive"><a class="header" href="#internet-archive">Internet Archive</a></h2>
 <p>The <a href="https://archive.org">Internet Archive</a> is a &quot;non-profit library
 of millions of free books, movies, software, music,
 websites, and more.&quot;</p>
@@ -128,7 +179,7 @@ was captured by the Wayback Machine in 1997:</p>
 <p>But the Wayback Machine is also useful to retrieve
 web pages and sites that have been shutdown or removed.
 That is, if you have a broken URL,
-you can enter the URL in the Wayback Machine and
+you can enter the URL in the Wayback Machine and 
 see if the original page was archived.</p>
 <p>The Internet Archive is also a library, and as such,
 offers collections on a vast range of topics and links
@@ -141,7 +192,7 @@ I've found, for instance, scanned yearbooks from my college.</p>
 <p>The Internet Archive also oversees <a href="https://openlibrary.org/">The Open Library</a>.
 You can use the Open Library to check out and read books for free,
 just like you would use a physical library.</p>
-<a class="header" href="11-web-sources-part-1.html#dpla" id="dpla"><h2>DPLA</h2></a>
+<h2 id="dpla"><a class="header" href="#dpla">DPLA</a></h2>
 <p>The <a href="https://dp.la">DPLA</a> (Digital Public Library of America)
 is a shared repository of content
 that brings together digital and digitized sources
@@ -159,7 +210,7 @@ the DPLA offers:</p>
 <li>the ability to <a href="https://dp.la/browse-by-partner">browser by contributor</a></li>
 <li>and more.</li>
 </ul>
-<a class="header" href="11-web-sources-part-1.html#library-of-congress" id="library-of-congress"><h2>Library of Congress</h2></a>
+<h2 id="library-of-congress"><a class="header" href="#library-of-congress">Library of Congress</a></h2>
 <p>The <a href="https://www.loc.gov/rr/program/bib/index.html">Library of Congress</a> provides a list of
 bibliographies, research guides, and finding aids
 on a vast range of topics.
@@ -168,21 +219,21 @@ digital libraries that focus on specific topics or areas.
 For example, check out this fun collection of resources
 on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
 <p>The Library of Congress also provides access to
-<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
+<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from 
 <strong>American History</strong>, <strong>War &amp; Military</strong>,
 <strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>,
 <strong>Science &amp; Technology</strong>, and more.</p>
-<a class="header" href="11-web-sources-part-1.html#various-government-resources" id="various-government-resources"><h2>Various Government Resources</h2></a>
-<a class="header" href="11-web-sources-part-1.html#us-census" id="us-census"><h3>U.S. Census</h3></a>
+<h2 id="various-government-resources"><a class="header" href="#various-government-resources">Various Government Resources</a></h2>
+<h3 id="us-census"><a class="header" href="#us-census">U.S. Census</a></h3>
 <p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best
-way to get various demographic and some economic
+way to get various demographic and some economic 
 information about the U.S.
 You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a>
 about your local area.
 You can, for example, also compare demographics by location.
 Here's a
 <a href="https://www.census.gov/quickfacts/fact/table/cincinnaticityohio,lexingtonfayetteurbancountykentucky,US/PST045221">population comparison between Lexington, KY and Cincinnati, OH</a>.</p>
-<a class="header" href="11-web-sources-part-1.html#nasa" id="nasa"><h3>NASA</h3></a>
+<h3 id="nasa"><a class="header" href="#nasa">NASA</a></h3>
 <p><a href="https://www.nasa.gov/">NASA's</a> website offers tons of sources on all
 of its major projects.
 From its homepage,
@@ -192,7 +243,7 @@ The site also provides information on various missions,
 like the recent <a href="https://www.nasa.gov/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
 as well as exciting <a href="https://www.nasa.gov/multimedia/imagegallery/index.html">image</a> and
 <a href="https://www.nasa.gov/multimedia/videogallery/index.html">video</a> galleries.</p>
-<a class="header" href="11-web-sources-part-1.html#us-bureau-of-labor-statistics" id="us-bureau-of-labor-statistics"><h3>U.S. Bureau of Labor Statistics</h3></a>
+<h3 id="us-bureau-of-labor-statistics"><a class="header" href="#us-bureau-of-labor-statistics">U.S. Bureau of Labor Statistics</a></h3>
 <p>The <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics (BLS)</a> is the
 go to site for job and economic information.
 The site takes some exploration to learn all that it offers,
@@ -233,7 +284,7 @@ at <a href="https://fayettepva.com/">https://fayettepva.com/</a>.
 You can check your local municipality's website for comparable information.
 In fact, many city and county websites make available lots of data.</p>
 </blockquote>
-<a class="header" href="11-web-sources-part-1.html#edgar-us-securities-and-exchange-commission" id="edgar-us-securities-and-exchange-commission"><h3>EDGAR: U.S. Securities and Exchange Commission</h3></a>
+<h3 id="edgar-us-securities-and-exchange-commission"><a class="header" href="#edgar-us-securities-and-exchange-commission">EDGAR: U.S. Securities and Exchange Commission</a></h3>
 <p><a href="https://www.sec.gov/edgar.shtml">EDGAR</a> is a go to site if you're thinking about investing
 in a public company.
 Of particular interest are the <strong>10-K</strong> and <strong>10-Q</strong> reports.
@@ -265,7 +316,7 @@ you can see that, for example, more than 80% of Google's
 (or Alphabet, specifically) revenue is based on advertisements, and
 that changes in privacy policies and technologies that protect privacy
 is a concern for them.</p>
-<a class="header" href="11-web-sources-part-1.html#medlineplus" id="medlineplus"><h2>MedlinePlus</h2></a>
+<h2 id="medlineplus"><a class="header" href="#medlineplus">MedlinePlus</a></h2>
 <p>Lastly, I would like to refer you to <a href="https://medlineplus.gov">MedlinePlus</a>,
 which is part of the National Library of Medicine.
 The purpose of this site is to serve as a health and medical reference
@@ -277,10 +328,10 @@ informed about various health topics.</p>
 I highly encourage you to visit MedlinePlus first.
 The site also covers wellness topics and provides recipes
 for a wide range of meals.</p>
-<a class="header" href="11-web-sources-part-1.html#conclusion" id="conclusion"><h2>Conclusion</h2></a>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>Although it's important to know how to search the web well,
 it's also handy to know about specific go to resources on the
-web that can provide more in-depth information or
+web that can provide more in-depth information or 
 that provide more coverage than most Google etc searches can yield.
 In order to highlight this, in this section I covered a few,
 I think, super interesting and helpful sites that include the:</p>
@@ -299,59 +350,42 @@ I think, super interesting and helpful sites that include the:</p>
 because many of these just don't come up in your everyday
 kind of search.</p>
 
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="10-library-sources-part-2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="12-web-sources-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
                 </div>
-
-                <!-- Mobile navigation buttons -->
-                
-                    <a rel="prev" href="10-library-sources-part-2.html" class="mobile-nav-chapters previous" title="Previous chapter">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                
-
-                
-                    <a rel="next" href="12-web-sources-part-2.html" class="mobile-nav-chapters next" title="Next chapter">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                
-
             </div>
 
-            
-                <a href="10-library-sources-part-2.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-            
-
-            
-                <a href="12-web-sources-part-2.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="10-library-sources-part-2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="12-web-sources-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
 
         </div>
 
-
-        <!-- Local fallback for Font Awesome -->
-        <script>
-            if ($(".fa").css("font-family") !== "FontAwesome") {
-                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
-            }
+        <script type="text/javascript">
+            window.playground_copyable = true;
         </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        
-
-        
-
-        
-
-        
-
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
-
-        <!-- Custom JS script -->
-        
-
+        <!-- Custom JS scripts -->
     </body>
 </html>
