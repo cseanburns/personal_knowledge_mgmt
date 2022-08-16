@@ -169,35 +169,23 @@ but they can also provide full text access to online content in other databases.
 > Please visit the link and test your own searches.
 
 In the center of UK Libraries' homepage,
-we find two tabs of interest:
-the **Search** tab and the **Library Catalog** tab.
-If we enter a search term in the search box
-for either of those resources,
-our search will take us to the same interface.
-That's because there's really only a small difference between
-how the functions **Search** and **Library Catalog** work.
-The **Search** function will return results,
-based on a search query,
-for print items located on the library's shelves
-but also for online items located in various other databases.
-The **Library Catalog** will do the same, but
-it'll place a bit more emphasis on locating print
-items on the library's shelves.
-Searching one or the other is simply a matter of emphasis.
+we find several links of interest:
+the **InfoKat (Books and More)** link,
+the **Database** link, and
+the **Journals** link.
 
-Regardless, both services return what are called
-**bibliographic records** and not full text access.
-These bibliographic records do not provide the actual content.
-Rather, they provide access by telling us where to locate the content.
+InfoKat searches  **bibliographic records**.
+It does not provide full text access.
+Instead, they provide access by telling us where to locate the content.
 For example, if that content is a print item
 someplace on the library's shelves,
-the catalog might tell us it's located on the
+InfoKat might tell us it's located on the
 5th floor of WT Young and has the call number **Z674.82.159 S42 1996**,
 or something like that.
 However, if that content is online,
-then the catalog should give us a direct link to it.
-It could also be that the UK Libraries
-catalog has records for information sources but
+then InfoKat should give us a direct link to it.
+It could also be that the InfoKat
+has records for information sources but
 not the actual sources themselves.
 In those cases, the bibliographic records should provide
 a link to request the item through interlibrary loan (ILL).
@@ -218,16 +206,15 @@ we're left to our own devices to find access to that information.
 
 ### Periodical Indexes and Abstracting Services
 
-The library catalogs and discovery services that
-I described above return a wide variety of bibliographic records
+InfoKat returns a wide variety of bibliographic records
 that describe and provide access to
 books, ebooks, book chapters, maps,
 scholarly articles, news articles, images, and more.
-While the discovery service part of the search
-that we explored above functions as a kind of catchall
+InfoKat is therefore great as a discovery service
+because it functions as a kind of catchall
 for all the types of works that a library can provide access to,
-as just listed,
-there will be times when we will want to focus our search
+as just listed.
+However, there will be times when we will want to focus our search
 to a more limited subset of records,
 such as those that produced by periodicals.
 
@@ -256,8 +243,8 @@ have different criteria for making judgments on quality.
 
 There are two broad ways to locate sources in periodicals.
 At the UK Libraries [homepage][uklibraries],
-we can select the **Journals** tab or the **Databases** tab.
-The **Journals** tab lets us search for specific journal titles and,
+we can select the **Journals** link or the **Databases** link.
+The **Journals** link lets us search for specific journal titles and,
 if desired, within disciplinary/subject categories
 (e.g., Health & Biological Sciences, Law,
 Politics & Government, Language & Literature, or Social Sciences,
@@ -266,7 +253,7 @@ Once we locate a journal of interest,
 we can visit the link and then search within that journal or
 peruse the table of contents for specific issues.
 
-The **Databases** tab lets us expand our search of records to broader
+The **Databases** link lets us expand our search of records to broader
 categories or subject areas of periodicals.
 Here we find databases like
 [*Academic Search Complete*][asc],
@@ -304,9 +291,9 @@ this is helpful in locating information sources.
 
 ### Full-text Resources
 
-Periodical indexes and abstracting services
-do not necessarily provide direct full text access.
-You might wonder what the point is if
+Since periodical indexes and abstracting services
+do not necessarily provide direct full text access,
+you might wonder what the point is if
 you can't get the full text of some source
 that the library tells you exists.
 The point is that even if the library doesn't
@@ -445,8 +432,8 @@ we often aim to acquire.
 They are generally things like articles, newspaper articles,
 books, book chapters, maps that some things,
 unfortunately, refer to as resource types.
-An **information resource** is the kind of thing
-that provides access to information sources.
+An **information resource** is a tool
+that provides or supplies access to information sources.
 In this section, some examples of information resources
 are the library discovery service, a search engine,
 and a database like *JSTOR*, *ASC*, or *ProQuest*.
