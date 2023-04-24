@@ -1,7 +1,10 @@
 # Personal Knowledge Management Handbook
 
 This repository serves as a handbook on personal knowledge
-management. The book is at:
+management. It was last updated during the summer of 2022
+and will next be updated during the summer of 2023.
+
+The book is at:
 
 https://cseanburns.github.io/personal_knowledge_mgmt
 
