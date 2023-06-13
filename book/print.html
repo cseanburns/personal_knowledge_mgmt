@@ -9,7 +9,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -34,6 +33,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -71,10 +71,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -100,7 +102,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -219,7 +221,7 @@ Well, I'd hazard a guess that most of us depend
 largely on two main sources to search for, locate, and retrieve information,
 either on a daily basis or for more extensive work.
 These two sources are the people we know and the search engines,
-like Google, that we use on a daily basis.
+like Google or Bing, that we use on a daily basis.
 Relying on these two kinds of sources may get us by for most things,
 but there are times when we will require more rigorous sources
 because the task at hand stipulates better information or
@@ -245,11 +247,13 @@ What I mean is that,
 it may be great that we know that
 <a href="https://libraries.uky.edu/">UK Libraries</a>
 exists and that we can use it to locate good information, but
-if we don't ever use the library or other great resources
+if we don't use the library or other great resources
 because we're not in the habit of doing so,
-then what's the point?</p>
+then what's the point of all this good information and
+all these information technologies that we have to become informed,
+do good things, and to make our lives better and easier?</p>
 <p>Personally, I want to live in a <strong>good information age</strong> 
-rather than merely the <strong>information age</strong>.
+rather than merely an <strong>information age</strong>.
 Therefore, our second learning goal is focused
 on the tools and technologies that will help us
 build personalized information and knowledge work flows.
@@ -315,6 +319,71 @@ the work flow model that frames this book,
 I discuss them because they are
 basic personal knowledge management skills, and
 it's good to not overlook the basics.</p>
+<h2 id="chatgpt-bard-and-other-ai-tools"><a class="header" href="#chatgpt-bard-and-other-ai-tools">ChatGPT, Bard, and other AI Tools</a></h2>
+<p>I finished writing this book during the summer of 2022,
+just a few months before the public release of ChatGPT and
+later Google's Bard.
+<a href="https://chat.openai.com/">ChatGPT</a>, <a href="https://bard.google.com/">Bard</a>, and other AI chatbots
+are designed to have human-like conversations with users.
+They are super useful, interesting, and even quite fun.
+They can produce papers, code, and much more for your classes
+as well help you (and me!) understand more about a variety
+of topics and issues.
+To make my point,
+I asked ChatGPT and Bard about what they do.
+Here is what ChatGPT told me:</p>
+<blockquote>
+<p>I am ChatGPT, an AI language model developed by OpenAI. I am designed to
+understand and generate human-like text based on the inputs I receive. I have
+been trained on a wide variety of data sources, including books, articles,
+websites, and other written content, allowing me to provide information and
+engage in conversations on a wide range of topics. My purpose is to assist
+users like you in finding answers, offering explanations, generating creative
+content, and engaging in meaningful discussions. However, it's important to
+note that while I strive to provide accurate and helpful information, I may
+not always be perfect, and there are limitations to my knowledge and
+understanding.</p>
+</blockquote>
+<p>And here is what Bard told me:</p>
+<blockquote>
+<p>I would describe myself as a large language model, also known as a
+conversational AI or chatbot trained to be informative and comprehensive. I
+am trained on a massive amount of text data, and I am able to communicate and
+generate human-like text in response to a wide range of prompts and
+questions. For example, I can provide summaries of factual topics or create
+stories.</p>
+<p>Here are some of the things I can do:</p>
+<ul>
+<li>I can answer your questions in a comprehensive and informative way, even if
+they are open ended, challenging, or strange.</li>
+<li>I can generate different creative text formats,  like poems, code, scripts,
+musical pieces, email, letters, etc. I will try my best to fulfill all your
+requirements.</li>
+<li>I can translate languages.</li>
+<li>I can write different kinds of creative content.</li>
+<li>I can help you with your tasks, like setting reminders, making lists, and
+playing music.</li>
+<li>I can control your smart home devices.</li>
+<li>I can help you stay organized and on track.</li>
+<li>I can be your friend and companion.</li>
+</ul>
+<p>I am still under development, but I am learning new things every day. I am
+excited to see what the future holds for me, and I hope to be able to help
+you in many ways.</p>
+</blockquote>
+<p>In my experience,
+I have thoroughly enjoyed using these services these past few months.
+I will also admit that they have made my life a lot easier.
+That said, I've also learned that there's a difference between
+using them and using them well,
+just like there's a difference between entering basic search
+queries into Google search and
+using advanced search queries.
+Therefore, as much as possible,
+I'll try to incorporate examples from ChatGPT and Bard
+throughout this course,
+to show how they can help manage our personal information and knowledge,
+and also discuss how to use them responsibly and ethically.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="email-management"><a class="header" href="#email-management">Email Management</a></h1>
 <h2 id="readings"><a class="header" href="#readings">Readings</a></h2>
 <ul>
@@ -3995,13 +4064,13 @@ software.</p>
         </script>
 
 
-        <script src="elasticlunr.min.js" charset="utf-8"></script>
-        <script src="mark.min.js" charset="utf-8"></script>
-        <script src="searcher.js" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" charset="utf-8"></script>
-        <script src="highlight.js" charset="utf-8"></script>
-        <script src="book.js" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
@@ -4011,5 +4080,6 @@ software.</p>
         });
         </script>
 
+    </div>
     </body>
 </html>
