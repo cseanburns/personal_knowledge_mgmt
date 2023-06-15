@@ -101,7 +101,7 @@ This has some implications:
   do I mean the bark on a tree or the word we use to signal the sound a dog
   makes?
 - Phrases are also important, with respect to **term adjacency** and **term
-  order**. If I search using a phrase where the term **forest** preceds the
+  order**. If I search using a phrase where the term **forest** precedes the
   term **fire**, search engines are more likely to return results where those
   two terms appear next to each other and in that order. This will mean that
   documents that contain text about someone having a **camp fire in a forest**
@@ -307,7 +307,7 @@ camisa roja
 
 Thus, a Spanish speaker
 would want to search for ``camisa roja`` and not
-``roja comisa``.
+``roja camisa``.
 This of course is regardless of the country of origin,
 but note that Google has separate landing pages for
 Google.com depending on the country you're located in. 
@@ -322,7 +322,7 @@ or reflect natural language,
 we can pair some terms together as lists,
 without any impact on meaning or natural language.
 How we pair them might change the results retrieved, though,
-which becomes noticable as we scan the search results lists.
+which becomes noticeable as we scan the search results lists.
 For example, consider the following two searches:
 
 ```
@@ -401,7 +401,7 @@ and apply those principals when constructing your queries.
   - consider the text
 - no document is an island
   - consider the document with respect to the corpus 
-- the web is organizated
+- the web is organized
   - take advantage of the how the web is structured with *site* searches
 
 Remember and practice the techniques I discussed here:

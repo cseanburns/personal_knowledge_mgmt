@@ -297,7 +297,7 @@ and how the information is contextualized.
 Once we see the story,
 we have four methods to investigate a piece of information's credibility.
 We can read **laterally**.
-That is, we can read multiple articles on a the topic and compare them.
+That is, we can read multiple articles on a topic and compare them.
 Then we can test each stories':
 
 - argumentative or structural coherence

@@ -43,7 +43,7 @@ i.e., bibliographic records.
 They may also index full text documents if those
 documents are accessible to the database, but
 the focus is on those bibliographic records.
-You can see examples of bibliogrpahic records
+You can see examples of bibliographic records
 [at the Library of Congress][bibRecordsLOC].
 If only bibliographic records are indexed,
 the database is usually called an
@@ -69,7 +69,7 @@ All the metadata about a specific item
 is a **record**.
 In a database, this metadata is controlled,
 and therefore, well structured 
-(see the Libary of Congress link above).
+(see the Library of Congress link above).
 As searchers, this basically means
 that there are pre-set fields that 
 we can search in these databases and that
@@ -101,7 +101,7 @@ I showed how we can search the web
 by using the ``:filetype`` operator to limit results
 to PDFs, DOCX, XLSX, etc files.
 In a bibliographic database like *ASC*, however,
-we can sometimes specify that we want filetypes like PDFs, but 
+we can sometimes specify that we want file types like PDFs, but 
 more importantly,
 we can limit results by **document type**.
 That means we can restrict results to document types like:
