@@ -3,7 +3,7 @@
 ## Introduction
 
 I introduced the concept of databases in 
-[section 3](3-information-sources-resources.html).
+[section 5](3-information-sources-resources.html).
 Databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
