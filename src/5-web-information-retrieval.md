@@ -27,14 +27,14 @@ that you can use to get better,
 but there are three principles that we
 need to consider when advancing our search skills.
 
-First, we should understand that the
+**Principle 1:** We should understand that the
 basic information retrieval model centers on **documents**.
 Anything indexed in a database or on the web is treated as a document.
 Documents include text, sound, images, video, etc.
 
-Second, we should understand that documents
+**Principle 2:** We should understand that documents
 do not exist independently of other documents. 
-Let's call this the **corpus**.
+This is called the **corpus**.
 For the web, the **corpus** is organized
 like a **file system**,
 much like the file system on your personal computers.
@@ -42,14 +42,14 @@ In a bibliographic database,
 the **corpus** is organized by predefined fields, such
 author names, title names, subject terms, etc.
 
-Third, our queries are not divorced from the **documents**
+**Principle 3:** Our queries are not divorced from the **documents**
 nor the **corpus** nor the **organization of the corpus**.
 These things are all intertwined.
 Each time we search,
 search engines and databases compare
 **documents** in the **corpus**
 to each other and to how they are organized
-based on our **query constructions**,
+based on our **queries**,
 and then rank order (in some way) those documents
 by way of that comparison.
 Hence, when we **construct queries**,
@@ -83,37 +83,41 @@ This has some implications:
 - The challenge with search is that we do not always know what text a document
   contains even if that document covers the topic or concept that we think is
   relevant.
-- For example, consider *synonyms*. We might want web pages that contain terms
-  that are synonymous with our query term but do not actually contain our query
-  term. But this can get complicated. If I search for **star**, could I also
-  mean **principal, lead, hero, celebrity, stellar**, or **sun**?
+- For example, consider *synonyms*. We might want to find web pages that
+  contain terms that are synonymous with our query term but do not actually
+  contain our query term. But this can get complicated. If I search for
+  **star**, could I also mean **principal, lead, hero, celebrity, stellar**, or
+  **sun**?
 - What if a document only uses terms like **principal, lead, hero, celebrity,
   stellar**, or **sun**? Might it still be useful if I was interested in
   documents (i.e., web pages) about **star**? Probably not since some of those
   words, although synonymous with **star**, are not synonymous with each other
-  (cf, **principal** and **celebrity**)
-- Other *wordy* issues include things like *homonyms*, which are words that are
-  pronounced or spelled the same but mean different things. Thus, by **bark**, do
-  I mean the bark on a tree or the word we use to signal the sound a dog makes?
-- Phrases are also important, with respect to term adjacency and word order. If
-  I search for **forest fire**, search engines are more likely to return results
-  where those two terms appear next to each other and in that order. This will
-  mean that documents that contain text about someone having a **camp fire in a
-  forest** will be less likely to appear at the top of my results than a
-  document that contains the phrase **the forest is on fire**. Or documents
-  where the terms are in order but spaced far apart will also rank lower.
-  E.g., if the term **forest** appears in the first paragraph on a web page and
-  the term **fire** appears on the last paragraph of a web page, this web page
-  will rank lower than a page that contains the terms near or adjacent to each
+  Compare the terms **principal** and **celebrity**. Both of these terms are
+  synonymous with the term **star** but they are not synonymous with each
+  other. Therefore, the synonyms of a term may not be synonymous with each
   other.
+- Other *wordy* issues include things like *homonyms*, which are words that are
+  pronounced or spelled the same but mean different things. Thus, by **bark**,
+  do I mean the bark on a tree or the word we use to signal the sound a dog
+  makes?
+- Phrases are also important, with respect to **term adjacency** and **term
+  order**. If I search using a phrase where the term **forest** preceds the
+  term **fire**, search engines are more likely to return results where those
+  two terms appear next to each other and in that order. This will mean that
+  documents that contain text about someone having a **camp fire in a forest**
+  will be less likely to appear at the top of my results than a document that
+  contains the phrase **the forest is on fire**. Or documents where the terms
+  are in order but spaced far apart will also rank lower. E.g., if the term
+  **forest** appears in the first paragraph on a web page and the term **fire**
+  appears on the last paragraph of a web page, this web page will rank lower
+  than a page that contains the terms near or adjacent to each other.
 
 ## The web is organized
 
 I mentioned above that the web
 is like a file system,
 the kind that you'd find on your own computer.
-By this I mean that the web is organized,
-even though it may not appear so.
+By this I mean that **the web is organized**.
 If we know a bit about its organization,
 we can take good advantage of that when we search.
 For instance, we can narrow our searches to parts of the web.
@@ -124,7 +128,7 @@ And how can we use that in search?
   contained a few main branches, called **top level domains (TLDs)**. Example
   TLDs are .com, .edu, .org, .gov, .mil, and .net. All domains then branched
   off of those main branches.
-- The tree has grown over the years and now contains about 1500 of these main
+- The tree has grown over the years and now contains nearly 1500 of these main
   branches (TLDs). Newer TLDs include .apple, .attorney, .camera, .green, .joy
   .mobile, .office, .science, .space, and [many more][tld].
 - Included in those are **ccTLD**s, or **country code top level domains**. For
@@ -199,10 +203,17 @@ title="The organization of the web by top level domains">
 
 ## Constructing queries for precise results
 
-There are all sorts of other tips and tricks
+There are more tips and tricks
 we can apply to revise and make our queries more precise.
+Below I cover:
 
-**Use quotes around our search terms**
+- using quotes around search terms for precision
+- limiting results to specific dates
+- excluding results with specific terms or phrases
+- varying the order of terms
+- using the **OR** keyword to specify one term, another term, or both terms
+
+### Use quotes around our search terms
 
 With a search like ``flu site:gov``,
 Google provided us with snippets of text
@@ -243,14 +254,14 @@ and not the *site* operator, are quoted):
 "flu vaccines" site:gov
 ```
 
-**Get more recent pages**
+### Get more recent pages
 
 If I'm really interested only in recent pages,
 I can click on the **Tools** button and select
 **Any time, Past hour, Past 24 hours, Past week**, or etc, 
 to limit results to certain time periods.
 
-**Exclude results with the minus sign**
+### Exclude results with the minus sign
 
 Let's take a look at our flu vaccine search.
 Instead of enclosing **"flu vaccines"** in quotes
@@ -274,7 +285,7 @@ flu vaccines -site:com
 flu vaccines -site:webmd.com
 ```
 
-**Term order matters**
+### Term order matters
 
 Results will be different depending
 on the order of the query terms.
@@ -334,7 +345,7 @@ as you page through them, you might see more pages on Google
 than on Bing, for the first search,
 and vice versa for the second search.
 
-**One OR the other OR both**
+### One OR the other OR both
 
 When we search using multiple terms,
 we can use the ``OR`` operator to tell Google to return pages
@@ -361,7 +372,7 @@ Google will return more results about Google,
 and Bing will return more results about Bing,
 respectively.
 
-**Other operators**
+### Other operators
 
 There are other operators we can use in search engines, and
 many of them work regardless of which search engine we use.
