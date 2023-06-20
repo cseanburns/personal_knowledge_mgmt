@@ -256,15 +256,15 @@ in the face of contradictory or discordant evidence.
 
 You can test this method yourselves.
 Consider a news event that's going on as you read this.
-Pick three news articles that cover the event,
-from three different publications.
-Choose three publications that lie on different parts
+Pick two news articles that cover the event,
+from two different publications.
+Choose two publications that lie on different parts
 of the political spectrum.
-Study those three sources, and
+Study those two sources, and
 ask the following questions:
 
 1. How are the stories structurally coherent? Or not? That is, do the stories
-   in the three articles make sense? Are they internally consistent?
+   in the two articles make sense? Are they internally consistent?
 2. How are the stories materially coherent? Or not? That is, upon comparing
    them, do any of them leave out important facts? Do any of them respond to
    counterarguments (or alternate explanations that fit the data)? Do any of
