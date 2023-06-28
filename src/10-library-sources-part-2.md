@@ -13,8 +13,8 @@ I can only focus on a handful of databases
 because UK Libraries,
 as a major research institution and because of its 
 large student body and wide range of majors,
-provides access to 712 total databases
-(as of summer 2022).
+provides access to 717 total databases
+(as of summer 2023).
 Many of these databases are specialized 
 (e.g., African American and Africana Studies, Appalachian Studies)
 or cover a broad general research area (e.g., Chemistry, Education).
