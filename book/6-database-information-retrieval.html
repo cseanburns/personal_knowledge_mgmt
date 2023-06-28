@@ -8,7 +8,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -33,6 +32,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -70,10 +70,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -99,7 +101,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -148,7 +150,7 @@
                         <h1 id="database-information-retrieval"><a class="header" href="#database-information-retrieval">Database Information Retrieval</a></h1>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
 <p>I introduced the concept of databases in 
-<a href="3-information-sources-resources.html">section 3</a>.
+<a href="3-information-sources-resources.html">section 5</a>.
 Databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
@@ -164,12 +166,12 @@ they are often only accessible via a library.</p>
 <p>Many databases are only accessible via a library
 because a library pays to use them.
 Google and other search engines operate on different
-revenue models, like serving ads.</p>
+revenue models, like serving ads, to pay for locating <strong>free</strong> content on the web.</p>
 </blockquote>
 <p>Information retrieval (search) in databases works
 similarly and differently than it does with the web.
 Like with the web,
-database information retrieval works on documents in a corpus.
+database information retrieval works on <strong>documents</strong> in a <strong>corpus</strong>.
 We search that corpus using queries, and
 how we construct our queries is important.</p>
 <p>Documents in databases though are a bit different.
@@ -186,7 +188,7 @@ i.e., bibliographic records.
 They may also index full text documents if those
 documents are accessible to the database, but
 the focus is on those bibliographic records.
-You can see examples of bibliogrpahic records
+You can see examples of bibliographic records
 <a href="https://www.loc.gov/marc/bibliographic/examples.html">at the Library of Congress</a>.
 If only bibliographic records are indexed,
 the database is usually called an
@@ -199,17 +201,18 @@ library are a mix of the two.</p>
 and by bibliographic records,
 I generally mean metadata about specific items
 (books, articles, photos, etc.).
-Metadata is broadly defined as data about data,
+Metadata is broadly defined as <strong>data about data</strong>,
 or sometimes as information about information.
-For example, a title of a book is metadata about a book. The author name of a journal article is
+For example, a <strong>title</strong> of a book is metadata about a book.
+The <strong>author</strong> name of a journal article is
 metadata about the journal article.
 And so forth.
 All the metadata about a specific item
 (book, journal article, etc)
-is a record.
+is a <strong>record</strong>.
 In a database, this metadata is controlled,
 and therefore, well structured 
-(see the Libary of Congress link above).
+(see the Library of Congress link above).
 As searchers, this basically means
 that there are pre-set fields that 
 we can search in these databases and that
@@ -227,9 +230,9 @@ we can search the following fields:</p>
 <li>People (names)</li>
 <li>Journal Name</li>
 <li>ISBN</li>
+<li>And more.</li>
 </ul>
-<p>And more.
-We can also filter by publication date, full text availability,
+<p>We can also filter by publication date, full text availability,
 document type, language, number of pages, and images
 (depending on the database and its content).
 In the end, this means we have greater control over
@@ -240,10 +243,10 @@ I showed how we can search the web
 by using the <code>:filetype</code> operator to limit results
 to PDFs, DOCX, XLSX, etc files.
 In a bibliographic database like <em>ASC</em>, however,
-we can often specify that we want PDFs, but 
+we can sometimes specify that we want file types like PDFs, but 
 more importantly,
 we can limit results by <strong>document type</strong>.
-That means we can restrict results to items like:</p>
+That means we can restrict results to document types like:</p>
 <ul>
 <li>articles</li>
 <li>bibliographies</li>
@@ -273,7 +276,9 @@ Specifically:</p>
 <li>We can use <strong>quoting</strong> to make sure words are included in the results</li>
 <li>Term order matters</li>
 <li>We can use <strong>OR</strong> between terms to focus on one term or the other or both</li>
-<li>We can use other operators, like <strong>NOT</strong> and <strong>AND</strong></li>
+<li>We can use other operators, like <strong>NOT</strong> to exclude documents that contain
+specific terms, and <strong>AND</strong> to force return documents that contain specific
+terms.</li>
 </ol>
 <blockquote>
 <p>The <strong>AND</strong> operator between two query terms means
@@ -343,7 +348,7 @@ a browsing session with a keyword search,
 and then use something from the search results,
 something like an author's name or subject term,
 to find and collect related information.
-We call this type of browsing <em>pearl growing</em>.</p>
+We call this type of browsing <strong>pearl growing</strong>.</p>
 <h3 id="subject-browsing"><a class="header" href="#subject-browsing">Subject Browsing</a></h3>
 <p>Below is an image of the <a href="https://eric.ed.gov/">ERIC Database</a>.
 <em>ERIC</em> stands for <strong>Education Resources Information Center</strong>.
@@ -367,9 +372,9 @@ the thesaurus <strong>descriptor</strong> for <strong>academic libraries</strong
 and as is usual with thesauri,
 it not only describes how the term is defined in the database,
 but it also links to related terms,
-including terms that are conceptually broader than academic libraries,
-conceptually narrower than academic libraries,
-or that are conceptually related to academic libraries.
+including terms that are <strong>conceptually broader</strong> than academic libraries,
+<strong>conceptually narrower</strong> than academic libraries,
+or that are <strong>conceptually related</strong> to academic libraries.
 I can click on any of these terms,
 and then click on the link that says to
 <strong>Search collection using this descriptor</strong>.
@@ -654,16 +659,17 @@ chosen RM as you go.</p>
         </script>
 
 
-        <script src="elasticlunr.min.js" charset="utf-8"></script>
-        <script src="mark.min.js" charset="utf-8"></script>
-        <script src="searcher.js" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" charset="utf-8"></script>
-        <script src="highlight.js" charset="utf-8"></script>
-        <script src="book.js" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
 
+    </div>
     </body>
 </html>

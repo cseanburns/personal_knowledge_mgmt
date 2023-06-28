@@ -3,7 +3,7 @@
 ## Introduction
 
 I introduced the concept of databases in 
-[section 3](3-information-sources-resources.html).
+[section 5](3-information-sources-resources.html).
 Databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
@@ -19,12 +19,12 @@ they are often only accessible via a library.
 > Many databases are only accessible via a library
 > because a library pays to use them.
 > Google and other search engines operate on different
-> revenue models, like serving ads.
+> revenue models, like serving ads, to pay for locating **free** content on the web.
 
 Information retrieval (search) in databases works
 similarly and differently than it does with the web.
 Like with the web,
-database information retrieval works on documents in a corpus.
+database information retrieval works on **documents** in a **corpus**.
 We search that corpus using queries, and
 how we construct our queries is important.
 
@@ -43,7 +43,7 @@ i.e., bibliographic records.
 They may also index full text documents if those
 documents are accessible to the database, but
 the focus is on those bibliographic records.
-You can see examples of bibliogrpahic records
+You can see examples of bibliographic records
 [at the Library of Congress][bibRecordsLOC].
 If only bibliographic records are indexed,
 the database is usually called an
@@ -58,17 +58,18 @@ By bibliographic information, I generally mean **metadata**,
 and by bibliographic records,
 I generally mean metadata about specific items
 (books, articles, photos, etc.).
-Metadata is broadly defined as data about data,
+Metadata is broadly defined as **data about data**,
 or sometimes as information about information.
-For example, a title of a book is metadata about a book. The author name of a journal article is
+For example, a **title** of a book is metadata about a book.
+The **author** name of a journal article is
 metadata about the journal article.
 And so forth.
 All the metadata about a specific item
 (book, journal article, etc)
-is a record.
+is a **record**.
 In a database, this metadata is controlled,
 and therefore, well structured 
-(see the Libary of Congress link above).
+(see the Library of Congress link above).
 As searchers, this basically means
 that there are pre-set fields that 
 we can search in these databases and that
@@ -86,8 +87,8 @@ we can search the following fields:
 - People (names)
 - Journal Name
 - ISBN
+- And more.
 
-And more.
 We can also filter by publication date, full text availability,
 document type, language, number of pages, and images
 (depending on the database and its content).
@@ -100,10 +101,10 @@ I showed how we can search the web
 by using the ``:filetype`` operator to limit results
 to PDFs, DOCX, XLSX, etc files.
 In a bibliographic database like *ASC*, however,
-we can often specify that we want PDFs, but 
+we can sometimes specify that we want file types like PDFs, but 
 more importantly,
 we can limit results by **document type**.
-That means we can restrict results to items like:
+That means we can restrict results to document types like:
 
 - articles
 - bibliographies
@@ -134,7 +135,9 @@ And many of the same techniques apply, too:
 1. We can use **quoting** to make sure words are included in the results
 2. Term order matters
 3. We can use **OR** between terms to focus on one term or the other or both
-4. We can use other operators, like **NOT** and **AND**
+4. We can use other operators, like **NOT** to exclude documents that contain
+   specific terms, and **AND** to force return documents that contain specific
+   terms.
 
 > The **AND** operator between two query terms means
 > that both terms must be present for each result in a search.
@@ -211,7 +214,7 @@ a browsing session with a keyword search,
 and then use something from the search results,
 something like an author's name or subject term,
 to find and collect related information.
-We call this type of browsing *pearl growing*.
+We call this type of browsing **pearl growing**.
 
 ### Subject Browsing
 
@@ -239,9 +242,9 @@ the thesaurus **descriptor** for **academic libraries**,
 and as is usual with thesauri,
 it not only describes how the term is defined in the database,
 but it also links to related terms,
-including terms that are conceptually broader than academic libraries,
-conceptually narrower than academic libraries,
-or that are conceptually related to academic libraries.
+including terms that are **conceptually broader** than academic libraries,
+**conceptually narrower** than academic libraries,
+or that are **conceptually related** to academic libraries.
 I can click on any of these terms,
 and then click on the link that says to
 **Search collection using this descriptor**.

@@ -8,7 +8,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -33,6 +32,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -70,10 +70,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -99,7 +101,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -173,10 +175,10 @@ are either true or false.
 Or more accurately, a fiction or a non-fiction.
 Regardless of our political or whatever positions,
 this focus on narrative is interesting and worthwhile.
-It's interesting, in part, because placing information
+It's interesting because placing information
 within a narrative has ancient origins, and it's 
 worthwhile because it places true and false content
-within some context, a story,
+within some context, like a story,
 which can itself be evaluated as fairly true or not
 (or fiction or non-).
 Essentially, this is important because
@@ -368,8 +370,9 @@ per the above ideas?</p>
 <h2 id="closing-the-loop"><a class="header" href="#closing-the-loop">Closing the Loop</a></h2>
 <p>How does this all help you evaluate information sources?
 Well, when you collect sources for a project, like a paper or something,
-it's a good idea, as you collect sources, to think about the story
-you want or need to tell.
+it's a good idea, as you collect sources, to think about the stories
+that are being told around the topic,
+as well as the story you want or need to tell.
 The sources you collect should have
 structural, material, and characterological coherence, too.
 This means that in the process of collecting evidence,
@@ -380,15 +383,15 @@ in the face of contradictory or discordant evidence.</p>
 <h2 id="project"><a class="header" href="#project">Project</a></h2>
 <p>You can test this method yourselves.
 Consider a news event that's going on as you read this.
-Pick three news articles that cover the event,
-from three different publications.
-Choose three publications that lie on different parts
+Pick two news articles that cover the event,
+from two different publications.
+Choose two publications that lie on different parts
 of the political spectrum.
-Study those three sources, and
+Study those two sources, and
 ask the following questions:</p>
 <ol>
 <li>How are the stories structurally coherent? Or not? That is, do the stories
-in the three articles make sense? Are they internally consistent?</li>
+in the two articles make sense? Are they internally consistent?</li>
 <li>How are the stories materially coherent? Or not? That is, upon comparing
 them, do any of them leave out important facts? Do any of them respond to
 counterarguments (or alternate explanations that fit the data)? Do any of
@@ -410,15 +413,17 @@ do they have a good reputation?
 is the publisher respected?
 is the motive to publish based on profit?
 are they selling something with the information they provide?</p>
-<p>While that's an important part of the process in evaluating information,
+<p>While that may be an important part of the process in evaluating information,
 it's also insufficient.
 A more thorough way to evaluate information is to think of the information
-more broadly and holistically.
+more broadly and holistically and how topics are presented differently based on narratives.
 That is, to think of the stories that are being told,
 and how the information is contextualized.
 Once we see the story,
-we have three methods to investigate a piece of information's credibility.
-We can test its:</p>
+we have four methods to investigate a piece of information's credibility.
+We can read <strong>laterally</strong>.
+That is, we can read multiple articles on a topic and compare them.
+Then we can test each stories':</p>
 <ul>
 <li>argumentative or structural coherence</li>
 <li>material coherence, and</li>
@@ -429,6 +434,15 @@ we tell ourselves or about ourselves or about our beliefs.
 It's important, that is, to evaluate the information we 
 believe to be true as much as it is to evaluate what others 
 posit to be true.</p>
+<blockquote>
+<p>Regarding lateral reading, I think services like <strong>Wikipedia</strong>, <strong>ChatGPT</strong>,
+and <strong>Bard</strong> should be included in sources when reading laterally. That is,
+if we want to learn more about a topic, we can look at the standard sources,
+such as news articles or research articles. However, we can also refer to
+<em>Wikipedia</em> or the AI chatbots to sound out what we are reading about. The
+more we read about a topic from a variety of sources, the more likely we'll
+get a better overview of the stories being told about the topic.</p>
+</blockquote>
 <h2 id="references"><a class="header" href="#references">References</a></h2>
 <p>Fisher, W. R. (1989). <em>Human communication as narration: Toward a philosophy of
 reason, value, and action</em>. University of South Carolina Press. <a href="https://doi.org/10.2307/j.ctv1nwbqtk">https://doi.org/10.2307/j.ctv1nwbqtk</a></p>
@@ -470,16 +484,17 @@ reason, value, and action</em>. University of South Carolina Press. <a href="htt
         </script>
 
 
-        <script src="elasticlunr.min.js" charset="utf-8"></script>
-        <script src="mark.min.js" charset="utf-8"></script>
-        <script src="searcher.js" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" charset="utf-8"></script>
-        <script src="highlight.js" charset="utf-8"></script>
-        <script src="book.js" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
 
+    </div>
     </body>
 </html>

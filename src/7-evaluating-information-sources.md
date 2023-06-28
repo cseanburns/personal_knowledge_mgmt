@@ -29,10 +29,10 @@ are either true or false.
 Or more accurately, a fiction or a non-fiction.
 Regardless of our political or whatever positions,
 this focus on narrative is interesting and worthwhile.
-It's interesting, in part, because placing information
+It's interesting because placing information
 within a narrative has ancient origins, and it's 
 worthwhile because it places true and false content
-within some context, a story,
+within some context, like a story,
 which can itself be evaluated as fairly true or not
 (or fiction or non-).
 Essentially, this is important because
@@ -241,8 +241,9 @@ per the above ideas?
 
 How does this all help you evaluate information sources?
 Well, when you collect sources for a project, like a paper or something,
-it's a good idea, as you collect sources, to think about the story
-you want or need to tell.
+it's a good idea, as you collect sources, to think about the stories
+that are being told around the topic,
+as well as the story you want or need to tell.
 The sources you collect should have
 structural, material, and characterological coherence, too.
 This means that in the process of collecting evidence,
@@ -255,15 +256,15 @@ in the face of contradictory or discordant evidence.
 
 You can test this method yourselves.
 Consider a news event that's going on as you read this.
-Pick three news articles that cover the event,
-from three different publications.
-Choose three publications that lie on different parts
+Pick two news articles that cover the event,
+from two different publications.
+Choose two publications that lie on different parts
 of the political spectrum.
-Study those three sources, and
+Study those two sources, and
 ask the following questions:
 
 1. How are the stories structurally coherent? Or not? That is, do the stories
-   in the three articles make sense? Are they internally consistent?
+   in the two articles make sense? Are they internally consistent?
 2. How are the stories materially coherent? Or not? That is, upon comparing
    them, do any of them leave out important facts? Do any of them respond to
    counterarguments (or alternate explanations that fit the data)? Do any of
@@ -287,15 +288,17 @@ is the publisher respected?
 is the motive to publish based on profit?
 are they selling something with the information they provide?
 
-While that's an important part of the process in evaluating information,
+While that may be an important part of the process in evaluating information,
 it's also insufficient.
 A more thorough way to evaluate information is to think of the information
-more broadly and holistically.
+more broadly and holistically and how topics are presented differently based on narratives.
 That is, to think of the stories that are being told,
 and how the information is contextualized.
 Once we see the story,
-we have three methods to investigate a piece of information's credibility.
-We can test its:
+we have four methods to investigate a piece of information's credibility.
+We can read **laterally**.
+That is, we can read multiple articles on a topic and compare them.
+Then we can test each stories':
 
 - argumentative or structural coherence
 - material coherence, and
@@ -306,6 +309,14 @@ we tell ourselves or about ourselves or about our beliefs.
 It's important, that is, to evaluate the information we 
 believe to be true as much as it is to evaluate what others 
 posit to be true.
+
+> Regarding lateral reading, I think services like **Wikipedia**, **ChatGPT**,
+> and **Bard** should be included in sources when reading laterally. That is,
+> if we want to learn more about a topic, we can look at the standard sources,
+> such as news articles or research articles. However, we can also refer to
+> *Wikipedia* or the AI chatbots to sound out what we are reading about. The
+> more we read about a topic from a variety of sources, the more likely we'll
+> get a better overview of the stories being told about the topic.
 
 ## References
 
