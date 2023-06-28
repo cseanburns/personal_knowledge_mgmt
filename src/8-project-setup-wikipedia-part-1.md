@@ -93,7 +93,7 @@ Your post should respond to the following:
 
 ## Identifying a stub
 
-In the [Information Retrieval: Web](5-information-retrieval-web.html)
+In the [Information Retrieval: Web](5-web-information-retrieval.html)
 section, you might recall that I wrote the following:
 
 > ...our queries are not divorced from the **documents** nor the **corpus**.
