@@ -9,7 +9,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -34,6 +33,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -71,10 +71,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -100,7 +102,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -3231,13 +3233,13 @@ Wikipedia, and a few others.</p>
 <p>That's fine, of course, but
 the web is composed of billions of web pages,
 and many are worth knowing and exploring.</p>
-<p>We also spend most of our time on a variety of domains.
+<p>We also spend most of our time on a limited number of domains.
 This includes sites ending with <strong>.com, .org, .edu</strong>, etc.
 But remember that you've already learned how to search the web,
 and if you're interested in learning more about what's out there,
 I encourage you to add a <code>:site</code> operator to your web queries
 if you want to vary things up every once in a while.
-Remember that there about <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">1,500 top level domains</a>,
+Remember that there nearly <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">1,500 top level domains</a>,
 and it can be fun to add random ones to your searches:</p>
 <pre><code>asthma site:health
 (linux or windows or macos) site:computer
@@ -3334,33 +3336,32 @@ The site takes some exploration to learn all that it offers,
 but I can provide two examples.</p>
 <p>The Data Tools dropbox box provides employment change
 data for various sectors of the U.S.
-As of <a href="https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm">June 2022</a>, we see that manufacturing jobs
+As of <a href="https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm">May 2023</a>, we see that manufacturing jobs
 in the U.S. increased by an estimated 29,000,
 government jobs decreased by an estimated 9,000, and
 overall non-farm jobs increased by 372,000.</p>
 <p>The <a href="https://www.bls.gov/data/inflation_calculator.htm">CPI Inflation Calculator</a> shows how the value
 of the dollar has changed over time.
-For example, I can see that $1.00 in June of 2021
-has the same buying power as $1.09 in June of 2022,
-which shows that, on average, what costs me a $1.09
-in June 2022 cost me a $1.00 the summer prior.</p>
+For example, I can see that $1.00 in May of 2022
+has the same buying power as $1.04 in May of 2023,
+which shows that, on average, what costs me a $1.04
+in May 2023 cost me a $1.00 the summer prior.</p>
 <p>This calculator is useful in a lot of ways.
 For example, the tuition to attend UK for the
 <a href="http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm">2002-2003 academic year was $1,740 per semester</a>, and for the
-<a href="https://www.uky.edu/financialaid/tuition-and-fees">2022-2023 academic year, it is $6,340</a>.
+<a href="https://www.uky.edu/studentaccount/tuition-faq23-24">2023-2024 academic year, it is $6,429</a>.
 The CPI calculator shows that if tuition increased
 at the same rate as inflation,
-then today's tuition cost should only be $2,865.93 per semester
-(from June 2002 to June 2022).
-That means the extra $3,564 spent on tuition today increased
+then today's tuition cost should only be $2,943.16 per semester
+(from May 2002 to May 2023).
+That means the extra $3,486 spent on tuition today increased
 due to other (complicated) factors.</p>
 <p>You can also see how home prices have changed.
 The house I rent was purchased for $101,650
 during the summer of 2001.
-Today the owners could easily sell for around $250,000
-(estimated by realtor.com).
-But inflation only accounts for a $171,016 price tag.
-Thus the extra $70,000 or so is factor of other market forces.</p>
+Zillow estimages that it would sell for $314,300 (summer 2023).
+But inflation only accounts for a price tag of $176,553.
+Thus the extra $137,747 or so is factor of other market forces.</p>
 <blockquote>
 <p>Property information like this is generally public information.
 Fayette County, the seat of Lexington, KY, provides this information
@@ -3436,7 +3437,10 @@ kind of search.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="web-sources-part-2"><a class="header" href="#web-sources-part-2">Web Sources: Part 2</a></h1>
 <p>We continue this section by covering a variety of
 web resources that are invaluable but that don't 
-necessarily show up in our everyday web searches.</p>
+necessarily show up in our everyday web searches.
+Many of the web resources do not simply report information but
+require visitors to generate information based on user input or
+search for resources.</p>
 <p>In particular, in this section, I'd like to cover
 a variety of open educational resources and digital libraries.
 Your education at UK should be, I hope, super beneficial,
@@ -4089,13 +4093,13 @@ software.</p>
         </script>
 
 
-        <script src="elasticlunr.min.js" charset="utf-8"></script>
-        <script src="mark.min.js" charset="utf-8"></script>
-        <script src="searcher.js" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" charset="utf-8"></script>
-        <script src="highlight.js" charset="utf-8"></script>
-        <script src="book.js" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
@@ -4105,5 +4109,6 @@ software.</p>
         });
         </script>
 
+    </div>
     </body>
 </html>

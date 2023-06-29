@@ -3,6 +3,9 @@
 We continue this section by covering a variety of
 web resources that are invaluable but that don't 
 necessarily show up in our everyday web searches.
+Many of the web resources do not simply report information but
+require visitors to generate information based on user input or
+search for resources.
 
 In particular, in this section, I'd like to cover
 a variety of open educational resources and digital libraries.

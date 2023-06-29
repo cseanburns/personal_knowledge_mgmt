@@ -11,13 +11,13 @@ That's fine, of course, but
 the web is composed of billions of web pages,
 and many are worth knowing and exploring.
 
-We also spend most of our time on a variety of domains.
+We also spend most of our time on a limited number of domains.
 This includes sites ending with **.com, .org, .edu**, etc.
 But remember that you've already learned how to search the web,
 and if you're interested in learning more about what's out there,
 I encourage you to add a ``:site`` operator to your web queries
 if you want to vary things up every once in a while.
-Remember that there about [1,500 top level domains][tld],
+Remember that there nearly [1,500 top level domains][tld],
 and it can be fun to add random ones to your searches:
 
 ```
@@ -144,36 +144,35 @@ but I can provide two examples.
 
 The Data Tools dropbox box provides employment change
 data for various sectors of the U.S.
-As of [June 2022][dataBLS], we see that manufacturing jobs
+As of [May 2023][dataBLS], we see that manufacturing jobs
 in the U.S. increased by an estimated 29,000,
 government jobs decreased by an estimated 9,000, and
 overall non-farm jobs increased by 372,000.
 
 The [CPI Inflation Calculator][cpiBLS] shows how the value
 of the dollar has changed over time.
-For example, I can see that $1.00 in June of 2021
-has the same buying power as $1.09 in June of 2022,
-which shows that, on average, what costs me a $1.09
-in June 2022 cost me a $1.00 the summer prior.
+For example, I can see that $1.00 in May of 2022
+has the same buying power as $1.04 in May of 2023,
+which shows that, on average, what costs me a $1.04
+in May 2023 cost me a $1.00 the summer prior.
 
 This calculator is useful in a lot of ways.
 For example, the tuition to attend UK for the
 [2002-2003 academic year was $1,740 per semester][uky2002], and for the
-[2022-2023 academic year, it is $6,340][uky2022].
+[2023-2024 academic year, it is $6,429][uky2023].
 The CPI calculator shows that if tuition increased
 at the same rate as inflation,
-then today's tuition cost should only be $2,865.93 per semester
-(from June 2002 to June 2022).
-That means the extra $3,564 spent on tuition today increased
+then today's tuition cost should only be $2,943.16 per semester
+(from May 2002 to May 2023).
+That means the extra $3,486 spent on tuition today increased
 due to other (complicated) factors.
 
 You can also see how home prices have changed.
 The house I rent was purchased for $101,650
 during the summer of 2001.
-Today the owners could easily sell for around $250,000
-(estimated by realtor.com).
-But inflation only accounts for a $171,016 price tag.
-Thus the extra $70,000 or so is factor of other market forces.
+Zillow estimages that it would sell for $314,300 (summer 2023).
+But inflation only accounts for a price tag of $176,553.
+Thus the extra $137,747 or so is factor of other market forces.
 
 > Property information like this is generally public information.
 > Fayette County, the seat of Lexington, KY, provides this information
@@ -277,7 +276,7 @@ kind of search.
 [nasaImage]:https://www.nasa.gov/multimedia/imagegallery/index.html
 [nasaVideo]:https://www.nasa.gov/multimedia/videogallery/index.html
 [uky2002]:http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm
-[uky2022]:https://www.uky.edu/financialaid/tuition-and-fees
+[uky2023]:https://www.uky.edu/studentaccount/tuition-faq23-24
 [bls]:https://www.bls.gov/
 [dataBLS]:https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm
 [cpiBLS]:https://www.bls.gov/data/inflation_calculator.htm
