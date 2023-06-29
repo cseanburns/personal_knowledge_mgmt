@@ -145,9 +145,9 @@ but I can provide two examples.
 The Data Tools dropbox box provides employment change
 data for various sectors of the U.S.
 As of [May 2023][dataBLS], we see that manufacturing jobs
-in the U.S. increased by an estimated 29,000,
-government jobs decreased by an estimated 9,000, and
-overall non-farm jobs increased by 372,000.
+in the U.S. decreased by an estimated 2,000,
+government jobs increased by an estimated 56,000, and
+overall non-farm jobs increased by 339,000.
 
 The [CPI Inflation Calculator][cpiBLS] shows how the value
 of the dollar has changed over time.
@@ -170,7 +170,7 @@ due to other (complicated) factors.
 You can also see how home prices have changed.
 The house I rent was purchased for $101,650
 during the summer of 2001.
-Zillow estimages that it would sell for $314,300 (summer 2023).
+Zillow estimates that it would sell for $314,300 (summer 2023).
 But inflation only accounts for a price tag of $176,553.
 Thus the extra $137,747 or so is factor of other market forces.
 
