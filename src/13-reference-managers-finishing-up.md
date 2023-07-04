@@ -92,6 +92,7 @@ Zotero will auto-update the bibliography in your document
 as you add more in-text citations.
 To set a default style, in Zotero,
 click on the **Edit** button in the Zotero menu bar,
+select **Preferences**,
 click on the **Cite** tab, and
 then choose your default style,
 which will most likely be one of these:
