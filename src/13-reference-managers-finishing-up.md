@@ -60,7 +60,7 @@ in a word processing program like Microsoft Word,
 Google Docs, or [LibreOffice Writer][lowriter].
 
 Zotero is able to work with the above three word processors.
-Mendeley and EndNote are primarily geered toward Microsoft Word,
+Mendeley and EndNote are primarily geared toward Microsoft Word,
 and if you elected to use those two RMs,
 then reach out to your instructor,
 or search the web,
@@ -81,7 +81,7 @@ to check for any errors.
 If there are errors,
 it's likely because the item in Zotero is missing metadata for
 some fields (like author, title, journal title, publication date, etc.).
-This happens because the source information Zotero extacts
+This happens because the source information Zotero extracts
 metadata from may be incomplete or malformed.
 
 With Zotero, you can add in-text citations like:
@@ -120,7 +120,7 @@ items through InfoKat.
 Once you've set up some basic preferences,
 you can start writing in your preferred word processor.
 
-Zotero will add a new tab in Microsof Word,
+Zotero will add a new tab in Microsoft Word,
 or new toolbar items if you're using Google Docs or LibreOffice Word.
 You can use these new functions to add in-text citations,
 to extract and insert Zotero notes for items, and
@@ -135,7 +135,6 @@ Although the basics are pretty straightforward,
 given the variety of options you have available to you,
 you may need to refer to the Zotero documentation for
 additional help.
-you'll need to read through 
 
 [lowriter]:https://www.libreoffice.org/
 [zoteroNotes]:https://www.zotero.org/support/notes
