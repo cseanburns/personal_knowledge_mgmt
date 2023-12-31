@@ -4,6 +4,7 @@
     - [Introduction to PKM](1a-intro-to-pkm.md)
 - [PKM Basics](p2-pkm-basics.md)
     - [Email Management](2a-email-management.md)
+    - [Working with Generative AI](2b-working-with-gen-ai.md)
 - [Using Information Resources and Managing Information Sources](p3-info-resources-sources.md)
     - [Information Sources and Resources](3a-information-sources-resources.md)
     - [Reference Managers: Getting Started](3b-reference-managers-getting-started.md)
