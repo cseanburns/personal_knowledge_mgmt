@@ -1,8 +1,11 @@
 # Personal Knowledge Management Handbook
 
-This repository serves as a handbook on personal knowledge
-management. It was last updated during the summer of 2022
-and will next be updated during the summer of 2023.
+This repository serves as a handbook
+on personal knowledge management.
+It was created during the summer of 2022,
+then updated in the summer of 2023,
+and the recent update is
+for the spring 2024 course.
 
 The book is at:
 
