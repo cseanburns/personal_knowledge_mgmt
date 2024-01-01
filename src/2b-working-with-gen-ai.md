@@ -28,7 +28,7 @@ later in the semester.
 In this section,
 we'll delve into
 the science of **Prompt Engineering**.
-This the act of crafting
+This is the act of crafting
 your questions and commands
 in a way that guides the AI
 to understand and respond
@@ -54,7 +54,7 @@ which means that
 I apply answers from Bard
 to generate new responses.
 
-This session is based
+This session is based on
 readings from several sources.
 Before reading through the session,
 please review the following
@@ -136,7 +136,7 @@ is that most applications
 do not integrate a work flow
 for using sessions with AI
 into creating outputs,
-like essays or like.
+like essays.
 This is what something like
 Google's new [NotebookLM][notebooklm]
 seeks to solve.
@@ -188,7 +188,7 @@ that involve creating well-constructed prompts.
 To construct good prompts,
 we employed tactics such as
 **few-shot prompting** and
-**chain-of-though** prompting.
+**chain-of-thought** prompting.
 
 With new tools such as
 Google's NotebookLM,
