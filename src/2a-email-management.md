@@ -132,7 +132,10 @@ it's also a good way to mass delete old and unnecessary email.
 
 ### Other Strategies
 
-The *PC Mag* and *The Washington Post* articles
+The *PC Mag* and
+[*The Washington Post*][washPost]
+(paywalled)
+articles
 suggest that **we turn off notifications**.
 The point is that if we receive a lot of emails,
 then email becomes too distracting.
@@ -142,6 +145,8 @@ we simply **check our email only a few times per day**
 The aim here is to be intentional about using email
 (and this applies to any other communication technology)
 rather than mindless and distracted by it.
+
+[washPost]:https://www.washingtonpost.com/lifestyle/wellness/email-management-tips-productivity/2021/08/27/36d80376-0692-11ec-8c3f-3526f81b233b_story.html
 
 *The Washington Post* article also suggests
 applying **the four Ds** to your emails:
