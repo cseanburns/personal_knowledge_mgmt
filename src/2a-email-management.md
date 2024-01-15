@@ -5,9 +5,6 @@
 - Strategies
     - Duffy, J. (2019). 11 Tips for Managing Email More Efficiently. Retrieved
       19 July 2022, from [PC Mag][pcmag]
-    - Haupt, A. (2021). Overwhelmed by email? Here’s how to get that inbox
-      under control. The Washington Post. Retrieved from [Washington
-      Post][washPost]
     - Tips and Tools for Managing Email. (2021). Retrieved from [Colorado
       College][cocollege]
 - Outlook 
@@ -198,7 +195,6 @@ The two main strategies involve how to:
 - search our email.
 
 [pcmag]:https://www.pcmag.com/news/11-tips-for-managing-email-more-efficiently
-[washPost]:https://www.washingtonpost.com/lifestyle/wellness/email-management-tips-productivity/2021/08/27/36d80376-0692-11ec-8c3f-3526f81b233b_story.html
 [cocollege]:https://www.coloradocollege.edu/offices/its/guides/manage-email.html
 [usingRulesM]:https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59
 [searchMicrosoft]:https://support.microsoft.com/en-us/office/Manage-and-organize-b6d7ea98-a81f-492c-8e4b-694b6bb96b30#ID0EBBD=Search 
