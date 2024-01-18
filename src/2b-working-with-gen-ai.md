@@ -37,7 +37,7 @@ relevant information.
 A well-constructed prompt
 can be the difference between
 getting a generic response and
-unlocking truly valuable insights.
+unlocking valuable insights.
 
 ## Reading
 
@@ -126,7 +126,7 @@ and it offers some suggestions.
 See the link below
 to read through the session:
 
-- [Prompt Engineering: Crafting Instructions for AI][prompt_example]
+- [Prompt Engineering: Crafting Instructions for AI (Example exchange)][prompt_example]
 
 ## Google NotebookLM
 
@@ -138,8 +138,10 @@ for using sessions with AI
 into creating outputs,
 like essays.
 This is what something like
-Google's new [NotebookLM][notebooklm]
+Google's new NotebookLM
 seeks to solve.
+
+- [NotebookLM][notebooklm]
 
 For example,
 in the prior session with Bard,
@@ -159,7 +161,7 @@ Bard offered the following advice:
 - prompt for creative solutions
 
 To apply these suggestions
-using [NotebookLM][notebooklm],
+using NotebookLM,
 I can add my own documents and data.
 NotebookLM lets users
 create topical notebooks
