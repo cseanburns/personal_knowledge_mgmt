@@ -2,7 +2,13 @@
 
 Hello and welcome to this
 crucial section of our course!
-Here, we're going to focus
+Going forward,
+we begin preparing
+for the final project
+of the course,
+which is editing a
+selected Wikipedia article.
+To begin, we're going to focus
 on two key components that are
 vital for anyone delving
 into the world of information management.
@@ -16,12 +22,13 @@ pinpoint what's relevant for your needs.
 Whether it's academic databases,
 online journals, or
 other digital libraries,
-we'll equip you with
+you will be equipped with
 the skills to access and
 make the most of these resources.
 
-Then, we're going to dive
-into the practical world of **Reference Managers**,
+In the next section,
+we'll dive into the
+practical world of **Reference Managers**,
 with a special focus on Zotero.
 This is more than just learning a tool;
 it's about mastering an essential skill
@@ -30,8 +37,7 @@ Zotero is a powerful ally in
 managing bibliographic data and related research materials.
 We'll walk through its features,
 from the basics of adding sources
-to advanced functionalities
-like syncing and sharing your library.
+to generating bibliographies.
 
 This section lays the foundation
 for the rest of our course.

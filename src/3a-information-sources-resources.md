@@ -1,48 +1,150 @@
 # Information Sources and Resources
 
-## Readings
+**Please visit the links as you read through this page.**
 
-Please visit the links in this section as you read through it.
+It's true that about anything
+can be a source of information.
+However, as we learn how
+to search and use information,
+it can be helpful if
+we focus on sources and
+their types.
+Doing so allows us
+to integrate different
+source types of information
+into our personal knowledge workflow.
 
 ## Primary, Secondary, and Tertiary Sources
 
-It's true that just about anything can be a source of information,
-but we generally think of information sources in a more scholarly way.
-In that light, you likely already know about the differences between
-**primary**, **secondary**, and **tertiary** sources.
-Simply put, primary sources are more direct sources of information.
-They are things that we might study for their own sake because
-of their direct connection to some event, person, place, or thing.
-A 17th century painting is a good example of a primary source,
-but so is a scientific article that creates knowledge.
+In general,
+it's helpful to classify information sources
+into three types:
+primary, secondary, and tertiary.
+Two of the main differences
+between these three types of information
+centers on the strength of evidence
+they provide and on
+their proximity to the topic they cover.
+Primary sources generally provide
+the strongest evidence on a topic and
+are also closer to the topic
+(i.e., more direct)
+than secondary sources.
 
-Secondary sources reflect on or refer to primary sources.
-A commentary on a 17th century painting 
-or a review of the scientific literature are examples of secondary sources.
-Despite these examples,
-it's helpful to think of the difference between
-primary and secondary sources more contextually.
-This is because a secondary source might be treated as a primary source.
-For example, a researcher studying the history of art
-might treat published art reviews as primary sources,
-even if those reviews might traditionally be considered secondary sources
-at the time they were created.
+This is useful to know.
+In fact, [UK Libraries][uk_source_types]
+provides use cases for these three
+types and some definitions:
 
-Tertiary sources are basically reference works.
-These are things like dictionaries, general encyclopedias, handbooks, and like.
+- "Primary sources provide direct or firsthand evidence about a topic. The creator of primary sources is often intimately connected with the topic or event. Most often, creators of primary sources are participants in the events they describe, either directly or by virtue of living during the time period in question. Given this broad definition, primary sources comprise a wide range of resource types across the various disciplines" ([Primary Sources][uk_primary_sources]).
+- "Secondary sources depend upon primary sources. Secondary sources describe, discuss, interpret, comment upon, analyze, evaluate, summarize, and process primary sources. The important thing to keep in mind when trying to decide if a source is primary or secondary is whether or not the author did the thing they are reporting on. If they did, it is a primary source; if they did not, it is a secondary source" ([Secondary Sources][uk_secondary_sources]).
+- "Tertiary sources contain information that has been compiled from primary and secondary sources. They organize information in an easily accessible way and often point the researcher to the primary and secondary literature on a given topic" ([Tertiary Sources][uk_tertiary_sources]).
 
-## Resource Types
+Let's expand on that a bit more:
 
-It can be helpful to know about the differences between
-primary, secondary, and tertiary sources at times because
-it's important, when dealing with an information source, to
-understand what we're looking at or reading.
-That is, primary, secondary, and tertiary sources say something
-about the kind of evidence in those respective sources.
-But another way to think about the differences between sources
-is to think about the **type of sources** they are.
-For example, if I do a [library search][librarySearch],
+1. **Primary Sources**:
+   - **Research Papers and Studies**: These are original research documents written by researchers or scholars. They include firsthand data, experiments, observations, and findings. For example, a scientific paper reporting the results of an experiment on the effects of cold water immersion on the human body would be a primary source.
+   - **Diaries and Personal Journals**: Personal writings of individuals that offer insights into their thoughts, experiences, and daily life. For instance, a diary kept by a historical figure discussing their experiences during a particular period.
+   - **Interviews and Oral Histories**: Recorded conversations with individuals who have firsthand knowledge of specific events or topics. This can include oral history interviews with people who experienced significant historical events.
+2. **Secondary Sources**:
+   - **Books**: Books written by experts or scholars that analyze and interpret primary sources or provide an overview of a particular subject. For example, a book discussing the history of computing and the evolution of the command line since the 1970s.
+   - **Review Articles**: Scholarly articles that summarize and analyze existing research in a particular field. They provide a synthesis of primary research findings.
+   - **Documentaries**: Video or film productions that present information, often through interviews and visuals, to explain and explore a topic. Documentaries can be considered secondary sources when they provide analysis and context.
+3. **Tertiary Sources**:
+   - **Encyclopedias**: General reference works that provide concise summaries and explanations of topics. They often compile information from various secondary sources. Examples include online encyclopedias or reference books.
+   - **Textbooks**: Educational books designed for teaching a subject. They distill information from primary and secondary sources to provide structured knowledge on a topic.
+   - **Databases and Indexes**: Online databases that organize and index primary and secondary sources, making it easier to search for relevant information. Examples include academic databases like PubMed, Academic Search Premier, or library catalogs.
+
+We can summarize the above list and definitions
+into the following table:
+
+| **Type of Source**    | **Description**                                 | **Examples**                                                                                        |
+| --------------------  | -----------------                               | --------------                                                                                      |
+| **Primary Sources**   | Original firsthand accounts or data.            | - Research Papers and Studies<br>- Diaries and Personal Journals<br>- Interviews and Oral Histories |
+| **Secondary Sources** | Analysis and interpretation of primary sources. | - Books<br>- Review Articles<br>- Documentaries (when providing analysis)                           |
+| **Tertiary Sources**  | Summaries and reference sources.                | - Encyclopedias<br>- Textbooks<br>- Databases and Indexes                                           |
+
+Although the difference
+between these types
+is related to the
+strength of their evidence
+and their proximity to their topic,
+it's not helpful to think of
+this ordering as the way
+to search for information.
+As you learn how to locate
+information and
+conduct research,
+you will largely depend
+mostly on tertiary and
+secondary sources of information.
+For example,
+a reference work,
+like a dictionary, encyclopedia, a bibliographic database, or even a search engine,
+is considered a tertiary source
+but can be an ideal place
+to learn about a topic and
+to learn how to get primary or secondary
+information about that topic.
+We do not generally cite tertiary sources,
+like Wikipedia or Google,
+of information in our papers or other works,
+unless it seems important to do so.
+
+> Note however they we also do not plagiarize from these sources. If you do
+> decide to use them as direct sources, then you need to cite them and quote
+> them if you decide to use the text, etc that they provide.
+
+Next, a book or a review article,
+as examples of secondary sources,
+can serve as a great summary, discussion,
+distillation, or commentary on a topic,
+and can also,
+in its discussion of a topic,
+provide references to more 
+sources of information,
+which may be other secondary sources
+or even primary sources.
+For example,
+a scholarly book on
+censorship in public libraries
+should include references
+to research papers on that topic.
+
+Finally, primary sources are sources
+that lie closest to the topic.
+As the table and list above indicate,
+they may include academic research,
+diaries, interviews, and more,
+much of which is based on or is
+the source of direct analysis.
+This type of information can
+often be the most difficult to read
+and interpret,
+because it may require extensive
+domain knowledge of the topic.
+
+Primary, secondary, and tertiary sources
+say something about the kind of evidence
+in those respective sources.
+They are,
+in a sense,
+a ranking of the strength of their evidence
+about a topic.
+Primary sources provide the strongest evidence.
+However, when searching for information,
+it is often better to begin
+with tertiary sources.
+
+## Information Resources of Information Sources
+
+In practice, these distinctions are important.
+If I do a [library search][librarySearch],
 I have the option to narrow my search by **Resource Type**.
+These resource types,
+in conjunction with types of information sources,
+help us locate the information we need
+and identify the strength of that information.
 Example resource types in UK's catalog include:
 
 - Articles
@@ -61,7 +163,6 @@ Example resource types in UK's catalog include:
 - Government documents
 - and more.
 
-## Information Resources of Information Sources
 
 A resource is really a thing that supplies a thing,
 whatever that thing is.
@@ -69,8 +170,9 @@ For our purposes,
 we can think of information resources
 as providers of information sources,
 like those listed above.
-One of the more important resources we can use are databases
-because databases are great **resources**
+One of the more important resources
+we can use are databases.
+Databases are great **resources**
 for locating **sources of information**.
 The term **database** itself is a bit problematic
 because it has multiple meanings, and
@@ -151,7 +253,7 @@ Given that, let's look at some examples.
 
 We'll start with the most general example, and
 that's the **library catalog**.
-Traditionally, library catalogs were databases
+Traditionally, library catalogs are databases
 that primarily provided information about where we could
 find content on a library's shelves
 (i.e., print content).
@@ -176,7 +278,9 @@ the **Journals** link.
 
 InfoKat searches  **bibliographic records**.
 It does not provide full text access.
-Instead, they provide access by telling us where to locate the content.
+Instead, they provide access
+by linking to content or
+by providing physical directions to that content.
 For example, if that content is a print item
 someplace on the library's shelves,
 InfoKat might tell us it's located on the
@@ -420,34 +524,46 @@ Even when we do use Google or Bing or Yahoo or something else,
 there are certain advanced tricks we can use to
 leverage them to find better information.
 And if we apply what we'll learn in this class,
-we'll become that much more accomlished. 
+we'll become that much more accomplished. 
 
 In short, we are going to learn a bit
 more about what's hidden from most users and from the common view.
 To do that,
 we needed to understand the difference between **information sources**
 and **information resources**.
-Remember that an **information source** is the main item
+Information sources can be divided into three types:
+primary, secondary, and tertiary.
+The differences among them
+center around the strength
+of the evidence they provide
+and their proximity to their topic.
+However, when searching for information,
+it is often better to begin with
+tertiary and secondary sources.
+In the end, in **information source** is the main item
 we often aim to acquire.
-They are generally things like articles, newspaper articles,
-books, book chapters, maps that some things,
-unfortunately, refer to as resource types.
+
 An **information resource** is a tool
 that provides or supplies access to information sources.
 In this section, some examples of information resources
 are the library discovery service, a search engine,
 and a database like *JSTOR*, *ASC*, or *ProQuest*.
+These are all tertiary sources that can lead
+us to more substantial sources of
+primary and secondary information.
 
-[dictInfoSciTech]:https://saalck-uky.primo.exlibrisgroup.com/permalink/01SAA_UKY/ija67f/cdi_proquest_ebookcentral_EBC3312345
-[odlis]:http://products.abc-clio.com/ODLIS/odlis_d#database
-[uklibraries]:https://libraries.uky.edu/
-[azdatabases]:https://libguides.uky.edu/az.php
-[artstor]:https://www.artstor.org/public-collections/
-[ccorg]:https://creativecommons.org/about/cclicenses/
-[jstor]:https://libguides.uky.edu/266
 [aac]:http://ezproxy.uky.edu/login?url=https://www.aac.amdigital.co.uk/
+[artstor]:https://www.artstor.org/public-collections/
 [asc]:https://libguides.uky.edu/4
-[proquest]:https://libguides.uky.edu/90
-
-
+[azdatabases]:https://libguides.uky.edu/az.php
+[ccorg]:https://creativecommons.org/about/cclicenses/
+[dictInfoSciTech]:https://saalck-uky.primo.exlibrisgroup.com/permalink/01SAA_UKY/ija67f/cdi_proquest_ebookcentral_EBC3312345
+[jstor]:https://libguides.uky.edu/266
 [librarySearch]:https://saalck-uky.primo.exlibrisgroup.com/discovery/search?vid=01SAA_UKY:UKY
+[odlis]:http://products.abc-clio.com/ODLIS/odlis_d#database
+[proquest]:https://libguides.uky.edu/90
+[uklibraries]:https://libraries.uky.edu/
+[uk_primary_sources]:https://libguides.uky.edu/sourcetypes/primary
+[uk_secondary_sources]:https://libguides.uky.edu/sourcetypes/secondary
+[uk_source_types]:https://libguides.uky.edu/sourcetypes/sourcetypeshome
+[uk_tertiary_sources]:https://libguides.uky.edu/sourcetypes/tertiary
