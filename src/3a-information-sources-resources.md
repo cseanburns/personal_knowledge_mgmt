@@ -523,7 +523,8 @@ easily available via Google or some other search engine.
 Even when we do use Google or Bing or Yahoo or something else,
 there are certain advanced tricks we can use to
 leverage them to find better information.
-And if we apply what we'll learn in this class,
+We'll cover those soon.
+Regardless, if we apply what we'll learn in this class,
 we'll become that much more accomplished. 
 
 In short, we are going to learn a bit

@@ -1,7 +1,7 @@
 # Welcome to Using Information Resources and Managing Information Sources
 
 Hello and welcome to this
-par of our course
+part of our course
 where we begin preparing
 for the final project,
 which is editing a
