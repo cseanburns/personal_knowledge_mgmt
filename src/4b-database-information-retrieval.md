@@ -3,8 +3,8 @@
 ## Introduction
 
 I introduced the concept of databases in 
-[section 5](3-information-sources-resources.html).
-Databases, or sometimes bibliographic databases,
+[section 3.1](3a-information-sources-resources.html).
+Academic databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
 The main advantages are that databases offer 
@@ -20,6 +20,7 @@ they are often only accessible via a library.
 > because a library pays to use them.
 > Google and other search engines operate on different
 > revenue models, like serving ads, to pay for locating **free** content on the web.
+> Google and other search engines do not provide access to **non-free** content on the web.
 
 Information retrieval (search) in databases works
 similarly and differently than it does with the web.
@@ -30,21 +31,19 @@ how we construct our queries is important.
 
 Documents in databases though are a bit different.
 As discussed in the previous section,
-while web pages on the web exist in a fairly organized hierarchy
-(with respect to top level domains, etc.),
+while websites exist in a fairly organized hierarchy
+(with respect to top level domains, etc.), but
 web pages themselves are not always very structured.
 Search engines have become really good at taking
 all that unstructured text and making sense of it.
 
-Databases, on the other hand,
-in particular, the ones we access through libraries,
-generally index fairly structured documents:
-i.e., bibliographic records.
-They may also index full text documents if those
-documents are accessible to the database, but
-the focus is on those bibliographic records.
-You can see examples of bibliographic records
-[at the Library of Congress][bibRecordsLOC].
+Academic databases, on the other hand,
+generally work with fairly structured documents;
+that is, they index structured bibliographic records
+(see Figure 1 below).
+While they may also index full text documents if those
+documents are accessible to the database,
+the focus is on bibliographic records.
 If only bibliographic records are indexed,
 the database is usually called an
 **abstract and indexing database (A&I database)**.
@@ -52,27 +51,37 @@ Otherwise it's just called a full text database.
 Many of the databases that we have access to at our
 library are a mix of the two.
 
+<figure>
+<img src="images/4b-image-1.png"
+width="600" height="500"
+alt="Academic Search Complete results"
+title="Academic Search Complete results">
+<figcaption>Fig. 1: Bibliographic Record in InfoKat</figcaption>
+</figure>
+
 ## Searching Bibliographic Records
 
-By bibliographic information, I generally mean **metadata**,
-and by bibliographic records,
-I generally mean metadata about specific items
-(books, articles, photos, etc.).
+Bibliographic information is also called **metadata**,
+Bibliographic records
+are metadata about specific items
+(books, articles, photos, etc.)
+about items in a bibliographic or academic database.
 Metadata is broadly defined as **data about data**,
 or sometimes as information about information.
-For example, a **title** of a book is metadata about a book.
+For example, a **title** of a book is
+metadata about the name of a book.
 The **author** name of a journal article is
-metadata about the journal article.
+metadata about the author of a journal article.
 And so forth.
-All the metadata about a specific item
-(book, journal article, etc)
+The metadata about a specific item
+such as a book, journal article, etc.
 is a **record**.
-In a database, this metadata is controlled,
-and therefore, well structured 
-(see the Library of Congress link above).
-As searchers, this basically means
+In a database, this metadata is created
+by professionals and therefore, is well structured
+(as illustrated in Figure 1 above).
+As searchers, this means
 that there are pre-set fields that 
-we can search in these databases and that
+we can search in academic databases and that
 these pre-set fields specifically search the
 corresponding metadata.
 For example, in [Academic Search Complete (ASC)][asc],
@@ -96,11 +105,11 @@ In the end, this means we have greater control over
 the search process than we do in a search engine 
 because the corpus is better defined.
 
-For example, in the previous section,
+For example, in the previous section on web information retrieval,
 I showed how we can search the web
 by using the ``:filetype`` operator to limit results
 to PDFs, DOCX, XLSX, etc files.
-In a bibliographic database like *ASC*, however,
+In a bibliographic database like *ASC*,
 we can sometimes specify that we want file types like PDFs, but 
 more importantly,
 we can limit results by **document type**.
@@ -154,7 +163,8 @@ And many of the same techniques apply, too:
 
 Many (but not all) databases offer the ability
 to search by subject or thesauri term.
-Subject/thesauri terms are kinds of controlled vocabulary.
+Subject/thesauri terms are kinds of controlled vocabulary,
+but are basically special keywords assigned to bibliographic records.
 If a database uses these kinds of vocabulary terms,
 it means that each record in the database includes a list of
 these terms that should well describe the contents
@@ -162,7 +172,7 @@ of the item it describes.
 Further, this means that all bibliographic records
 that share a specific subject term are linked together.
 
-For example, the *ASC* database uses subject terms.
+For example, the *ASC* database uses **subject terms**.
 One subject term is **Forest animals**, and
 if I use that as my search query,
 then each record that is returned
@@ -181,23 +191,30 @@ so feel free to explore subject terms related
 to your own interests.
 
 <figure>
-<img src="images/6-image-1.png"
+<img src="images/4b-image-2.png"
 width="600" height="500"
 alt="Academic Search Complete results"
 title="Academic Search Complete results">
-<figcaption>Fig. 1: Academic Search Complete Results</figcaption>
+<figcaption>Fig. 2: Academic Search Complete Results</figcaption>
 </figure>
 
-## Systematic Browsing
+> Subject terms, thesauri terms, controlled vocabularly, and so forth are all
+> ways that professionals, like librarians, use to describe works. In the web
+> information retrieval section, I discussed how search engines have become
+> good at interpreting natural language queries. However, subject terms are
+> generally shorter and use more formal syntax than natural language. This is
+> important to know when using these terms to search academic databases.
+
+## Browsing
 
 Although database search can be more precise
-than searching in search engines,
+than using search engines,
 databases are also good for browsing.
 
 We all browse
 (online, in stores, as we page through books, and so on)
 but as a type of search process,
-browsing can become a highly useful tool
+browsing can be a highly useful tool
 when applied systematically and strategically.
 The result is not simply a way to scan through search results.
 Rather, the result of intentional browsing,
@@ -205,7 +222,7 @@ Rather, the result of intentional browsing,
 can be the accumulation of highly relevant source material,
 relevant to our information needs and queries.
 
-## Browsing Strategies
+### Browsing Strategies
 
 Although we make a distinction
 between browsing and searching,
@@ -227,19 +244,19 @@ white papers, government and other
 organizational reports, and more on education related topics.
 
 <figure>
-<img src="images/6-image-2.png"
+<img src="images/4b-image-3.png"
 width="600" height="500"
 alt="The ERIC database"
 title="The ERIC database">
-<figcaption>Fig. 2: The ERIC database</figcaption>
+<figcaption>Fig. 3: The ERIC database</figcaption>
 </figure>
 
-*ERIC*, like other databases,
+*ERIC*, like other bibliographic databases,
 offers a thesaurus of controlled terms to help aid search.
 For example, let's say I'm interested in research on academic libraries.
 In this screen shot, I'm looking at the page that describes
-the thesaurus **descriptor** for **academic libraries**,
-and as is usual with thesauri,
+the thesaurus **descriptor** for **academic libraries**.
+As is usual with thesauri,
 it not only describes how the term is defined in the database,
 but it also links to related terms,
 including terms that are **conceptually broader** than academic libraries,
@@ -251,25 +268,26 @@ and then click on the link that says to
 And in doing so, I engage in subject browsing.
 
 <figure>
-<img src="images/6-image-3.png"
+<img src="images/4b-image-4.png"
 width="600" height="500"
 alt="Thesaurus descriptor page for the term academic libraries"
 title="Thesaurus descriptor page for the term academic libraries">
-<figcaption>Fig. 3: Thesaurus descriptor page for the term academic libraries</figcaption>
+<figcaption>Fig. 4: Thesaurus descriptor page for the term academic libraries</figcaption>
 </figure>
 
 ### Author Browsing
 
-I can certainly browse using other access points,
+I can browse using other **access points**
+(a way to gain access to information)
 like author names.
 After perusing the results from above,
 I can click on an author's name to narrow results.
 
 <figure>
-<img src="images/6-image-4.png"
+<img src="images/4b-image-5.png"
 alt="Author names list covering academic libraries"
 title="Author names list covering academic libraries">
-<figcaption>Fig. 4: Author names list covering academic libraries</figcaption> 
+<figcaption>Fig. 5: Author names list covering academic libraries</figcaption> 
 </figure>
 
 Knowing that authors tend to write and research
@@ -281,7 +299,7 @@ because it allows me to browse by author and subject topic.
 I've described abstracting & indexing (A&I) databases, but
 there's another special type of A&I database called
 a **citation database**.
-Three useful ones available to us are
+Three useful ones available to us are:
 
 - [Scopus][scopus]
 - [Web of Science][wos], and 
@@ -313,10 +331,10 @@ and thus, browsing them would be of considerable
 help if we were interested in reading more about information literacy.
 
 <figure>
-<img src="images/6-image-5.png"
+<img src="images/4b-image-6.png"
 alt="WOS record of article on information literacy" 
 title="WOS record of article on information literacy">
-<figcaption>Fig. 5: WOS record of article on information literacy</figcaption> 
+<figcaption>Fig. 6: WOS record of article on information literacy</figcaption> 
 </figure>
 
 After clicking on the **4 Citations** link,
@@ -326,10 +344,10 @@ This is good evidence for our citation theory, but
 it's also a useful trick for us.
 
 <figure>
-<img src="images/6-image-6.png"
+<img src="images/4b-image-7.png"
 alt="Citing articles in WOS" 
 title="Citing articles in WOS">
-<figcaption>Fig. 6: Citing articles in WOS</figcaption> 
+<figcaption>Fig. 7: Citing articles in WOS</figcaption> 
 </figure>
 
 *Google Scholar* works in much the same way.
@@ -345,10 +363,10 @@ it's likely that many of the citing articles
 will be relevant in our search on this topic.
 
 <figure>
-<img src="images/6-image-7.png"
+<img src="images/4b-image-8.png"
 alt="Cited by in Google Scholar" 
 title="Cited by in Google Scholar">
-<figcaption>Fig. 7: Cited by in Google Scholar</figcaption> 
+<figcaption>Fig. 8: Cited by in Google Scholar</figcaption> 
 </figure>
 
 ### Combination Browsing
@@ -360,12 +378,13 @@ The available combinations depend on the database we use.
 Here's a screen shot of an item from the
 *Communication & Mass Media Complete (CMMC)* database.
 I searched this database using the thesauri term
-*DIFFUSION of innovations* AND also
-the term *regression* in the abstract.
+**DIFFUSION of innovations** AND also
+the term **regression** in the abstract.
 Basically, this tells the database
 to retrieve any record tagged with the thesauri term
-*DIFFUSION of innovations* and
-where also the term *regression* appears in the record's abstract.
+**DIFFUSION of innovations** and
+where also the term **regression**
+appears in the record's abstract.
 If it contains regression in the abstract,
 then the source likely used or refers to a statistical technique
 called linear regression, logistic regression, or like.
@@ -374,10 +393,10 @@ I can begin browsing the 11 titles and
 abstracts that are listed in the results.
 
 <figure>
-<img src="images/6-image-8.png"
+<img src="images/4b-image-9.png"
 alt="Combination search in CMMC database"
 title="Combination search in CMMC database">
-<figcaption>Fig. 8: Combination search in CMMC database">
+<figcaption>Fig. 9: Combination search in CMMC database">
 </figure>
 
 ## Boolean Logic: AND, OR, NOT
@@ -438,10 +457,10 @@ But in the second record,
 only one of the terms appears.
 
 <figure>
-<img src="images/6-image-9.png"
+<img src="images/4b-image-10.png"
 alt="Using the OR Boolean operator"
 title="Using the OR Boolean operator">
-<figcaption>Fig. 9: Using the OR Boolean Operator</figcaption>
+<figcaption>Fig. 10: Using the OR Boolean Operator</figcaption>
 </figure>
 
 ### How to Browse
@@ -482,10 +501,10 @@ and email, download, or print the records
 for later use.
 
 <figure>
-<img src="images/6-image-10.png"
+<img src="images/4b-image-11.png"
 alt="Using Folders to Save Records" 
 title="Using Folders to Save Records">
-<figcaption>Fig. 10: Using Folders to Save Records</figcaption>
+<figcaption>Fig. 11: Using Folders to Save Records</figcaption>
 </figure>
 
 Of course, I prefer to save records
@@ -527,4 +546,3 @@ chosen RM as you go.
 [wos]:https://libguides.uky.edu/467
 [GS]:https://scholar.google.com/
 [asc]:https://libguides.uky.edu/4
-[bibRecordsLOC]:https://www.loc.gov/marc/bibliographic/examples.html
