@@ -13,7 +13,7 @@ https://cseanburns.github.io/personal_knowledge_mgmt
 
 This work is used in a course taught in the undergraduate
 ICT (Information Communication Technology) program at the
-University of Kentucky's School of Information Science.
+University of Kentucky's [School of Information Science](https://ci.uky.edu/sis/).
 
 The handbook was created using
 [mdbook](https://github.com/rust-lang/mdBook).
