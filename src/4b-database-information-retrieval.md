@@ -13,7 +13,7 @@ they offer many sources that are invisible to search engines; and
 they provide greater control over the search process.
 The main disadvantage is that they are a bit complicated to use well, 
 there are many databases to choose from (and find),
-each has their own user interface, and
+they have their own user interfaces, and
 they are often only accessible via a library.
 
 > Many databases are only accessible via a library
@@ -31,23 +31,24 @@ how we construct our queries is important.
 
 Documents in databases though are a bit different.
 As discussed in the previous section,
-while websites exist in a fairly organized hierarchy
+websites exist in a fairly organized hierarchy
 (with respect to top level domains, etc.), but
 web pages themselves are not always very structured.
-Search engines have become really good at taking
+Instead, search engines have become really good at taking
 all that unstructured text and making sense of it.
 
 Academic databases, on the other hand,
 generally work with fairly structured documents;
-that is, they index structured bibliographic records
-(see Figure 1 below).
+that is, they index structured bibliographic records,
+like the one in Figure 1 below.
 While they may also index full text documents if those
 documents are accessible to the database,
 the focus is on bibliographic records.
 If only bibliographic records are indexed,
 the database is usually called an
 **abstract and indexing database (A&I database)**.
-Otherwise it's just called a full text database.
+Otherwise it's called a full text database
+if it provides full text.
 Many of the databases that we have access to at our
 library are a mix of the two.
 
@@ -61,11 +62,11 @@ title="Academic Search Complete results">
 
 ## Searching Bibliographic Records
 
-Bibliographic information is also called **metadata**,
+Bibliographic information is also called **metadata**.
 Bibliographic records
 are metadata about specific items
 (books, articles, photos, etc.)
-about items in a bibliographic or academic database.
+in a bibliographic or academic database.
 Metadata is broadly defined as **data about data**,
 or sometimes as information about information.
 For example, a **title** of a book is
@@ -74,10 +75,10 @@ The **author** name of a journal article is
 metadata about the author of a journal article.
 And so forth.
 The metadata about a specific item
-such as a book, journal article, etc.
+such as a book or journal article
 is a **record**.
 In a database, this metadata is created
-by professionals and therefore, is well structured
+by professionals and is well structured
 (as illustrated in Figure 1 above).
 As searchers, this means
 that there are pre-set fields that 
@@ -105,13 +106,11 @@ In the end, this means we have greater control over
 the search process than we do in a search engine 
 because the corpus is better defined.
 
-For example, in the previous section on web information retrieval,
+In the previous section on web information retrieval,
 I showed how we can search the web
 by using the ``:filetype`` operator to limit results
 to PDFs, DOCX, XLSX, etc files.
 In a bibliographic database like *ASC*,
-we can sometimes specify that we want file types like PDFs, but 
-more importantly,
 we can limit results by **document type**.
 That means we can restrict results to document types like:
 
