@@ -91,7 +91,16 @@ Fortunately, we have ways to think about stories, and
 Walter Fisher (1989) identified two methods
 for evaluating narratives that he called
 **narrative probability** and **narrative fidelity**.
-Let's discuss these.
+The latter concept describes how well something rings true.
+For example, given what you know about
+the kinds of engineering feats that people
+have achieved,
+does it ring true that
+we have landed on the moon?
+
+There's more to fidelity than that,
+but let's discuss narrative probability
+in more detail:
 
 ## Narrative Probability
 
