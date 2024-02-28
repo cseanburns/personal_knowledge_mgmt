@@ -13,7 +13,6 @@
     - [Database Information Retrieval](4b-database-information-retrieval.md)
     - [Evaluating Information Sources](4c-evaluating-information-sources.md)
 - [Wikipedia Project](p5-wikipedia-project.md)
-    - [Writing for Wikipedia](5a-writing-for-wikipedia.md)
     - [Wikipedia Project: Setup](5b-project-setup-wikipedia-part-1.md)
     - [Library Sources: Part 1](5c-library-sources-part-1.md)
     - [Library Sources: Part 2](5d-library-sources-part-2.md)
