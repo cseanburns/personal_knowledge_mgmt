@@ -102,24 +102,5 @@ For now, your job is to:
   - Three sources will come from the library.
   - Three sources will come from the general web.
 
-For this week, you will submit to the discussion board a post that
-describes your activities.
-Your post should respond to the following:
-
-1. Provide your **Wikipedia account name** *and* a link to your Wikipedia
-   homepage.
-    - For example, my account name is **Cseanburns** and my Wikipedia homepage
-      is [https://en.wikipedia.org/wiki/User:Cseanburns][cseanburns].
-    - You must edit your Wikipedia homepage and add some basic biographical
-      information. **Note: it's not necessary to identify yourself as a student
-      or use your **linkblue** username for this assignment.**
-2. Provide the title of the stub article that you would like to edit and a link
-   to the page.
-    - For example, I might choose the **Information retrieval** article, which is
-      located at [https://en.wikipedia.org/wiki/Information_retrieval][info_retrieval]
-3. State why you chose these articles.
-
-[cseanburns]:https://en.wikipedia.org/wiki/User:Cseanburns
 [help_editing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
 [wikipedia_policies]:https://en.wikipedia.org/wiki/Wikipedia:List_of_policies
-[info_retrieval]:https://en.wikipedia.org/wiki/Information_retrieval
