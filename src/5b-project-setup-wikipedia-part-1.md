@@ -2,7 +2,8 @@
 
 By the end of this course,
 you will edit several Wikipedia articles.
-This guide provides
+To help prepare you,
+this guide provides
 an introduction to contributing to Wikipedia.
 While actual editing won't begin
 until later in the course,
@@ -28,23 +29,30 @@ we have covered since we started this course.
 
 ## Readings
 
-Please review this article on it:
+Please review the following Wikipedia
+articles to understand important
+editing practices.
 
-- Help:Editing. (2022). In Wikipedia, from [Help:Editing][helpEditing]
+- Wikipedia: [Editing][help_editing]
+- Wikipedia: [Policies][wikipedia_policies]
 
 ## Becoming a Wikipedia Editor
 
-In this course, the main assignment involves identifying
-three Wikipedia articles,
-searching for information sources
+Your task is to identify
+three Wikipedia articles that
+you would like to edit by
+adding references to them.
+Over the next few weeks,
+you will search for information sources
 from the library and the web
-to add to the articles,
-collecting those sources
+to add to these selected articles.
+You will collect those sources
 in your reference manager (RM),
-and then editing the Wikipedia articles
-by adding your references to them.
+and then later edit the Wikipedia articles
+by adding these references to them.
 
-So far, we have covered the following topics that
+To help prepare you for this,
+we have covered the following topics that
 will help us with our project:
 
 1. Information sources and resources
@@ -53,14 +61,14 @@ will help us with our project:
 4. Database information retrieval
 5. Evaluating information sources
 
-For the remainder of the course,
-we will continue to cover specific library and web resources,
+Upcoming lessons will continue
+coverage of specific library and web resources,
 how to use them, and
-how to incorporate them into our work flows.
-By the end of the semester,
+how to incorporate them into your work flows.
+Over the next few weeks,
 you should have collected enough material to
 edit the Wikipedia articles
-that you have identify this week.
+that you identify this week.
 
 ## Details
 
@@ -90,7 +98,7 @@ For now, your job is to:
 - Create an account on Wikipedia (if you do not already have one).
 - Identify three Wikipedia articles that you would like to add references to.
 - Begin to collect and describe at least six sources over the course of the
-  next few weeks.
+  next few weeks that you will use as references.
   - Three sources will come from the library.
   - Three sources will come from the general web.
 
@@ -112,6 +120,6 @@ Your post should respond to the following:
 3. State why you chose these articles.
 
 [cseanburns]:https://en.wikipedia.org/wiki/User:Cseanburns
-[helpEditing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
+[help_editing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
 [wikipedia_policies]:https://en.wikipedia.org/wiki/Wikipedia:List_of_policies
 [info_retrieval]:https://en.wikipedia.org/wiki/Information_retrieval

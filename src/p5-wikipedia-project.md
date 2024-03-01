@@ -1,29 +1,27 @@
 # Welcome to Your Wikipedia Project Adventure!
 
-As we embark on the final leg
-of our journey in this course,
+We now embark on the final leg
+of our journey in this course, and
 it's time to put your
 newly acquired skills to the test.
-Welcome to the exciting section
-where you'll be contributing
+Welcome, therefore, to the section
+where you'll learn how to contribute
 to one of the
 largest knowledge repositories
 on the internet: Wikipedia!
 
 First off,
-we'll get into **Writing for Wikipedia**.
 Wikipedia isn't just any website;
 it has its own style, rules, and community.
-We'll cover how to write
-in a way that fits
+We'll cover how to edit Wikipedia articles
+in a way that fits with
 Wikipedia's unique format and expectations.
-This is your chance
-to learn how to contribute effectively
-to this vast knowledge platform.
+This will help you contribute effectively
+to this knowledge platform.
 
-Next, we'll move to **Wikipedia Project: Setup**.
-Choosing the right article is crucial.
-It should be a topic you're interested in and
+Choosing the right articles is crucial.
+The articles should be on topics
+that you're interested in and
 where you can make a meaningful contribution.
 We'll discuss strategies
 to help you select
@@ -33,14 +31,14 @@ interests and the needs
 of the Wikipedia community.
 
 Then, it's all about research.
-You'll learn how to use
-**Specific Library and Web Resources**
-to find reliable sources
-for your chosen Wikipedia article.
-Navigating through these resources
-will be a breeze
-with the skills
-you've already honed in our course.
+You have already learned some
+things about searching
+library databases and the web,
+and going forward,
+you'll learn how to use
+**specific library and web resources**
+to find reliable information
+for your chosen Wikipedia articles.
 
 Finally, we'll tackle
 how to use your **Reference Manager**
