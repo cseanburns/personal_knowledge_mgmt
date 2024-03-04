@@ -1,7 +1,7 @@
 # Welcome to Your Wikipedia Project Adventure!
 
-We now embark on the final leg
-of our journey in this course, and
+This is the final part
+of this course, and
 it's time to put your
 newly acquired skills to the test.
 Welcome, therefore, to the section
