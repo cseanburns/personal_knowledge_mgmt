@@ -297,8 +297,8 @@ title="JSTOR image search">
 <figcaption>Fig. 8: <i>JSTOR</i> Image Search</figcaption> 
 </figure>
 
-*JSTOR* also includes [*ARTSTOR*][artstor],
-which is separate from the *JSTOR* images search above.
+*JSTOR* also includes *ARTSTOR*.
+which is located in the *JSTOR* images search above.
 *ARTSTOR* is database of art and multimedia objects,
 much of which is also available as open access.
 
@@ -314,16 +314,12 @@ to collect information on your Wikipedia topic.
 That covers *Factiva*, *Web of Science*,
 *Google Scholar*, and *JSTOR*.
 Remember that *Factiva* is a general-interest news database; 
-*WoS* and *Google Scholar* are both citation, scholarly databases; and
+*WoS* and *Google Scholar* are both citation, scholarly databases
+(I'll cover *Google Scholar* in the next lesson); and
 *JSTOR* is a scholarly and image database.
 
 In the next section,
-we begin to cover web content.
-Although it might have been appropriate to include *Google Scholar*
-in the next section,
-I included it here because of its ability to link directly to 
-UK's Infokat.
-This won't be the case for resources I cover next.
+we begin to cover web sources.
 
 [azDatabases]:https://libguides.uky.edu/az.php
 [factiva]:https://libguides.uky.edu/720
@@ -331,4 +327,3 @@ This won't be the case for resources I cover next.
 [googleScholar]:https://scholar.google.com
 [jstor]:https://libguides.uky.edu/266
 [factivaOperators]:http://factiva.com/CP_Developer/ProductHelp/FDK/FDK38/search_factiva/query_expressions/search_statement_operators.htm
-[artstor]:https://libguides.uky.edu/551
