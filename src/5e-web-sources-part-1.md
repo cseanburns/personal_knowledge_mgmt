@@ -30,7 +30,7 @@ few specific sites that are great information resources.
 
 ## Google Scholar
 
-Let's try [*Google Scholar*][googleScholar] now.
+Let's try [*Google Scholar*][google_scholar] now.
 *Google Scholar* isn't technically a library database
 since it's freely accessible on the web, but
 I will show you how to connect it to Infokat so
@@ -72,11 +72,13 @@ this means that it can't offer the kind of advanced
 search we've seen in database searches.
 It is pretty useful, though.
 For example, Figure 6 shows an advanced search for the terms
-**google** and **"open sources"** but it 
+**google** and **"open source"** but it 
 excludes the term **android** in the title,
 and it asks for results published from 2018 to today.
 You can see that this substantially narrows our results.
 As of August 1, 2022, *Google Scholar* returns only 35 hits.
+
+> As of March 26, 2024, the above *Google Scholar* search returns about 172,000 results. This likely indicates a major change in how *Google Scholar* indexes source material. It does not likely indicate a major publication surge on this topic.
 
 <figure>
 <img src="images/10-image-6.png"
@@ -94,7 +96,8 @@ click on that to follow citations.
 The reason *Google Scholar* returns so many more results is 
 because it casts a bigger net than something like
 *Web of Science* does,
-which purposefully casts a smaller net.
+which purposefully casts a smaller net,
+which is smaller to control for quality.
 Because of that, I find *Google Scholar* can return
 many non-relevant works, but
 it makes it nice for browsing or discovery. 
@@ -124,6 +127,15 @@ title="Google Scholar View Now Setup">
 <figcaption>Fig. 7: <i>Google Scholar</i> View Now Setup</figcaption> 
 </figure>
 
+You might find the following three other web-based bibliographic tools useful:
+
+- **Crossref** [https://search.crossref.org/][crossref]
+    - *Crossref* will search all works that have a DOI, or [digital object identifier][doi]. As such, it contains many millions of bibliographic records.
+- **Semantic Scholar** [https://www.semanticscholar.org/][semantic_scholar]
+    - *Semantic Scholar* is an AI powered bibligraphic search engine that also functions as a citation database. It can provide summaries of articles and other works, lists of citations, citing authors, co-authors of authors, and links to related papers.
+- **Consesus** [https://consensus.app/search/][consensus]
+    - *Consensus* build on *Semantic Scholar*. Instead of a functioning like a traditional search engine, you can ask it questions on research topics. It provides examples on its main search page. It provide citation information and details about studies.
+
 ## Internet Archive
 
 The [Internet Archive][archive] is a "non-profit library
@@ -136,34 +148,34 @@ when they were younger:
 
 [Classic PC Games][classPCgames]
 
-The Archive also provides the [Wayback Machine][wayback].
+The *Internet Archive* provides access to the [Wayback Machine][wayback].
 The Wayback Machine is an archive of the web from its early days
 to the present.
 It's fun, for example, to use it to see what the web
 looked like years ago.
 For example, this is likely UK's first web page and
-was captured by the Wayback Machine in 1997:
+was captured by the *Wayback Machine* in 1997:
 
 [http://www.uky.edu/ (1997)][uk1997]
 
-But the Wayback Machine is also useful to retrieve
+But the *Wayback Machine* is also useful to retrieve
 web pages and sites that have been shutdown or removed.
 That is, if you have a broken URL,
 you can enter the URL in the Wayback Machine and 
 see if the original page was archived.
 
-The Internet Archive is also a library, and as such,
+The *Internet Archive* is also a library, and
 offers collections on a vast range of topics and links
 to all sorts of media,
 including text, audio, video, and images.
 
 You can view its main collections on the
-home page of the Internet Archive.
+home page of the *Internet Archive*.
 You can also search.
 I've found, for instance, scanned yearbooks from my college.
 
-The Internet Archive also oversees [The Open Library][openlibrary].
-You can use the Open Library to check out and read books for free,
+The *Internet Archive* oversees [The Open Library][openlibrary].
+You can use the *Open Library* to check out and read books for free,
 just like you would use a physical library.
 
 ## DPLA
@@ -240,17 +252,15 @@ but I can provide two examples.
 
 The Data Tools dropbox box provides employment change
 data for various sectors of the U.S.
-As of [May 2023][dataBLS], we see that manufacturing jobs
-in the U.S. decreased by an estimated 2,000,
-government jobs increased by an estimated 56,000, and
-overall non-farm jobs increased by 339,000.
+As of [March 2024][dataBLS], we see that manufacturing jobs
+in the U.S. decreased by an estimated 4,000,
+government jobs increased by an estimated 52,000, and
+overall non-farm jobs increased by 275,000.
 
 The [CPI Inflation Calculator][cpiBLS] shows how the value
 of the dollar has changed over time.
-For example, I can see that $1.00 in May of 2022
-has the same buying power as $1.04 in May of 2023,
-which shows that, on average, what costs me a $1.04
-in May 2023 cost me a $1.00 the summer prior.
+For example, I can see that $1.00 in February of 2023
+has the same buying power as $1.03 in February of 2024.
 
 This calculator is useful in a lot of ways.
 For example, the tuition to attend UK for the
@@ -258,17 +268,17 @@ For example, the tuition to attend UK for the
 [2023-2024 academic year, it is $6,429][uky2023].
 The CPI calculator shows that if tuition increased
 at the same rate as inflation,
-then today's tuition cost should only be $2,943.16 per semester
-(from May 2002 to May 2023).
-That means the extra $3,486 spent on tuition today increased
+then today's tuition cost should only be $3,030.18 per semester
+(from January 2002 to January 2024).
+That means the extra $3,398.82 spent on tuition today increased
 due to other (complicated) factors.
 
 You can also see how home prices have changed.
 The house I rent was purchased for $101,650
 during the summer of 2001.
-Zillow estimates that it would sell for $314,300 (summer 2023).
-But inflation only accounts for a price tag of $176,553.
-Thus the extra $137,747 or so is factor of other market forces.
+Zillow estimates that it would sell for $317,800 (Spring 2024).
+But inflation only accounts for a price tag of $177,217.
+Thus the extra $140,583 or so is factor of other market forces.
 
 > Property information like this is generally public information.
 > Fayette County, the seat of Lexington, KY, provides this information
@@ -308,11 +318,16 @@ title="EDGAR Search for Alphabet Inc.">
 <figcaption>Fig. 1: EDGAR Search for Alphabet Inc.</figcaption> 
 </figure>
 
-If you read the report,
-you can see that, for example, more than 80% of Google's
-(or Alphabet, specifically) revenue is based on advertisements, and
-that changes in privacy policies and technologies that protect privacy
-is a concern for them.
+If you read the 2024 report,
+you can see that *Google* primarily
+earns income based on advertising,
+customer subscriptions,
+devices (e.g., Pixel),
+and Google Cloud usage.
+It's working on integrating AI techologies in its core services.
+It has 182,502 employees.
+There is much more in this report and
+similar reports from other public companies.
 
 ## MedlinePlus 
 
@@ -338,6 +353,10 @@ that provide more coverage than most Google etc searches can yield.
 In order to highlight this, in this section I covered a few,
 I think, super interesting and helpful sites that include the:
 
+- Google Scholar
+  - Crossref
+  - Semantic Scholar
+  - Consensus
 - Internet Archive
 - Open Library
 - DPLA
@@ -362,6 +381,7 @@ kind of search.
 [dplaUseCases]:https://dp.la/guides
 [dplaExhibitions]:https://dp.la/exhibitions
 [dplaprimary]:https://dp.la/primary-source-sets
+[google_scholar]:https://scholar.google.com
 [topicsDPLA]:https://dp.la/browse-by-topic
 [sourceDPLA]:https://dp.la/browse-by-partner
 [locResearch]:https://www.loc.gov/rr/program/bib/index.html
@@ -382,3 +402,6 @@ kind of search.
 [medlineplus]:https://medlineplus.gov
 [nasa]:https://www.nasa.gov/
 [edgarSearch]:https://www.sec.gov/edgar/search/
+[semantic_scholar]:https://www.semanticscholar.org/
+[consensus]:https://consensus.app/search/
+[crossref]:https://search.crossref.org/
