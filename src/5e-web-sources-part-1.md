@@ -76,9 +76,8 @@ For example, Figure 6 shows an advanced search for the terms
 excludes the term **android** in the title,
 and it asks for results published from 2018 to today.
 You can see that this substantially narrows our results.
-As of August 1, 2022, *Google Scholar* returns only 35 hits.
-
-> As of March 26, 2024, the above *Google Scholar* search returns about 172,000 results. This likely indicates a major change in how *Google Scholar* indexes source material. It does not likely indicate a major publication surge on this topic.
+As of August 1, 2022, *Google Scholar* returns only 35 hits
+and 71 hits as of March 2024.
 
 <figure>
 <img src="images/10-image-6.png"
@@ -324,7 +323,7 @@ earns income based on advertising,
 customer subscriptions,
 devices (e.g., Pixel),
 and Google Cloud usage.
-It's working on integrating AI techologies in its core services.
+It's working on integrating AI technologies in its core services.
 It has 182,502 employees.
 There is much more in this report and
 similar reports from other public companies.
@@ -391,7 +390,7 @@ kind of search.
 [jameswebb]:https://www.nasa.gov/mission_pages/webb/main/index.html
 [nasaImage]:https://www.nasa.gov/multimedia/imagegallery/index.html
 [nasaVideo]:https://www.nasa.gov/multimedia/videogallery/index.html
-[uky2002]:http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm
+[uky2002]:https://web.archive.org/web/20030101090559/http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm
 [uky2023]:https://www.uky.edu/studentaccount/tuition-faq23-24
 [bls]:https://www.bls.gov/
 [dataBLS]:https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm
