@@ -52,18 +52,16 @@ You can find a lot of this material on [UKnowledge][uknowledge],
 and there is an [OER Research Guide][oerUK] that lists
 more links to a wide range of open educational content.
 
-### MOOCs
+### Online Learning Platforms
 
-MOOC sites are massive online open course providers.
-Two major MOOCs are [Coursera][coursera] (via Stanford University)
-and [edX][edx] (via Harvard and MIT).
-Both sites offer courses on all the subjects you'd find
-in college for free,
-but you can also pay to earn certificates, if you want that.
-These courses are like online learning courses.
+Online learning platforms
+include [Coursera][coursera], [edX][edx], [Khan Academy][khan], and others.
+These sites offer courses on many subjects you'd find
+in college but for free.
+You can also pay to earn certificates or degrees.
+The courses offered on these platforms are like online learning courses.
 They provide lectures and online activities to work through
 and to learn the material.
-
 
 ## Digital Libraries
 
@@ -151,20 +149,21 @@ I've only covered a handful of them in this and
 the prior lecture,
 so keep exploring the real stuff.
   
+[coursera]:https://www.coursera.org/
+[crdl]:http://crdl.usg.edu/?Welcome&Welcome
+[doabEarth]:https://directory.doabooks.org/browse?type=classification_text&value=Earth+sciences
+[doabEconomics]:https://directory.doabooks.org/browse?type=classification_text&value=Economics
 [doab]:https://directory.doabooks.org/
 [doabSociology]:https://directory.doabooks.org/browse?type=classification_text&value=Sociology
-[doabEconomics]:https://directory.doabooks.org/browse?type=classification_text&value=Economics
-[doabEarth]:https://directory.doabooks.org/browse?type=classification_text&value=Earth+sciences
 [doabTech]:https://directory.doabooks.org/browse?type=classification_text&value=Technology%3A+general+issues
-[oercommons]:https://www.oercommons.org
-[oerSubjects]:https://www.oercommons.org/oer
-[crdl]:http://crdl.usg.edu/?Welcome&Welcome
-[nypldc]:https://digitalcollections.nypl.org/
-[ndsl]:https://nsdl.oercommons.org/
-[uknowledge]:https://uknowledge.uky.edu/
-[oerUK]:https://libguides.uky.edu/alternative_textbooks/find
 [dpla]:https://dp.la 
-[projectgutenberg]:http://gutenberg.org/
-[coursera]:https://www.coursera.org/
 [edx]:https://www.edx.org/
 [hathitrust]:https://libguides.uky.edu/3051
+[khan]:https://www.khanacademy.org/
+[ndsl]:https://nsdl.oercommons.org/
+[nypldc]:https://digitalcollections.nypl.org/
+[oercommons]:https://www.oercommons.org
+[oerSubjects]:https://www.oercommons.org/oer
+[oerUK]:https://libguides.uky.edu/alternative_textbooks/find
+[projectgutenberg]:http://gutenberg.org/
+[uknowledge]:https://uknowledge.uky.edu/
