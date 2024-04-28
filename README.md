@@ -17,3 +17,10 @@ University of Kentucky's [School of Information Science](https://ci.uky.edu/sis/
 
 The handbook was created using
 [mdbook](https://github.com/rust-lang/mdBook).
+
+## To Do (4/28/2024)
+
+- create a lecture on public versus database URLs from library services (InfoKat, bibliographic databases, etc)
+- work on Wikipedia project. Specifically:
+    - create a new lecture demoing how to edit Wikipedia
+
