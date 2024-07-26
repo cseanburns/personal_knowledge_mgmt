@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -31,7 +31,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -61,42 +61,71 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1a-intro-to-pkm.html"><strong aria-hidden="true">1.1.</strong> Introduction to PKM</a></li></ol></li><li class="chapter-item expanded "><a href="p2-pkm-basics.html"><strong aria-hidden="true">2.</strong> PKM Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2a-email-management.html"><strong aria-hidden="true">2.1.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2b-working-with-gen-ai.html"><strong aria-hidden="true">2.2.</strong> Working with Generative AI</a></li></ol></li><li class="chapter-item expanded "><a href="p3-info-resources-sources.html"><strong aria-hidden="true">3.</strong> Using Information Resources and Managing Information Sources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3a-information-sources-resources.html" class="active"><strong aria-hidden="true">3.1.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="3b-reference-managers-getting-started.html"><strong aria-hidden="true">3.2.</strong> Reference Managers: Getting Started</a></li></ol></li><li class="chapter-item expanded "><a href="p4-retrieving-evaluating-information.html"><strong aria-hidden="true">4.</strong> Retrieving and Evaluating Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4a-web-information-retrieval.html"><strong aria-hidden="true">4.1.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="4b-database-information-retrieval.html"><strong aria-hidden="true">4.2.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="4c-evaluating-information-sources.html"><strong aria-hidden="true">4.3.</strong> Evaluating Information Sources</a></li></ol></li><li class="chapter-item expanded "><a href="p5-wikipedia-project.html"><strong aria-hidden="true">5.</strong> Wikipedia Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5b-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">5.1.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="5c-library-sources-part-1.html"><strong aria-hidden="true">5.2.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5d-library-sources-part-2.html"><strong aria-hidden="true">5.3.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5e-web-sources-part-1.html"><strong aria-hidden="true">5.4.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5f-web-sources-part-2.html"><strong aria-hidden="true">5.5.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5g-reference-managers-finishing-up.html"><strong aria-hidden="true">5.6.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="5h-project-close-wikipedia-part-2.html"><strong aria-hidden="true">5.7.</strong> Wikipedia Project: Completion</a></li></ol></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">6.</strong> GNU Free Documentation License</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -180,9 +209,9 @@ In fact, <a href="https://libguides.uky.edu/sourcetypes/sourcetypeshome">UK Libr
 provides use cases for these three
 types and some definitions:</p>
 <ul>
-<li>&quot;Primary sources provide direct or firsthand evidence about a topic. The creator of primary sources is often intimately connected with the topic or event. Most often, creators of primary sources are participants in the events they describe, either directly or by virtue of living during the time period in question. Given this broad definition, primary sources comprise a wide range of resource types across the various disciplines&quot; (<a href="https://libguides.uky.edu/sourcetypes/primary">Primary Sources</a>).</li>
-<li>&quot;Secondary sources depend upon primary sources. Secondary sources describe, discuss, interpret, comment upon, analyze, evaluate, summarize, and process primary sources. The important thing to keep in mind when trying to decide if a source is primary or secondary is whether or not the author did the thing they are reporting on. If they did, it is a primary source; if they did not, it is a secondary source&quot; (<a href="https://libguides.uky.edu/sourcetypes/secondary">Secondary Sources</a>).</li>
-<li>&quot;Tertiary sources contain information that has been compiled from primary and secondary sources. They organize information in an easily accessible way and often point the researcher to the primary and secondary literature on a given topic&quot; (<a href="https://libguides.uky.edu/sourcetypes/tertiary">Tertiary Sources</a>).</li>
+<li>"Primary sources provide direct or firsthand evidence about a topic. The creator of primary sources is often intimately connected with the topic or event. Most often, creators of primary sources are participants in the events they describe, either directly or by virtue of living during the time period in question. Given this broad definition, primary sources comprise a wide range of resource types across the various disciplines" (<a href="https://libguides.uky.edu/sourcetypes/primary">Primary Sources</a>).</li>
+<li>"Secondary sources depend upon primary sources. Secondary sources describe, discuss, interpret, comment upon, analyze, evaluate, summarize, and process primary sources. The important thing to keep in mind when trying to decide if a source is primary or secondary is whether or not the author did the thing they are reporting on. If they did, it is a primary source; if they did not, it is a secondary source" (<a href="https://libguides.uky.edu/sourcetypes/secondary">Secondary Sources</a>).</li>
+<li>"Tertiary sources contain information that has been compiled from primary and secondary sources. They organize information in an easily accessible way and often point the researcher to the primary and secondary literature on a given topic" (<a href="https://libguides.uky.edu/sourcetypes/tertiary">Tertiary Sources</a>).</li>
 </ul>
 <p>Let's expand on that a bit more:</p>
 <ol>
@@ -253,7 +282,7 @@ can serve as a great summary, discussion,
 distillation, or commentary on a topic,
 and can also,
 in its discussion of a topic,
-provide references to more 
+provide references to more
 sources of information,
 which may be other secondary sources
 or even primary sources.
@@ -343,7 +372,7 @@ since those spreadsheets contain only records
 that folder on my desktop is a database.
 Although I suppose that's kind of true,
 I don't think that's really what the dictionary authors have in mind, and
-thus it's not an accurate enough nor a very useful definition. </p>
+thus it's not an accurate enough nor a very useful definition.</p>
 <p>A more specific and applicable definition is provided by the
 <a href="http://products.abc-clio.com/ODLIS/odlis_d#database"><em>Online Dictionary of Library and Information Science</em></a>,
 which defines a <strong>database</strong> as:</p>
@@ -365,7 +394,7 @@ or online via the Internet, using proprietary search software.</p>
 abstracting services, and full-text reference resources leased annually under
 licensing agreements that limit access to registered borrowers and library
 staff. Abbreviated db. Compare with data bank. See also: archival database,
-bibliographic database, embedded database, metadatabase, and niche database. </p>
+bibliographic database, embedded database, metadatabase, and niche database.</p>
 </blockquote>
 <p>The above definition is more helpful because
 it provides examples of content type
@@ -384,13 +413,13 @@ which tells us something about the subject matter of a database
 <h2 id="what-are-example-databases"><a class="header" href="#what-are-example-databases">What are example databases?</a></h2>
 <p>The <em>ODLIS</em> definition provides some leads to this question.
 The definition tells us that example databases include
-&quot;digitized information containing bibliographic records,
+"digitized information containing bibliographic records,
 abstracts, full-text documents, directory entries,
-images, and statistics&quot;
-that are &quot;related to a specific field or subject,&quot; and
-that these can be accessed through library &quot;catalogs,
+images, and statistics"
+that are "related to a specific field or subject," and
+that these can be accessed through library "catalogs,
 periodical indexes, abstracting services, and
-full-text reference resources.&quot;
+full-text reference resources."
 Given that, let's look at some examples.</p>
 <h3 id="library-catalogs-and-discovery-services"><a class="header" href="#library-catalogs-and-discovery-services">Library Catalogs and Discovery Services</a></h3>
 <p>We'll start with the most general example, and
@@ -406,7 +435,7 @@ not only can they tell us where to find a book on a shelf,
 but they can also provide full text access to online content in other databases.</p>
 <blockquote>
 <p>We can access the University of Kentucky's library catalog/discovery service
-at their main website at: </p>
+at their main website at:</p>
 <p><a href="https://libraries.uky.edu/"><strong>https://libraries.uky.edu</strong></a></p>
 <p>Please visit the link and test your own searches.</p>
 </blockquote>
@@ -509,7 +538,7 @@ Atlanta, Chicago, New York, and parts of North Carolina.
 Then we also have access to databases like the <em>Kentucky Building Code</em>,
 which is a database that links to
 residential and commercial regulatory information on building,
-plumbing, design in Kentucky. </p>
+plumbing, design in Kentucky.</p>
 <p>Many of the resources listed above,
 as well as the hundreds that UK Libraries offers and
 that I have not described,
@@ -559,7 +588,7 @@ and not just a database.</p>
 I will focus on a few general purpose full-text databases
 that you may find helpful as you work towards your degree.
 Although these databases provide full-text sources,
-they may not provide full-text to everything they have records for, though. </p>
+they may not provide full-text to everything they have records for, though.</p>
 <h4 id="academic-search-complete"><a class="header" href="#academic-search-complete">Academic Search Complete</a></h4>
 <p><a href="https://libguides.uky.edu/4"><em>Academic Search Complete (ASC)</em></a> is a database of databases.
 It can search over 60 different databases and indexes,
@@ -646,7 +675,7 @@ there are certain advanced tricks we can use to
 leverage them to find better information.
 We'll cover those soon.
 Regardless, if we apply what we'll learn in this class,
-we'll become that much more accomplished. </p>
+we'll become that much more accomplished.</p>
 <p>In short, we are going to learn a bit
 more about what's hidden from most users and from the common view.
 To do that,
@@ -680,7 +709,7 @@ primary and secondary information.</p>
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="3b-reference-managers-getting-started.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="3b-reference-managers-getting-started.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -694,7 +723,7 @@ primary and secondary information.</p>
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="3b-reference-managers-getting-started.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="3b-reference-managers-getting-started.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

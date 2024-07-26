@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -31,7 +31,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -61,42 +61,71 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1a-intro-to-pkm.html"><strong aria-hidden="true">1.1.</strong> Introduction to PKM</a></li></ol></li><li class="chapter-item expanded "><a href="p2-pkm-basics.html"><strong aria-hidden="true">2.</strong> PKM Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2a-email-management.html"><strong aria-hidden="true">2.1.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2b-working-with-gen-ai.html"><strong aria-hidden="true">2.2.</strong> Working with Generative AI</a></li></ol></li><li class="chapter-item expanded "><a href="p3-info-resources-sources.html"><strong aria-hidden="true">3.</strong> Using Information Resources and Managing Information Sources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3a-information-sources-resources.html"><strong aria-hidden="true">3.1.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="3b-reference-managers-getting-started.html"><strong aria-hidden="true">3.2.</strong> Reference Managers: Getting Started</a></li></ol></li><li class="chapter-item expanded "><a href="p4-retrieving-evaluating-information.html"><strong aria-hidden="true">4.</strong> Retrieving and Evaluating Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4a-web-information-retrieval.html"><strong aria-hidden="true">4.1.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="4b-database-information-retrieval.html" class="active"><strong aria-hidden="true">4.2.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="4c-evaluating-information-sources.html"><strong aria-hidden="true">4.3.</strong> Evaluating Information Sources</a></li></ol></li><li class="chapter-item expanded "><a href="p5-wikipedia-project.html"><strong aria-hidden="true">5.</strong> Wikipedia Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5b-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">5.1.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="5c-library-sources-part-1.html"><strong aria-hidden="true">5.2.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5d-library-sources-part-2.html"><strong aria-hidden="true">5.3.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5e-web-sources-part-1.html"><strong aria-hidden="true">5.4.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5f-web-sources-part-2.html"><strong aria-hidden="true">5.5.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5g-reference-managers-finishing-up.html"><strong aria-hidden="true">5.6.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="5h-project-close-wikipedia-part-2.html"><strong aria-hidden="true">5.7.</strong> Wikipedia Project: Completion</a></li></ol></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">6.</strong> GNU Free Documentation License</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -149,16 +178,16 @@
                     <main>
                         <h1 id="database-information-retrieval"><a class="header" href="#database-information-retrieval">Database Information Retrieval</a></h1>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
-<p>I introduced the concept of databases in 
+<p>I introduced the concept of databases in
 <a href="3a-information-sources-resources.html">section 3.1</a>.
 Academic databases, or sometimes bibliographic databases,
 offer a number of unique advantages over search engines,
 and some disadvantages, too.
-The main advantages are that databases offer 
+The main advantages are that databases offer
 specialized collections on a variety of topics;
 they offer many sources that are invisible to search engines; and
 they provide greater control over the search process.
-The main disadvantage is that they are a bit complicated to use well, 
+The main disadvantage is that they are a bit complicated to use well,
 there are many databases to choose from (and find),
 they have their own user interfaces, and
 they are often only accessible via a library.</p>
@@ -223,7 +252,7 @@ In a database, this metadata is created
 by professionals and is well structured
 (as illustrated in Figure 1 above).
 As searchers, this means
-that there are pre-set fields that 
+that there are pre-set fields that
 we can search in academic databases and that
 these pre-set fields specifically search the
 corresponding metadata.
@@ -245,7 +274,7 @@ we can search the following fields:</p>
 document type, language, number of pages, and images
 (depending on the database and its content).
 In the end, this means we have greater control over
-the search process than we do in a search engine 
+the search process than we do in a search engine
 because the corpus is better defined.</p>
 <p>In the previous section on web information retrieval,
 I showed how we can search the web
@@ -318,7 +347,7 @@ must include that subject term,
 and that record should match the contents of the item.
 I can peruse the results and identify other subject terms
 that help narrow my results.
-For example, the subject term <strong>BIRD habitats</strong> appears 
+For example, the subject term <strong>BIRD habitats</strong> appears
 in records with the subject term <strong>Forest animals</strong>,
 since records often have multiple subject terms.
 If I combine those terms with an <strong>AND</strong> operator,
@@ -424,7 +453,7 @@ a <strong>citation database</strong>.
 Three useful ones available to us are:</p>
 <ul>
 <li><a href="https://libguides.uky.edu/3347">Scopus</a></li>
-<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and </li>
+<li><a href="https://libguides.uky.edu/467">Web of Science</a>, and</li>
 <li><a href="https://scholar.google.com/">Google Scholar</a> (more of a scholarly <em>search engine</em>).</li>
 </ul>
 <p>The first two are available via UK Libraries,
@@ -442,7 +471,7 @@ then the two pages are likely to be about the same topic.
 Because of this theory,
 we can follow citations to find more relevant articles.</p>
 <p>Pictured here is a record in <em>Web of Science</em> on information literacy.
-To the far right you can see that it has <strong>4 Citations</strong>. 
+To the far right you can see that it has <strong>4 Citations</strong>.
 If we click on that <strong>4 Citations</strong> link,
 we can begin to browse those 4 articles or documents.
 Per citation theory,
@@ -534,8 +563,8 @@ We've seen this <strong>AND</strong> in prior examples.</p>
 Many bibliographic databases offer all three.
 The <strong>NOT</strong> operator instructs the database
 to exclude the assigned term.
-Thus, if we had chosen <strong>NOT &quot;regression&quot;</strong>,
-then the <em>CMMC</em> database would have 
+Thus, if we had chosen <strong>NOT "regression"</strong>,
+then the <em>CMMC</em> database would have
 returned results where the term <strong>regression</strong>
 surely did NOT appear in the abstract for
 records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
@@ -549,12 +578,12 @@ as well as those records that did or did not have
 The <strong>OR</strong> operator is more useful when querying
 terms in the same search fields.
 For instance, we might want to use the <strong>OR</strong>
-operator to search for two different terms 
+operator to search for two different terms
 that might appear in the abstract fields,
 or the subject term fields,
 such as the following related terms:</p>
-<pre><code>DIFFUSION of innovations theory&quot; OR
-INFORMATION dissemination&quot;
+<pre><code>DIFFUSION of innovations theory" OR
+INFORMATION dissemination"
 </code></pre>
 <p>We can see how this plays out in the results.
 In the first record in the following screenshot,
@@ -648,7 +677,7 @@ chosen RM as you go.</p>
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="4c-evaluating-information-sources.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="4c-evaluating-information-sources.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -662,7 +691,7 @@ chosen RM as you go.</p>
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="4c-evaluating-information-sources.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="4c-evaluating-information-sources.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

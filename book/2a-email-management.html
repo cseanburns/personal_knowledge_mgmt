@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -31,7 +31,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -61,42 +61,71 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1a-intro-to-pkm.html"><strong aria-hidden="true">1.1.</strong> Introduction to PKM</a></li></ol></li><li class="chapter-item expanded "><a href="p2-pkm-basics.html"><strong aria-hidden="true">2.</strong> PKM Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2a-email-management.html" class="active"><strong aria-hidden="true">2.1.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2b-working-with-gen-ai.html"><strong aria-hidden="true">2.2.</strong> Working with Generative AI</a></li></ol></li><li class="chapter-item expanded "><a href="p3-info-resources-sources.html"><strong aria-hidden="true">3.</strong> Using Information Resources and Managing Information Sources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3a-information-sources-resources.html"><strong aria-hidden="true">3.1.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="3b-reference-managers-getting-started.html"><strong aria-hidden="true">3.2.</strong> Reference Managers: Getting Started</a></li></ol></li><li class="chapter-item expanded "><a href="p4-retrieving-evaluating-information.html"><strong aria-hidden="true">4.</strong> Retrieving and Evaluating Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4a-web-information-retrieval.html"><strong aria-hidden="true">4.1.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="4b-database-information-retrieval.html"><strong aria-hidden="true">4.2.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="4c-evaluating-information-sources.html"><strong aria-hidden="true">4.3.</strong> Evaluating Information Sources</a></li></ol></li><li class="chapter-item expanded "><a href="p5-wikipedia-project.html"><strong aria-hidden="true">5.</strong> Wikipedia Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5b-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">5.1.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="5c-library-sources-part-1.html"><strong aria-hidden="true">5.2.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5d-library-sources-part-2.html"><strong aria-hidden="true">5.3.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5e-web-sources-part-1.html"><strong aria-hidden="true">5.4.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5f-web-sources-part-2.html"><strong aria-hidden="true">5.5.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5g-reference-managers-finishing-up.html"><strong aria-hidden="true">5.6.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="5h-project-close-wikipedia-part-2.html"><strong aria-hidden="true">5.7.</strong> Wikipedia Project: Completion</a></li></ol></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">6.</strong> GNU Free Documentation License</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -158,7 +187,7 @@
 College</a></li>
 </ul>
 </li>
-<li>Outlook 
+<li>Outlook
 <ul>
 <li>Manage email messages by using rules. Retrieved from <a href="https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59">Using Rules -
 Microsoft</a></li>
@@ -203,7 +232,7 @@ since email reigns supreme as a form of communication
 across industry,
 it's important to learn some strategies
 for managing our emails and avoiding inboxes
-with hundreds or thousands of unread email. </p>
+with hundreds or thousands of unread email.</p>
 <h2 id="strategies"><a class="header" href="#strategies">Strategies</a></h2>
 <p>The first set of readings listed above focus
 on overall strategies for managing our email inboxes.
@@ -223,7 +252,7 @@ how to apply these lessons based on what you use.</p>
 <p>Each email service we use (e.g., Outlook, Gmail, etc.)
 offers similar but different ways to organize our email.
 Here are some ways to organize your emails
-for two of the most common services, but 
+for two of the most common services, but
 keep in mind that the underlying principals apply elsewhere:</p>
 <ol>
 <li>
@@ -238,7 +267,7 @@ labels.</p>
 mailings lists to that account. I have another folder titled 'Canvas
 email', where all email from my courses are routed to. And so on. Most of
 these emails are not time-sensitive (e.g., mailing list email) or it's
-simply helpful to group email by category (e.g., Canvas student email). 
+simply helpful to group email by category (e.g., Canvas student email).
 Using them thus helps keep email organized. As a student, you might
 want to create folders for specific courses, specific majors/minors,
 administrative functions (registration related emails, for example) and
@@ -258,7 +287,7 @@ Outlook and Gmail both offer advanced searching abilities.</p>
 <p>In Outlook, you can search:</p>
 <ul>
 <li>in specific folders</li>
-<li>by whom an email is <strong>From</strong> </li>
+<li>by whom an email is <strong>From</strong></li>
 <li>by whom you sent an email <strong>To</strong></li>
 <li>by a <strong>CC</strong> (carbon copy) address or person</li>
 <li>by <strong>Subject</strong> line</li>
@@ -295,13 +324,13 @@ The aim here is to be intentional about using email
 rather than mindless and distracted by it.</p>
 <p><em>The Washington Post</em> article also suggests
 applying <strong>the four Ds</strong> to your emails:
-&quot;<strong>do, delete, delegate or defer</strong>.
+"<strong>do, delete, delegate or defer</strong>.
 It's up to you how to implement these ideas, but
 the main goal is to get rid of unnecessary email fast.
 Don't let it accumulate.
 The more emails that sit in our inbox,
 the more overwhelming it becomes afterward.
-In fact, you can <strong>unsubscribe</strong> to everything that is not important. </p>
+In fact, you can <strong>unsubscribe</strong> to everything that is not important.</p>
 <p>Another good idea is to keep personal and work email separate.
 In fact, have more than one personal email account.
 Use one personal as a throwaway account for signing up to random websites.
@@ -320,7 +349,7 @@ using good Calendar and Task apps can help
 keep our days organized and our to-do lists manageable.
 Both Outlook and Gmail integrate <strong>Tasks</strong> and <strong>Calendars</strong>.
 The readings above link to help pages on how to use these functions.
-These are super time-saving functions for me. </p>
+These are super time-saving functions for me.</p>
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>In addition to managing our personal knowledge,
 one of the main points of this class is
@@ -348,7 +377,7 @@ The two main strategies involve how to:</p>
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="2b-working-with-gen-ai.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="2b-working-with-gen-ai.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -362,7 +391,7 @@ The two main strategies involve how to:</p>
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="2b-working-with-gen-ai.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="2b-working-with-gen-ai.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

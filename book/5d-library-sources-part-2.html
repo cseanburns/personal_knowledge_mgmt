@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -31,7 +31,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -61,42 +61,71 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1a-intro-to-pkm.html"><strong aria-hidden="true">1.1.</strong> Introduction to PKM</a></li></ol></li><li class="chapter-item expanded "><a href="p2-pkm-basics.html"><strong aria-hidden="true">2.</strong> PKM Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2a-email-management.html"><strong aria-hidden="true">2.1.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2b-working-with-gen-ai.html"><strong aria-hidden="true">2.2.</strong> Working with Generative AI</a></li></ol></li><li class="chapter-item expanded "><a href="p3-info-resources-sources.html"><strong aria-hidden="true">3.</strong> Using Information Resources and Managing Information Sources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3a-information-sources-resources.html"><strong aria-hidden="true">3.1.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="3b-reference-managers-getting-started.html"><strong aria-hidden="true">3.2.</strong> Reference Managers: Getting Started</a></li></ol></li><li class="chapter-item expanded "><a href="p4-retrieving-evaluating-information.html"><strong aria-hidden="true">4.</strong> Retrieving and Evaluating Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4a-web-information-retrieval.html"><strong aria-hidden="true">4.1.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="4b-database-information-retrieval.html"><strong aria-hidden="true">4.2.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="4c-evaluating-information-sources.html"><strong aria-hidden="true">4.3.</strong> Evaluating Information Sources</a></li></ol></li><li class="chapter-item expanded "><a href="p5-wikipedia-project.html"><strong aria-hidden="true">5.</strong> Wikipedia Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5b-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">5.1.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="5c-library-sources-part-1.html"><strong aria-hidden="true">5.2.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5d-library-sources-part-2.html" class="active"><strong aria-hidden="true">5.3.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5e-web-sources-part-1.html"><strong aria-hidden="true">5.4.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5f-web-sources-part-2.html"><strong aria-hidden="true">5.5.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5g-reference-managers-finishing-up.html"><strong aria-hidden="true">5.6.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="5h-project-close-wikipedia-part-2.html"><strong aria-hidden="true">5.7.</strong> Wikipedia Project: Completion</a></li></ol></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">6.</strong> GNU Free Documentation License</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -158,24 +187,24 @@ In this section, I focus on a handful of the
 databases that UK Libraries offers.</p>
 <p>I can only focus on a handful of databases
 because UK Libraries,
-as a major research institution and because of its 
+as a major research institution and because of its
 large student body and wide range of majors,
 provides access to 734 total databases
 (as of spring 2024).
-Many of these databases are specialized 
+Many of these databases are specialized
 (e.g., African American and Africana Studies, Appalachian Studies)
 or cover a broad general research area (e.g., Chemistry, Education).
 But a few are designed to be super broad;
 that is, they are databases of databases.
 I've already covered <em>Academic Search Complete</em> in prior sections,
 which is one example of a database of databases.
-In this section, I'll cover another one plus some 
+In this section, I'll cover another one plus some
 citation databases.</p>
-<p>Remember that if you have desktop Zotero 
+<p>Remember that if you have desktop Zotero
 plus the Zotero browser add-on installed,
 Zotero will automatically recognize when you have a
 web page open for a specific item in of these databases.
-Thus, use Zotero when examining these databases 
+Thus, use Zotero when examining these databases
 to collect information on your Wikipedia topic.</p>
 <p>While I will only cover a few databases in this section,
 I encourage you to explore all that's offered.
@@ -207,7 +236,7 @@ title="A-Z Databases">
 market, and company information.
 You can search against subjects, industries, within regions, and
 you can add other limits.
-There are a slew of some advanced search operators that 
+There are a slew of some advanced search operators that
 help power up your search.
 You can <a href="http://factiva.com/CP_Developer/ProductHelp/FDK/FDK38/search_factiva/query_expressions/search_statement_operators.htm">read through the list of operators</a> and
 field codes to use when searching <em>Factiva</em>.</p>
@@ -223,10 +252,10 @@ Google and open source software.
 To search this in <em>Factiva</em>,
 I can approach the query simply, like so
 (being sure to wrap <em>open source</em> in quotes):</p>
-<pre><code>&quot;open source&quot; AND google 
+<pre><code>"open source" AND google 
 </code></pre>
 <p>This search was conducted on Aug 1, 2022, and
-you can see there are 4,244 results. </p>
+you can see there are 4,244 results.</p>
 <p>On the left side you can see a distribution of articles
 by date of publication,
 a list of relevant companies that appear
@@ -242,7 +271,7 @@ We can look at the publication data distribution and
 note whether there are more results on a
 given day than on others.
 This may suggest a hot news day for this particular topic and
-that may be something we want to explore. </p>
+that may be something we want to explore.</p>
 <p>Let's go back to the search builder.
 Say I found that the previous set of results
 were hit or miss and, as a result,
@@ -254,9 +283,9 @@ set amount of space between each other.
 The assumption is that the closer any terms are to each other,
 the more likely the document will be about those terms.
 Thus, if I replace the <strong>and</strong> operator with the <strong>adj5</strong> operator,
-I ask <em>Factiva</em> to return documents where the term <em>open source</em> 
-is within five words of the term <em>Google</em>: </p>
-<pre><code>&quot;open source&quot; adj5 google
+I ask <em>Factiva</em> to return documents where the term <em>open source</em>
+is within five words of the term <em>Google</em>:</p>
+<pre><code>"open source" adj5 google
 </code></pre>
 <p>You can see that the results are much different than the previous one.
 Here I only have 205 results.
@@ -274,24 +303,24 @@ operators are available: <strong>and</strong>, <strong>or</strong>, <strong>not<
 There are more proximity and other operators, such as:</p>
 <ul>
 <li><strong>w/N</strong></li>
-<li><code>&quot;open soruce&quot; w/5 google</code></li>
-<li>like the <code>adj</code> operators </li>
+<li><code>"open soruce" w/5 google</code></li>
+<li>like the <code>adj</code> operators</li>
 <li><strong>same</strong>
 <ul>
-<li><code>&quot;open source&quot; same google</code></li>
+<li><code>"open source" same google</code></li>
 <li>terms must appear in same paragraph</li>
 </ul>
 </li>
 <li><strong>near[N]</strong>
 <ul>
-<li><code>&quot;open source&quot; near5 google</code></li>
+<li><code>"open source" near5 google</code></li>
 <li>like <code>adj</code> but bi-directional</li>
 </ul>
 </li>
 <li><strong>atleastN</strong>
 <ul>
-<li><code>atleast5 google and &quot;open source&quot;</code></li>
-<li>'google' must appear at least 5 times in document </li>
+<li><code>atleast5 google and "open source"</code></li>
+<li>'google' must appear at least 5 times in document</li>
 </ul>
 </li>
 </ul>
@@ -340,15 +369,15 @@ title="WoS advanced search for TS=("open source" NEAR google)">
 <figcaption>Fig. 4: <i>WoS</i> advanced search for TS=("open source" NEAR google)</figcaption> 
 </figure>
 <p>Now there are only 9 results,
-and if I examine the title, abstract, or keywords for the results, 
-I'll see that the term &quot;google&quot; is placed within five words of 
-the term &quot;open source&quot;.
+and if I examine the title, abstract, or keywords for the results,
+I'll see that the term "google" is placed within five words of
+the term "open source".
 If I want to really narrow down my search,
 I can change the field to <strong>Title</strong> only.</p>
 <p>The default results list is to show articles
 that are published more recently.
 I can change this default sorting method so that
-<em>WoS</em> sorts based on sources that have the highest citations first. 
+<em>WoS</em> sorts based on sources that have the highest citations first.
 Once I do this, I can go to the right side,
 and look at the <strong>Times Cited</strong> link and
 see which articles have been cited the most.
@@ -356,16 +385,16 @@ This is what makes <em>WoS</em> a citation database.
 We don't have to use <em>WoS</em> as a citation database,
 but this is what separates <em>WoS</em>
 from many other scholarly databases.</p>
-<p>Theoretically, each one of these citing articles should be 
-related to the article that is cited by them. I can them peruse 
-these citing articles to help me find even more 
+<p>Theoretically, each one of these citing articles should be
+related to the article that is cited by them. I can them peruse
+these citing articles to help me find even more
 relevant sources of information.</p>
 <p>Instead of basic search, we can search
 by author, cited reference, and more.
-If you click on the big question mark button in <em>WoS</em>, 
+If you click on the big question mark button in <em>WoS</em>,
 you'll find a guide on how to use <em>WoS</em>.
 The guide includes some tips on the use of various search operators,
-including the <em>NEAR</em> operator as well as the Boolean operators. </p>
+including the <em>NEAR</em> operator as well as the Boolean operators.</p>
 <p>Remember that <em>Web of Science</em> doesn't offer direct access to content,
 but notice that there is this <strong>Full Text @ W. T. Young</strong> link
 at the bottom of some records in the search results.
@@ -404,10 +433,10 @@ therefore, many journal articles.
 <em>JSTOR</em> has long focused on back issues of journals, but
 in recent years has made moves to include current literature and
 open access content (this is content that is freely available).
-The content in <em>JSTOR</em> is high quality, peer-reviewed work, which 
+The content in <em>JSTOR</em> is high quality, peer-reviewed work, which
 makes <em>JSTOR</em> a great place to gather documents on a topic
 that you want to research in-depth.
-My <strong>&quot;open source&quot; and google</strong> query for Images
+My <strong>"open source" and google</strong> query for Images
 returns 26 results.</p>
 <figure>
 <img src="images/10-image-8.png"
@@ -419,16 +448,16 @@ title="JSTOR image search">
 which is located in the <em>JSTOR</em> images search above.
 <em>ARTSTOR</em> is database of art and multimedia objects,
 much of which is also available as open access.</p>
-<p>Again, remember that if you have desktop Zotero 
+<p>Again, remember that if you have desktop Zotero
 plus the Zotero browser add-on installed,
 Zotero will automatically recognize when you have a
-web page open for a specific item in in <em>JSTOR</em>. 
-Thus, you can use Zotero with <em>JSTOR</em> 
+web page open for a specific item in in <em>JSTOR</em>.
+Thus, you can use Zotero with <em>JSTOR</em>
 to collect information on your Wikipedia topic.</p>
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>That covers <em>Factiva</em>, <em>Web of Science</em>,
 <em>Google Scholar</em>, and <em>JSTOR</em>.
-Remember that <em>Factiva</em> is a general-interest news database; 
+Remember that <em>Factiva</em> is a general-interest news database;
 <em>WoS</em> and <em>Google Scholar</em> are both citation, scholarly databases
 (I'll cover <em>Google Scholar</em> in the next lesson); and
 <em>JSTOR</em> is a scholarly and image database.</p>
@@ -443,7 +472,7 @@ we begin to cover web sources.</p>
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="5e-web-sources-part-1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="5e-web-sources-part-1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -457,7 +486,7 @@ we begin to cover web sources.</p>
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="5e-web-sources-part-1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="5e-web-sources-part-1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -31,7 +31,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -61,42 +61,71 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1a-intro-to-pkm.html"><strong aria-hidden="true">1.1.</strong> Introduction to PKM</a></li></ol></li><li class="chapter-item expanded "><a href="p2-pkm-basics.html"><strong aria-hidden="true">2.</strong> PKM Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2a-email-management.html"><strong aria-hidden="true">2.1.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2b-working-with-gen-ai.html"><strong aria-hidden="true">2.2.</strong> Working with Generative AI</a></li></ol></li><li class="chapter-item expanded "><a href="p3-info-resources-sources.html"><strong aria-hidden="true">3.</strong> Using Information Resources and Managing Information Sources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3a-information-sources-resources.html"><strong aria-hidden="true">3.1.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="3b-reference-managers-getting-started.html"><strong aria-hidden="true">3.2.</strong> Reference Managers: Getting Started</a></li></ol></li><li class="chapter-item expanded "><a href="p4-retrieving-evaluating-information.html"><strong aria-hidden="true">4.</strong> Retrieving and Evaluating Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4a-web-information-retrieval.html"><strong aria-hidden="true">4.1.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="4b-database-information-retrieval.html"><strong aria-hidden="true">4.2.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="4c-evaluating-information-sources.html"><strong aria-hidden="true">4.3.</strong> Evaluating Information Sources</a></li></ol></li><li class="chapter-item expanded "><a href="p5-wikipedia-project.html"><strong aria-hidden="true">5.</strong> Wikipedia Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5b-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">5.1.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="5c-library-sources-part-1.html"><strong aria-hidden="true">5.2.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5d-library-sources-part-2.html"><strong aria-hidden="true">5.3.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5e-web-sources-part-1.html" class="active"><strong aria-hidden="true">5.4.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5f-web-sources-part-2.html"><strong aria-hidden="true">5.5.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5g-reference-managers-finishing-up.html"><strong aria-hidden="true">5.6.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="5h-project-close-wikipedia-part-2.html"><strong aria-hidden="true">5.7.</strong> Wikipedia Project: Completion</a></li></ol></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">6.</strong> GNU Free Documentation License</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -168,7 +197,7 @@ and it can be fun to add random ones to your searches:</p>
 <pre><code>asthma site:health
 (linux or windows or macos) site:computer
 </code></pre>
-<p>That said, in this and the next section I want to cover a 
+<p>That said, in this and the next section I want to cover a
 few specific sites that are great information resources.</p>
 <h2 id="google-scholar"><a class="header" href="#google-scholar">Google Scholar</a></h2>
 <p>Let's try <a href="https://scholar.google.com"><em>Google Scholar</em></a> now.
@@ -183,7 +212,7 @@ In Google and related search products,
 like <em>Google Scholar</em>, the <strong>AND</strong> operator does not
 need to be specified.
 Thus the following search is translated as:
-<strong>&quot;open source&quot; AND google</strong></p>
+<strong>"open source" AND google</strong></p>
 <figure>
 <img src="images/10-image-5.png"
 alt="Google Scholar search for "open source" google"
@@ -196,9 +225,9 @@ If we want to limit our results,
 we have to use other tricks.
 The most common one is simply to add
 more specific keywords to our query.
-E.g., if I add &quot;android&quot; to the query,
+E.g., if I add "android" to the query,
 that reduces the results.</p>
-<pre><code>&quot;open source&quot; google android
+<pre><code>"open source" google android
 </code></pre>
 <p>There is an advanced search option.
 However, since <em>Google Scholar</em> is indexing full text sources
@@ -207,7 +236,7 @@ this means that it can't offer the kind of advanced
 search we've seen in database searches.
 It is pretty useful, though.
 For example, Figure 6 shows an advanced search for the terms
-<strong>google</strong> and <strong>&quot;open source&quot;</strong> but it 
+<strong>google</strong> and <strong>"open source"</strong> but it
 excludes the term <strong>android</strong> in the title,
 and it asks for results published from 2018 to today.
 You can see that this substantially narrows our results.
@@ -224,14 +253,14 @@ title="Google Scholar search for "open source" google not android in title">
 You can see the <strong>Cited by N</strong> link just below each result.
 If something has been cited,
 click on that to follow citations.</p>
-<p>The reason <em>Google Scholar</em> returns so many more results is 
+<p>The reason <em>Google Scholar</em> returns so many more results is
 because it casts a bigger net than something like
 <em>Web of Science</em> does,
 which purposefully casts a smaller net,
 which is smaller to control for quality.
 Because of that, I find <em>Google Scholar</em> can return
 many non-relevant works, but
-it makes it nice for browsing or discovery. 
+it makes it nice for browsing or discovery.
 <em>Web of Science</em> shines for more
 rigorous and methodical literature searches.</p>
 <p>The observant among you may have noticed that in Figure 5,
@@ -241,13 +270,13 @@ I've configured it to talk with UK's Infokat.
 This is something you have to set up, but
 it's pretty simple to do.
 Just click on settings,
-and then go to <strong>Library Links</strong>, and 
+and then go to <strong>Library Links</strong>, and
 then search for the University of Kentucky.
 Check the box next to it.
 Be sure that you're signed into Google
-if you want to save this as a preference. 
+if you want to save this as a preference.
 After that,
-you should see the <strong>View Now</strong> option when something is 
+you should see the <strong>View Now</strong> option when something is
 available via UK Libraries.</p>
 <figure>
 <img src="images/10-image-7.png"
@@ -274,9 +303,9 @@ title="Google Scholar View Now Setup">
 </li>
 </ul>
 <h2 id="internet-archive"><a class="header" href="#internet-archive">Internet Archive</a></h2>
-<p>The <a href="https://archive.org">Internet Archive</a> is a &quot;non-profit library
+<p>The <a href="https://archive.org">Internet Archive</a> is a "non-profit library
 of millions of free books, movies, software, music,
-websites, and more.&quot;</p>
+websites, and more."</p>
 <p>For example, you might be interested in playing
 some old PC games that your parents played
 when they were younger:</p>
@@ -292,7 +321,7 @@ was captured by the <em>Wayback Machine</em> in 1997:</p>
 <p>But the <em>Wayback Machine</em> is also useful to retrieve
 web pages and sites that have been shutdown or removed.
 That is, if you have a broken URL,
-you can enter the URL in the Wayback Machine and 
+you can enter the URL in the Wayback Machine and
 see if the original page was archived.</p>
 <p>The <em>Internet Archive</em> is also a library, and
 offers collections on a vast range of topics and links
@@ -332,14 +361,14 @@ digital libraries that focus on specific topics or areas.
 For example, check out this fun collection of resources
 on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
 <p>The Library of Congress also provides access to
-<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from 
+<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
 <strong>American History</strong>, <strong>War &amp; Military</strong>,
 <strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>,
 <strong>Science &amp; Technology</strong>, and more.</p>
 <h2 id="various-government-resources"><a class="header" href="#various-government-resources">Various Government Resources</a></h2>
 <h3 id="us-census"><a class="header" href="#us-census">U.S. Census</a></h3>
 <p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best
-way to get various demographic and some economic 
+way to get various demographic and some economic
 information about the U.S.
 You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a>
 about your local area.
@@ -446,7 +475,7 @@ for a wide range of meals.</p>
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>Although it's important to know how to search the web well,
 it's also handy to know about specific go to resources on the
-web that can provide more in-depth information or 
+web that can provide more in-depth information or
 that provide more coverage than most Google etc searches can yield.
 In order to highlight this, in this section I covered a few,
 I think, super interesting and helpful sites that include the:</p>
@@ -480,7 +509,7 @@ kind of search.</p>
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="5f-web-sources-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="5f-web-sources-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -494,7 +523,7 @@ kind of search.</p>
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="5f-web-sources-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="5f-web-sources-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
