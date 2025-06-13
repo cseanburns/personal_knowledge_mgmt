@@ -67,7 +67,7 @@ We will use the material and tools covered here to produce content for a Wikiped
 
 #### Email Management
 
-I start this book by covering two basic topics: email management and generative AI.
+I start this book by covering two basic topics in Chapter 2: email management and generative AI.
 We begin with email management because email continues to be an important means of communication,
 especially in professional contexts,
 and because our inboxes can become easily overwhelming.
@@ -132,11 +132,34 @@ Second, there's a difference between using them for mindless work and using them
 That is, personally, I like my brain and what it can do.
 Activities like reading, writing, coding, and conversing are activities that help me learn and help me think, and that's good for my brain.
 *I think, therefore, I am*, wrote the philosopher Descarte several centuries ago, and
-the we may want to be wary of how much we asking it to think for us in case we stop thinking for ourselves.
+we may want to be wary of how much we asking it to think for us in case we stop thinking for ourselves.
 
 Therefore, we will spend a little time about on generative AI and learning how to use it well and ethically.
 This means we will learn how to use it **augment** our thinking and manage what we're learning,
 rather than to replace our thinking.
+
+#### Remaining Lessons
+
+In Chapters 3 and 4, we focus more on the fundamentals of PKM.
+In Chapter 3, we learn how to use the two major information resources: the library and the web.
+We also learn about reference managers, which are a lot like advanced bookmarking applications.
+These applications help us build our own collections of information sources and then use those sources as needed.
+
+In Chapter 4, we learn the basics of information search, or information retrieval, and
+how it works on the web and in bibliographic databases, like we find using our library.
+We also cover how to recognize relevant information and then evaluate it.
+
+In Chapter 5, we begin to focus on our final project, which is to edit a Wikipedia article.
+We will cover additional resources, both from the library and the web, in order to find relevant information for our chosen Wikipedia page.
+We will also use our reference manager to help with the project.
+Chapter 5 is where we work to build out our personal knowledge workflow using the tools and techniques we covered in prior chapters.
+
+## Conclusion
+
+We live in a knowledge society.
+Recognizing that, the goal of this course is to become effective at using the tools
+to locate, evaluate, and use information in order to build personal knowledge workflows.
+Let's get started.
 
 [uklibraries]:https://libraries.uky.edu/
 [chatgpt]:https://chat.openai.com/
