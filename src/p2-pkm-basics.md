@@ -1,58 +1,23 @@
 # Welcome to the PKM Basics Section!
 
-Hey there!
-Welcome to the 'PKM Basics'
-section of our
-Personal Knowledge Management (PKM) course.
-In this section,
-we're going to delve into
-two essential skills that are
-fundamental to managing your
-personal and professional knowledge
-effectively in today's digital world.
+Welcome to Chapter 2, the *PKM Basics* section of our Personal Knowledge Management (PKM) course.
+In this section, we'll delve into two skills that are fundamental to managing our personal and professional knowledge effectively.
 
-First up,
-we'll tackle **Email Management**.
-If your inbox often feels like a
-beast that's impossible to tame,
-you're not alone.
-We're going to explore
-strategies to organize,
-prioritize, and manage your emails
-more efficiently.
-Whether it's reducing clutter,
-dealing with important messages promptly,
-or just keeping your sanity intact
-amidst the constant
-flow of digital communication,
-this section will help.
+First we'll tackle **Email Management**.
+We all know that our inboxes can feel like beasts that are impossible to tame.
+We're going to explore strategies to organize, prioritize, and manage email more efficiently.
+We'll learn how to reduce clutter, deal with important messages promptly, and
+keep our sanity intact amidst the constant barrage of digital communication.
 
-Next, we step into
-the exciting world of
-**Working with Generative AI**.
-Artificial intelligence isn't
-just a buzzword;
-it's a powerful tool
-at your disposal.
-We'll look at how AI can
-help you in generating ideas,
-creating content, and
-even making decisions.
-Whether you're a novice or
-have dabbled in AI before,
-there's something for
-everyone to learn about
-leveraging these intelligent
-systems for your
-personal knowledge management.
+Second, we'll discuss the exciting (and worrisome???) world of **Working with Generative AI**.
+Generative artificial intelligence is a powerful tool.
+We'll look at how AI can help you to generate ideas and polish them.
+But AI can also get you into trouble and can certainly help you **cheat** on your work.
+Therefore, we'll discuss its ethical uses and learn how to use AI to augment our own thinking and intelligence rather than replace it.
 
-This section is a bit
-of an island compared
-to the rest of the course.
-Here, we're focusing on building
-skills that will serve you well,
-irrespective of the specific tools or
-platforms you use.
-Let's dive in and
-learn how email management and
-generative AI can help with PKM.
+Chapter 2 is a bit of an island compared to the rest of the course.
+While our focus in this chapter, like the remaining chapters,
+is on building skills that will serve you well as students and knowledge workers,
+the remaining lessons covered in this work focus on building skills and working towards a final project.
+
+In the meantime, let's get started with email and AI.
