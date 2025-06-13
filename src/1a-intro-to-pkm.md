@@ -3,127 +3,85 @@
 ## What is personal knowledge management (PKM)?
 
 What is personal knowledge management (PKM)?
-Well, I'd hazard a guess that most of us depend
-largely on two main sources to search for, locate, and retrieve information,
+Well, I'd hazard a guess that most of us depend largely on two main sources to search for, locate, and retrieve information,
 either on a daily basis or for more extensive work.
-These two sources are the people we know and the search engines,
-like Google or Bing, that we use on a daily basis.
-Relying on these two kinds of sources may get us by for most things,
-but there are times when we will require more rigorous sources
-because the task at hand stipulates better information or
-the risks involved in making a decision
-are weighty enough to require more certainty.
-Good, thorough information can reduce our uncertainty or
-enable us to measure levels of uncertainty, and
-this is helpful when making decisions, writing papers, completing projects,
-and so forth.
-In this book, therefore, our first
-learning goal is focused on **information sources**, and
-specifically, to:
+These two sources are **the people we know** and **the search engines we use on a daily basis**, like Google.
+Relying on these two kinds of sources may get us by for many things.
+However, there are times when we will require more rigorous sources because the task at hand
+requires better information or the risks involved in making a decision are weighty enough to require more certainty.
+Good, thorough information can reduce our uncertainty or enable us to measure levels of uncertainty, and
+this is helpful when making decisions, writing papers, completing projects, and working at our first major job.
+Therefore, in this book our first learning goal is focused on **information sources**, and specifically to:
 
 - become aware of the variety of information sources that exist,
 - learn how to search those sources for relevant information, and
-- learn how to evaluate found information.
+- learn how to evaluate the relevant information that we find.
 
 This only covers part of what we mean by personal knowledge management.
-In addition to being able to search for, locate, and retrieve good information,
-it is also important to manage that information and
-to develop good work flows that help with that.
-What I mean is that,
-it may be great that we know that
-[UK Libraries][uklibraries]
-exists and that we can use it to locate good information, but
-if we don't use the library or other great resources
-because we're not in the habit of doing so,
-then what's the point of all this good information and
-all these information technologies that we have to become informed,
-do good things, and to make our lives better and easier?
+In addition to being able to be aware of, to locate, and to evaluate information,
+it is also important to manage that information and to develop good **workflows** that help with that.
+What I mean is that, it may be great that we know that [UK Libraries][uklibraries] exists and that we can use it to locate good information,
+but if we don't use the library or other great resources because we're not in the habit of doing so,
+then what's the point of all this good information?
+And what's the point in having access to all these information technologies that we have to become informed, to do good things, and
+to make our lives better and easier?
 
-Personally, I want to live in a **good information age** 
-rather than merely an **information age**.
-Therefore, our second learning goal is focused
-on the tools and technologies that will help us
-build personalized information and knowledge work flows.
-As stated above,
-often the point of acquiring good information is
-to perform some task or to make a decision.
-A good work flow is good if it fits our style,
-or our way of getting things done,
-because that makes the work flow more likely to be followed.
-A good work flow also maximizes our use of good sources of
-information as well as helps us to produce desired outcomes,
-like a paper for a class, a project for a boss, or
-a decision that involves some uncertainty.
-Our second learning goal is, therefore,
-focused on **personal knowledge work flows**,
-and specifically, to: 
+Personally, I want to live in a **good information age** rather than merely an **information age**.
+Therefore, our second learning goal is focused on the tools and technologies that will help us
+build personalized information and knowledge workflows.
+As stated above, often the point of acquiring good information is to perform some task or to make a decision.
+A good workflow is good if it fits our style, or our way of getting things done, because that makes the workflow more likely to be followed.
+A good workflow also maximizes our use of good sources of information as well as helps us to produce desired outcomes,
+like a paper for a class, a project for a boss, or a decision that involves some uncertainty.
 
-- become aware of the tools and technologies designed to manage personal
-  knowledge work flows,
+Our second learning goal is, therefore, focused on **personal knowledge workflows**, and specifically, to: 
+
+- become aware of the tools and technologies designed to manage personal knowledge workflows,
 - learn how to use these tools and technologies, and
-- incorporate these tools and technologies into our personal knowledge work
-  flows
+- incorporate these tools and technologies into our personal knowledge workflows
 
-Our final learning goal **focuses on outcomes** and
-builds off the first two goals.
-Specifically, our final goal is to habitually use
-the tools and technologies that incorporate
-a variety of good sources of information
+Our final learning goal **focuses on outcomes** and builds off the first two goals.
+Specifically, our final goal is to develop habits using the tools and technologies that incorporate a variety of good sources of information
 in order to accomplish a task or make a decision.
-That is, not only may we want to take advantage
-of the many kinds of information sources that exist, and
-not only may we want to make
-it a habit of using those information sources
-in a habitual, personalized, effective way, but
-we may also, as suggested earlier,
-want to accomplish some task.
-It could be that we may simply want to
-satisfy our curiosity about a topic and learn more,
-which is great!
-But there are times in our lives when we need to get things done
-(e.g., write a paper or create a software program) or
-make a decision that involves some risk
-(e.g., buy a house or choose a healthcare procedure).
-In those cases, having a personal knowledge work flow that
-incorporates high quality sources of information
-will facilitate accomplishing such tasks or making such decisions.
+That is, not only may we want to take advantage of the many kinds of information sources that exist, and
+not only may we want to make it a habit of using those information sources in a habitual, personalized, effective way, but
+we may also, as suggested earlier, want to accomplish some task.
+It could be that we may simply want to satisfy our curiosity about a topic and learn more, which is great!
+But there are times in our lives when we need to get things done (e.g., write a paper or create a software program) or
+make a decision that involves some risk (e.g., buy a house or choose a healthcare procedure).
+In those cases, having a personal knowledge workflow that incorporates high quality sources of information
+facilitates accomplishing such tasks or making such decisions.
 
 ### Topic Outline
 
-In order to accomplish the three goals above,
-this book covers the differences between
-information sources and resources,
-how to find new kinds of information sources and resources,
-how to use reference management software,
-how to search the web and databases,
-and how to evaluate information sources.
+In order to accomplish the three goals above, this book covers:
+
+- the differences between information sources and resources,
+- how to find new kinds of information sources and resources,
+- how to use reference management software,
+- how to search the web and databases, and
+- how to evaluate information sources.
 
 This book is also project based.
-We will use the material and tools covered here
-to produce content for a Wikipedia article
-that you have selected.
+We will use the material and tools covered here to produce content for a Wikipedia article that you have selected.
 
-I start this book by covering two basic topics:
-email management and back ups.
-Although these topics do not necessarily fit within
-the work flow model that frames this book,
-I discuss them because they are
-basic personal knowledge management skills, and
-it's good to not overlook the basics.
+#### Email Management
 
-## ChatGPT, Bard, and other AI Tools
+I start this book by covering two basic topics: email management and generative AI.
+We begin with email management because email continues to be an important means of communication,
+especially in professional contexts,
+and because our inboxes can become easily overwhelming.
+As a result, we may miss out on important information when our inboxes are overloaded.
+Therefore, we will discuss ways to handle email effectively.
 
-I finished writing this book during the summer of 2022,
-just a few months before the public release of ChatGPT and
-later Google's Bard.
-[ChatGPT][chatgpt], [Bard][bard], and other AI chatbots
-are designed to have human-like conversations with users.
-They are super useful, interesting, and even quite fun.
-They can produce papers, code, and much more for your classes
-as well help you (and me!) understand more about a variety
-of topics and issues.
-To make my point,
-I asked ChatGPT and Bard about what they do.
+#### Generative AI
+
+I wrote the first version of this book during the summer of 2022,
+just a few months before the public release of ChatGPT and later Google's Bard (now Gemini).
+[ChatGPT][chatgpt], [Gemini][gemini], [Claude][claude], and other AI chatbots are designed to have human-like conversations with users.
+They are super useful, interesting, and may even be fun.
+They can produce papers, code, and much more for your classes as well help you (and me!) understand more about a variety of topics and issues.
+To make my point, I asked ChatGPT and Gemini about what they do.
 Here is what ChatGPT told me:
 
 > I am ChatGPT, an AI language model developed by OpenAI. I am designed to
@@ -137,7 +95,7 @@ Here is what ChatGPT told me:
 > not always be perfect, and there are limitations to my knowledge and
 > understanding.
 
-And here is what Bard told me:
+And here is what Bard told me in 2022:
 
 > I would describe myself as a large language model, also known as a
 > conversational AI or chatbot trained to be informative and comprehensive. I
@@ -165,20 +123,22 @@ And here is what Bard told me:
 > excited to see what the future holds for me, and I hope to be able to help
 > you in many ways.
 
-In my experience,
-I have thoroughly enjoyed using these services these past few months.
-I will also admit that they have made my life a lot easier.
-That said, I've also learned that there's a difference between
-using them and using them well,
-just like there's a difference between entering basic search
-queries into Google search and
-using advanced search queries.
-Therefore, as much as possible,
-I'll try to incorporate examples from ChatGPT and Bard
-throughout this course,
-to show how they can help manage our personal information and knowledge,
-and also discuss how to use them responsibly and ethically.
+In my experience, I have enjoyed using these services because they can make various tasks a bit easier.
+But there are two things to note.
+First, I've learned that there's a difference between **using them** and **using them well**,
+just like there's a difference between entering basic search queries into Google search and using advanced search queries.
+
+Second, there's a difference between using them for mindless work and using them as a substitute for our own thinking.
+That is, personally, I like my brain and what it can do.
+Activities like reading, writing, coding, and conversing are activities that help me learn and help me think, and that's good for my brain.
+*I think, therefore, I am*, wrote the philosopher Descarte several centuries ago, and
+the we may want to be wary of how much we asking it to think for us in case we stop thinking for ourselves.
+
+Therefore, we will spend a little time about on generative AI and learning how to use it well and ethically.
+This means we will learn how to use it **augment** our thinking and manage what we're learning,
+rather than to replace our thinking.
 
 [uklibraries]:https://libraries.uky.edu/
 [chatgpt]:https://chat.openai.com/
-[bard]:https://bard.google.com/
+[gemini]:https://gemini.google.com/
+[claude]:https://claude.ai/
