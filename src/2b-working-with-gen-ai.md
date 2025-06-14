@@ -1,7 +1,7 @@
 # Working with Generative AI
 
 Understanding and utilizing Generative AI as a Personal Knowledge Management (PKM) tool can be a useful way
-to using applications like [ChatGPT][chatgpt], [Claude][claude], [Gemini][bard], and others.
+to use applications like [ChatGPT][chatgpt], [Claude][claude], [Gemini][bard], and others.
 There are two fundamental keys to success:
 
 - asking good questions, and
@@ -16,13 +16,9 @@ This is the act of crafting your questions and commands in a way that guides the
 with the most useful and relevant information.
 A well-constructed prompt can be the difference between getting a generic response and unlocking valuable insights.
 
-## Reading
+## Using AI
 
-Below I demonstrate a session with Google's Gemini where I construct a series of prompts to talk about prompt engineering.
-The goal of the session is to show how using generative AI effectively is iterative,
-which means that I apply answers from Gemini to generate new responses.
-
-To use generative AI successfully, you should implement the following practices:
+To use generative AI successfully, you should implement the following practices ([Prompt Engineering Guide][prompt_engineering_guide]):
 
 1. **Write Clear Instructions**: The clearer your request, the better the AI can meet your needs.
 2. **Provide Reference Text**: Supplying context or examples can significantly steer the AI towards the kind of response you're looking for.
@@ -31,9 +27,11 @@ To use generative AI successfully, you should implement the following practices:
 5. **Using External Tools**: Learn how to integrate other tools and resources to augment the AI's capabilities.
 6. **Testing Changes Systematically**: Experiment and evaluate how different approaches impact the AI's responses.
 
-- [Prompt Engineering Guide][prompt_engineering_guide]
+Below I demonstrate a session with Google's Gemini where I construct a series of prompts to talk about prompt engineering.
+The goal of the session is to show how using generative AI effectively is iterative,
+which means that I apply answers from Gemini to generate new responses.
 
-The above site provides important information on prompting.
+The Prompt Engineering link above provides other important information on prompting.
 The **Examples of Prompts** page covers the following topics on ways to use generative AI:
 
 - Text summarization
@@ -59,6 +57,9 @@ Please read through these techniques.
 ## Prompt Exchange with Google 
 
 The following is a link to a session I conducted with Google Gemini.
+
+- [Prompt Engineering: Crafting Instructions for AI (Example exchange)][prompt_example]
+
 In this session, I perform the following steps:
 
 1. I prompt Gemini about prompt engineering and how it works
@@ -78,8 +79,6 @@ The problem is that Gemini does not catch this **error** but proceeds to tell me
 In the last prompt, I point out to Gemini that I didn't share the novel's paragraph with it.
 I then share it and it proceeds to tell me the source and classify the text.
 In short, though, this is a good reminder that generative AI can make stuff up.
-
-- [Prompt Engineering: Crafting Instructions for AI (Example exchange)][prompt_example]
 
 ## Projects and Notebooks
 
@@ -137,6 +136,11 @@ First, AI uses a lot of resources.
 - IT manufacturing:
     - is energy intensive
     - uses hazardous chemicals ([Roy et al., 2025][roy_2025])
+- AI data labelling can be labor exploitative ([Pogrebna, 2024][pogrebna_2024])
+
+The industry hopes to use AI to counter some of these impacts.
+For example, AI might help the efficiency of heating and cooling systems and minimize the impact the use of carbon-based energy sources.
+Still, it's important to know that IT has a serious impact on our planet and the people living on it.
 
 ### Cheating Considerations
 
@@ -178,6 +182,7 @@ may result in losing our ability to think ourselves.
 [collaborate_with_claude_on_projects]:https://www.anthropic.com/news/projects
 [few_shot]:https://www.promptingguide.ai/techniques/fewshot
 [gemini]:https://gemini.google.com/
+[jarvis_wiki]:https://en.wikipedia.org/wiki/J.A.R.V.I.S.
 [mining_wiki]:https://en.wikipedia.org/wiki/Environmental_impact_of_mining
 [notebooklm]:https://notebooklm.google.com/
 [prompt_engineering_guide]:https://www.promptingguide.ai/introduction/examples
@@ -188,3 +193,4 @@ may result in losing our ability to think ourselves.
 [what_agent]:https://cloud.google.com/discover/what-are-ai-agents
 [zero_shot]:https://www.promptingguide.ai/techniques/zeroshot
 [zewe_2025]:https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117
+[pogrebna_2024]:https://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568
