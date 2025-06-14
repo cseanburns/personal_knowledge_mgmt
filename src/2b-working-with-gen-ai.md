@@ -155,7 +155,7 @@ You need to be mindful of the policies that your instructors have for their cour
 
 The ethical aspect of being a student is grounded in your role as a learner.
 If you use AI, use it to augment your learning and your thinking and not to replace it.
-As the author [Neal Stephenson] wrote recently:
+As the author [Neal Stephenson][stephenson_ai] wrote:
 
 > Speaking of the effects of technology on individuals and society as a whole, Marshall McLuhan wrote that every augmentation is also an amputation. [...] Today, quite suddenly, billions of people have access to AI systems that provide augmentations, and inflict amputations, far more substantial than anything McLuhan could have imagined. This is the main thing I worry about currently as far as AI is concerned. I follow conversations among professional educators who all report the same phenomenon, which is that their students use ChatGPT for everything, and in consequence learn nothing. We may end up with at least one generation of people who are like the Eloi in H.G. Wells's The Time Machine, in that they are mental weaklings utterly dependent on technologies that they don't understand and that they could never rebuild from scratch were they to break down. Earlier I spoke somewhat derisively of lapdogs. We might ask ourselves who is really the lapdog in a world full of powerful AIs.
 
@@ -185,12 +185,13 @@ may result in losing our ability to think ourselves.
 [jarvis_wiki]:https://en.wikipedia.org/wiki/J.A.R.V.I.S.
 [mining_wiki]:https://en.wikipedia.org/wiki/Environmental_impact_of_mining
 [notebooklm]:https://notebooklm.google.com/
+[pogrebna_2024]:https://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568
 [prompt_engineering_guide]:https://www.promptingguide.ai/introduction/examples
 [prompt_example]:https://g.co/gemini/share/e00100b403e1
 [prompting_techniques]:https://www.promptingguide.ai/techniques
 [roy_2025]:https://arxiv.org/abs/2505.11236
+[stephenson_ai]:https://nealstephenson.substack.com/p/remarks-on-ai-from-nz
 [using_projects_in_chatgpt]:https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt
 [what_agent]:https://cloud.google.com/discover/what-are-ai-agents
 [zero_shot]:https://www.promptingguide.ai/techniques/zeroshot
 [zewe_2025]:https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117
-[pogrebna_2024]:https://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568
