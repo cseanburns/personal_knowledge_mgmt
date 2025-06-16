@@ -27,19 +27,30 @@ We can refer to this experience of the abundance of communication platforms and 
 as **communication overload**.
 This concept basically means that there are too many messages coming at us from too many platforms.
 
-Unfortunately, it's beyond the scope of this lecture to address strategies for managing communication from across multiple platforms,
-but since email reigns supreme as a form of communication across manyindustries,
+> Communication overload is the result of:
+> - increased channels of communication: email, texting, social media, etc
+> - information overload: too much information coming across all these increased channels of communication
+> - interruptions and distractions: constant notifications and the need to switch between channels of communication. This reduces our ability to focus, study, and learn
+> Communication overload therefore causes:
+> - reduced productivity: it becomes difficult to prioritize information, process it, and complete tasks when too much information is coming at us through too many communication channels
+> - increased stress and anxiety: too much information through too many channels of communication can lead to feeling overwhelmed and anxious. It's a literal assautl on our senses
+> - cognitive issues: too much information through too many channels of communication can negatively impact decision-making, limit our concentration
+> - burnout: when we can't concentrate and focus because we are overwhelmed, we are more likely to experience burnout
+
+Unfortunately, it's beyond the scope of this lecture to address strategies
+for managing communication from across multiple platforms,
+but since email reigns supreme as a form of communication across many industries,
 it's important to learn some strategies for managing our emails and avoiding inboxes with hundreds or thousands of unread email. 
 
 ## Strategies
 
 The first set of readings listed above focus on overall strategies for managing our email inboxes.
-The readings suggest a number of strategies, but the two main strategies focus on
+The readings suggest a number of strategies, but the two main strategies focus on:
 
 1. **organizing our email** and
 2. **searching for email**.
 
-Some of the specific suggestions they make to implement those strategies will depend upon whether
+Some of the specific suggestions the readings make to implement those strategies will depend upon whether
 we use email in the web browser, via a desktop application, or a phone app.
 Thus it may take some exploration to figure out how to apply these lessons based on what you use.
 
@@ -54,9 +65,9 @@ keep in mind that the underlying principals apply elsewhere:
 2. We can create **rules** to **filter** email to specific folders or by labels.
     
     For example, I have several folders in Outlook. I have a folder titled
-    'university email' and a rule that sends all email from UK officials and UK
-    mailings lists to that account. I have another folder titled 'Canvas
-    email', where all email from my courses are routed to. And so on. Most of
+    *university email* and a rule that sends all email from UK officials and UK
+    mailings lists to that account. I have another folder titled *Canvas
+    email*, where all email from my courses are routed to. And so on. Most of
     these emails are not time-sensitive (e.g., mailing list email) or it's
     simply helpful to group email by category (e.g., Canvas student email). 
     Using them helps keep email organized. As a student, you might
@@ -89,7 +100,7 @@ In Outlook, you can search:
 In Gmail, you can do most of same kinds of things, but you can also:
 
 - search by email size
-- and exclude emails that do not include certain terms
+- search by emails that do not have certain terms
 
 Searches are very similar to filters, and in fact, in both Outlook and Gmail,
 you can save a search as a filter if you find that your search query can be re-used.
@@ -100,7 +111,8 @@ it's also a good way to mass delete old and unnecessary email.
 ### Other Strategies
 
 The *PC Mag* and [*The Washington Post*][washPost] (paywalled) articles suggest that **we turn off email notifications**.
-The point is that if we receive a lot of emails, then email becomes too distracting.
+The point is that if we receive a lot of emails, then email becomes too distracting,
+and distractions are the bane of focus.
 Instead, *The Washington Post* suggests that we simply **check our email only a few times per day**
 (but probably at most twice a day is sufficient).
 The aim here is to be intentional about using email (and this applies to any other communication technology)
@@ -108,9 +120,11 @@ rather than being mindless and distracted by it.
 
 *The Washington Post* article also suggests applying **the four Ds** to your emails:
 "**do, delete, delegate or defer**.
-It's up to you how to implement these ideas, but the main goal is to get rid of unnecessary email fast.
-Don't let it accumulate.
-The more emails that sit in our inbox, the more overwhelming it becomes afterward.
+It's up to you how to implement these ideas.
+But as an example, you could create a **do** lable in Gmail or a **do** folder in Outlook,
+and filter emails to those places.
+However this is implemented, the main goal is to get rid of unnecessary email fast and not let them accumulate.
+The more emails that sit in our inbox, the more overwhelming they become afterward.
 In fact, you can **unsubscribe** to everything that is not important. 
 
 Another good idea is to keep personal and work email separate.
@@ -120,17 +134,18 @@ Use your main personal account for personal communication, banking, important so
 Use your work account or your school account for work or school related tasks only.
 Be mindful that your work or school account does not belong to you and
 that you will lose that account when you leave a job or graduate from school.
-In fact, the University of Kentucky has a [help page about your various UK accounts][ukgraduating] that you should read now.
+The University of Kentucky has a [help page about your various UK accounts][ukgraduating] that you should read now.
 
 As your lives become increasingly busy, if they're not already, using good Calendar and Task apps can help
-keep our days organized and our to-do lists manageable.
-Both Outlook and Gmail integrate **Tasks** and **Calendars**.
+keep your days organized and your to-do lists manageable.
+Both Outlook and Gmail integrate **Tasks** and **Calendars** in their web apps,
+and you can drag emails to Tasks or Calendars.
 The readings above link to help pages on how to use these functions.
 These are super time-saving functions for me. 
 
 ### Email Clients
 
-Most of us probably use the web version of Gmail, Outlook, etc., but you can also use a email client, or app, for email.
+Most of us probably use the web version of Gmail, Outlook, etc., but you can also use an email client, or app, for email.
 The advantage with email apps is that they are oftentimes more powerful than the web app versions.
 Example email clients include:
 
@@ -144,15 +159,16 @@ You can use any of the above clients for any email service, including Outlook, G
 
 Email clients are designed to handle multiple email accounts and provide a unifying interface for all your email.
 They can work offline, which can be helfpul when traveling or otherwise without a connection.
-They are often better at search and some clients, like Thunderbird, can be ehanced with plugins or theming.
+They provide calendar and to-do functionality, and they are often better at search.
+Some email clients, like Thunderbird, can be ehanced with plugins or theming.
 One of their main benefits is that they can download your email, which is useful if you lose or change email accounts.
 
 ## Conclusion
 
 In addition to managing our personal knowledge, one of the main points of this work is
 to become adept at using the various technologies that are available to us.
-If we're only passive users of technology, then that technology can easily overwhelm us.
-Active and intentional use of technology and of the specific functions that the technologies provide can actually
+If we're only passive users of communication technologies, then those technologies can become overwhelming.
+Active and intentional use of technology and of the specific functions that the technologies provide can
 help improve our lives and our personal knowledge management workflows.
 
 In this lesson, we learned how to think strategically about email services.

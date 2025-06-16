@@ -14,17 +14,22 @@ University of Kentucky's School of Information Science.
 
 ### Text and Video
 
-In the course I teach, most sections of this book will be accompanied by a video demonstrating the practices described in those sections.
+In the course I teach, sections of this book will be accompanied by a video demonstrating the practices described in those sections.
 Try to read through the text first, and then watch the video.
 Revisit the text to help cement the ideas in place.
 
-The video demonstrations are only available to students in my Personal Knowledge Management course.
+The video demonstrations are available to students in my Personal Knowledge Management course.
+
+### Additional Readings
+
+Each section includes links and references for additional reading.
+Students are encouraged to open these links and study the additional readings.
 
 ### Markup
 
 There are two markups that I want to bring to your attention:
 
-Text that looks like **code blocks** indicate some kind of command that you should test for yourself.
+Text in **code blocks** indicate a command that you should test for yourself.
 For example, I demonstrate search queries in the sections that follow.
 When I demonstrate a Google search, for example, the search query will appear in a standalone box
 with a basic font and a different color background (depending on the theme you're using).
@@ -43,7 +48,7 @@ Asides look like this:
 ### Theme
 
 At the top of the page is an icon of a paint brush.
-The default theme is darker text on a light background, but you can change the theme per your preferences.
+The default theme is darker text on a light background, but you may change the theme per your preferences.
 
 ### Printing
 

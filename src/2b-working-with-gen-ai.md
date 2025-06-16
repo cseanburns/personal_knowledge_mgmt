@@ -4,7 +4,7 @@
 
 Understanding and utilizing Generative AI as a Personal Knowledge Management (PKM) tool can be a useful way
 to use applications like [ChatGPT][chatgpt], [Claude][claude], [Gemini][gemini], and others.
-There are some fundamental keys to success to using them, though.
+There are some fundamental keys to successfully using them.
 These include:
 
 - asking good questions,
@@ -31,7 +31,7 @@ This is because AI is the most human of all technologies humankind has created, 
 it can give false answers, deceive us, or lead us astray in other ways.
 
 In short, as I was told when I was growing up, <q>don't believe everything you read,</q>
-and I believe axiom is as important as ever.
+and I believe that axiom is as important as ever.
 In addition to the keys to success listed above, verify everything AI tells you.
 Part of the work of this course is to learn how to use information resources to do just that.
 
@@ -80,6 +80,8 @@ These include:
 - [Chain-of-thought prompting][chain_of_thought]: a series of prompts that encourage AI to show its reasoning process. Most useful for GPT-based models. Reasoning-based models are designed to include chain-of-thought prompting.
 
 Please read through these techniques.
+Prompting techniques like **few-shot** and **chain-of-thought** are examples of to help AI reason through your queries.
+Other reasoning methods are useful, too.
 
 ## Prompt Exchange with Google 
 
@@ -122,15 +124,15 @@ These applications allow us to organize our work, upload multiple documents, que
 sometimes collaborate with others
 (much of this depends on the paid plans that are also offered).
 
-These services also are able to connect with other services.
+These services are able to connect with other services.
 For example, OpenAI's ChatGPT can connect with Google Drive and Microsoft OneDrive plus accept uploads from your computer.
 NotebookLM can connect to Google Drive, accept links to sources, copied text, and accept uploads.
 
 As an example use case, I can print this book as a PDF (see the printer icon at the top of the page),
 create a project in NotebookLM called Personal Knowledge Management, and upload that PDF to that project.
 I can add other sources, such as links to the sites that this book links to.
-Using all of this, I can ask NotebookLM to create study guides, an audio overview or even a *fake* podcast on the document,
-study guides, mind maps, and more.
+Using all of this, I can ask NotebookLM to create study guides, mind maps, and
+an audio overview or even a *fake* podcast on the document.
 I can **prompt** NotebookLM and ask questions about the uploaded content.
 In short, it's like having a personal teacher's assistant.
 
@@ -162,12 +164,12 @@ There are a number of ethical considerations with AI that we need to be mindful 
 First, AI uses a lot of resources.
 
 - AI uses a lot of electricity and water.
-    - In 2026, AI data centers are expected to use as much electricity as all of Japan, which means they'll use billions of gallons of fresh water to cool the hardware ([Berreby, 2024][berreby_2024]; [Zewe, 2025][zewe_2025]).
+    - In 2026, AI data centers are expected to use as much electricity as all of Japan, and they'll use billions of gallons of fresh water to cool the hardware that runs them ([Berreby, 2024][berreby_2024]; [Zewe, 2025][zewe_2025]).
 - AI requires hardware, which requires:
     - [mining][mining_wiki], which damages ecosystems, results in deforestation, soil erosion, pollutes water sources, and contributes to carbon emissions.
 - IT manufacturing:
     - is energy intensive and uses hazardous chemicals ([Roy et al., 2025][roy_2025]).
-- AI data labeling can be labor exploitative ([Pogrebna, 2024][pogrebna_2024]).
+- AI data labeling, which is completed by people, can be labor exploitative ([Pogrebna, 2024][pogrebna_2024]).
 
 The industry hopes to use AI to counter some of these impacts.
 For example, AI might help create more efficient heating and cooling systems and
@@ -202,9 +204,12 @@ Or if it's allowed, it may be allowed in certain scenarios only.
 You need to be mindful of the policies that your instructors have for their courses.
 The same holds true for your future employers.
 
+> AI course policies should be listed in your course syllabi, so read your syllabi.
+> If in any doubt about what's permitted, ask your instructor.
+
 The ethical aspect of being a student is grounded in your role as a learner.
 If you use AI, use it to augment your learning and your thinking and not to replace it.
-As the science fiction author [Neal Stephenson][stephenson_ai] wrote:
+The science fiction author [Neal Stephenson][stephenson_ai] captures the risks perfectly:
 
 > Speaking of the effects of technology on individuals and society as a whole, Marshall McLuhan wrote that every augmentation is also an amputation. [...] Today, quite suddenly, billions of people have access to AI systems that provide augmentations, and inflict amputations, far more substantial than anything McLuhan could have imagined. This is the main thing I worry about currently as far as AI is concerned. I follow conversations among professional educators who all report the same phenomenon, which is that their students use ChatGPT for everything, and in consequence learn nothing. We may end up with at least one generation of people who are like the Eloi in H.G. Wells's The Time Machine, in that they are mental weaklings utterly dependent on technologies that they don't understand and that they could never rebuild from scratch were they to break down. Earlier I spoke somewhat derisively of lapdogs. We might ask ourselves who is really the lapdog in a world full of powerful AIs.
 
