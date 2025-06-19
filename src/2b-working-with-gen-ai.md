@@ -24,14 +24,17 @@ this kind of designed engagement can be harmful to our physical and mental healt
 ([Minamitani, 2024][minamitani_2024]; [Hill, 2025][hill_2025]).
 
 Engagement with AI is driven less by algorithms that encourage us to endlessly and mindlessly scroll some feed
-and more about using these technologies for all of our questions or tasks.
+and more about developing new AI models that encourage us to keep using AI for all of our questions or tasks.
 On the one hand, engaging substantially with AI is the key to getting good responses, but
 it can also lead to conspiratorial thinking, as Hill (2025) illustrates.
 This is because AI is the most human of all technologies humankind has created, and like humans,
 it can give false answers, deceive us, or lead us astray in other ways.
+This is not necessarily because AI wants to deceive us.
+Rather, it's because good reasoning relies on valid, true facts, and
+reasoning from false or made-up premises leads to false answers.
 
 In short, as I was told when I was growing up, <q>don't believe everything you read,</q>
-and I believe that axiom is as important as ever.
+and that axiom is as important as ever.
 In addition to the keys to success listed above, verify everything AI tells you.
 Part of the work of this course is to learn how to use information resources to do just that.
 
@@ -51,9 +54,9 @@ To use generative AI successfully, you should implement the following practices:
     - For GPT models, prompts should be clear, specific, provide context, break down tasks, and utilize examples.
     - For reasoning models, minimal prompts are best since these models were designed to reason.
 1. **Provide Reference Text**: If using a GPT model, supply context or examples. This can help steer the AI towards the kind of response you're looking for.
-1. **Split Complex Tasks into Simpler Subtasks**: If using a GPT model, break down bigger challenges to make them more manageable for the AI. This helps GPT models reason better, but it requires you to know how to reason yourself.
-5. **Use External Tools**: If using a GPT model, integrate other tools and resources to augment the AI's capabilities.
-6. **Test Changes Systematically**: If using a GPT model, experiment and evaluate how different approaches impact the AI's responses.
+1. **Split Complex Tasks into Simpler Subtasks**: If using a GPT model, break down bigger challenges to make them more manageable for the AI. This helps GPT models reason better, but it requires you to know how to reason yourself. (To learn to reason well, take, at the very least, *An Introduction to Logic* course.)
+1. **Use External Tools**: If using a GPT model, integrate other tools and resources to augment the AI's capabilities.
+1. **Test Changes Systematically**: If using a GPT model, experiment and evaluate how different approaches impact the AI's responses.
 
 We can learn a lot about how to write clear instructions and prompts, and
 the [Prompt Engineering Guide][prompt_engineering_guide] provides some guidance on this.
@@ -70,17 +73,17 @@ Using Google's Gemini, I've added two additional columns that show which model i
 | Code generation | Reasoning models | Reasoning models, with their focus on step-by-step thinking and understanding of structured data, are better suited for code generation, especially for complex or multi-step tasks. They can generate more accurate and reliable code, and even suggest improvements. |
 | Reasoning | Reasoning models | Reasoning models are specifically designed to excel at tasks requiring logical deduction, problem-solving, and multi-step breakdowns. They are trained to "think" through problems and arrive at accurate and well-reasoned conclusions. |
 
-In the [Prompting Techniques][prompting_techniques] section,
-the Prompt Engineering Guide describes multiple ways to engage with generative AI.
+The [Prompting Techniques][prompting_techniques] section, from the Prompt Engineering Guide,
+describes multiple prompts to engage with generative AI.
 The first few items listed are good entry level approaches for constructing prompts.
-These include:
+These include, from basic to more advanced:
 
 - [Zero-shot prompting][zero_shot]: a prompt that does not provide AI with examples of how to answer the prompt.
 - [Few-shot prompting][few_shot]: a prompt that provides some examples of how to answer the prompt.
 - [Chain-of-thought prompting][chain_of_thought]: a series of prompts that encourage AI to show its reasoning process. Most useful for GPT-based models. Reasoning-based models are designed to include chain-of-thought prompting.
 
 Please read through these techniques.
-Prompting techniques like **few-shot** and **chain-of-thought** are examples of to help AI reason through your queries.
+Prompting techniques like **few-shot** and **chain-of-thought** are examples of how to help AI reason through your queries.
 Other reasoning methods are useful, too.
 
 ## Prompt Exchange with Google 
@@ -124,7 +127,7 @@ These applications allow us to organize our work, upload multiple documents, que
 sometimes collaborate with others
 (much of this depends on the paid plans that are also offered).
 
-These services are able to connect with other services.
+These services are able to connect with other services, too.
 For example, OpenAI's ChatGPT can connect with Google Drive and Microsoft OneDrive plus accept uploads from your computer.
 NotebookLM can connect to Google Drive, accept links to sources, copied text, and accept uploads.
 
@@ -147,7 +150,8 @@ We will begin to see AI agents in the near future, although they already exist, 
 Google provides a nice overview of [What is an AI agent?][what_agent]
 But in short, AI agents will be able to act interactively or autonomously,
 as a single agent operating independently, or as a multi-agent that collaborates with other AI agents
-(AI Agent Swarm anyone???).
+
+> See the report [AI 2027][ai_2027] report on how this might play out over the next few years.
 
 What exactly will AI agents do?
 In healthcare settings, AI agents might assist medical professionals in diagnostics, surgery, and more.
@@ -213,6 +217,11 @@ The science fiction author [Neal Stephenson][stephenson_ai] captures the risks p
 
 > Speaking of the effects of technology on individuals and society as a whole, Marshall McLuhan wrote that every augmentation is also an amputation. [...] Today, quite suddenly, billions of people have access to AI systems that provide augmentations, and inflict amputations, far more substantial than anything McLuhan could have imagined. This is the main thing I worry about currently as far as AI is concerned. I follow conversations among professional educators who all report the same phenomenon, which is that their students use ChatGPT for everything, and in consequence learn nothing. We may end up with at least one generation of people who are like the Eloi in H.G. Wells's The Time Machine, in that they are mental weaklings utterly dependent on technologies that they don't understand and that they could never rebuild from scratch were they to break down. Earlier I spoke somewhat derisively of lapdogs. We might ask ourselves who is really the lapdog in a world full of powerful AIs.
 
+I take Stephenson's argument seriously, yet we need evidence.
+Currently, this area of research on how AI impacts our thinking capabilities is nascent,
+but early research suggests that AI use is detrimental to our thinking [Kosmyna et al., 2025][kosmyna_2025].
+[Meet the Eloi][meet_the_eloi].
+
 ## Conclusion
 
 Generative AI is a technology that offers a lot of potential for personal knowledge management.
@@ -228,6 +237,35 @@ Ethically, we should be aware of the environmental costs of IT, which includes A
 the mental and physical health risks of these technologies, and
 as students, we should recognize that we are learners first and foremost and that to use AI, unthinkingly,
 may result in losing our ability to think ourselves.
+
+## References
+
+Berreby, D. (2024, February 6).
+As use of A.I. soars, so does the energy and water it requires.
+*Yale E360*.
+[https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions)
+Hill, K. (2025, June 13).
+They asked an A.I. chatbot Questions. The answers sent them spiraling.
+*The New York Times*.
+[https://www.nytimes.com/2025/06/13/technology/chatgpt-ai-chatbots-conspiracies.html](https://www.nytimes.com/2025/06/13/technology/chatgpt-ai-chatbots-conspiracies.html)
+Minamitani, K. (2024, May 20).
+Social media addiction and mental health: The growing concern for youth well-being.
+*Stanford Law School*.
+[https://law.stanford.edu/2024/05/20/social-media-addiction-and-mental-health-the-growing-concern-for-youth-well-being/](https://law.stanford.edu/2024/05/20/social-media-addiction-and-mental-health-the-growing-concern-for-youth-well-being/)
+Payne, K. (2024, October 25).
+An AI chatbot pushed a teen to kill himself, a lawsuit against its creator alleges.
+*AP News*.
+[https://apnews.com/article/chatbot-ai-lawsuit-suicide-teen-artificial-intelligence-9d48adc572100822fdbc3c90d1456bd0](https://apnews.com/article/chatbot-ai-lawsuit-suicide-teen-artificial-intelligence-9d48adc572100822fdbc3c90d1456bd0)
+Pogrebna, G. (2024, October 8). AI is a multi-billion dollar industry. It's underpinned by an invisible and exploited workforce.
+*The Conversation*.
+[http://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568](http://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568)
+Roy, R. B., Kanakagiri, R., Jiang, Y., & Tiwari, D. (2025). ForgetMeNot: Understanding and modeling the impact of forever chemicals toward sustainable large-scale computing.
+*Proceedings of the ACM on Measurement and Analysis of Computing Systems, 9*(2), 1–26.
+[https://doi.org/10.1145/3727116](https://doi.org/10.1145/3727116)
+
+Zewe, A. (2025, January 17). Explained: Generative AI’s environmental impact.
+*MIT News | Massachusetts Institute of Technology*. 
+[https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117)
 
 [988_suicide]:https://988lifeline.org/
 [article_source]:https://pubmed.ncbi.nlm.nih.gov/30944985/
@@ -257,3 +295,6 @@ may result in losing our ability to think ourselves.
 [zewe_2025]:https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117
 [canvas_gemini]:https://www.instructure.com/resources/blog/unleash-power-ai-canvas-gemini-ltitm
 [llm_wiki]:https://en.wikipedia.org/wiki/Large_language_model
+[ai_2027]:https://ai-2027.com/
+[kosmyna_2025]:https://doi.org/10.48550/arXiv.2506.08872
+[meet_the_eloi]:https://www.youtube.com/watch?v=D_ZfZaRCWTI
