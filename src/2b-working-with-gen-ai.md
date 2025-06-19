@@ -220,7 +220,7 @@ The science fiction author [Neal Stephenson][stephenson_ai] captures the risks p
 I take Stephenson's argument seriously, yet we need evidence.
 Currently, this area of research on how AI impacts our thinking capabilities is nascent,
 but early research suggests that AI use is detrimental to our thinking [Kosmyna et al., 2025][kosmyna_2025].
-[Meet the Eloi][meet_the_eloi].
+(If you haven't read *The Time Machine*: [Meet the Eloi][meet_the_eloi].)
 
 ## Conclusion
 
@@ -244,21 +244,26 @@ Berreby, D. (2024, February 6).
 As use of A.I. soars, so does the energy and water it requires.
 *Yale E360*.
 [https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions)
+
 Hill, K. (2025, June 13).
 They asked an A.I. chatbot Questions. The answers sent them spiraling.
 *The New York Times*.
 [https://www.nytimes.com/2025/06/13/technology/chatgpt-ai-chatbots-conspiracies.html](https://www.nytimes.com/2025/06/13/technology/chatgpt-ai-chatbots-conspiracies.html)
+
 Minamitani, K. (2024, May 20).
 Social media addiction and mental health: The growing concern for youth well-being.
 *Stanford Law School*.
 [https://law.stanford.edu/2024/05/20/social-media-addiction-and-mental-health-the-growing-concern-for-youth-well-being/](https://law.stanford.edu/2024/05/20/social-media-addiction-and-mental-health-the-growing-concern-for-youth-well-being/)
+
 Payne, K. (2024, October 25).
 An AI chatbot pushed a teen to kill himself, a lawsuit against its creator alleges.
 *AP News*.
 [https://apnews.com/article/chatbot-ai-lawsuit-suicide-teen-artificial-intelligence-9d48adc572100822fdbc3c90d1456bd0](https://apnews.com/article/chatbot-ai-lawsuit-suicide-teen-artificial-intelligence-9d48adc572100822fdbc3c90d1456bd0)
+
 Pogrebna, G. (2024, October 8). AI is a multi-billion dollar industry. It's underpinned by an invisible and exploited workforce.
 *The Conversation*.
 [http://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568](http://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568)
+
 Roy, R. B., Kanakagiri, R., Jiang, Y., & Tiwari, D. (2025). ForgetMeNot: Understanding and modeling the impact of forever chemicals toward sustainable large-scale computing.
 *Proceedings of the ACM on Measurement and Analysis of Computing Systems, 9*(2), 1–26.
 [https://doi.org/10.1145/3727116](https://doi.org/10.1145/3727116)
