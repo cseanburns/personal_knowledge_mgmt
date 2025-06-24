@@ -132,15 +132,15 @@ Reference management software: A comparative analysis of four products.
 *Issues in Science and Technology Librarianship, 66*(Summer 2011).
 [https://doi.org/10.5062/F4Z60KZF](https://doi.org/10.5062/F4Z60KZF)
 
-[zotero]:https://www.zotero.org/
-[rm_comparison_wiki]:https://en.wikipedia.org/wiki/Comparison_of_reference_management_software
-[mendeley]:https://www.mendeley.com/
 [endnote]:https://libguides.uky.edu/endnote
+[mendeley]:https://www.mendeley.com/
+[rm_comparison_wiki]:https://en.wikipedia.org/wiki/Comparison_of_reference_management_software
 [scopus]:https://libraries.uky.edu/lnkr.php?lir_id=3347
 [web_of_science]:https://libguides.uky.edu/467
-[zotero_download]:https://www.zotero.org/download/
-[zotero_quick_start]:https://www.zotero.org/support/quick_start_guide
 [wp_plugin]:https://www.zotero.org/support/word_processor_integration
-[zotero_docs]:https://www.zotero.org/support/
-[zotero_registration]:https://www.zotero.org/user/register/
 [zotero_app]:https://www.zotero.org/support/mobile
+[zotero_docs]:https://www.zotero.org/support/
+[zotero_download]:https://www.zotero.org/download/
+[zotero]:https://www.zotero.org/
+[zotero_quick_start]:https://www.zotero.org/support/quick_start_guide
+[zotero_registration]:https://www.zotero.org/user/register/
