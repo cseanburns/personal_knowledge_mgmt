@@ -17,19 +17,15 @@ In this lesson, we'll cover specific search techniques that you can use to get b
 Google, Bing, or DuckDuckGo.
 Specifically, there are three principles that we need to consider when advancing our search skills.
 
-<dl>
-    <dt>**Principle 1:** We should understand that the basic information retrieval model centers on **documents**.</dt>
-    <dd>Anything indexed in a database or on the web is treated as a document.
-    Documents include web pages that contain text, sound, images, video, etc.</dd>
-</dl>
+**Principle 1: We should understand that the basic information retrieval model centers on documents**. Anything indexed in a database or on the web is treated as a document.
+Documents include web pages that contain text, sound, images, video, etc.
 
-**Principle 2:** We should understand that documents do not exist independently of other documents. 
+**Principle 2: We should understand that documents do not exist independently of other documents.**
 A searchable collection of documents is called a **corpus**, and on the web,
 the **corpus** is organized like a **file system**, much like the file system on your personal computers.
 Search engines index these documents with respect to all other documents in the corpus.
 
-**Principle 3:** Our queries are not divorced from the **documents** nor the **corpus** nor
-the **organization of the corpus**.
+**Principle 3: Our queries are not divorced from the documents nor the corpus nor the organization of the corpus**.
 These things are all intertwined.
 Each time we search, search engines and databases compare **documents** in the **corpus**
 to each other and to how they are organized based on our **queries**, and
@@ -71,9 +67,9 @@ This has some implications:
     - Phrases are also important with respect to **term order**.
       If I search using a phrase where the term **forest** precedes the term **fire**,
       search engines are more likely to return results where those two terms appear in that order.
-      This will mean that documents that contain text about someone having a `camp **fire** in a **forest**`
+      This will mean that documents that contain text about someone having a `camp fire in a forest`
       will be less likely to appear at the top of my results than a document that contains the phrase
-      `the **forest** is on **fire**`.
+      `the forest is on **fire`.
     - Or consider **term adjacency**.
       Documents where the terms are in order but spaced far apart will also rank lower.
       E.g., if the term **forest** appears in the first paragraph on a web page and
@@ -89,6 +85,9 @@ If we know a bit about its organization, we can take advantage of that when we s
 For instance, we can narrow our searches to parts of the web.
 So the questions are: how is it organized?
 And how can we use that organization in search?
+
+To explore those questions, we'll walk through how the web is organized and
+how that knowledge can shape better search queries and strategies:
 
 - The web is organized like a tree.
 - This tree like structure begins with **top level domains (TLDs)**.
@@ -124,18 +123,20 @@ And how can we use that organization in search?
   Examples include:
     - **uky** in **uky.edu**
     - **google** in **google.com**
-- The documents we read on the web are located in paths that extend from a domain name and
+- The documents we read on the web are located in paths that extend from the whole domain name and
   often reflect nested directory structures.
   Examples include:
     - The URL `ci.uky.edu/sis/academics/information-communication-technology` provides the document
-      `information-communication-technology in the directories `sis/academics`
+      `information-communication-technology` in `sis/academics` nested directories.
     - `en.wikipedia.org/wiki/information_retrieval` provides the document `information_retrieval`
-      in the directory `wiki/`
+      in the `wiki/` directory.
 - In summary, let's consider the last URL's components: `en.wikipedia.org/wiki/information_retrieval`:
     - `en` is a subdomain
     - `wikipedia` is the domain name
     - `org` is the TLD
     - `wiki/` is the directory that contains the document (web page) `information_retrieval`
+
+### Using the Organization of the Web in Our Search Queries
 
 We can take advantage of this organization by limiting (or focusing) queries to results within smaller sections of the web.
 In Google, this would entail adding the `site:` operator to our search queries.
