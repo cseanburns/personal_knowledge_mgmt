@@ -17,7 +17,8 @@ In this lesson, we'll cover specific search techniques that you can use to get b
 Google, Bing, or DuckDuckGo.
 Specifically, there are three principles that we need to consider when advancing our search skills.
 
-**Principle 1: We should understand that the basic information retrieval model centers on documents**. Anything indexed in a database or on the web is treated as a document.
+**Principle 1: We should understand that the basic information retrieval model centers on documents**.
+Anything indexed in a database or on the web is treated as a document.
 Documents include web pages that contain text, sound, images, video, etc.
 
 **Principle 2: We should understand that documents do not exist independently of other documents.**
@@ -211,7 +212,7 @@ alt="Google result snippets"
 title="Google result snippets">
 <figcaption>Fig. 2: Google result snippets</figcaption>
 </figure>
-  
+
 This gives us important information about how Google sees the text on web pages, and
 we can use this information to revise our search.
 For example, let's say these snippets help me realize that
@@ -308,6 +309,11 @@ Consider the following two searches:
 
 ```
 "google" "bing"
+```
+
+And:
+
+```
 google OR bing
 ```
 
@@ -386,13 +392,13 @@ The last search query is complex and can be decomposed into the following querie
 1. `trade surplus site:congress.gov filetype:pdf`
 1. `trade deficit site:whitehouse.gov filetype:pdf`
 1. `trade deficit site:congress.gov filetype:pdf`
-  
-[tld]:https://data.iana.org/TLD/tlds-alpha-by-domain.txt
+
+[bing]:https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930
+[ddg_help]:https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/
+[ddg]:https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/
 [google_advanced]:https://www.google.com/advanced_search
 [google_advanced_image]:https://google.com/advanced_image_search
 [google_operators]:https://support.google.com/websearch/answer/2466433?hl=en
-[ddg]:https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/
-[bing]:https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930
 [google_search_help]:https://support.google.com/websearch/answer/2466433?hl=en
-[ddg_help]:https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/
 [micro_help]:https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930
+[tld]:https://data.iana.org/TLD/tlds-alpha-by-domain.txt
