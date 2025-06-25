@@ -17,9 +17,11 @@ In this lesson, we'll cover specific search techniques that you can use to get b
 Google, Bing, or DuckDuckGo.
 Specifically, there are three principles that we need to consider when advancing our search skills.
 
-**Principle 1:** We should understand that the basic information retrieval model centers on **documents**.
-Anything indexed in a database or on the web is treated as a document.
-Documents include web pages that contain text, sound, images, video, etc.
+<dl>
+    <dt>**Principle 1:** We should understand that the basic information retrieval model centers on **documents**.</dt>
+    <dd>Anything indexed in a database or on the web is treated as a document.
+    Documents include web pages that contain text, sound, images, video, etc.</dd>
+</dl>
 
 **Principle 2:** We should understand that documents do not exist independently of other documents. 
 A searchable collection of documents is called a **corpus**, and on the web,
