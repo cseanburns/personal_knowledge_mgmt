@@ -1353,7 +1353,8 @@ it's helpful to know about information retrieval in order to become good at sear
 <p>In this lesson, we'll cover specific search techniques that you can use to get better using search engines like
 Google, Bing, or DuckDuckGo.
 Specifically, there are three principles that we need to consider when advancing our search skills.</p>
-<p><strong>Principle 1: We should understand that the basic information retrieval model centers on documents</strong>. Anything indexed in a database or on the web is treated as a document.
+<p><strong>Principle 1: We should understand that the basic information retrieval model centers on documents</strong>.
+Anything indexed in a database or on the web is treated as a document.
 Documents include web pages that contain text, sound, images, video, etc.</p>
 <p><strong>Principle 2: We should understand that documents do not exist independently of other documents.</strong>
 A searchable collection of documents is called a <strong>corpus</strong>, and on the web,
@@ -1610,7 +1611,9 @@ vice versa for the second search.</p>
 with either of the terms or both of the terms.
 Consider the following two searches:</p>
 <pre><code>"google" "bing"
-google OR bing
+</code></pre>
+<p>And:</p>
+<pre><code>google OR bing
 </code></pre>
 <p>The first search will return pages with both the terms included in the results because the quotes enforce that.</p>
 <p>The second search will return pages with either the term <strong>google</strong> in the results,
@@ -1699,53 +1702,35 @@ This helps you control how different parts of a query interact.</p>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="database-information-retrieval"><a class="header" href="#database-information-retrieval">Database Information Retrieval</a></h1>
 <h2 id="introduction-4"><a class="header" href="#introduction-4">Introduction</a></h2>
-<p>I introduced the concept of databases in
-<a href="3a-information-sources-resources.html">section 3.1</a>.
-Academic databases, or sometimes bibliographic databases,
-offer a number of unique advantages over search engines,
-and some disadvantages, too.
-The main advantages are that databases offer
-specialized collections on a variety of topics;
-they offer many sources that are invisible to search engines; and
+<p>I introduced the concept of academic or bibliographic databases in <a href="3a-information-sources-resources.html">section 3.1</a>.
+These databases offer a number of unique advantages over search engines, and some disadvantages, too.
+The main advantages are that databases offer specialized collections on a variety of topics;
+these collections are usually invisible to search engines,
+which means that if we use the web only, we miss out on important information; and
 they provide greater control over the search process.
-The main disadvantage is that they are a bit complicated to use well,
-there are many databases to choose from (and find),
-they have their own user interfaces, and
-they are often only accessible via a library.</p>
+The main disadvantages are they require more time to learn to use them well,
+there are many databases to choose from (and to find),
+they have their own user interfaces, and they are often only accessible via a library.</p>
 <blockquote>
-<p>Many databases are only accessible via a library
-because a library pays to use them.
-Google and other search engines operate on different
-revenue models, like serving ads, to pay for locating <strong>free</strong> content on the web.
+<p>Many databases are only accessible via a library because a library pays to use them.
+Google and other search engines operate on different revenue models, like serving ads,
+to pay for locating <strong>free</strong> content on the web.
 Google and other search engines do not provide access to <strong>non-free</strong> content on the web.</p>
 </blockquote>
-<p>Information retrieval (search) in databases works
-similarly and differently than it does with the web.
-Like with the web,
-database information retrieval works on <strong>documents</strong> in a <strong>corpus</strong>.
-We search that corpus using queries, and
-how we construct our queries is important.</p>
+<p>Information retrieval (search) in databases works similarly and differently than it does with the web.
+Like with the web, database information retrieval works on <strong>documents</strong> in a <strong>corpus</strong>.
+We search that corpus using queries, and how we construct our queries is important.</p>
 <p>Documents in databases though are a bit different.
-As discussed in the previous section,
-websites exist in a fairly organized hierarchy
-(with respect to top level domains, etc.), but
-web pages themselves are not always very structured.
-Instead, search engines have become really good at taking
-all that unstructured text and making sense of it.</p>
-<p>Academic databases, on the other hand,
-generally work with fairly structured documents;
-that is, they index structured bibliographic records,
-like the one in Figure 1 below.
-While they may also index full text documents if those
-documents are accessible to the database,
+As discussed in the previous section, websites exist in a fairly organized hierarchy (with respect to top level domains, etc.),
+but web pages themselves are not always very structured.
+Instead, search engines have become really good at making sense of unstructured text.</p>
+<p>Academic databases, on the other hand, generally work with fairly structured documents;
+that is, they index structured bibliographic records, like the one in Figure 1 below.
+While they may also index full text documents if those documents are accessible to the database,
 the focus is on bibliographic records.
-If only bibliographic records are indexed,
-the database is usually called an
-<strong>abstract and indexing database (A&amp;I database)</strong>.
-Otherwise it's called a full text database
-if it provides full text.
-Many of the databases that we have access to at our
-library are a mix of the two.</p>
+If only bibliographic records are indexed, the database is usually called an <strong>abstract and indexing database (A&amp;I database)</strong>.
+Otherwise it's called a <strong>full text database</strong> if it provides access to the full text of information sources.
+Many of the databases that we have access to at our university library are a mix of the two.</p>
 <figure>
 <img src="images/4b-image-1.png"
 width="600" height="500"
@@ -1755,30 +1740,19 @@ title="Academic Search Complete results">
 </figure>
 <h2 id="searching-bibliographic-records"><a class="header" href="#searching-bibliographic-records">Searching Bibliographic Records</a></h2>
 <p>Bibliographic information is also called <strong>metadata</strong>.
-Bibliographic records
-are metadata about specific items
-(books, articles, photos, etc.)
-in a bibliographic or academic database.
-Metadata is broadly defined as <strong>data about data</strong>,
-or sometimes as information about information.
-For example, a <strong>title</strong> of a book is
-metadata about the name of a book.
-The <strong>author</strong> name of a journal article is
-metadata about the author of a journal article.
+Bibliographic records are metadata <strong>about</strong> specific items (books, articles, photos, etc.) in a bibliographic or academic database.
+Metadata is broadly defined as <strong>data about data</strong>, or sometimes as information about information.
+For example, a <strong>title</strong> of a book is metadata about the name of a book.
+The <strong>author</strong> name of a journal article is metadata about the author of a journal article.
 And so forth.
-The metadata about a specific item
-such as a book or journal article
-is a <strong>record</strong>.
-In a database, this metadata is created
-by professionals and is well structured
-(as illustrated in Figure 1 above).
-As searchers, this means
-that there are pre-set fields that
-we can search in academic databases and that
-these pre-set fields specifically search the
-corresponding metadata.
-For example, in <a href="https://libguides.uky.edu/4">Academic Search Complete (ASC)</a>,
-we can search the following fields:</p>
+The complete metadata about a specific item such as a book or journal article is a <strong>record</strong>.
+In a database, this metadata is created by professionals and is well structured, as illustrated in Figure 1 above.
+As searchers, this means that there are pre-set fields that we can search in academic databases and that
+these pre-set fields specifically search the corresponding metadata.
+For example, in <a href="https://libguides.uky.edu/4">Academic Search Complete (ASC)</a>, records are described with the following metadata, and
+this means we can search ASC using this metadata.
+This kind of structured, field-specific searching is known as <strong>fielded search</strong>, and
+it's one of the most powerful features of academic databases.</p>
 <ul>
 <li>Author</li>
 <li>Title</li>
@@ -1791,18 +1765,13 @@ we can search the following fields:</p>
 <li>ISBN</li>
 <li>And more.</li>
 </ul>
-<p>We can also filter by publication date, full text availability,
-document type, language, number of pages, and images
-(depending on the database and its content).
-In the end, this means we have greater control over
-the search process than we do in a search engine
+<p>We can also use metadata to filter search results by publication date, full text availability,
+document type, language, number of pages, and images (depending on the database and its content).
+In the end, this means we have greater control over the search process than we do in a search engine
 because the corpus is better defined.</p>
-<p>In the previous section on web information retrieval,
-I showed how we can search the web
-by using the <code>:filetype</code> operator to limit results
-to PDFs, DOCX, XLSX, etc files.
-In a bibliographic database like <em>ASC</em>,
-we can limit results by <strong>document type</strong>.
+<p>In the previous section on web information retrieval, I showed how we can search the web
+using the <code>:filetype</code> operator to limit results to PDFs, DOCX, XLSX, etc files.
+In a bibliographic database like <em>ASC</em>, we can limit results by <strong>document type</strong> instead.
 That means we can restrict results to document types like:</p>
 <ul>
 <li>articles</li>
@@ -1820,8 +1789,7 @@ That means we can restrict results to document types like:</p>
 <li>recipes</li>
 </ul>
 <p>And much more.</p>
-<p>Otherwise, all the same principles apply to searching
-databases as searching the web with a search engine.
+<p>Otherwise, all the same principles apply to searching databases as searching the web with a search engine.
 Specifically:</p>
 <ol>
 <li>Document-centered (bibliographic records are documents)</li>
@@ -1830,99 +1798,74 @@ Specifically:</p>
 </ol>
 <p>And many of the same techniques apply, too:</p>
 <ol>
-<li>We can use <strong>quoting</strong> to make sure words are included in the results</li>
-<li>Term order matters</li>
-<li>We can use <strong>OR</strong> between terms to focus on one term or the other or both</li>
-<li>We can use other operators, like <strong>NOT</strong> to exclude documents that contain
-specific terms, and <strong>AND</strong> to force return documents that contain specific
-terms.</li>
+<li>We can use <strong>quoting</strong> to make sure words are included in the results.</li>
+<li>Term order matters.</li>
+<li>We can use <strong>OR</strong> between terms to focus on one term or the other or both.</li>
+<li>We can use other operators, like <strong>NOT</strong> to exclude documents that contain specific terms,
+just like we can use the minus sign to exclude terms in search engines;
+and we can use the <strong>AND</strong> operator to force return documents that contain all terms in our query.</li>
 </ol>
 <blockquote>
-<p>The <strong>AND</strong> operator between two query terms means
-that both terms must be present for each result in a search.
-For example, if I search for <code>dogs AND cats</code> in a database
-like <em>ASC</em>,
+<p>The <strong>AND</strong> operator between two query terms means that both terms must be present in each search result.
+For example, if I search for <code>dogs AND cats</code> in a database like <em>ASC</em>,
 then each result must include both the terms <strong>dogs</strong> and <strong>cats</strong>.
-We usually have to specify this <strong>AND</strong> in a database.
-This not the case with Google and other search engines.
-In search engines, the <strong>AND</strong> is assumed between terms.
-So the equivalent search in, for example,
-Google, Bing, DuckDuckGo, etc is simply <code>dogs cats</code>.</p>
+We usually have to specify the <strong>AND</strong> in a database.
+However, in search engines, the <strong>AND</strong> is assumed between terms.
+So the equivalent search in, for example, &gt; Google, Bing, and DuckDuckGo is simply <code>dogs cats</code>.</p>
 </blockquote>
 <h2 id="subject-terms-and-thesauri"><a class="header" href="#subject-terms-and-thesauri">Subject Terms and Thesauri</a></h2>
-<p>Many (but not all) databases offer the ability
-to search by subject or thesauri term.
-Subject/thesauri terms are kinds of controlled vocabulary,
-but are basically special keywords assigned to bibliographic records.
-If a database uses these kinds of vocabulary terms,
-it means that each record in the database includes a list of
-these terms that should well describe the contents
-of the item it describes.
-Further, this means that all bibliographic records
-that share a specific subject term are linked together.</p>
+<p>Many (but not all) databases offer the ability to search by subject or thesauri term.
+Subject/thesauri terms are types of controlled vocabulary.
+They are special keywords assigned to bibliographic records and are used to capture the main topics of a document.
+If a database uses these kinds of vocabulary terms, it means that each record in the database includes a list of
+these terms that should well describe the contents of the items it describes.
+Further, this means that all bibliographic records that share a specific subject term are linked together.</p>
 <p>For example, the <em>ASC</em> database uses <strong>subject terms</strong>.
-One subject term is <strong>Forest animals</strong>, and
-if I use that as my search query,
-then each record that is returned
-must include that subject term,
-and that record should match the contents of the item.
-I can peruse the results and identify other subject terms
-that help narrow my results.
-For example, the subject term <strong>BIRD habitats</strong> appears
-in records with the subject term <strong>Forest animals</strong>,
+One subject term is <strong>Forest animals</strong>, and if I use that as my search query, then each record that is returned
+must include that subject term, and that record should match the contents of the item.
+I can peruse the results and identify other subject terms that help narrow my results.
+For example, the subject term <strong>BIRD habitats</strong> appears in records with the subject term <strong>Forest animals</strong>,
 since records often have multiple subject terms.
-If I combine those terms with an <strong>AND</strong> operator,
-then I narrow my results down to two journal articles,
-which is pretty precise.
-<em>ASC</em> is a multi-disciplinary database, and
-so feel free to explore subject terms related
-to your own interests.</p>
+If I combine those terms with an <strong>AND</strong> operator, then I narrow my results down to two journal articles, which is pretty precise.
+<em>ASC</em> is a multi-disciplinary database, and so feel free to explore subject terms related to your own interests.</p>
 <figure>
 <img src="images/4b-image-2.png"
 width="600" height="500"
 alt="Academic Search Complete results"
 title="Academic Search Complete results">
-<figcaption>Fig. 2: Academic Search Complete Results</figcaption>
+<figcaption>Fig. 2: Academic Search Complete Results.</figcaption>
 </figure>
+<p>Note that the query in Figure 2 contains additional text like: <code>DE "FOREST animals"</code>.
+The <code>DE</code> is a field code that instructs the database the following term is a subject term.
+You can use field codes in your queries, but this is where databases get especially complicated:
+different database vendors use different field codes to refer to the same fields.
+You can bypass having to learn field codes by using a databases's advanced search form.</p>
 <blockquote>
-<p>Subject terms, thesauri terms, controlled vocabularly, and so forth are all
-ways that professionals, like librarians, use to describe works. In the web
-information retrieval section, I discussed how search engines have become
-good at interpreting natural language queries. However, subject terms are
-generally shorter and use more formal syntax than natural language. This is
-important to know when using these terms to search academic databases.</p>
+<p>Subject terms, thesauri terms, controlled vocabularly, and so forth are tools that professionals,
+like librarians and information professionals, use to describe works.
+In the web information retrieval section,
+I discussed how search engines have become good at interpreting natural language queries.
+However, subject terms are generally shorter and use more formal syntax than natural language.
+This is important to know when using these terms to search academic databases.</p>
 </blockquote>
 <h2 id="browsing"><a class="header" href="#browsing">Browsing</a></h2>
-<p>Although database search can be more precise
-than using search engines,
-databases are also good for browsing.</p>
-<p>We all browse
-(online, in stores, as we page through books, and so on)
-but as a type of search process,
-browsing can be a highly useful tool
-when applied systematically and strategically.
+<p>Although database search can be more precise than using search engines, databases are also good for browsing.</p>
+<p>We all browse (online, in stores, as we page through books, and so on) but as a type of search process,
+browsing can be a highly useful tool when applied systematically and strategically.
 The result is not simply a way to scan through search results.
-Rather, the result of intentional browsing,
-(reading or skimming a list of titles and abstracts)
-can be the accumulation of highly relevant source material,
-relevant to our information needs and queries.</p>
+Rather, the result of intentional browsing, (reading or skimming a list of titles and abstracts)
+can be the accumulation of highly relevant source material, relevant to our information needs and queries.</p>
 <h3 id="browsing-strategies"><a class="header" href="#browsing-strategies">Browsing Strategies</a></h3>
-<p>Although we make a distinction
-between browsing and searching,
-it is oftentimes helpful to begin
-a browsing session with a keyword search,
-and then use something from the search results,
-something like an author's name or subject term,
-to find and collect related information.
+<p>Although we make a distinction between browsing and searching, it is oftentimes helpful to begin
+a browsing session with a keyword search, and then use something from the search results,
+something like an author's name or subject term, to find and collect related information.
 We call this type of browsing <strong>pearl growing</strong>.</p>
 <h3 id="subject-browsing"><a class="header" href="#subject-browsing">Subject Browsing</a></h3>
-<p>Below is an image of the <a href="https://eric.ed.gov/">ERIC Database</a>.
+<p>Figure 3 is an image of the <a href="https://eric.ed.gov/">ERIC Database</a> search page.
 <em>ERIC</em> stands for <strong>Education Resources Information Center</strong>.
 It is provided by the U.S. Department of Education, and
-it is an important access point for millions of bibliographic
-records to journal articles, books, research reports,
-white papers, government and other
-organizational reports, and more on education related topics.</p>
+it is an important access point for millions of bibliographic records to journal articles, books, research reports,
+white papers, government and other organizational reports, and more on education related topics.</p>
 <figure>
 <img src="images/4b-image-3.png"
 width="600" height="500"
@@ -1930,20 +1873,13 @@ alt="The ERIC database"
 title="The ERIC database">
 <figcaption>Fig. 3: The ERIC database</figcaption>
 </figure>
-<p><em>ERIC</em>, like other bibliographic databases,
-offers a thesaurus of controlled terms to help aid search.
+<p><em>ERIC</em>, like other bibliographic databases, offers a thesaurus of controlled terms to help aid search.
 For example, let's say I'm interested in research on academic libraries.
-In this screen shot, I'm looking at the page that describes
-the thesaurus <strong>descriptor</strong> for <strong>academic libraries</strong>.
-As is usual with thesauri,
-it not only describes how the term is defined in the database,
-but it also links to related terms,
-including terms that are <strong>conceptually broader</strong> than academic libraries,
-<strong>conceptually narrower</strong> than academic libraries,
-or that are <strong>conceptually related</strong> to academic libraries.
-I can click on any of these terms,
-and then click on the link that says to
-<strong>Search collection using this descriptor</strong>.
+Figure 4 displays the page that describes the thesaurus <strong>descriptor</strong> for <strong>academic libraries</strong>.
+As is usual with thesauri, it not only describes how the term is defined in the database,
+but it also links to related terms, including terms that are <strong>conceptually broader</strong> than academic libraries,
+<strong>conceptually narrower</strong> than academic libraries, or that are <strong>conceptually related</strong> to academic libraries.
+I can click on any of these terms, and then click on the link that says to <strong>Search collection using this descriptor</strong>.
 And in doing so, I engage in subject browsing.</p>
 <figure>
 <img src="images/4b-image-4.png"
@@ -1953,64 +1889,55 @@ title="Thesaurus descriptor page for the term academic libraries">
 <figcaption>Fig. 4: Thesaurus descriptor page for the term academic libraries</figcaption>
 </figure>
 <h3 id="author-browsing"><a class="header" href="#author-browsing">Author Browsing</a></h3>
-<p>I can browse using other <strong>access points</strong>
-(a way to gain access to information)
-like author names.
-After perusing the results from above,
-I can click on an author's name to narrow results.</p>
+<p>I can browse using other <strong>access points</strong> (a way to gain access to information) like author names.
+After perusing the results from above, I can click on an author's name to narrow results.</p>
 <figure>
 <img src="images/4b-image-5.png"
 alt="Author names list covering academic libraries"
 title="Author names list covering academic libraries">
 <figcaption>Fig. 5: Author names list covering academic libraries</figcaption> 
 </figure>
-<p>Knowing that authors tend to write and research
-on a specific range of topics (i.e., are specialists) is helpful
+<p>Knowing that authors tend to write and research on a specific range of topics (i.e., are specialists) is helpful
 because it allows me to browse by author and subject topic.</p>
 <h3 id="citation-browsing"><a class="header" href="#citation-browsing">Citation Browsing</a></h3>
 <p>I've described abstracting &amp; indexing (A&amp;I) databases, but
-there's another special type of A&amp;I database called
-a <strong>citation database</strong>.
+there's another special type of A&amp;I database called a <strong>citation database</strong>.
 Three useful ones available to us are:</p>
 <ul>
 <li><a href="https://libguides.uky.edu/3347">Scopus</a></li>
 <li><a href="https://libguides.uky.edu/467">Web of Science</a>, and</li>
 <li><a href="https://scholar.google.com/">Google Scholar</a> (more of a scholarly <em>search engine</em>).</li>
 </ul>
-<p>The first two are available via UK Libraries,
-and the latter is available freely on the web.
-A citation database is a database that shows
-who has cited an article (as known by their database)
+<p>The first two are available via UK Libraries, and the latter is freely available on the web.
+A citation database is a database that shows who has cited an article (as known by their database)
 and provides a link to those articles that have cited an article.
-Citation theory says that when any two articles
-(or books, or other documents) are cited in this way,
+Citation theory says that when any two (or more) articles (or books, or other documents) are cited in this way,
 they are more likely to be about the same thing.
 In fact, this is how Google search works, in part.
-Google's original <em>Page Rank Algorithm</em> posited
-that if a web page links to another web page,
-then the two pages are likely to be about the same topic.
-Because of this theory,
-we can follow citations to find more relevant articles.</p>
-<p>Pictured here is a record in <em>Web of Science</em> on information literacy.
+Google's original <em>Page Rank Algorithm</em> posited that if a web page links to another web page,
+then the two pages are likely to be topically related.
+Because of this theory, we can follow citations to find more relevant articles.</p>
+<blockquote>
+<p>Quite a bit of evidence supports this theory of citations.
+However, there are also competing theories of why people cite, and there are also counterexamples to this specific idea.
+So while the assumption that citations (or links on the web) imply topical similarity is often useful,
+it's not universally true.
+Still, this assumption underlies the design of many citation-based discovery tools.</p>
+</blockquote>
+<p>Figure 5 is a record in <em>Web of Science</em> on information literacy.
 To the far right you can see that it has <strong>4 Citations</strong>.
-If we click on that <strong>4 Citations</strong> link,
-we can begin to browse those 4 articles or documents.
-Per citation theory,
-it's highly probable that those 4 citing documents
-are also about information literacy;
-and thus, browsing them would be of considerable
-help if we were interested in reading more about information literacy.</p>
+If we click on that <strong>4 Citations</strong> link, we can review those four citing articles or documents.
+Per citation theory, it's highly probable that those four citing documents are also about information literacy;
+and thus, browsing them would be of considerable help if we were interested in reading more about information literacy.</p>
 <figure>
 <img src="images/4b-image-6.png"
 alt="WOS record of article on information literacy" 
 title="WOS record of article on information literacy">
 <figcaption>Fig. 6: WOS record of article on information literacy</figcaption> 
 </figure>
-<p>After clicking on the <strong>4 Citations</strong> link,
-we can see that the term <strong>information literacy</strong>
+<p>As shown in Figure 6, after clicking on the <strong>4 Citations</strong> link, we can see that the term <strong>information literacy</strong>
 appears in the title of all four citing works.
-This is good evidence for our citation theory, but
-it's also a useful trick for us.</p>
+This is good evidence for citation theory, but it's also a useful trick for us.</p>
 <figure>
 <img src="images/4b-image-7.png"
 alt="Citing articles in WOS" 
@@ -2018,16 +1945,10 @@ title="Citing articles in WOS">
 <figcaption>Fig. 7: Citing articles in WOS</figcaption> 
 </figure>
 <p><em>Google Scholar</em> works in much the same way.
-Instead of <em>Times Cited</em>, it says <em>Cited by</em>,
-and the search results default by generally listing (we think)
-the most highly cited works rather than the most recent,
-as is the default in <em>Web of Science</em>.
-But if we click on the <em>Cited by</em> link,
-we'll be taken to a page that lists
-the citing articles and documents,
-and like the <em>Web of Science</em> example,
-it's likely that many of the citing articles
-will be relevant in our search on this topic.</p>
+Instead of <em>Times Cited</em>, it says <em>Cited by</em>, and the search results default by generally listing (we think)
+the most highly cited works rather than the most recent, as is the default in <em>Web of Science</em>.
+But if we click on the <em>Cited by</em> link, we'll be taken to a page that lists the citing articles and documents,
+and like the <em>Web of Science</em> example, it's likely that many of the citing articles will be relevant in our search on this topic.</p>
 <figure>
 <img src="images/4b-image-8.png"
 alt="Cited by in Google Scholar" 
@@ -2035,26 +1956,15 @@ title="Cited by in Google Scholar">
 <figcaption>Fig. 8: Cited by in Google Scholar</figcaption> 
 </figure>
 <h3 id="combination-browsing"><a class="header" href="#combination-browsing">Combination Browsing</a></h3>
-<p>Like with most other searches,
-we can combine terms and use those combinations
-to focus our browsing sessions.
+<p>Like with most other searches, we can combine terms and use those combinations to focus our browsing sessions.
 The available combinations depend on the database we use.
-Here's a screen shot of an item from the
-<em>Communication &amp; Mass Media Complete (CMMC)</em> database.
-I searched this database using the thesauri term
-<strong>DIFFUSION of innovations</strong> AND also
-the term <strong>regression</strong> in the abstract.
-Basically, this tells the database
-to retrieve any record tagged with the thesauri term
-<strong>DIFFUSION of innovations</strong> and
-where also the term <strong>regression</strong>
-appears in the record's abstract.
-If it contains regression in the abstract,
-then the source likely used or refers to a statistical technique
+Figure 9 shows an item from the <em>Communication &amp; Mass Media Complete (CMMC)</em> database.
+I searched this database using the thesauri term <strong>DIFFUSION of innovations</strong> AND also the term <strong>regression</strong> in the abstract.
+Basically, this instructs the database to retrieve any record tagged with the thesauri term <strong>DIFFUSION of innovations</strong> and
+where also the term <strong>regression</strong> appears in the record's abstract.
+If it contains regression in the abstract, then the source likely used or refers to a statistical technique
 called linear regression, logistic regression, or like.
-Once I have this initial query,
-I can begin browsing the 11 titles and
-abstracts that are listed in the results.</p>
+Once I have this initial query, I can begin browsing the 11 titles and abstracts that are listed in the results.</p>
 <figure>
 <img src="images/4b-image-9.png"
 alt="Combination search in CMMC database"
@@ -2062,55 +1972,33 @@ title="Combination search in CMMC database">
 <figcaption>Fig. 9: Combination search in CMMC database">
 </figure>
 <h2 id="boolean-logic-and-or-not"><a class="header" href="#boolean-logic-and-or-not">Boolean Logic: AND, OR, NOT</a></h2>
-<p>Remember that database searching is more
-structured at the document level, and
-that this structure is reflected
+<p>Remember that database searching is more structured at the document level, and that this structure is reflected
 in the ability to do field searches.
-In the above example, for instance,
-we use two fields.
-The first field is a subject term search
-for the subject <strong>DIFFUSION of innovations</strong>,
-and it's marked as a subject field
-with the <strong>DE</strong> at the beginning.
-The second field is an abstract search,
-and this is shown in the drop down box
-to the right of the query term.
+In Figure 9, for instance, we use two search fields.
+The first field is a subject term search for the subject <strong>DIFFUSION of innovations</strong>,
+and it's marked as a subject field with the <strong>DE</strong> at the beginning.
+The second field is an abstract search, and this is shown in the drop down box to the right of the query term.
 In between these two fields is a Boolean <strong>AND</strong> operator.
-The AND operator tells the database that both
-query terms must be present in the results.
+The AND operator tells the database that both query terms must be present in the results.
 We've seen this <strong>AND</strong> in prior examples.</p>
-<p>I've mentioned two other Boolean operators:
-<strong>NOT</strong> and <strong>OR</strong>.
+<p>I've mentioned two other Boolean operators: <strong>NOT</strong> and <strong>OR</strong>.
 Many bibliographic databases offer all three.
-The <strong>NOT</strong> operator instructs the database
-to exclude the assigned term.
+The <strong>NOT</strong> operator instructs the database to exclude the assigned term.
 Thus, if we had chosen <strong>NOT "regression"</strong>,
-then the <em>CMMC</em> database would have
-returned results where the term <strong>regression</strong>
-surely did NOT appear in the abstract for
-records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
+then the <em>CMMC</em> database would have returned results where the term <strong>regression</strong> surely did NOT appear in the abstract
+for records with the subject term <strong>DIFFUSION of innovation</strong>.</p>
 <p>The <strong>OR</strong> Boolean operator is a bit tricky.
 It means, basically, <em>one or the other or both</em>.
-Thus, if we had used it here,
-then <em>CMMC</em> would have returned all records
-having the subject term <strong>DIFFUSION of innovations</strong>,
-as well as those records that did or did not have
-<strong>regression</strong> in the abstract.
-The <strong>OR</strong> operator is more useful when querying
-terms in the same search fields.
-For instance, we might want to use the <strong>OR</strong>
-operator to search for two different terms
-that might appear in the abstract fields,
-or the subject term fields,
-such as the following related terms:</p>
-<pre><code>DIFFUSION of innovations theory" OR
-INFORMATION dissemination"
+Thus, if we had used it here, then <em>CMMC</em> would have returned all records having the subject term <strong>DIFFUSION of innovations</strong>,
+as well as those records that did or did not have <strong>regression</strong> in the abstract.
+The <strong>OR</strong> operator is more useful when querying terms in the same search fields.
+For instance, we might want to use the <strong>OR</strong> operator to search for two different terms that might appear in the abstract fields,
+or the subject term fields, such as the following related terms:</p>
+<pre><code>DIFFUSION of innovations theory" OR INFORMATION dissemination"
 </code></pre>
 <p>We can see how this plays out in the results.
-In the first record in the following screenshot,
-both terms appear in the subjects list.
-But in the second record,
-only one of the terms appears.</p>
+In the first record in Figure 10, both terms appear in the subjects list.
+But in the second record, only one of the terms appears since <strong>OR</strong> doesn't require both to appear.</p>
 <figure>
 <img src="images/4b-image-10.png"
 alt="Using the OR Boolean operator"
@@ -2118,47 +2006,28 @@ title="Using the OR Boolean operator">
 <figcaption>Fig. 10: Using the OR Boolean Operator</figcaption>
 </figure>
 <h3 id="how-to-browse"><a class="header" href="#how-to-browse">How to Browse</a></h3>
-<p>When we browse, therefore,
-we are attempting to locate key qualities from our results
+<p>When we browse, therefore, we are attempting to locate key qualities from our results
 or our initial results lists (e.g., authors, subjects, etc.).
-These lists include the titles, the abstracts, the thesauri,
-and so forth.
+These lists include the titles, the abstracts, the thesauri, and so forth.
 And these key terms will help capture what our search is <strong>about</strong>.</p>
 <h2 id="developing-a-list"><a class="header" href="#developing-a-list">Developing a List</a></h2>
-<p>Many databases will offer a way to create,
-save, and export lists or individual records
-based on browsing and searching.
-This helps us easily manage the documents that
-we highlight as initially important.
-We can curate these lists as they grow and
-our search becomes more focused.</p>
-<p>Creating a list in a specific database
-usually requires us to create an account on
-that database.
-I already have an account with EBSCOhost,
-the vendor that provides the <em>CMMC</em> database
-as well as many others, and
-in the following screenshot,
-I've already signed in to that account.
-To the right of the image,
-you can see a folder icon.
-As I browse through records that look
-relevant to my needs,
-I can click on that icon and save
-the result to a folder.
-I can also create multiple folders
-and email, download, or print the records
-for later use.</p>
+<p>Many databases will offer a way to create, save, and export lists or individual records based on browsing and searching.
+This helps us easily manage the documents that we highlight as initially important.
+We can curate these lists as they grow and our search becomes more focused.</p>
+<p>Creating a list in a specific database usually requires us to create an account on that database.
+I already have an account with EBSCOhost, the vendor that provides the <em>CMMC</em> database as well as many others, and
+in the Figure 11, I've already signed in to that account.
+To the right of the image, you can see a folder icon.
+As I browse through records that look relevant to my needs, I can click on that icon and save the result to a folder.
+I can also create multiple folders and email, download, or print the records for later use.</p>
 <figure>
 <img src="images/4b-image-11.png"
 alt="Using Folders to Save Records" 
 title="Using Folders to Save Records">
 <figcaption>Fig. 11: Using Folders to Save Records</figcaption>
 </figure>
-<p>Of course, I prefer to save records
-in Zotero rather than use a database folder or list.
-This way I keep the records with me even if I lose
-access to the database.</p>
+<p>Of course, I prefer to save records in Zotero rather than use a database folder or list.
+This way I keep the records with me even if I lose access to the database.</p>
 <h2 id="conclusion-6"><a class="header" href="#conclusion-6">Conclusion</a></h2>
 <p>In this section, we learned the following:</p>
 <ul>
@@ -2166,20 +2035,20 @@ access to the database.</p>
 <li>Each have advantages and disadvantages</li>
 <li>Search engines are well structured at the file system level</li>
 <li>Databases are well structured at the record level</li>
-<li>Searching in a database means search structured bibliographic records</li>
+<li>Searching in a database means searching structured bibliographic records</li>
 <li>Records are structured by pre-set fields</li>
 <li>Subject terms or thesauri descriptors help create precise searches</li>
 <li>Systematic browsing can be a rigorous way to engage in search</li>
-<li>Pearl growing is a browsing strategy that involves collecting items
-based on an initial aspect of a bibliographic record. Such as as:
+<li>Pearl growing is a browsing strategy that involves collecting items based on an initial aspect of a bibliographic record,
+such as as:
 <ul>
 <li>subject term</li>
 <li>author name</li>
 <li>citation</li>
 </ul>
 </li>
-<li>Because databases search structured bibliographic records with pre-set
-fields, we can create very precise queries by combining fields</li>
+<li>Because databases search structured bibliographic records with pre-set fields,
+we can create very precise queries by combining fields</li>
 <li>We can combine fields using Boolean logic: AND, OR, NOT</li>
 <li>We can create and save lists as we browse</li>
 <li>Or we can save items to our reference manager (RM).</li>
@@ -2187,258 +2056,199 @@ fields, we can create very precise queries by combining fields</li>
 <p>In the end, don't simply browse absentmindedly.
 Rather, browse with smarts: systematically and strategically.
 Make the systems work for you.
-And save your results in Zotero or your
-chosen RM as you go.</p>
+And save your results in Zotero or your chosen RM as you go.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="evaluating-information-sources"><a class="header" href="#evaluating-information-sources">Evaluating Information Sources</a></h1>
 <h2 id="readings-3"><a class="header" href="#readings-3">Readings</a></h2>
-<p>Read this short introduction on <strong>reading laterally</strong> as
-a way to evaluate information, and
-watch the short video.</p>
+<p>Read this short introduction on <strong>reading laterally</strong> as a way to evaluate information, and watch the short video.</p>
 <ul>
-<li>Newell, C. (n.d.). Jessup Playbooks: How do I read laterally?: Home.
-Retrieved August 3, 2022, from <a href="https://libguides.pvcc.edu/lateral_reading/home">PVCC.edu</a></li>
-<li>Stanford History Education Group (Director). (2020, January 16). Sort Fact
-from Fiction Online with Lateral Reading, from <a href="https://www.youtube.com/watch?v=SHNprb2hgzU">YouTube</a></li>
+<li>Newell, C. (2025, April 15).
+How do I read laterally?
+<a href="https://libguides.pvcc.edu/lateral_reading/home">https://libguides.pvcc.edu/lateral_reading/home</a></li>
+<li>Digital Inquiry Group. (2020, January 16).
+Sort Fact from Fiction Online with Lateral Reading.
+<a href="https://www.youtube.com/watch?v=SHNprb2hgzU">https://www.youtube.com/watch?v=SHNprb2hgzU</a></li>
 </ul>
 <h2 id="introduction-5"><a class="header" href="#introduction-5">Introduction</a></h2>
-<p>When we're doing research or trying to learn something,
-we obviously want to gather content that is true.
-And so the key question is,
-how do we know content is true or false, or
-more or less true,
-or something along those lines.
-Basically, truth and veracity can have nuances that
-are important to identify or disentangle within stories that
-are presented about how things are in the world.
-For example, it's become very common
-for people in the public sphere to refer to <strong>narratives</strong>,
-and to argue that someone's or some group's narratives
-are either true or false.
-Or more accurately, a fiction or a non-fiction.
-Regardless of our political or whatever positions,
-this focus on narrative is interesting and worthwhile.
-It's interesting because placing information
-within a narrative has ancient origins, and it's
-worthwhile because it places true and false content
-within some context, like a story,
-which can itself be evaluated as fairly true or not
-(or fiction or non-).
-Essentially, this is important because
-stories are central to human communication and understanding
-(Fisher, 1989).</p>
-<p>Before we explore this, I want to acknowledge that
-you may have been taught about various existing
-frameworks,
-like the <a href="https://en.wikipedia.org/wiki/CRAAP_test">CRAAP test</a>,
-to help determine the veracity of content.
-Many of these frameworks ask us to ask questions
-and to check off boxes about the content itself
+<p>When we're doing research or trying to learn something, we obviously want to gather content that is true.
+And so the key question is, how do we know content is true or false, or more or less true, or something along those lines.
+Basically, truth and veracity can have nuances that are important to identify or
+disentangle within stories that are presented about how things are in the world.
+For example, it's become very common for people in the public sphere to refer to <strong>narratives</strong>,
+and to argue that someone's or some group's narratives are either true or false, or fiction or non-fiction.
+Regardless of our political or whatever positions, this focus on narrative is interesting and worthwhile.
+It's interesting because placing information within a narrative has ancient origins, and
+it's worthwhile because it places true and false content within some context, like a story,
+which can itself be evaluated as fairly true or not.
+Essentially, this is important because stories are central to human communication and understanding
+<a href="https://doi.org/10.2307/j.ctv1nwbqtk">(Fisher, 1989)</a>.</p>
+<p>Before we explore this, I want to acknowledge that you may have been taught about various existing frameworks,
+like the <a href="https://en.wikipedia.org/wiki/CRAAP_test">CRAAP test</a>, to help determine the veracity of content.
+Many of these frameworks ask us to ask questions and to check off boxes about content
 when evaluating information or information sources.
-For example, who is the author of the content,
-where is the content published,
-on what platform?
-What is the author's or publisher's motivation?
-Is the motivation purely or mostly financial?
-How does that introduce bias?
-What is the date of the publication?
-Is it outdated?
-And so forth.</p>
-<p>Those kinds of questions are important,
-but they may also be insufficient in determining
-some content's veracity.
-What's also important to identify,
-especially for content that is new or new to us,
-are questions that place the content in broader context,
-to fit it within an overall story that's taking place.
-For example, where does some content that
-we're evaluating fit within a story
-someone or some group is trying to tell?
-How does one group's (or author's, or publisher's, etc)
-story conflict with another group's (etc.)?
-Alternatively, what is the consensus among different
-stories that group's tell about a thing?
+For example, these frameworks instruct us to ask questions like:</p>
+<ul>
+<li>Who is the author of the content?</li>
+<li>Where is the content published?On what platform?</li>
+<li>What is the author's or publisher's motivation?</li>
+<li>Is the motivation purely or mostly financial?</li>
+<li>How does that introduce bias?</li>
+<li>What is the date of the publication?</li>
+<li>Is the content current or outdated?</li>
+</ul>
+<p>And so forth.</p>
+<p>Those kinds of questions are important, but they may also be insufficient in determining some content's veracity,
+and let's face it, it's a big checklist to go through for all the documents that we read.
+What's also important to identify, especially for content that is new or new to us,
+are questions that place the content in broader context and that fit it within an overall story that's taking place.
+For example, where does some content that we're evaluating fit within a story someone or some group is trying to tell?
+How does one group's (or author's, or publisher's, etc) story conflict with another group's (etc.)?
+Alternatively, what is the consensus among different stories that group's tell about a thing?
 How do these stories compete for public acceptance?</p>
-<p>When we try to identify the story, then
-new questions and frameworks open up to us.
-For example, it could be the case that
-the basic facts about an event are agreed upon
-by various storytellers
-(e.g., news articles, politicians, scientists),
-but that the basic facts are presented in ways that
+<p>When we try to identify the story, then new questions and frameworks open up to us.
+For example, it could be the case that the basic facts about an event are agreed upon by various storytellers
+(e.g., news articles, politicians, scientists), but that the basic facts are presented in ways that
 impact how the story of those facts are told.
-Then, in those different tellings, the stories
-may consequently ring true or not.
-Worse, if the overall story rings false, then
-it may cause doubt about the basic facts, even
-if those basic facts are true.</p>
-<p>Fortunately, we have ways to think about stories, and
-Walter Fisher (1989) identified two methods
-for evaluating narratives that he called
+Then, in those different tellings, the stories may consequently ring true or not.
+Worse, if the overall story rings false, then it may cause doubt about the basic facts, even if those basic facts are true.</p>
+<p>Fortunately, we have ways to think about stories.
+As an example, Walter Fisher (1989) identified two methods for evaluating narratives that he called
 <strong>narrative probability</strong> and <strong>narrative fidelity</strong>.
 The latter concept describes how well something rings true.
-For example, given what you know about
-the kinds of engineering feats that people
-have achieved,
-does it ring true that
-we have landed on the moon?</p>
-<p>There's more to fidelity than that,
-but let's discuss narrative probability
-in more detail:</p>
+For example, given what you know about the kinds of engineering feats that people have achieved,
+does it ring true that we have landed on the moon?</p>
+<p>There's more to fidelity than that, but let's discuss narrative probability in more detail:</p>
 <h2 id="narrative-probability"><a class="header" href="#narrative-probability">Narrative Probability</a></h2>
-<p>For a story to be probable (probably true, that is),
-it must satisfy three criteria:</p>
+<p>Per Fisher, for a story to be probable (probably true, that is), it must satisfy three criteria:</p>
 <ul>
 <li>argumentative or structural coherence</li>
 <li>material coherence</li>
 <li>characterological coherence</li>
 </ul>
+<p>Let's discuss these criteria in more detail.</p>
 <h3 id="argumentative-or-structural-coherence"><a class="header" href="#argumentative-or-structural-coherence">Argumentative or Structural Coherence</a></h3>
-<p><em>Argumentative or structural coherence</em> speaks
-to the validity of an underlying
-argument in a story.
-That is, good stories, whether true or not,
-present a series of premises that build off each other
+<p><em>Argumentative or structural coherence</em> speaks to the validity of an underlying argument in a story.
+That is, good stories, whether true or not, present a series of premises that build off each other
 and that present an overall thesis or argument.
-Or, stories have a structure that makes sense and,
-upon close inspection, contains few holes.
-You all know if a story has argumentative or structural
-coherence because you have all surely watched bad movies
+Or, stories have a structure that makes sense and, upon close inspection, contains few holes.
+You all know if a story has argumentative or structural coherence because you have all surely watched bad movies
 that fail to convince you that the movie made sense.
-Sometimes this lack of structural coherence in a movie
-is what makes a movie fun ("it's so bad it's great!").
-But when telling stories about how things are in the world,
-or how they should be, or how they will be,
-it's important for the story to make sense and to be valid, logically.</p>
+Sometimes this lack of structural coherence in a movie is what makes a movie fun ("it's so bad it's great!").
+But when telling stories about how things are in the world, or how they should be, or how they will be,
+it's important for the story to make sense and to be logically valid.</p>
 <h3 id="material-coherence"><a class="header" href="#material-coherence">Material Coherence</a></h3>
 <p>If a story is internally consistent, what next?
-As is often the case, a group (e.g., ideological ones)
-may compete with another group about what should
-be the dominant narrative.
-In such cases, we can compare and contrast their narratives,
-and doing so is testing their <em>material coherence</em>.
-This is the idea that we compare and contrast stories
-and note in the process whether
-"important facts may be omitted,
-counterarguments ignored, and
-relevant issues overlooked" in the process
+As is often the case, a group (e.g., ideological groups) may compete with other groups about what should be the dominant narrative.
+In such cases, we can compare and contrast their narratives, and doing so is testing their <em>material coherence</em>.
+This is the idea that we compare and contrast stories and note in the process whether
+<q>important facts may be omitted, counterarguments ignored, and relevant issues overlooked</q> in the process
 of comparing and contrasting them (Fisher, 1989, p. 47).
 Such comparisons may happen from a bird's eye view;
-for example, when Democrats or Republicans
-are telling the story of the United States,
-can we see what important facts each group omits,
-which counterarguments each group ignores,
-and which relevant issues each group overlooks?</p>
+for example, when Democrats or Republicans are telling the story of the United States,
+can we see what important facts each group omits, which counterarguments each group ignores, and
+which relevant issues each group overlooks?</p>
 <p>These comparisons may also happen at the micro-level.
-In the social and physical sciences,
-scholars and researchers are engaged in a series of
-discussions with each other about all sorts of theories
-about the social or physical worlds.</p>
+In the social and physical sciences, scholars and researchers are engaged in a series of
+debates and discussions with each other about all sorts of theories about the social or physical worlds.</p>
 <blockquote>
 <p>A quick note on theories.
 Theories are simply very rigorous explanations given the data.
-These explanations generally provide an account of causality,
-or of how one thing causes another.
-As social and physical scientists gather data,
-they develop theories (like stories) that explain the data.
-As new data is analyzed,
-those theories are tested.
-If the theories no longer explain the additional data,
-they are revised or discarded and replaced with new theories.
-Some theories (like the theory of general relativity) are quite stable
-(i.e., well tested),
-even if they do not explain everything about things within their purview,
-like gravity at the quantum level.
-Other theories still walk a tight rope (like string theory),
-and this is most likely because more data is needed to test them
+These explanations generally provide an account of causality, or of how one thing causes another.
+As social and physical scientists gather data, they develop theories (like stories) that explain the data.
+As new data is analyzed, those theories are tested.
+If the theories no longer explain the additional data, they are revised or discarded and replaced with new theories.
+Some theories (like the theory of general relativity) are quite stable (i.e., well tested),
+even if they do not explain everything about things within their purview, like gravity at the quantum level.
+Other theories walk a tight rope (like string theory), and this is most likely because more data is needed to test them
 but enough data has been analyzed for them to hold for the time being.
-In the social sciences and physical sciences,
-it's more common for theories to explain limited phenomenon.
+In the social sciences and physical sciences, it's more common for theories to explain limited phenomenon.
 These are called <strong>middle-range theories</strong>.
-The <strong>diffusion of innovation</strong> theory, for example,
-is a <strong>middle-range theories</strong> that
+The <strong>diffusion of innovation</strong> theory, for example, is a <strong>middle-range theories</strong> that
 was originally devised to explain how new ideas and technology spread.</p>
 </blockquote>
-<p>You can see these discussions among scientists and researchers
-take place in the literature review
+<p>You can see these discussions among scientists and researchers take place in the literature review
 and discussion sections of journal articles.
-In these sections, researchers cite and refer to others
-who have completed research on a similar or the same topic.
-The overall goal of these discussions
-is to test or develop theories that explain some phenomenon.
-Essentially, researchers in the sciences are seeking to provide
-a story, based on a rigorous analysis of the data they have,
-that explains some phenomenon, and
-in the process of doing so, they compare and contrast
-their explanations with others.
-As Fisher might say, they <strong>seek important facts that may have been omitted,
-counterarguments that may have been ignored, and
+In these sections, researchers cite and refer to others who have completed research on a similar or the same topic.
+The overall goal of these discussions is to test or develop theories that explain some phenomenon.
+Essentially, researchers in the sciences are seeking to tell a story, based on a rigorous analysis of the data they have,
+that explains some phenomenon, and in the process of doing so, they compare and contrast their explanations with others.
+As Fisher might say, they <strong>seek important facts that may have been omitted, counterarguments that may have been ignored, and
 relevant issues that may have been overlooked</strong>.</p>
-<p>Practically, we can use tools to help immerse ourselves
-in these discussions.
-Tools like Zotero or other reference managers aid us
-in collecting sources, taking notes on those sources,
-and citing those sources in papers that participate in
-these ongoing discussions and contribute to this collective storytelling.
+<p>Practically, we can use tools to help immerse ourselves in these discussions.
+Tools like Zotero or other reference managers aid us in collecting sources, taking notes on those sources,
+and citing those sources in papers that participate in these ongoing discussions and contribute to this collective storytelling.
 In the process of writing about the phenomenon under review,
-we attempt to provide a story based on the back and forth
-discussions that have taken place on the topic.
-These RMs, then, basically help us to test <strong>material coherence</strong>.</p>
+we attempt to provide a story based on the back and forth discussions that have taken place on the topic.
+These reference managers, then, basically help us to test <strong>material coherence</strong>.</p>
 <h3 id="characterological-coherence"><a class="header" href="#characterological-coherence">Characterological Coherence</a></h3>
 <p>Can you think of a story that doesn't have a character at all?
 I can't.
 Even places and things can be characters in stories.
-The <a href="https://en.wikipedia.org/wiki/DMC_DeLorean">Delorean car</a> in the <em>Back to the Future</em> movies
-is, for example, somewhat of a character in those movies.
-But when people are characters,
-they often behave, in movies, plays, etc., <em>characteristically</em>.
-That is, they behave according to their
-values, beliefs, attitudes, ideas, and words.
+The <a href="https://en.wikipedia.org/wiki/DMC_DeLorean">Delorean car</a> in the <em>Back to the Future</em> movies is, for example, somewhat of a character in those movies.
+But when people are characters, they often behave, in movies, plays, etc., <em>characteristically</em>.
+That is, they behave according to their values, beliefs, attitudes, ideas, and words.
 They behave according to who they are.</p>
-<p>We don't often see movies or plays or hear stories where
-people behave uncharacteristically because such stories
-are generally not good.
-Or if people do behave uncharacteristically,
-it's usually a part of the plot
-and the uncharacteristic behavior was foreshadowed
-somewhere earlier in the story.
-Often, when we see something coming in a movie before it's happened,
-it's because the characters are playing to their character.
-If we don't see something coming, then it's simply likely a
-complex character, and the story supports that.</p>
-<p>In any regard, stories have characters,
-whether people, places, or things.
-And when we investigate stories (or theories),
-it's worthwhile to consider whether the characters are coherent
-in this way, too.
+<p>We don't often see movies or plays or hear stories where people behave uncharacteristically
+because such stories are generally not good.
+Or if people do behave uncharacteristically, it's usually a part of the plot
+and the uncharacteristic behavior was foreshadowed somewhere earlier in the story.
+Often, when we see something foreshadowed in a movie, it's because the characters are playing to their character.
+If we don't see something coming, then it's simply likely a complex character, and the story supports that.</p>
+<p>In any regard, stories have characters, whether people, places, or things.
+And when we investigate stories (or theories), it's worthwhile to consider whether the characters are coherent in this way, too.
 You can put this to the test.
-When thinking about big issues taking place in the world,
-think about who is involved,
-how they are acting,
+When thinking about big issues taking place in the world, think about who is involved, how they are acting,
 what they are saying, etc.
-Is what they are saying make sense,
-per the above ideas?</p>
+Then ask, is what they are saying make sense, per the above ideas?</p>
+<h2 id="lateral-reading"><a class="header" href="#lateral-reading">Lateral Reading</a></h2>
+<p>When you are trying to figure out whether an article or claim is trustworthy,
+one of the most effective things you can do is <strong>read laterally</strong>.</p>
+<p>Lateral reading means leaving the page you're on to see what other sources say about the claim,
+the author, the organization, or the publication.
+It's how professional fact-checkers work.
+Instead of analyzing a website from the inside, e.g., using the CRAAP test,
+they open a new tab or browser window, and look for external context on the topic.</p>
+<p>This practice helps you accomplish several things:</p>
+<ul>
+<li>Find out whether something actually happened.</li>
+<li>Find out whether a source has a known bias or reputation.</li>
+<li>Discover how other sources are covering the same event or issue.
+<ul>
+<li>If no other sources are covering the same event or issue in the same time frame as the original source, then this raises a red flag.</li>
+</ul>
+</li>
+<li>Check whether claims are being repeated across ideological bubbles or challenged with evidence.</li>
+</ul>
+<p>For example, let's say you read a claim on a news site that you're unfamiliar with.
+Using lateral reading, you might:</p>
+<ul>
+<li>Search the name of the website with <code>wikipedia</code> or <code>bias</code> or <code>ownership</code> as additional terms.</li>
+<li>Look up the same event on a major news outlet for fact-checking site, like <a href="https://www.snopes.com/">Snopes</a>.</li>
+<li>See how sources like ChatGPT, Claude, Gemini, or Wikipedia summarize the issue.</li>
+<li>Use academic tools like Google Scholar or your library's databases to check whether the claim has a basis in research.</li>
+</ul>
+<p>This outword-looking approach helps you avoid being trapped in a single narrative or echo chamber.</p>
+<blockquote>
+<p>Tip: Zotero is not just for storing citations.
+It's also a great lateral reading tool.
+You can use it to collect a wide range of perspectives on a topic,
+organize what each source says, take notes, and compare them.
+This helps you test material coherence and get a sense of the broader conversation around an issue.
+Once you've gained a good sense of the issue, you then have a rational basis for formulating your own explanations.</p>
+</blockquote>
+<p>Lateral reading is a method that can help us thinking about narratives as probable or true.</p>
 <h2 id="closing-the-loop"><a class="header" href="#closing-the-loop">Closing the Loop</a></h2>
 <p>How does this all help you evaluate information sources?
-Well, when you collect sources for a project, like a paper or something,
-it's a good idea, as you collect sources, to think about the stories
-that are being told around the topic,
-as well as the story you want or need to tell.
-The sources you collect should have
-structural, material, and characterological coherence, too.
-This means that in the process of collecting evidence,
-if you find evidence that degrades the coherence of these things,
-you need to revise your story,
-just like a scientist must revise or discard their theory
+Well, when you collect sources for a project, like a paper or something, it's a good idea, as you collect sources,
+to think about the stories that are being told around the topic, as well as the story you want or need to tell.
+The sources you collect should have structural, material, and characterological coherence, too.
+This means that in the process of collecting evidence, if you find evidence that degrades the coherence of these things,
+you need to revise your story, just like a scientist must revise or discard their theory
 in the face of contradictory or discordant evidence.</p>
 <h2 id="project"><a class="header" href="#project">Project</a></h2>
-<p>You can test this method yourselves.
-Consider a news event that's going on as you read this.
-Pick two news articles that cover the event,
-from two different publications.
-Choose two publications that lie on different parts
-of the political spectrum.
-Study those two sources, and
-ask the following questions:</p>
+<p>To practice lateral reading and test narrative coherence, choose a current event and collect at least two articles
+from different perspectives on the issue.
+Use Zotero to save and annotate your sources, take brief notes on each article's main narrative, and
+compare them using the questions below:</p>
 <ol>
 <li>How are the stories structurally coherent? Or not? That is, do the stories
 in the two articles make sense? Are they internally consistent?</li>
@@ -2452,25 +2262,16 @@ values, attitudes, beliefs, ideas, and words? Do the stories present them
 counter to what we already know of these people?</li>
 </ol>
 <h2 id="conclusion-7"><a class="header" href="#conclusion-7">Conclusion</a></h2>
-<p>Being able to evaluate information is important, but
-if we have been exposed to lessons on doing so,
-we have often been presented with some kind of framework
-that asks us to check the boxes to see if an information source
+<p>Being able to evaluate information is important, but if we have been exposed to lessons on doing so,
+we have often been presented with some kind of framework that asks us to check the boxes to see if an information source
 satisfies some pre-existing criteria.
-For example, such a checklist might ask us to ask:
-who are the authors?
-do they have a good reputation?
-is the publisher respected?
-is the motive to publish based on profit?
-are they selling something with the information they provide?</p>
-<p>While that may be an important part of the process in evaluating information,
-it's also insufficient.
-A more thorough way to evaluate information is to think of the information
-more broadly and holistically and how topics are presented differently based on narratives.
-That is, to think of the stories that are being told,
-and how the information is contextualized.
-Once we see the story,
-we have four methods to investigate a piece of information's credibility.
+For example, such a checklist might ask us to ask: who are the authors? do they have a good reputation?
+is the publisher respected? is the motive to publish based on profit? are they selling something with the information they provide?</p>
+<p>While that may be an important part of the process in evaluating information, it's also insufficient.
+A more rigorous but also natural way to evaluate information is to think of the information more broadly and holistically and
+how topics are presented differently based on narratives.
+That is, to think of the stories that are being told and how the information is contextualized.
+Once we see the story, we have four methods to investigate a piece of information's credibility.
 We can read <strong>laterally</strong>.
 That is, we can read multiple articles on a topic and compare them.
 Then we can test each stories':</p>
@@ -2479,23 +2280,24 @@ Then we can test each stories':</p>
 <li>material coherence, and</li>
 <li>characterological coherence.</li>
 </ul>
-<p>By the way, this method can also apply to the stories
-we tell ourselves or about ourselves or about our beliefs.
-It's important, that is, to evaluate the information we
-believe to be true as much as it is to evaluate what others
-posit to be true.</p>
-<blockquote>
-<p>Regarding lateral reading, I think services like <strong>Wikipedia</strong>, <strong>ChatGPT</strong>,
-and <strong>Bard</strong> should be included in sources when reading laterally. That is,
-if we want to learn more about a topic, we can look at the standard sources,
-such as news articles or research articles. However, we can also refer to
-<em>Wikipedia</em> or the AI chatbots to sound out what we are reading about. The
-more we read about a topic from a variety of sources, the more likely we'll
-get a better overview of the stories being told about the topic.</p>
-</blockquote>
+<p>By the way, this method can also apply to the stories we tell ourselves or about ourselves or about our beliefs.
+It's important, that is, to evaluate the information we believe to be true
+as much as it is to evaluate what others posit to be true.</p>
+<p>Regarding lateral reading, I think services like <strong>Wikipedia</strong>, <strong>ChatGPT</strong>, <strong>Claude</strong>, and <strong>Gemini</strong>
+should be included in sources when reading laterally.
+That is, if we want to learn more about a topic, we can look at the standard sources, such as news articles or research articles.
+However, we can also refer to <em>Wikipedia</em> or the AI chatbots to sound out what we are reading about.
+The more we read about a topic from a variety of sources,
+the more likely we'll get a better overview of the stories being told about the topic.
+Keep in mind, however, that Wikipedia and the AI Chatbots should be used as <strong>concextual guides</strong>,
+not as sources of final truth.
+Use them to get an overview of a topic or to help interpret something confusing, but
+always cross-reference what they say with primary or reputable secondary sources.</p>
 <h2 id="references-1"><a class="header" href="#references-1">References</a></h2>
-<p>Fisher, W. R. (1989). <em>Human communication as narration: Toward a philosophy of
-reason, value, and action</em>. University of South Carolina Press. <a href="https://doi.org/10.2307/j.ctv1nwbqtk">https://doi.org/10.2307/j.ctv1nwbqtk</a></p>
+<p>Fisher, W. R. (1989).
+<em>Human communication as narration: Toward a philosophy of reason, value, and action</em>.
+University of South Carolina Press.
+<a href="https://doi.org/10.2307/j.ctv1nwbqtk">https://doi.org/10.2307/j.ctv1nwbqtk</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="welcome-to-your-wikipedia-project-adventure"><a class="header" href="#welcome-to-your-wikipedia-project-adventure">Welcome to Your Wikipedia Project Adventure!</a></h1>
 <p>This is the final part
 of this course, and
