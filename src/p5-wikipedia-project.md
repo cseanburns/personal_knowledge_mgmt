@@ -9,7 +9,7 @@ This will help you contribute effectively to this knowledge platform.
 
 By the end of this chapter,
 you will be prepared to edit a Wikipedia article, and
-it's crucial that you choose the right articles.
+it's crucial that you choose the right article.
 The key criteria is that you should pick an article on a topic that you're interested in and
 where you can make a meaningful contribution.
 We'll discuss strategies to help you select the right article that aligns with your
