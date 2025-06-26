@@ -1,106 +1,64 @@
 # Wikipedia Project: Setup
 
-By the end of this course,
-you will edit several Wikipedia articles.
-To help prepare you,
-this guide provides
-an introduction to contributing to Wikipedia.
-While actual editing won't begin
-until later in the course,
-it's important to start
-learning the process now
-in order to plan and prepare.
+By the end of this course, you will make a meaningful contribution to a Wikipedia article by
+improving one of its articles.
+To prepare, this guide introduces the first steps in your final project:
+selecting and planning your article edits.
+Actual editing won't begin until later, but this first step is an important part of the process
+because it involves identifying a topic, exploring its weaknesses, and
+finding good sources to support your edits.
 
-The goal:
-Wikipedia's accuracy and credibility
-depend on good references in its articles.
-Good references allow readers
-to verify information and explore topics further.
-By adding references to Wikipedia articles,
-this project will also serve
-as a valuable learning exercise:
-it will allow you to develop your research,
-critical thinking, and information evaluation skills,
-all while contributing to a valuable online resource.
-In short,
-this project will encourage you
-to draw upon all the topics
-we have covered since we started this course.
+## Why This Matters
+
+Wikipedia is one of the most visited websites in the world.
+Its accuracy and credibility relies on editors, like you, adding reliable sources to support its content.
+This project lets you practice the skills you've been learning so far: research, source evaluation, and citation.
+The result will be your contribution to a widely used and publicly accessible information resource.
+In short, this project brings together the skills we've been building in our studies and applies them in a real-world context.
 
 ## Readings
 
-Please review the following Wikipedia
-articles to understand important
-editing practices.
+Please review the following Wikipedia articles to understand important editing practices.
 
-- Wikipedia: [Editing][help_editing]
-- Wikipedia: [Policies][wikipedia_policies]
+- Wikipedia: [Editing][help_editing]: This basic guide shows how Wikipedia editing works.
+- Wikipedia: [Policies][wikipedia_policies]: An overview of what Wikipedia considers acceptable behavior, reliable source, and more.
 
 ## Becoming a Wikipedia Editor
 
-Your task is to identify
-three Wikipedia articles that
-you would like to edit by
-adding references to them.
-Over the next few weeks,
-you will search for information sources
-from the library and the web
-to add to these selected articles.
-You will collect those sources
-in your reference manager (RM),
-and then later edit the Wikipedia articles
-by adding these references to them.
+Each of you will identify a Wikipedia article that you would like to edit and improve.
+Your main task is to add **at least four references** to support or clarify existing content in the article.
+A secondary task may be to **add or revise text**, especially when needed to integrate those references in the text smoothly.
 
-To help prepare you for this,
-we have covered the following topics that
-will help us with our project:
+To prepare you for this, you will:
 
-1. Information sources and resources
-2. Reference managers
-3. Web information retrieval
-4. Database information retrieval
-5. Evaluating information sources
+- Use the **library and web** to find trustworthy information sources.
+- Use **Zotero** to collect, organize, and annotate your sources.
+- Apply the research and evaluation skills we've discussed:
+    - **Information resources and sources**: where knowledge lives, how it's accessed, and the sources it provides.
+    - **Reference managers**: Used to collect and organize research with tools like Zotero.
+    - **Web and database search**: Used to retrieve relevant and credible material.
+    - **Source evaluation**: To determine whether a source is reliable and appropriate for Wikipedia.
 
-Upcoming lessons will continue
-coverage of specific library and web resources,
-how to use them, and
-how to incorporate them into your work flows.
-Over the next few weeks,
-you should have collected enough material to
-edit the Wikipedia articles
-that you identify this week.
+Upcoming lessons will continue coverage of specific library and web resources, how to use them, and how to incorporate them into your work flows.
+Over the next few weeks, you will have collected enough material to edit the Wikipedia article that you identify now.
 
-## Details
+## Current Task
 
-For this week, your task is
-to identify three Wikipedia articles to edit.
-You may choose any articles, but
-**[note that some articles have stricter editing policies][wikipedia_policies]**.
-You will analyze the article for lack of references
-or articles that need more references, and
-collect sources that will address those shortcomings
-using the search skills and resource knowledge you have
-acquired this semester.
-For the main project,
-you will need to add two references
-to each of the three articles.
-Overall, you will need to identify
-three sources from the library
-and three from the general web.
-At the end of this semester,
-in the second part of this project,
-you will edit the Wikipedia articles, and
-add your references to the articles
-that you identified.
+Your first task is to begin the setup process for your Wikipedia project:
 
-For now, your job is to:
-
-- Create an account on Wikipedia (if you do not already have one).
-- Identify three Wikipedia articles that you would like to add references to.
-- Begin to collect and describe at least six sources over the course of the
-  next few weeks that you will use as references.
-  - Three sources will come from the library.
-  - Three sources will come from the general web.
+- **Create an account** on Wikipedia if you don't already have one.
+- **Choose a Wikipedia article** you'd like to improve.
+    - You should take some time with this step and select an article on a topic that you are really interested in.
+    - Be aware that some articles have [editing restrictions][wikipedia_policies].
+      Check the article's history and discussion pages to see if it's actively managed or protected.
+- **Analyze the article** to find areas that need better citations or clearer sources.
+- **Begin collecting four sources** to support your edits:
+    - At least **two sources from library resources** (e.g., peer-reviewed journals, academic books, trade magazines).
+    - At least **two sources from the open web** (e.g., reputable news sites, official reports).
+- For each source, **annotate it in Zotero**. In your notes, write:
+    - What's it about?
+    - Why is it reliable?
+    - How could it help improve the article?
 
 [help_editing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
 [wikipedia_policies]:https://en.wikipedia.org/wiki/Wikipedia:List_of_policies
