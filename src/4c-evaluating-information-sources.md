@@ -82,7 +82,7 @@ Let's discuss these criteria in more detail.
 *Argumentative or structural coherence* speaks to the validity of an underlying argument in a story.
 That is, good stories, whether true or not, present a series of premises that build off each other
 and that present an overall thesis or argument.
-Or, stories have a structure that makes sense and, upon close inspection, contains few holes.
+Or, stories have a structure that makes sense and, upon close inspection, contain few holes.
 You all know if a story has argumentative or structural coherence because you have all surely watched bad movies
 that fail to convince you that the movie made sense.
 Sometimes this lack of structural coherence in a movie is what makes a movie fun ("it's so bad it's great!").
