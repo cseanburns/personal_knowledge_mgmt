@@ -21,7 +21,9 @@ In short, this project brings together the skills we've been building in our stu
 Please review the following Wikipedia articles to understand important editing practices.
 
 - Wikipedia: [Editing][help_editing]: This basic guide shows how Wikipedia editing works.
+- Wikipedia: [Contributing to Wikipedia][contributing_wikipedia]: A guide in contributing to Wikipedia.
 - Wikipedia: [Policies][wikipedia_policies]: An overview of what Wikipedia considers acceptable behavior, reliable source, and more.
+- Wikipedia: [Reliable Sources][reliable_wikipedia]: A guide in choosing reliable sources.
 
 ## Becoming a Wikipedia Editor
 
@@ -44,12 +46,12 @@ Over the next few weeks, you will have collected enough material to edit the Wik
 
 ## Current Task
 
-Your first task is to begin the setup process for your Wikipedia project:
+Your first task for this project is to begin the setup process for your Wikipedia project:
 
 - **Create an account** on Wikipedia if you don't already have one.
 - **Choose a Wikipedia article** you'd like to improve.
     - You should take some time with this step and select an article on a topic that you are really interested in.
-    - Be aware that some articles have [editing restrictions][wikipedia_policies].
+    - Be aware that some articles have [editing restrictions][protection_policies].
       Check the article's history and discussion pages to see if it's actively managed or protected.
 - **Analyze the article** to find areas that need better citations or clearer sources.
 - **Begin collecting four sources** to support your edits:
@@ -60,5 +62,17 @@ Your first task is to begin the setup process for your Wikipedia project:
     - Why is it reliable?
     - How could it help improve the article?
 
+## Conclusion
+
+The next four sections of this work provide additional instruction on using
+various library and web information resources.
+These sections should help you collect references for your chosen Wikipedia article.
+However, as noted, it's impossible to cover all information resources.
+Therefore, although they may guide you in additional exploration,
+you will be responsible for identifying and selecting what you need for your article.
+
+[contributing_wikipedia]:https://en.wikipedia.org/wiki/Wikipedia:Contributing_to_Wikipedia
 [help_editing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
+[protection_policies]:https://en.wikipedia.org/wiki/Wikipedia:Protection_policy
+[reliable_wikipedia]:https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Reliable_sources
 [wikipedia_policies]:https://en.wikipedia.org/wiki/Wikipedia:List_of_policies
