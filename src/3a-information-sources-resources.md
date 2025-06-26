@@ -46,7 +46,7 @@ We can summarize the above list and definitions into the following table:
 | **Tertiary Sources**  | Summaries and reference sources.                | - Encyclopedias<br>- Textbooks<br>- Databases and Indexes                                           |
 
 Although the difference between these types is related to the strength of their evidence and their proximity to their topic,
-it's can be helpful to think of this ordering as the way to search for information.
+it can be helpful to think of this ordering as the way to search for information.
 As you learn how to locate information and conduct research,
 you will largely depend mostly on tertiary and secondary sources of information.
 For example, a reference work, like a dictionary, encyclopedia, a bibliographic database, or even a search engine,
@@ -55,7 +55,7 @@ to learn how to get primary or secondary information about that topic.
 We do not generally cite tertiary sources, like Wikipedia or Google, in our papers or other works,
 unless it seems important to do so.
 
-> Note however they we also do not plagiarize from tertiary sources.
+> Note however that we also do not plagiarize from tertiary sources.
 > If you do decide to use them as direct sources, then you need to cite them and quote them
 > if you decide to use the text, etc that they provide.
 
@@ -81,7 +81,7 @@ This is particularly true when you are in beginning to learn about a topic.
 
 ## Information Resources of Information Sources
 
-In practice, the distinctions among source types can useful in how we search for information.
+In practice, the distinctions among source types can be useful in how we search for information.
 If I do a [library search][librarySearch], I have the option to narrow my search by **Resource Type**.
 These resource types, in conjunction with types of information sources,
 help us locate the information we need and identify the strength of that information.
@@ -231,7 +231,7 @@ Different journals and different scholarly disciplines have different criteria f
 
 There are three broad ways to locate sources in periodicals.
 At the UK Libraries [homepage][uklibraries], we can select the links to **InfoKat**, **Journals**, or **Databases**.
-Since periodicals publish articles, we can search filter our InfoKat searches by **article** types to limit results to periodicals.
+Since periodicals publish articles, we can filter our InfoKat searches by **article** types to limit results to periodicals.
 The **Journals** link lets us search for specific journal titles and, if desired, within disciplinary/subject categories
 (e.g., Health & Biological Sciences, Law, Politics & Government, Language & Literature, or Social Sciences,
 Journalism & Communications, and more).
@@ -256,7 +256,7 @@ Many of the resources listed above,
 as well as the hundreds (over 700 as of 2025) that UK Libraries offers and that I have not described,
 provide access to full-text content.
 But this isn't necessarily so.
-At the very list, a database must offer records that describe information sources.
+At the very least, a database must offer records that describe information sources.
 These records list article titles, author names, publication names, publication date information, and often subject terms.
 Abstracting services provide the same information but also provide abstracts of journal articles, which are searchable.
 Since abstracts provide summary information of the main articles, this is helpful in locating relevant information sources.
@@ -268,8 +268,7 @@ Since periodical indexes and abstracting services do not necessarily provide dir
 you might wonder what the point is if you can't get the full text of some source that the library tells you exists.
 The point is that even if the library doesn't have immediate access to a source, if it can tell you that it exists,
 a librarian can likely get the source through interlibrary loan (which is fast!) or some other means.
-So if the stakes are high (e.g., you are a cancer researcher) and you really need or just want information
-(e.g., about a cancer therapy),
+So if the stakes are high (e.g., you are a cancer researcher) and you really need or just want information (e.g., about a cancer therapy),
 then periodical indexes and abstracting services are great resources even if they do not provide immediate full text access.
 
 That said, in addition to a variety of periodical indexes and abstracting services,
@@ -281,15 +280,15 @@ It becomes a full-text abstracting database if it also provides access to the fu
 Other non-periodical database, like the *African American Communities* database, also provides full text access to its sources,
 and may even be thought of as a **digital library** and not just a database.
 
-> A digital library is more like an web-based library, archives, or museum than it is to a database, as described above.
+> A digital library is more like a web-based library, archives, or museum than it is to a database, as described above.
 > In addition to being able to search records held by the digital library, a digital library is specifically curated.
 > It might have **exhibits**, **collections**, **galleries**, and
-> it may include scholarly **pamphlet** like content that describes those things.
+> it may include scholarly pamphlet-like content that describes those things.
 > Other examples of digital libraries include the [Digital Public Library of America][dpla] and [HathiTrust][hathitrust].
 
 In the next few paragraphs below, I will focus on a few general purpose full-text databases
 that you may find helpful as you work towards your degree.
-Although these databases provide full-text sources, they may not provide full-text to everything they have records for, though. 
+Although these databases provide full-text sources, they may not provide full-text to everything they have records for.
 
 #### Academic Search Complete
 
@@ -345,8 +344,7 @@ JSTOR covers subjects such as:
 - Social Sciences, and more.
 
 Each of these subject areas includes access to many journal titles, and therefore, many journal articles.
-*JSTOR* has long focused on back issues of journals, but
-in recent years has made moves to include current literature and open access (OA) content.
+*JSTOR* has long focused on back issues of journals, but in recent years has made moves to include current literature and open access (OA) content.
 *JSTOR* also includes [*ARTSTOR*][artstor], a database of images, video, and other multimedia content,
 much of which is also available as open access.
 
@@ -370,7 +368,7 @@ To do that, we needed to understand the difference between **information sources
 Information sources can be divided into three types: primary, secondary, and tertiary.
 The differences among them center around the strength of the evidence they provide and their proximity to their topic.
 However, when searching for information, it is often better to begin with tertiary and secondary sources.
-In the end, in **information source** is the main item we often aim to acquire.
+In the end, an **information source** is the main item we often aim to acquire.
 
 An **information resource** is a tool that provides or supplies access to information sources.
 In this section, some examples of information resources are the library discovery service, a search engine,
