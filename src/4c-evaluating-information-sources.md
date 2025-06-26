@@ -48,7 +48,7 @@ What's also important to identify, especially for content that is new or new to 
 are questions that place the content in broader context and that fit it within an overall story that's taking place.
 For example, where does some content that we're evaluating fit within a story someone or some group is trying to tell?
 How does one group's (or author's, or publisher's, etc) story conflict with another group's (etc.)?
-Alternatively, what is the consensus among different stories that group's tell about a thing?
+Alternatively, what is the consensus among different stories that groups tell about a thing?
 How do these stories compete for public acceptance?
 
 When we try to identify the story, then new questions and frameworks open up to us.
@@ -118,8 +118,8 @@ debates and discussions with each other about all sorts of theories about the so
 > but enough data has been analyzed for them to hold for the time being.
 > In the social sciences and physical sciences, it's more common for theories to explain limited phenomenon.
 > These are called **middle-range theories**.
-> The **diffusion of innovation** theory, for example, is a **middle-range theories** that 
-> was originally devised to explain how new ideas and technology spread.
+> The **diffusion of innovation** theory, for example, is a **middle-range theory**
+> originally devised to explain how new ideas and technology spread.
 
 You can see these discussions among scientists and researchers take place in the literature review
 and discussion sections of journal articles.
@@ -159,7 +159,7 @@ And when we investigate stories (or theories), it's worthwhile to consider wheth
 You can put this to the test.
 When thinking about big issues taking place in the world, think about who is involved, how they are acting,
 what they are saying, etc.
-Then ask, is what they are saying make sense, per the above ideas?
+Then ask, does what they say make sense, per the above ideas?
 
 ## Lateral Reading
 
@@ -188,7 +188,7 @@ Using lateral reading, you might:
 - See how sources like ChatGPT, Claude, Gemini, or Wikipedia summarize the issue.
 - Use academic tools like Google Scholar or your library's databases to check whether the claim has a basis in research.
 
-This outword-looking approach helps you avoid being trapped in a single narrative or echo chamber.
+This outward-looking approach helps you avoid being trapped in a single narrative or echo chamber.
 
 > Tip: Zotero is not just for storing citations.
 > It's also a great lateral reading tool.
@@ -196,15 +196,6 @@ This outword-looking approach helps you avoid being trapped in a single narrativ
 > organize what each source says, take notes, and compare them.
 > This helps you test material coherence and get a sense of the broader conversation around an issue.
 > Once you've gained a good sense of the issue, you then have a rational basis for formulating your own explanations.
-
-[snopes]:https://www.snopes.com/
-
-
-Lateral reading is a method that can help us thinking about narratives as probable or true.
-
-
-
-
 
 ## Closing the Loop
 
@@ -218,7 +209,7 @@ in the face of contradictory or discordant evidence.
 
 ## Project
 
-To practice lateral reading and test narrative coherence, choose a current event and collect at least two articles
+To practice lateral reading and test narrative probability, choose a current event and collect at least two articles
 from different perspectives on the issue.
 Use Zotero to save and annotate your sources, take brief notes on each article's main narrative, and
 compare them using the questions below:
@@ -265,7 +256,7 @@ That is, if we want to learn more about a topic, we can look at the standard sou
 However, we can also refer to *Wikipedia* or the AI chatbots to sound out what we are reading about.
 The more we read about a topic from a variety of sources,
 the more likely we'll get a better overview of the stories being told about the topic.
-Keep in mind, however, that Wikipedia and the AI Chatbots should be used as **concextual guides**,
+Keep in mind, however, that Wikipedia and the AI Chatbots should be used as **contextual guides**,
 not as sources of final truth.
 Use them to get an overview of a topic or to help interpret something confusing, but
 always cross-reference what they say with primary or reputable secondary sources.
@@ -282,3 +273,4 @@ University of South Carolina Press.
 [fisher_1989]:https://doi.org/10.2307/j.ctv1nwbqtk 
 [latterally_youtube]:https://www.youtube.com/watch?v=SHNprb2hgzU
 [reading_laterally]:https://libguides.pvcc.edu/lateral_reading/home
+[snopes]:https://www.snopes.com/
