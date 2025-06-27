@@ -2,14 +2,16 @@
 
 ## Readings
 
-Please visit the links in this section as you read through it, and read through the [Zotero Documentation][zotero_docs],
+Please visit the links in this section as you read through it, and
+read through the [Zotero Documentation][zotero_docs],
 especially after watching the accompanying software demonstration.
 
 ## Introduction
 
 Now that I have introduced you to some of the different resources for information sources that exist
 (we will learn about more in Chapter 5),
-our next personal knowledge management challenge involves managing the information sources that we locate and want to use.
+our next personal knowledge management challenge involves managing the information sources
+that we locate and want to use.
 
 Imagine, for example, that we need to locate and use three academic sources for a class paper assignment.
 We could, like probably many do, search for information on the fly, locate some journal articles,
@@ -23,8 +25,8 @@ Basically, if we want to be more efficient with our workflows, then **this is no
 To be more efficient, we can use a **reference manager (RM)** (also called a *citation manager*).
 A RM is a piece of software that helps us manage this process of saving, collecting, and using information sources.
 Although generally aimed at academic users, RMs can also be used to bookmark, save, and collect
-all sorts of web and print information sources and for all sorts of outcomes,
-whether those outcomes are class papers, engineering projects, musical composition projects, biology experiments, and so on.
+all sorts of web and print information sources and for all sorts of outcomes, whether those outcomes are
+class papers, engineering projects, musical composition projects, biology experiments, and so on.
 Basically, when we use the appropriate tool to collect and use information, then **this is the way**.
 
 ## Reference Manager Software
@@ -37,12 +39,12 @@ There are a few reasons I will focus on Zotero, though.
 First, I use it, and I know it fairly well, although I'm always learning new things about it.
 But most importantly, it's free (and open source software), it's consistently maintained and updated,
 it provides all the major functions that a RM should provide and more, and
-it's available on Windows and macOS [desktop and laptop computers][zotero_download].
-iOS and Android users can use the [Zotero app][zotero_app],
+it's available on Windows, macOS ([desktop and laptop computers][zotero_download]),
+iOS, and Android ([Zotero app][zotero_app]).
 
 If you elect to use an alternate RM, be aware that they are not all created equal.
 The two most popular, functional, and well-supported alternatives are [Mendeley][mendeley] and [EndNote][endnote].
-Both of these are are more academic-centric, while Zotero is more agnostic about source information and usage.
+Both of these are more academic-centric, while Zotero is more agnostic about source information and usage.
 
 > Mendeley and EndNote are more academically oriented because they are owned by companies involved with
 > academic publishing and academic databases.
@@ -54,7 +56,8 @@ Both of these are are more academic-centric, while Zotero is more agnostic about
 
 ## Zotero
 
-Gilmour & Cobus-Kuo (2011) identify eight functions that a RM should provide, and Zotero performs all of these functions.
+Gilmour & Cobus-Kuo (2011) identify eight functions that a RM should provide, and
+Zotero performs all of these functions.
 These functions include:
 
 1. Import citations from bibliographic databases and websites
@@ -62,11 +65,10 @@ These functions include:
 3. Allow organization of citations w/in the reference manager database
 4. Allow annotations of citations
 5. Allow sharing of the reference management database
-6. Allow data interchange with other reference manager products through
-   standard metadata formats
+6. Allow data interchange with other reference manager products through standard metadata formats
 7. Produce formatted citations in a variety of styles
-8. Work with word processing software to facilitate in-text citation (Gilmour &
-   Cobus-Kuo, 2011, Introduction section).
+8. Work with word processing software to facilitate in-text citation
+(Gilmour & Cobus-Kuo, 2011, Introduction section).
 
 Regardless of which RM we use, we want to pick one that performs most if not all of the above functions.
 The [Zotero Quick Start Guide][zotero_quick_start] provides a nice overview of the basic functions,
@@ -97,18 +99,17 @@ The Zotero Quick Start Guide shows us how to:
 - How to use Zotero and access your Zotero library on multiple devices
 - How to collaborate on research projects using Zotero
 
-> **Note:** If you choose Zotero,
-> as I suggest and recommend,
-> you should create a free account
+> **Note:** If you choose Zotero, as I suggest and recommend, you should create a free account
 > (use your personal email to sign up).
-> As you add material to your Zotero collection,
-> you collection will be synced with and backed up to Zotero's servers.
+> As you add material to your Zotero collection, you collection will be synced with and
+> backed up to Zotero's servers.
 > Zotero registration:
 > [https://www.zotero.org/user/register/][zotero_registration]
 
 ## Zotero Demo
 
-In the demonstration video, I will show you how to complete the above steps so that you may get started using Zotero.
+In the demonstration video,
+I will show you how to complete the above steps so that you may get started using Zotero.
 Again, you may use an alternate RM, but throughout this course, I will demonstrate Zotero.
 
 Your task this week is to download and start using Zotero, or some alternate RM.
@@ -116,14 +117,12 @@ Please follow the demo video to complete the process.
 
 ## Conclusion
 
-- Reference (or citation) managers (RM) provide more sophisticated tools to
-  manage information sources than simple files systems provide.
-- There is a slew of RM applications available to use, but we want to be sure
-  we pick one that provides as many functions as possible and that is available
-  on as many devices and operating systems as possible and can be integrated
-  with a variety of word processing applications.
-- Although you are welcome to use an alternate RM, in this course we focus on
-  the Zotero RM.
+- Reference (or citation) managers (RM) provide more sophisticated tools to manage information sources
+  than simple files systems provide.
+- There are a slew of RM applications available to use, but we want to be sure we pick one that
+  provides as many functions as possible, that is available on as many devices and operating systems
+  as possible, and that can be integrated with a variety of word processing applications.
+- Although you are welcome to use an alternate RM, in this course we focus on the Zotero.
 
 ## References (created with Zotero)
 
