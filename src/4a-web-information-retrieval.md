@@ -340,7 +340,7 @@ Here are some examples that you can test in Google or elsewhere:
 ## Conclusion
 
 Information retrieval or web searching can be complex but fun.
-Remember the three principles we stared with in this section, and apply those principals when constructing your queries.
+Remember the three principles we started with in this section, and apply those principals when constructing your queries.
 
 - document centered 
   - consider the text
