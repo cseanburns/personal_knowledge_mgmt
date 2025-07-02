@@ -4,13 +4,13 @@
 
 I introduced the concept of academic or bibliographic databases in [section 3.1](3a-information-sources-resources.html).
 These databases offer a number of unique advantages over search engines, and some disadvantages, too.
-The main advantages are that databases offer specialized collections on a variety of topics;
-these collections are usually invisible to search engines,
-which means that if we use the web only, we miss out on important information; and
-they provide greater control over the search process.
+The main advantages are that databases offer specialized, extensive collections on a variety of topics.
+Furthermore, these collections are usually invisible to search engines,
+which means that if we use the web only, we miss out on important information.
+Another advantage is that they provide greater control over the search process.
 The main disadvantages are they require more time to learn to use them well,
 there are many databases to choose from (and to find),
-they have their own user interfaces, and they are often only accessible via a library.
+they have their own user interfaces, which requires additional learning, and they are often only accessible via a library.
 
 > Many databases are only accessible via a library because a library pays to use them.
 > Google and other search engines operate on different revenue models, like serving ads,
@@ -27,9 +27,9 @@ but web pages themselves are not always very structured.
 Instead, search engines have become really good at making sense of unstructured text.
 
 Academic databases, on the other hand, generally work with fairly structured documents;
-that is, they index structured bibliographic records, like the one in Figure 1 below.
+that is, they index structured bibliographic records, like the one in Figure 1.
 While they may also index full text documents if those documents are accessible to the database,
-the focus is on bibliographic records.
+the focus is based on bibliographic records.
 If only bibliographic records are indexed, the database is usually called an **abstract and indexing database (A&I database)**.
 Otherwise it's called a **full text database** if it provides access to the full text of information sources.
 Many of the databases that we have access to at our university library are a mix of the two.
@@ -39,7 +39,7 @@ Many of the databases that we have access to at our university library are a mix
 width="600" height="500"
 alt="Academic Search Complete results"
 title="Academic Search Complete results">
-<figcaption>Fig. 1: Bibliographic Record in InfoKat</figcaption>
+<figcaption>Fig. 1: Bibliographic Record in InfoKat. When we search InfoKat, we specifically search these kinds of fields in what is called "fielded search."</figcaption>
 </figure>
 
 ## Searching Bibliographic Records
@@ -181,7 +181,7 @@ Figure 3 is an image of the [ERIC Database][eric] search page.
 *ERIC* stands for **Education Resources Information Center**.
 It is provided by the U.S. Department of Education, and
 it is an important access point for millions of bibliographic records to journal articles, books, research reports,
-white papers, government and other organizational reports, and more on education related topics.
+[white papers][white_papers_wiki], government and other organizational reports, and more on education related topics.
 
 <figure>
 <img src="images/4b-image-3.png"
@@ -193,10 +193,10 @@ title="The ERIC database">
 
 *ERIC*, like other bibliographic databases, offers a thesaurus of controlled terms to help aid search.
 For example, let's say I'm interested in research on academic libraries.
-Figure 4 displays the page that describes the thesaurus **descriptor** for **academic libraries**.
+Figure 4 displays the page that describes the thesaurus **descriptor** for *academic libraries*.
 As is usual with thesauri, it not only describes how the term is defined in the database,
-but it also links to related terms, including terms that are **conceptually broader** than academic libraries,
-**conceptually narrower** than academic libraries, or that are **conceptually related** to academic libraries.
+but it also links to related terms, including terms that are **conceptually broader** than *academic libraries*,
+**conceptually narrower** than *academic libraries*, or that are **conceptually related** to *academic libraries*.
 I can click on any of these terms, and then click on the link that says to **Search collection using this descriptor**.
 And in doing so, I engage in subject browsing.
 
@@ -220,8 +220,8 @@ title="Author names list covering academic libraries">
 <figcaption>Fig. 5: Author names list covering academic libraries</figcaption> 
 </figure>
 
-Knowing that authors tend to write and research on a specific range of topics (i.e., are specialists) is helpful
-because it allows me to browse by author and subject topic.
+Knowing that authors tend to write and research on specific topics (i.e., are specialists) is helpful
+because I can use this information to get more source material on a topic that authors tend to write about.
 
 ### Citation Browsing
 
@@ -247,10 +247,11 @@ Because of this theory, we can follow citations to find more relevant articles.
 > However, there are also competing theories of why people cite, and there are also counterexamples to this specific idea.
 > So while the assumption that citations (or links on the web) imply topical similarity is often useful, 
 > it's not universally true.
+> It's only *probably* true.
 > Still, this assumption underlies the design of many citation-based discovery tools.
 
 Figure 5 is a record in *Web of Science* on information literacy.
-To the far right you can see that it has **4 Citations**. 
+To the far right you can see that this soure item has received **4 Citations** at the time the image was captured. 
 If we click on that **4 Citations** link, we can review those four citing articles or documents.
 Per citation theory, it's highly probable that those four citing documents are also about information literacy;
 and thus, browsing them would be of considerable help if we were interested in reading more about information literacy.
@@ -286,6 +287,10 @@ title="Cited by in Google Scholar">
 <figcaption>Fig. 8: Cited by in Google Scholar</figcaption> 
 </figure>
 
+*Google Scholar* has a larger database than either *Web of Science* or *Scopus*.
+However, the latter two provide more advanced search queries, and they also allow us to browse the reference lists of sources.
+These reference lists are also a way to find more relevant information on an information source's topic.
+
 ### Combination Browsing
 
 Like with most other searches, we can combine terms and use those combinations to focus our browsing sessions.
@@ -309,7 +314,7 @@ title="Combination search in CMMC database">
 
 Remember that database searching is more structured at the document level, and that this structure is reflected
 in the ability to do field searches.
-In Figure 9, for instance, we use two search fields.
+In Figure 9, for instance, I used two search fields.
 The first field is a subject term search for the subject **DIFFUSION of innovations**,
 and it's marked as a subject field with the **DE** at the beginning.
 The second field is an abstract search, and this is shown in the drop down box to the right of the query term.
@@ -319,9 +324,9 @@ We've seen this **AND** in prior examples.
 
 I've mentioned two other Boolean operators: **NOT** and **OR**.
 Many bibliographic databases offer all three.
-The **NOT** operator instructs the database to exclude the assigned term.
+The **NOT** operator instructs the database to exclude the assigned term from the results.
 Thus, if we had chosen **NOT "regression"**,
-then the *CMMC* database would have returned results where the term **regression** surely did NOT appear in the abstract
+then the *CMMC* database would have returned results where the term **regression** does NOT appear in the abstract
 for records with the subject term **DIFFUSION of innovation**.
 
 The **OR** Boolean operator is a bit tricky.
@@ -410,3 +415,4 @@ And save your results in Zotero or your chosen RM as you go.
 [GS]:https://scholar.google.com/
 [scopus]:https://libguides.uky.edu/3347
 [wos]:https://libguides.uky.edu/467
+[white_papers_wiki]:https://en.wikipedia.org/wiki/White_paper
