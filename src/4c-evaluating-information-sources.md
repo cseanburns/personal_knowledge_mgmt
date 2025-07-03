@@ -19,7 +19,7 @@ Basically, truth and veracity can have nuances that are important to identify or
 disentangle within stories that are presented about how things are in the world.
 For example, it's become very common for people in the public sphere to refer to **narratives**,
 and to argue that someone's or some group's narratives are either true or false, or fiction or non-fiction.
-Regardless of our political or whatever positions, this focus on narrative is interesting and worthwhile.
+Regardless of our political positions, this focus on narrative is interesting and worthwhile.
 It's interesting because placing information within a narrative has ancient origins, and
 it's worthwhile because it places true and false content within some context, like a story,
 which can itself be evaluated as fairly true or not.
@@ -53,17 +53,14 @@ How do these stories compete for public acceptance?
 
 When we try to identify the story, then new questions and frameworks open up to us.
 For example, it could be the case that the basic facts about an event are agreed upon by various storytellers
-(e.g., news articles, politicians, scientists), but that the basic facts are presented in ways that
-impact how the story of those facts are told.
+(e.g., news articles, politicians, scientists), but that the basic facts are presented in ways that impact how the story of those facts are told.
 Then, in those different tellings, the stories may consequently ring true or not.
 Worse, if the overall story rings false, then it may cause doubt about the basic facts, even if those basic facts are true.
 
 Fortunately, we have ways to think about stories.
-As an example, Walter Fisher (1989) identified two methods for evaluating narratives that he called
-**narrative probability** and **narrative fidelity**.
+As an example, Walter Fisher (1989) identified two methods for evaluating narratives that he called **narrative probability** and **narrative fidelity**.
 The latter concept describes how well something rings true.
-For example, given what you know about the kinds of engineering feats that people have achieved,
-does it ring true that we have landed on the moon?
+For example, given what you know about the kinds of engineering feats that people have achieved, does it ring true that we have landed on the moon?
 
 There's more to fidelity than that, but let's discuss narrative probability in more detail:
 
@@ -80,8 +77,7 @@ Let's discuss these criteria in more detail.
 ### Argumentative or Structural Coherence
 
 *Argumentative or structural coherence* speaks to the validity of an underlying argument in a story.
-That is, good stories, whether true or not, present a series of premises that build off each other
-and that present an overall thesis or argument.
+That is, good stories, whether true or not, present a series of premises that build off each other and that present an overall thesis or argument.
 Or, stories have a structure that makes sense and, upon close inspection, contain few holes.
 You all know if a story has argumentative or structural coherence because you have all surely watched bad movies
 that fail to convince you that the movie made sense.
@@ -121,20 +117,18 @@ debates and discussions with each other about all sorts of theories about the so
 > The **diffusion of innovation** theory, for example, is a **middle-range theory**
 > originally devised to explain how new ideas and technology spread.
 
-You can see these discussions among scientists and researchers take place in the literature review
-and discussion sections of journal articles.
+You can see these discussions among scientists and researchers take place in the literature review and discussion sections of journal articles.
 In these sections, researchers cite and refer to others who have completed research on a similar or the same topic.
 The overall goal of these discussions is to test or develop theories that explain some phenomenon.
 Essentially, researchers in the sciences are seeking to tell a story, based on a rigorous analysis of the data they have,
 that explains some phenomenon, and in the process of doing so, they compare and contrast their explanations with others.
-As Fisher might say, they **seek important facts that may have been omitted, counterarguments that may have been ignored, and
-relevant issues that may have been overlooked**.
+As Fisher might say, they *seek important facts that may have been omitted, counterarguments that may have been ignored, and
+relevant issues that may have been overlooked*.
 
 Practically, we can use tools to help immerse ourselves in these discussions.
 Tools like Zotero or other reference managers aid us in collecting sources, taking notes on those sources,
 and citing those sources in papers that participate in these ongoing discussions and contribute to this collective storytelling.
-In the process of writing about the phenomenon under review,
-we attempt to provide a story based on the back and forth discussions that have taken place on the topic.
+In the process of writing about the phenomenon under review, we attempt to provide a story based on the back and forth discussions that have taken place on the topic.
 These reference managers, then, basically help us to test **material coherence**.
 
 ### Characterological Coherence
@@ -149,28 +143,27 @@ They behave according to who they are.
 
 We don't often see movies or plays or hear stories where people behave uncharacteristically
 because such stories are generally not good.
-Or if people do behave uncharacteristically, it's usually a part of the plot
-and the uncharacteristic behavior was foreshadowed somewhere earlier in the story.
+Or if people do behave uncharacteristically, it's usually a part of the plot and the uncharacteristic behavior was foreshadowed somewhere earlier in the story.
 Often, when we see something foreshadowed in a movie, it's because the characters are playing to their character.
 If we don't see something coming, then it's simply likely a complex character, and the story supports that.
 
 In any regard, stories have characters, whether people, places, or things.
 And when we investigate stories (or theories), it's worthwhile to consider whether the characters are coherent in this way, too.
 You can put this to the test.
-When thinking about big issues taking place in the world, think about who is involved, how they are acting,
-what they are saying, etc.
+When thinking about big issues taking place in the world, think about who is involved, how they are acting, what they are saying, etc.
 Then ask, does what they say make sense, per the above ideas?
 
 ## Lateral Reading
 
-When you are trying to figure out whether an article or claim is trustworthy,
-one of the most effective things you can do is **read laterally**.
+The forms of coherence help us identify narratives that are probable, but
+they aren't always enough to help us decide whether to trust information or an information source.
+To help us build trust in a source, we can take a cue from the scientific process.
+That is, science is essentially a compare-and-contrast job, and its methods are designed to carry out this task, sometimes in very complex ways.
 
-Lateral reading means leaving the page you're on to see what other sources say about the claim,
-the author, the organization, or the publication.
+So, while we can evaluate coherence by sticking to the story that we're evaluating,
+*lateral reading* means leaving the page you're on to see what other sources say about the claim, the author, the organization, or the publication.
 It's how professional fact-checkers work.
-Instead of analyzing a website from the inside, e.g., using the CRAAP test,
-they open a new tab or browser window, and look for external context on the topic.
+Instead of analyzing a website from the inside, e.g., using the CRAAP test, fact-checkers open a new tab or browser window, and look for external context on the topic.
 
 This practice helps you accomplish several things:
 
@@ -204,15 +197,12 @@ Well, when you collect sources for a project, like a paper or something, it's a 
 to think about the stories that are being told around the topic, as well as the story you want or need to tell.
 The sources you collect should have structural, material, and characterological coherence, too.
 This means that in the process of collecting evidence, if you find evidence that degrades the coherence of these things,
-you need to revise your story, just like a scientist must revise or discard their theory
-in the face of contradictory or discordant evidence.
+you need to revise your story, just like a scientist must revise or discard their theory in the face of contradictory or discordant evidence.
 
 ## Project
 
-To practice lateral reading and test narrative probability, choose a current event and collect at least two articles
-from different perspectives on the issue.
-Use Zotero to save and annotate your sources, take brief notes on each article's main narrative, and
-compare them using the questions below:
+To practice lateral reading and test narrative probability, choose a current event and collect at least two articles from different perspectives on the issue.
+Use Zotero to save and annotate your sources, take brief notes on each article's main narrative, and compare them using the questions below:
 
 1. How are the stories structurally coherent? Or not? That is, do the stories
    in the two articles make sense? Are they internally consistent?
@@ -228,8 +218,7 @@ compare them using the questions below:
 ## Conclusion
 
 Being able to evaluate information is important, but if we have been exposed to lessons on doing so,
-we have often been presented with some kind of framework that asks us to check the boxes to see if an information source
-satisfies some pre-existing criteria.
+we have often been presented with some kind of framework that asks us to check the boxes to see if an information source satisfies some pre-existing criteria.
 For example, such a checklist might ask us to ask: who are the authors? do they have a good reputation?
 is the publisher respected? is the motive to publish based on profit? are they selling something with the information they provide?
 
@@ -254,12 +243,9 @@ Regarding lateral reading, I think services like **Wikipedia**, **ChatGPT**, **C
 should be included in sources when reading laterally.
 That is, if we want to learn more about a topic, we can look at the standard sources, such as news articles or research articles. 
 However, we can also refer to *Wikipedia* or the AI chatbots to sound out what we are reading about.
-The more we read about a topic from a variety of sources,
-the more likely we'll get a better overview of the stories being told about the topic.
-Keep in mind, however, that Wikipedia and the AI Chatbots should be used as **contextual guides**,
-not as sources of final truth.
-Use them to get an overview of a topic or to help interpret something confusing, but
-always cross-reference what they say with primary or reputable secondary sources.
+The more we read about a topic from a variety of sources, the more likely we'll get a better overview of the stories being told about the topic.
+Keep in mind, however, that Wikipedia and the AI Chatbots should be used as **contextual guides**, not as sources of final truth.
+Use them to get an overview of a topic or to help interpret something confusing, but always cross-reference what they say with primary or reputable secondary sources.
 
 ## References
 
