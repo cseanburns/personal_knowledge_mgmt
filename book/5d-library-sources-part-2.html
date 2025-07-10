@@ -295,13 +295,12 @@ Zotero is also capable of extracting bibliographic information from <em>Factiva<
 for example, a news article or like.</p>
 <h3 id="web-of-science"><a class="header" href="#web-of-science">Web of Science</a></h3>
 <p><a href="https://libguides.uky.edu/467"><em>Web of Science (WoS)</em></a> is an abstract &amp; indexing citation database.
-This means that the database does not directly provide full text access but it does link to UK Library when full text is available for results.
-It will also link to items in <em>Google Scholar</em>.
+This means that the database does not directly provide full text access but it does link to UK Library and other sourcds when full text is available for results.
+For example, for full text access, you will see a <strong>View Now at UK</strong> or links to a publisher's or other database's page.
 As a citation database, it provides the number of citations each result has received, and this is a way to find additional relevant documents.</p>
 <p>The <strong>Core Collection</strong> is the default collection/database.
 This is <em>Web of Sciences'</em> main database and includes coverage of the sciences, the arts, and the humanities.
-<em>WoS</em> offers other databases that mostly cover the sciences, and you can search all of those databases at the same time, but
-it's often better to focus on the core collection when starting.</p>
+These can be changed by clickin on the <strong>Editions</strong> link at the top of the search page.</p>
 <p>Let's try a search. We can try our open source and Google search, as seen in Figure 3:</p>
 <figure>
 <img src="images/10-image-3.png"
@@ -310,38 +309,44 @@ title="WoS search for 'open source' and google">
 <figcaption>Fig. 3: <i>WoS</i> search for 'open source' and google</figcaption> 
 </figure>
 <p>I can keep the default field search set to <strong>All Fields</strong>, or focus on other fields, like <strong>Topic</strong>, which searches titles, abstracts, and keywords.</p>
-<p>As of August 1, 2022, this query retrieves 1,134 results.
+<p>As of July 10, 2025, this query retrieves 4,731 results.
 Let's say that my search is a bit too broad still, and I want to refine my query to narrow my results.
 Just like in <em>Factiva</em>, <em>WoS</em> offers a proximity operator called NEAR.
-Let's try it out with the following query on the <em>WoS</em> advanced search page:</p>
+Let's try it out with the following query on the <em>WoS</em> advanced search page.
+To access the advanced search formm, return to the serach page and click on <strong>Advanced Search</strong>.</p>
 <figure>
 <img src="images/10-image-4.png"
 alt="WoS advanced search for TS=("open source" NEAR google)"
 title="WoS advanced search for TS=("open source" NEAR google)">
 <figcaption>Fig. 4: <i>WoS</i> advanced search for TS=("open source" NEAR google)</figcaption> 
 </figure>
-<p>Now there are only 9 results, and if I examine the title, abstract, or keywords for the results,
-I'll see that the term "google" is placed within five words of the term "open source".
+<p>This search returns 690 results, and if I examine the title, abstract, or keywords for the results,
+I'll see that the term "google" is placed within fifteen words of the term "open source".
 If I want to really narrow down my search, I can change the field to <strong>Title</strong> only.</p>
-<p>The default results list is to show articles that are published more recently.
+<p>The default results list is to show articles by order of relevance.
 I can change this default sorting method so that <em>WoS</em> sorts based on sources that have the highest citations first.
 Once I do this, I can go to the right side, and look at the <strong>Times Cited</strong> link and see which articles have been cited the most.
 This is what makes <em>WoS</em> a citation database.
 We don't have to use <em>WoS</em> as a citation database, but this is what separates <em>WoS</em> from many other scholarly databases.</p>
-<p>Theoretically, each one of these citing articles should be related to the article that is cited by them. I can then peruse
-these citing articles to help me find even more relevant sources of information.</p>
+<p>Theoretically, each one of these citing articles should be related to the article that is cited by them.
+I can then peruse these citing articles to help me find even more relevant sources of information.</p>
 <p>Instead of basic search, we can search by author, cited reference, and more.
-If you click on the big question mark button in <em>WoS</em>, you'll find a guide on how to use <em>WoS</em>.
-The guide includes some tips on the use of various search operators, including the <em>NEAR</em> operator as well as the Boolean operators.</p>
-<p><em>Web of Science</em> doesn't offer direct access to content, but
-notice that there is this <strong>Full Text @ W. T. Young</strong> link at the bottom of some records in the search results.
-This is only available when I'm on campus or logged in logged into UK Libraries.
-This link is connected to InfoKat, which knows that if the article is available, InfoKat can retrieve it.
-If not, then we can request it through interlibrary loan.
-Also, in some cases there's also a link to look up the full text in Google Scholar if the source is freely available on the web
-(this is usually called <strong>open access</strong>).</p>
-<p>Like InfoKat, <em>Web of Science</em> now offers AI capabilities that they call <strong>Smart Search</strong>, illustrated in Figure 8 below.
-Unlike InfoKat, the results from Smart Search do not provide a textual overview of the results.
+We can use a cited reference search to search works that cite other works.
+This leverages the ability to follow citations to find relevant documents.</p>
+<p>In Figure 4, I used the <code>NEAR</code> operator to return results where my two search terms were within 15 works of each other in search result sources.
+Like <em>Factiva</em>, <em>WoS</em> offers a guide on using these advanced search syntax, such as:</p>
+<ul>
+<li>Boolean Operators</li>
+<li>Implicit and Implied AND Operator</li>
+<li>Proximity Operators</li>
+<li>Search Operator Precedence</li>
+<li>Use of Parentheses</li>
+</ul>
+<p>The documentation for this and other search rules are located on the <a href="https://webofscience.help.clarivate.com/en-us/Content/search-rules.htm"><em>WoS</em> Help Page</a>.</p>
+<p>Like <em>InfoKat</em>, <em>Web of Science</em> now offers AI capabilities that they call <strong>Smart Search</strong>, illustrated in Figure 8 below.
+You will need to create an account and sign-in to <em>WoS</em> in order to use <strong>Smart Search</strong>.
+(Here I would suggest that you use your institution's email address.)
+Unlike <em>InfoKat</em>, the results from Smart Search do not provide a textual overview of the results.
 However, the main advantage of Smart Search is that it enhances natural language queries.
 Therefore, use Smart Search to ask research questions like you would of any AI chatbot.</p>
 <figure>
@@ -350,13 +355,14 @@ alt="Web of Science Smart Search"
 title="Web of Science Smart Search">
 <figcaption>Fig. 5: <i>Web of Science</i> Smart Search</figcaption> 
 </figure>
-<p>Remember that you can create an account for <em>WoS</em> if you want to save your searches or create folders (called <strong>Marked Lists</strong>) in <em>WoS</em>.
+<p>Remember to create an account for <em>WoS</em> if you want to save your searches or create folders (called <strong>Marked Lists</strong>) in <em>WoS</em>.
 Although the vendor that provides <em>WoS</em> is also the same vendor that provides the <em>EndNote</em> reference manager,
 Zotero is also capable of extracting bibliographic information here.</p>
 <h3 id="jstor"><a class="header" href="#jstor">JSTOR</a></h3>
 <p><a href="https://libguides.uky.edu/266"><em>JSTOR</em></a> is multi-disciplinary database.
-Like other databases, you can limit results by <strong>Item Type</strong>, <strong>Language</strong>, <strong>Publication Date</strong>, <strong>subject area</strong>, and more.
-<em>JSTOR</em> also provides proximity search using the <strong>NEAR</strong> operator.</p>
+Like other databases, you can limit results by <strong>Item Type</strong>, <strong>Language</strong>, <strong>Publication Date</strong>, <strong>Subject Area</strong>, and more.
+<em>JSTOR</em> also provides proximity search using the <strong>NEAR</strong> operator as well as other features.
+You can find instructions on using its features on the <em>JSTOR</em> <a href="https://support.jstor.org/hc/en-us/articles/115004701828-Search-Help-Resources-Overview">Search Help: Resources &amp; Overview</a> page.</p>
 <p>JSTOR covers subjects such as:</p>
 <ul>
 <li>Arts</li>
@@ -369,10 +375,9 @@ Like other databases, you can limit results by <strong>Item Type</strong>, <stro
 </ul>
 <p>Each of these subject areas includes access to many journal titles, and therefore, many journal articles.
 <em>JSTOR</em> has long focused on back issues of journals, but in recent years has made moves to include current literature and
-open access content (this is content that is freely available).
-The content in <em>JSTOR</em> is high quality, peer-reviewed work, which makes <em>JSTOR</em> a great place to gather documents on a topic
-that you want to research in-depth.
-My <strong>"open source" and google</strong> query for Images returns 26 results.</p>
+open access content (this is content that is freely available outside a library's subscriptions).
+The content in <em>JSTOR</em> is high quality, peer-reviewed work, which makes <em>JSTOR</em> a great place to gather documents on a topic that you want to research in-depth.
+My <strong>"open source" and google</strong> query for Images returns 49 results.</p>
 <figure>
 <img src="images/10-image-9.png"
 alt="JSTOR image search"
@@ -385,12 +390,11 @@ title="JSTOR image search">
 Zotero will automatically recognize when you have a web page open for a specific item in in <em>JSTOR</em>.
 Thus, you can use Zotero with <em>JSTOR</em> to collect information on your Wikipedia topic.</p>
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
-<p>We covered InfoKat in the previous section and here we covered <em>Factiva</em>, <em>Web of Science</em>, <em>Google Scholar</em>, and <em>JSTOR</em>.
-<em>Factiva</em> is a general-interest news database;
+<p>We covered <em>InfoKat</em> in the previous section and here we covered <em>Factiva</em>, <em>Web of Science</em>, <em>Google Scholar</em>, and <em>JSTOR</em>.
+<em>Factiva</em> is a general-interest news and web database;
 <em>WoS</em> and <em>Google Scholar</em> are both citation, scholarly databases (I'll cover <em>Google Scholar</em> in the next lesson); and
 <em>JSTOR</em> is a scholarly and image database.</p>
-<p>Remember that these represent only a select few of the databases offered through the library, and
-you are encouraged to peruse and find so much more.</p>
+<p>Remember that these represent only a select few of the databases offered through the library, and you are encouraged to peruse and find so much more.</p>
 <p>In the next section, we begin to cover web sources.</p>
 
                     </main>
