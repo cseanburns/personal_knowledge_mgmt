@@ -177,42 +177,27 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="web-sources-part-1"><a class="header" href="#web-sources-part-1">Web Sources: Part 1</a></h1>
-<p>Many of us spend most of our time on the web
-visiting a handful of sites.
-These sites vary by country, but in the U.S.,
-we spend much of our time on Google, YouTube,
-Facebook, Twitter, Instagram, Netflix, TikTok,
-Wikipedia, and a few others.</p>
-<p>That's fine, of course, but
-the web is composed of billions of web pages,
-and many are worth knowing and exploring.</p>
+<p>Many of us spend most of our time on the web visiting a handful of sites.
+These sites vary by country, but in the U.S., we spend much of our time on Google, YouTube, Facebook, Instagram, Netflix, TikTok, Wikipedia, and a few others.</p>
+<p>That's fine, of course, but the web is composed of billions of web pages, and many are worth knowing and exploring.</p>
 <p>We also spend most of our time on a limited number of domains.
 This includes sites ending with <strong>.com, .org, .edu</strong>, etc.
-But remember that you've already learned how to search the web,
-and if you're interested in learning more about what's out there,
-I encourage you to add a <code>:site</code> operator to your web queries
-if you want to vary things up every once in a while.
-Remember that there nearly <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">1,500 top level domains</a>,
-and it can be fun to add random ones to your searches:</p>
+But remember that you've already learned how to search the web, and if you're interested in learning more about what's out there,
+I encourage you to add a <code>:site</code> operator to your web queries if you want to mix things up every once in a while.
+There over <a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">1,400 top level domains</a> that we can use with the <code>:site</code> operator, and it can be fun to add random ones to your searches:</p>
 <pre><code>asthma site:health
-(linux or windows or macos) site:computer
 </code></pre>
-<p>That said, in this and the next section I want to cover a
-few specific sites that are great information resources.</p>
+<p>Or:</p>
+<pre><code>(linux or windows or macos) site:computer
+</code></pre>
+<p>That said, in this and the next section I want to cover a few specific sites that are great information resources.</p>
 <h2 id="google-scholar"><a class="header" href="#google-scholar">Google Scholar</a></h2>
-<p>Let's try <a href="https://scholar.google.com"><em>Google Scholar</em></a> now.
-<em>Google Scholar</em> isn't technically a library database
-since it's freely accessible on the web, but
-I will show you how to connect it to Infokat so
-that it functions like <em>WoS</em> or other databases that we've covered.</p>
-<p><em>Google Scholar</em> doesn't have the kind of search operators
-that either <em>Factiva</em> or <em>Web of Science</em> have, but
-it's a freely available citation database that indexes a lot of content.
-In Google and related search products,
-like <em>Google Scholar</em>, the <strong>AND</strong> operator does not
-need to be specified.
-Thus the following search is translated as:
-<strong>"open source" AND google</strong></p>
+<p><a href="https://scholar.google.com">Google Scholar</a> isn't a library database but more like an academic search engine that's freely available on the web.
+Its weakness is that it doesn't provide the kind of search operators that either <em>Factiva</em> or <em>Web of Science</em> have, and so search can be less precie.
+However, its strength is that it indexes a lot of academic and legal content.</p>
+<p>Searching <em>Google Scholar</em> is a lot like searching <em>Google</em>, which we've already covered.
+For example, since <em>Google Scholar</em> is more like a search engine, like Google and related search products, the <code>AND</code> operator does not need to be specified.
+Thus the following search is translated as: <code>"open source" AND google</code>.</p>
 <figure>
 <img src="images/10-image-5.png"
 alt="Google Scholar search for "open source" google"
@@ -221,63 +206,39 @@ title="Google Scholar search for "open source" google">
 </figure>
 <p>You can see here we get a lot of results.
 Maybe even too much.
-If we want to limit our results,
-we have to use other tricks.
-The most common one is simply to add
-more specific keywords to our query.
-E.g., if I add "android" to the query,
-that reduces the results.</p>
+If we want to limit our results, we have to use other tricks.
+The most common one is simply to add more specific keywords to our query.
+E.g., if I add "android" to the query, that reduces the results.</p>
 <pre><code>"open source" google android
 </code></pre>
 <p>There is an advanced search option.
-However, since <em>Google Scholar</em> is indexing full text sources
-and not structured bibliographic records,
-this means that it can't offer the kind of advanced
-search we've seen in database searches.
-It is pretty useful, though.
-For example, Figure 6 shows an advanced search for the terms
-<strong>google</strong> and <strong>"open source"</strong> but it
-excludes the term <strong>android</strong> in the title,
-and it asks for results published from 2018 to today.
-You can see that this substantially narrows our results.
-As of August 1, 2022, <em>Google Scholar</em> returns only 35 hits
-and 71 hits as of March 2024.</p>
+However, since <em>Google Scholar</em> is indexing full text sources and not structured bibliographic records,
+this means that it can't offer the kind of advanced search we've seen in database searches.
+It is pretty useful, though, and we can focus on some fields, like <strong>titles</strong>.
+For example, Figure 6 shows an advanced <strong>title</strong> search for the terms <code>google</code> and <code>"open source"</code> but it excludes the term <code>android</code> in the <strong>title</strong>,
+and we can limit results published from 2018 to today.
+You can see that this substantially narrows our results, thereby increasing the precision of our query.
+As of July 9, 2025, <em>Google Scholar</em> returns only 93 hits for this search.</p>
 <figure>
 <img src="images/10-image-6.png"
 alt="Google Scholar search for "open source" google not android in title"
 title="Google Scholar search for "open source" google not android in title">
 <figcaption>Fig. 6: <i>Google Scholar</i> search for "open source" google not android in title</figcaption> 
 </figure>
-<p>Other than that, one of the nice things about
-<em>Google Scholar</em> is that it's also a citation database.
+<p>Other than that, one of the nice things about <em>Google Scholar</em> is that it's also a citation database.
 You can see the <strong>Cited by N</strong> link just below each result.
-If something has been cited,
-click on that to follow citations.</p>
-<p>The reason <em>Google Scholar</em> returns so many more results is
-because it casts a bigger net than something like
-<em>Web of Science</em> does,
-which purposefully casts a smaller net,
-which is smaller to control for quality.
-Because of that, I find <em>Google Scholar</em> can return
-many non-relevant works, but
-it makes it nice for browsing or discovery.
-<em>Web of Science</em> shines for more
-rigorous and methodical literature searches.</p>
-<p>The observant among you may have noticed that in Figure 5,
-there is a <strong>View Now @ UK</strong> link.
-The reason <em>Google Scholar</em> provides that link is that
-I've configured it to talk with UK's Infokat.
-This is something you have to set up, but
-it's pretty simple to do.
-Just click on settings,
-and then go to <strong>Library Links</strong>, and
-then search for the University of Kentucky.
+If something has been cited, click on that to follow citations.</p>
+<p>The reason <em>Google Scholar</em> returns so many more results is because it casts a bigger net than something like <em>Web of Science</em> does,
+which purposefully casts a smaller net, which it does for quality control.
+Because of that, I find <em>Google Scholar</em> can return many non-relevant works, but it makes it nice for browsing or discovery.
+<em>Web of Science</em> shines for more rigorous and methodical literature searches.</p>
+<p>The observant among you may have noticed that in Figure 5, there is a <strong>View Now @ UK</strong> link.
+The reason <em>Google Scholar</em> provides that link is that I've configured it to connect with UK's <em>InfoKat</em>.
+This is something you have to set up, but it's pretty simple to do.
+Just click on settings, and then go to <strong>Library Links</strong>, and then search for the University of Kentucky.
 Check the box next to it.
-Be sure that you're signed into Google
-if you want to save this as a preference.
-After that,
-you should see the <strong>View Now</strong> option when something is
-available via UK Libraries.</p>
+Be sure that you're signed into your Google account if you want to save this as a preference.
+After that, you should see the <strong>View Now</strong> option when something is available via UK Libraries.</p>
 <figure>
 <img src="images/10-image-7.png"
 alt="Google Scholar View Now Setup"
@@ -303,48 +264,28 @@ title="Google Scholar View Now Setup">
 </li>
 </ul>
 <h2 id="internet-archive"><a class="header" href="#internet-archive">Internet Archive</a></h2>
-<p>The <a href="https://archive.org">Internet Archive</a> is a "non-profit library
-of millions of free books, movies, software, music,
-websites, and more."</p>
-<p>For example, you might be interested in playing
-some old PC games that your parents played
-when they were younger:</p>
+<p>The <a href="https://archive.org">Internet Archive</a> is a "non-profit library of millions of free books, movies, software, music, websites, and more."</p>
+<p>For example, you might be interested in playing some old PC games that your parents played when they were younger:</p>
 <p><a href="https://archive.org/details/classicpcgames?and%5B%5D=subject%3A%22DOS+games%22">Classic PC Games</a></p>
 <p>The <em>Internet Archive</em> provides access to the <a href="https://web.archive.org/web/">Wayback Machine</a>.
-The Wayback Machine is an archive of the web from its early days
-to the present.
-It's fun, for example, to use it to see what the web
-looked like years ago.
-For example, this is likely UK's first web page and
-was captured by the <em>Wayback Machine</em> in 1997:</p>
+The Wayback Machine is an archive of the web from its early days to the present.
+It's fun, for example, to use it to see what the web looked like years ago.
+For example, this is likely UK's first web page and was captured by the <em>Wayback Machine</em> in 1997:</p>
 <p><a href="https://web.archive.org/web/19970406042950/http://www.uky.edu/">http://www.uky.edu/ (1997)</a></p>
-<p>But the <em>Wayback Machine</em> is also useful to retrieve
-web pages and sites that have been shutdown or removed.
-That is, if you have a broken URL,
-you can enter the URL in the Wayback Machine and
-see if the original page was archived.</p>
-<p>The <em>Internet Archive</em> is also a library, and
-offers collections on a vast range of topics and links
-to all sorts of media,
-including text, audio, video, and images.</p>
-<p>You can view its main collections on the
-home page of the <em>Internet Archive</em>.
+<p>But the <em>Wayback Machine</em> is also useful to retrieve web pages and sites that have been shutdown or removed.
+That is, if you have a broken URL, you can enter the URL in the Wayback Machine and see if the original page was archived.</p>
+<p>The <em>Internet Archive</em> is also a library, and offers collections on a vast range of topics and links to all sorts of media, including text, audio, video, and images.</p>
+<p>You can view its main collections on the home page of the <em>Internet Archive</em>.
 You can also search.
 I've found, for instance, scanned yearbooks from my college.</p>
 <p>The <em>Internet Archive</em> oversees <a href="https://openlibrary.org/">The Open Library</a>.
-You can use the <em>Open Library</em> to check out and read books for free,
-just like you would use a physical library.</p>
+You can use the <em>Open Library</em> to check out and read books for free, just like you would use a physical library.</p>
 <h2 id="dpla"><a class="header" href="#dpla">DPLA</a></h2>
-<p>The <a href="https://dp.la">DPLA</a> (Digital Public Library of America)
-is a shared repository of content
-that brings together digital and digitized sources
+<p>The <a href="https://dp.la">DPLA</a> (Digital Public Library of America) is a shared repository of content that brings together digital and digitized sources
 from libraries, museums, and archives across the U.S.</p>
-<p>The DPLA is great for browsing, but they also
-<a href="https://dp.la/guides">provide guides for those interested in using the DPLA</a>
-for Education, Family Research, Lifelong Learning, and
-Scholarly Research.</p>
-<p>Like a library, museum, or archive,
-the DPLA offers:</p>
+<p>The DPLA is great for browsing, but they also <a href="https://dp.la/guides">provide guides for those interested in using the DPLA</a>
+for Education, Family Research, Lifelong Learning, and Scholarly Research.</p>
+<p>Like a library, museum, or archive, the DPLA offers:</p>
 <ul>
 <li>featured <a href="https://dp.la/exhibitions">exhibitions</a></li>
 <li><a href="https://dp.la/primary-source-sets">primary source sets</a></li>
@@ -353,132 +294,83 @@ the DPLA offers:</p>
 <li>and more.</li>
 </ul>
 <h2 id="library-of-congress"><a class="header" href="#library-of-congress">Library of Congress</a></h2>
-<p>The <a href="https://www.loc.gov/rr/program/bib/index.html">Library of Congress</a> provides a list of
-bibliographies, research guides, and finding aids
-on a vast range of topics.
-Many of the links in this list go directly to
-digital libraries that focus on specific topics or areas.
-For example, check out this fun collection of resources
-on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
-<p>The Library of Congress also provides access to
-<a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
-<strong>American History</strong>, <strong>War &amp; Military</strong>,
-<strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>,
-<strong>Science &amp; Technology</strong>, and more.</p>
+<p>The <a href="https://www.loc.gov/rr/program/bib/index.html">Library of Congress</a> provides a list of bibliographies, research guides, and finding aids on a vast range of topics.
+Many of the links in this list go directly to digital libraries that focus on specific topics or areas.
+For example, check out this fun collection of resources on <a href="https://www.loc.gov/collections/dance-instruction-manuals-from-1490-to-1920/about-this-collection/">dance manuals</a> published from 1490 through 1920.</p>
+<p>The Library of Congress also provides access to <a href="https://www.loc.gov/collections/">digital collections</a> on subjects ranging from
+<strong>American History</strong>, <strong>War &amp; Military</strong>, <strong>Art &amp; Architecture</strong>, <strong>Sports &amp; Recreation</strong>, <strong>Science &amp; Technology</strong>, and more.</p>
 <h2 id="various-government-resources"><a class="header" href="#various-government-resources">Various Government Resources</a></h2>
 <h3 id="us-census"><a class="header" href="#us-census">U.S. Census</a></h3>
-<p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best
-way to get various demographic and some economic
-information about the U.S.
-You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a>
-about your local area.
+<p>The <a href="https://www.census.gov/">United States Census Bureau</a> is the best way to get various demographic and some economic information about the U.S.
+You can also get <a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">Quick Facts</a> about your local area.
 You can, for example, also compare demographics by location.
-Here's a
-<a href="https://www.census.gov/quickfacts/fact/table/cincinnaticityohio,lexingtonfayetteurbancountykentucky,US/PST045221">population comparison between Lexington, KY and Cincinnati, OH</a>.</p>
+Here's a <a href="https://www.census.gov/quickfacts/fact/table/cincinnaticityohio,lexingtonfayetteurbancountykentucky,US/PST045221">population comparison between Lexington, KY and Cincinnati, OH</a>.</p>
 <h3 id="nasa"><a class="header" href="#nasa">NASA</a></h3>
-<p><a href="https://www.nasa.gov/">NASA's</a> website offers tons of sources on all
-of its major projects.
-From its homepage,
-you can download apps, audio &amp; ringtones,
-e-books, and podcasts.
-The site also provides information on various missions,
-like the recent <a href="https://www.nasa.gov/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
-as well as exciting <a href="https://www.nasa.gov/multimedia/imagegallery/index.html">image</a> and
-<a href="https://www.nasa.gov/multimedia/videogallery/index.html">video</a> galleries.</p>
+<p><a href="https://www.nasa.gov/">NASA's</a> website offers tons of sources on all of its major projects.
+From its homepage, you can download apps, audio &amp; ringtones, e-books, and podcasts.
+The site also provides information on various missions, like the recent <a href="https://www.nasa.gov/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
+as well as exciting <a href="https://www.nasa.gov/multimedia/imagegallery/index.html">image</a> and <a href="https://www.nasa.gov/multimedia/videogallery/index.html">video</a> galleries.</p>
 <h3 id="us-bureau-of-labor-statistics"><a class="header" href="#us-bureau-of-labor-statistics">U.S. Bureau of Labor Statistics</a></h3>
-<p>The <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics (BLS)</a> is the
-go to site for job and economic information.
-The site takes some exploration to learn all that it offers,
-but I can provide two examples.</p>
-<p>The Data Tools dropbox box provides employment change
-data for various sectors of the U.S.
-As of <a href="https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm">March 2024</a>, we see that manufacturing jobs
-in the U.S. decreased by an estimated 4,000,
-government jobs increased by an estimated 52,000, and
-overall non-farm jobs increased by 275,000.</p>
-<p>The <a href="https://www.bls.gov/data/inflation_calculator.htm">CPI Inflation Calculator</a> shows how the value
-of the dollar has changed over time.
-For example, I can see that $1.00 in February of 2023
-has the same buying power as $1.03 in February of 2024.</p>
+<p>The <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics (BLS)</a> is the go to site for job and economic information.
+The site takes some exploration to learn all that it offers, but I can provide two examples.</p>
+<p>The Data Tools dropbox box provides employment change data for various sectors of the U.S.
+On the <a href="https://www.bls.gov/charts/employment-situation/otm-employment-change-by-industry-confidence-intervals.htm">Employment by industry, monthly changes</a> page, we see how various industries have changed in employment in the last month.</p>
+<p>The <a href="https://www.bls.gov/data/inflation_calculator.htm">CPI Inflation Calculator</a> shows how the value of the dollar has changed over time due to inflation.
+For example, I can see that $10.00 in January of 2000 has the same buying power as $19.04 in May of 2025.</p>
 <p>This calculator is useful in a lot of ways.
-For example, the tuition to attend UK for the
-<a href="https://web.archive.org/web/20030101090559/http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm">2002-2003 academic year was $1,740 per semester</a>, and for the
-<a href="https://www.uky.edu/studentaccount/tuition-faq23-24">2023-2024 academic year, it is $6,429</a>.
-The CPI calculator shows that if tuition increased
-at the same rate as inflation,
-then today's tuition cost should only be $3,030.18 per semester
-(from January 2002 to January 2024).
-That means the extra $3,398.82 spent on tuition today increased
-due to other (complicated) factors.</p>
+For example, the resident-based tuition to attend UK for the <a href="https://web.archive.org/web/20030101090559/http://www.uky.edu/PR/News/Archives/2001/Sept2001/02tuition.htm">2002-2003 academic year was $1,740 per semester</a>, and
+for the <a href="https://studentaccount.uky.edu/tuition-and-fees">2025-2026 academic year, it is $6,953.50</a>.
+The CPI calculator shows that if tuition increased at the same rate as inflation,
+then today's tuition cost should only be $3,158.38 per semester (from January 2002 to May 2025).
+That means the extra $3,795.12 (<code>6953.50 - 3158.38</code>) spent on tuition today increased due to other (complicated) factors.</p>
 <p>You can also see how home prices have changed.
-The house I rent was purchased for $101,650
-during the summer of 2001.
+The house I rent was purchased for $101,650 during the summer of 2001.
 Zillow estimates that it would sell for $317,800 (Spring 2024).
 But inflation only accounts for a price tag of $177,217.
 Thus the extra $140,583 or so is factor of other market forces.</p>
 <blockquote>
 <p>Property information like this is generally public information.
-Fayette County, the seat of Lexington, KY, provides this information
-at <a href="https://fayettepva.com/">https://fayettepva.com/</a>.
+Fayette County, the seat of Lexington, KY, provides this information at <a href="https://fayettepva.com/">https://fayettepva.com/</a>.
 You can check your local municipality's website for comparable information.
-In fact, many city and county websites make available lots of data.</p>
+In fact, many city and county websites make available lots of data
+(e.g., see <a href="https://www.lexingtonky.gov/">https://www.lexingtonky.gov/</a>.</p>
 </blockquote>
 <h3 id="edgar-us-securities-and-exchange-commission"><a class="header" href="#edgar-us-securities-and-exchange-commission">EDGAR: U.S. Securities and Exchange Commission</a></h3>
-<p><a href="https://www.sec.gov/edgar.shtml">EDGAR</a> is a go to site if you're thinking about investing
-in a public company.
+<p><a href="https://www.sec.gov/edgar.shtml">EDGAR</a> is a go to site if you're thinking about investing in a public company.
 Of particular interest are the <strong>10-K</strong> and <strong>10-Q</strong> reports.
-The <strong>10-K</strong> report is an annual report that public companies
-are required to submit to the SEC.
+The <strong>10-K</strong> report is an annual report that public companies are required to submit to the SEC.
 The <strong>10-Q</strong> report is the quarterly version.</p>
 <p>The <strong>10-K</strong> report:</p>
 <blockquote>
-<p>Provides audited annual financial statements,
-a discussion of material risk factors for the company and its business,
-and a management's discussion and analysis of the company's
-results of operations for the prior fiscal year
-(<a href="https://www.sec.gov/oiea/Article/edgarguide.html">Form Type Description</a>)</p>
+<p>Provides audited annual financial statements, a discussion of material risk factors for the company and its business,
+and a management's discussion and analysis of the company's results of operations for the prior fiscal year (<a href="https://www.sec.gov/oiea/Article/edgarguide.html">Form Type Description</a>)</p>
 </blockquote>
 <p>The <strong>10-Q</strong> report is unaudited.</p>
-<p>The <a href="https://www.sec.gov/edgar/search/">EDGAR search page</a> is pretty straightforward
-and offers autocomplete as you type.
-My search query in Figure 1 is a search
-for Google's (specifically, Alphabet's) last <strong>10-K</strong> report,
-which was filed on February 2, 2022.</p>
+<p>The <a href="https://www.sec.gov/edgar/search/">EDGAR search page</a> is pretty straightforward and offers autocomplete as you type.
+My search query in Figure 1 is a search for Google's (specifically, Alphabet's) last <strong>10-K</strong> report, which was filed on February 2, 2025.</p>
 <figure>
 <img src="images/11-image-1.png"
 alt="EDGAR Search for Alphabet Inc."
 title="EDGAR Search for Alphabet Inc.">
 <figcaption>Fig. 1: EDGAR Search for Alphabet Inc.</figcaption> 
 </figure>
-<p>If you read the 2024 report,
-you can see that <em>Google</em> primarily
-earns income based on advertising,
-customer subscriptions,
-devices (e.g., Pixel),
-and Google Cloud usage.
-It's working on integrating AI technologies in its core services.
-It has 182,502 employees.
-There is much more in this report and
-similar reports from other public companies.</p>
+<p>If you read the 2025 report, you can see that <em>Google</em> primarily earns income based on advertising (75% of total revenue),
+customer subscriptions, platforms (e.g., Google Play), devices (e.g., Pixel), and Google Cloud usage.
+Since 2015, it's workedx on integrating AI technologies in its core services.
+It has 183,323 employees (as of December 2024).
+There is much more in this report and similar reports from other public companies.</p>
 <h2 id="medlineplus"><a class="header" href="#medlineplus">MedlinePlus</a></h2>
-<p>Lastly, I would like to refer you to <a href="https://medlineplus.gov">MedlinePlus</a>,
-which is part of the National Library of Medicine.
-The purpose of this site is to serve as a health and medical reference
-resource for the general public.
+<p>Lastly, I would like to refer you to <a href="https://medlineplus.gov">MedlinePlus</a>, which is part of the National Library of Medicine.
+The purpose of this site is to serve as a health and medical reference resource for the general public.
 Although no online site can take the place of professional medical help,
-MedlinePlus can be an important resource for becoming more
-informed about various health topics.</p>
-<p>Instead of <em>googling</em> that next symptom or condition,
-I highly encourage you to visit MedlinePlus first.
-The site also covers wellness topics and provides recipes
-for a wide range of meals.</p>
+MedlinePlus can be an important resource for becoming more informed about various health topics.</p>
+<p>Instead of <em>googling</em> that next symptom or condition, I highly encourage you to visit MedlinePlus first.
+The site also covers wellness topics and provides recipes for a wide range of meals.</p>
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>Although it's important to know how to search the web well,
-it's also handy to know about specific go to resources on the
-web that can provide more in-depth information or
+it's also handy to know about specific go to resources on the web that can provide more in-depth information or
 that provide more coverage than most Google etc searches can yield.
-In order to highlight this, in this section I covered a few,
-I think, super interesting and helpful sites that include the:</p>
+In order to highlight this, in this section I covered a few, I think, super interesting and helpful sites that include the:</p>
 <ul>
 <li>Google Scholar
 <ul>
@@ -497,9 +389,7 @@ I think, super interesting and helpful sites that include the:</p>
 <li>EDGAR (SEC)</li>
 <li>MedlinePlus</li>
 </ul>
-<p>Be sure to explore these sites, as well as others you find,
-because many of these just don't come up in your everyday
-kind of search.</p>
+<p>Be sure to explore these sites, as well as others you find, because many of these just don't come up in your everyday kind of search.</p>
 
                     </main>
 
