@@ -66,7 +66,7 @@ Basic search works just like how you would use Google or some other search engin
 You enter a query into the search box and press enter.
 
 However, because the **corpus** you're querying is structured, as it is in a database,
-it's necessarily advisable to use *natural language* for your queries like you might in a web search engine.
+it's not necessarily advisable to use *natural language* for your queries like you might in a web search engine.
 Remember that our three principles of information retrieval:
 
 - **Principle 1:** We should understand that the basic information retrieval model centers on **documents**.
