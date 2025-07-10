@@ -129,14 +129,13 @@ for example, a news article or like.
 ### Web of Science
 
 [*Web of Science (WoS)*][wos] is an abstract & indexing citation database.
-This means that the database does not directly provide full text access but it does link to UK Library when full text is available for results.
-It will also link to items in *Google Scholar*.
+This means that the database does not directly provide full text access but it does link to UK Library and other sourcds when full text is available for results.
+For example, for full text access, you will see a **View Now at UK** or links to a publisher's or other database's page.
 As a citation database, it provides the number of citations each result has received, and this is a way to find additional relevant documents.
 
 The **Core Collection** is the default collection/database.
 This is *Web of Sciences'* main database and includes coverage of the sciences, the arts, and the humanities.
-*WoS* offers other databases that mostly cover the sciences, and you can search all of those databases at the same time, but
-it's often better to focus on the core collection when starting.
+These can be changed by clickin on the **Editions** link at the top of the search page.
 
 Let's try a search. We can try our open source and Google search, as seen in Figure 3:
 
@@ -149,10 +148,11 @@ title="WoS search for 'open source' and google">
 
 I can keep the default field search set to **All Fields**, or focus on other fields, like **Topic**, which searches titles, abstracts, and keywords.
 
-As of August 1, 2022, this query retrieves 1,134 results.
+As of July 10, 2025, this query retrieves 4,731 results.
 Let's say that my search is a bit too broad still, and I want to refine my query to narrow my results.
 Just like in *Factiva*, *WoS* offers a proximity operator called NEAR.
-Let's try it out with the following query on the *WoS* advanced search page:
+Let's try it out with the following query on the *WoS* advanced search page.
+To access the advanced search formm, return to the serach page and click on **Advanced Search**.
 
 <figure>
 <img src="images/10-image-4.png"
@@ -161,33 +161,38 @@ title="WoS advanced search for TS=("open source" NEAR google)">
 <figcaption>Fig. 4: <i>WoS</i> advanced search for TS=("open source" NEAR google)</figcaption> 
 </figure>
 
-Now there are only 9 results, and if I examine the title, abstract, or keywords for the results, 
-I'll see that the term "google" is placed within five words of the term "open source".
+This search returns 690 results, and if I examine the title, abstract, or keywords for the results, 
+I'll see that the term "google" is placed within fifteen words of the term "open source".
 If I want to really narrow down my search, I can change the field to **Title** only.
 
-The default results list is to show articles that are published more recently.
+The default results list is to show articles by order of relevance.
 I can change this default sorting method so that *WoS* sorts based on sources that have the highest citations first. 
 Once I do this, I can go to the right side, and look at the **Times Cited** link and see which articles have been cited the most.
 This is what makes *WoS* a citation database.
 We don't have to use *WoS* as a citation database, but this is what separates *WoS* from many other scholarly databases.
 
-Theoretically, each one of these citing articles should be related to the article that is cited by them. I can then peruse 
-these citing articles to help me find even more relevant sources of information.
+Theoretically, each one of these citing articles should be related to the article that is cited by them.
+I can then peruse these citing articles to help me find even more relevant sources of information.
 
 Instead of basic search, we can search by author, cited reference, and more.
-If you click on the big question mark button in *WoS*, you'll find a guide on how to use *WoS*.
-The guide includes some tips on the use of various search operators, including the *NEAR* operator as well as the Boolean operators. 
+We can use a cited reference search to search works that cite other works.
+This leverages the ability to follow citations to find relevant documents.
 
-*Web of Science* doesn't offer direct access to content, but
-notice that there is this **Full Text @ W. T. Young** link at the bottom of some records in the search results.
-This is only available when I'm on campus or logged in logged into UK Libraries.
-This link is connected to InfoKat, which knows that if the article is available, InfoKat can retrieve it.
-If not, then we can request it through interlibrary loan.
-Also, in some cases there's also a link to look up the full text in Google Scholar if the source is freely available on the web
-(this is usually called **open access**).
+In Figure 4, I used the `NEAR` operator to return results where my two search terms were within 15 works of each other in search result sources.
+Like *Factiva*, *WoS* offers a guide on using these advanced search syntax, such as:
 
-Like InfoKat, *Web of Science* now offers AI capabilities that they call **Smart Search**, illustrated in Figure 8 below.
-Unlike InfoKat, the results from Smart Search do not provide a textual overview of the results.
+- Boolean Operators
+- Implicit and Implied AND Operator
+- Proximity Operators
+- Search Operator Precedence
+- Use of Parentheses
+
+The documentation for this and other search rules are located on the [*WoS* Help Page][wos_help].
+
+Like *InfoKat*, *Web of Science* now offers AI capabilities that they call **Smart Search**, illustrated in Figure 8 below.
+You will need to create an account and sign-in to *WoS* in order to use **Smart Search**.
+(Here I would suggest that you use your institution's email address.)
+Unlike *InfoKat*, the results from Smart Search do not provide a textual overview of the results.
 However, the main advantage of Smart Search is that it enhances natural language queries.
 Therefore, use Smart Search to ask research questions like you would of any AI chatbot.
 
@@ -198,15 +203,16 @@ title="Web of Science Smart Search">
 <figcaption>Fig. 5: <i>Web of Science</i> Smart Search</figcaption> 
 </figure>
 
-Remember that you can create an account for *WoS* if you want to save your searches or create folders (called **Marked Lists**) in *WoS*.
+Remember to create an account for *WoS* if you want to save your searches or create folders (called **Marked Lists**) in *WoS*.
 Although the vendor that provides *WoS* is also the same vendor that provides the *EndNote* reference manager,
 Zotero is also capable of extracting bibliographic information here.
 
 ### JSTOR
 
 [*JSTOR*][jstor] is multi-disciplinary database.
-Like other databases, you can limit results by **Item Type**, **Language**, **Publication Date**, **subject area**, and more.
-*JSTOR* also provides proximity search using the **NEAR** operator.
+Like other databases, you can limit results by **Item Type**, **Language**, **Publication Date**, **Subject Area**, and more.
+*JSTOR* also provides proximity search using the **NEAR** operator as well as other features.
+You can find instructions on using its features on the *JSTOR* [Search Help: Resources & Overview][jstor_help] page.
 
 JSTOR covers subjects such as:
 
@@ -220,10 +226,9 @@ JSTOR covers subjects such as:
 
 Each of these subject areas includes access to many journal titles, and therefore, many journal articles.
 *JSTOR* has long focused on back issues of journals, but in recent years has made moves to include current literature and
-open access content (this is content that is freely available).
-The content in *JSTOR* is high quality, peer-reviewed work, which makes *JSTOR* a great place to gather documents on a topic
-that you want to research in-depth.
-My **"open source" and google** query for Images returns 26 results.
+open access content (this is content that is freely available outside a library's subscriptions).
+The content in *JSTOR* is high quality, peer-reviewed work, which makes *JSTOR* a great place to gather documents on a topic that you want to research in-depth.
+My **"open source" and google** query for Images returns 49 results.
 
 <figure>
 <img src="images/10-image-9.png"
@@ -241,13 +246,12 @@ Thus, you can use Zotero with *JSTOR* to collect information on your Wikipedia t
 
 ## Conclusion
 
-We covered InfoKat in the previous section and here we covered *Factiva*, *Web of Science*, *Google Scholar*, and *JSTOR*.
-*Factiva* is a general-interest news database;
+We covered *InfoKat* in the previous section and here we covered *Factiva*, *Web of Science*, *Google Scholar*, and *JSTOR*.
+*Factiva* is a general-interest news and web database;
 *WoS* and *Google Scholar* are both citation, scholarly databases (I'll cover *Google Scholar* in the next lesson); and
 *JSTOR* is a scholarly and image database.
 
-Remember that these represent only a select few of the databases offered through the library, and
-you are encouraged to peruse and find so much more.
+Remember that these represent only a select few of the databases offered through the library, and you are encouraged to peruse and find so much more.
 
 In the next section, we begin to cover web sources.
 
@@ -258,3 +262,5 @@ In the next section, we begin to cover web sources.
 [jstor]:https://libguides.uky.edu/266
 [wos]:https://libguides.uky.edu/467
 [off_campus_access]:https://libraries.uky.edu/access
+[wos_help]:https://webofscience.help.clarivate.com/en-us/Content/search-rules.htm
+[jstor_help]:https://support.jstor.org/hc/en-us/articles/115004701828-Search-Help-Resources-Overview
