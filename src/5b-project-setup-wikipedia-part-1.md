@@ -1,29 +1,29 @@
 # Wikipedia Project: Setup
 
-By the end of this course, you will make a meaningful contribution to a Wikipedia article by
-improving one of its articles.
-To prepare, this guide introduces the first steps in your final project:
-selecting and planning your article edits.
-Actual editing won't begin until later, but this first step is an important part of the process
-because it involves identifying a topic, exploring its weaknesses, and
-finding good sources to support your edits.
+By the end of this course, you will make a meaningful contribution to a Wikipedia article by improving one of its articles.
+To prepare, this guide introduces the first steps in your final project: selecting and planning your article edits.
+Your actual editing won't begin until later, but this first step is an important part of the process
+because it involves identifying a topic, exploring its weaknesses, and finding good sources to support your edits.
 
 ## Why This Matters
 
-Wikipedia is one of the most visited websites in the world.
-Its accuracy and credibility relies on editors, like you, adding reliable sources to support its content.
+Wikipedia is one of the [most visited websites][most_visited_wikipedia] in the world.
+The accuracy and credibility of the site and its articles relies on editors adding reliable sources to support its content.
 This project lets you practice the skills you've been learning so far: research, source evaluation, and citation.
-The result will be your contribution to a widely used and publicly accessible information resource.
+The result will be your contribution to a widely used and publicly accessible information resource and perhaps your first step in becoming a Wikipedia editor.
 In short, this project brings together the skills we've been building in our studies and applies them in a real-world context.
 
 ## Readings
 
-Please review the following Wikipedia articles to understand important editing practices.
+To get started, review and work through the following Wikipedia tutorial to get an introduction to editing Wikipedia:
 
-- Wikipedia: [Editing][help_editing]: This basic guide shows how Wikipedia editing works.
-- Wikipedia: [Contributing to Wikipedia][contributing_wikipedia]: A guide in contributing to Wikipedia.
-- Wikipedia: [Policies][wikipedia_policies]: An overview of what Wikipedia considers acceptable behavior, reliable source, and more.
-- Wikipedia: [Reliable Sources][reliable_wikipedia]: A guide in choosing reliable sources.
+- [Introduction to Wikipedia][intro_to_wikipedia]
+
+The tutorial guides you through:
+
+- Wikipedia's Policies and Guidelines
+- How to edit and add references, images, and tables to Wikipedia articles
+- Using Wikipedia's resources, such as Talk Pages
 
 ## Becoming a Wikipedia Editor
 
@@ -64,15 +64,13 @@ Your first task for this project is to begin the setup process for your Wikipedi
 
 ## Conclusion
 
-The next four sections of this work provide additional instruction on using
-various library and web information resources.
-These sections should help you collect references for your chosen Wikipedia article.
-However, as noted, it's impossible to cover all information resources.
-Therefore, although they may guide you in additional exploration,
-you will be responsible for identifying and selecting what you need for your article.
+The next four sections of this work provide additional instruction on using various library and web information resources.
+Use these lessons to help you collect references for your chosen Wikipedia article.
+The more you do now the less work you'll have to do for the final project.
 
-[contributing_wikipedia]:https://en.wikipedia.org/wiki/Wikipedia:Contributing_to_Wikipedia
-[help_editing]:https://en.wikipedia.org/w/index.php?title=Help:Editing
+As noted, it's impossible to cover all information resources.
+Therefore, although the next few sections will guide you in additional exploration, you will be responsible for identifying and selecting what you need for your article.
+
 [protection_policies]:https://en.wikipedia.org/wiki/Wikipedia:Protection_policy
-[reliable_wikipedia]:https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Reliable_sources
-[wikipedia_policies]:https://en.wikipedia.org/wiki/Wikipedia:List_of_policies
+[intro_to_wikipedia]:https://en.wikipedia.org/wiki/Help:Introduction
+[most_visited_wikipedia]:https://en.wikipedia.org/wiki/List_of_most-visited_websites
