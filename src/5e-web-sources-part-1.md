@@ -8,11 +8,11 @@ That's fine, of course, but the web is composed of billions of web pages, and ma
 We also spend most of our time on a limited number of domains.
 This includes sites ending with **.com, .org, .edu**, etc.
 But remember that you've already learned how to search the web, and if you're interested in learning more about what's out there,
-I encourage you to add a `:site` operator to your web queries if you want to mix things up every once in a while.
-There over [1,400 top level domains][tld] that we can use with the `:site` operator, and it can be fun to add random ones to your searches:
+I encourage you to add a `site:` operator to your web queries if you want to mix things up every once in a while.
+There over [1,400 top level domains][tld] that we can use with the `site:` operator, and it can be fun to add random ones to your searches:
 
 ```
-asthma site:health
+asthma site:health.gov
 ```
 
 Or:
