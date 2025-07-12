@@ -26,7 +26,7 @@ That said, in this and the next section I want to cover a few specific sites tha
 ## Google Scholar
 
 [Google Scholar][google_scholar] isn't a library database but more like an academic search engine that's freely available on the web.
-Its weakness is that it doesn't provide the kind of search operators that either *Factiva* or *Web of Science* have, and so search can be less precie.
+Its weakness is that it doesn't provide the kind of search operators that either *Factiva* or *Web of Science* have, and so search can be less precise.
 However, its strength is that it indexes a lot of academic and legal content.
 
 Searching *Google Scholar* is a lot like searching *Google*, which we've already covered.
@@ -37,7 +37,7 @@ Thus the following search is translated as: `"open source" AND google`.
 <img src="images/10-image-5.png"
 alt="Google Scholar search for "open source" google"
 title="Google Scholar search for "open source" google">
-<figcaption>Fig. 5: <i>Google Scholar</i> search for "open source" google</figcaption> 
+<figcaption>Fig. 1: <i>Google Scholar</i> search for "open source" google</figcaption> 
 </figure>
 
 You can see here we get a lot of results.
@@ -54,7 +54,7 @@ There is an advanced search option.
 However, since *Google Scholar* is indexing full text sources and not structured bibliographic records,
 this means that it can't offer the kind of advanced search we've seen in database searches.
 It is pretty useful, though, and we can focus on some fields, like **titles**.
-For example, Figure 6 shows an advanced **title** search for the terms `google` and `"open source"` but it excludes the term `android` in the **title**,
+For example, Figure 2 shows an advanced **title** search for the terms `google` and `"open source"` but it excludes the term `android` in the **title**,
 and we can limit results published from 2018 to today.
 You can see that this substantially narrows our results, thereby increasing the precision of our query.
 As of July 9, 2025, *Google Scholar* returns only 93 hits for this search.
@@ -63,7 +63,7 @@ As of July 9, 2025, *Google Scholar* returns only 93 hits for this search.
 <img src="images/10-image-6.png"
 alt="Google Scholar search for "open source" google not android in title"
 title="Google Scholar search for "open source" google not android in title">
-<figcaption>Fig. 6: <i>Google Scholar</i> search for "open source" google not android in title</figcaption> 
+<figcaption>Fig. 2: <i>Google Scholar</i> search for "open source" google not android in title</figcaption> 
 </figure>
 
 Other than that, one of the nice things about *Google Scholar* is that it's also a citation database.
@@ -75,7 +75,7 @@ which purposefully casts a smaller net, which it does for quality control.
 Because of that, I find *Google Scholar* can return many non-relevant works, but it makes it nice for browsing or discovery. 
 *Web of Science* shines for more rigorous and methodical literature searches.
 
-The observant among you may have noticed that in Figure 5, there is a **View Now @ UK** link.
+The observant among you may have noticed that in Figure 1, there is a **View Now @ UK** link.
 The reason *Google Scholar* provides that link is that I've configured it to connect with UK's *InfoKat*.
 This is something you have to set up, but it's pretty simple to do.
 Just click on settings, and then go to **Library Links**, and then search for the University of Kentucky.
@@ -87,7 +87,7 @@ After that, you should see the **View Now** option when something is available v
 <img src="images/10-image-7.png"
 alt="Google Scholar View Now Setup"
 title="Google Scholar View Now Setup">
-<figcaption>Fig. 7: <i>Google Scholar</i> View Now Setup</figcaption> 
+<figcaption>Fig. 3: <i>Google Scholar</i> View Now Setup</figcaption> 
 </figure>
 
 You might find the following three other web-based bibliographic tools useful:
@@ -95,8 +95,8 @@ You might find the following three other web-based bibliographic tools useful:
 - **Crossref** [https://search.crossref.org/][crossref]
     - *Crossref* will search all works that have a DOI, or [digital object identifier][doi]. As such, it contains many millions of bibliographic records.
 - **Semantic Scholar** [https://www.semanticscholar.org/][semantic_scholar]
-    - *Semantic Scholar* is an AI powered bibligraphic search engine that also functions as a citation database. It can provide summaries of articles and other works, lists of citations, citing authors, co-authors of authors, and links to related papers.
-- **Consesus** [https://consensus.app/search/][consensus]
+    - *Semantic Scholar* is an AI powered bibliographic search engine that also functions as a citation database. It can provide summaries of articles and other works, lists of citations, citing authors, co-authors of authors, and links to related papers.
+- **Consensus** [https://consensus.app/search/][consensus]
     - *Consensus* build on *Semantic Scholar*. Instead of a functioning like a traditional search engine, you can ask it questions on research topics. It provides examples on its main search page. It provide citation information and details about studies.
 
 ## Internet Archive
@@ -212,18 +212,18 @@ The **10-K** report:
 The **10-Q** report is unaudited.
 
 The [EDGAR search page][edgarSearch] is pretty straightforward and offers autocomplete as you type.
-My search query in Figure 1 is a search for Google's (specifically, Alphabet's) last **10-K** report, which was filed on February 2, 2025.
+My search query in Figure 4 is a search for Google's (specifically, Alphabet's) last **10-K** report, which was filed on February 2, 2025.
 
 <figure>
 <img src="images/11-image-1.png"
 alt="EDGAR Search for Alphabet Inc."
 title="EDGAR Search for Alphabet Inc.">
-<figcaption>Fig. 1: EDGAR Search for Alphabet Inc.</figcaption> 
+<figcaption>Fig. 4: EDGAR Search for Alphabet Inc.</figcaption> 
 </figure>
 
 If you read the 2025 report, you can see that *Google* primarily earns income based on advertising (75% of total revenue),
 customer subscriptions, platforms (e.g., Google Play), devices (e.g., Pixel), and Google Cloud usage.
-Since 2015, it's workedx on integrating AI technologies in its core services.
+Since 2015, it's worked on integrating AI technologies in its core services.
 It has 183,323 employees (as of December 2024).
 There is much more in this report and similar reports from other public companies.
 
