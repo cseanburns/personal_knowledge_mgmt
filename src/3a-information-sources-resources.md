@@ -242,7 +242,7 @@ Note that a Journals search is just a way to use InfoKat to limit results to Jou
 The **Databases** link is a separate product, called *A-Z Databases*.
 When visiting this link, we can view a list of Databases the library has access to,
 and thus expand our search of records to broader categories or subject areas of periodicals.
-Here we find databases like [*Academic Search Complete*][asc], which will let us search thousands of periodicals,
+Here we find databases like [*Academic Search Ultimate*][asu], which will let us search thousands of periodicals,
 including magazines and scholarly journals, across a range of subject categories.
 *JSTOR* is another database that indexes a broad subject range of periodicals but with greater emphasis on peer-reviewed material.
 Databases may also have a specific focus.
@@ -290,9 +290,9 @@ In the next few paragraphs below, I will focus on a few general purpose full-tex
 that you may find helpful as you work towards your degree.
 Although these databases provide full-text sources, they may not provide full-text to everything they have records for.
 
-#### Academic Search Complete
+#### Academic Search Ultimate 
 
-[*Academic Search Complete (ASC)*][asc] is a database of databases.
+[*Academic Search Ultimate (ASU)*][asc] is a database of databases.
 It can search over 60 different databases and indexes, each including hundreds of journal titles, including:
 
 - *Communication and Mass Media Complete*
@@ -377,7 +377,7 @@ These are all tertiary sources that can lead us to more substantial sources of p
 
 [aac]:http://ezproxy.uky.edu/login?url=https://www.aac.amdigital.co.uk/
 [artstor]:https://www.artstor.org/public-collections/
-[asc]:https://libguides.uky.edu/4
+[asu]:https://libguides.uky.edu/4
 [azdatabases]:https://libguides.uky.edu/az.php
 [ccorg]:https://creativecommons.org/about/cclicenses/
 [dictInfoSciTech]:https://saalck-uky.primo.exlibrisgroup.com/permalink/01SAA_UKY/ija67f/cdi_proquest_ebookcentral_EBC3312345

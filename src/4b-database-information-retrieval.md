@@ -37,8 +37,8 @@ Many of the databases that we have access to at our university library are a mix
 <figure>
 <img src="images/4b-image-1.png"
 width="600" height="500"
-alt="Academic Search Complete results"
-title="Academic Search Complete results">
+alt="Academic Search Ultimate results"
+title="Academic Search Ultimate results">
 <figcaption>Fig. 1: Bibliographic Record in InfoKat. When we search InfoKat, we specifically search these kinds of fields in what is called "fielded search."</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ The complete metadata about a specific item such as a book or journal article is
 In a database, this metadata is created by professionals and is well structured, as illustrated in Figure 1 above.
 As searchers, this means that there are pre-set fields that we can search in academic databases and that
 these pre-set fields specifically search the corresponding metadata.
-For example, in [Academic Search Complete (ASC)][asc], records are described with the following metadata, and
+For example, in [Academic Search Ultimate (ASU][asu], records are described with the following metadata, and
 this means we can search ASC using this metadata.
 This kind of structured, field-specific searching is known as **fielded search**, and
 it's one of the most powerful features of academic databases.
@@ -140,9 +140,9 @@ If I combine those terms with an **AND** operator, then I narrow my results down
 <figure>
 <img src="images/4b-image-2.png"
 width="600" height="500"
-alt="Academic Search Complete results"
-title="Academic Search Complete results">
-<figcaption>Fig. 2: Academic Search Complete Results.</figcaption>
+alt="Academic Search Ultimate results"
+title="Academic Search Ultimate results">
+<figcaption>Fig. 2: Academic Search Ultimate Results.</figcaption>
 </figure>
 
 Note that the query in Figure 2 contains additional text like: `DE "FOREST animals"`.
@@ -410,7 +410,7 @@ Rather, browse with smarts: systematically and strategically.
 Make the systems work for you.
 And save your results in Zotero or your chosen RM as you go.
 
-[asc]:https://libguides.uky.edu/4
+[asu]:https://libguides.uky.edu/4
 [eric]:https://eric.ed.gov/
 [GS]:https://scholar.google.com/
 [scopus]:https://libguides.uky.edu/3347

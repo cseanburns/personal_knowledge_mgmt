@@ -10,7 +10,7 @@ large student body and wide range of majors, provides access to nearly 800 total
 Many of these databases are specialized
 (e.g., African American and Africana Studies, Appalachian Studies) or cover a broad general research area (e.g., Chemistry, Education).
 But a few are designed to be super broad and function as databases of databases.
-I've already covered *Academic Search Complete* in prior sections, which is one example of a database of databases.
+I've already covered *Academic Search Ultimate* in prior sections, which is one example of a database of databases.
 In this section, I'll cover another one plus some citation databases.
 
 > Remember that if you have desktop Zotero plus the Zotero browser add-on installed,
