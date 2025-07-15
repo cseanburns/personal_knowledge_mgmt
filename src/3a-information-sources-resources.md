@@ -35,7 +35,7 @@ Let's expand on that a bit more:
 3. **Tertiary Sources**:
    - **Encyclopedias**: General reference works that provide concise summaries and explanations of topics. They often compile information from various secondary sources. Examples include online encyclopedias or reference books.
    - **Textbooks**: Educational books designed for teaching a subject. They distill information from primary and secondary sources to provide structured knowledge on a topic.
-   - **Databases and Indexes**: Online databases that organize and index primary and secondary sources, making it easier to search for relevant information. Examples include academic databases like PubMed, Academic Search Premier, or library catalogs.
+   - **Databases and Indexes**: Online databases that organize and index primary and secondary sources, making it easier to search for relevant information. Examples include academic databases like *PubMed*, *Academic Search Ultimate*, or library catalogs.
 
 We can summarize the above list and definitions into the following table:
 
@@ -292,7 +292,7 @@ Although these databases provide full-text sources, they may not provide full-te
 
 #### Academic Search Ultimate 
 
-[*Academic Search Ultimate (ASU)*][asc] is a database of databases.
+[*Academic Search Ultimate (ASU)*][asu] is a database of databases.
 It can search over 60 different databases and indexes, each including hundreds of journal titles, including:
 
 - *Communication and Mass Media Complete*
@@ -303,9 +303,9 @@ It can search over 60 different databases and indexes, each including hundreds o
 - *eBook K-8 Collection*,
 - and more.
 
-In *ASC*, we can search all 60 plus databases at one time, or we can select one or more of them.
+In *ASU*, we can search all 60 plus databases at one time, or we can select one or more of them.
 It makes sense to narrow our selection of database as we develop more knowledge of a topic.
-For example, if we were interested health related information, we might want to search the following *ASC* databases at once:
+For example, if we were interested health related information, we might want to search the following *ASU* databases at once:
 
 - *Consumer Health Reference eBook Collection*
 - *Health and Psychosocial Instruments*
@@ -314,7 +314,7 @@ For example, if we were interested health related information, we might want to 
 
 #### ProQuest
 
-Like *ASC*, [*ProQuest*][proquest] provides access to many subject based databases, and also, many of the database topics overlap.
+Like *ASU*, [*ProQuest*][proquest] provides access to many subject based databases, and also, many of the database topics overlap.
 ProQuest uses this to highlight database collections.
 For example, the *SciTech Premium Collection* includes three databases that can be searched at once.
 These include the:
@@ -372,7 +372,7 @@ In the end, an **information source** is the main item we often aim to acquire.
 
 An **information resource** is a tool that provides or supplies access to information sources.
 In this section, some examples of information resources are the library discovery service, a search engine,
-and databases like *JSTOR*, *ASC*, or *ProQuest*.
+and databases like *JSTOR*, *ASU*, or *ProQuest*.
 These are all tertiary sources that can lead us to more substantial sources of primary and secondary information.
 
 [aac]:http://ezproxy.uky.edu/login?url=https://www.aac.amdigital.co.uk/

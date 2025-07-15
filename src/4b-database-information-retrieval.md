@@ -54,8 +54,8 @@ The complete metadata about a specific item such as a book or journal article is
 In a database, this metadata is created by professionals and is well structured, as illustrated in Figure 1 above.
 As searchers, this means that there are pre-set fields that we can search in academic databases and that
 these pre-set fields specifically search the corresponding metadata.
-For example, in [Academic Search Ultimate (ASU][asu], records are described with the following metadata, and
-this means we can search ASC using this metadata.
+For example, in [Academic Search Ultimate (ASU)][asu], records are described with the following metadata, and
+this means we can search ASU using this metadata.
 This kind of structured, field-specific searching is known as **fielded search**, and
 it's one of the most powerful features of academic databases.
 
@@ -77,7 +77,7 @@ because the corpus is better defined.
 
 In the previous section on web information retrieval, I showed how we can search the web
 using the `:filetype` operator to limit results to PDFs, DOCX, XLSX, etc files.
-In a bibliographic database like *ASC*, we can limit results by **document type** instead.
+In a bibliographic database like *ASU*, we can limit results by **document type** instead.
 That means we can restrict results to document types like:
 
 - articles
@@ -113,7 +113,7 @@ just like we can use the minus sign to exclude terms in search engines;
 and we can use the **AND** operator to force return documents that contain all terms in our query.
 
 > The **AND** operator between two query terms means that both terms must be present in each search result.
-> For example, if I search for `dogs AND cats` in a database like *ASC*,
+> For example, if I search for `dogs AND cats` in a database like *ASU*,
 > then each result must include both the terms **dogs** and **cats**.
 > We usually have to specify the **AND** in a database.
 > However, in search engines, the **AND** is assumed between terms.
@@ -128,14 +128,14 @@ If a database uses these kinds of vocabulary terms, it means that each record in
 these terms that should well describe the contents of the items it describes.
 Further, this means that all bibliographic records that share a specific subject term are linked together.
 
-For example, the *ASC* database uses **subject terms**.
+For example, the *ASU* database uses **subject terms**.
 One subject term is **Forest animals**, and if I use that as my search query, then each record that is returned
 must include that subject term, and that record should match the contents of the item.
 I can peruse the results and identify other subject terms that help narrow my results.
 For example, the subject term **BIRD habitats** appears in records with the subject term **Forest animals**,
 since records often have multiple subject terms.
 If I combine those terms with an **AND** operator, then I narrow my results down to two journal articles, which is pretty precise.
-*ASC* is a multi-disciplinary database, and so feel free to explore subject terms related to your own interests.
+*ASU* is a multi-disciplinary database, and so feel free to explore subject terms related to your own interests.
 
 <figure>
 <img src="images/4b-image-2.png"
