@@ -78,12 +78,17 @@ then choose your default style, which will most likely be one of these:
 
 While the preferences window is open, there are two more things to set.
 First, click on the **Export** tab, and under **Item Format**, select **Wikipedia Citation Templates** from the drop down menu.
-This will come in handy when you edit your Wikipedia article.
+Normally you will want to set the **Item Format** to something like APA, Chicago, MLA, or like for papers.
+But for our project, setting this to **Wikipedia Citation Templates** will make adding references to your Wikipedia article easy.
+The following page provides instructions for instructions for dragging and dropping your references for your chosen Wikipedia article into the article page:
 
-Second, click on the **Advanced** tab, and then click on the drop down menu under the **OperURL** section, and scroll down until you find **University of Kentucky**.
-This will enable Zotero to retrieve full text items through InfoKat.
+- [Citing sources with Zotero][citing_zotero_wikipedia]
 
-## Using Zotero and a Word Processor
+Second, click on the **General** tab, and then click on the drop down menu for **Resolver** under the **OpenURL** section, and
+scroll down until you find **University of Kentucky**.
+This will enable Zotero to retrieve full text items through *InfoKat*.
+
+## Using Zotero and a Word Processor for Other Projects
 
 Once you've set up some basic preferences, you can start writing in your preferred word processor.
 
@@ -101,3 +106,4 @@ you may need to refer to the Zotero documentation for additional help.
 [zotero_docs]:https://www.zotero.org/support/start
 [zotero_word_processor]:https://www.zotero.org/support/word_processor_integration
 [styles_zotero]:https://www.zotero.org/styles
+[citing_zotero_wikipedia]:https://en.wikipedia.org/wiki/Wikipedia:Citing_sources_with_Zotero
