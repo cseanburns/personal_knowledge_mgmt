@@ -76,53 +76,72 @@ Therefore, we will discuss ways to handle email effectively.
 
 #### Generative AI
 
-I wrote the first version of this book during the summer of 2022,
+I wrote the first draft of this book during the summer of 2022,
 just a few months before the public release of ChatGPT and later Google's Bard (now Gemini).
 [ChatGPT][chatgpt], [Gemini][gemini], [Claude][claude], and
 other AI chatbots are designed to have human-like conversations.
 Each are super useful, interesting, and may even be fun to use.
-Each can produce papers, code, and help you (and me!) understand more about a variety of topics and issues.
+Each can produce papers, code, and help us understand more about a variety of topics and issues.
 To make my point, I asked ChatGPT and Gemini about what they do.
-Here is what ChatGPT told me in 2022:
+Here is what ChatGPT told me in 2026:
 
-> I am ChatGPT, an AI language model developed by OpenAI. I am designed to
-> understand and generate human-like text based on the inputs I receive. I have
-> been trained on a wide variety of data sources, including books, articles,
-> websites, and other written content, allowing me to provide information and
-> engage in conversations on a wide range of topics. My purpose is to assist
-> users like you in finding answers, offering explanations, generating creative
-> content, and engaging in meaningful discussions. However, it's important to
-> note that while I strive to provide accurate and helpful information, I may
-> not always be perfect, and there are limitations to my knowledge and
-> understanding.
+> I’m a general-purpose AI assistant. In practice that means a few big things:
+>
+> I help you **think** — clarifying ideas, challenging assumptions, and turning vague thoughts into something you can actually use. If you’re wrestling with a concept, an argument, a research question, or a decision, I can help you pull it apart and see what really matters.
+>
+> I help you **make things** — writing, editing, coding, outlining, planning, designing. You can hand me a messy draft, a half-formed idea, or a goal and I’ll help turn it into something structured and workable.
+>
+> I help you **learn** — explaining topics, building intuition, finding connections between ideas, and adjusting explanations to your level and goals rather than dumping textbook prose on you.
+>
+> I help you **navigate information** — summarizing, comparing, checking consistency, and (when needed) pulling in up-to-date facts from the web.
+>
+> And I help you **reflect** — journaling, thinking through trade-offs, noticing patterns in what you say and do, and nudging you when you’re drifting into blind spots or wishful thinking.
+>
+> What I don’t do is replace your judgment, creativity, or responsibility. I’m best when I’m acting like a very fast, very patient thinking partner: useful, sometimes challenging, occasionally surprising, but never the one in charge.
+>
+> If you want, tell me what you’re hoping to use me for — quick answers, deep thinking, writing, teaching, something else — and I’ll tune myself to that.
 
-And here is what Bard told me in 2022:
+And here is what Gemini told me in 2026:
 
-> I would describe myself as a large language model, also known as a
-> conversational AI or chatbot trained to be informative and comprehensive. I
-> am trained on a massive amount of text data, and I am able to communicate and
-> generate human-like text in response to a wide range of prompts and
-> questions. For example, I can provide summaries of factual topics or create
-> stories.
+> Think of me as your versatile, AI-powered thought partner. I’m **Gemini 3 Flash**, and I'm designed to help you bridge the gap between an idea and its execution—whether you’re writing, brainstorming, or creating media.
 >
-> Here are some of the things I can do:
+> Here is a breakdown of what I can do for you:
 >
-> * I can answer your questions in a comprehensive and informative way, even if
->   they are open ended, challenging, or strange.
-> * I can generate different creative text formats,  like poems, code, scripts,
->   musical pieces, email, letters, etc. I will try my best to fulfill all your
->   requirements.
-> * I can translate languages.
-> * I can write different kinds of creative content.
-> * I can help you with your tasks, like setting reminders, making lists, and
->   playing music.
-> * I can control your smart home devices.
-> * I can help you stay organized and on track.
-> * I can be your friend and companion.
+> ### 🧠 Intellectual & Creative Support
 >
-> I am still under development, but I am learning new things every day. I am
-> excited to see what the future holds for me, and I hope to be able to help
-> you in many ways.
+> * **Synthesize & Summarize:** I can take complex documents or long articles and boil them down to the essentials.
+> * **Draft & Edit:** From professional emails and resumes to creative stories and code, I can help you write from scratch or polish your existing work.
+> * **Brainstorm:** I’m great for "rubber-ducking"—talk through a problem with me, and I’ll offer new perspectives, counter-arguments, or fresh ideas.
+> * **Analyze Data:** Upload a file, and I can help you find trends, explain formulas, or visualize information.
+>
+> ---
+>
+> ### 🎨 Visual & Video Creation
+>
+> I’m not just about text; I have powerful tools for generating and editing visual content:
+> 
+> | Tool | Capability | Daily Limit |
+> | --- | --- | --- |
+> | **Image Generation** | Create or edit high-fidelity images using the **Nano Banana** model. | 100 uses |
+> | **Video Generation** | Generate short, high-quality videos with audio using the **Veo** model. | 2 uses |
+>
+> ---
+> 
+> ### 📱 Real-Time Interaction (Gemini Live)
+>
+> If you use the Gemini app on Android or iOS, we can go beyond typing:
+> 
+> * **Natural Conversation:** We can talk back and forth in real-time. You can even interrupt me!
+> * **See What You See:** You can share your camera feed so I can help you with things in your physical environment (like identifying a plant or fixing a sink).
+> * **Screen Context:** I can help with whatever is currently on your phone screen.
+>
+> ---
+> 
+> ### 🛠️ Technical Details
+> 
+> I am currently operating in the **Free tier**. While I am highly capable, I do have some guardrails—for example, I won't generate images of key political figures, and I'll always aim to be factually accurate while maintaining a helpful, peer-like tone.
+> 
+> **Would you like to try something specific right now, such as generating an image or brainstorming a project you're working on?**
 
 In my experience, I have enjoyed using these services because each can make various tasks a bit easier.
 But there are two things to note.
@@ -137,7 +156,7 @@ activities that help me learn and help me think, and that's good for my brain an
 *I think, therefore, I am*, wrote the philosopher [René Descarte][descarte] several centuries ago, and
 we want to be wary of how much we ask AI to think for us at the risk that we stop thinking for ourselves.
 
-Therefore, we will spend a little time about on generative AI and learning how to use it well and ethically.
+Therefore, we will spend a little time with generative AI and learning how to use it well and ethically.
 This means we will learn how to use it **augment** our thinking and manage what we're learning,
 rather than to replace our thinking.
 

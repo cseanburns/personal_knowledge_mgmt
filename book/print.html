@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="en" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="Personal knowledge management handbook for undergraduate course">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -25,26 +25,41 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -58,70 +73,51 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="p1-pkm.html"><strong aria-hidden="true">1.</strong> Personal Knowledge Management (PKM) Handbook</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1a-intro-to-pkm.html"><strong aria-hidden="true">1.1.</strong> Introduction to PKM</a></li></ol></li><li class="chapter-item expanded "><a href="p2-pkm-basics.html"><strong aria-hidden="true">2.</strong> PKM Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2a-email-management.html"><strong aria-hidden="true">2.1.</strong> Email Management</a></li><li class="chapter-item expanded "><a href="2b-working-with-gen-ai.html"><strong aria-hidden="true">2.2.</strong> Working with Generative AI</a></li></ol></li><li class="chapter-item expanded "><a href="p3-info-resources-sources.html"><strong aria-hidden="true">3.</strong> Using Information Resources and Managing Information Sources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3a-information-sources-resources.html"><strong aria-hidden="true">3.1.</strong> Information Sources and Resources</a></li><li class="chapter-item expanded "><a href="3b-reference-managers-getting-started.html"><strong aria-hidden="true">3.2.</strong> Reference Managers: Getting Started</a></li></ol></li><li class="chapter-item expanded "><a href="p4-retrieving-evaluating-information.html"><strong aria-hidden="true">4.</strong> Retrieving and Evaluating Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4a-web-information-retrieval.html"><strong aria-hidden="true">4.1.</strong> Web Information Retrieval</a></li><li class="chapter-item expanded "><a href="4b-database-information-retrieval.html"><strong aria-hidden="true">4.2.</strong> Database Information Retrieval</a></li><li class="chapter-item expanded "><a href="4c-evaluating-information-sources.html"><strong aria-hidden="true">4.3.</strong> Evaluating Information Sources</a></li></ol></li><li class="chapter-item expanded "><a href="p5-wikipedia-project.html"><strong aria-hidden="true">5.</strong> Wikipedia Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5b-project-setup-wikipedia-part-1.html"><strong aria-hidden="true">5.1.</strong> Wikipedia Project: Setup</a></li><li class="chapter-item expanded "><a href="5c-library-sources-part-1.html"><strong aria-hidden="true">5.2.</strong> Library Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5d-library-sources-part-2.html"><strong aria-hidden="true">5.3.</strong> Library Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5e-web-sources-part-1.html"><strong aria-hidden="true">5.4.</strong> Web Sources: Part 1</a></li><li class="chapter-item expanded "><a href="5f-web-sources-part-2.html"><strong aria-hidden="true">5.5.</strong> Web Sources: Part 2</a></li><li class="chapter-item expanded "><a href="5g-reference-managers-finishing-up.html"><strong aria-hidden="true">5.6.</strong> Reference Managers: Finishing Up</a></li><li class="chapter-item expanded "><a href="5h-project-close-wikipedia-part-2.html"><strong aria-hidden="true">5.7.</strong> Wikipedia Project: Completion</a></li></ol></li><li class="chapter-item expanded "><a href="gnu-free-documentation-license.html"><strong aria-hidden="true">6.</strong> GNU Free Documentation License</a></li></ol>
-            </div>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
-
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -131,13 +127,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -157,7 +154,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -301,52 +303,55 @@ especially in professional contexts, and because our inboxes can easily become o
 As a result, we can miss out on important information when our inboxes are overloaded.
 Therefore, we will discuss ways to handle email effectively.</p>
 <h4 id="generative-ai"><a class="header" href="#generative-ai">Generative AI</a></h4>
-<p>I wrote the first version of this book during the summer of 2022,
+<p>I wrote the first draft of this book during the summer of 2022,
 just a few months before the public release of ChatGPT and later Google's Bard (now Gemini).
 <a href="https://chat.openai.com/">ChatGPT</a>, <a href="https://gemini.google.com/">Gemini</a>, <a href="https://claude.ai/">Claude</a>, and
 other AI chatbots are designed to have human-like conversations.
 Each are super useful, interesting, and may even be fun to use.
-Each can produce papers, code, and help you (and me!) understand more about a variety of topics and issues.
+Each can produce papers, code, and help us understand more about a variety of topics and issues.
 To make my point, I asked ChatGPT and Gemini about what they do.
-Here is what ChatGPT told me in 2022:</p>
+Here is what ChatGPT told me in 2026:</p>
 <blockquote>
-<p>I am ChatGPT, an AI language model developed by OpenAI. I am designed to
-understand and generate human-like text based on the inputs I receive. I have
-been trained on a wide variety of data sources, including books, articles,
-websites, and other written content, allowing me to provide information and
-engage in conversations on a wide range of topics. My purpose is to assist
-users like you in finding answers, offering explanations, generating creative
-content, and engaging in meaningful discussions. However, it's important to
-note that while I strive to provide accurate and helpful information, I may
-not always be perfect, and there are limitations to my knowledge and
-understanding.</p>
+<p>I’m a general-purpose AI assistant. In practice that means a few big things:</p>
+<p>I help you <strong>think</strong> — clarifying ideas, challenging assumptions, and turning vague thoughts into something you can actually use. If you’re wrestling with a concept, an argument, a research question, or a decision, I can help you pull it apart and see what really matters.</p>
+<p>I help you <strong>make things</strong> — writing, editing, coding, outlining, planning, designing. You can hand me a messy draft, a half-formed idea, or a goal and I’ll help turn it into something structured and workable.</p>
+<p>I help you <strong>learn</strong> — explaining topics, building intuition, finding connections between ideas, and adjusting explanations to your level and goals rather than dumping textbook prose on you.</p>
+<p>I help you <strong>navigate information</strong> — summarizing, comparing, checking consistency, and (when needed) pulling in up-to-date facts from the web.</p>
+<p>And I help you <strong>reflect</strong> — journaling, thinking through trade-offs, noticing patterns in what you say and do, and nudging you when you’re drifting into blind spots or wishful thinking.</p>
+<p>What I don’t do is replace your judgment, creativity, or responsibility. I’m best when I’m acting like a very fast, very patient thinking partner: useful, sometimes challenging, occasionally surprising, but never the one in charge.</p>
+<p>If you want, tell me what you’re hoping to use me for — quick answers, deep thinking, writing, teaching, something else — and I’ll tune myself to that.</p>
 </blockquote>
-<p>And here is what Bard told me in 2022:</p>
+<p>And here is what Gemini told me in 2026:</p>
 <blockquote>
-<p>I would describe myself as a large language model, also known as a
-conversational AI or chatbot trained to be informative and comprehensive. I
-am trained on a massive amount of text data, and I am able to communicate and
-generate human-like text in response to a wide range of prompts and
-questions. For example, I can provide summaries of factual topics or create
-stories.</p>
-<p>Here are some of the things I can do:</p>
+<p>Think of me as your versatile, AI-powered thought partner. I’m <strong>Gemini 3 Flash</strong>, and I'm designed to help you bridge the gap between an idea and its execution—whether you’re writing, brainstorming, or creating media.</p>
+<p>Here is a breakdown of what I can do for you:</p>
+<h3 id="-intellectual--creative-support"><a class="header" href="#-intellectual--creative-support">🧠 Intellectual &amp; Creative Support</a></h3>
 <ul>
-<li>I can answer your questions in a comprehensive and informative way, even if
-they are open ended, challenging, or strange.</li>
-<li>I can generate different creative text formats,  like poems, code, scripts,
-musical pieces, email, letters, etc. I will try my best to fulfill all your
-requirements.</li>
-<li>I can translate languages.</li>
-<li>I can write different kinds of creative content.</li>
-<li>I can help you with your tasks, like setting reminders, making lists, and
-playing music.</li>
-<li>I can control your smart home devices.</li>
-<li>I can help you stay organized and on track.</li>
-<li>I can be your friend and companion.</li>
+<li><strong>Synthesize &amp; Summarize:</strong> I can take complex documents or long articles and boil them down to the essentials.</li>
+<li><strong>Draft &amp; Edit:</strong> From professional emails and resumes to creative stories and code, I can help you write from scratch or polish your existing work.</li>
+<li><strong>Brainstorm:</strong> I’m great for "rubber-ducking"—talk through a problem with me, and I’ll offer new perspectives, counter-arguments, or fresh ideas.</li>
+<li><strong>Analyze Data:</strong> Upload a file, and I can help you find trends, explain formulas, or visualize information.</li>
 </ul>
-<p>I am still under development, but I am learning new things every day. I am
-excited to see what the future holds for me, and I hope to be able to help
-you in many ways.</p>
+<hr />
+<h3 id="-visual--video-creation"><a class="header" href="#-visual--video-creation">🎨 Visual &amp; Video Creation</a></h3>
+<p>I’m not just about text; I have powerful tools for generating and editing visual content:</p>
+<div class="table-wrapper"><table><thead><tr><th>Tool</th><th>Capability</th><th>Daily Limit</th></tr></thead><tbody>
+<tr><td><strong>Image Generation</strong></td><td>Create or edit high-fidelity images using the <strong>Nano Banana</strong> model.</td><td>100 uses</td></tr>
+<tr><td><strong>Video Generation</strong></td><td>Generate short, high-quality videos with audio using the <strong>Veo</strong> model.</td><td>2 uses</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="-real-time-interaction-gemini-live"><a class="header" href="#-real-time-interaction-gemini-live">📱 Real-Time Interaction (Gemini Live)</a></h3>
+<p>If you use the Gemini app on Android or iOS, we can go beyond typing:</p>
+<ul>
+<li><strong>Natural Conversation:</strong> We can talk back and forth in real-time. You can even interrupt me!</li>
+<li><strong>See What You See:</strong> You can share your camera feed so I can help you with things in your physical environment (like identifying a plant or fixing a sink).</li>
+<li><strong>Screen Context:</strong> I can help with whatever is currently on your phone screen.</li>
+</ul>
+<hr />
+<h3 id="-technical-details"><a class="header" href="#-technical-details">🛠️ Technical Details</a></h3>
+<p>I am currently operating in the <strong>Free tier</strong>. While I am highly capable, I do have some guardrails—for example, I won't generate images of key political figures, and I'll always aim to be factually accurate while maintaining a helpful, peer-like tone.</p>
+<p><strong>Would you like to try something specific right now, such as generating an image or brainstorming a project you're working on?</strong></p>
 </blockquote>
 <p>In my experience, I have enjoyed using these services because each can make various tasks a bit easier.
 But there are two things to note.
@@ -359,7 +364,7 @@ Activities like reading, writing, coding, and conversing are
 activities that help me learn and help me think, and that's good for my brain and for me.
 <em>I think, therefore, I am</em>, wrote the philosopher <a href="https://www.gutenberg.org/ebooks/59">René Descarte</a> several centuries ago, and
 we want to be wary of how much we ask AI to think for us at the risk that we stop thinking for ourselves.</p>
-<p>Therefore, we will spend a little time about on generative AI and learning how to use it well and ethically.
+<p>Therefore, we will spend a little time with generative AI and learning how to use it well and ethically.
 This means we will learn how to use it <strong>augment</strong> our thinking and manage what we're learning,
 rather than to replace our thinking.</p>
 <h4 id="remaining-lessons"><a class="header" href="#remaining-lessons">Remaining Lessons</a></h4>
@@ -3577,6 +3582,7 @@ software.</p>
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>
