@@ -92,7 +92,7 @@ To illustrate these types of prompts,
 below I demonstrate a session with Google's Gemini where I construct a series of prompts to talk about prompt engineering.
 The goal of the session is to show how using generative AI effectively is iterative,
 which means that I apply answers from Gemini to generate new responses.
-You can read through the exchange at the following link:
+Read through the exchange at the following link:
 
 - [Prompt Engineering: Crafting Instructions for AI (Example exchange)][prompt_example]
 
@@ -101,31 +101,18 @@ In this session, I perform the following steps:
 1. I prompt Gemini about prompt engineering and how it works
 2. I prompt it to provide an example of **few-shot prompting**
 3. I prompt it to provide an example of **chain-of-thought prompting**
-4. I give Gemini an example of [an abstract from a medical journal article][article_source], and I ask it to:
+4. I give Gemini an example of [an abstract from an article on digital literacy][article_source], and I ask it to:
     - **summarize** the abstract so that a layperson can understand it
     - **extract** from the text what the study said was new about its findings
     - use the **question/answering** technique to find out about future studies and to suggest future studies
 
-Lastly, we should know that generative AI can **hallucinate**.
-That is, these applications can totally **make up** things about the world or lead us to conspiratorial thinking (Hill, 2025).
-To demonstrate this, in my last prompt to Gemini, I tell it that I'm sharing the first paragraph of a famous novel,
-and that I'd like it to tell me what novel it's from and to **classify** the text as neutral, positive, or negative.
-However, in my prompt, I leave out the novel's first paragraph.
-The problem is that Gemini does not catch this **error** but
-still proceeds to answer the prompt, which it does by referring to the book *A Tale of Two Cities* by Charles Dickens.
-In the last prompt, I point out to Gemini that I didn't share the novel's paragraph with it.
-I then share it and it proceeds to tell me the source and classify the text appropriately.
-In short, this is a good reminder that generative AI can make stuff up.
-
 ## Projects and Notebooks
 
 One off sessions with generative AI are helpful, but oftentimes we might want to use generative AI for a project.
-To help with this, OpenAI's ChatGPT and Anthropic's [Claude AI][collaborate_with_claude_on_projects]
-offer [Projects][using_projects_in_chatgpt].
+To help with this, OpenAI's ChatGPT and Anthropic's [Claude AI][collaborate_with_claude_on_projects] offer [Projects][using_projects_in_chatgpt].
 Google offers a separate generative AI app for projects called [NotebookLM][notebooklm].
 These applications allow us to organize our work, upload multiple documents, query those documents, and
-sometimes collaborate with others
-(much of this depends on the paid plans that are also offered).
+sometimes collaborate with others (much of this depends on the paid plans that are also offered).
 
 These services are able to connect with other services, too.
 For example, OpenAI's ChatGPT can connect with Google Drive and Microsoft OneDrive plus accept uploads from your computer.
@@ -273,7 +260,7 @@ Zewe, A. (2025, January 17). Explained: Generative AI’s environmental impact.
 [https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117)
 
 [988_suicide]:https://988lifeline.org/
-[article_source]:https://pubmed.ncbi.nlm.nih.gov/30944985/
+[article_source]:https://doi.org/10.58459/rptel.2024.19004
 [berreby_2024]:https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions
 [chain_of_thought]:https://www.promptingguide.ai/techniques/cot
 [chatgpt]:https://chat.openai.com
@@ -290,7 +277,7 @@ Zewe, A. (2025, January 17). Explained: Generative AI’s environmental impact.
 [pogrebna_2024]:https://theconversation.com/ai-is-a-multi-billion-dollar-industry-its-underpinned-by-an-invisible-and-exploited-workforce-240568
 [prevention]:https://www.nimh.nih.gov/health/topics/suicide-prevention
 [prompt_engineering_guide]:https://www.promptingguide.ai/introduction/examples
-[prompt_example]:https://g.co/gemini/share/e00100b403e1
+[prompt_example]:https://gemini.google.com/share/6cf54336d905
 [prompting_techniques]:https://www.promptingguide.ai/techniques
 [roy_2025]:https://arxiv.org/abs/2505.11236
 [stephenson_ai]:https://nealstephenson.substack.com/p/remarks-on-ai-from-nz
